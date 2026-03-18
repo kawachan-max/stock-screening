@@ -135,7 +135,14 @@ const LABEL_METRICS = "\u6307\u6A5F\u30B0\u30EA\u30C3\u30C9";
 const LABEL_AI_ANALYSIS = "AI\u5206\u6790\u30B3\u30E1\u30F3\u30C8";
 const MSG_AI_PLACEHOLDER = "AI\u5206\u6790\u306F\u6B21\u56DE\u56DB\u534A\u671F\u66F4\u65B0\u6642\u306B\u8FFD\u52A0\u4E88\u5B9A\u3067\u3059";
 const LABEL_RISK_CHECK = "\u30EA\u30B9\u30AF\u30C1\u30A7\u30C3\u30AF\uff08\u30D0\u30D5\u30A7\u30C3\u30C8\u6D41\uff09";
-const RISK_ITEMS = ["ROE 15%\u4EE5\u4E0A\u306E\u7D9A\u7D9A", "\u81EA\u5DF1\u8CC7\u672C\u6BD4\u7387 50%\u4EE5\u4E0B", "\u9577\u671F\u8CA0\u50B5/\u7D14\u5229\u76CA 5\u500D\u4EE5\u5185", "FCF\u306E\u5B89\u5B9A\u6027", "\u51FA\u6765\u91CF\uff08\u6D41\u52D5\u6027\uff09", "\u4E00\u904E\u6027\u5229\u76CA\u30EA\u30B9\u30AF"];
+const RISK_CHECK_ITEMS: { key: keyof NonNullable<Row["risk_checks"]>; label: string; inverted: boolean }[] = [
+  { key: "roe_15_percent", label: "ROE 15%\u4EE5\u4E0A\u306E\u7D9A\u7D9A", inverted: false },
+  { key: "equity_ratio_50_percent", label: "\u81EA\u5DF1\u8CC7\u672C\u6BD4\u7387 50%\u4EE5\u4E0A", inverted: false },
+  { key: "debt_to_profit_5x", label: "\u9577\u671F\u8CA0\u50B5/\u7D14\u5229\u76CA 5\u500D\u4EE5\u5185", inverted: false },
+  { key: "fcf_stability", label: "FCF\u306E\u5B89\u5B9A\u6027", inverted: false },
+  { key: "liquidity_risk", label: "\u51FA\u6765\u91CF\uff08\u6D41\u52D5\u6027\uff09", inverted: true },
+  { key: "one_time_profit_risk", label: "\u4E00\u904E\u6027\u5229\u76CA\u30EA\u30B9\u30AF", inverted: true },
+];
 const DASH = "\u2014";
 
 const PITCH_TIMES = "\u500D"; // \u500D
@@ -168,6 +175,15 @@ type Row = {
   roe?: number | null;
   roic?: number | null;
   pbr?: number | null;
+  ai_comment?: string;
+  risk_checks?: {
+    roe_15_percent: boolean | null;
+    equity_ratio_50_percent: boolean | null;
+    debt_to_profit_5x: boolean | null;
+    fcf_stability: boolean | null;
+    liquidity_risk: boolean | null;
+    one_time_profit_risk: boolean | null;
+  } | null;
 };
 
 const POPUP_WIDTH = 280;
@@ -625,18 +641,45 @@ export default function Home() {
                       <section>
                         <h3 className="text-xs font-semibold text-[#6b6b6b] mb-2">{LABEL_AI_ANALYSIS}</h3>
                         <div className="rounded-lg bg-[#e5e0d8]/60 p-3 text-xs text-[#4a4a4a]">
-                          {MSG_AI_PLACEHOLDER}
+                          {r.ai_comment?.trim() || MSG_AI_PLACEHOLDER}
                         </div>
                       </section>
                       <section>
                         <h3 className="text-xs font-semibold text-[#6b6b6b] mb-2">{LABEL_RISK_CHECK}</h3>
-                        <div className="grid grid-cols-2 gap-2 text-xs">
-                          {RISK_ITEMS.map((item) => (
-                            <div key={item} className="flex justify-between gap-2">
-                              <span className="text-[#6b6b6b]">{item}</span>
-                              <span className="text-[#9ca3af]">{DASH}</span>
-                            </div>
-                          ))}
+                        <div className="space-y-2 text-xs">
+                          {RISK_CHECK_ITEMS.map(({ key, label, inverted }) => {
+                            const val = r.risk_checks?.[key];
+                            let dotColor = "";
+                            let statusText = "\u2014";
+                            if (val === null || val === undefined) {
+                              statusText = "\u2014";
+                            } else if (inverted) {
+                              if (val === false) {
+                                dotColor = "bg-emerald-500";
+                                statusText = "\u554F\u984C\u306A\u3057";
+                              } else {
+                                dotColor = "bg-red-500";
+                                statusText = "\u30EA\u30B9\u30AF\u3042\u308A";
+                              }
+                            } else {
+                              if (val === true) {
+                                dotColor = "bg-emerald-500";
+                                statusText = "\u8A72\u5F53";
+                              } else {
+                                dotColor = "bg-red-500";
+                                statusText = "\u975E\u8A72\u5F53";
+                              }
+                            }
+                            return (
+                              <div key={key} className="flex items-center justify-between gap-2">
+                                <span className="text-[#6b6b6b]">{label}</span>
+                                <span className="flex items-center gap-1.5">
+                                  {dotColor ? <span className={`w-2 h-2 rounded-full shrink-0 ${dotColor}`} aria-hidden /> : null}
+                                  <span className={dotColor === "bg-emerald-500" ? "text-emerald-700" : dotColor === "bg-red-500" ? "text-red-700" : "text-[#9ca3af]"}>{statusText}</span>
+                                </span>
+                              </div>
+                            );
+                          })}
                         </div>
                       </section>
                     </div>
