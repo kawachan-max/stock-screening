@@ -8,14 +8,23 @@
     "growth_score": 35,
     "shareholder_score": 11,
     "risk_penalty": -5,
-    "net_cash_ratio": 1.02,
-    "per": 6.37,
-    "market_cap_oku": 148.5,
+    "net_cash_ratio": 1.01,
+    "per": 6.43,
+    "market_cap_oku": 150.0,
     "dividend_yield": 3.48,
     "payout_ratio": 39.87,
     "roe": 18.79,
     "roic": 38.61,
-    "pbr": 0.57
+    "pbr": 0.57,
+    "ai_comment": "",
+    "risk_checks": {
+      "roe_15_percent": null,
+      "equity_ratio_50_percent": null,
+      "debt_to_profit_5x": null,
+      "fcf_stability": null,
+      "liquidity_risk": null,
+      "one_time_profit_risk": null
+    }
   },
   {
     "code": "8152",
@@ -26,14 +35,23 @@
     "growth_score": 30,
     "shareholder_score": 14,
     "risk_penalty": -5,
-    "net_cash_ratio": 1.19,
-    "per": 5.09,
-    "market_cap_oku": 114.3,
+    "net_cash_ratio": 1.17,
+    "per": 5.17,
+    "market_cap_oku": 116.1,
     "dividend_yield": 1.69,
     "payout_ratio": 8.63,
     "roe": 12.82,
     "roic": 21.08,
-    "pbr": 0.53
+    "pbr": 0.54,
+    "ai_comment": "",
+    "risk_checks": {
+      "roe_15_percent": null,
+      "equity_ratio_50_percent": null,
+      "debt_to_profit_5x": null,
+      "fcf_stability": null,
+      "liquidity_risk": null,
+      "one_time_profit_risk": null
+    }
   },
   {
     "code": "6360",
@@ -44,32 +62,23 @@
     "growth_score": 30,
     "shareholder_score": 11,
     "risk_penalty": -5,
-    "net_cash_ratio": 1.09,
-    "per": 7.62,
-    "market_cap_oku": 55.9,
+    "net_cash_ratio": 1.1,
+    "per": 7.55,
+    "market_cap_oku": 55.4,
     "dividend_yield": 2.51,
     "payout_ratio": 45.92,
     "roe": 12.95,
     "roic": 23.85,
-    "pbr": 2.32
-  },
-  {
-    "code": "8147",
-    "name": "TOMITA CO LTD",
-    "name_jp": "トミタ",
-    "score": 45,
-    "valuation_score": 9,
-    "growth_score": 30,
-    "shareholder_score": 11,
-    "risk_penalty": -5,
-    "net_cash_ratio": 1.29,
-    "per": 10.0,
-    "market_cap_oku": 69.3,
-    "dividend_yield": 1.56,
-    "payout_ratio": 16.33,
-    "roe": 5.29,
-    "roic": 13.34,
-    "pbr": 0.55
+    "pbr": 2.3,
+    "ai_comment": "",
+    "risk_checks": {
+      "roe_15_percent": null,
+      "equity_ratio_50_percent": null,
+      "debt_to_profit_5x": null,
+      "fcf_stability": null,
+      "liquidity_risk": null,
+      "one_time_profit_risk": null
+    }
   },
   {
     "code": "7521",
@@ -80,14 +89,23 @@
     "growth_score": 21,
     "shareholder_score": 14,
     "risk_penalty": 0,
-    "net_cash_ratio": 1.11,
-    "per": 6.05,
-    "market_cap_oku": 193.5,
+    "net_cash_ratio": 1.09,
+    "per": 6.17,
+    "market_cap_oku": 197.6,
     "dividend_yield": 1.27,
     "payout_ratio": 7.67,
     "roe": 10.1,
     "roic": 28.73,
-    "pbr": 0.55
+    "pbr": 0.56,
+    "ai_comment": "",
+    "risk_checks": {
+      "roe_15_percent": null,
+      "equity_ratio_50_percent": null,
+      "debt_to_profit_5x": null,
+      "fcf_stability": null,
+      "liquidity_risk": null,
+      "one_time_profit_risk": null
+    }
   },
   {
     "code": "8135",
@@ -98,14 +116,23 @@
     "growth_score": 21,
     "shareholder_score": 18,
     "risk_penalty": -10,
-    "net_cash_ratio": 1.13,
-    "per": 3.24,
-    "market_cap_oku": 94.4,
+    "net_cash_ratio": 1.12,
+    "per": 3.28,
+    "market_cap_oku": 95.3,
     "dividend_yield": 3.73,
     "payout_ratio": 6.72,
     "roe": 20.56,
     "roic": 19.64,
-    "pbr": 0.63
+    "pbr": 0.64,
+    "ai_comment": "",
+    "risk_checks": {
+      "roe_15_percent": null,
+      "equity_ratio_50_percent": null,
+      "debt_to_profit_5x": null,
+      "fcf_stability": null,
+      "liquidity_risk": null,
+      "one_time_profit_risk": null
+    }
   },
   {
     "code": "8138",
@@ -116,32 +143,23 @@
     "growth_score": 20,
     "shareholder_score": 9,
     "risk_penalty": -5,
-    "net_cash_ratio": 1.45,
-    "per": 4.89,
-    "market_cap_oku": 40.7,
+    "net_cash_ratio": 1.43,
+    "per": 4.97,
+    "market_cap_oku": 41.3,
     "dividend_yield": 2.21,
     "payout_ratio": 10.27,
     "roe": 7.22,
     "roic": 6.41,
-    "pbr": 0.45
-  },
-  {
-    "code": "5408",
-    "name": "NAKAYAMA STEEL WORKS",
-    "name_jp": "中山製鋼所",
-    "score": 41,
-    "valuation_score": 19,
-    "growth_score": 21,
-    "shareholder_score": 6,
-    "risk_penalty": -5,
-    "net_cash_ratio": 1.58,
-    "per": 7.89,
-    "market_cap_oku": 331.3,
-    "dividend_yield": 1.64,
-    "payout_ratio": 38.76,
-    "roe": 5.33,
-    "roic": 8.61,
-    "pbr": 0.31
+    "pbr": 0.46,
+    "ai_comment": "",
+    "risk_checks": {
+      "roe_15_percent": null,
+      "equity_ratio_50_percent": null,
+      "debt_to_profit_5x": null,
+      "fcf_stability": null,
+      "liquidity_risk": null,
+      "one_time_profit_risk": null
+    }
   },
   {
     "code": "2788",
@@ -152,14 +170,23 @@
     "growth_score": 16,
     "shareholder_score": 11,
     "risk_penalty": -5,
-    "net_cash_ratio": 1.98,
-    "per": 7.1,
-    "market_cap_oku": 44.3,
+    "net_cash_ratio": 1.95,
+    "per": 7.18,
+    "market_cap_oku": 44.8,
     "dividend_yield": 2.9,
     "payout_ratio": 20.57,
     "roe": 12.5,
     "roic": 20.32,
-    "pbr": 0.43
+    "pbr": 0.44,
+    "ai_comment": "",
+    "risk_checks": {
+      "roe_15_percent": null,
+      "equity_ratio_50_percent": null,
+      "debt_to_profit_5x": null,
+      "fcf_stability": null,
+      "liquidity_risk": null,
+      "one_time_profit_risk": null
+    }
   },
   {
     "code": "7434",
@@ -170,14 +197,23 @@
     "growth_score": 20,
     "shareholder_score": 11,
     "risk_penalty": -5,
-    "net_cash_ratio": 1.21,
-    "per": 7.73,
-    "market_cap_oku": 73.1,
+    "net_cash_ratio": 1.2,
+    "per": 7.78,
+    "market_cap_oku": 73.5,
     "dividend_yield": 1.99,
     "payout_ratio": 15.37,
     "roe": 5.56,
     "roic": 7.69,
-    "pbr": 0.45
+    "pbr": 0.45,
+    "ai_comment": "",
+    "risk_checks": {
+      "roe_15_percent": null,
+      "equity_ratio_50_percent": null,
+      "debt_to_profit_5x": null,
+      "fcf_stability": null,
+      "liquidity_risk": null,
+      "one_time_profit_risk": null
+    }
   },
   {
     "code": "6748",
@@ -188,14 +224,23 @@
     "growth_score": 21,
     "shareholder_score": 14,
     "risk_penalty": -5,
-    "net_cash_ratio": 1.07,
-    "per": 6.48,
-    "market_cap_oku": 99.7,
+    "net_cash_ratio": 1.04,
+    "per": 6.66,
+    "market_cap_oku": 102.4,
     "dividend_yield": 2.59,
     "payout_ratio": 15.14,
     "roe": 7.83,
     "roic": 11.84,
-    "pbr": 0.52
+    "pbr": 0.54,
+    "ai_comment": "",
+    "risk_checks": {
+      "roe_15_percent": null,
+      "equity_ratio_50_percent": null,
+      "debt_to_profit_5x": null,
+      "fcf_stability": null,
+      "liquidity_risk": null,
+      "one_time_profit_risk": null
+    }
   },
   {
     "code": "5921",
@@ -213,7 +258,16 @@
     "payout_ratio": 30.71,
     "roe": 5.0,
     "roic": 7.27,
-    "pbr": 0.42
+    "pbr": 0.42,
+    "ai_comment": "",
+    "risk_checks": {
+      "roe_15_percent": null,
+      "equity_ratio_50_percent": null,
+      "debt_to_profit_5x": null,
+      "fcf_stability": null,
+      "liquidity_risk": null,
+      "one_time_profit_risk": null
+    }
   },
   {
     "code": "4231",
@@ -224,32 +278,23 @@
     "growth_score": 21,
     "shareholder_score": 14,
     "risk_penalty": -5,
-    "net_cash_ratio": 1.19,
-    "per": 5.62,
-    "market_cap_oku": 218.4,
+    "net_cash_ratio": 1.18,
+    "per": 5.68,
+    "market_cap_oku": 221.0,
     "dividend_yield": 3.16,
     "payout_ratio": 25.39,
     "roe": 7.66,
     "roic": 11.22,
-    "pbr": 0.49
-  },
-  {
-    "code": "5697",
-    "name": "SANYU CO LTD",
-    "name_jp": "サンユウ",
-    "score": 39,
-    "valuation_score": 14,
-    "growth_score": 21,
-    "shareholder_score": 14,
-    "risk_penalty": -10,
-    "net_cash_ratio": 1.22,
-    "per": 7.93,
-    "market_cap_oku": 44.5,
-    "dividend_yield": 3.4,
-    "payout_ratio": 23.7,
-    "roe": 4.58,
-    "roic": 9.54,
-    "pbr": 0.44
+    "pbr": 0.49,
+    "ai_comment": "",
+    "risk_checks": {
+      "roe_15_percent": null,
+      "equity_ratio_50_percent": null,
+      "debt_to_profit_5x": null,
+      "fcf_stability": null,
+      "liquidity_risk": null,
+      "one_time_profit_risk": null
+    }
   },
   {
     "code": "5603",
@@ -260,14 +305,23 @@
     "growth_score": 16,
     "shareholder_score": 18,
     "risk_penalty": -10,
-    "net_cash_ratio": 1.31,
-    "per": 5.97,
-    "market_cap_oku": 53.8,
+    "net_cash_ratio": 1.35,
+    "per": 5.81,
+    "market_cap_oku": 52.3,
     "dividend_yield": 3.05,
     "payout_ratio": 21.86,
     "roe": 5.56,
     "roic": 8.21,
-    "pbr": 0.36
+    "pbr": 0.35,
+    "ai_comment": "",
+    "risk_checks": {
+      "roe_15_percent": null,
+      "equity_ratio_50_percent": null,
+      "debt_to_profit_5x": null,
+      "fcf_stability": null,
+      "liquidity_risk": null,
+      "one_time_profit_risk": null
+    }
   },
   {
     "code": "7427",
@@ -278,14 +332,50 @@
     "growth_score": 16,
     "shareholder_score": 11,
     "risk_penalty": -10,
-    "net_cash_ratio": 1.85,
-    "per": 7.13,
-    "market_cap_oku": 53.6,
+    "net_cash_ratio": 1.82,
+    "per": 7.26,
+    "market_cap_oku": 54.5,
     "dividend_yield": 3.4,
     "payout_ratio": 24.25,
     "roe": 8.74,
     "roic": 18.78,
-    "pbr": 0.45
+    "pbr": 0.46,
+    "ai_comment": "",
+    "risk_checks": {
+      "roe_15_percent": null,
+      "equity_ratio_50_percent": null,
+      "debt_to_profit_5x": null,
+      "fcf_stability": null,
+      "liquidity_risk": null,
+      "one_time_profit_risk": null
+    }
+  },
+  {
+    "code": "5408",
+    "name": "NAKAYAMA STEEL WORKS",
+    "name_jp": "中山製鋼所",
+    "score": 36,
+    "valuation_score": 14,
+    "growth_score": 21,
+    "shareholder_score": 6,
+    "risk_penalty": -5,
+    "net_cash_ratio": 1.54,
+    "per": 8.11,
+    "market_cap_oku": 340.5,
+    "dividend_yield": 1.64,
+    "payout_ratio": 38.76,
+    "roe": 5.33,
+    "roic": 8.61,
+    "pbr": 0.32,
+    "ai_comment": "",
+    "risk_checks": {
+      "roe_15_percent": null,
+      "equity_ratio_50_percent": null,
+      "debt_to_profit_5x": null,
+      "fcf_stability": null,
+      "liquidity_risk": null,
+      "one_time_profit_risk": null
+    }
   },
   {
     "code": "6797",
@@ -296,14 +386,23 @@
     "growth_score": 21,
     "shareholder_score": 9,
     "risk_penalty": -5,
-    "net_cash_ratio": 1.03,
-    "per": 6.53,
-    "market_cap_oku": 144.2,
+    "net_cash_ratio": 1.01,
+    "per": 6.62,
+    "market_cap_oku": 146.1,
     "dividend_yield": 3.67,
     "payout_ratio": 22.63,
     "roe": 9.85,
     "roic": 15.33,
-    "pbr": 0.64
+    "pbr": 0.65,
+    "ai_comment": "",
+    "risk_checks": {
+      "roe_15_percent": null,
+      "equity_ratio_50_percent": null,
+      "debt_to_profit_5x": null,
+      "fcf_stability": null,
+      "liquidity_risk": null,
+      "one_time_profit_risk": null
+    }
   },
   {
     "code": "6249",
@@ -314,14 +413,23 @@
     "growth_score": 21,
     "shareholder_score": 9,
     "risk_penalty": -5,
-    "net_cash_ratio": 1.34,
-    "per": 8.48,
-    "market_cap_oku": 405.0,
+    "net_cash_ratio": 1.33,
+    "per": 8.55,
+    "market_cap_oku": 408.2,
     "dividend_yield": 3.46,
     "payout_ratio": 29.38,
     "roe": 11.24,
     "roic": 18.96,
-    "pbr": 0.67
+    "pbr": 0.67,
+    "ai_comment": "",
+    "risk_checks": {
+      "roe_15_percent": null,
+      "equity_ratio_50_percent": null,
+      "debt_to_profit_5x": null,
+      "fcf_stability": null,
+      "liquidity_risk": null,
+      "one_time_profit_risk": null
+    }
   },
   {
     "code": "5956",
@@ -332,14 +440,23 @@
     "growth_score": 11,
     "shareholder_score": 14,
     "risk_penalty": -10,
-    "net_cash_ratio": 1.76,
-    "per": 7.83,
-    "market_cap_oku": 55.6,
+    "net_cash_ratio": 1.74,
+    "per": 7.91,
+    "market_cap_oku": 56.1,
     "dividend_yield": 1.59,
     "payout_ratio": 14.32,
     "roe": 3.4,
     "roic": 6.95,
-    "pbr": 0.37
+    "pbr": 0.37,
+    "ai_comment": "",
+    "risk_checks": {
+      "roe_15_percent": null,
+      "equity_ratio_50_percent": null,
+      "debt_to_profit_5x": null,
+      "fcf_stability": null,
+      "liquidity_risk": null,
+      "one_time_profit_risk": null
+    }
   },
   {
     "code": "5753",
@@ -350,32 +467,23 @@
     "growth_score": 21,
     "shareholder_score": 9,
     "risk_penalty": -10,
-    "net_cash_ratio": 1.55,
-    "per": 8.18,
-    "market_cap_oku": 59.0,
+    "net_cash_ratio": 1.58,
+    "per": 8.04,
+    "market_cap_oku": 57.9,
     "dividend_yield": 54.0,
     "payout_ratio": 4.45,
     "roe": 8.1,
     "roic": 15.66,
-    "pbr": 1.35
-  },
-  {
-    "code": "4629",
-    "name": "DAISHIN CHEMICAL",
-    "name_jp": "大伸化学",
-    "score": 34,
-    "valuation_score": 9,
-    "growth_score": 21,
-    "shareholder_score": 14,
-    "risk_penalty": -10,
-    "net_cash_ratio": 1.49,
-    "per": 9.93,
-    "market_cap_oku": 78.4,
-    "dividend_yield": 2.34,
-    "payout_ratio": 23.2,
-    "roe": 3.56,
-    "roic": 8.51,
-    "pbr": 0.46
+    "pbr": 1.33,
+    "ai_comment": "",
+    "risk_checks": {
+      "roe_15_percent": null,
+      "equity_ratio_50_percent": null,
+      "debt_to_profit_5x": null,
+      "fcf_stability": null,
+      "liquidity_risk": null,
+      "one_time_profit_risk": null
+    }
   },
   {
     "code": "7537",
@@ -386,14 +494,23 @@
     "growth_score": 16,
     "shareholder_score": 6,
     "risk_penalty": -5,
-    "net_cash_ratio": 1.65,
-    "per": 9.39,
-    "market_cap_oku": 294.2,
+    "net_cash_ratio": 1.59,
+    "per": 9.75,
+    "market_cap_oku": 305.5,
     "dividend_yield": 4.46,
     "payout_ratio": 55.28,
     "roe": 7.84,
     "roic": 26.14,
-    "pbr": 0.55
+    "pbr": 0.57,
+    "ai_comment": "",
+    "risk_checks": {
+      "roe_15_percent": null,
+      "equity_ratio_50_percent": null,
+      "debt_to_profit_5x": null,
+      "fcf_stability": null,
+      "liquidity_risk": null,
+      "one_time_profit_risk": null
+    }
   },
   {
     "code": "6393",
@@ -411,7 +528,16 @@
     "payout_ratio": 64.15,
     "roe": 5.25,
     "roic": 9.89,
-    "pbr": 0.51
+    "pbr": 0.51,
+    "ai_comment": "",
+    "risk_checks": {
+      "roe_15_percent": null,
+      "equity_ratio_50_percent": null,
+      "debt_to_profit_5x": null,
+      "fcf_stability": null,
+      "liquidity_risk": null,
+      "one_time_profit_risk": null
+    }
   },
   {
     "code": "5363",
@@ -422,14 +548,23 @@
     "growth_score": 21,
     "shareholder_score": 11,
     "risk_penalty": -10,
-    "net_cash_ratio": 1.29,
-    "per": 8.62,
-    "market_cap_oku": 256.8,
+    "net_cash_ratio": 1.27,
+    "per": 8.75,
+    "market_cap_oku": 260.8,
     "dividend_yield": 3.67,
     "payout_ratio": 32.81,
     "roe": 7.65,
     "roic": 17.98,
-    "pbr": 0.57
+    "pbr": 0.58,
+    "ai_comment": "",
+    "risk_checks": {
+      "roe_15_percent": null,
+      "equity_ratio_50_percent": null,
+      "debt_to_profit_5x": null,
+      "fcf_stability": null,
+      "liquidity_risk": null,
+      "one_time_profit_risk": null
+    }
   },
   {
     "code": "8040",
@@ -441,13 +576,22 @@
     "shareholder_score": 10,
     "risk_penalty": -10,
     "net_cash_ratio": 1.59,
-    "per": 7.11,
-    "market_cap_oku": 36.5,
+    "per": 7.09,
+    "market_cap_oku": 36.4,
     "dividend_yield": 4.27,
     "payout_ratio": 30.33,
     "roe": 4.78,
     "roic": 2.64,
-    "pbr": 0.35
+    "pbr": 0.35,
+    "ai_comment": "",
+    "risk_checks": {
+      "roe_15_percent": null,
+      "equity_ratio_50_percent": null,
+      "debt_to_profit_5x": null,
+      "fcf_stability": null,
+      "liquidity_risk": null,
+      "one_time_profit_risk": null
+    }
   },
   {
     "code": "7229",
@@ -459,13 +603,22 @@
     "shareholder_score": 5,
     "risk_penalty": -5,
     "net_cash_ratio": 1.38,
-    "per": 8.54,
-    "market_cap_oku": 445.3,
+    "per": 8.53,
+    "market_cap_oku": 444.5,
     "dividend_yield": 2.4,
     "payout_ratio": 10.23,
     "roe": 4.45,
     "roic": 10.69,
-    "pbr": 83.94
+    "pbr": 83.8,
+    "ai_comment": "",
+    "risk_checks": {
+      "roe_15_percent": null,
+      "equity_ratio_50_percent": null,
+      "debt_to_profit_5x": null,
+      "fcf_stability": null,
+      "liquidity_risk": null,
+      "one_time_profit_risk": null
+    }
   },
   {
     "code": "7218",
@@ -476,50 +629,50 @@
     "growth_score": 21,
     "shareholder_score": 9,
     "risk_penalty": -10,
-    "net_cash_ratio": 1.02,
-    "per": 6.15,
-    "market_cap_oku": 110.8,
+    "net_cash_ratio": 1.01,
+    "per": 6.18,
+    "market_cap_oku": 111.3,
     "dividend_yield": 2.81,
     "payout_ratio": 18.88,
     "roe": 7.44,
     "roic": 18.39,
-    "pbr": 0.43
+    "pbr": 0.43,
+    "ai_comment": "",
+    "risk_checks": {
+      "roe_15_percent": null,
+      "equity_ratio_50_percent": null,
+      "debt_to_profit_5x": null,
+      "fcf_stability": null,
+      "liquidity_risk": null,
+      "one_time_profit_risk": null
+    }
   },
   {
-    "code": "6292",
-    "name": "KAWATA MANUFACTURING CO LTD",
-    "name_jp": "カワタ",
-    "score": 28,
-    "valuation_score": 9,
+    "code": "5697",
+    "name": "SANYU CO LTD",
+    "name_jp": "サンユウ",
+    "score": 30,
+    "valuation_score": 5,
     "growth_score": 21,
-    "shareholder_score": 8,
-    "risk_penalty": -10,
-    "net_cash_ratio": 1.25,
-    "per": 9.98,
-    "market_cap_oku": 56.3,
-    "dividend_yield": 4.71,
-    "payout_ratio": 48.89,
-    "roe": 4.36,
-    "roic": 10.52,
-    "pbr": 0.43
-  },
-  {
-    "code": "4341",
-    "name": "SEIRYO ELECTRIC CORPORATION",
-    "name_jp": "西菱電機",
-    "score": 28,
-    "valuation_score": 10,
-    "growth_score": 15,
-    "shareholder_score": 13,
+    "shareholder_score": 14,
     "risk_penalty": -10,
     "net_cash_ratio": 1.2,
-    "per": 7.94,
-    "market_cap_oku": 32.4,
-    "dividend_yield": 2.33,
-    "payout_ratio": 18.46,
-    "roe": 1.49,
-    "roic": 6.18,
-    "pbr": 0.6
+    "per": 8.06,
+    "market_cap_oku": 45.2,
+    "dividend_yield": 3.4,
+    "payout_ratio": 23.7,
+    "roe": 4.58,
+    "roic": 9.54,
+    "pbr": 0.44,
+    "ai_comment": "",
+    "risk_checks": {
+      "roe_15_percent": null,
+      "equity_ratio_50_percent": null,
+      "debt_to_profit_5x": null,
+      "fcf_stability": null,
+      "liquidity_risk": null,
+      "one_time_profit_risk": null
+    }
   },
   {
     "code": "1420",
@@ -531,13 +684,22 @@
     "shareholder_score": 9,
     "risk_penalty": -10,
     "net_cash_ratio": 1.2,
-    "per": 7.37,
-    "market_cap_oku": 83.8,
+    "per": 7.38,
+    "market_cap_oku": 83.9,
     "dividend_yield": 3.53,
     "payout_ratio": 26.02,
     "roe": 4.39,
     "roic": 6.42,
-    "pbr": 0.54
+    "pbr": 0.54,
+    "ai_comment": "",
+    "risk_checks": {
+      "roe_15_percent": null,
+      "equity_ratio_50_percent": null,
+      "debt_to_profit_5x": null,
+      "fcf_stability": null,
+      "liquidity_risk": null,
+      "one_time_profit_risk": null
+    }
   },
   {
     "code": "7670",
@@ -549,13 +711,22 @@
     "shareholder_score": 11,
     "risk_penalty": -10,
     "net_cash_ratio": 1.17,
-    "per": 6.23,
-    "market_cap_oku": 110.3,
+    "per": 6.27,
+    "market_cap_oku": 110.9,
     "dividend_yield": 4.11,
     "payout_ratio": 25.6,
     "roe": 8.33,
     "roic": 7.55,
-    "pbr": 0.5
+    "pbr": 0.5,
+    "ai_comment": "",
+    "risk_checks": {
+      "roe_15_percent": null,
+      "equity_ratio_50_percent": null,
+      "debt_to_profit_5x": null,
+      "fcf_stability": null,
+      "liquidity_risk": null,
+      "one_time_profit_risk": null
+    }
   },
   {
     "code": "5984",
@@ -566,14 +737,23 @@
     "growth_score": 11,
     "shareholder_score": 14,
     "risk_penalty": -5,
-    "net_cash_ratio": 1.12,
-    "per": 9.16,
-    "market_cap_oku": 114.0,
+    "net_cash_ratio": 1.1,
+    "per": 9.36,
+    "market_cap_oku": 116.5,
     "dividend_yield": 2.13,
     "payout_ratio": 27.92,
     "roe": 3.22,
     "roic": 2.93,
-    "pbr": 0.38
+    "pbr": 0.39,
+    "ai_comment": "",
+    "risk_checks": {
+      "roe_15_percent": null,
+      "equity_ratio_50_percent": null,
+      "debt_to_profit_5x": null,
+      "fcf_stability": null,
+      "liquidity_risk": null,
+      "one_time_profit_risk": null
+    }
   },
   {
     "code": "3320",
@@ -584,14 +764,23 @@
     "growth_score": 11,
     "shareholder_score": 9,
     "risk_penalty": -5,
-    "net_cash_ratio": 1.08,
-    "per": 7.1,
-    "market_cap_oku": 100.6,
+    "net_cash_ratio": 1.05,
+    "per": 7.33,
+    "market_cap_oku": 103.8,
     "dividend_yield": 4.43,
     "payout_ratio": 19.95,
     "roe": 7.61,
     "roic": 7.38,
-    "pbr": 0.52
+    "pbr": 0.53,
+    "ai_comment": "",
+    "risk_checks": {
+      "roe_15_percent": null,
+      "equity_ratio_50_percent": null,
+      "debt_to_profit_5x": null,
+      "fcf_stability": null,
+      "liquidity_risk": null,
+      "one_time_profit_risk": null
+    }
   },
   {
     "code": "7219",
@@ -603,13 +792,22 @@
     "shareholder_score": 9,
     "risk_penalty": -5,
     "net_cash_ratio": 1.48,
-    "per": 9.1,
-    "market_cap_oku": 32.9,
+    "per": 9.11,
+    "market_cap_oku": 33.0,
     "dividend_yield": 2.8,
     "payout_ratio": 25.45,
     "roe": 3.39,
     "roic": 4.48,
-    "pbr": 0.31
+    "pbr": 0.31,
+    "ai_comment": "",
+    "risk_checks": {
+      "roe_15_percent": null,
+      "equity_ratio_50_percent": null,
+      "debt_to_profit_5x": null,
+      "fcf_stability": null,
+      "liquidity_risk": null,
+      "one_time_profit_risk": null
+    }
   },
   {
     "code": "5915",
@@ -620,32 +818,23 @@
     "growth_score": 6,
     "shareholder_score": 14,
     "risk_penalty": -10,
-    "net_cash_ratio": 1.26,
-    "per": 5.87,
-    "market_cap_oku": 92.3,
+    "net_cash_ratio": 1.24,
+    "per": 5.98,
+    "market_cap_oku": 94.0,
     "dividend_yield": 3.48,
     "payout_ratio": 20.41,
     "roe": 4.0,
     "roic": 0.86,
-    "pbr": 0.28
-  },
-  {
-    "code": "2449",
-    "name": "PRAP JAPAN INC",
-    "name_jp": "プラップジャパン",
-    "score": 24,
-    "valuation_score": 5,
-    "growth_score": 21,
-    "shareholder_score": 8,
-    "risk_penalty": -10,
-    "net_cash_ratio": 1.0,
-    "per": 10.0,
-    "market_cap_oku": 47.7,
-    "dividend_yield": 3.82,
-    "payout_ratio": 38.16,
-    "roe": 8.88,
-    "roic": 67.84,
-    "pbr": 0.91
+    "pbr": 0.28,
+    "ai_comment": "",
+    "risk_checks": {
+      "roe_15_percent": null,
+      "equity_ratio_50_percent": null,
+      "debt_to_profit_5x": null,
+      "fcf_stability": null,
+      "liquidity_risk": null,
+      "one_time_profit_risk": null
+    }
   },
   {
     "code": "7538",
@@ -663,7 +852,43 @@
     "payout_ratio": 6.87,
     "roe": 10.38,
     "roic": 6.91,
-    "pbr": 0.46
+    "pbr": 0.46,
+    "ai_comment": "",
+    "risk_checks": {
+      "roe_15_percent": null,
+      "equity_ratio_50_percent": null,
+      "debt_to_profit_5x": null,
+      "fcf_stability": null,
+      "liquidity_risk": null,
+      "one_time_profit_risk": null
+    }
+  },
+  {
+    "code": "4341",
+    "name": "SEIRYO ELECTRIC CORPORATION",
+    "name_jp": "西菱電機",
+    "score": 23,
+    "valuation_score": 5,
+    "growth_score": 15,
+    "shareholder_score": 13,
+    "risk_penalty": -10,
+    "net_cash_ratio": 1.15,
+    "per": 8.25,
+    "market_cap_oku": 33.7,
+    "dividend_yield": 2.33,
+    "payout_ratio": 18.46,
+    "roe": 1.49,
+    "roic": 6.18,
+    "pbr": 0.63,
+    "ai_comment": "",
+    "risk_checks": {
+      "roe_15_percent": null,
+      "equity_ratio_50_percent": null,
+      "debt_to_profit_5x": null,
+      "fcf_stability": null,
+      "liquidity_risk": null,
+      "one_time_profit_risk": null
+    }
   },
   {
     "code": "6899",
@@ -674,14 +899,23 @@
     "growth_score": 11,
     "shareholder_score": 15,
     "risk_penalty": -10,
-    "net_cash_ratio": 1.12,
-    "per": 8.53,
-    "market_cap_oku": 77.0,
+    "net_cash_ratio": 1.1,
+    "per": 8.64,
+    "market_cap_oku": 78.1,
     "dividend_yield": 4.46,
     "payout_ratio": 38.03,
     "roe": 2.55,
     "roic": 5.2,
-    "pbr": 0.31
+    "pbr": 0.31,
+    "ai_comment": "",
+    "risk_checks": {
+      "roe_15_percent": null,
+      "equity_ratio_50_percent": null,
+      "debt_to_profit_5x": null,
+      "fcf_stability": null,
+      "liquidity_risk": null,
+      "one_time_profit_risk": null
+    }
   },
   {
     "code": "6743",
@@ -692,14 +926,23 @@
     "growth_score": 11,
     "shareholder_score": 9,
     "risk_penalty": -5,
-    "net_cash_ratio": 1.18,
-    "per": 8.67,
-    "market_cap_oku": 128.2,
+    "net_cash_ratio": 1.16,
+    "per": 8.82,
+    "market_cap_oku": 130.4,
     "dividend_yield": 3.09,
     "payout_ratio": 16.08,
     "roe": 6.35,
     "roic": 5.36,
-    "pbr": 0.48
+    "pbr": 0.49,
+    "ai_comment": "",
+    "risk_checks": {
+      "roe_15_percent": null,
+      "equity_ratio_50_percent": null,
+      "debt_to_profit_5x": null,
+      "fcf_stability": null,
+      "liquidity_risk": null,
+      "one_time_profit_risk": null
+    }
   },
   {
     "code": "8076",
@@ -710,13 +953,22 @@
     "growth_score": 6,
     "shareholder_score": 11,
     "risk_penalty": -5,
-    "net_cash_ratio": 1.05,
-    "per": 9.65,
-    "market_cap_oku": 199.6,
+    "net_cash_ratio": 1.03,
+    "per": 9.79,
+    "market_cap_oku": 202.4,
     "dividend_yield": 4.99,
     "payout_ratio": 49.08,
     "roe": 6.27,
     "roic": 7.55,
-    "pbr": 0.61
+    "pbr": 0.62,
+    "ai_comment": "",
+    "risk_checks": {
+      "roe_15_percent": null,
+      "equity_ratio_50_percent": null,
+      "debt_to_profit_5x": null,
+      "fcf_stability": null,
+      "liquidity_risk": null,
+      "one_time_profit_risk": null
+    }
   }
 ]
