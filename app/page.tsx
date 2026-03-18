@@ -103,6 +103,12 @@ const BTN_UNLOCK_SUBMIT = "\u89E3\u653E\u3059\u308B";
 const BTN_CANCEL = "\u30AD\u30E3\u30F3\u30BB\u30EB";
 const SEP_LINE = "\uFF5C";
 
+// ?????????????????????????????????
+const MODAL_UNLOCK_TITLE = (lockCount: number) =>
+  `\uD83D\uDD13 1\u301C${lockCount}\u4F4D\u3092\u89E3\u653E\u3059\u308B`;
+const MODAL_UNLOCK_DESC = (lockCount: number) =>
+  `note\u306E\u6709\u6599\u8A18\u4E8B\uFF08\uFFE51,980\uFF09\u306B\u8A18\u8F09\u306E\u30D1\u30B9\u30EF\u30FC\u30C9\u3092\u5165\u529B\u3059\u308B\u3068 1\u301C${lockCount}\u4F4D\u306E\u9298\u67C4\u540D\u304C\u8868\u793A\u3055\u308C\u307E\u3059`;
+
 const PITCH_UNIQLO = "\u30E6\u30CB\u30AF\u30ED\uff08\u30D5\u30A1\u30FC\u30B9\u30C8\u30EA\u30C6\u30A4\u30EA\u30F3\u30B0\uff09";
 const PITCH_UNIQLO_GROWTH = "\u4E0A\u5834\u6642\u304B\u3089\u7D04900\u500D\u306B\u6210\u9577";
 const PITCH_NITORI = "\u30CB\u30C8\u30EA\u30DB\u30FC\u30EB\u30C7\u30A3\u30F3\u30B0\u30B9";
@@ -658,10 +664,10 @@ export default function Home() {
             onClick={(e) => e.stopPropagation()}
           >
             <h2 className="text-lg font-semibold mb-2 text-[#1a1a1a]">
-              {`?? 1?${lockCount}??????`}
+              {MODAL_UNLOCK_TITLE(lockCount)}
             </h2>
             <p className="text-sm text-[#6b6b6b] mb-4">
-              {`note???????1,980???????????????? 1?${lockCount}????????????`}
+              {MODAL_UNLOCK_DESC(lockCount)}
             </p>
             <input
               type="password"
