@@ -94,8 +94,6 @@ const LABEL_DIVIDEND = "\u914D\u5F53\u5229\u56DE\u308A";
 const LABEL_PAYOUT = "\u914D\u5F53\u6027\u5411";
 const LABEL_SCORE = "\u30B9\u30B3\u30A2";
 const FOOTER_DISCLAIMER = "\u672C\u30B5\u30FC\u30D3\u30B9\u306F\u60C5\u5831\u63D0\u4F9B\u3092\u76EE\u7684\u3068\u3057\u3066\u304A\u308A\u3001\u6295\u8CC7\u52A9\u8A00\u3067\u306F\u3042\u308A\u307E\u305B\u3093\u3002\u6295\u8CC7\u5224\u65AD\u306F\u3054\u81EA\u8EAB\u306E\u8CAC\u4EFB\u3067\u884C\u3063\u3066\u304F\u3060\u3055\u3044\u3002";
-const MODAL_TITLE = "\uD83D\uDD13 1\u301C5\u4F4D\u3092\u89E3\u653E\u3059\u308B";
-const MODAL_DESC = "note\u306E\u6709\u6599\u8A18\u4E8B\uFF08\u00A51,980\uFF09\u306B\u8A18\u8F09\u306E\u30D1\u30B9\u30EF\u30FC\u30C9\u3092\u5165\u529B\u3057\u3066\u304F\u3060\u3055\u3044";
 const BTN_NOTE = "note\u3067\u8CFC\u5165\u3059\u308B";
 const BTN_NOTE_PURCHASE = "\uD83D\uDCDD note\u3067\u8CFC\u5165\u3059\u308B\uff08\u00A51,980\uff09\u2192";
 const NOTE_URL = "https://note.com/kawachan_max";
@@ -120,7 +118,6 @@ const PITCH_DESCRIPTION = "\u500B\u4EBA\u8CC7\u7523900\u5104\u5186\u8D85\u306E\u
 const PITCH_ABOUT_TOGGLE = "\u3053\u306E\u30B5\u30FC\u30D3\u30B9\u306B\u3064\u3044\u3066";
 const BTN_DETAIL_OPEN = "\u25BC \u8A73\u7D30\u3092\u898B\u308B";
 const BTN_DETAIL_CLOSE = "\u25B2 \u9589\u3058\u308B";
-const MSG_DETAIL_LOCKED = "\uD83D\uDD12 \u8A73\u7D30\u306F\u6709\u6599\u30D7\u30E9\u30F3\u3067\u898B\u3089\u308C\u307E\u3059";
 const LABEL_SCORE_BREAKDOWN = "\u30B9\u30B3\u30A2\u5185\u8A33";
 const LABEL_CHEAP = "\u5272\u5B89\u5EA6";
 const LABEL_CHEAP_SHORT = "\u5272\u5B89";
@@ -297,7 +294,6 @@ export default function Home() {
   const [rows, setRows] = useState<Row[]>([]);
   const [isUnlocked, setIsUnlocked] = useState(false);
   const [modalOpen, setModalOpen] = useState(false);
-  const [detailLockModal, setDetailLockModal] = useState(false);
   const [password, setPassword] = useState("");
   const [passwordError, setPasswordError] = useState("");
   const [pitchOpen, setPitchOpen] = useState(false);
@@ -538,7 +534,7 @@ export default function Home() {
                       type="button"
                       onClick={() => {
                         if (!isUnlocked) {
-                          setDetailLockModal(true);
+                          setModalOpen(true);
                           return;
                         }
                         setExpandedCode(isExpanded ? null : r.code);
@@ -652,35 +648,6 @@ export default function Home() {
         </footer>
       </main>
 
-      {detailLockModal && (
-        <div
-          className="fixed inset-0 z-30 flex items-center justify-center p-4 bg-black/40"
-          onClick={() => setDetailLockModal(false)}
-        >
-          <div
-            className="w-full max-w-md rounded-2xl border border-[#e5e0d8] bg-white p-6 shadow-xl"
-            onClick={(e) => e.stopPropagation()}
-          >
-            <p className="text-center text-[#1a1a1a] font-medium">{MSG_DETAIL_LOCKED}</p>
-            <a
-              href={NOTE_URL}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="block w-full mb-3 py-2 rounded-lg bg-amber-400 text-white font-bold text-center hover:opacity-90 transition-colors"
-            >
-              {BTN_NOTE_PURCHASE}
-            </a>
-            <button
-              type="button"
-              onClick={() => setDetailLockModal(false)}
-              className="w-full py-2 rounded-lg bg-[#1a1a1a] text-white font-medium hover:opacity-90 transition-colors"
-            >
-              {BTN_CANCEL}
-            </button>
-          </div>
-        </div>
-      )}
-
       {modalOpen && (
         <div
           className="fixed inset-0 z-30 flex items-center justify-center p-4 bg-black/40"
@@ -691,9 +658,11 @@ export default function Home() {
             onClick={(e) => e.stopPropagation()}
           >
             <h2 className="text-lg font-semibold mb-2 text-[#1a1a1a]">
-              {MODAL_TITLE}
+              {`?? 1?${lockCount}??????`}
             </h2>
-            <p className="text-sm text-[#6b6b6b] mb-4">{MODAL_DESC}</p>
+            <p className="text-sm text-[#6b6b6b] mb-4">
+              {`note???????1,980???????????????? 1?${lockCount}????????????`}
+            </p>
             <input
               type="password"
               value={password}
