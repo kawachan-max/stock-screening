@@ -97,6 +97,8 @@ const FOOTER_DISCLAIMER = "\u672C\u30B5\u30FC\u30D3\u30B9\u306F\u60C5\u5831\u63D
 const MODAL_TITLE = "\uD83D\uDD13 1\u301C5\u4F4D\u3092\u89E3\u653E\u3059\u308B";
 const MODAL_DESC = "note\u306E\u6709\u6599\u8A18\u4E8B\uFF08\u00A51,980\uFF09\u306B\u8A18\u8F09\u306E\u30D1\u30B9\u30EF\u30FC\u30C9\u3092\u5165\u529B\u3057\u3066\u304F\u3060\u3055\u3044";
 const BTN_NOTE = "note\u3067\u8CFC\u5165\u3059\u308B";
+const BTN_NOTE_PURCHASE = "\uD83D\uDCDD note\u3067\u8CFC\u5165\u3059\u308B\uff08\u00A51,980\uff09\u2192";
+const NOTE_URL = "https://note.com/kawachan_max";
 const PLACEHOLDER_PASSWORD = "\u30D1\u30B9\u30EF\u30FC\u30C9";
 const ERROR_PASSWORD = "\u30D1\u30B9\u30EF\u30FC\u30C9\u304C\u9055\u3044\u307E\u3059";
 const BTN_UNLOCK_SUBMIT = "\u89E3\u653E\u3059\u308B";
@@ -660,10 +662,18 @@ export default function Home() {
             onClick={(e) => e.stopPropagation()}
           >
             <p className="text-center text-[#1a1a1a] font-medium">{MSG_DETAIL_LOCKED}</p>
+            <a
+              href={NOTE_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block w-full mb-3 py-2 rounded-lg bg-amber-400 text-white font-bold text-center hover:opacity-90 transition-colors"
+            >
+              {BTN_NOTE_PURCHASE}
+            </a>
             <button
               type="button"
               onClick={() => setDetailLockModal(false)}
-              className="mt-4 w-full py-2 rounded-lg bg-[#1a1a1a] text-white font-medium hover:opacity-90 transition-colors"
+              className="w-full py-2 rounded-lg bg-[#1a1a1a] text-white font-medium hover:opacity-90 transition-colors"
             >
               {BTN_CANCEL}
             </button>
@@ -684,12 +694,6 @@ export default function Home() {
               {MODAL_TITLE}
             </h2>
             <p className="text-sm text-[#6b6b6b] mb-4">{MODAL_DESC}</p>
-            <a
-              href="#"
-              className="inline-block mb-4 px-4 py-2 rounded-lg bg-[#1a1a1a] text-white font-medium text-sm hover:opacity-90 transition-colors"
-            >
-              {BTN_NOTE}
-            </a>
             <input
               type="password"
               value={password}
@@ -703,7 +707,15 @@ export default function Home() {
             {passwordError && (
               <p className="text-sm text-red-500 mb-2">{passwordError}</p>
             )}
-            <div className="flex gap-2 mt-4">
+            <a
+              href={NOTE_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block w-full mb-3 py-2 rounded-lg bg-amber-400 text-white font-bold text-center hover:opacity-90 transition-colors"
+            >
+              {BTN_NOTE_PURCHASE}
+            </a>
+            <div className="flex gap-2 mt-2">
               <button
                 type="button"
                 onClick={handleUnlock}
