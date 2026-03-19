@@ -452,8 +452,9 @@ export default function Home() {
             <span className="shrink-0 text-[#6b6b6b]">{pitchOpen ? "\u25B2" : "\u25BC"}</span>
           </button>
           {pitchOpen && (
-            <div className="mt-3 rounded-xl border border-[#f59e0b] bg-[#fffbeb] p-6 text-base leading-relaxed">
-              <section className="mb-6">
+            <div className="mt-2 mb-6">
+              <div className="rounded-xl border border-[#f59e0b] bg-[#fffbeb] p-6 text-base leading-relaxed">
+                <section className="mb-6">
                 <p className="text-xl font-bold text-gray-800 mb-2">{CATCH_1}</p>
                 <p className="text-3xl font-black text-amber-600 mb-1">{CATCH_2}</p>
                 <p className="text-lg text-gray-600 italic mb-4">{CATCH_3}</p>
@@ -510,9 +511,10 @@ export default function Home() {
                   <li>{DIFF_BODY3}</li>
                 </ul>
               </section>
-              <section>
-                <p className="text-gray-700 leading-relaxed">{PITCH_DESCRIPTION}</p>
-              </section>
+                <section>
+                  <p className="text-gray-700 leading-relaxed">{PITCH_DESCRIPTION}</p>
+                </section>
+              </div>
             </div>
           )}
         </div>
