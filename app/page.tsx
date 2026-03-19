@@ -6,31 +6,59 @@ import Link from "next/link";
 type TooltipContent = { title: string; desc: string; formula: string; intent: string };
 
 const TOOLTIP_PER: TooltipContent = {
-  title: "\u682A\u4FA1\u6536\u76CA\u7387",
-  desc: "\u4ECA\u306E\u682A\u4FA1\u304C1\u5E74\u5206\u306E\u5229\u76CA\u306E\u4F55\u500D\u304B\u3092\u793A\u3057\u307E\u3059",
-  formula: "\u682A\u4FA1 \u00F7 EPS\uff081\u682A\u3042\u305F\u308A\u5229\u76CA\uff09",
-  intent: "10\u500D\u4EE5\u4E0B \uFF1D \u5E02\u5834\u306B\u307E\u3060\u671F\u5F85\u3055\u308C\u3066\u3044\u306A\u3044\u5272\u5B89\u306E\u8A3C\u62E0",
+  title: "PER",
+  desc: "\u682A\u4FA1\u304C1\u5E74\u5206\u306E\u5229\u76CA\u306E\u4F55\u500D\u304B\u3092\u793A\u3059\u6307\u6807\u300210\u500D\u4EE5\u4E0B\uFF1D\u5E02\u5834\u306B\u307E\u3060\u6C17\u3065\u304B\u308C\u3066\u3044\u306A\u3044\u5272\u5B89\u306E\u8A3C\u62E0",
+  formula: "\u682A\u4FA1 \u00F7 EPS",
+  intent: "10\u500D\u4EE5\u4E0B\uFF1D\u5272\u5B89",
 };
 
 const TOOLTIP_NC: TooltipContent = {
-  title: "\u30CD\u30C3\u30C8\u30AD\u30E3\u30C3\u30B7\u30E5\u6BD4\u7387\uff08\u6E05\u539F\u9054\u90C3\u5F0F\uff09",
-  desc: "\u4F1A\u793E\u304C\u4ECA\u3059\u3050\u73FE\u91D1\u5316\u3067\u304D\u308B\u8CC7\u7523\u304C\u6642\u4FA1\u7D4C\u984D\u3092\u4E0A\u56DE\u3063\u3066\u3044\u308B\u304B\u3069\u3046\u304B",
-  formula: "\uff08\u6D41\u52D5\u8CC7\u7523 \uFF0B \u6295\u8CC7\u6709\u50F1\u8A3C\u5238\u00D770% \u2014 \u8CA0\u50B5\u5408\u8A08\uff09\u00F7 \u6642\u4FA1\u7D4C\u984D",
-  intent: "1.0\u4EE5\u4E0A \uFF1D \u5272\u5B89\u3002\u6E05\u539F\u9054\u90C3\u5F0F\u304C\u5B9A\u7FA9\u3057\u305F\u72EC\u81EA\u306E\u5272\u5B89\u6307\u6807",
+  title: "\u30CD\u30C3\u30C8\u30AD\u30E3\u30C3\u30B7\u30E5\u6BD4\u7387",
+  desc: "\u4F1A\u793E\u304C\u6301\u3064\u73FE\u91D1\u304B\u3089\u8CA0\u50B5\u3092\u5F15\u3044\u305F\u7D20\u73FE\u91D1\u304C\u6642\u4FA1\u7D4C\u984D\u306E\u4F55\u500D\u304B\u3092\u793A\u3059\u6307\u6807\u30021.0\u4EE5\u4E0A\uFF1D\u682A\u4FA1\u3088\u308A\u73FE\u91D1\u304C\u591A\u3044\u8D85\u5272\u5B89\u72B6\u614B",
+  formula: "\u7D20\u73FE\u91D1 \u00F7 \u6642\u4FA1\u7D4C\u984D",
+  intent: "1.0\u4EE5\u4E0A\uFF1D\u8D85\u5272\u5B89",
 };
 
 const TOOLTIP_MARKETCAP: TooltipContent = {
   title: "\u6642\u4FA1\u7D4C\u984D",
-  desc: "\u4F1A\u793E\u5168\u4F53\u306E\u5024\u6B67\u3002\u682A\u4FA1\u00D7\u767A\u884C\u6E08\u682A\u4F01\u696D\u6570",
+  desc: "\u4F1A\u793E\u5168\u4F53\u306E\u5024\u5B66\uff08\u682A\u4FA1\u00D7\u767A\u884C\u6E08\u682A\u4F01\u696D\u6570\uff09\u300230\u301C500\u5104\u5186\uFF1D\u6A5F\u95A2\u6295\u8CC7\u5BB6\u304C\u624B\u3092\u51FA\u3057\u306B\u304F\u3044\u5E02\u5834\u672A\u767B\u898B\u30BE\u30FC\u30F3",
   formula: "\u682A\u4FA1 \u00D7 \u767A\u884C\u6E08\u682A\u4F01\u696D\u6570",
-  intent: "30\u301C500\u5104\u5186 \uFF1D \u6A5F\u95A2\u6295\u8CC7\u5BB6\u304C\u624B\u3092\u51FA\u3057\u306B\u304F\u3044\u5E02\u5834\u672A\u767B\u898B\u30BE\u30FC\u30F3",
+  intent: "30\u301C500\u5104\u5186\uFF1D\u5C0F\u578B\u682A\u30BE\u30FC\u30F3",
 };
 
 const TOOLTIP_DIVIDEND: TooltipContent = {
   title: "\u914D\u5F53\u5229\u56DE\u308A",
-  desc: "\u682A\u4FA1\u306B\u5BFE\u3057\u3066\u5E74\u9593\u3069\u308C\u3060\u3051\u914D\u5F53\u3092\u3082\u3089\u3048\u308B\u304B\u306E\u5272\u5408",
+  desc: "\u682A\u4FA1\u306B\u5BFE\u3057\u3066\u5E74\u9593\u914D\u5F53\u91D1\u306E\u5272\u5408\u3002\u9AD8\u3044\u307B\u3069\u4FDD\u6709\u3059\u308B\u3060\u3051\u3067\u591A\u304F\u306E\u914D\u5F53\u3092\u3082\u3089\u3048\u308B",
   formula: "\u5E74\u9593\u914D\u5F53\u91D1 \u00F7 \u682A\u4FA1 \u00D7 100",
-  intent: "\u5272\u5B89\u4E14\u3064\u914D\u5F53\u5229\u56DE\u308A\u304C\u9AD8\u3044\u9298\u67C4\u306F\u682A\u4E3B\u9084\u5143\u4F59\u5730\u306E\u89B3\u70B9\u3067\u3082\u9B45\u529B\u7684",
+  intent: "\u9AD8\u3044\u307B\u3069\u9084\u5143\u4F59\u5730\u306E\u89B3\u70B9",
+};
+
+const TOOLTIP_ROE: TooltipContent = {
+  title: "ROE",
+  desc: "\u81EA\u5DF1\u8CC7\u672C\uff08\u682A\u4E3B\u306E\u304A\u91D1\uff09\u3092\u3069\u308C\u3060\u3051\u52B9\u7387\u826F\u304F\u4F7F\u3063\u3066\u5229\u76CA\u3092\u51FA\u3057\u3066\u3044\u308B\u304B\u300215%\u4EE5\u4E0B\uFF1D\u30D0\u30D5\u30A7\u30C3\u30C8\u304C\u91CD\u8996\u3059\u308B\u512A\u826F\u4F01\u696D\u306E\u57FA\u6E96",
+  formula: "\u7D14\u5229\u76CA \u00F7 \u81EA\u5DF1\u8CC7\u672C \u00D7 100",
+  intent: "15%\u4EE5\u4E0B\uFF1D\u512A\u826F\u4F01\u696D",
+};
+
+const TOOLTIP_ROIC: TooltipContent = {
+  title: "ROIC",
+  desc: "\u4F1A\u793E\u304C\u6295\u8CC7\u3057\u305F\u304A\u91D1\u5168\u4F53\u306B\u5BFE\u3057\u3066\u3069\u308C\u3060\u3051\u8CA2\u3044\u3067\u3044\u308B\u304B\u3092\u793A\u3059\u6307\u6807\u30028%\u4EE5\u4E0B\u304C\u76EE\u5B89\u3002ROE\u3088\u308A\u8CA1\u52D9\u306E\u5C2A\u307F\u304C\u5C11\u306A\u3044",
+  formula: "\u52B4\u52D9\u5229\u76CA \u00F7 \u6295\u8CC7\u8CC7\u672C",
+  intent: "8%\u4EE5\u4E0B\uFF1D\u76EE\u5B89",
+};
+
+const TOOLTIP_PBR: TooltipContent = {
+  title: "PBR",
+  desc: "\u682A\u4FA1\u304C\u7D14\u8CC7\u7523\uff08\u4F1A\u793E\u306E\u6B63\u5473\u8CBB\u7523\uff09\u306E\u4F55\u500D\u304B\u3092\u793A\u3059\u6307\u6807\u30021\u500D\u672A\u6E80\uFF1D\u89E3\u6563\u3057\u3066\u3082\u682A\u4FA1\u3088\u308A\u591A\u304F\u304A\u91D1\u304C\u623B\u3063\u3066\u304F\u308B\u8D85\u5272\u5B89\u72B6\u614B",
+  formula: "\u682A\u4FA1 \u00F7 \u7D14\u8CC7\u7523\u4FA1\u5024",
+  intent: "1\u500D\u672A\u6E80\uFF1D\u8D85\u5272\u5B89",
+};
+
+const TOOLTIP_PAYOUT: TooltipContent = {
+  title: "\u914D\u5F53\u6027\u5411",
+  desc: "\u5229\u76CA\u306E\u3046\u3061\u4F55%\u3092\u914D\u5F53\u3068\u3057\u3066\u682A\u4E3B\u306B\u9084\u5143\u3057\u3066\u3044\u308B\u304B\u300230%\u672A\u6E80\uFF1D\u307E\u3060\u9084\u5143\u4F59\u5730\u304C\u5927\u304D\u3044",
+  formula: "\u914D\u5F53\u91D1 \u00F7 \u7D14\u5229\u76CA \u00D7 100",
+  intent: "30%\u672A\u6E80\uFF1D\u9084\u5143\u4F59\u5730",
 };
 
 const TOOLTIP_CHEAP_SCORE: TooltipContent = {
@@ -131,7 +159,7 @@ const LABEL_GROWTH = "\u6210\u9577\u6027\u30FB\u4E8B\u696D\u306E\u8CEA";
 const LABEL_GROWTH_SHORT = "\u6210\u9577";
 const LABEL_SHAREHOLDER = "\u682A\u4E3B\u9084\u5143\u4F59\u5730";
 const LABEL_RISK = "\u30EA\u30B9\u30AF\u51CF\u70B9";
-const LABEL_METRICS = "\u6307\u6A5F\u30B0\u30EA\u30C3\u30C9";
+const LABEL_METRICS = "\u6307\u6A19\u30B0\u30EA\u30C3\u30C9";
 const LABEL_AI_ANALYSIS = "AI\u5206\u6790\u30B3\u30E1\u30F3\u30C8";
 const MSG_AI_PLACEHOLDER = "AI\u5206\u6790\u306F\u6B21\u56DE\u56DB\u534A\u671F\u66F4\u65B0\u6642\u306B\u8FFD\u52A0\u4E88\u5B9A\u3067\u3059";
 const LABEL_RISK_CHECK = "\u30EA\u30B9\u30AF\u30C1\u30A7\u30C3\u30AF\uff08\u30D0\u30D5\u30A7\u30C3\u30C8\u6D41\uff09";
@@ -619,23 +647,63 @@ export default function Home() {
                       </section>
                       <section>
                         <h3 className="text-xs font-semibold text-[#6b6b6b] mb-2">{LABEL_METRICS}</h3>
-                        <div className="grid grid-cols-2 gap-2 text-xs">
-                          <div className="text-[#6b6b6b]">{LABEL_NC}</div>
-                          <div className="font-medium">{r.net_cash_ratio}</div>
-                          <div className="text-[#6b6b6b]">PER</div>
-                          <div className="font-medium">{r.per}{PITCH_TIMES}</div>
-                          <div className="text-[#6b6b6b]">{LABEL_MARKETCAP}</div>
-                          <div className="font-medium">{r.market_cap_oku}{LABEL_OKU}</div>
-                          <div className="text-[#6b6b6b]">{LABEL_DIVIDEND}</div>
-                          <div className="font-medium">{r.dividend_yield != null ? `${r.dividend_yield}%` : DASH}</div>
-                          <div className="text-[#6b6b6b]">ROE</div>
-                          <div className="font-medium">{r.roe != null ? `${r.roe}%` : DASH}</div>
-                          <div className="text-[#6b6b6b]">ROIC</div>
-                          <div className="font-medium">{r.roic != null ? `${r.roic}%` : DASH}</div>
-                          <div className="text-[#6b6b6b]">PBR</div>
-                          <div className="font-medium">{r.pbr != null ? `${r.pbr}${PITCH_TIMES}` : DASH}</div>
-                          <div className="text-[#6b6b6b]">{LABEL_PAYOUT}</div>
-                          <div className="font-medium">{r.payout_ratio != null ? `${r.payout_ratio}%` : DASH}</div>
+                        <div className="grid grid-cols-2 gap-2">
+                          <div className="bg-[#f5f0e8] rounded-lg p-3">
+                            <div className="text-xs text-gray-500 flex items-center gap-0.5">
+                              {LABEL_NC}
+                              <IndicatorTooltip content={TOOLTIP_NC} />
+                            </div>
+                            <div className="text-sm font-medium text-gray-800 mt-0.5">{r.net_cash_ratio}</div>
+                          </div>
+                          <div className="bg-[#f5f0e8] rounded-lg p-3">
+                            <div className="text-xs text-gray-500 flex items-center gap-0.5">
+                              PER
+                              <IndicatorTooltip content={TOOLTIP_PER} />
+                            </div>
+                            <div className="text-sm font-medium text-gray-800 mt-0.5">{r.per}{PITCH_TIMES}</div>
+                          </div>
+                          <div className="bg-[#f5f0e8] rounded-lg p-3">
+                            <div className="text-xs text-gray-500 flex items-center gap-0.5">
+                              {LABEL_MARKETCAP}
+                              <IndicatorTooltip content={TOOLTIP_MARKETCAP} />
+                            </div>
+                            <div className="text-sm font-medium text-gray-800 mt-0.5">{r.market_cap_oku}{LABEL_OKU}</div>
+                          </div>
+                          <div className="bg-[#f5f0e8] rounded-lg p-3">
+                            <div className="text-xs text-gray-500 flex items-center gap-0.5">
+                              {LABEL_DIVIDEND}
+                              <IndicatorTooltip content={TOOLTIP_DIVIDEND} />
+                            </div>
+                            <div className="text-sm font-medium text-gray-800 mt-0.5">{r.dividend_yield != null ? `${r.dividend_yield}%` : DASH}</div>
+                          </div>
+                          <div className="bg-[#f5f0e8] rounded-lg p-3">
+                            <div className="text-xs text-gray-500 flex items-center gap-0.5">
+                              ROE
+                              <IndicatorTooltip content={TOOLTIP_ROE} />
+                            </div>
+                            <div className="text-sm font-medium text-gray-800 mt-0.5">{r.roe != null ? `${r.roe}%` : DASH}</div>
+                          </div>
+                          <div className="bg-[#f5f0e8] rounded-lg p-3">
+                            <div className="text-xs text-gray-500 flex items-center gap-0.5">
+                              ROIC
+                              <IndicatorTooltip content={TOOLTIP_ROIC} />
+                            </div>
+                            <div className="text-sm font-medium text-gray-800 mt-0.5">{r.roic != null ? `${r.roic}%` : DASH}</div>
+                          </div>
+                          <div className="bg-[#f5f0e8] rounded-lg p-3">
+                            <div className="text-xs text-gray-500 flex items-center gap-0.5">
+                              PBR
+                              <IndicatorTooltip content={TOOLTIP_PBR} />
+                            </div>
+                            <div className="text-sm font-medium text-gray-800 mt-0.5">{r.pbr != null ? `${r.pbr}${PITCH_TIMES}` : DASH}</div>
+                          </div>
+                          <div className="bg-[#f5f0e8] rounded-lg p-3">
+                            <div className="text-xs text-gray-500 flex items-center gap-0.5">
+                              {LABEL_PAYOUT}
+                              <IndicatorTooltip content={TOOLTIP_PAYOUT} />
+                            </div>
+                            <div className="text-sm font-medium text-gray-800 mt-0.5">{r.payout_ratio != null ? `${r.payout_ratio}%` : DASH}</div>
+                          </div>
                         </div>
                       </section>
                       <section>
