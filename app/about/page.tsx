@@ -1,4 +1,4 @@
-import Link from "next/link";
+﻿import Link from "next/link";
 
 const PAGE_TITLE = "\u3053\u306e\u30b9\u30af\u30ea\u30fc\u30cb\u30f3\u30b0\u30b5\u30fc\u30d3\u30b9\u306b\u3064\u3044\u3066";
 const BACK_LINK = "\u2190 \u30e9\u30f3\u30ad\u30f3\u30b0\u306b\u623b\u308b";
@@ -132,3 +132,4 @@ export default function AboutPage() {
     </div>
   );
 }
+
