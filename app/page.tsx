@@ -94,11 +94,14 @@ const STORAGE_KEY = "tenbagger_unlocked";
 const MAX_SCORE = 100;
 
 // All copy as Unicode escapes (ASCII-safe, no encoding issues)
-const TITLE = "\uD83C\uDFAF \u30C6\u30F3\u30D0\u30FC\u30AC\u30FC\u3092\u72E9\u3046\u5272\u5B89\u5C0F\u578B\u6210\u9577\u682A";
-const SUBTITLE = "\u6E05\u539F\u9054\u90C3\u5F0F \u00D7 \u30D0\u30D5\u30A7\u30C3\u30C8\u6D41 \u00D7 AI\u6C7A\u7B97\u5206\u6790\uFF5C\u6BCE\u55A7\u696D\u65E5\u66F4\u65B0";
+const TITLE = "\u30c6\u30f3\u30d0\u30fc\u30ac\u30fc\u3092\u72d9\u3046\u5272\u5b89\u5c0f\u578b\u6210\u9577\u682a";
+const SUBTITLE = "\u6e05\u539f\u9054\u90c3\u5f0f \u00d7 \u30d0\u30d5\u30a7\u30c3\u30c8\u6d41 \u00d7 AI\u6c7a\u7b97\u5206\u6790\uff5c\u6bce\u55a7\u696d\u65e5\u66f4\u65b0";
+const ABOUT_LABEL = "\u3053\u306e\u30b9\u30af\u30ea\u30fc\u30cb\u30f3\u30b0\u30b5\u30fc\u30d3\u30b9\u306b\u3064\u3044\u3066";
+const CONDITION_TITLE = "\ud83d\udccb \u30b9\u30af\u30ea\u30fc\u30cb\u30f3\u30b0\u6761\u4ef6";
+const DIFF_TITLE = "\u306a\u305c\u3053\u306e\u30b5\u30fc\u30d3\u30b9\u306f\u4ed6\u3068\u9055\u3046\u306e\u304b\uff1f";
 const BADGE_PAID = "\u2705 \u6709\u6599\u30D7\u30E9\u30F3";
 const BTN_UNLOCK = "\uD83D\uDD13 1\u301C5\u4F4D\u3092\u89E3\u653E \u00A51,980";
-const BADGE_MARKET_CAP = "\u6642\u4FA1\u7D4C\u984D 30\u301C500\u5104\u5186";
+const BADGE_MARKET_CAP = "\u6642\u4FA1\u7DCF\u984D 30\u301C500\u5104\u5186";
 const BADGE_PER = "PER 10\u500D\u4EE5\u4E0B";
 const BADGE_NC = "NC\u6BD4\u7387 1.0\u4EE5\u4E0A";
 const BADGE_PROFIT = "\u9ED2\u5B57\u4F01\u696D\u306E\u307F";
@@ -416,61 +419,59 @@ export default function Home() {
           </div>
         </div>
 
-        {/* ????????????????????? */}
-        <div className="max-w-4xl mx-auto px-4 mt-4 mb-3">
-          <div className="rounded-xl border border-[#f59e0b] bg-[#fffbeb] p-4">
-            <div className="flex flex-wrap items-center justify-center gap-4 sm:gap-6 mb-3">
-              <div className="flex items-baseline gap-1.5">
-                <span className="text-2xl font-bold text-[#b45309]">900{PITCH_TIMES}</span>
-                <span className="text-xs text-[#6b6b6b] ml-0.5">{PITCH_UNIQLO}</span>
-              </div>
-              <div className="flex items-baseline gap-1.5">
-                <span className="text-2xl font-bold text-[#b45309]">300{PITCH_TIMES}</span>
-                <span className="text-xs text-[#6b6b6b] ml-0.5">{PITCH_NITORI}</span>
-              </div>
-            </div>
-            <p className="text-center italic text-[#4a4a4a] text-xs mb-3">
-              {PITCH_IF}
-            </p>
-            <button
-              type="button"
-              onClick={() => setPitchOpen(!pitchOpen)}
-              className="w-full flex items-center justify-center gap-1 py-2 text-sm text-[#92400e] font-medium hover:bg-[#fef3c7]/50 rounded-lg transition-colors"
-            >
-              {PITCH_ABOUT_TOGGLE} {pitchOpen ? "?" : "?"}
-            </button>
-            {pitchOpen && (
-              <>
-                <hr className="border-[#f59e0b]/50 my-3" />
-                <h2 className="text-sm font-semibold text-[#1a1a1a] mb-2">
-                  {PITCH_WHY}
-                </h2>
-                <blockquote className="pl-3 py-1.5 my-2 rounded-lg bg-[#e5e0d8]/80 text-[#4a4a4a] text-xs border-l-4 border-[#f59e0b]">
+        <div className="max-w-4xl mx-auto px-4 pt-2 pb-3">
+          <button
+            type="button"
+            onClick={() => setPitchOpen(!pitchOpen)}
+            className="w-full flex items-center justify-between gap-2 py-2 text-base text-[#1a1a1a] font-medium hover:bg-[#f5f0e8] rounded-lg transition-colors text-left"
+          >
+            {ABOUT_LABEL}
+            <span className="shrink-0 text-[#6b6b6b]">{pitchOpen ? "\u25B2" : "\u25BC"}</span>
+          </button>
+          {pitchOpen && (
+            <div className="mt-3 pt-4 border-t border-[#e5e0d8] space-y-6 text-base leading-relaxed">
+              <section>
+                <div className="flex flex-wrap items-baseline justify-center gap-6 sm:gap-8 mb-2">
+                  <div className="flex flex-col items-center gap-0.5">
+                    <span className="text-2xl font-black text-amber-600">900{PITCH_TIMES}</span>
+                    <span className="text-sm text-gray-600">{PITCH_UNIQLO}</span>
+                  </div>
+                  <div className="flex flex-col items-center gap-0.5">
+                    <span className="text-2xl font-black text-amber-600">300{PITCH_TIMES}</span>
+                    <span className="text-sm text-gray-600">{PITCH_NITORI}</span>
+                  </div>
+                </div>
+                <p className="text-center text-sm italic text-gray-500">{PITCH_IF}</p>
+              </section>
+              <section>
+                <h2 className="text-base font-semibold text-[#1a1a1a] mb-3">{CONDITION_TITLE}</h2>
+                <div className="flex flex-wrap gap-2">
+                  {BADGES.map((label) => (
+                    <span
+                      key={label}
+                      className="px-2.5 py-1 rounded-md bg-[#f0ece6] text-[#4a4a4a] text-sm"
+                    >
+                      {label}
+                    </span>
+                  ))}
+                </div>
+              </section>
+              <section>
+                <h2 className="text-base font-bold text-[#1a1a1a] mb-3">{DIFF_TITLE}</h2>
+                <blockquote className="pl-4 py-2 my-3 rounded-lg bg-[#e5e0d8]/80 text-[#4a4a4a] text-base border-l-4 border-amber-500">
                   {PITCH_BUFFETT_QUOTE}
                 </blockquote>
-                <p className="text-xs text-[#4a4a4a] leading-relaxed mb-3">
-                  {PITCH_BODY1}
-                  {PITCH_BODY2}
-                  {PITCH_BODY3}
-                </p>
-                <hr className="border-[#f59e0b]/50 my-3" />
-                <p className="text-center font-bold text-xs text-[#1a1a1a] leading-relaxed">
-                  {PITCH_DESCRIPTION}
-                </p>
-              </>
-            )}
-          </div>
-        </div>
-
-        <div className="max-w-4xl mx-auto px-4 pb-3 flex flex-wrap gap-2">
-          {BADGES.map((label) => (
-            <span
-              key={label}
-              className="px-2.5 py-1 rounded-md bg-[#f0ece6] text-[#4a4a4a] text-xs"
-            >
-              {label}
-            </span>
-          ))}
+                <ul className="list-disc list-inside space-y-2 text-[#4a4a4a]">
+                  <li>{PITCH_BODY1}</li>
+                  <li>{PITCH_BODY2}</li>
+                  <li>{PITCH_BODY3}</li>
+                </ul>
+              </section>
+              <section>
+                <p className="text-[#4a4a4a] leading-relaxed">{PITCH_DESCRIPTION}</p>
+              </section>
+            </div>
+          )}
         </div>
       </header>
 
