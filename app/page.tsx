@@ -416,8 +416,9 @@ export default function Home() {
   const displayName = (r: Row) => (r.name_jp || r.name || r.code) || r.code;
 
   return (
-    <div className="min-h-screen bg-[#f9f7f4] text-[#1a1a1a]">
-      <header className="sticky top-0 z-20 border-b border-[#e5e0d8] bg-white backdrop-blur">
+    <>
+      <main className="min-h-screen bg-[#f9f7f4] text-[#1a1a1a]">
+        <header className="sticky top-0 z-40 border-b border-[#e5e0d8] bg-white backdrop-blur">
         <div className="max-w-4xl mx-auto px-4 py-4 flex flex-wrap items-center justify-between gap-3">
           <div>
             <h1 className="text-xl font-bold tracking-tight text-[#1a1a1a]">
@@ -518,10 +519,10 @@ export default function Home() {
             </div>
           )}
         </div>
-      </header>
+        </header>
 
-      <main className="max-w-4xl mx-auto px-4 py-6">
-        {!isUnlocked && rows.length > 0 && (
+        <div className="max-w-4xl mx-auto px-4 py-8">
+          {!isUnlocked && rows.length > 0 && (
           <button
             type="button"
             onClick={openModal}
@@ -805,11 +806,12 @@ export default function Home() {
           )}
         </div>
 
-        <footer className="mt-12 py-6 border-t border-[#e5e0d8]">
-          <p className="text-xs text-[#9ca3af] leading-relaxed">
-            {FOOTER_DISCLAIMER}
-          </p>
-        </footer>
+          <footer className="mt-12 py-6 border-t border-[#e5e0d8]">
+            <p className="text-xs text-[#9ca3af] leading-relaxed">
+              {FOOTER_DISCLAIMER}
+            </p>
+          </footer>
+        </div>
       </main>
 
       {modalOpen && (
@@ -871,6 +873,6 @@ export default function Home() {
           </div>
         </div>
       )}
-    </div>
+    </>
   );
 }
