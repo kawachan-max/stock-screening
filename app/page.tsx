@@ -97,6 +97,7 @@ const MAX_SCORE = 100;
 const TITLE = "\u30c6\u30f3\u30d0\u30fc\u30ac\u30fc\u3092\u72d9\u3046\u5272\u5b89\u5c0f\u578b\u6210\u9577\u682a";
 const SUBTITLE = "\u6e05\u539f\u9054\u90c3\u5f0f \u00d7 \u30d0\u30d5\u30a7\u30c3\u30c8\u6d41 \u00d7 AI\u6c7a\u7b97\u5206\u6790\uff5c\u6bce\u55a7\u696d\u65e5\u66f4\u65b0";
 const ABOUT_LABEL = "\u3053\u306e\u30b9\u30af\u30ea\u30fc\u30cb\u30f3\u30b0\u30b5\u30fc\u30d3\u30b9\u306b\u3064\u3044\u3066";
+const ABOUT_LINK = "\u3053\u306e\u30b9\u30af\u30ea\u30fc\u30cb\u30f3\u30b0\u30b5\u30fc\u30d3\u30b9\u306b\u3064\u3044\u3066 \u2192";
 const CONDITION_TITLE = "\ud83d\udccb \u30b9\u30af\u30ea\u30fc\u30cb\u30f3\u30b0\u6761\u4ef6";
 const DIFF_TITLE = "\u306a\u305c\u3053\u306e\u30b5\u30fc\u30d3\u30b9\u306f\u4ed6\u3068\u9055\u3046\u306e\u304b\uff1f";
 const CATCH_1 = "\u3082\u30571998\u5e74\u3001\u3042\u306a\u305f\u304c\u30e6\u30cb\u30af\u30ed\u682a\u3092\u6301\u3063\u3066\u3044\u305f\u3089\u3002";
@@ -148,6 +149,12 @@ const LABEL_DIVIDEND = "\u914D\u5F53\u5229\u56DE\u308A";
 const LABEL_PAYOUT = "\u914D\u5F53\u6027\u5411";
 const LABEL_SCORE = "\u30B9\u30B3\u30A2";
 const FOOTER_DISCLAIMER = "\u672C\u30B5\u30FC\u30D3\u30B9\u306F\u60C5\u5831\u63D0\u4F9B\u3092\u76EE\u7684\u3068\u3057\u3066\u304A\u308A\u3001\u6295\u8CC7\u52A9\u8A00\u3067\u306F\u3042\u308A\u307E\u305B\u3093\u3002\u6295\u8CC7\u5224\u65AD\u306F\u3054\u81EA\u8EAB\u306E\u8CAC\u4EFB\u3067\u884C\u3063\u3066\u304F\u3060\u3055\u3044\u3002";
+const DISCLAIMER_TITLE = "\u514d\u8cac\u4e8b\u9805";
+const DISCLAIMER_1 = "\u672c\u30b5\u30fc\u30d3\u30b9\u306f\u60c5\u5831\u63d0\u4f9b\u3092\u76ee\u7684\u3068\u3057\u305f\u3082\u306e\u3067\u3042\u308a\u3001\u6295\u8cc4\u52a9\u8a00\u30fb\u63a8\u5968\u3092\u884c\u3046\u3082\u306e\u3067\u306f\u3042\u308a\u307e\u305b\u3093\u3002";
+const DISCLAIMER_2 = "\u8868\u793a\u3055\u308c\u308b\u30b9\u30b3\u30a2\u30fb\u30e9\u30f3\u30ad\u30f3\u30b0\u306f\u3001\u30a2\u30eb\u30b4\u30ea\u30ba\u30e0\u304a\u3088\u3073AI\u306b\u3088\u308b\u5206\u6790\u306b\u57fa\u3065\u304f\u3082\u306e\u3067\u3059\u3002\u5c06\u6765\u306e\u6a5f\u884c\u3084\u6295\u8cc4\u6210\u679c\u3092\u4fdd\u8a3c\u3059\u308b\u3082\u306e\u3067\u306f\u3042\u308a\u307e\u305b\u3093\u3002";
+const DISCLAIMER_3 = "\u6295\u8cc4\u306b\u306f\u5e38\u306b\u30ea\u30b9\u30af\u304c\u4f34\u3044\u307e\u3059\u3002\u5143\u672c\u306e\u640d\u5931\u304c\u751f\u3058\u308b\u53ef\u80fd\u6027\u304c\u3042\u308a\u3001\u6295\u8cc4\u5224\u65ad\u306f\u5fc5\u3059\u305e\u3054\u81ea\u8eab\u306e\u8cac\u4efb\u3067\u884c\u3063\u3066\u304f\u3060\u3055\u3044\u3002";
+const DISCLAIMER_4 = "\u672c\u30b5\u30fc\u30d3\u30b9\u306e\u30b9\u30b3\u30a2\u30ea\u30f3\u30b0\u306b\u306f\u3001\u30a6\u30a9\u30fc\u30ec\u30f3\u30fb\u30d0\u30d5\u30a7\u30c3\u30c8\u6c0f\u304a\u3088\u3073\u6e05\u539f\u9054\u90ce\u6c0f\u306e\u516c\u958b\u60c3\u5831\u306b\u57fa\u3065\u304f\u6295\u8cc4\u54f2\u5b66\u30fb\u6307\u6a19\u3092\u53c2\u8003\u306b\u3057\u3066\u3044\u307e\u3059\u304c\u3001\u4e21\u6c0f\u3068\u306f\u7121\u95a2\u4fc2\u3067\u3059\u3002";
+const DISCLAIMER_5 = "\u30c7\u30fc\u30bf\u306fyfinance\u304a\u3088\u3073JPX\u516c\u5f0f\u60c3\u5831\u3092\u5229\u7528\u3057\u3066\u304a\u308a\u3001\u6700\u65b0\u60c3\u5831\u3068\u7570\u306a\u308b\u5834\u5408\u304c\u3042\u308a\u307e\u3059\u3002\u5fc5\u3059\u516c\u5f0f\u60c3\u5831\u3067\u3054\u78ba\u8a8d\u304f\u3060\u3055\u3044\u3002";
 const BTN_NOTE = "note\u3067\u8CFC\u5165\u3059\u308B";
 const BTN_NOTE_PURCHASE = "\uD83D\uDCDD note\u3067\u8CFC\u5165\u3059\u308B\uff08\u00A51,980\uff09\u2192";
 const NOTE_URL = "https://note.com/kawachan_max";
@@ -372,7 +379,6 @@ export default function Home() {
   const [modalOpen, setModalOpen] = useState(false);
   const [password, setPassword] = useState("");
   const [passwordError, setPasswordError] = useState("");
-  const [pitchOpen, setPitchOpen] = useState(false);
   const [expandedCode, setExpandedCode] = useState<string | null>(null);
 
   useEffect(() => {
@@ -444,80 +450,14 @@ export default function Home() {
         </div>
 
         <div className="max-w-4xl mx-auto px-4 pt-2 pb-3">
-          <button
-            type="button"
-            onClick={() => setPitchOpen(!pitchOpen)}
-            className="w-full flex items-center justify-between gap-2 py-2 text-base text-[#1a1a1a] font-medium hover:bg-[#f5f0e8] rounded-lg transition-colors text-left"
+          <Link
+            href="/about"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-sm text-[#6b6b6b] underline hover:text-[#4a4a4a]"
           >
-            {ABOUT_LABEL}
-            <span className="shrink-0 text-[#6b6b6b]">{pitchOpen ? "\u25B2" : "\u25BC"}</span>
-          </button>
-          {pitchOpen && (
-            <div className="mt-2 mb-6">
-              <div className="rounded-xl border border-[#f59e0b] bg-[#fffbeb] p-6 text-base leading-relaxed">
-                <section className="mb-6">
-                <p className="text-xl font-bold text-gray-800 mb-2">{CATCH_1}</p>
-                <p className="text-3xl font-black text-amber-600 mb-1">{CATCH_2}</p>
-                <p className="text-lg text-gray-600 italic mb-4">{CATCH_3}</p>
-                <p className="text-base text-gray-700 mb-1">{CATCH_4}</p>
-                <p className="text-sm text-gray-500 italic mb-6">{CATCH_5}</p>
-                <hr className="border-[#f59e0b]/50 my-4" />
-                <p className="text-lg font-bold text-gray-800 mb-2">{CATCH_6}</p>
-                <p className="text-sm text-gray-600 mb-2">{CATCH_7}</p>
-                <p className="text-sm text-gray-700 mb-6">{CATCH_8}</p>
-                <hr className="border-[#f59e0b]/50 my-4" />
-              </section>
-              <section className="bg-white rounded-lg p-4 mb-6">
-                <h2 className="text-sm font-bold text-gray-500 mb-3">{FEATURE_TITLE}</h2>
-                <p className="text-sm text-gray-700">{"\u2705 "}{FEATURE_1}</p>
-                <p className="text-sm text-gray-700">{"\u2705 "}{FEATURE_2}</p>
-                <p className="text-sm text-gray-700">{"\u2705 "}{FEATURE_3}</p>
-              </section>
-              <section className="bg-white rounded-lg p-4 mb-6">
-                <h2 className="text-sm font-bold text-gray-500 mb-3">{HOWTO_TITLE}</h2>
-                <p className="mb-1.5">
-                  <span className="font-bold">{"\uD83D\uDCCA "}{HOWTO_SCORE}</span>
-                  <span className="block text-xs text-gray-500">{HOWTO_SCORE_DESC}</span>
-                </p>
-                <p className="mb-1.5">
-                  <span className="font-bold">{"\uD83C\uDFC5 "}{HOWTO_BADGE}</span>
-                  <span className="block text-xs text-gray-500">{HOWTO_BADGE_DESC}</span>
-                </p>
-                <p>
-                  <span className="font-bold">{"\uD83D\uDD12 "}{HOWTO_LOCK}</span>
-                  <span className="block text-xs text-gray-500">{HOWTO_LOCK_DESC}</span>
-                </p>
-              </section>
-              <section className="mb-6">
-                <h2 className="text-sm font-bold text-gray-500 mb-3">{CONDITION_TITLE}</h2>
-                <div className="flex flex-wrap gap-2">
-                  {BADGES.map((label) => (
-                    <span
-                      key={label}
-                      className="px-2.5 py-1 rounded-md bg-[#f0ece6] text-[#4a4a4a] text-sm"
-                    >
-                      {label}
-                    </span>
-                  ))}
-                </div>
-              </section>
-              <section className="mb-6">
-                <h2 className="text-base font-bold text-gray-800 mb-3">{DIFF_TITLE}</h2>
-                <blockquote className="pl-4 py-2 my-3 rounded-lg bg-white/80 text-gray-700 text-base border-l-4 border-amber-500">
-                  {DIFF_QUOTE}
-                </blockquote>
-                <ul className="list-disc list-inside space-y-2 text-gray-700">
-                  <li>{DIFF_BODY1}</li>
-                  <li>{DIFF_BODY2}</li>
-                  <li>{DIFF_BODY3}</li>
-                </ul>
-              </section>
-                <section>
-                  <p className="text-gray-700 leading-relaxed">{PITCH_DESCRIPTION}</p>
-                </section>
-              </div>
-            </div>
-          )}
+            {ABOUT_LINK}
+          </Link>
         </div>
         </header>
 
@@ -805,6 +745,15 @@ export default function Home() {
             })
           )}
         </div>
+
+          <div className="bg-[#f5f0e8] rounded-xl p-6 mt-12">
+            <h2 className="text-sm font-bold text-[#4a4a4a] mb-3">{DISCLAIMER_TITLE}</h2>
+            <p className="text-xs text-[#6b6b6b] leading-relaxed mb-2">{"\u30FB "}{DISCLAIMER_1}</p>
+            <p className="text-xs text-[#6b6b6b] leading-relaxed mb-2">{"\u30FB "}{DISCLAIMER_2}</p>
+            <p className="text-xs text-[#6b6b6b] leading-relaxed mb-2">{"\u30FB "}{DISCLAIMER_3}</p>
+            <p className="text-xs text-[#6b6b6b] leading-relaxed mb-2">{"\u30FB "}{DISCLAIMER_4}</p>
+            <p className="text-xs text-[#6b6b6b] leading-relaxed mb-2">{"\u30FB "}{DISCLAIMER_5}</p>
+          </div>
 
           <footer className="mt-12 py-6 border-t border-[#e5e0d8]">
             <p className="text-xs text-[#9ca3af] leading-relaxed">
