@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import { useState, useEffect, useRef } from "react";
 import Link from "next/link";
@@ -191,6 +191,8 @@ const LABEL_CHEAP_SHORT = "\u5272\u5B89";
 const LABEL_GROWTH = "\u6210\u9577\u6027\u30FB\u4E8B\u696D\u306E\u8CEA";
 const LABEL_GROWTH_SHORT = "\u6210\u9577";
 const LABEL_SHAREHOLDER = "\u682A\u4E3B\u9084\u5143\u4F59\u5730";
+const LABEL_AI_TREND = "AI\u696D\u7E8C\u30C8\u30EC\u30F3\u30C9";
+const LABEL_AI_QUALITY = "AI\u4E8B\u696D\u306E\u8CEA";
 const LABEL_RISK = "\u30EA\u30B9\u30AF\u51CF\u70B9";
 const LABEL_METRICS = "\u6307\u6A19\u30B0\u30EA\u30C3\u30C9";
 const LABEL_AI_ANALYSIS = "AI\u5206\u6790\u30B3\u30E1\u30F3\u30C8";
@@ -231,6 +233,8 @@ type Row = {
   valuation_score?: number;
   growth_score?: number;
   shareholder_score?: number;
+  trend_score?: number;
+  quality_score?: number;
   risk_penalty?: number;
   payout_ratio?: number | null;
   roe?: number | null;
@@ -360,6 +364,13 @@ function getGradeFromShareholderScore(s: number): GradeKey {
   if (s >= 14) return "excellent";
   if (s >= 9) return "good";
   if (s >= 4) return "fair";
+  return "poor";
+}
+
+function getGradeFromAIScore(s: number): GradeKey {
+  if (s >= 8) return "excellent";
+  if (s >= 5) return "good";
+  if (s >= 2) return "fair";
   return "poor";
 }
 
@@ -607,6 +618,26 @@ export default function Home() {
                             </div>
                             <span className="text-xs tabular-nums w-10">{(r.growth_score ?? growthScore)}/46</span>
                             <span className={`px-1 py-0.5 rounded text-xs ${getBadgeClass(growthBadge)}`}>{GRADE_LABELS[growthBadge]}</span>
+                          </div>
+                          <div className="flex items-center gap-2">
+                            <span className="flex items-center gap-0.5 w-28 text-xs shrink-0">
+                              {LABEL_AI_TREND}
+                            </span>
+                            <div className="flex-1 h-1.5 rounded-full bg-[#e5e0d8] overflow-hidden">
+                              <div className="h-full rounded-full bg-purple-400" style={{ width: `${Math.min(100, ((r.trend_score ?? 0) / 10) * 100)}%` }} />
+                            </div>
+                            <span className="text-xs tabular-nums w-10">{(r.trend_score ?? 0)}/10</span>
+                            <span className={`px-1 py-0.5 rounded text-xs ${getBadgeClass(getGradeFromAIScore(r.trend_score ?? 0))}`}>{GRADE_LABELS[getGradeFromAIScore(r.trend_score ?? 0)]}</span>
+                          </div>
+                          <div className="flex items-center gap-2">
+                            <span className="flex items-center gap-0.5 w-28 text-xs shrink-0">
+                              {LABEL_AI_QUALITY}
+                            </span>
+                            <div className="flex-1 h-1.5 rounded-full bg-[#e5e0d8] overflow-hidden">
+                              <div className="h-full rounded-full bg-indigo-400" style={{ width: `${Math.min(100, ((r.quality_score ?? 0) / 10) * 100)}%` }} />
+                            </div>
+                            <span className="text-xs tabular-nums w-10">{(r.quality_score ?? 0)}/10</span>
+                            <span className={`px-1 py-0.5 rounded text-xs ${getBadgeClass(getGradeFromAIScore(r.quality_score ?? 0))}`}>{GRADE_LABELS[getGradeFromAIScore(r.quality_score ?? 0)]}</span>
                           </div>
                           <div className="flex items-center gap-2">
                             <span className="flex items-center gap-0.5 w-28 text-xs shrink-0">
