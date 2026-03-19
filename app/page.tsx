@@ -646,37 +646,38 @@ export default function Home() {
                       </section>
                       <section>
                         <h3 className="text-xs font-semibold text-[#6b6b6b] mb-2">{LABEL_RISK_CHECK}</h3>
-                        <div className="space-y-2 text-xs">
+                        <div className="grid grid-cols-2 gap-2 text-xs">
                           {RISK_CHECK_ITEMS.map(({ key, label, inverted }) => {
                             const val = r.risk_checks?.[key];
-                            let dotColor = "";
-                            let statusText = "\u2014";
+                            let badge: "\u25CE" | "\u25CB" | "\u25B3" | "\u00D7" = "\u25B3";
+                            let badgeClass = "bg-amber-100 text-amber-700";
+                            let suffix = "";
                             if (val === null || val === undefined) {
-                              statusText = "\u2014";
+                              badge = "\u25B3";
+                              badgeClass = "bg-amber-100 text-amber-700";
                             } else if (inverted) {
                               if (val === false) {
-                                dotColor = "bg-emerald-500";
-                                statusText = "\u554F\u984C\u306A\u3057";
+                                badge = "\u25CE";
+                                badgeClass = "bg-emerald-100 text-emerald-700";
+                                suffix = " \u554F\u984C\u306A\u3057";
                               } else {
-                                dotColor = "bg-red-500";
-                                statusText = "\u30EA\u30B9\u30AF\u3042\u308A";
+                                badge = "\u00D7";
+                                badgeClass = "bg-red-100 text-red-700";
+                                suffix = " \u30EA\u30B9\u30AF\u3042\u308A";
                               }
                             } else {
                               if (val === true) {
-                                dotColor = "bg-emerald-500";
-                                statusText = "\u8A72\u5F53";
+                                badge = "\u25CE";
+                                badgeClass = "bg-emerald-100 text-emerald-700";
                               } else {
-                                dotColor = "bg-red-500";
-                                statusText = "\u975E\u8A72\u5F53";
+                                badge = "\u00D7";
+                                badgeClass = "bg-red-100 text-red-700";
                               }
                             }
                             return (
-                              <div key={key} className="flex items-center justify-between gap-2">
+                              <div key={key} className="flex items-center gap-1.5 flex-wrap">
                                 <span className="text-[#6b6b6b]">{label}</span>
-                                <span className="flex items-center gap-1.5">
-                                  {dotColor ? <span className={`w-2 h-2 rounded-full shrink-0 ${dotColor}`} aria-hidden /> : null}
-                                  <span className={dotColor === "bg-emerald-500" ? "text-emerald-700" : dotColor === "bg-red-500" ? "text-red-700" : "text-[#9ca3af]"}>{statusText}</span>
-                                </span>
+                                <span className={`inline-flex items-center px-1.5 py-0.5 rounded font-medium shrink-0 ${badgeClass}`}>{badge}{suffix}</span>
                               </div>
                             );
                           })}
