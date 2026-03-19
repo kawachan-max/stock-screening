@@ -31,7 +31,9 @@ jobs:
         run: python screening.py
 
       - name: Copy result to public
-        run: cp screening_result.json screening-ui/public/screening_result.json
+        run: |
+          mkdir -p screening-ui/public
+          cp screening_result.json screening-ui/public/screening_result.json
 
       - name: Commit and push
         run: |
