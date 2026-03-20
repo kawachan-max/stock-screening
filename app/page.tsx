@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import { useState, useEffect, useRef } from "react";
 import Link from "next/link";
@@ -98,6 +98,13 @@ const TITLE = "\u30c6\u30f3\u30d0\u30fc\u30ac\u30fc\u3092\u72d9\u3046\u5272\u5b8
 const SUBTITLE = "\u6e05\u539f\u9054\u90ce\u5f0f \u00d7 \u30d0\u30d5\u30a7\u30c3\u30c8\u6d41 \u00d7 AI\u6c7a\u7b97\u5206\u6790 \uff5c \u6bce\u55b6\u696d\u65e5\u66f4\u65b0";
 const ABOUT_LABEL = "\u3053\u306e\u30b9\u30af\u30ea\u30fc\u30cb\u30f3\u30b0\u30b5\u30fc\u30d3\u30b9\u306b\u3064\u3044\u3066";
 const ABOUT_LINK = "\u3053\u306e\u30b9\u30af\u30ea\u30fc\u30cb\u30f3\u30b0\u30b5\u30fc\u30d3\u30b9\u306b\u3064\u3044\u3066 \u2192";
+const UNLOCK_BENEFITS_TITLE = "\u30ed\u30c3\u30af\u89e3\u9664\u3067\u958b\u653e\u3055\u308c\u308b\u3082\u306e";
+const BENEFIT_1 = "\u4e0a\u4f4d1\uff5e10\u4f4d\u306e\u9298\u67c4\u540d\u30fb\u8a3c\u5238\u30b3\u30fc\u30c9";
+const BENEFIT_2 = "\u30b9\u30b3\u30a2\u5185\u8a33\u5168\u9805\u76ee\uff08\u5272\u5b89\u5ea6\u30fb\u6210\u9577\u6027\u30fb\u696d\u7e3e\u30fb\u7af6\u4e89\u512a\u4f4d\u6027\u30fb\u682a\u4e3b\u9084\u5143\u30fb\u30ea\u30b9\u30af\uff09";
+const BENEFIT_3 = "AI\u306b\u3088\u308b\u6c7a\u7b97\u5206\u6790\u30b3\u30e1\u30f3\u30c8";
+const BENEFIT_4 = "\u30d0\u30d5\u30a7\u30c3\u30c8\u6d41\u30ea\u30b9\u30af\u30c1\u30a7\u30c3\u30af\uff886\u9805\u76ee\uff09";
+const BENEFIT_5 = "\u8a73\u7d30\u6307\u6a19\u30b0\u30ea\u30c3\u30c9\uff08PER\u30fbROE\u30fbROIC\u30fbPBR\u7b49\uff09";
+const UPDATE_INFO = "\u6bce\u55b6\u696d\u65e5\u81ea\u52d5\u66f4\u65b0 \u30fb \u56db\u5b63\u5831\u3054\u3068\u306bAI\u6c7a\u7b97\u5206\u6790\u66f4\u65b0 \u30fb \u30a6\u30a9\u30c3\u30c1\u30ea\u30b9\u30c8\u30fb\u30a2\u30e9\u30fc\u30c8\u6a5f\u80fd\u8ffd\u52a0\u4e88\u5b9a";
 const CONDITION_TITLE = "\ud83d\udccb \u30b9\u30af\u30ea\u30fc\u30cb\u30f3\u30b0\u6761\u4ef6";
 const DIFF_TITLE = "\u306a\u305c\u3053\u306e\u30b5\u30fc\u30d3\u30b9\u306f\u4ed6\u3068\u9055\u3046\u306e\u304b\uff1f";
 const CATCH_1 = "\u3082\u30571998\u5e74\u3001\u3042\u306a\u305f\u304c\u30e6\u30cb\u30af\u30ed\u682a\u3092\u6301\u3063\u3066\u3044\u305f\u3089\u3002";
@@ -423,6 +430,18 @@ function getBadgeClass(grade: GradeKey): string {
   return classes[grade];
 }
 
+function getStockTag(r: Row): string {
+  const tags: string[] = [];
+  if (r.net_cash_ratio >= 1.5) tags.push("NC\u9ad8");
+  else if (r.net_cash_ratio >= 1.0) tags.push("NC\u5272\u5b89");
+  if (r.per <= 5) tags.push("\u8d85\u4f4e\u5080");
+  else if (r.per <= 8) tags.push("\u4f4e\u5048");
+  if ((r.roe ?? 0) >= 15) tags.push("ROE\u512a\u79c0");
+  if ((r.trend_score ?? 0) >= 8) tags.push("\u696d\u7e3e\u5897\u52a0");
+  if ((r.shareholder_score ?? 0) >= 12) tags.push("\u9084\u5143\u4f59\u5730\u5927");
+  return tags.slice(0, 3).join(" \u30fb ");
+}
+
 export default function Home() {
   const [rows, setRows] = useState<Row[]>([]);
   const [isUnlocked, setIsUnlocked] = useState(false);
@@ -481,6 +500,7 @@ export default function Home() {
               {TITLE}
             </h1>
             <p className="text-xs text-[#6b6b6b] mt-0.5">{SUBTITLE}</p>
+            <p className="text-xs text-[#6b6b6b] mt-1">{UPDATE_INFO}</p>
           </div>
           <div>
             {isUnlocked ? (
@@ -493,13 +513,21 @@ export default function Home() {
                 onClick={openModal}
                 className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-[#1a1a1a] text-white font-medium text-sm hover:opacity-90 transition-colors"
               >
-                {`\uD83D\uDD13 1\u301C${lockCount}\u4F4D\u3092\u89E3\u653E \u00A51,980`}
+                {BTN_UNLOCK}
               </button>
             )}
           </div>
         </div>
 
         <div className="max-w-4xl mx-auto px-4 pt-2 pb-3">
+          <div className="bg-[#fffbeb] border border-[#f59e0b] rounded-xl p-4 mb-4">
+            <h2 className="text-xs font-bold text-[#92400e] mb-2">{UNLOCK_BENEFITS_TITLE}</h2>
+            <p className="text-xs text-[#78350f]">{"\u2705 "}{BENEFIT_1}</p>
+            <p className="text-xs text-[#78350f]">{"\u2705 "}{BENEFIT_2}</p>
+            <p className="text-xs text-[#78350f]">{"\u2705 "}{BENEFIT_3}</p>
+            <p className="text-xs text-[#78350f]">{"\u2705 "}{BENEFIT_4}</p>
+            <p className="text-xs text-[#78350f]">{"\u2705 "}{BENEFIT_5}</p>
+          </div>
           <Link
             href="/about"
             target="_blank"
@@ -552,19 +580,29 @@ export default function Home() {
                         <div className="font-medium truncate text-[#1a1a1a]">
                           {i < lockCount && !isUnlocked ? MASK_NAME : displayName(r)}
                         </div>
-                        {!(i < lockCount && !isUnlocked) && (
-                          <div className="flex items-center gap-2 mt-0.5 text-sm text-[#6b6b6b]">
-                            <Link
-                              href={`https://finance.yahoo.co.jp/quote/${r.code}.T`}
-                              target="_blank"
-                              rel="noopener noreferrer"
-                              className="font-mono text-[#2563eb] hover:underline"
-                            >
-                              {r.code}
-                            </Link>
-                            <span>{LABEL_MARKET}</span>
-                          </div>
-                        )}
+                        {!(i < lockCount && !isUnlocked) && (() => {
+                          const tagLine = getStockTag(r);
+                          return (
+                            <>
+                              {tagLine ? (
+                                <span className="text-xs text-[#92400e] bg-[#fef3c7] px-2 py-0.5 rounded-full inline-block mt-1">
+                                  {tagLine}
+                                </span>
+                              ) : null}
+                              <div className="flex items-center gap-2 mt-0.5 text-sm text-[#6b6b6b]">
+                                <Link
+                                  href={`https://finance.yahoo.co.jp/quote/${r.code}.T`}
+                                  target="_blank"
+                                  rel="noopener noreferrer"
+                                  className="font-mono text-[#2563eb] hover:underline"
+                                >
+                                  {r.code}
+                                </Link>
+                                <span>{LABEL_MARKET}</span>
+                              </div>
+                            </>
+                          );
+                        })()}
                       </div>
                     </div>
                     <div className="flex flex-wrap items-center gap-3 text-sm shrink-0">
