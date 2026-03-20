@@ -104,7 +104,6 @@ const BENEFIT_2 = "\u30b9\u30b3\u30a2\u5185\u8a33\u5168\u9805\u76ee\uff08\u5272\
 const BENEFIT_3 = "AI\u306b\u3088\u308b\u6c7a\u7b97\u5206\u6790\u30b3\u30e1\u30f3\u30c8";
 const BENEFIT_4 = "\u30d0\u30d5\u30a7\u30c3\u30c8\u6d41\u30ea\u30b9\u30af\u30c1\u30a7\u30c3\u30af\uff886\u9805\u76ee\uff09";
 const BENEFIT_5 = "\u8a73\u7d30\u6307\u6a19\u30b0\u30ea\u30c3\u30c9\uff08PER\u30fbROE\u30fbROIC\u30fbPBR\u7b49\uff09";
-const UPDATE_INFO = "\u6bce\u55b6\u696d\u65e5\u81ea\u52d5\u66f4\u65b0 \u30fb \u56db\u5b63\u5831\u3054\u3068\u306bAI\u6c7a\u7b97\u5206\u6790\u66f4\u65b0 \u30fb \u30a6\u30a9\u30c3\u30c1\u30ea\u30b9\u30c8\u30fb\u30a2\u30e9\u30fc\u30c8\u6a5f\u80fd\u8ffd\u52a0\u4e88\u5b9a";
 const CONDITION_TITLE = "\ud83d\udccb \u30b9\u30af\u30ea\u30fc\u30cb\u30f3\u30b0\u6761\u4ef6";
 const DIFF_TITLE = "\u306a\u305c\u3053\u306e\u30b5\u30fc\u30d3\u30b9\u306f\u4ed6\u3068\u9055\u3046\u306e\u304b\uff1f";
 const CATCH_1 = "\u3082\u30571998\u5e74\u3001\u3042\u306a\u305f\u304c\u30e6\u30cb\u30af\u30ed\u682a\u3092\u6301\u3063\u3066\u3044\u305f\u3089\u3002";
@@ -492,15 +491,14 @@ export default function Home() {
     <>
       <main className="min-h-screen bg-[#f9f7f4] text-[#1a1a1a]">
         <header className="sticky top-0 z-40 border-b border-[#e5e0d8] bg-white backdrop-blur">
-        <div className="max-w-4xl mx-auto px-4 py-4 flex flex-wrap items-center justify-between gap-3">
-          <div>
+        <div className="max-w-4xl mx-auto px-4 py-4 flex items-center justify-between gap-3">
+          <div className="min-w-0">
             <h1 className="text-xl font-bold tracking-tight text-[#1a1a1a]">
               {TITLE}
             </h1>
             <p className="text-xs text-[#6b6b6b] mt-0.5">{SUBTITLE}</p>
-            <p className="text-xs text-[#6b6b6b] mt-1">{UPDATE_INFO}</p>
           </div>
-          <div>
+          <div className="shrink-0">
             {isUnlocked ? (
               <span className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-[#f0ece6] text-[#16a34a] text-sm">
                 {BADGE_PAID}
