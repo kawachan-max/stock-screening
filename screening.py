@@ -11,6 +11,7 @@ import pandas as pd
 import json
 import time
 import math
+from datetime import datetime, timezone, timedelta
 import logging
 from io import BytesIO
 import requests
@@ -924,8 +925,11 @@ def step5_save(results):
             "trend_score": r.get("trend_score", 0),
             "quality_score": r.get("quality_score", 0),
         })
+    JST = timezone(timedelta(hours=9))
+    updated_at = datetime.now(JST).strftime("%Y-%m-%dT%H:%M:%S+09:00")
+    result = {"updated_at": updated_at, "stocks": out}
     with open("screening_result.json", "w", encoding="utf-8") as f:
-        json.dump(out, f, ensure_ascii=False, indent=2)
+        json.dump(result, f, ensure_ascii=False, indent=2)
     print("Step5: screening_result.json ???????")
     return out
 

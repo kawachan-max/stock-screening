@@ -140,7 +140,6 @@ const UPDATE_COUNT = "\u4EF6";
 const UPDATE_SCAN = "\u30B9\u30AD\u30E3\u30F3\u6570";
 const UPDATE_MARKETS = "\u9298\u67C4";
 const UPDATE_DATE = "\u66F4\u65B0\u65E5";
-const UPDATE_EM_DASH = "\u2014";
 const MSG_NO_JSON = "screening_result.json \u3092 public \u306B\u914D\u7F6E\u3057\u3066\u304F\u3060\u3055\u3044\u3002";
 const MSG_LOADING = "\u30C7\u30FC\u30BF\u3092\u8AAD\u307F\u8FBC\u307F\u4E2D...";
 const RANK_SUFFIX = "\u4F4D";
@@ -432,6 +431,12 @@ function getBadgeClass(grade: GradeKey): string {
   return classes[grade];
 }
 
+function formatDate(iso: string): string {
+  if (!iso) return "\u2014";
+  const d = new Date(iso);
+  return `${d.getFullYear()}\u5e74${d.getMonth() + 1}\u6708${d.getDate()}\u65e5`;
+}
+
 function getStockTag(r: Row): string {
   const tags: string[] = [];
   if (r.net_cash_ratio >= 1.5) tags.push("\u9ad8NC");
@@ -447,6 +452,7 @@ function getStockTag(r: Row): string {
 export default function Home() {
   const [loading, setLoading] = useState(true);
   const [rows, setRows] = useState<Row[]>([]);
+  const [updatedAt, setUpdatedAt] = useState("");
   const [isUnlocked, setIsUnlocked] = useState(false);
   const [modalOpen, setModalOpen] = useState(false);
   const [password, setPassword] = useState("");
@@ -455,12 +461,31 @@ export default function Home() {
 
   useEffect(() => {
     fetch("/screening_result.json")
-      .then((res) => (res.ok ? res.json() : Promise.resolve([])))
-      .then((data) => {
-        setRows(Array.isArray(data) ? data : []);
+      .then((res) => {
+        if (!res.ok) {
+          setRows([]);
+          setUpdatedAt("");
+          return Promise.resolve(null);
+        }
+        return res.json();
+      })
+      .then((d: unknown) => {
+        if (d === null) return;
+        if (Array.isArray(d)) {
+          setRows(d);
+          setUpdatedAt("");
+        } else if (d !== null && typeof d === "object") {
+          const o = d as { stocks?: unknown; updated_at?: unknown };
+          setRows(Array.isArray(o.stocks) ? o.stocks : []);
+          setUpdatedAt(typeof o.updated_at === "string" ? o.updated_at : "");
+        } else {
+          setRows([]);
+          setUpdatedAt("");
+        }
       })
       .catch(() => {
         setRows([]);
+        setUpdatedAt("");
       })
       .finally(() => {
         setLoading(false);
@@ -554,7 +579,7 @@ export default function Home() {
         ) : (
           <>
         <p className="mb-4 text-[11px] text-[#6b6b6b] sm:text-xs">
-          {UPDATE_PASSED} {rows.length} {UPDATE_COUNT} {SEP_LINE} {UPDATE_SCAN} 3,327 {UPDATE_MARKETS} {SEP_LINE} {UPDATE_DATE}: {UPDATE_EM_DASH}
+          {UPDATE_PASSED} {rows.length} {UPDATE_COUNT} {SEP_LINE} {UPDATE_SCAN} 3,327 {UPDATE_MARKETS} {SEP_LINE} {UPDATE_DATE}: {formatDate(updatedAt)}
         </p>
 
         <div className="space-y-3">
