@@ -98,7 +98,7 @@ const TITLE = "\u30c6\u30f3\u30d0\u30fc\u30ac\u30fc\u3092\u72d9\u3046\u5272\u5b8
 const SUBTITLE = "\u6e05\u539f\u9054\u90ce\u5f0f \u00d7 \u30d0\u30d5\u30a7\u30c3\u30c8\u6d41 \u00d7 AI\u6c7a\u7b97\u5206\u6790 \uff5c \u6bce\u55b6\u696d\u65e5\u66f4\u65b0";
 const ABOUT_LABEL = "\u3053\u306e\u30b9\u30af\u30ea\u30fc\u30cb\u30f3\u30b0\u30b5\u30fc\u30d3\u30b9\u306b\u3064\u3044\u3066";
 const ABOUT_LINK = "\u3053\u306e\u30b9\u30af\u30ea\u30fc\u30cb\u30f3\u30b0\u30b5\u30fc\u30d3\u30b9\u306b\u3064\u3044\u3066 \u2192";
-const UNLOCK_BENEFITS_TITLE = "\u30ed\u30c3\u30af\u89e3\u9664\u3067\u958b\u653e\u3055\u308c\u308b\u3082\u306e";
+const MODAL_BENEFITS_TITLE = "\u89e3\u653e\u3067\u304d\u308b\u3053\u3068";
 const BENEFIT_1 = "\u4e0a\u4f4d1\uff5e10\u4f4d\u306e\u9298\u67c4\u540d\u30fb\u8a3c\u5238\u30b3\u30fc\u30c9";
 const BENEFIT_2 = "\u30b9\u30b3\u30a2\u5185\u8a33\u5168\u9805\u76ee\uff08\u5272\u5b89\u5ea6\u30fb\u6210\u9577\u6027\u30fb\u696d\u7e3e\u30fb\u7af6\u4e89\u512a\u4f4d\u6027\u30fb\u682a\u4e3b\u9084\u5143\u30fb\u30ea\u30b9\u30af\uff09";
 const BENEFIT_3 = "AI\u306b\u3088\u308b\u6c7a\u7b97\u5206\u6790\u30b3\u30e1\u30f3\u30c8";
@@ -136,7 +136,6 @@ const BADGE_PER = "PER 10\u500D\u4EE5\u4E0B";
 const BADGE_NC = "NC\u6BD4\u7387 1.0\u4EE5\u4E0A";
 const BADGE_PROFIT = "\u9ED2\u5B57\u4F01\u696D\u306E\u307F";
 const BADGE_EXCLUDE = "\u91D1\u878D\u30FB\u4E0D\u52D5\u7523\u9664\u5916";
-const BANNER_LOCK = "\uD83D\uDD12 1\u301C5\u4F4D\u306E\u9298\u67C4\u540D\u306F\u6709\u6599\u30D7\u30E9\u30F3\u3067\u89E3\u653E\u3067\u304D\u307E\u3059";
 const UPDATE_PASSED = "\u901A\u904B\u9298\u67C4";
 const UPDATE_COUNT = "\u4EF6";
 const UPDATE_SCAN = "\u30B9\u30AD\u30E3\u30F3\u6570";
@@ -519,14 +518,6 @@ export default function Home() {
         </div>
 
         <div className="max-w-4xl mx-auto px-4 pt-2 pb-3">
-          <div className="bg-[#fffbeb] border border-[#f59e0b] rounded-xl p-4 mb-4">
-            <h2 className="text-xs font-bold text-[#92400e] mb-2">{UNLOCK_BENEFITS_TITLE}</h2>
-            <p className="text-xs text-[#78350f]">{"\u2705 "}{BENEFIT_1}</p>
-            <p className="text-xs text-[#78350f]">{"\u2705 "}{BENEFIT_2}</p>
-            <p className="text-xs text-[#78350f]">{"\u2705 "}{BENEFIT_3}</p>
-            <p className="text-xs text-[#78350f]">{"\u2705 "}{BENEFIT_4}</p>
-            <p className="text-xs text-[#78350f]">{"\u2705 "}{BENEFIT_5}</p>
-          </div>
           <Link
             href="/about"
             target="_blank"
@@ -539,16 +530,6 @@ export default function Home() {
         </header>
 
         <div className="max-w-4xl mx-auto px-4 py-8">
-          {!isUnlocked && rows.length > 0 && (
-          <button
-            type="button"
-            onClick={openModal}
-            className="w-full mb-4 py-3 px-4 rounded-xl bg-[#fef9ec] border border-[#f59e0b] text-[#92400e] text-sm font-medium hover:bg-[#fef3c7] transition-colors text-left"
-          >
-            {`\uD83D\uDD12 1\u301C${lockCount}\u4F4D\u306E\u9298\u67C4\u540D\u306F\u6709\u6599\u30D7\u30E9\u30F3\u3067\u89E3\u653E\u3067\u304D\u307E\u3059`}
-          </button>
-        )}
-
         {rows.length > 0 && (
           <p className="text-xs text-[#6b6b6b] mb-4">
             {UPDATE_PASSED} {rows.length} {UPDATE_COUNT} {SEP_LINE} {UPDATE_SCAN} 3,327 {UPDATE_MARKETS} {SEP_LINE} {UPDATE_DATE}: {UPDATE_EM_DASH}
@@ -901,6 +882,14 @@ export default function Home() {
             {passwordError && (
               <p className="text-sm text-red-500 mb-2">{passwordError}</p>
             )}
+            <div className="text-xs text-[#78350f] bg-[#fef3c7] rounded-lg p-3 mb-3">
+              <p className="font-bold text-[#92400e] mb-2">{MODAL_BENEFITS_TITLE}</p>
+              <p>{"\u2705 "}{BENEFIT_1}</p>
+              <p>{"\u2705 "}{BENEFIT_2}</p>
+              <p>{"\u2705 "}{BENEFIT_3}</p>
+              <p>{"\u2705 "}{BENEFIT_4}</p>
+              <p>{"\u2705 "}{BENEFIT_5}</p>
+            </div>
             <a
               href={NOTE_URL}
               target="_blank"
