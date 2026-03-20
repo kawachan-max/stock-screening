@@ -142,6 +142,7 @@ const UPDATE_MARKETS = "\u9298\u67C4";
 const UPDATE_DATE = "\u66F4\u65B0\u65E5";
 const UPDATE_EM_DASH = "\u2014";
 const MSG_NO_JSON = "screening_result.json \u3092 public \u306B\u914D\u7F6E\u3057\u3066\u304F\u3060\u3055\u3044\u3002";
+const MSG_LOADING = "\u30C7\u30FC\u30BF\u3092\u8AAD\u307F\u8FBC\u307F\u4E2D...";
 const RANK_SUFFIX = "\u4F4D";
 const MASK_NAME = "\u2588\u2588\u2588\u2588\u2588\u2588";
 const LABEL_MARKET = "\u30FB\u2014";
@@ -444,6 +445,7 @@ function getStockTag(r: Row): string {
 }
 
 export default function Home() {
+  const [loading, setLoading] = useState(true);
   const [rows, setRows] = useState<Row[]>([]);
   const [isUnlocked, setIsUnlocked] = useState(false);
   const [modalOpen, setModalOpen] = useState(false);
@@ -453,9 +455,16 @@ export default function Home() {
 
   useEffect(() => {
     fetch("/screening_result.json")
-      .then((res) => (res.ok ? res.json() : []))
-      .then((data) => setRows(Array.isArray(data) ? data : []))
-      .catch(() => setRows([]));
+      .then((res) => (res.ok ? res.json() : Promise.resolve([])))
+      .then((data) => {
+        setRows(Array.isArray(data) ? data : []);
+      })
+      .catch(() => {
+        setRows([]);
+      })
+      .finally(() => {
+        setLoading(false);
+      });
   }, []);
 
   useEffect(() => {
@@ -532,17 +541,24 @@ export default function Home() {
         </header>
 
         <div className="max-w-4xl mx-auto px-3 py-6 sm:px-4 sm:py-8">
-        {rows.length > 0 && (
-          <p className="mb-4 text-[11px] text-[#6b6b6b] sm:text-xs">
-            {UPDATE_PASSED} {rows.length} {UPDATE_COUNT} {SEP_LINE} {UPDATE_SCAN} 3,327 {UPDATE_MARKETS} {SEP_LINE} {UPDATE_DATE}: {UPDATE_EM_DASH}
-          </p>
-        )}
+        {loading ? (
+          <div className="flex items-center justify-center py-20">
+            <div
+              className="h-8 w-8 animate-spin rounded-full border-b-2 border-[#d97706]"
+              aria-hidden
+            />
+            <span className="ml-3 text-sm text-[#d97706] sm:text-base">{MSG_LOADING}</span>
+          </div>
+        ) : rows.length === 0 ? (
+          <p className="py-8 text-sm text-[#6b6b6b]">{MSG_NO_JSON}</p>
+        ) : (
+          <>
+        <p className="mb-4 text-[11px] text-[#6b6b6b] sm:text-xs">
+          {UPDATE_PASSED} {rows.length} {UPDATE_COUNT} {SEP_LINE} {UPDATE_SCAN} 3,327 {UPDATE_MARKETS} {SEP_LINE} {UPDATE_DATE}: {UPDATE_EM_DASH}
+        </p>
 
         <div className="space-y-3">
-          {rows.length === 0 ? (
-            <p className="text-[#6b6b6b] py-8 text-sm">{MSG_NO_JSON}</p>
-          ) : (
-            rows.map((r, i) => {
+          {rows.map((r, i) => {
               const valuationScore = r.valuation_score ?? getCheapScore(r.net_cash_ratio, r.per);
               const cheapBadge = getCheapBadge(valuationScore);
               const growthScore = r.growth_score ?? (r.score - valuationScore);
@@ -848,11 +864,10 @@ export default function Home() {
                   )}
                 </div>
               );
-            })
-          )}
+            })}
         </div>
 
-          <div className="bg-[#f5f0e8] rounded-xl p-6 mt-12">
+          <div className="mt-12 rounded-xl bg-[#f5f0e8] p-6">
             <h2 className="text-sm font-bold text-[#4a4a4a] mb-3">{DISCLAIMER_TITLE}</h2>
             <p className="text-xs text-[#6b6b6b] leading-relaxed mb-2">{"\u30FB "}{DISCLAIMER_1}</p>
             <p className="text-xs text-[#6b6b6b] leading-relaxed mb-2">{"\u30FB "}{DISCLAIMER_2}</p>
@@ -862,11 +877,13 @@ export default function Home() {
             <p className="text-xs text-[#6b6b6b] leading-relaxed mb-2 font-semibold">{DISCLAIMER_6}</p>
           </div>
 
-          <footer className="mt-12 py-6 border-t border-[#e5e0d8]">
-            <p className="text-xs text-[#9ca3af] leading-relaxed">
+          <footer className="mt-12 border-t border-[#e5e0d8] py-6">
+            <p className="text-xs leading-relaxed text-[#9ca3af]">
               {FOOTER_DISCLAIMER}
             </p>
           </footer>
+          </>
+        )}
         </div>
       </main>
 
