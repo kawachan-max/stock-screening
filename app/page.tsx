@@ -62,29 +62,43 @@ const TOOLTIP_PAYOUT: TooltipContent = {
 };
 
 const TOOLTIP_CHEAP_SCORE: TooltipContent = {
-  title: "\u5272\u5B89\u5EA6\u30B9\u30B3\u30A2\uff08\u6700\u592727\u70B9\uff09",
-  desc: "\u30CD\u30C3\u30C8\u30AD\u30E3\u30C3\u30B7\u30E5\u6BD4\u7387\u3068PER\u306E2\u8EF8\u3067\u5272\u5B89\u3055\u3092\u6570\u5024\u5316",
-  formula: "NC\u6BD4\u7387\u30B9\u30B3\u30A2\uff08\u6700\u592718\u70B9\uff09\uFF0B PER\u30B9\u30B3\u30A2\uff08\u6700\u59279\u70B9\uff09",
-  intent: "\u6E05\u539F\u9054\u90CE\u5F0F\u306E\u6838\u5FC3\u3002\u3053\u306E\u6570\u5024\u304C\u9AD8\u3044\u307B\u3069\u5E02\u5834\u306B\u6C17\u3065\u304B\u308C\u3066\u3044\u306A\u3044\u5272\u5B89\u9298\u67C4",
+  title: "\u5272\u5B89\u5EA6\u30B9\u30B3\u30A2\uff08\u6700\u592730\u70B9\uff09",
+  desc: "\u30CD\u30C3\u30C8\u30AD\u30E3\u30C3\u30B7\u30E5\u6BD4\u7387\uff08NC\u6BD4\u7387\uff09\u3068PER\u3067\u5272\u5B89\u5EA6\u3092\u70B9\u6570\u5316\u3057\u307E\u3059",
+  formula: "NC\u6BD4\u7387\u30FB\u30B9\u30B3\u30A2\uff08\u6700\u592720\u70B9\uff09 + PER\u30FB\u30B9\u30B3\u30A2\uff08\u6700\u592210\u70B9\uff09",
+  intent: "\u65E9\u671F\u306E\u30D0\u30EA\u30E5\u30FC\u30C9\u30E7\u30FC\u3067\u8981\u3067\u3059\u3002NC\u6BD4\u7387\u3068PER\u304C\u9AD8\u304F\u65E9\u3066\u308B\u305F\u3081\u306E\u5272\u5B89\u5EA6\u3092\u5F3E\u3067\u3092\u308A\u8A55\u4FA1\u3057\u307E\u3059",
 };
 
 const TOOLTIP_GROWTH_SCORE: TooltipContent = {
-  title: "\u6210\u9577\u6027\u30FB\u4E8B\u696D\u306E\u8CEA\u30B9\u30B3\u30A2\uff08\u6700\u592746\u70B9\uff09",
-  desc: "\u58F2\u4E0A\u30FB\u5229\u76CA\u306E\u6210\u9577\u30C8\u30EC\u30F3\u30C9\u3068ROE\u30FBROIC\u3092\u8A55\u4FA1\u3002AI\u6C7A\u7B97\u5206\u6790\u3082\u52A0\u5473",
-  formula: "3\u671F\u9023\u7D9A\u5897\u53CE(9)\uFF0B\u58F2\u4E0A\u6210\u9577\u7387(9)\uFF0B3\u671F\u9023\u7D9A\u5897\u76CA(9)\uFF0BROE(5)\uFF0BROIC(5)\uFF0BAI\u5B9A\u6027(4)\uFF0B\u305D\u306E\u4ED6",
-  intent: "\u30D0\u30D5\u30A7\u30C3\u30C8\u6D41\u306E\u6210\u9577\u6027\u8A55\u4FA1\u3002\u3053\u306E\u6570\u5024\u304C\u9AD8\u3044\u307B\u3069\u4E2D\u9577\u671F\u3067\u4F38\u3073\u308B\u53EF\u80FD\u6027\u304C\u9AD8\u3044",
+  title: "\u6210\u9577\u6027\u30B9\u30B3\u30A2\uff08\u6700\u592120\u70B9\uff09",
+  desc: "\u3059\u3079\u3066\u306E\u70B9\u65D7\u3068\u306A\u308B\uFF08\u5897\u53CE/\u5897\u76CA\uFF09\u3068\u6210\u9577\u7387\u3067\u6210\u9577\u6027\u3092\u8A55\u4FA1\u3057\u307E\u3059",
+  formula: "3\u671F\u9023\u7D9A\u5897\u53CE(5) + \u58F2\u4E0A\u6210\u9577\u7387(5) + 3\u671F\u9023\u7D9A\u5897\u76CA(5) + \u5229\u76CA\u6210\u9577\u7387(5)",
+  intent: "\u4E2D\u9577\u671F\u306B\u7D4C\u55D6\u3055\u308C\u308B\u6210\u9577\u529B\u304C\u9AD8\u3044\u9805\u76EE\u3067\u3059",
+};
+
+const TOOLTIP_QUALITY_DETAIL: TooltipContent = {
+  title: "\u4E8B\u696D\u306E\u8CEA\u30FB\u53CE\u76CA\u6027\uFF08\u6700\u592215\u70B9\uFF09",
+  desc: "ROE\u3068ROIC\u306E\u8ABF\u5B9A\u3068\u55B6\u696D\u5229\u76CA\u7387\u306E\u7A33\u5B9A\u6027\u3092\u7D4C\u3066\u4E8B\u696D\u306E\u8CEA\u3092\u8A55\u4FA1\u3057\u307E\u3059",
+  formula: "ROE\u30FB\u30B9\u30B3\u30A35 + ROIC\u30FB\u30B9\u30B3\u30A35 + \u55B6\u696D\u5229\u76CA\u7387\u7A33\u5B9A\u6027\u30FB\u30B9\u30B3\u30A35",
+  intent: "\u55B6\u696D\u5229\u76CA\u306E\u7D9A\u3044\u6A2A\u7D50\u3092\u898B\u306A\u304C\u3089\u3001\u3057\u3063\u304B\u308A\u7E26\u3044\u305F\u5229\u76CA\u9AD8\u8CEA\u3092\u6307\u3057\u307E\u3059",
 };
 
 const TOOLTIP_SHAREHOLDER_SCORE: TooltipContent = {
-  title: "\u682A\u4E3B\u9084\u5143\u4F59\u5730\u30B9\u30B3\u30A2\uff08\u6700\u592718\u70B9\uff09",
-  desc: "\u307E\u3060\u9084\u5143\u3057\u3066\u3044\u306A\u3044\u30AD\u30E3\u30C3\u30B7\u30E5\u304C\u3069\u308C\u3060\u3051\u3042\u308B\u304B\u3092\u8A55\u4FA1",
+  title: "\u682A\u4E3B\u9084\u5143\u4F59\u5730\u30B9\u30B3\u30A2\uff08\u6700\u592110\u70B9\uff09",
+  desc: "\u914D\u5F53\u6027\u5411\u3068\u30AD\u30E3\u30C3\u30B7\u30E5\u5897\u52A0\u60C5\u52D5\u3001\u5897\u914D/\u81EA\u5206\u682A\u306E\u9084\u5143\u65B9\u91DD\u5909\u5316\u3001PBR\u3092\u7D4C\u3040\u307E\u308F\u308C\u306B\u8ABF\u67FB\u3057\u307E\u3059",
   formula: "\u914D\u5F53\u6027\u5411(5)\uFF0B\u30AD\u30E3\u30C3\u30B7\u30E5\u7A4D\u307F\u4E0A\u304C\u308A(5)\uFF0B\u9084\u5143\u65B9\u91DD\u5909\u5316(4)\uFF0B\u6771\u8A3CPBR\u5BFE\u5FDC(4)",
   intent: "\u3053\u308C\u304B\u3089\u6C17\u3065\u304B\u308C\u308B\u9298\u67C4\u306E\u767A\u6398\u306B\u91CD\u8981\u3002\u9084\u5143\u4F59\u5730\u304C\u5927\u304D\u3044\u307B\u3069\u682A\u4FA1\u4E0A\u6607\u306E\u89E6\u5287\u306B\u306A\u308A\u3046\u308B",
 };
 
+const TOOLTIP_BONUS: TooltipContent = {
+  title: "\u30DC\u30FC\u30CA\u30B9\uff08\u6700\u59225\u70B9\uff09",
+  desc: "\u55B6\u696DFC3\u671F\u9023\u7D9A\u3001\u5897\u914D\u3001\u4E0A\u90E8\u66F4\u6B63\uFF08AI\u5224\u5B9A\uFF09\u3001\u914D\u5F53\u5229\u56DE\u308A\u3068PBR\u306E\u5272\u5B89\u30B3\u30F3\u30DC\u3001NC\u6BD4\u3068PER\u306E\u8D85\u5272\u5B89\u30B3\u30F3\u30DC\u306B\u8FFD\u52A0\u70B9\u3092\u8A08\u7B97\u3057\u307E\u3059",
+  formula: "\u55B6\u696DCF3\u671F\u9023\u7D9A\u53D6\u5F97 + \u5897\u914D + \u4E0A\u90E8\u66F4\u6B63 + \u5272\u5B89\u30B3\u30F3\u30DC\u5408\u4E0A",
+  intent: "\u4F55\u3063\u3066\u3082\u5B9F\u884C\u3057\u3066\u3044\u308B\u4E3B\u52D5\u306E\u5B89\u5B9A\u6027\u3092\u8FFD\u52A0\u4E3B\u52D5\u3068\u3057\u3066\u9AD8\u8A55\u4FA1\u3057\u307E\u3059",
+};
+
 const TOOLTIP_RISK_SCORE: TooltipContent = {
-  title: "\u30EA\u30B9\u30AF\u51CF\u70B9\uff08\u6700\u5927-18\u70B9\uff09",
-  desc: "\u6D41\u52D5\u6027\u30FB\u5229\u76CA\u306E\u8CEA\u30FB\u8CA1\u52D9\u5065\u5168\u6027\u306E3\u8EF8\u3067\u30EA\u30B9\u30AF\u3092\u8A55\u4FA1\u3057\u51CF\u70B9",
+  title: "\u30EA\u30B9\u30AF\u6E1B\u70B9\uff08\u6700\u592A\u7D0430\u70B9\uff09",
+  desc: "\u5168\u4F53\u30FB\u56FA\u5B9A\u6027\u3067\u7D9A\u7D9A\u30FB\u91D1\u878D\u611F\u5F97\u3042\u308B\u304B\u3092\u7701\u7D20\u62B9\u3051\u3066\u3059\u3079\u3066\u51CF\u70B9\u3057\u307E\u3059",
   formula: "\u51FA\u6765\u9AD8\u30EA\u30B9\u30AF(-5)\uFF0B\u4E00\u904E\u6027\u5229\u76CA\u30EA\u30B9\u30AF(-5)\uFF0B\u8CA1\u52D9\u5065\u5168\u6027\u30EA\u30B9\u30AF(-3)\uFF0B\u305D\u306E\u4ED6",
   intent: "\u3069\u308C\u3060\u3051\u826F\u3044\u30B9\u30B3\u30A2\u3067\u3082\u30EA\u30B9\u30AF\u304C\u9AD8\u3051\u308C\u3070\u51CF\u70B9\u3002\u5371\u967A\u9298\u67C4\u3092\u6392\u9664\u3059\u308B\u305F\u3081\u306E\u4ED5\u7D44\u307F",
 };
@@ -196,6 +210,8 @@ const LABEL_CHEAP = "\u5272\u5B89\u5EA6";
 const LABEL_CHEAP_SHORT = "\u5272\u5B89";
 const LABEL_GROWTH = "\u6210\u9577\u6027";
 const LABEL_GROWTH_SHORT = "\u6210\u9577";
+const LABEL_QUALITY_DETAIL = "\u4E8B\u696D\u306E\u8CEA\u30FB\u53CE\u76CA\u6027";
+const LABEL_BONUS = "\u30DC\u30FC\u30CA\u30B9";
 const LABEL_SHAREHOLDER = "\u682A\u4E3B\u9084\u5143\u4F59\u5730";
 const LABEL_AI_TREND = "AI\u696d\u7e3e\u5206\u6790";
 const LABEL_AI_QUALITY = "AI\u7af6\u4e89\u512a\u4f4d\u6027";
@@ -279,10 +295,17 @@ type Row = {
   dividend_yield?: number | null;
   valuation_score?: number;
   growth_score?: number;
+  quality_score_detail?: number;
   shareholder_score?: number;
   trend_score?: number;
   quality_score?: number;
+  bonus_score?: number;
   risk_penalty?: number;
+  chart_signals?: {
+    volume_surge?: boolean;
+    above_ma?: boolean;
+    near_high?: boolean;
+  };
   payout_ratio?: number | null;
   roe?: number | null;
   roic?: number | null;
@@ -447,7 +470,10 @@ function getStockTag(r: Row): string {
   if ((r.trend_score ?? 0) >= 8) tags.push("\u696d\u7e3e\u5897\u52a0");
   if ((r.shareholder_score ?? 0) >= 12) tags.push("\u9084\u5143\u4f59\u5730\u5927");
   if ((r.dividend_yield ?? 0) >= 3.5) tags.push("\uD83D\uDCB0\u9AD8\u914D\u5F53");
-  return tags.slice(0, 4).join(" \u30fb ");
+  if (r.chart_signals?.volume_surge) tags.push("\uD83D\uDCCA\u51fa\u6765\u9ad8\u6025\u5897");
+  if (r.chart_signals?.above_ma) tags.push("\u2b06\ufe0fMA\u4e0a\u629c\u3051");
+  if (r.chart_signals?.near_high) tags.push("\uD83C\uDFAF\u65b0\u9ad8\u5024\u63a5\u8fd1");
+  return tags.slice(0, 6).join(" \u30fb ");
 }
 
 export default function Home() {
@@ -719,63 +745,108 @@ export default function Home() {
                               <IndicatorTooltip content={TOOLTIP_CHEAP_SCORE} />
                             </span>
                             <div className="flex-1 h-1.5 rounded-full bg-[#e5e0d8] overflow-hidden">
-                              <div className="h-full rounded-full bg-emerald-500" style={{ width: `${Math.min(100, ((r.valuation_score ?? valuationScore) / 27) * 100)}%` }} />
+                              <div
+                                className="h-full rounded-full bg-emerald-500"
+                                style={{ width: `${Math.min(100, ((r.valuation_score ?? valuationScore) / 30) * 100)}%` }}
+                              />
                             </div>
-                            <span className="text-xs tabular-nums w-10">{(r.valuation_score ?? valuationScore)}/27</span>
-                            <span className={`px-1 py-0.5 rounded text-xs ${getBadgeClass(cheapBadge)}`}>{GRADE_LABELS[cheapBadge]}</span>
+                            <span className="text-xs tabular-nums w-10">{(r.valuation_score ?? valuationScore)}/30</span>
                           </div>
+
                           <div className="flex items-center gap-2">
                             <span className="flex items-center gap-0.5 w-28 text-xs shrink-0">
                               {LABEL_GROWTH}
                               <IndicatorTooltip content={TOOLTIP_GROWTH_SCORE} />
                             </span>
                             <div className="flex-1 h-1.5 rounded-full bg-[#e5e0d8] overflow-hidden">
-                              <div className="h-full rounded-full bg-blue-500" style={{ width: `${Math.min(100, ((r.growth_score ?? growthScore) / 46) * 100)}%` }} />
+                              <div
+                                className="h-full rounded-full bg-blue-500"
+                                style={{ width: `${Math.min(100, ((r.growth_score ?? growthScore) / 20) * 100)}%` }}
+                              />
                             </div>
-                            <span className="text-xs tabular-nums w-10">{(r.growth_score ?? growthScore)}/46</span>
-                            <span className={`px-1 py-0.5 rounded text-xs ${getBadgeClass(growthBadge)}`}>{GRADE_LABELS[growthBadge]}</span>
+                            <span className="text-xs tabular-nums w-10">{(r.growth_score ?? growthScore)}/20</span>
                           </div>
+
+                          <div className="flex items-center gap-2">
+                            <span className="flex items-center gap-0.5 w-28 text-xs shrink-0">
+                              {LABEL_QUALITY_DETAIL}
+                              <IndicatorTooltip content={TOOLTIP_QUALITY_DETAIL} />
+                            </span>
+                            <div className="flex-1 h-1.5 rounded-full bg-[#e5e0d8] overflow-hidden">
+                              <div
+                                className="h-full rounded-full bg-cyan-500"
+                                style={{ width: `${Math.min(100, ((r.quality_score_detail ?? 0) / 15) * 100)}%` }}
+                              />
+                            </div>
+                            <span className="text-xs tabular-nums w-10">{r.quality_score_detail ?? 0}/15</span>
+                          </div>
+
                           <div className="flex items-center gap-2">
                             <span className="flex items-center gap-0.5 w-28 text-xs shrink-0">
                               {LABEL_AI_TREND}
                             </span>
                             <div className="flex-1 h-1.5 rounded-full bg-[#e5e0d8] overflow-hidden">
-                              <div className="h-full rounded-full bg-purple-400" style={{ width: `${Math.min(100, ((r.trend_score ?? 0) / 10) * 100)}%` }} />
+                              <div
+                                className="h-full rounded-full bg-purple-400"
+                                style={{ width: `${Math.min(100, ((r.trend_score ?? 0) / 10) * 100)}%` }}
+                              />
                             </div>
                             <span className="text-xs tabular-nums w-10">{(r.trend_score ?? 0)}/10</span>
-                            <span className={`px-1 py-0.5 rounded text-xs ${getBadgeClass(getGradeFromAIScore(r.trend_score ?? 0))}`}>{GRADE_LABELS[getGradeFromAIScore(r.trend_score ?? 0)]}</span>
                           </div>
+
                           <div className="flex items-center gap-2">
                             <span className="flex items-center gap-0.5 w-28 text-xs shrink-0">
                               {LABEL_AI_QUALITY}
                             </span>
                             <div className="flex-1 h-1.5 rounded-full bg-[#e5e0d8] overflow-hidden">
-                              <div className="h-full rounded-full bg-indigo-400" style={{ width: `${Math.min(100, ((r.quality_score ?? 0) / 10) * 100)}%` }} />
+                              <div
+                                className="h-full rounded-full bg-indigo-400"
+                                style={{ width: `${Math.min(100, ((r.quality_score ?? 0) / 10) * 100)}%` }}
+                              />
                             </div>
                             <span className="text-xs tabular-nums w-10">{(r.quality_score ?? 0)}/10</span>
-                            <span className={`px-1 py-0.5 rounded text-xs ${getBadgeClass(getGradeFromAIScore(r.quality_score ?? 0))}`}>{GRADE_LABELS[getGradeFromAIScore(r.quality_score ?? 0)]}</span>
                           </div>
+
                           <div className="flex items-center gap-2">
                             <span className="flex items-center gap-0.5 w-28 text-xs shrink-0">
                               {LABEL_SHAREHOLDER}
                               <IndicatorTooltip content={TOOLTIP_SHAREHOLDER_SCORE} />
                             </span>
                             <div className="flex-1 h-1.5 rounded-full bg-[#e5e0d8] overflow-hidden">
-                              <div className="h-full rounded-full bg-amber-400" style={{ width: `${Math.min(100, ((r.shareholder_score ?? 0) / 18) * 100)}%` }} />
+                              <div
+                                className="h-full rounded-full bg-amber-400"
+                                style={{ width: `${Math.min(100, ((r.shareholder_score ?? 0) / 10) * 100)}%` }}
+                              />
                             </div>
-                            <span className="text-xs tabular-nums w-10">{(r.shareholder_score ?? 0)}/18</span>
-                            <span className={`px-1 py-0.5 rounded text-xs ${getBadgeClass(getGradeFromShareholderScore(r.shareholder_score ?? 0))}`}>{GRADE_LABELS[getGradeFromShareholderScore(r.shareholder_score ?? 0)]}</span>
+                            <span className="text-xs tabular-nums w-10">{(r.shareholder_score ?? 0)}/10</span>
                           </div>
+
+                          <div className="flex items-center gap-2">
+                            <span className="flex items-center gap-0.5 w-28 text-xs shrink-0">
+                              {LABEL_BONUS}
+                              <IndicatorTooltip content={TOOLTIP_BONUS} />
+                            </span>
+                            <div className="flex-1 h-1.5 rounded-full bg-[#e5e0d8] overflow-hidden">
+                              <div
+                                className="h-full rounded-full bg-yellow-400"
+                                style={{ width: `${Math.min(100, ((r.bonus_score ?? 0) / 5) * 100)}%` }}
+                              />
+                            </div>
+                            <span className="text-xs tabular-nums w-10">{r.bonus_score ?? 0}/5</span>
+                          </div>
+
                           <div className="flex items-center gap-2">
                             <span className="flex items-center gap-0.5 w-28 text-xs shrink-0">
                               {LABEL_RISK}
                               <IndicatorTooltip content={TOOLTIP_RISK_SCORE} />
                             </span>
                             <div className="flex-1 h-1.5 rounded-full bg-[#e5e0d8] overflow-hidden">
-                              <div className="h-full rounded-full bg-red-300" style={{ width: `${Math.min(100, (Math.abs(r.risk_penalty ?? 0) / 18) * 100)}%` }} />
+                              <div
+                                className="h-full rounded-full bg-red-300"
+                                style={{ width: `${Math.min(100, (Math.abs(r.risk_penalty ?? 0) / 30) * 100)}%` }}
+                              />
                             </div>
-                            <span className="text-xs tabular-nums w-12">{(r.risk_penalty ?? 0)}/-18</span>
-                            <span className={`px-1 py-0.5 rounded text-xs ${getBadgeClass("poor")}`}>{GRADE_LABELS.poor}</span>
+                            <span className="text-xs tabular-nums w-12">{(r.risk_penalty ?? 0)}/-30</span>
                           </div>
                         </div>
                       </section>
