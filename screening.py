@@ -176,6 +176,22 @@ def step1_get_list_from_jpx():
     return df
 
 
+def _market_label_for_code(stocks_df, code):
+    """JPX XLS market column joined by stock code (\u5e02\u5834\u30fb\u5546\u54c1\u533a\u5206)."""
+    if stocks_df is None or "market" not in stocks_df.columns:
+        return ""
+    sub = stocks_df.loc[stocks_df["code"] == code, "market"]
+    if sub.empty:
+        return ""
+    v = sub.iloc[0]
+    if pd.isna(v):
+        return ""
+    s = str(v).strip()
+    if not s or s.lower() == "nan":
+        return ""
+    return s
+
+
 # =============================
 # Step2: ???????E?Eicker.info?E?E# =============================
 def step2_first_filter(stocks_df):
@@ -249,6 +265,7 @@ def step2_first_filter(stocks_df):
             else:
                 div_yield = None
             website = info.get("website", "") or ""
+            jpx_market = _market_label_for_code(stocks_df, code)
             first_pass.append({
                 "code": code,
                 "name": nm,
@@ -259,6 +276,7 @@ def step2_first_filter(stocks_df):
                 "info": info,
                 "dividend_yield": div_yield,
                 "website": website,
+                "market": jpx_market,
             })
             if TEST_LIMIT > 0:
                 print(f"    ????: {code} {nm} (PER={per:.2f}, ????E{market_cap/1e8:.1f}?E", flush=True)
@@ -907,6 +925,7 @@ def step5_save(results):
             "name": base_name,
             "name_jp": name_jp,
             "website": r.get("website", ""),
+            "market": r.get("market", ""),
             "score": r["score"],
             "valuation_score": r.get("valuation_score", 0),
             "growth_score": r.get("growth_score", 0),

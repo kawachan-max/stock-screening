@@ -144,7 +144,6 @@ const MSG_NO_JSON = "screening_result.json \u3092 public \u306B\u914D\u7F6E\u305
 const MSG_LOADING = "\u30C7\u30FC\u30BF\u3092\u8AAD\u307F\u8FBC\u307F\u4E2D...";
 const RANK_SUFFIX = "\u4F4D";
 const MASK_NAME = "\u2588\u2588\u2588\u2588\u2588\u2588";
-const LABEL_MARKET = "\u30FB\u2014";
 const LABEL_OKU = "\u5104\u5186";
 const LABEL_NC_RATIO = "NC\u6BD4";
 const LABEL_NC = "\u30CD\u30C3\u30C8\u30AD\u30E3\u30C3\u30B7\u30E5\u6BD4\u7387";
@@ -272,6 +271,7 @@ type Row = {
   name: string;
   name_jp?: string;
   website?: string;
+  market?: string | null;
   score: number;
   net_cash_ratio: number;
   per: number;
@@ -621,7 +621,9 @@ export default function Home() {
                                 >
                                   {r.code}
                                 </Link>
-                                <span>{LABEL_MARKET}</span>
+                                {(r.market ?? "").trim()
+                                  ? ` \u30fb ${(r.market ?? "").trim()}`
+                                  : ""}
                                 {(isUnlocked || i >= lockCount) && r.website ? (
                                   <a
                                     href={r.website}
