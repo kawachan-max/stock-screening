@@ -251,19 +251,45 @@ def step2_first_filter(stocks_df):
                 nm = rows["name"].values[0] if len(rows) else ""
             if not nm:
                 nm = code
-            # ?????: yfinance ? dividendYield ???(0.035)?????100 ?1????1???????????
-            div_yield = info.get("yield") or info.get("dividendYield")
-            if div_yield is not None and not (isinstance(div_yield, float) and math.isnan(div_yield)):
-                try:
-                    v = float(div_yield)
-                    if v < 1:
-                        div_yield = round(v * 100, 2)  # 0.0351 -> 3.51%
-                    else:
-                        div_yield = round(v, 2)  # ??%????????
-                except (TypeError, ValueError):
-                    div_yield = None
-            else:
-                div_yield = None
+            # dividend_yield: 配当利回り（%）= info["dividendYield"] * 100
+            raw_div = info.get("dividendYield", 0)
+            try:
+                v = float(raw_div)
+                if math.isnan(v):
+                    v = 0
+            except Exception:
+                v = 0
+            div_yield = round(v * 100, 2)
+
+            # chart_signals: 1y/week で簡易トレンド判定
+            chart_signals = {
+                "volume_surge": False,
+                "above_ma": False,
+                "near_high": False,
+            }
+            try:
+                hist = ticker.history(period="1y", interval="1wk")
+                if hist is not None and not hist.empty and "Volume" in hist.columns and "Close" in hist.columns:
+                    vol = hist["Volume"].dropna()
+                    close = hist["Close"].dropna()
+                    if len(vol) >= 21:
+                        latest_vol = float(vol.iloc[-1])
+                        avg20 = float(vol.iloc[-21:-1].mean())
+                        if avg20 > 0 and latest_vol >= 2 * avg20:
+                            chart_signals["volume_surge"] = True
+                    if len(close) >= 13:
+                        latest_close = float(close.iloc[-1])
+                        ma13 = float(close.rolling(window=13).mean().iloc[-1])
+                        if ma13 > 0 and latest_close > ma13:
+                            chart_signals["above_ma"] = True
+                    if len(close) >= 52:
+                        latest_close = float(close.iloc[-1])
+                        high52 = float(close.iloc[-52:].max())
+                        if high52 > 0 and latest_close >= 0.9 * high52:
+                            chart_signals["near_high"] = True
+            except Exception:
+                pass
+
             website = info.get("website", "") or ""
             jpx_market = _market_label_for_code(stocks_df, code)
             first_pass.append({
@@ -277,6 +303,7 @@ def step2_first_filter(stocks_df):
                 "dividend_yield": div_yield,
                 "website": website,
                 "market": jpx_market,
+                "chart_signals": chart_signals,
             })
             if TEST_LIMIT > 0:
                 print(f"    ????: {code} {nm} (PER={per:.2f}, ????E{market_cap/1e8:.1f}?E", flush=True)
@@ -482,16 +509,125 @@ def step3_detail_and_net_cash(first_pass):
             shareholder_score = calc_shareholder_score(ticker, info, bs_raw)
             risk_penalty = calc_risk_penalty(ticker, info, fin, bs)
             roe_pct, roic_pct = get_roe_roic(fin, bs)
-            payout_ratio = info.get("payoutRatio")
-            if payout_ratio is not None and not (isinstance(payout_ratio, float) and math.isnan(payout_ratio)):
-                payout_ratio = round(float(payout_ratio) * 100, 2)
-            else:
-                payout_ratio = None
+            # payout_ratio: 配当性向（%）= info["payoutRatio"] * 100
+            raw_pr = info.get("payoutRatio", 0)
+            try:
+                v = float(raw_pr)
+                if math.isnan(v):
+                    v = 0
+            except Exception:
+                v = 0
+            payout_ratio = round(v * 100, 2)
             pbr = info.get("priceToBook")
             if pbr is not None and not (isinstance(pbr, float) and math.isnan(pbr)):
                 pbr = round(float(pbr), 2)
             else:
                 pbr = None
+            # Inputs for the new shareholder/bonus scoring.
+            cash_score = 0
+            policy_change_score = 1
+            bonus_operating_cf_3y = False
+            bonus_dividend_3y_increasing = False
+            try:
+                # Cash trend (cash equivalents)
+                if bs_raw is not None and not bs_raw.empty and "Cash And Cash Equivalents" in bs_raw.index and bs_raw.shape[1] >= 2:
+                    c0 = _num(bs_raw.loc["Cash And Cash Equivalents"].iloc[0])
+                    c1 = _num(bs_raw.loc["Cash And Cash Equivalents"].iloc[1])
+                    if c1 and c1 != 0:
+                        if c0 > c1:
+                            cash_score = 3
+                        elif abs(c0 - c1) / abs(c1) <= 0.05:
+                            cash_score = 1
+
+                # Operating Cash Flow (3 periods positive)
+                cashflow = getattr(ticker, "cashflow", None)
+                if cashflow is not None and not cashflow.empty:
+                    for key in (
+                        "Operating Cash Flow",
+                        "Net Cash Provided By Operating Activities",
+                        "NetCashProvidedByOperatingActivities",
+                    ):
+                        if key in cashflow.index:
+                            vals = cashflow.loc[key].iloc[:3].tolist()
+                            if len(vals) >= 3:
+                                ok = True
+                                for vv in vals:
+                                    try:
+                                        fvv = float(vv)
+                                        if math.isnan(fvv) or fvv <= 0:
+                                            ok = False
+                                            break
+                                    except Exception:
+                                        ok = False
+                                        break
+                                bonus_operating_cf_3y = ok
+                            break
+
+                # Dividend increase (3 annual periods strictly increasing)
+                divs = getattr(ticker, "dividends", None)
+                if divs is not None and hasattr(divs, "resample") and len(divs) >= 10:
+                    annual = divs.resample("Y").sum()
+                    if annual is not None and len(annual) >= 3:
+                        last3 = annual.iloc[-3:].tolist()
+                        try:
+                            a0 = float(last3[0])
+                            a1 = float(last3[1])
+                            a2 = float(last3[2])
+                            if a0 > 0 and a1 > 0 and a2 > 0 and a0 < a1 and a1 < a2:
+                                bonus_dividend_3y_increasing = True
+                        except Exception:
+                            pass
+
+                    # Dividend up/maintenance/down for policy change score
+                    if len(annual) >= 2:
+                        prev = float(annual.iloc[-2])
+                        last = float(annual.iloc[-1])
+                        if prev > 0:
+                            chg = (last - prev) / abs(prev)
+                            if chg >= 0.01:
+                                div_inc = True
+                            elif abs(chg) <= 0.01:
+                                div_maintain = True
+                        else:
+                            div_inc = last > 0
+                    else:
+                        div_inc = False
+                        div_maintain = False
+
+                    div_inc = locals().get("div_inc", False)
+                    div_maintain = locals().get("div_maintain", False)
+
+                    # Buyback detection
+                    buyback = False
+                    try:
+                        cashflow2 = getattr(ticker, "cashflow", None)
+                        if cashflow2 is not None and not cashflow2.empty:
+                            for key in (
+                                "Repurchase Of Stock",
+                                "RepurchaseOfStock",
+                                "PaymentsForRepurchaseOfStock",
+                                "Stock BuyBack",
+                                "Repurchase Of Common Stock",
+                                "Repurchase Of Equity",
+                            ):
+                                if key in cashflow2.index:
+                                    vrep = cashflow2.loc[key].iloc[0]
+                                    fvp = float(vrep)
+                                    if not math.isnan(fvp) and fvp < 0:
+                                        buyback = True
+                                        break
+                    except Exception:
+                        pass
+
+                    if div_inc or buyback:
+                        policy_change_score = 2
+                    elif div_maintain and not buyback:
+                        policy_change_score = 1
+                    else:
+                        policy_change_score = 0
+            except Exception:
+                pass
+
             r = dict(row)
             r["yf_bs"] = bs
             r["net_cash_ratio"] = nc
@@ -508,6 +644,12 @@ def step3_detail_and_net_cash(first_pass):
             r["roic"] = roic_pct
             r["payout_ratio"] = payout_ratio
             r["pbr"] = pbr
+            # New scoring inputs
+            r["cash_score"] = cash_score
+            r["policy_change_score"] = policy_change_score
+            r["bonus_operating_cf_3y"] = bonus_operating_cf_3y
+            r["bonus_dividend_3y_increasing"] = bonus_dividend_3y_increasing
+            r["upward_revision"] = False
             second.append(r)
         except Exception as e:
             import traceback
@@ -523,44 +665,292 @@ def step3_detail_and_net_cash(first_pass):
 # Step4: \u30B9\u30B3\u30A2\u30EA\u30F3\u30B0
 # =============================
 def calc_score(row):
-    nc = row["net_cash_ratio"]
-    per = row["per"]
-    valuation_score = get_valuation_score(nc, per)
-    growth_score = 0
-    np_val = row["np"]
-    eq = row["eq"]
-    op = row["op"]
-    sales = row["sales"]
-    ta = row["ta"]
-    if sales > 0: growth_score += 2
-    if op > 0: growth_score += 2
-    if np_val and float(np_val) > 0: growth_score += 2
-    roe = row.get("roe")
-    if roe is not None and roe >= 15: growth_score += 5
-    roic = row.get("roic")
-    if roic is not None and roic >= 8: growth_score += 5
-    yf_bs = row.get("yf_bs")
-    if yf_bs:
-        lt = yf_bs.get("long_term_debt", 0) or 0
-        cash = yf_bs.get("cash", 0) or 0
-        ic = eq + lt - cash
-        if ic and ic > 0 and op and (op / ic) >= 0.08: growth_score += 5
-    elif eq and op and (op / eq) >= 0.08: growth_score += 5
-    annual_list = row.get("annual_list", [])
+    # Valuation (max 30)
+    nc = row.get("net_cash_ratio", 0) or 0
+    per = row.get("per", 0) or 0
+
+    nc_score = 0
+    if nc >= 3.0:
+        nc_score = 20
+    elif nc >= 2.0:
+        nc_score = 16
+    elif nc >= 1.5:
+        nc_score = 13
+    elif nc >= 1.0:
+        nc_score = 10
+    elif nc >= 0.7:
+        nc_score = 6
+    elif nc >= 0.5:
+        nc_score = 3
+    else:
+        nc_score = 0
+
+    per_score = 0
+    if per <= 3:
+        per_score = 10
+    elif per <= 5:
+        per_score = 8
+    elif per <= 8:
+        per_score = 6
+    elif per <= 10:
+        per_score = 4
+    elif per <= 15:
+        per_score = 2
+    else:
+        per_score = 0
+
+    valuation_score = nc_score + per_score
+    valuation_score = min(30, max(0, valuation_score))
+
+    # Growth (max 20)
+    annual_list = row.get("annual_list") or []
+    sales0 = sales1 = sales2 = 0.0
+    np0 = np1 = np2 = 0.0
     if len(annual_list) >= 3:
-        o0, o1, o2 = annual_list[0]["OP"], annual_list[1]["OP"], annual_list[2]["OP"]
-        if o0 > o1 > o2: growth_score += 9
-    if ta and ta > 0 and (eq / ta) >= 0.5: growth_score += 5
-    shareholder_score = row.get("shareholder_score", 0)
-    risk_penalty = row.get("risk_penalty", 0)
-    trend_score = row.get("trend_score", 0)
-    quality_score = row.get("quality_score", 0)
+        sales0 = float(annual_list[0].get("Sales", 0) or 0)
+        sales1 = float(annual_list[1].get("Sales", 0) or 0)
+        sales2 = float(annual_list[2].get("Sales", 0) or 0)
+        np0 = float(annual_list[0].get("NP", 0) or 0)
+        np1 = float(annual_list[1].get("NP", 0) or 0)
+        np2 = float(annual_list[2].get("NP", 0) or 0)
+
+    revenue_consecutive = 5 if (sales0 > sales1 > sales2) else 0
+    profit_consecutive = 5 if (np0 > np1 > np2) else 0
+
+    revenue_growth_score = 0
+    if sales1 != 0:
+        try:
+            revenue_growth_pct = (sales0 - sales1) / abs(sales1) * 100
+            if revenue_growth_pct >= 20:
+                revenue_growth_score = 5
+            elif revenue_growth_pct >= 10:
+                revenue_growth_score = 4
+            elif revenue_growth_pct >= 5:
+                revenue_growth_score = 3
+            elif revenue_growth_pct >= 0:
+                revenue_growth_score = 1
+            else:
+                revenue_growth_score = 0
+        except Exception:
+            revenue_growth_score = 0
+
+    profit_growth_score = 0
+    if np1 != 0:
+        try:
+            profit_growth_pct = (np0 - np1) / abs(np1) * 100
+            if profit_growth_pct >= 20:
+                profit_growth_score = 5
+            elif profit_growth_pct >= 10:
+                profit_growth_score = 4
+            elif profit_growth_pct >= 5:
+                profit_growth_score = 3
+            elif profit_growth_pct >= 0:
+                profit_growth_score = 1
+            else:
+                profit_growth_score = 0
+        except Exception:
+            profit_growth_score = 0
+
+    growth_score = revenue_consecutive + revenue_growth_score + profit_consecutive + profit_growth_score
+    growth_score = min(20, max(0, growth_score))
+
+    # Business quality / profitability (max 15)
+    roe = row.get("roe") or 0
+    roic = row.get("roic") or 0
+    roe_score = 0
+    if roe >= 15:
+        roe_score = 5
+    elif roe >= 10:
+        roe_score = 4
+    elif roe >= 8:
+        roe_score = 3
+    elif roe >= 5:
+        roe_score = 1
+    else:
+        roe_score = 0
+
+    roic_score = 0
+    if roic >= 15:
+        roic_score = 5
+    elif roic >= 10:
+        roic_score = 4
+    elif roic >= 8:
+        roic_score = 3
+    elif roic >= 5:
+        roic_score = 1
+    else:
+        roic_score = 0
+
+    stability_count = 0
+    for j in range(3):
+        if len(annual_list) < 3:
+            break
+        sj = float(annual_list[j].get("Sales", 0) or 0)
+        oj = float(annual_list[j].get("OP", 0) or 0)
+        if sj > 0:
+            margin = oj / sj * 100
+            if margin >= 5:
+                stability_count += 1
+
+    stability_score = 0
+    if stability_count == 3:
+        stability_score = 5
+    elif stability_count == 2:
+        stability_score = 3
+    elif stability_count == 1:
+        stability_score = 1
+    else:
+        stability_score = 0
+
+    quality_score_detail = roe_score + roic_score + stability_score
+    quality_score_detail = min(15, max(0, quality_score_detail))
+
+    # Shareholder return capacity (max 10)
+    payout_ratio = row.get("payout_ratio")
+    try:
+        payout_ratio = float(payout_ratio) if payout_ratio is not None else 0.0
+    except Exception:
+        payout_ratio = 0.0
+
+    dividend_yield = row.get("dividend_yield")
+    try:
+        dividend_yield = float(dividend_yield) if dividend_yield is not None else 0.0
+    except Exception:
+        dividend_yield = 0.0
+
+    payout_score = 0
+    if payout_ratio > 0 and dividend_yield > 0:
+        if payout_ratio < 30:
+            payout_score = 3
+        elif payout_ratio < 50:
+            payout_score = 2
+        else:
+            payout_score = 1
+
+    cash_score = row.get("cash_score") or 0
+    try:
+        cash_score = int(cash_score)
+    except Exception:
+        cash_score = 0
+    cash_score = min(3, max(0, cash_score))
+
+    policy_change_score = row.get("policy_change_score") or 0
+    try:
+        policy_change_score = int(policy_change_score)
+    except Exception:
+        policy_change_score = 1
+    policy_change_score = min(2, max(0, policy_change_score))
+
+    pbr = row.get("pbr")
+    pbr_score = 0
+    try:
+        if pbr is not None:
+            pbr = float(pbr)
+            if pbr < 1.0:
+                pbr_score = 2
+            elif pbr < 2.0:
+                pbr_score = 1
+            else:
+                pbr_score = 0
+    except Exception:
+        pbr_score = 0
+
+    shareholder_score = payout_score + cash_score + policy_change_score + pbr_score
+    shareholder_score = min(10, max(0, shareholder_score))
+
+    # Bonus (max 5)
+    bonus_operating_cf_3y = bool(row.get("bonus_operating_cf_3y"))
+    bonus_dividend_3y_increasing = bool(row.get("bonus_dividend_3y_increasing"))
+    upward_revision = bool(row.get("upward_revision"))
+
+    bonus_combo1 = bool(dividend_yield >= 3.0 and pbr is not None and pbr < 1.0)
+    bonus_combo2 = bool(nc >= 2.0 and per <= 5)
+
+    bonus_score = 0
+    if bonus_operating_cf_3y:
+        bonus_score += 1
+    if bonus_dividend_3y_increasing:
+        bonus_score += 1
+    if upward_revision:
+        bonus_score += 1
+    if bonus_combo1:
+        bonus_score += 1
+    if bonus_combo2:
+        bonus_score += 1
+    bonus_score = min(5, max(0, bonus_score))
+
+    # Risk penalty (negative, approx -30)
+    risk_checks = row.get("risk_checks") or {}
+
+    def is_bad(key, inverted):
+        val = risk_checks.get(key)
+        if val is None:
+            return False
+        if inverted:
+            return bool(val) is True
+        return bool(val) is False
+
+    bad_roe = is_bad("roe_15_percent", inverted=False)
+    bad_equity = is_bad("equity_ratio_50_percent", inverted=False)
+    bad_debt = is_bad("debt_to_profit_5x", inverted=False)
+    bad_fcf = is_bad("fcf_stability", inverted=False)
+    bad_liquidity = is_bad("liquidity_risk", inverted=True)
+    bad_one_time = is_bad("one_time_profit_risk", inverted=True)
+
+    individual = 0
+    if bad_roe:
+        individual -= 2
+    if bad_equity:
+        individual -= 3
+    if bad_debt:
+        individual -= 4
+    if bad_fcf:
+        individual -= 4
+    if bad_liquidity:
+        individual -= 3
+    if bad_one_time:
+        individual -= 4
+
+    xcount = sum([bad_roe, bad_equity, bad_debt, bad_fcf, bad_liquidity, bad_one_time])
+    additional = 0
+    if xcount <= 2:
+        additional = 0
+    elif xcount == 3:
+        additional = -3
+    elif xcount == 4:
+        additional = -6
+    else:
+        additional = -10
+
+    risk_penalty = individual + additional
+    risk_penalty = min(0, max(-30, risk_penalty))
+
+    # AI components (0-10 each)
+    trend_score = row.get("trend_score", 0) or 0
+    quality_score = row.get("quality_score", 0) or 0
+
+    total_score = (
+        valuation_score
+        + growth_score
+        + quality_score_detail
+        + shareholder_score
+        + trend_score
+        + quality_score
+        + bonus_score
+        + risk_penalty
+    )
+
+    total_score = max(0, total_score)
+
     row["valuation_score"] = valuation_score
     row["growth_score"] = growth_score
-    total = valuation_score + growth_score + shareholder_score + risk_penalty
-    total += trend_score  # \u6700\u592710\u70B9
-    total += quality_score  # \u6700\u592710\u70B9
-    return max(0, total)
+    row["quality_score_detail"] = quality_score_detail
+    row["shareholder_score"] = shareholder_score
+    row["bonus_score"] = bonus_score
+    row["risk_penalty"] = risk_penalty
+    row["score"] = total_score
+
+    return total_score
 
 
 def step4_scoring(second_pass):
@@ -614,7 +1004,7 @@ def _format_3y(values):
 def generate_ai_analysis(row):
     try:
         if not os.environ.get("ANTHROPIC_API_KEY"):
-            return "", _default_risk_checks(), 0, 0
+            return "", _default_risk_checks(), 0, 0, False
 
         import anthropic
         client = anthropic.Anthropic()
@@ -702,7 +1092,7 @@ quality_score (\u4E8B\u696D\u306E\u8CEA\u3001\u6700\u592710\u70B9):
 \u30FB\u4E8B\u696D\u306E\u7D9A\u7D9A\u6027\u306B\u61F8\u5FFD \u2192 0\u70B9
 
 JSON\u30B5\u30F3\u30D7\u30EB:
-{{"ai_comment": "\u696D\u7E8C\u30C8\u30EC\u30F3\u30C9\u30FB\u4E8B\u696D\u306E\u8CEA\u30FB\u5C06\u6765\u6027\u3092150\u5B57\u7A0B\u5EA6\u3067",
+{{"ai_comment": "\u696D\u7E8C\u30C8\u30EC\u30F3\u30C9\u30FB\u4E8B\u696D\u306E\u8CEA\u30FB\u5C06\u6765\u6027\u3093300\u5B57\u7A0B\u5EA6\u3067",
   "trend_score": 7,
   "quality_score": 4,
   "risk_checks": {{
@@ -712,7 +1102,8 @@ JSON\u30B5\u30F3\u30D7\u30EB:
     "fcf_stability": true,
     "liquidity_risk": false,
     "one_time_profit_risk": false
-  }}
+  }},
+  "upward_revision": false
 }}
 """
 
@@ -734,7 +1125,7 @@ JSON\u30B5\u30F3\u30D7\u30EB:
             data = json.loads(text)
         except json.JSONDecodeError as e:
             print(f"[AI] JSON parse error: {e}")
-            return "", _default_risk_checks(), 0, 0
+            return "", _default_risk_checks(), 0, 0, False
 
         ai_comment = (data.get("ai_comment") or "").strip()
         trend_score = data.get("trend_score")
@@ -761,13 +1152,14 @@ JSON\u30B5\u30F3\u30D7\u30EB:
             elif risk_checks[k] is not None:
                 risk_checks[k] = bool(risk_checks[k])
 
-        return ai_comment, risk_checks, trend_score, quality_score
+        upward_revision = bool(data.get("upward_revision", False))
+        return ai_comment, risk_checks, trend_score, quality_score, upward_revision
 
     except Exception as e:
         print(f"[AI] \u30A8\u30E9\u30FC: {e}")
         import traceback
         traceback.print_exc()
-        return "", _default_risk_checks(), 0, 0
+        return "", _default_risk_checks(), 0, 0, False
     base_name = (row.get("name") or row.get("code") or "").strip() or row.get("code", "")
     name_jp = JPX_NAME_MAP.get(row["code"], base_name)
     code = row.get("code", "")
@@ -839,7 +1231,7 @@ ROE: {roe_str} / ROIC: {roic_str} / \u914D\u5F53\u6027\u5411: {payout_str}%
 \u30A2\u30CA\u30EA\u30B9\u30C8\u8A55\u4FA1(recommendationMean): {recommendation_mean}
 
 \u4EE5\u4E0B\u306EJSON\u5F62\u5F0F\u306E\u307F\u3067\u56DE\u7B54\u3057\u3066\u304F\u3060\u3055\u3044\u3002
-\u30FBai_comment: \u696D\u7E8C\u30C8\u30EC\u30F3\u30C9\u30FB\u4E8B\u696D\u306E\u8CEA\u30FB\u5C06\u6765\u6027\u30FB\u6295\u8CC7\u5224\u65AD\u3092150\u5B57\u7A0B\u5EA6\u3067\u8A18\u8FF0\u3002\u6570\u5024\u306E\u8AAC\u660E\u3067\u306F\u306A\u304F\u89B3\u5BDF\u3092\u66F8\u304F\u3002
+\u30FBai_comment: \u696D\u7E8C\u30C8\u30EC\u30F3\u30C9\u30FB\u4E8B\u696D\u306E\u8CEA\u30FB\u5C06\u6765\u6027\u30FB\u6295\u8CC7\u5224\u65AD\u3093300\u5B57\u7A0B\u5EA6\u3067\u8A18\u8FF0\u3002\u6570\u5024\u306E\u8AAC\u660E\u3067\u306F\u306A\u304F\u89B3\u5BDF\u3092\u66F8\u304F\u3002
 \u30FBrisk_checks: \u5404\u9805\u76EE\u3092true/false\u3067\u8A55\u4FA1\u3002
 
 {{"ai_comment": "...",
@@ -850,7 +1242,8 @@ ROE: {roe_str} / ROIC: {roic_str} / \u914D\u5F53\u6027\u5411: {payout_str}%
     "fcf_stability": true or false,
     "liquidity_risk": true or false,
     "one_time_profit_risk": true or false
-  }}
+  }},
+  "upward_revision": false
 }}"""
 
     try:
@@ -866,25 +1259,28 @@ ROE: {roe_str} / ROIC: {roic_str} / \u914D\u5F53\u6027\u5411: {payout_str}%
         print(f"  [AI] \u30EC\u30B9\u30DD\u30F3\u30B9\u5168\u4F53: {text!r}", flush=True)
         if not text.strip():
             print(f"  [AI] WARNING: Empty response for {name_jp}", flush=True)
-            return "", _default_risk_checks()
+            return "", _default_risk_checks(), 0, 0, False
         try:
             data = json.loads(text)
             print(f"  [AI] JSON\u30D1\u30FC\u30B9\u7D50\u679C: {data}", flush=True)
         except json.JSONDecodeError as e:
             print(f"  [AI] JSON parse error for {name_jp}: {e}", flush=True)
             print(f"  [AI] Raw response (first 500 chars): {text[:500]!r}", flush=True)
-            return "", _default_risk_checks()
+            return "", _default_risk_checks(), 0, 0, False
         ai_comment = (data.get("ai_comment") or "").strip()
         risk_checks = data.get("risk_checks") or {}
         for k in AI_RISK_KEYS:
             if k not in risk_checks:
                 risk_checks[k] = None
-        return ai_comment, risk_checks
+        trend_score = 0
+        quality_score = 0
+        upward_revision = bool(data.get("upward_revision", False))
+        return ai_comment, risk_checks, trend_score, quality_score, upward_revision
     except Exception as e:
         import traceback
         print(f"  [AI] ERROR for {name_jp} ({row.get('code', '')}): {e}", flush=True)
         traceback.print_exc()
-        return "", _default_risk_checks()
+        return "", _default_risk_checks(), 0, 0, False
 
 
 # =============================
@@ -930,6 +1326,8 @@ def step5_save(results):
             "valuation_score": r.get("valuation_score", 0),
             "growth_score": r.get("growth_score", 0),
             "shareholder_score": r.get("shareholder_score", 0),
+            "quality_score_detail": r.get("quality_score_detail", 0),
+            "bonus_score": r.get("bonus_score", 0),
             "risk_penalty": r.get("risk_penalty", 0),
             "net_cash_ratio": round(r["net_cash_ratio"], 2),
             "per": per_val,
@@ -943,6 +1341,7 @@ def step5_save(results):
             "risk_checks": r.get("risk_checks"),
             "trend_score": r.get("trend_score", 0),
             "quality_score": r.get("quality_score", 0),
+            "chart_signals": r.get("chart_signals", {}),
         })
     JST = timezone(timedelta(hours=9))
     updated_at = datetime.now(JST).strftime("%Y-%m-%dT%H:%M:%S+09:00")
@@ -985,17 +1384,19 @@ def run_screening():
         for i, r in enumerate(second):
             print(f"[AI] \u51E6\u7406\u958B\u59CB: {r.get('name_jp', r.get('code'))}")
             time.sleep(3)
-            ai_comment, risk_checks, trend_score, quality_score = generate_ai_analysis(r)
+            ai_comment, risk_checks, trend_score, quality_score, upward_revision = generate_ai_analysis(r)
             r["ai_comment"] = ai_comment
             r["risk_checks"] = risk_checks
             r["trend_score"] = trend_score
             r["quality_score"] = quality_score
+            r["upward_revision"] = upward_revision
             if (i + 1) % 5 == 0 or (i + 1) == len(second):
                 print(f"  AI \u5206\u6790 {i+1}/{len(second)} \u5B8C\u4E86", flush=True)
     else:
         for r in second:
             r["trend_score"] = 0
             r["quality_score"] = 0
+            r["upward_revision"] = False
     results = step4_scoring(second)
     out = step5_save(results)
     elapsed = time.perf_counter() - start_time
