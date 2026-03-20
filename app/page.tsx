@@ -434,10 +434,10 @@ function getBadgeClass(grade: GradeKey): string {
 
 function getStockTag(r: Row): string {
   const tags: string[] = [];
-  if (r.net_cash_ratio >= 1.5) tags.push("NC\u9ad8");
+  if (r.net_cash_ratio >= 1.5) tags.push("\u9ad8NC");
   else if (r.net_cash_ratio >= 1.0) tags.push("NC\u5272\u5b89");
-  if (r.per <= 5) tags.push("\u8d85\u4f4e\u5080");
-  else if (r.per <= 8) tags.push("\u4f4e\u5048");
+  if (r.per <= 5) tags.push("\u8d85\u4f4e\u500d");
+  else if (r.per <= 8) tags.push("\u4f4e\u500d");
   if ((r.roe ?? 0) >= 15) tags.push("ROE\u512a\u79c0");
   if ((r.trend_score ?? 0) >= 8) tags.push("\u696d\u7e3e\u5897\u52a0");
   if ((r.shareholder_score ?? 0) >= 12) tags.push("\u9084\u5143\u4f59\u5730\u5927");
