@@ -158,7 +158,10 @@ const DISCLAIMER_1 = "\u672c\u30b5\u30fc\u30d3\u30b9\u306f\u60c5\u5831\u63d0\u4f
 const DISCLAIMER_2 = "\u8868\u793a\u3055\u308c\u308b\u30b9\u30b3\u30a2\u30fb\u30e9\u30f3\u30ad\u30f3\u30b0\u306f\u30a2\u30eb\u30b4\u30ea\u30ba\u30e0\u304a\u3088\u3073AI\u306b\u3088\u308b\u5206\u6790\u306b\u57fa\u3065\u304f\u3082\u306e\u3067\u3059\u3002\u5c06\u6765\u306e\u682a\u4fa1\u5909\u52d5\u3084\u6295\u8cc7\u6210\u679c\u3092\u4fdd\u8a3c\u3059\u308b\u3082\u306e\u3067\u306f\u3042\u308a\u307e\u305b\u3093\u3002";
 const DISCLAIMER_3 = "\u6295\u8cc7\u306b\u306f\u5e38\u306b\u30ea\u30b9\u30af\u304c\u4f34\u3044\u307e\u3059\u3002\u5143\u672c\u640d\u5931\u306e\u53ef\u80fd\u6027\u304c\u3042\u308a\u3001\u6295\u8cc7\u5224\u65ad\u306f\u5fc5\u305a\u3054\u81ea\u8eab\u306e\u8cac\u4efb\u3067\u884c\u3063\u3066\u304f\u3060\u3055\u3044\u3002";
 const DISCLAIMER_4 = "\u30b9\u30b3\u30a2\u30ea\u30f3\u30b0\u306b\u306f\u30d0\u30d5\u30a7\u30c3\u30c8\u6c0f\u30fb\u6e05\u539f\u9054\u90ce\u6c0f\u306e\u516c\u958b\u60c5\u5831\u306b\u57fa\u3065\u304f\u6295\u8cc7\u54f2\u5b66\u3092\u53c2\u8003\u306b\u3057\u3066\u3044\u307e\u3059\u304c\u3001\u4e21\u6c0f\u3068\u306f\u7121\u95a2\u4fc2\u3067\u3059\u3002";
-const DISCLAIMER_5 = "\u30c7\u30fc\u30bf\u306fyfinance\u304a\u3088\u3073JPX\u516c\u5f0f\u60c5\u5831\u3092\u5229\u7528\u3057\u3066\u304a\u308a\u3001\u6700\u65b0\u60c5\u5831\u3068\u7570\u306a\u308b\u5834\u5408\u304c\u3042\u308a\u307e\u3059\u3002\u5fc5\u305a\u516c\u5f0f\u60c5\u5831\u3067\u3054\u78ba\u8a8d\u304f\u3060\u3055\u3044\u3002";
+const DISCLAIMER_5 =
+  "\u672c\u30b5\u30fc\u30d3\u30b9\u306f\u3001\u30c7\u30fc\u30bf\u53d6\u5f97\u5143\u306e\u4ed5\u69d8\u5909\u66f4\u30fb\u30b5\u30fc\u30d3\u30b9\u7d42\u4e86\u306b\u3088\u308a\u3001\u4e88\u544a\u306a\u304f\u505c\u6b62\u30fb\u7d42\u4e86\u3059\u308b\u5834\u5408\u304c\u3042\u308a\u307e\u3059\u3002";
+const DISCLAIMER_6 =
+  "AI\u306b\u3088\u308b\u5206\u6790\u30b3\u30e1\u30f3\u30c8\u306f\u53c2\u8003\u60c5\u5831\u3067\u3042\u308a\u3001\u8aa4\u308a\u3092\u542b\u3080\u5834\u5408\u304c\u3042\u308a\u307e\u3059\u3002\u6295\u8cc7\u5224\u65ad\u306f\u5fc5\u305a\u3054\u81ea\u8eab\u306e\u8cac\u4efb\u3067\u884c\u3063\u3066\u304f\u3060\u3055\u3044\u3002";
 const BTN_NOTE = "note\u3067\u8CFC\u5165\u3059\u308B";
 const BTN_NOTE_PURCHASE = "\uD83D\uDCDD note\u3067\u8CFC\u5165\u3059\u308B\uff08\u00A51,980\uff09\u2192";
 const NOTE_URL = "https://note.com/kawachan_max";
@@ -492,23 +495,23 @@ export default function Home() {
     <>
       <main className="min-h-screen bg-[#f9f7f4] text-[#1a1a1a]">
         <header className="sticky top-0 z-40 border-b border-[#e5e0d8] bg-white backdrop-blur">
-        <div className="max-w-4xl mx-auto px-4 py-4 flex items-center justify-between gap-3">
+        <div className="max-w-4xl mx-auto flex flex-col gap-3 px-4 py-4 sm:flex-row sm:items-center sm:justify-between sm:gap-3">
           <div className="min-w-0">
-            <h1 className="text-xl font-bold tracking-tight text-[#1a1a1a]">
+            <h1 className="text-lg font-bold tracking-tight text-[#1a1a1a] sm:text-xl">
               {TITLE}
             </h1>
-            <p className="text-xs text-[#6b6b6b] mt-0.5">{SUBTITLE}</p>
+            <p className="mt-0.5 text-[11px] leading-snug text-[#6b6b6b] sm:text-xs">{SUBTITLE}</p>
           </div>
-          <div className="shrink-0">
+          <div className="w-full shrink-0 sm:w-auto">
             {isUnlocked ? (
-              <span className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-[#f0ece6] text-[#16a34a] text-sm">
+              <span className="inline-flex w-full items-center justify-center gap-1.5 rounded-lg bg-[#f0ece6] px-3 py-2 text-sm text-[#16a34a] sm:w-auto sm:justify-start sm:py-1.5">
                 {BADGE_PAID}
               </span>
             ) : (
               <button
                 type="button"
                 onClick={openModal}
-                className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-[#1a1a1a] text-white font-medium text-sm hover:opacity-90 transition-colors"
+                className="inline-flex w-full items-center justify-center gap-1.5 rounded-lg bg-[#1a1a1a] px-3 py-2 text-xs font-medium text-white transition-colors hover:opacity-90 sm:w-auto sm:py-1.5 sm:text-sm"
               >
                 {`\uD83D\uDD13 \u4e0a\u4f4d${lockCount}\u4f4d\u3092\u89e3\u653e \u30fb \u521d\u671f\u30b5\u30dd\u30fc\u30bf\u30fc\u4fa1\u683c \uffe51,980`}
               </button>
@@ -521,16 +524,16 @@ export default function Home() {
             href="/about"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-sm text-[#6b6b6b] underline hover:text-[#4a4a4a]"
+            className="text-xs text-[#6b6b6b] underline hover:text-[#4a4a4a] sm:text-sm"
           >
             {ABOUT_LINK}
           </Link>
         </div>
         </header>
 
-        <div className="max-w-4xl mx-auto px-4 py-8">
+        <div className="max-w-4xl mx-auto px-3 py-6 sm:px-4 sm:py-8">
         {rows.length > 0 && (
-          <p className="text-xs text-[#6b6b6b] mb-4">
+          <p className="mb-4 text-[11px] text-[#6b6b6b] sm:text-xs">
             {UPDATE_PASSED} {rows.length} {UPDATE_COUNT} {SEP_LINE} {UPDATE_SCAN} 3,327 {UPDATE_MARKETS} {SEP_LINE} {UPDATE_DATE}: {UPDATE_EM_DASH}
           </p>
         )}
@@ -548,15 +551,15 @@ export default function Home() {
               return (
                 <div
                   key={r.code}
-                  className="rounded-xl border border-[#e5e0d8] bg-white p-4 shadow-sm hover:shadow-md transition-shadow"
+                  className="rounded-xl border border-[#e5e0d8] bg-white p-3 shadow-sm transition-shadow hover:shadow-md sm:p-4"
                 >
-                  <div className="flex flex-wrap items-start justify-between gap-3">
-                    <div className="flex items-center gap-3 min-w-0">
-                      <span className={`text-lg shrink-0 ${rankStyle(i)}`}>
+                  <div className="flex flex-col items-stretch justify-between gap-3 sm:flex-row sm:flex-wrap sm:items-start">
+                    <div className="flex min-w-0 items-center gap-2 sm:gap-3">
+                      <span className={`shrink-0 text-base sm:text-lg ${rankStyle(i)}`}>
                         {i + 1}{RANK_SUFFIX}
                       </span>
                       <div className="min-w-0">
-                        <div className="font-medium truncate text-[#1a1a1a]">
+                        <div className="truncate text-sm font-medium text-[#1a1a1a] sm:text-base">
                           {i < lockCount && !isUnlocked ? MASK_NAME : displayName(r)}
                         </div>
                         {!(i < lockCount && !isUnlocked) && (() => {
@@ -568,7 +571,7 @@ export default function Home() {
                                   {tagLine}
                                 </span>
                               ) : null}
-                              <div className="flex items-center gap-2 mt-0.5 text-sm text-[#6b6b6b] flex-wrap">
+                              <div className="mt-0.5 flex flex-wrap items-center gap-2 text-xs text-[#6b6b6b] sm:text-sm">
                                 <Link
                                   href={`https://finance.yahoo.co.jp/quote/${r.code}.T`}
                                   target="_blank"
@@ -578,73 +581,62 @@ export default function Home() {
                                   {r.code}
                                 </Link>
                                 <span>{LABEL_MARKET}</span>
-                                {(isUnlocked || i >= lockCount) && (
-                                  <>
-                                    <a
-                                      href={`https://www.release.tdnet.info/inbs/I_main_00_${r.code}.html`}
-                                      target="_blank"
-                                      rel="noopener noreferrer"
-                                      className="text-sm hover:opacity-70 transition-opacity"
-                                      title="TDnet"
-                                    >
-                                      {"\uD83D\uDCCA"}
-                                    </a>
-                                    {r.website ? (
-                                      <a
-                                        href={r.website}
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                        className="text-sm hover:opacity-70 transition-opacity"
-                                        title={r.website}
-                                      >
-                                        {"\uD83C\uDF10"}
-                                      </a>
-                                    ) : null}
-                                  </>
-                                )}
+                                {(isUnlocked || i >= lockCount) && r.website ? (
+                                  <a
+                                    href={r.website}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="text-sm transition-opacity hover:opacity-70"
+                                    title={r.website}
+                                  >
+                                    {"\uD83C\uDF10"}
+                                  </a>
+                                ) : null}
                               </div>
                             </>
                           );
                         })()}
                       </div>
                     </div>
-                    <div className="flex flex-wrap items-center gap-3 text-sm shrink-0">
-                      <span className="inline-flex items-center gap-0.5 text-[#1a1a1a]">
-                        {r.market_cap_oku} {LABEL_OKU}
-                        <IndicatorTooltip content={TOOLTIP_MARKETCAP} />
-                      </span>
-                      <span className="inline-flex items-center gap-0.5 text-[#2563eb]">
-                        PER {r.per}
-                        <IndicatorTooltip content={TOOLTIP_PER} />
-                      </span>
-                      <span className="inline-flex items-center gap-0.5 text-[#16a34a]">
-                        {LABEL_NC_RATIO} {r.net_cash_ratio.toFixed(2)}
-                        <IndicatorTooltip content={TOOLTIP_NC} />
-                      </span>
-                      {r.dividend_yield != null && r.dividend_yield !== undefined && (
-                        <span className="inline-flex items-center gap-0.5 text-yellow-600">
-                          {LABEL_DIVIDEND} {r.dividend_yield}%
-                          <IndicatorTooltip content={TOOLTIP_DIVIDEND} />
+                    <div className="w-full shrink-0 sm:flex sm:w-auto sm:flex-wrap sm:items-center sm:gap-3">
+                      <div className="grid grid-cols-2 gap-x-2 gap-y-2 text-[11px] leading-tight sm:contents sm:text-sm sm:leading-normal">
+                        <span className="inline-flex min-w-0 items-center gap-0.5 text-[#1a1a1a]">
+                          {r.market_cap_oku} {LABEL_OKU}
+                          <IndicatorTooltip content={TOOLTIP_MARKETCAP} />
                         </span>
-                      )}
-                      <span className="inline-flex items-center gap-2">
+                        <span className="inline-flex min-w-0 items-center gap-0.5 text-[#2563eb]">
+                          PER {r.per}
+                          <IndicatorTooltip content={TOOLTIP_PER} />
+                        </span>
+                        <span className="inline-flex min-w-0 items-center gap-0.5 text-[#16a34a]">
+                          {LABEL_NC_RATIO} {r.net_cash_ratio.toFixed(2)}
+                          <IndicatorTooltip content={TOOLTIP_NC} />
+                        </span>
+                        {r.dividend_yield != null && r.dividend_yield !== undefined && (
+                          <span className="inline-flex min-w-0 items-center gap-0.5 text-yellow-600">
+                            {LABEL_DIVIDEND} {r.dividend_yield}%
+                            <IndicatorTooltip content={TOOLTIP_DIVIDEND} />
+                          </span>
+                        )}
+                      </div>
+                      <div className="mt-2 flex flex-wrap items-center gap-2 sm:mt-0 sm:justify-end">
                         <span className="inline-flex items-center gap-1">
-                          <span className="text-xs text-gray-400">{LABEL_CHEAP_SHORT}</span>
-                          <span className={`px-1.5 py-0.5 rounded text-xs font-medium ${getBadgeClass(cheapBadge)}`} title={LABEL_CHEAP}>
+                          <span className="text-[10px] text-gray-400 sm:text-xs">{LABEL_CHEAP_SHORT}</span>
+                          <span className={`rounded px-1.5 py-0.5 text-[10px] font-medium sm:text-xs ${getBadgeClass(cheapBadge)}`} title={LABEL_CHEAP}>
                             {GRADE_LABELS[cheapBadge]}
                           </span>
                         </span>
                         <span className="inline-flex items-center gap-1">
-                          <span className="text-xs text-gray-400">{LABEL_GROWTH_SHORT}</span>
-                          <span className={`px-1.5 py-0.5 rounded text-xs font-medium ${getBadgeClass(growthBadge)}`} title={LABEL_GROWTH}>
+                          <span className="text-[10px] text-gray-400 sm:text-xs">{LABEL_GROWTH_SHORT}</span>
+                          <span className={`rounded px-1.5 py-0.5 text-[10px] font-medium sm:text-xs ${getBadgeClass(growthBadge)}`} title={LABEL_GROWTH}>
                             {GRADE_LABELS[growthBadge]}
                           </span>
                         </span>
-                      </span>
+                      </div>
                     </div>
                   </div>
-                  <div className="mt-3 flex items-center gap-3">
-                    <span className="text-sm text-[#6b6b6b]">{LABEL_SCORE}</span>
+                  <div className="mt-3 flex items-center gap-2 sm:gap-3">
+                    <span className="text-xs text-[#6b6b6b] sm:text-sm">{LABEL_SCORE}</span>
                     <div className="flex-1 h-2 rounded-full bg-[#e5e0d8] overflow-hidden max-w-[200px]">
                       <div
                         className="h-full rounded-full bg-[#d97706] transition-all"
@@ -653,7 +645,7 @@ export default function Home() {
                         }}
                       />
                     </div>
-                    <span className="text-[#d97706] font-medium tabular-nums">
+                    <span className="tabular-nums text-sm font-medium text-[#d97706] sm:text-base">
                       {r.score} / {MAX_SCORE}
                     </span>
                   </div>
@@ -866,7 +858,8 @@ export default function Home() {
             <p className="text-xs text-[#6b6b6b] leading-relaxed mb-2">{"\u30FB "}{DISCLAIMER_2}</p>
             <p className="text-xs text-[#6b6b6b] leading-relaxed mb-2">{"\u30FB "}{DISCLAIMER_3}</p>
             <p className="text-xs text-[#6b6b6b] leading-relaxed mb-2">{"\u30FB "}{DISCLAIMER_4}</p>
-            <p className="text-xs text-[#6b6b6b] leading-relaxed mb-2">{"\u30FB "}{DISCLAIMER_5}</p>
+            <p className="text-xs text-[#6b6b6b] leading-relaxed mb-2 font-semibold">{DISCLAIMER_5}</p>
+            <p className="text-xs text-[#6b6b6b] leading-relaxed mb-2 font-semibold">{DISCLAIMER_6}</p>
           </div>
 
           <footer className="mt-12 py-6 border-t border-[#e5e0d8]">

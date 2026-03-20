@@ -1,4 +1,4 @@
-﻿import Link from "next/link";
+import Link from "next/link";
 
 const PAGE_TITLE = "\u3053\u306e\u30b9\u30af\u30ea\u30fc\u30cb\u30f3\u30b0\u30b5\u30fc\u30d3\u30b9\u306b\u3064\u3044\u3066";
 const BACK_LINK = "\u2190 \u30e9\u30f3\u30ad\u30f3\u30b0\u306b\u623b\u308b";
@@ -40,7 +40,23 @@ const DISCLAIMER_1 = "\u672c\u30b5\u30fc\u30d3\u30b9\u306f\u60c5\u5831\u63d0\u4f
 const DISCLAIMER_2 = "\u8868\u793a\u3055\u308c\u308b\u30b9\u30b3\u30a2\u30fb\u30e9\u30f3\u30ad\u30f3\u30b0\u306f\u30a2\u30eb\u30b4\u30ea\u30ba\u30e0\u304a\u3088\u3073AI\u306b\u3088\u308b\u5206\u6790\u306b\u57fa\u3065\u304f\u3082\u306e\u3067\u3059\u3002\u5c06\u6765\u306e\u682a\u4fa1\u5909\u52d5\u3084\u6295\u8cc7\u6210\u679c\u3092\u4fdd\u8a3c\u3059\u308b\u3082\u306e\u3067\u306f\u3042\u308a\u307e\u305b\u3093\u3002";
 const DISCLAIMER_3 = "\u6295\u8cc7\u306b\u306f\u5e38\u306b\u30ea\u30b9\u30af\u304c\u4f34\u3044\u307e\u3059\u3002\u5143\u672c\u640d\u5931\u306e\u53ef\u80fd\u6027\u304c\u3042\u308a\u3001\u6295\u8cc7\u5224\u65ad\u306f\u5fc5\u305a\u3054\u81ea\u8eab\u306e\u8cac\u4efb\u3067\u884c\u3063\u3066\u304f\u3060\u3055\u3044\u3002";
 const DISCLAIMER_4 = "\u30b9\u30b3\u30a2\u30ea\u30f3\u30b0\u306b\u306f\u30d0\u30d5\u30a7\u30c3\u30c8\u6c0f\u30fb\u6e05\u539f\u9054\u90ce\u6c0f\u306e\u516c\u958b\u60c5\u5831\u306b\u57fa\u3065\u304f\u6295\u8cc7\u54f2\u5b66\u3092\u53c2\u8003\u306b\u3057\u3066\u3044\u307e\u3059\u304c\u3001\u4e21\u6c0f\u3068\u306f\u7121\u95a2\u4fc2\u3067\u3059\u3002";
-const DISCLAIMER_5 = "\u30c7\u30fc\u30bf\u306fyfinance\u304a\u3088\u3073JPX\u516c\u5f0f\u60c5\u5831\u3092\u5229\u7528\u3057\u3066\u304a\u308a\u3001\u6700\u65b0\u60c5\u5831\u3068\u7570\u306a\u308b\u5834\u5408\u304c\u3042\u308a\u307e\u3059\u3002\u5fc5\u305a\u516c\u5f0f\u60c5\u5831\u3067\u3054\u78ba\u8a8d\u304f\u3060\u3055\u3044\u3002";
+const DISCLAIMER_5 =
+  "\u672c\u30b5\u30fc\u30d3\u30b9\u306f\u3001\u30c7\u30fc\u30bf\u53d6\u5f97\u5143\u306e\u4ed5\u69d8\u5909\u66f4\u30fb\u30b5\u30fc\u30d3\u30b9\u7d42\u4e86\u306b\u3088\u308a\u3001\u4e88\u544a\u306a\u304f\u505c\u6b62\u30fb\u7d42\u4e86\u3059\u308b\u5834\u5408\u304c\u3042\u308a\u307e\u3059\u3002";
+const DISCLAIMER_6 =
+  "AI\u306b\u3088\u308b\u5206\u6790\u30b3\u30e1\u30f3\u30c8\u306f\u53c2\u8003\u60c5\u5831\u3067\u3042\u308a\u3001\u8aa4\u308a\u3092\u542b\u3080\u5834\u5408\u304c\u3042\u308a\u307e\u3059\u3002\u6295\u8cc7\u5224\u65ad\u306f\u5fc5\u305a\u3054\u81ea\u8eab\u306e\u8cac\u4efb\u3067\u884c\u3063\u3066\u304f\u3060\u3055\u3044\u3002";
+const STANCE_TITLE = "\ud83d\udccc \u3053\u306e\u30b5\u30fc\u30d3\u30b9\u304c\u60f3\u5b9a\u3057\u3066\u3044\u308b\u6295\u8cc7\u30b9\u30bf\u30f3\u30b9";
+const STANCE_BODY =
+  "\u30cd\u30c3\u30c8\u30ad\u30e3\u30c3\u30b7\u30e5\u6bd4\u7387\u304c\u9ad8\u304f\u3001\u4eee\u306b\u5012\u7523\u3057\u3066\u3082\u640d\u3057\u306b\u304f\u3044\u30ec\u30d9\u30eb\u306e\u5272\u5b89\u682a\u3092\u3001\u30b3\u30a2\u30b5\u30c6\u30e9\u30a4\u30c8\u6226\u7565\u306e\u30b5\u30c6\u30e9\u30a4\u30c8\u67a0\u3068\u3057\u3066\u3001\u8907\u6570\u9298\u67c4\u306b\u5206\u6563\u3057\u3001\u4e2d\u9577\u671f\u76ee\u7dda\u3067\u4fdd\u6709\u3059\u308b\u3002\u305d\u306e\u3046\u3061\u3069\u308c\u304b\u304c\u30c6\u30f3\u30d0\u30fc\u30ac\u30fc\u306b\u306a\u308c\u3070\u3044\u3044\u3002";
+const STANCE_L1 =
+  "\u30fb\u274c \u300c1\u4f4d\u306e\u9298\u67c4\u3092\u8cb7\u3048\u3070\u3059\u3050\u4e0a\u304c\u308b\u300d\u3067\u306f\u3042\u308a\u307e\u305b\u3093";
+const STANCE_L2 =
+  "\u30fb\u274c \u300c\u77ed\u671f\u30c8\u30ec\u30fc\u30c9\u3067\u5229\u76ca\u3092\u51fa\u3059\u300d\u305f\u3081\u306e\u30c4\u30fc\u30eb\u3067\u306f\u3042\u308a\u307e\u305b\u3093";
+const STANCE_L3 =
+  "\u30fb\u2705 \u5019\u88dc\u9298\u67c4\u3092\u7d5e\u308a\u8fbc\u307f\u3001\u81ea\u5206\u3067\u8abf\u3079\u3066\u3001\u5206\u6563\u3057\u3066\u3001\u6c17\u9577\u306b\u5f85\u3064";
+const STANCE_L4 =
+  "\u30fb\u2705 \u30b3\u30a2\uff08\u30a4\u30f3\u30c7\u30c3\u30af\u30b9\u30fb\u9ad8\u914d\u5f53\uff09\uff0b\u30b5\u30c6\u30e9\u30a4\u30c8\uff08\u5272\u5b89\u5c0f\u578b\u6210\u9577\u682a\uff09\u306e\u7d44\u307f\u5408\u308f\u305b\u3067\u4f7f\u3046";
+const STANCE_FOOT =
+  "\u30e9\u30f3\u30ad\u30f3\u30b0\u4e0a\u4f4d\uff1d\u3059\u3050\u4e0a\u304c\u308b\u9298\u67c4\u3067\u306f\u3042\u308a\u307e\u305b\u3093\u3002\u300c\u5272\u5b89\u3067\u653e\u7f6e\u3055\u308c\u3066\u3044\u308b\u6709\u671b\u5019\u88dc\u300d\u3067\u3059\u3002";
 
 const BADGES = [BADGE_MARKET_CAP, BADGE_PER, BADGE_NC, BADGE_PROFIT, BADGE_EXCLUDE];
 
@@ -55,9 +71,9 @@ export default function AboutPage() {
           {BACK_LINK}
         </Link>
 
-        <h1 className="text-xl font-bold text-[#1a1a1a] mb-8">{PAGE_TITLE}</h1>
+        <h1 className="text-lg sm:text-xl font-bold text-[#1a1a1a] mb-6 sm:mb-8">{PAGE_TITLE}</h1>
 
-        <div className="rounded-xl border border-[#f59e0b] bg-[#fffbeb] p-6 text-base leading-relaxed">
+        <div className="rounded-xl border border-[#f59e0b] bg-[#fffbeb] p-4 sm:p-6 text-sm sm:text-base leading-relaxed">
           <section className="mb-6">
             <p className="text-xl font-bold text-gray-800 mb-2">{CATCH_1}</p>
             <p className="text-3xl font-black text-amber-600 mb-1">{CATCH_2}</p>
@@ -90,6 +106,17 @@ export default function AboutPage() {
               <span className="font-bold">{"\uD83D\uDD12 "}{HOWTO_LOCK}</span>
               <span className="block text-xs text-gray-500">{HOWTO_LOCK_DESC}</span>
             </p>
+          </section>
+          <section className="bg-white rounded-lg p-4 mb-6">
+            <h2 className="text-sm font-bold text-gray-800 mb-3">{STANCE_TITLE}</h2>
+            <p className="text-sm text-gray-700 leading-relaxed mb-3">{STANCE_BODY}</p>
+            <ul className="space-y-2 text-sm text-gray-700">
+              <li>{STANCE_L1}</li>
+              <li>{STANCE_L2}</li>
+              <li>{STANCE_L3}</li>
+              <li>{STANCE_L4}</li>
+            </ul>
+            <p className="text-sm text-gray-700 leading-relaxed mt-4">{STANCE_FOOT}</p>
           </section>
           <section className="mb-6">
             <h2 className="text-sm font-bold text-gray-500 mb-3">{CONDITION_TITLE}</h2>
@@ -126,7 +153,8 @@ export default function AboutPage() {
           <p className="text-xs text-[#6b6b6b] leading-relaxed mb-2">{"\u30FB "}{DISCLAIMER_2}</p>
           <p className="text-xs text-[#6b6b6b] leading-relaxed mb-2">{"\u30FB "}{DISCLAIMER_3}</p>
           <p className="text-xs text-[#6b6b6b] leading-relaxed mb-2">{"\u30FB "}{DISCLAIMER_4}</p>
-          <p className="text-xs text-[#6b6b6b] leading-relaxed mb-2">{"\u30FB "}{DISCLAIMER_5}</p>
+          <p className="text-xs text-[#6b6b6b] leading-relaxed mb-2 font-semibold">{DISCLAIMER_5}</p>
+          <p className="text-xs text-[#6b6b6b] leading-relaxed mb-2 font-semibold">{DISCLAIMER_6}</p>
         </div>
       </div>
     </div>
