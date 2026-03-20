@@ -268,6 +268,7 @@ type Row = {
   code: string;
   name: string;
   name_jp?: string;
+  website?: string;
   score: number;
   net_cash_ratio: number;
   per: number;
@@ -567,7 +568,7 @@ export default function Home() {
                                   {tagLine}
                                 </span>
                               ) : null}
-                              <div className="flex items-center gap-2 mt-0.5 text-sm text-[#6b6b6b]">
+                              <div className="flex items-center gap-2 mt-0.5 text-sm text-[#6b6b6b] flex-wrap">
                                 <Link
                                   href={`https://finance.yahoo.co.jp/quote/${r.code}.T`}
                                   target="_blank"
@@ -577,6 +578,30 @@ export default function Home() {
                                   {r.code}
                                 </Link>
                                 <span>{LABEL_MARKET}</span>
+                                {(isUnlocked || i >= lockCount) && (
+                                  <>
+                                    <a
+                                      href={`https://www.release.tdnet.info/inbs/I_main_00_${r.code}.html`}
+                                      target="_blank"
+                                      rel="noopener noreferrer"
+                                      className="text-sm hover:opacity-70 transition-opacity"
+                                      title="TDnet"
+                                    >
+                                      {"\uD83D\uDCCA"}
+                                    </a>
+                                    {r.website ? (
+                                      <a
+                                        href={r.website}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="text-sm hover:opacity-70 transition-opacity"
+                                        title={r.website}
+                                      >
+                                        {"\uD83C\uDF10"}
+                                      </a>
+                                    ) : null}
+                                  </>
+                                )}
                               </div>
                             </>
                           );

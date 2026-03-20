@@ -247,6 +247,7 @@ def step2_first_filter(stocks_df):
                     div_yield = None
             else:
                 div_yield = None
+            website = info.get("website", "") or ""
             first_pass.append({
                 "code": code,
                 "name": nm,
@@ -256,6 +257,7 @@ def step2_first_filter(stocks_df):
                 "eps": eps,
                 "info": info,
                 "dividend_yield": div_yield,
+                "website": website,
             })
             if TEST_LIMIT > 0:
                 print(f"    ????: {code} {nm} (PER={per:.2f}, ????E{market_cap/1e8:.1f}?E", flush=True)
@@ -903,6 +905,7 @@ def step5_save(results):
             "code": r["code"],
             "name": base_name,
             "name_jp": name_jp,
+            "website": r.get("website", ""),
             "score": r["score"],
             "valuation_score": r.get("valuation_score", 0),
             "growth_score": r.get("growth_score", 0),
