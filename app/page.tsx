@@ -446,7 +446,8 @@ function getStockTag(r: Row): string {
   if ((r.roe ?? 0) >= 15) tags.push("ROE\u512a\u79c0");
   if ((r.trend_score ?? 0) >= 8) tags.push("\u696d\u7e3e\u5897\u52a0");
   if ((r.shareholder_score ?? 0) >= 12) tags.push("\u9084\u5143\u4f59\u5730\u5927");
-  return tags.slice(0, 3).join(" \u30fb ");
+  if ((r.dividend_yield ?? 0) >= 3.5) tags.push("\uD83D\uDCB0\u9AD8\u914D\u5F53");
+  return tags.slice(0, 4).join(" \u30fb ");
 }
 
 export default function Home() {
