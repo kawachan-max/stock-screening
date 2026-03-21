@@ -47,6 +47,13 @@ const TOOLTIP_ROIC: TooltipContent = {
   intent: "8\uff05\u4ee5\u4e0a\u304c\u76ee\u5b89\u3002\u9ad8\u3044\u307b\u3069\u8cc7\u672c\u52b9\u7387\u304c\u826f\u3044",
 };
 
+const TOOLTIP_EQUITY_RATIO: TooltipContent = {
+  title: "\u81ea\u5df1\u8cc7\u672c\u6bd4\u7387",
+  desc: "\u7dcf\u8cc7\u7523\u306b\u5bfe\u3059\u308b\u81ea\u5df1\u8cc7\u672c\u306e\u5272\u5408\u3002\u9280\u884c\u3067\u306fBIS\u898f\u5236\u3068\u306e\u95a2\u9023\u304c\u5927\u304d\u3044",
+  formula: "\u81ea\u5df1\u8cc7\u672c \u00f7 \u7dcf\u8cc7\u7523 \u00d7 100",
+  intent: "8\uff05\u4ee5\u4e0a\u3092\u76ee\u5b89\u306b\u3057\u305f\u30c1\u30a7\u30c3\u30af\uff08\u672c\u30bf\u30d6\uff09",
+};
+
 const TOOLTIP_PBR: TooltipContent = {
   title: "PBR",
   desc: "\u682A\u4FA1\u304C\u7D14\u8CC7\u7523\uff08\u4F1A\u793E\u306E\u6B63\u5473\u8CC7\u7523\uff09\u306E\u4F55\u500D\u304B\u3092\u793A\u3059\u6307\u6a19\u30021\u500D\u672A\u6E80\uFF1D\u89E3\u6563\u3057\u3066\u3082\u682A\u4FA1\u3088\u308A\u591A\u304F\u304A\u91D1\u304C\u623B\u3063\u3066\u304F\u308B\u8D85\u5272\u5B89\u72B6\u614B",
@@ -264,6 +271,9 @@ const LABEL_METRICS = "\u6307\u6A19\u30B0\u30EA\u30C3\u30C9";
 const LABEL_AI_ANALYSIS = "AI\u5206\u6790\u30B3\u30E1\u30F3\u30C8";
 const MSG_AI_PLACEHOLDER = "AI\u5206\u6790\u306F\u6B21\u56DE\u56DB\u534A\u671F\u66F4\u65B0\u6642\u306B\u8FFD\u52A0\u4E88\u5B9A\u3067\u3059";
 const LABEL_RISK_CHECK = "\u30EA\u30B9\u30AF\u30C1\u30A7\u30C3\u30AF\uff08\u30D0\u30D5\u30A7\u30C3\u30C8\u6D41\uff09";
+const LABEL_RISK_CHECK_FINANCE =
+  "\u30ea\u30b9\u30af\u30c1\u30a7\u30c3\u30af\uff08\u91d1\u878d\u30fb\u4e0d\u52d5\u7523\u5411\u3051\uff09";
+const LABEL_EQUITY_RATIO = "\u81ea\u5df1\u8cc7\u672c\u6bd4\u7387";
 const RISK_CHECK_ITEMS: { key: keyof NonNullable<Row["risk_checks"]>; label: string; inverted: boolean }[] = [
   { key: "roe_15_percent", label: "ROE 15%\u4EE5\u4E0A\u306E\u7D9A\u7D9A", inverted: false },
   { key: "equity_ratio_50_percent", label: "\u81EA\u5DF1\u8CC7\u672C\u6BD4\u7387 50%\u4EE5\u4E0A", inverted: false },
@@ -311,6 +321,49 @@ const RISK_CHECK_TOOLTIPS: Record<keyof NonNullable<Row["risk_checks"]>, Tooltip
     intent: "\u55b6\u696d\u5229\u76ca\u3068\u7d14\u5229\u76ca\u306e\u5dee\u304c\u5927\u304d\u3044\u5834\u5408\u3001\u4e00\u904e\u6027\u5229\u76ca\u306b\u4f9d\u5b58\u3057\u3066\u3044\u308b\u53ef\u80fd\u6027\u304c\u9ad8\u3044",
   },
 };
+
+const RISK_CHECK_ITEMS_FINANCE: { key: string; label: string; inverted: boolean }[] = [
+  { key: "roe_15_percent", label: "ROE 15%\u4ee5\u4e0a\u306e\u7d99\u7d9a", inverted: false },
+  { key: "capital_adequacy", label: "\u81ea\u5df1\u8cc7\u672c\u6bd4\u7387 8%\u4ee5\u4e0a", inverted: false },
+  { key: "dividend_stability", label: "\u914d\u5f53\u306e\u5b89\u5b9a\u6027", inverted: false },
+  { key: "profit_stability", label: "\u5229\u76ca\u306e\u5b89\u5b9a\u6027", inverted: false },
+  { key: "revenue_diversity", label: "\u53ce\u76ca\u6e90\u306e\u5206\u6563", inverted: false },
+  { key: "liquidity_risk", label: "\u51fa\u6765\u9ad8\uff08\u6d41\u52d5\u6027\uff09", inverted: true },
+];
+
+const RISK_CHECK_TOOLTIPS_FINANCE: Record<string, TooltipContent> = {
+  roe_15_percent: {
+    title: "ROE 15\uff05\u4ee5\u4e0a\u306e\u7d99\u7d9a",
+    desc: "\u91d1\u878d\u30bf\u30d6\u7528\u3002ROE15\uff05\u4ee5\u4e0a\u304c\u7d99\u7d9a\u3059\u308b\u304b",
+    formula: "",
+    intent: "",
+  },
+  capital_adequacy: {
+    title: "\u81ea\u5df1\u8cc7\u672c\u6bd4\u7387 8\uff05\u4ee5\u4e0a",
+    desc: "\u9280\u884cBIS\u7b49\u3092\u53c2\u8003\u306b\u3001\u81ea\u5df1\u8cc7\u672c\u6bd4\u73878\uff05\u672a\u6e80\u306f\u8981\u6ce8\u610f",
+    formula: "\u81ea\u5df1\u8cc7\u672c \u00f7 \u7dcf\u8cc7\u7523 \u00d7 100",
+    intent: "",
+  },
+  dividend_stability: {
+    title: "\u914d\u5f53\u306e\u5b89\u5b9a\u6027",
+    desc: "\u904e\u53bb4\u671f\u306e\u5e74\u9593\u914d\u5f53\u304c3\u9023\u7d9a\u53b3\u683c\u6e1b\u5c11\u3067\u306a\u3044\u304b",
+    formula: "",
+    intent: "",
+  },
+  profit_stability: {
+    title: "\u5229\u76ca\u306e\u5b89\u5b9a\u6027",
+    desc: "\u6700\u65b03\u671f\u306e\u55b6\u696d\u5229\u76ca\u304c\u3059\u3079\u3066\u30d7\u30e9\u30b9\u304b",
+    formula: "",
+    intent: "",
+  },
+  revenue_diversity: {
+    title: "\u53ce\u76ca\u6e90\u306e\u5206\u6563",
+    desc: "\u55b6\u696d\u5229\u76ca\u3068\u7d20\u5229\u76ca\u306e\u5dee\u304c\u5927\u304d\u3059\u304e\u306a\u3044\u304b\uff0850\uff05\u672a\u6e80\uff09",
+    formula: "",
+    intent: "",
+  },
+  liquidity_risk: RISK_CHECK_TOOLTIPS.liquidity_risk,
+};
 const DASH = "\u2014";
 
 const PITCH_TIMES = "\u500D"; // \u500D
@@ -354,14 +407,19 @@ type Row = {
   roe?: number | null;
   roic?: number | null;
   pbr?: number | null;
+  equity_ratio?: number | null;
   ai_comment?: string;
   risk_checks?: {
-    roe_15_percent: boolean | null;
-    equity_ratio_50_percent: boolean | null;
-    debt_to_profit_5x: boolean | null;
-    fcf_stability: boolean | null;
-    liquidity_risk: boolean | null;
-    one_time_profit_risk: boolean | null;
+    roe_15_percent?: boolean | null;
+    equity_ratio_50_percent?: boolean | null;
+    debt_to_profit_5x?: boolean | null;
+    fcf_stability?: boolean | null;
+    liquidity_risk?: boolean | null;
+    one_time_profit_risk?: boolean | null;
+    capital_adequacy?: boolean | null;
+    dividend_stability?: boolean | null;
+    profit_stability?: boolean | null;
+    revenue_diversity?: boolean | null;
   } | null;
   tab?: "general" | "finance";
 };
@@ -804,8 +862,20 @@ export default function Home() {
                           <IndicatorTooltip content={TOOLTIP_PER} />
                         </span>
                         <span className="inline-flex min-w-0 items-center gap-0.5 text-[#16a34a]">
-                          {LABEL_NC_RATIO} {r.net_cash_ratio.toFixed(2)}
-                          <IndicatorTooltip content={TOOLTIP_NC} />
+                          {isFinance ? (
+                            <>
+                              PBR{" "}
+                              {r.pbr != null && r.pbr !== undefined
+                                ? `${r.pbr}${PITCH_TIMES}`
+                                : DASH}
+                              <IndicatorTooltip content={TOOLTIP_PBR} />
+                            </>
+                          ) : (
+                            <>
+                              {LABEL_NC_RATIO} {r.net_cash_ratio.toFixed(2)}
+                              <IndicatorTooltip content={TOOLTIP_NC} />
+                            </>
+                          )}
                         </span>
                         {r.dividend_yield != null && r.dividend_yield !== undefined && (
                           <span className="inline-flex min-w-0 items-center gap-0.5 text-yellow-600">
@@ -1008,62 +1078,140 @@ export default function Home() {
                       <section>
                         <h3 className="text-xs font-semibold text-[#6b6b6b] mb-2">{LABEL_METRICS}</h3>
                         <div className="grid grid-cols-2 gap-2">
-                          <div className="bg-[#f5f0e8] rounded-lg p-3">
-                            <div className="text-xs text-gray-500 flex items-center gap-0.5">
-                              {LABEL_NC}
-                              <IndicatorTooltip content={TOOLTIP_NC} />
-                            </div>
-                            <div className="text-sm font-medium text-gray-800 mt-0.5">{r.net_cash_ratio}</div>
-                          </div>
-                          <div className="bg-[#f5f0e8] rounded-lg p-3">
-                            <div className="text-xs text-gray-500 flex items-center gap-0.5">
-                              PER
-                              <IndicatorTooltip content={TOOLTIP_PER} />
-                            </div>
-                            <div className="text-sm font-medium text-gray-800 mt-0.5">{r.per}{PITCH_TIMES}</div>
-                          </div>
-                          <div className="bg-[#f5f0e8] rounded-lg p-3">
-                            <div className="text-xs text-gray-500 flex items-center gap-0.5">
-                              {LABEL_MARKETCAP}
-                              <IndicatorTooltip content={TOOLTIP_MARKETCAP} />
-                            </div>
-                            <div className="text-sm font-medium text-gray-800 mt-0.5">{r.market_cap_oku}{LABEL_OKU}</div>
-                          </div>
-                          <div className="bg-[#f5f0e8] rounded-lg p-3">
-                            <div className="text-xs text-gray-500 flex items-center gap-0.5">
-                              {LABEL_DIVIDEND}
-                              <IndicatorTooltip content={TOOLTIP_DIVIDEND} />
-                            </div>
-                            <div className="text-sm font-medium text-gray-800 mt-0.5">{r.dividend_yield != null ? `${r.dividend_yield}%` : DASH}</div>
-                          </div>
-                          <div className="bg-[#f5f0e8] rounded-lg p-3">
-                            <div className="text-xs text-gray-500 flex items-center gap-0.5">
-                              ROE
-                              <IndicatorTooltip content={TOOLTIP_ROE} />
-                            </div>
-                            <div className="text-sm font-medium text-gray-800 mt-0.5">{r.roe != null ? `${r.roe}%` : DASH}</div>
-                          </div>
-                          <div className="bg-[#f5f0e8] rounded-lg p-3">
-                            <div className="text-xs text-gray-500 flex items-center gap-0.5">
-                              ROIC
-                              <IndicatorTooltip content={TOOLTIP_ROIC} />
-                            </div>
-                            <div className="text-sm font-medium text-gray-800 mt-0.5">{r.roic != null ? `${r.roic}%` : DASH}</div>
-                          </div>
-                          <div className="bg-[#f5f0e8] rounded-lg p-3">
-                            <div className="text-xs text-gray-500 flex items-center gap-0.5">
-                              PBR
-                              <IndicatorTooltip content={TOOLTIP_PBR} />
-                            </div>
-                            <div className="text-sm font-medium text-gray-800 mt-0.5">{r.pbr != null ? `${r.pbr}${PITCH_TIMES}` : DASH}</div>
-                          </div>
-                          <div className="bg-[#f5f0e8] rounded-lg p-3">
-                            <div className="text-xs text-gray-500 flex items-center gap-0.5">
-                              {LABEL_PAYOUT}
-                              <IndicatorTooltip content={TOOLTIP_PAYOUT} />
-                            </div>
-                            <div className="text-sm font-medium text-gray-800 mt-0.5">{r.payout_ratio != null ? `${r.payout_ratio}%` : DASH}</div>
-                          </div>
+                          {isFinance ? (
+                            <>
+                              <div className="bg-[#f5f0e8] rounded-lg p-3">
+                                <div className="text-xs text-gray-500 flex items-center gap-0.5">
+                                  PBR
+                                  <IndicatorTooltip content={TOOLTIP_PBR} />
+                                </div>
+                                <div className="text-sm font-medium text-gray-800 mt-0.5">
+                                  {r.pbr != null ? `${r.pbr}${PITCH_TIMES}` : DASH}
+                                </div>
+                              </div>
+                              <div className="bg-[#f5f0e8] rounded-lg p-3">
+                                <div className="text-xs text-gray-500 flex items-center gap-0.5">
+                                  PER
+                                  <IndicatorTooltip content={TOOLTIP_PER} />
+                                </div>
+                                <div className="text-sm font-medium text-gray-800 mt-0.5">{r.per}{PITCH_TIMES}</div>
+                              </div>
+                              <div className="bg-[#f5f0e8] rounded-lg p-3">
+                                <div className="text-xs text-gray-500 flex items-center gap-0.5">
+                                  {LABEL_MARKETCAP}
+                                  <IndicatorTooltip content={TOOLTIP_MARKETCAP} />
+                                </div>
+                                <div className="text-sm font-medium text-gray-800 mt-0.5">{r.market_cap_oku}{LABEL_OKU}</div>
+                              </div>
+                              <div className="bg-[#f5f0e8] rounded-lg p-3">
+                                <div className="text-xs text-gray-500 flex items-center gap-0.5">
+                                  {LABEL_DIVIDEND}
+                                  <IndicatorTooltip content={TOOLTIP_DIVIDEND} />
+                                </div>
+                                <div className="text-sm font-medium text-gray-800 mt-0.5">
+                                  {r.dividend_yield != null ? `${r.dividend_yield}%` : DASH}
+                                </div>
+                              </div>
+                              <div className="bg-[#f5f0e8] rounded-lg p-3">
+                                <div className="text-xs text-gray-500 flex items-center gap-0.5">
+                                  ROE
+                                  <IndicatorTooltip content={TOOLTIP_ROE} />
+                                </div>
+                                <div className="text-sm font-medium text-gray-800 mt-0.5">
+                                  {r.roe != null ? `${r.roe}%` : DASH}
+                                </div>
+                              </div>
+                              <div className="bg-[#f5f0e8] rounded-lg p-3">
+                                <div className="text-xs text-gray-500 flex items-center gap-0.5">
+                                  {LABEL_EQUITY_RATIO}
+                                  <IndicatorTooltip content={TOOLTIP_EQUITY_RATIO} />
+                                </div>
+                                <div className="text-sm font-medium text-gray-800 mt-0.5">
+                                  {r.equity_ratio != null && r.equity_ratio !== undefined
+                                    ? `${r.equity_ratio}%`
+                                    : DASH}
+                                </div>
+                              </div>
+                              <div className="bg-[#f5f0e8] rounded-lg p-3">
+                                <div className="text-xs text-gray-500 flex items-center gap-0.5">
+                                  {LABEL_PAYOUT}
+                                  <IndicatorTooltip content={TOOLTIP_PAYOUT} />
+                                </div>
+                                <div className="text-sm font-medium text-gray-800 mt-0.5">
+                                  {r.payout_ratio != null ? `${r.payout_ratio}%` : DASH}
+                                </div>
+                              </div>
+                            </>
+                          ) : (
+                            <>
+                              <div className="bg-[#f5f0e8] rounded-lg p-3">
+                                <div className="text-xs text-gray-500 flex items-center gap-0.5">
+                                  {LABEL_NC}
+                                  <IndicatorTooltip content={TOOLTIP_NC} />
+                                </div>
+                                <div className="text-sm font-medium text-gray-800 mt-0.5">{r.net_cash_ratio}</div>
+                              </div>
+                              <div className="bg-[#f5f0e8] rounded-lg p-3">
+                                <div className="text-xs text-gray-500 flex items-center gap-0.5">
+                                  PER
+                                  <IndicatorTooltip content={TOOLTIP_PER} />
+                                </div>
+                                <div className="text-sm font-medium text-gray-800 mt-0.5">{r.per}{PITCH_TIMES}</div>
+                              </div>
+                              <div className="bg-[#f5f0e8] rounded-lg p-3">
+                                <div className="text-xs text-gray-500 flex items-center gap-0.5">
+                                  {LABEL_MARKETCAP}
+                                  <IndicatorTooltip content={TOOLTIP_MARKETCAP} />
+                                </div>
+                                <div className="text-sm font-medium text-gray-800 mt-0.5">{r.market_cap_oku}{LABEL_OKU}</div>
+                              </div>
+                              <div className="bg-[#f5f0e8] rounded-lg p-3">
+                                <div className="text-xs text-gray-500 flex items-center gap-0.5">
+                                  {LABEL_DIVIDEND}
+                                  <IndicatorTooltip content={TOOLTIP_DIVIDEND} />
+                                </div>
+                                <div className="text-sm font-medium text-gray-800 mt-0.5">
+                                  {r.dividend_yield != null ? `${r.dividend_yield}%` : DASH}
+                                </div>
+                              </div>
+                              <div className="bg-[#f5f0e8] rounded-lg p-3">
+                                <div className="text-xs text-gray-500 flex items-center gap-0.5">
+                                  ROE
+                                  <IndicatorTooltip content={TOOLTIP_ROE} />
+                                </div>
+                                <div className="text-sm font-medium text-gray-800 mt-0.5">
+                                  {r.roe != null ? `${r.roe}%` : DASH}
+                                </div>
+                              </div>
+                              <div className="bg-[#f5f0e8] rounded-lg p-3">
+                                <div className="text-xs text-gray-500 flex items-center gap-0.5">
+                                  ROIC
+                                  <IndicatorTooltip content={TOOLTIP_ROIC} />
+                                </div>
+                                <div className="text-sm font-medium text-gray-800 mt-0.5">
+                                  {r.roic != null ? `${r.roic}%` : DASH}
+                                </div>
+                              </div>
+                              <div className="bg-[#f5f0e8] rounded-lg p-3">
+                                <div className="text-xs text-gray-500 flex items-center gap-0.5">
+                                  PBR
+                                  <IndicatorTooltip content={TOOLTIP_PBR} />
+                                </div>
+                                <div className="text-sm font-medium text-gray-800 mt-0.5">
+                                  {r.pbr != null ? `${r.pbr}${PITCH_TIMES}` : DASH}
+                                </div>
+                              </div>
+                              <div className="bg-[#f5f0e8] rounded-lg p-3">
+                                <div className="text-xs text-gray-500 flex items-center gap-0.5">
+                                  {LABEL_PAYOUT}
+                                  <IndicatorTooltip content={TOOLTIP_PAYOUT} />
+                                </div>
+                                <div className="text-sm font-medium text-gray-800 mt-0.5">
+                                  {r.payout_ratio != null ? `${r.payout_ratio}%` : DASH}
+                                </div>
+                              </div>
+                            </>
+                          )}
                         </div>
                       </section>
                       <section>
@@ -1073,45 +1221,59 @@ export default function Home() {
                         </div>
                       </section>
                       <section>
-                        <h3 className="text-xs font-semibold text-[#6b6b6b] mb-2">{LABEL_RISK_CHECK}</h3>
+                        <h3 className="text-xs font-semibold text-[#6b6b6b] mb-2">
+                          {isFinance ? LABEL_RISK_CHECK_FINANCE : LABEL_RISK_CHECK}
+                        </h3>
                         <div className="grid grid-cols-2 gap-2 text-xs">
-                          {RISK_CHECK_ITEMS.map(({ key, label, inverted }) => {
-                            const val = r.risk_checks?.[key];
-                            let badge: "\u25CE" | "\u25CB" | "\u25B3" | "\u00D7" = "\u25B3";
-                            let badgeClass = "bg-amber-100 text-amber-700";
-                            let suffix = "";
-                            if (val === null || val === undefined) {
-                              badge = "\u25B3";
-                              badgeClass = "bg-amber-100 text-amber-700";
-                            } else if (inverted) {
-                              if (val === false) {
-                                badge = "\u25CE";
-                                badgeClass = "bg-emerald-100 text-emerald-700";
-                                suffix = " \u554F\u984C\u306A\u3057";
+                          {(isFinance ? RISK_CHECK_ITEMS_FINANCE : RISK_CHECK_ITEMS).map(
+                            ({ key, label, inverted }) => {
+                              const val = (r.risk_checks as Record<string, boolean | null | undefined> | null)?.[
+                                key
+                              ];
+                              const tip = isFinance
+                                ? RISK_CHECK_TOOLTIPS_FINANCE[key]
+                                : RISK_CHECK_TOOLTIPS[key as keyof NonNullable<Row["risk_checks"]>];
+                              let badge: "\u25CE" | "\u25CB" | "\u25B3" | "\u00D7" = "\u25B3";
+                              let badgeClass = "bg-amber-100 text-amber-700";
+                              let suffix = "";
+                              if (val === null || val === undefined) {
+                                badge = "\u25B3";
+                                badgeClass = "bg-amber-100 text-amber-700";
+                              } else if (inverted) {
+                                if (val === false) {
+                                  badge = "\u25CE";
+                                  badgeClass = "bg-emerald-100 text-emerald-700";
+                                  suffix = " \u554F\u984C\u306A\u3057";
+                                } else {
+                                  badge = "\u00D7";
+                                  badgeClass = "bg-red-100 text-red-700";
+                                  suffix = " \u30EA\u30B9\u30AF\u3042\u308A";
+                                }
                               } else {
-                                badge = "\u00D7";
-                                badgeClass = "bg-red-100 text-red-700";
-                                suffix = " \u30EA\u30B9\u30AF\u3042\u308A";
+                                if (val === true) {
+                                  badge = "\u25CE";
+                                  badgeClass = "bg-emerald-100 text-emerald-700";
+                                } else {
+                                  badge = "\u00D7";
+                                  badgeClass = "bg-red-100 text-red-700";
+                                }
                               }
-                            } else {
-                              if (val === true) {
-                                badge = "\u25CE";
-                                badgeClass = "bg-emerald-100 text-emerald-700";
-                              } else {
-                                badge = "\u00D7";
-                                badgeClass = "bg-red-100 text-red-700";
-                              }
-                            }
-                            return (
-                              <div key={key} className="flex items-center gap-1.5 flex-wrap">
-                                <span className="text-[#6b6b6b] flex items-center gap-0.5">
-                                  {label}
-                                  <IndicatorTooltip content={RISK_CHECK_TOOLTIPS[key]} />
-                                </span>
-                                <span className={`inline-flex items-center px-1.5 py-0.5 rounded font-medium shrink-0 ${badgeClass}`}>{badge}{suffix}</span>
-                              </div>
-                            );
-                          })}
+                              return (
+                                <div key={key} className="flex items-center gap-1.5 flex-wrap">
+                                  <span className="text-[#6b6b6b] flex items-center gap-0.5">
+                                    {label}
+                                    {tip ? <IndicatorTooltip content={tip} /> : null}
+                                  </span>
+                                  <span
+                                    className={`inline-flex items-center px-1.5 py-0.5 rounded font-medium shrink-0 ${badgeClass}`}
+                                  >
+                                    {badge}
+                                    {suffix}
+                                  </span>
+                                </div>
+                              );
+                            },
+                          )}
                         </div>
                       </section>
                     </div>

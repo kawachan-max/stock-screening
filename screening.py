@@ -965,9 +965,16 @@ def step3_detail_finance(first_pass):
                         policy_change_score = 0
             except Exception:
                 pass
+            try:
+                ta_val = float(bs.get("ta") or 0)
+                eq_val = float(bs.get("eq") or 0)
+                equity_ratio_pct = round(eq_val / ta_val * 100, 2) if ta_val > 0 else 0.0
+            except (TypeError, ValueError):
+                equity_ratio_pct = 0.0
             r = dict(row)
             r["yf_bs"] = bs
             r["net_cash_ratio"] = nc
+            r["equity_ratio"] = equity_ratio_pct
             r["annual_list"] = annual_list
             r["sales"] = annual_list[0]["Sales"]
             r["op"] = annual_list[0]["OP"]
@@ -1505,27 +1512,27 @@ def calc_score_finance(row):
         return bool(val) is False
 
     bad_roe = is_bad("roe_15_percent", inverted=False)
-    bad_equity = is_bad("equity_ratio_50_percent", inverted=False)
-    bad_debt = is_bad("debt_to_profit_5x", inverted=False)
-    bad_fcf = is_bad("fcf_stability", inverted=False)
+    bad_capital = is_bad("capital_adequacy", inverted=False)
+    bad_dividend = is_bad("dividend_stability", inverted=False)
+    bad_profit_stab = is_bad("profit_stability", inverted=False)
+    bad_revenue_div = is_bad("revenue_diversity", inverted=False)
     bad_liquidity = is_bad("liquidity_risk", inverted=True)
-    bad_one_time = is_bad("one_time_profit_risk", inverted=True)
 
     individual = 0
     if bad_roe:
         individual -= 2
-    if bad_equity:
+    if bad_capital:
         individual -= 3
-    if bad_debt:
+    if bad_dividend:
         individual -= 4
-    if bad_fcf:
+    if bad_profit_stab:
+        individual -= 4
+    if bad_revenue_div:
         individual -= 4
     if bad_liquidity:
         individual -= 3
-    if bad_one_time:
-        individual -= 4
 
-    xcount = sum([bad_roe, bad_equity, bad_debt, bad_fcf, bad_liquidity, bad_one_time])
+    xcount = sum([bad_roe, bad_capital, bad_dividend, bad_profit_stab, bad_revenue_div, bad_liquidity])
     if xcount <= 2:
         additional = 0
     elif xcount == 3:
@@ -1596,9 +1603,114 @@ AI_RISK_KEYS = [
     "one_time_profit_risk",
 ]
 
+FINANCE_AI_RISK_KEYS = [
+    "roe_15_percent",
+    "capital_adequacy",
+    "dividend_stability",
+    "profit_stability",
+    "revenue_diversity",
+    "liquidity_risk",
+]
+
 
 def _default_risk_checks():
     return {k: None for k in AI_RISK_KEYS}
+
+
+def _default_finance_risk_checks():
+    return {k: None for k in FINANCE_AI_RISK_KEYS}
+
+
+def _finance_dividend_stability_ok(ticker):
+    """\u914d\u5f53\u306e\u5b89\u5b9a\u6027: 4\u671f\u5206\u306e\u5e74\u9593\u914d\u5f53\u304c3\u9023\u7d9a\u53b3\u683c\u6e1b\u5c11\u3067\u306a\u3044\u3002\u53d6\u5f97\u4e0d\u53ef\u306fTrue\u3002"""
+    try:
+        divs = getattr(ticker, "dividends", None)
+        if divs is None or not hasattr(divs, "resample") or len(divs) < 5:
+            return True
+        annual = divs.resample("Y").sum()
+        if annual is None or len(annual) < 4:
+            return True
+        vals = []
+        for x in annual.iloc[-4:].tolist():
+            try:
+                fx = float(x)
+                if math.isnan(fx):
+                    return True
+                vals.append(fx)
+            except (TypeError, ValueError):
+                return True
+        if len(vals) < 4:
+            return True
+        a, b, c, d = vals[0], vals[1], vals[2], vals[3]
+        three_strict_cuts = a > b and b > c and c > d
+        return not three_strict_cuts
+    except Exception:
+        return True
+
+
+def compute_finance_programmatic_risk_checks(row, ticker):
+    """\u91d1\u878d\u30bf\u30d6\u7528\u30ea\u30b9\u30af\uff084\u9805\u76ee\uff09\u3092\u30c7\u30fc\u30bf\u304b\u3089\u7b97\u51fa\u3002"""
+    out = {}
+    er = row.get("equity_ratio")
+    try:
+        if er is not None:
+            out["capital_adequacy"] = float(er) >= 8.0
+    except (TypeError, ValueError):
+        out["capital_adequacy"] = None
+
+    out["dividend_stability"] = _finance_dividend_stability_ok(ticker)
+
+    al = row.get("annual_list") or []
+    if len(al) >= 3:
+        ok = True
+        for j in range(3):
+            try:
+                op_j = float(al[j].get("OP") or 0)
+            except (TypeError, ValueError):
+                op_j = 0.0
+            if op_j <= 0:
+                ok = False
+                break
+        out["profit_stability"] = ok
+    else:
+        out["profit_stability"] = True
+
+    if al:
+        try:
+            op0 = float(al[0].get("OP") or 0)
+            np0 = float(al[0].get("NP") or 0)
+            denom = max(abs(op0), abs(np0), 1e-9)
+            gap = abs(op0 - np0) / denom
+            out["revenue_diversity"] = gap < 0.5
+        except (TypeError, ValueError):
+            out["revenue_diversity"] = True
+    else:
+        out["revenue_diversity"] = True
+
+    return out
+
+
+def finalize_finance_risk_checks(row, ticker):
+    """AI\uff082\u9805\u76ee\uff09\u3068\u30d7\u30ed\u30b0\u30e9\u30e0\uff084\u9805\u76ee\uff09\u3092\u7d50\u5408\u3057\u3066row[\u0022risk_checks\u0022]\u3092\u5b8c\u6210\u3002"""
+    prog = compute_finance_programmatic_risk_checks(row, ticker)
+    ai_rc = row.get("risk_checks") or {}
+    out = _default_finance_risk_checks()
+    for k, v in prog.items():
+        if v is not None:
+            out[k] = bool(v)
+    if ai_rc.get("roe_15_percent") is not None:
+        out["roe_15_percent"] = bool(ai_rc["roe_15_percent"])
+    else:
+        try:
+            roe_v = float(row.get("roe") or 0)
+            out["roe_15_percent"] = roe_v >= 15.0
+        except (TypeError, ValueError):
+            out["roe_15_percent"] = None
+    if ai_rc.get("liquidity_risk") is not None:
+        out["liquidity_risk"] = bool(ai_rc["liquidity_risk"])
+    else:
+        out["liquidity_risk"] = False
+    row["risk_checks"] = out
 
 
 def _sales_growth_pct(row):
@@ -1628,7 +1740,7 @@ def _format_3y(values):
 def generate_ai_analysis(row, finance_mode=False):
     try:
         if not os.environ.get("ANTHROPIC_API_KEY"):
-            return "", _default_risk_checks(), 0, 0, False
+            return "", ({} if finance_mode else _default_risk_checks()), 0, 0, False
 
         import anthropic
         client = anthropic.Anthropic()
@@ -1723,6 +1835,30 @@ def generate_ai_analysis(row, finance_mode=False):
 
             finance_axes = ""
 
+        if finance_mode:
+            metrics_line = (
+                f"\u81ea\u5df1\u8cc7\u672c\u6bd4: {row.get('equity_ratio', 'N/A')}% / NC\u6bd4: {row.get('net_cash_ratio', 'N/A')} / "
+                f"PER: {row.get('per', 'N/A')} / PBR: {pbr_s} / ROE: {row.get('roe', 'N/A')}%"
+            )
+            fin_risk_note = (
+                "\n\uff08\u6ce8\uff09JSON\u5185 risk_checks \u306f"
+                " roe_15_percent \u3068 liquidity_risk \u306e2\u30ad\u30fc\u306e\u307f\u8a18\u8f09"
+                "\u3059\u308b\u4e8b\u3002\u4ed6\u9805\u76ee\u306f\u30b5\u30fc\u30d0\u5074\u3067\u8a08\u7b97\u3059\u308b\u3002"
+            )
+            risk_sample_inner = """    "roe_15_percent": true,
+    "liquidity_risk": false"""
+        else:
+            metrics_line = (
+                f"NC\u6bd4: {row.get('net_cash_ratio', 'N/A')} / PER: {row.get('per', 'N/A')} / PBR: {pbr_s} / ROE: {row.get('roe', 'N/A')}%"
+            )
+            fin_risk_note = ""
+            risk_sample_inner = """    "roe_15_percent": true,
+    "equity_ratio_50_percent": true,
+    "debt_to_profit_5x": true,
+    "fcf_stability": true,
+    "liquidity_risk": false,
+    "one_time_profit_risk": false"""
+
         prompt = f"""
 \u9298\u67c4: {name_jp}
 \u30bb\u30af\u30bf\u30fc: {sector}
@@ -1737,8 +1873,8 @@ def generate_ai_analysis(row, finance_mode=False):
 \u904e\u53bb3\u671f\u58f2\u4e0a\u63a8\u79fb: {revenue_trend}
 
 \u6307\u6a19
-NC\u6bd4: {row.get('net_cash_ratio', 'N/A')} / PER: {row.get('per', 'N/A')} / PBR: {pbr_s} / ROE: {row.get('roe', 'N/A')}%
-{finance_axes}
+{metrics_line}
+{finance_axes}{fin_risk_note}
 
 \u4ee5\u4e0b\u306eJSON\u306e\u307f\u3067\u56de\u7b54\uff08markdown\u7981\u6b62\uff09\u3002
 
@@ -1751,12 +1887,7 @@ JSON\u30b5\u30f3\u30d7\u30eb:
   "trend_score": 7,
   "quality_score": 4,
   "risk_checks": {{
-    "roe_15_percent": true,
-    "equity_ratio_50_percent": true,
-    "debt_to_profit_5x": true,
-    "fcf_stability": true,
-    "liquidity_risk": false,
-    "one_time_profit_risk": false
+{risk_sample_inner}
   }},
   "upward_revision": false
 }}
@@ -1780,7 +1911,7 @@ JSON\u30b5\u30f3\u30d7\u30eb:
             data = json.loads(text)
         except json.JSONDecodeError as e:
             print(f"[AI] JSON parse error: {e}")
-            return "", _default_risk_checks(), 0, 0, False
+            return "", ({} if finance_mode else _default_risk_checks()), 0, 0, False
 
         ai_comment = (data.get("ai_comment") or "").strip()
         trend_score = data.get("trend_score")
@@ -1795,12 +1926,19 @@ JSON\u30b5\u30f3\u30d7\u30eb:
         except (TypeError, ValueError):
             quality_score = 0
 
-        risk_checks = data.get("risk_checks") or {}
-        for k in AI_RISK_KEYS:
-            if k not in risk_checks:
-                risk_checks[k] = None
-            elif risk_checks[k] is not None:
-                risk_checks[k] = bool(risk_checks[k])
+        raw_rc = data.get("risk_checks") or {}
+        if finance_mode:
+            risk_checks = {}
+            for k in ("roe_15_percent", "liquidity_risk"):
+                v = raw_rc.get(k)
+                risk_checks[k] = bool(v) if v is not None else None
+        else:
+            risk_checks = dict(raw_rc)
+            for k in AI_RISK_KEYS:
+                if k not in risk_checks:
+                    risk_checks[k] = None
+                elif risk_checks[k] is not None:
+                    risk_checks[k] = bool(risk_checks[k])
 
         upward_revision = bool(data.get("upward_revision", False))
         return ai_comment, risk_checks, trend_score, quality_score, upward_revision
@@ -1809,7 +1947,7 @@ JSON\u30b5\u30f3\u30d7\u30eb:
         print(f"[AI] \u30A8\u30E9\u30FC: {e}")
         import traceback
         traceback.print_exc()
-        return "", _default_risk_checks(), 0, 0, False
+        return "", ({} if finance_mode else _default_risk_checks()), 0, 0, False
 
 
 
@@ -1941,6 +2079,7 @@ def step5_save_finance(results):
             "roe": r.get("roe"),
             "roic": r.get("roic"),
             "pbr": r.get("pbr"),
+            "equity_ratio": r.get("equity_ratio", 0),
             "ai_comment": r.get("ai_comment", ""),
             "risk_checks": r.get("risk_checks"),
             "trend_score": r.get("trend_score", 0),
@@ -2007,6 +2146,12 @@ def run_screening_finance_tab():
             r["trend_score"] = 0
             r["quality_score"] = 0
             r["upward_revision"] = False
+            r["risk_checks"] = {}
+    for r in second_f:
+        try:
+            finalize_finance_risk_checks(r, yf.Ticker(f"{r['code']}.T"))
+        except Exception as ex:
+            print(f"  finalize_finance_risk_checks {r.get('code')}: {ex}", flush=True)
     results_f = step4_scoring_finance(second_f)
     out_f = step5_save_finance(results_f)
     print(f"Tab2 done: {len(out_f)} stocks")
