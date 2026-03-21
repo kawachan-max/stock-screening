@@ -35,7 +35,7 @@ MAX_PER = 10.0
 MIN_NET_CASH_RATIO = 1.0
 
 # Tab2 finance / real estate (JPX 33-sector names, same strings as EXCLUDE_SECTORS)
-MAX_MARKET_CAP_FINANCE = 500_000_000_000  # 5000\u5104\u5186
+MAX_MARKET_CAP_FINANCE = 100_000_000_000  # 1000\u5104\u5186
 MAX_PER_FINANCE = 30.0
 
 EXCLUDE_SECTORS = [
@@ -47,6 +47,9 @@ MIN_AVG_TRADING_VALUE_20D = 50_000_000
 ONE_TIME_PROFIT_RATIO_THRESHOLD = 0.25
 MIN_EQUITY_RATIO = 0.30
 MAX_LT_DEBT_TO_NP = 5.0
+
+# \u5927\u5316\u3051\u671f\u5f85\u2606: \u6642\u4fa1\u7dcf\u984d\u4e0a\u9650\uff08300\u5104\u672a\u6e80\uff09
+TENBAGGER_MAX_MARKET_CAP = 30_000_000_000
 
 SLEEP_SEC = 0.5
 TEST_LIMIT = 0  # 0 = \u5168\u9298\u67C4\u300250 = \u30C6\u30B9\u30C8\u5B9F\u884C
@@ -1304,6 +1307,37 @@ def calc_score(row):
 
     total_score = max(0, total_score)
 
+    tenbagger_stars = 0
+    try:
+        _mc = float(row.get("market_cap") or 0)
+        if _mc > 0 and _mc < TENBAGGER_MAX_MARKET_CAP:
+            tenbagger_stars += 1
+    except (TypeError, ValueError):
+        pass
+    if len(annual_list) >= 3:
+        if sales0 > sales1 > sales2 and sales1 != 0:
+            try:
+                if (sales0 - sales1) / abs(sales1) * 100 >= 10.0:
+                    tenbagger_stars += 1
+            except Exception:
+                pass
+        if np0 > np1 > np2:
+            try:
+                _op0 = float(annual_list[0].get("OP", 0) or 0)
+                _op1 = float(annual_list[1].get("OP", 0) or 0)
+                if _op1 != 0 and (_op0 - _op1) / abs(_op1) * 100 >= 10.0:
+                    tenbagger_stars += 1
+            except Exception:
+                pass
+    try:
+        if float(row.get("roe") or 0) >= 15.0:
+            tenbagger_stars += 1
+    except (TypeError, ValueError):
+        pass
+    if nc >= 0.7 and per > 0 and per <= 12:
+        tenbagger_stars += 1
+    tenbagger_stars = min(5, max(0, int(tenbagger_stars)))
+
     row["trend_score"] = trend_score
     row["quality_score"] = quality_score
     row["valuation_score"] = valuation_score
@@ -1313,6 +1347,7 @@ def calc_score(row):
     row["bonus_score"] = bonus_score
     row["risk_penalty"] = risk_penalty
     row["score"] = total_score
+    row["tenbagger_stars"] = tenbagger_stars
 
     return total_score
 
@@ -1997,6 +2032,7 @@ def step5_save(results):
             "trend_score": r.get("trend_score", 0),
             "quality_score": r.get("quality_score", 0),
             "chart_signals": r.get("chart_signals", {}),
+            "tenbagger_stars": int(r.get("tenbagger_stars", 0) or 0),
             "tab": "general",
         })
     JST = timezone(timedelta(hours=9))

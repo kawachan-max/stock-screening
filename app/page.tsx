@@ -441,6 +441,7 @@ type Row = {
     revenue_diversity?: boolean;
   } | null;
   tab?: "general" | "finance";
+  tenbagger_stars?: number;
 };
 
 const POPUP_WIDTH = 280;
@@ -587,6 +588,14 @@ function formatDate(iso: string): string {
   if (!iso) return "\u2014";
   const d = new Date(iso);
   return `${d.getFullYear()}\u5e74${d.getMonth() + 1}\u6708${d.getDate()}\u65e5`;
+}
+
+function formatTenbaggerExpectLabel(n: number): string | null {
+  if (n < 2 || n > 5) return null;
+  const fire = "\uD83D\uDD25";
+  const label = "\u5927\u5316\u3051\u671f\u5f85";
+  const star = "\u2605";
+  return fire + label + star.repeat(n);
 }
 
 function getStockTag(r: Row, isFinanceTab: boolean): string {
@@ -833,13 +842,24 @@ export default function Home() {
                         </div>
                         {!(i < lockCount && !isUnlocked) && (() => {
                           const tagLine = getStockTag(r, isFinance);
+                          const tenbaggerLabel =
+                            !isFinance && (r.tenbagger_stars ?? 0) >= 2
+                              ? formatTenbaggerExpectLabel(r.tenbagger_stars ?? 0)
+                              : null;
                           return (
                             <>
-                              {tagLine ? (
-                                <span className="text-xs text-[#92400e] bg-[#fef3c7] px-2 py-0.5 rounded-full inline-block mt-1">
-                                  {tagLine}
-                                </span>
-                              ) : null}
+                              <div className="mt-1 flex flex-wrap items-center gap-x-2 gap-y-1">
+                                {tagLine ? (
+                                  <span className="text-xs text-[#92400e] bg-[#fef3c7] px-2 py-0.5 rounded-full inline-block">
+                                    {tagLine}
+                                  </span>
+                                ) : null}
+                                {tenbaggerLabel ? (
+                                  <span className="text-sm font-bold text-orange-600 ml-2">
+                                    {tenbaggerLabel}
+                                  </span>
+                                ) : null}
+                              </div>
                               <div className="mt-0.5 flex flex-wrap items-center gap-2 text-xs text-[#6b6b6b] sm:text-sm">
                                 <Link
                                   href={`https://finance.yahoo.co.jp/quote/${r.code}.T`}
