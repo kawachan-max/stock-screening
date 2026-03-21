@@ -153,8 +153,7 @@ const MAX_SCORE = 100;
 // All copy as Unicode escapes (ASCII-safe, no encoding issues)
 const TITLE = "\u30c6\u30f3\u30d0\u30fc\u30ac\u30fc\u3092\u72d9\u3046\u5272\u5b89\u5c0f\u578b\u6210\u9577\u682a";
 const SUBTITLE = "\u6e05\u539f\u9054\u90ce\u5f0f \u00d7 \u30d0\u30d5\u30a7\u30c3\u30c8\u6d41 \u00d7 AI\u6c7a\u7b97\u5206\u6790 \uff5c \u6bce\u55b6\u696d\u65e5\u66f4\u65b0";
-const ABOUT_LABEL = "\u3053\u306e\u30b9\u30af\u30ea\u30fc\u30cb\u30f3\u30b0\u30b5\u30fc\u30d3\u30b9\u306b\u3064\u3044\u3066";
-const ABOUT_LINK = "\u3053\u306e\u30b9\u30af\u30ea\u30fc\u30cb\u30f3\u30b0\u30b5\u30fc\u30d3\u30b9\u306b\u3064\u3044\u3066 \u2192";
+const TAB_SERVICE_ABOUT = "\u3053\u306e\u30b5\u30fc\u30d3\u30b9\u306b\u3064\u3044\u3066";
 const MODAL_BENEFITS_TITLE = "\u89e3\u653e\u3067\u304d\u308b\u3053\u3068";
 const BENEFIT_1 = "\u4e0a\u4f4d1\uff5e10\u4f4d\u306e\u9298\u67c4\u540d\u30fb\u8a3c\u5238\u30b3\u30fc\u30c9";
 const BENEFIT_2 = "\u30b9\u30b3\u30a2\u5185\u8a33\u5168\u9805\u76ee\uff08\u5272\u5b89\u5ea6\u30fb\u6210\u9577\u6027\u30fb\u696d\u7e3e\u30fb\u7af6\u4e89\u512a\u4f4d\u6027\u30fb\u682a\u4e3b\u9084\u5143\u30fb\u30ea\u30b9\u30af\uff09";
@@ -657,40 +656,39 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="max-w-4xl mx-auto px-4 pb-2 flex flex-wrap gap-2">
-          <button
-            type="button"
-            onClick={() => setScreeningTab("general")}
-            className={
-              screeningTab === "general"
-                ? "bg-[#d97706] text-white font-bold rounded-full px-4 py-2 text-sm"
-                : "bg-[#f5f0e8] text-[#6b6b6b] rounded-full px-4 py-2 text-sm"
-            }
-          >
-            {TAB_GENERAL}
-          </button>
-          <button
-            type="button"
-            onClick={() => setScreeningTab("finance")}
-            className={
-              screeningTab === "finance"
-                ? "bg-[#d97706] text-white font-bold rounded-full px-4 py-2 text-sm"
-                : "bg-[#f5f0e8] text-[#6b6b6b] rounded-full px-4 py-2 text-sm"
-            }
-          >
-            {TAB_FINANCE}
-          </button>
-        </div>
-
-        <div className="max-w-4xl mx-auto px-4 pt-2 pb-3">
-          <Link
-            href="/about"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-xs text-[#6b6b6b] underline hover:text-[#4a4a4a] sm:text-sm"
-          >
-            {ABOUT_LINK}
-          </Link>
+        <div className="max-w-4xl mx-auto px-4">
+          <div className="flex items-center gap-2 mb-4 flex-wrap">
+            <button
+              type="button"
+              onClick={() => setScreeningTab("general")}
+              className={
+                screeningTab === "general"
+                  ? "bg-[#d97706] text-white font-bold rounded-full px-4 py-2 text-sm"
+                  : "bg-[#f5f0e8] text-[#6b6b6b] rounded-full px-4 py-2 text-sm"
+              }
+            >
+              {TAB_GENERAL}
+            </button>
+            <button
+              type="button"
+              onClick={() => setScreeningTab("finance")}
+              className={
+                screeningTab === "finance"
+                  ? "bg-[#d97706] text-white font-bold rounded-full px-4 py-2 text-sm"
+                  : "bg-[#f5f0e8] text-[#6b6b6b] rounded-full px-4 py-2 text-sm"
+              }
+            >
+              {TAB_FINANCE}
+            </button>
+            <a
+              href="/about"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center bg-[#f5f0e8] text-[#6b6b6b] rounded-full px-4 py-2 text-sm hover:bg-[#ebe5db]"
+            >
+              {TAB_SERVICE_ABOUT}
+            </a>
+          </div>
         </div>
         </header>
 
