@@ -1,5 +1,2317 @@
 {
-  "generated_at": "",
-  "general": {},
-  "finance": {}
+  "generated_at": "2026-03-22T08:12:14+09:00",
+  "general": {
+    "7991": {
+      "ai_comment": "MAMIYA-OP CO LTDは3期連続で力強い増収を達成しており、売上は159億円から337億円へと約2倍に拡大。直近期は売上前年比23%増、営業利益前年比32%増と利益率も改善傾向にある。ROE18.79%は優秀で、PER6.4倍・PBR0.57倍と割安感が際立つ。産業機械・精密機器分野での事業展開により一定の参入障壁は存在するが、景気敏感セクターゆえ需要変動リスクを内包する。NCR（ネットキャッシュ）比率が1.0超と財務健全性も良好。成長の持続性と収益の質がさらに確認できれば、バリュー投資として魅力的な銘柄と評価できる。",
+      "risk_checks": {
+        "roe_15_percent": true,
+        "equity_ratio_50_percent": true,
+        "debt_to_profit_5x": true,
+        "fcf_stability": true,
+        "liquidity_risk": false,
+        "one_time_profit_risk": false
+      },
+      "trend_score": 10,
+      "quality_score": 7,
+      "upward_revision": false
+    },
+    "8152": {
+      "ai_comment": "ソマール（SOMAR）は化学・素材セクターの中堅専門メーカーで、3期連続で増収を達成し直近期は売上13.9%増・営業利益43.0%増と加速度的な成長を示している。PER5.1倍・PBR0.53倍は明確な割安圏であり、ROE12.82%は水準を維持。NC比1.18は財務健全性をある程度示す。一方で素材・化学業界は景気敏感度が高く参入障壁は中程度。事業規模が小さく顧客集中リスクや原材料コスト転嫁能力に課題が残る可能性がある。割安バリュー株として注目に値するが、ROEが15%未満でありPBR1倍を下回るため資本効率改善の余地あり。増益の持続性と収益構造の安定性を引き続き確認する必要がある。",
+      "risk_checks": {
+        "roe_15_percent": false,
+        "equity_ratio_50_percent": true,
+        "debt_to_profit_5x": true,
+        "fcf_stability": true,
+        "liquidity_risk": false,
+        "one_time_profit_risk": false
+      },
+      "trend_score": 10,
+      "quality_score": 4,
+      "upward_revision": false
+    },
+    "5363": {
+      "ai_comment": "TYK CORPORATIONは耐火物メーカーとして鉄鋼・セメント・ガラス業界向けに特化した製品を提供。売上は3期連続で増収（286.8→300.1→319.3億円）、直近期は営業利益が41.5%増と大幅改善しており業績トレンドは良好。PERは8.5倍と割安感があり、NC比1.30はネットキャッシュ超過を示す財務健全性が高い水準。一方PBR0.56倍・ROE7.65%と資本効率は低く、耐火物市場は鉄鋼生産動向に依存するシクリカルな特性がある。競争優位性は一定程度あるが業界特性上の収益変動リスクには注意が必要。",
+      "risk_checks": {
+        "roe_15_percent": false,
+        "equity_ratio_50_percent": true,
+        "debt_to_profit_5x": false,
+        "fcf_stability": true,
+        "liquidity_risk": false,
+        "one_time_profit_risk": false
+      },
+      "trend_score": 10,
+      "quality_score": 7,
+      "upward_revision": false
+    },
+    "8135": {
+      "ai_comment": "ゼット株式会社は野球用品を中心とするスポーツ用品メーカー。売上は3期連続増収（498.9→519.6→553.1億円）で成長トレンドは明確。営業利益も22.2%増と大幅改善し収益性が向上している。ROEは20.56%と高水準で資本効率は良好。一方、PERが3.16倍と極めて割安なのは市場の成長期待の低さを示唆。スポーツ用品市場は国内少子化による競技人口減少が中長期リスク。競合他社（ミズノ等）との競争も激しく参入障壁は限定的。NC比1.16倍はネットキャッシュが時価総額をほぼ相当し財務健全性は高い。PBR0.62倍と解散価値以下での放置が続いており株主還元強化が課題。",
+      "risk_checks": {
+        "roe_15_percent": true,
+        "equity_ratio_50_percent": true,
+        "debt_to_profit_5x": true,
+        "fcf_stability": true,
+        "liquidity_risk": false,
+        "one_time_profit_risk": true
+      },
+      "trend_score": 10,
+      "quality_score": 4,
+      "upward_revision": false
+    },
+    "2449": {
+      "ai_comment": "PRAP JAPANは3期連続増収を達成し、直近期は売上7.3%増・営業利益25.4%増と増収増益トレンドが鮮明。PRやコミュニケーション支援サービスという特化型ニッチ市場での専門性が一定の競争優位を形成している。ただしPR業界は大手広告代理店や新興デジタルPR会社との競争が激しく、収益基盤は盤石とは言えない。PERは約9.9倍と割安感があり、PBR0.9倍も解散価値割れ水準。ROE8.88%はやや物足りないが改善傾向にある。NC比1.01は実力に見合った水準。中小企業向けPRニーズの拡大や官公庁案件取込みが成長ドライバー。財務健全性・利益率改善が今後の鍵となる。",
+      "risk_checks": {
+        "roe_15_percent": false,
+        "equity_ratio_50_percent": true,
+        "debt_to_profit_5x": false,
+        "fcf_stability": true,
+        "liquidity_risk": false,
+        "one_time_profit_risk": false
+      },
+      "trend_score": 10,
+      "quality_score": 7,
+      "upward_revision": false
+    },
+    "9867": {
+      "ai_comment": "SOLEKIAは3期連続で増収を達成しており（237.7→251.8→280.3億円）、売上成長率は加速傾向にある。営業利益も前期比7.4%増と増益を維持しているが、営業利益率は約6.2%と低水準で収益体質の改善が課題。PERは約6.97倍と割安圏にあり、PBR0.75倍も解散価値以下で市場の評価は低い。ROEは9.73%と10%未満で資本効率にも改善余地がある。ITサービス・システム開発系企業として一定の安定収益基盤は持つものの、競争が激しいセクターであり際立った参入障壁は見えにくい。NC比が1倍超で流動性には問題ないが、利益の絶対額が小さく財務バッファーは限定的。バリュー株としての妙味はあるが、成長加速のカタリストが必要。",
+      "risk_checks": {
+        "roe_15_percent": false,
+        "equity_ratio_50_percent": true,
+        "debt_to_profit_5x": false,
+        "fcf_stability": true,
+        "liquidity_risk": false,
+        "one_time_profit_risk": false
+      },
+      "trend_score": 7,
+      "quality_score": 4,
+      "upward_revision": false
+    },
+    "4231": {
+      "ai_comment": "タイガースポリマーは売上が3期連続増収（452.9→478.6→493.4億円）と堅調な成長を示しているが、直近期の営業利益は前期比-11.3%と減益に転落しており、収益性の悪化が懸念される。PBRは0.47倍と割安水準にあり、PERも5.4倍と低評価。ROEは7.66%と中程度で改善余地あり。自動車・産業向けゴム・樹脂製品を主力とするが、原材料コスト上昇や競合との価格競争が収益を圧迫している可能性が高い。NC比1.23は財務的に概ね安定しているが、営業利益率の低下傾向には注意が必要。バリュー株としての側面は強いが、利益成長の再加速が株価再評価のカギとなる。",
+      "risk_checks": {
+        "roe_15_percent": false,
+        "equity_ratio_50_percent": true,
+        "debt_to_profit_5x": false,
+        "fcf_stability": true,
+        "liquidity_risk": false,
+        "one_time_profit_risk": false
+      },
+      "trend_score": 7,
+      "quality_score": 4,
+      "upward_revision": false
+    },
+    "6797": {
+      "ai_comment": "名古屋電機工業は道路情報板・交通管制システムを主力とする専門メーカー。売上は3期連続で減収傾向（180→175→172億円）であるが、直近期は営業利益が17.4%増と大幅改善しており、収益性の向上が顕著。PERは6.4倍、PBR0.63倍と割安圏に位置し、ROEは9.85%と中程度。公共インフラ向け案件が主体で参入障壁は一定水準にあるが、官公需依存による受注変動リスクや市場の成熟化が課題。NCR1.04はほぼ中立。財務健全性は概ね良好と推定されるが、成長ドライバーの不透明感が残る。割安感は魅力も、売上回復が鍵となる局面。",
+      "risk_checks": {
+        "roe_15_percent": false,
+        "equity_ratio_50_percent": true,
+        "debt_to_profit_5x": true,
+        "fcf_stability": true,
+        "liquidity_risk": false,
+        "one_time_profit_risk": false
+      },
+      "trend_score": 2,
+      "quality_score": 7,
+      "upward_revision": false
+    },
+    "6360": {
+      "ai_comment": "直近期は売上が前期比4.2%減と減収となったが、営業利益は12.7%増と増益を達成しており、収益構造の改善が見られる。売上は3期推移で133→134→129と緩やかな下落傾向にあり、トップライン成長には課題がある。東京自動機械製作所は包装機械・たばこ機械分野に特化したニッチメーカーで、一定の参入障壁と技術的優位性を有するが、市場規模の制約やたばこ業界の長期縮小リスクが懸念材料。PER7.6倍と割安感があり、ROE12.95%は水準を維持しているがPBR2.31倍とやや乖離がある。NC比1.09は財務健全性を示す。特定業界依存度の高さが事業リスクとなる。",
+      "risk_checks": {
+        "roe_15_percent": false,
+        "equity_ratio_50_percent": true,
+        "debt_to_profit_5x": true,
+        "fcf_stability": true,
+        "liquidity_risk": false,
+        "one_time_profit_risk": false
+      },
+      "trend_score": 2,
+      "quality_score": 7,
+      "upward_revision": false
+    },
+    "5956": {
+      "ai_comment": "TOSO（東ソー）はブラインド・カーテンレール等のインテリア建材メーカー。3期連続増収を達成し、直近期は売上5.5%増・営業利益54.5%増と収益性が大幅改善。コスト管理の効果が表れており業績トレンドは良好。ただし営業利益率は約3.3%と薄利構造が続く。PBR0.36倍・PER7.8倍と割安感は強いが、ROE3.4%と資本効率は低水準。住宅着工数の動向に業績が左右されやすく、競争環境も厳しいコモディティ寄りのセグメント。NC比1.76はネットキャッシュが潤沢で財務健全性は高い。将来性は住宅リフォーム需要に依存するが、成長ドライバーが限定的で大幅な収益拡大は見込みにくい。",
+      "risk_checks": {
+        "roe_15_percent": false,
+        "equity_ratio_50_percent": true,
+        "debt_to_profit_5x": false,
+        "fcf_stability": true,
+        "liquidity_risk": false,
+        "one_time_profit_risk": false
+      },
+      "trend_score": 7,
+      "quality_score": 4,
+      "upward_revision": false
+    },
+    "7434": {
+      "ai_comment": "OTAKE CORPは3期連続で増収を達成しており（293.2→312.5→329.9億円）、売上成長率5.6%・営業利益成長率6.7%と安定した拡大基調にある。産業財セクターとして一定の競争基盤を持つが、営業利益率は約3%と低水準であり収益性に課題が残る。PBR0.45倍・PER7.7倍と割安感は強く、NC比1.21はネットキャッシュが時価総額を上回る財務的健全性を示す。一方ROE5.56%は低く、資本効率の改善が急務。競争環境が厳しい建設・産業関連業種であり、利益率向上には構造改革が必要。下値リスクは限定的だが、成長余力と収益性の向上が今後の評価を左右する。",
+      "risk_checks": {
+        "roe_15_percent": false,
+        "equity_ratio_50_percent": true,
+        "debt_to_profit_5x": false,
+        "fcf_stability": true,
+        "liquidity_risk": false,
+        "one_time_profit_risk": false
+      },
+      "trend_score": 7,
+      "quality_score": 4,
+      "upward_revision": false
+    },
+    "6748": {
+      "ai_comment": "精和電機は3期連続増収を達成し、直近期は売上6.1%増・営業利益70.2%増と収益性が大幅改善。産業用電源機器・配電盤分野での安定需要を背景に業績モメンタムは良好。ただしROE7.83%はやや低水準で資本効率に改善余地あり。PBR0.52倍と割安感があるもののPER6.4倍は低成長を示唆。NC比1.08はほぼ均衡水準。競合他社との差別化が限定的なため事業の質は平均的。電力インフラ需要の高まりや省エネ関連投資拡大が追い風となる一方、原材料コスト変動リスクに注意が必要。中小型産業用機器市場での地位は安定しているが、グローバル競争激化が懸念される。",
+      "risk_checks": {
+        "roe_15_percent": false,
+        "equity_ratio_50_percent": true,
+        "debt_to_profit_5x": false,
+        "fcf_stability": true,
+        "liquidity_risk": false,
+        "one_time_profit_risk": true
+      },
+      "trend_score": 7,
+      "quality_score": 4,
+      "upward_revision": false
+    },
+    "5697": {
+      "ai_comment": "SANYU CO LTDは基礎素材セクターに属し、売上高は3期連続で増収基調（239.4→240.1→244.4億円）を維持。直近期の売上成長率は1.8%と緩やかながら、営業利益は前期比12.2%増と収益改善が顕著。ただし営業利益率は約2.7%と低水準であり、収益の絶対値は依然として小さい。PBR0.44倍・PER7.9倍と割安感が強く、NC比1.22はネットキャッシュ超過を示唆し財務健全性は高い。ROE4.58%は低く資本効率に課題。基礎素材業界は景気感応度が高く競争も激しいため、事業の質は平均的と判断。上方修正の兆しは現状見られないが、地道な増収増益の継続は評価できる。",
+      "risk_checks": {
+        "roe_15_percent": false,
+        "equity_ratio_50_percent": true,
+        "debt_to_profit_5x": false,
+        "fcf_stability": true,
+        "liquidity_risk": false,
+        "one_time_profit_risk": false
+      },
+      "trend_score": 7,
+      "quality_score": 4,
+      "upward_revision": false
+    },
+    "6393": {
+      "ai_comment": "ユーケン工業は油圧機器メーカーとして産業機械向けに安定した需要基盤を持つ。直近3期で売上は286.8→295.1→335.0億円と増収基調が続き、営業利益も39.3%増と大幅改善。売上成長率13.5%は直近期として顕著であり、トレンドは良好。ただしROE5.25%は低水準でPBR0.5倍と市場評価は低め。PER9.6倍は割安感あり。油圧機器分野は一定の技術参入障壁があるが、グローバル競合も多く競争環境は厳しい。NC比1.19は財務健全性にやや懸念。収益性改善の継続が株価再評価の鍵となる。",
+      "risk_checks": {
+        "roe_15_percent": false,
+        "equity_ratio_50_percent": false,
+        "debt_to_profit_5x": true,
+        "fcf_stability": true,
+        "liquidity_risk": true,
+        "one_time_profit_risk": false
+      },
+      "trend_score": 7,
+      "quality_score": 4,
+      "upward_revision": false
+    },
+    "6743": {
+      "ai_comment": "大同信号は鉄道信号・交通システムを手掛けるインフラ系企業で、売上は3期連続増収（195→207.7→219.1億円）と安定成長を示す。ただし直近期の営業利益は11.5億円と前期比-11.1%の減益となっており、コスト増や案件構成の変化が収益を圧迫している可能性がある。鉄道インフラという公共性の高い分野で一定の参入障壁を有するが、受注依存型ビジネスゆえ収益の安定性にはやや波がある。PBR0.47倍・PER8.4倍と割安感は強いが、ROE6.35%は低水準で資本効率改善が課題。NC比1.22は財務健全性を示す。鉄道老朽化更新需要や安全投資拡大は追い風だが、利益率向上が株価評価改善の鍵となる。",
+      "risk_checks": {
+        "roe_15_percent": false,
+        "equity_ratio_50_percent": true,
+        "debt_to_profit_5x": false,
+        "fcf_stability": true,
+        "liquidity_risk": false,
+        "one_time_profit_risk": true
+      },
+      "trend_score": 7,
+      "quality_score": 7,
+      "upward_revision": false
+    },
+    "5757": {
+      "ai_comment": "CKサンエツは直近期に売上12.3%増・営業利益29.4%増と大幅な増収増益を達成。ただし過去3期の売上推移は1238→1114→1251と一時的な落込みを経ており、3期連続の安定成長とは言い難い。銅系素材・伸銅品製造に特化した専業メーカーとして一定の競争優位を持つが、銅相場の影響を強く受けるため収益変動リスクは中程度。PBR0.68倍・PER8.3倍と割安感があり、ROEは9.96%と低位。NC比が1を超えており有利子負債の水準に留意が必要。自動車・電機向け需要の回復が追い風となっているが、資源価格変動や需要サイクルによる業績ブレが懸念材料。",
+      "risk_checks": {
+        "roe_15_percent": false,
+        "equity_ratio_50_percent": false,
+        "debt_to_profit_5x": true,
+        "fcf_stability": false,
+        "liquidity_risk": true,
+        "one_time_profit_risk": false
+      },
+      "trend_score": 7,
+      "quality_score": 4,
+      "upward_revision": false
+    },
+    "5603": {
+      "ai_comment": "KOGI CORPORATIONは産業機械・設備関連のインダストリアルセクター企業。直近売上は263.2億円と前期比+1.4%の微増収を達成し、営業利益は+41.9%と大幅な増益を実現している。ただし3期の売上推移（267.3→259.6→263.2）を見ると一度減収を経ており、3期連続増収増益には至っていない。PERは5.79と極めて割安で、PBR0.35倍も解散価値を大きく下回る水準。NC比1.35はネットキャッシュが潤沢であることを示す。ROE5.56%は低水準で資本効率に課題あり。競争環境は産業機械分野で一定の競争優位は持つものの、収益性の安定性に懸念が残る。バリュー株として注目に値するが、成長性・収益性の向上が課題。",
+      "risk_checks": {
+        "roe_15_percent": false,
+        "equity_ratio_50_percent": true,
+        "debt_to_profit_5x": false,
+        "fcf_stability": true,
+        "liquidity_risk": false,
+        "one_time_profit_risk": true
+      },
+      "trend_score": 7,
+      "quality_score": 4,
+      "upward_revision": false
+    },
+    "7975": {
+      "ai_comment": "LIHIT LAB INCは文具・事務用品メーカーで、3期連続増収を達成しており売上トレンドは安定的。直近の営業利益は前期比164.1%と大幅増益となっているが、絶対額は1.8億円と低水準であり、収益力の脆弱さが課題。純利益4.1億円は営業利益を上回っており、特別利益等の一時的要因が含まれる可能性がある。PBR0.37倍と割安感はあるが、ROE3.87%と資本効率は低く、PER約10倍は評価が難しい水準。文具市場は成熟かつ競争激化しており、ニッチな整理・収納製品に強みを持つものの、差別化維持が継続課題。NC比1.30程度で財務安定性は一定確保されているが、収益規模の小ささがリスク。",
+      "risk_checks": {
+        "roe_15_percent": false,
+        "equity_ratio_50_percent": true,
+        "debt_to_profit_5x": false,
+        "fcf_stability": true,
+        "liquidity_risk": false,
+        "one_time_profit_risk": true
+      },
+      "trend_score": 7,
+      "quality_score": 4,
+      "upward_revision": false
+    },
+    "7538": {
+      "ai_comment": "DAISUI CO LTDは食品・飲料関連のディフェンシブ銘柄で、売上は3期横ばい（984.6→984.6→993.0億円）とほぼ停滞している。直近期は微増収（+0.9%）を確保したものの、営業利益は-18.0%と大幅減益に陥っており、収益性の悪化が顕著。ROEは10.38%と中程度を維持しているが、営業利益率は0.7%前後と極めて薄利であり、コスト増や競争圧力への耐性が低い。PBR0.46倍と割安感はあるが、PER4.8倍の低評価は利益の不安定さを反映。競争優位性は限定的で、食品流通・卸売業特有の価格競争リスクが継続する。NC比1.24はほぼ適正水準。財務安定性は一定程度あるものの、薄利体質と減益トレンドが中期的な懸念材料となっており、積極的な上方修正余地は乏しい。",
+      "risk_checks": {
+        "roe_15_percent": false,
+        "equity_ratio_50_percent": false,
+        "debt_to_profit_5x": true,
+        "fcf_stability": false,
+        "liquidity_risk": false,
+        "one_time_profit_risk": true
+      },
+      "trend_score": 2,
+      "quality_score": 4,
+      "upward_revision": false
+    },
+    "7427": {
+      "ai_comment": "ECHO TRADING COは売上が2期連続で増加したものの、直近期は前期比-0.9%とわずかに減収。営業利益は-20.9%と大幅減益となり、業績トレンドは悪化傾向にある。Consumer Defensiveセクターに属し一定の安定性はあるが、卸売・商社系と推測されるビジネスモデルは利益率が低く競争優位性は限定的。PBRは0.45と割安圏だが、ROEは8.74%と中程度。NC比1.85は流動性にやや余裕があるものの、収益性の低下が続く場合は財務への影響が懸念される。PER7.1と株価は低評価だが、営業利益率が1.3%程度と非常に薄利であり構造的な課題が残る。",
+      "risk_checks": {
+        "roe_15_percent": false,
+        "equity_ratio_50_percent": false,
+        "debt_to_profit_5x": true,
+        "fcf_stability": false,
+        "liquidity_risk": false,
+        "one_time_profit_risk": false
+      },
+      "trend_score": 2,
+      "quality_score": 4,
+      "upward_revision": false
+    },
+    "8076": {
+      "ai_comment": "CANOX CORPは基礎素材セクターに属し、売上高は3期連続で増加（1,516.7→1,724.9→1,730.1億円）しており、増収基調は維持されている。しかし直近期の売上成長率は+0.3%と鈍化しており、営業利益は前期比-0.7%と微減益に転落した。営業利益率は約1.5%と薄利であり、収益体質の脆弱性が懸念される。NC比1.04倍はほぼ適正水準、PBR0.61倍と割安感があるが、ROE6.27%はやや低水準で資本効率改善が課題。基礎素材業界は競争激しく、価格転嫁力・参入障壁は限定的とみられる。バリュエーション面での割安感はあるものの、収益性の低さと成長鈍化が投資魅力を制約している。",
+      "risk_checks": {
+        "roe_15_percent": false,
+        "equity_ratio_50_percent": false,
+        "debt_to_profit_5x": true,
+        "fcf_stability": false,
+        "liquidity_risk": false,
+        "one_time_profit_risk": false
+      },
+      "trend_score": 4,
+      "quality_score": 2,
+      "upward_revision": false
+    },
+    "6249": {
+      "ai_comment": "売上は3期連続で大幅増収（216.9→362.9→379.5億円）と成長トレンドは維持しているものの、直近期の営業利益は前期比-14.3%と減益に転じており、収益性の悪化が懸念される。NC比1.36はほぼ適正水準だが、PBR0.66と割安感があり市場の評価は低い。ROE11.24%はまずまずだがROE15%基準には届かない。Industrialsセクターにおける競争環境や固定費増加が利益率を圧迫している可能性があり、今後の利益回復が焦点。PER8.4倍と低評価であり、業績回復が確認されれば株価上昇余地はある。",
+      "risk_checks": {
+        "roe_15_percent": false,
+        "equity_ratio_50_percent": false,
+        "debt_to_profit_5x": true,
+        "fcf_stability": false,
+        "liquidity_risk": false,
+        "one_time_profit_risk": true
+      },
+      "trend_score": 2,
+      "quality_score": 4,
+      "upward_revision": false
+    },
+    "5753": {
+      "ai_comment": "NIPPON SHINDO COは素材セクターの銅系金属加工メーカー。直近売上は前期比11.9%増の261.2億円、営業利益は52.8%増と大幅改善しており、収益回復の勢いは注目に値する。ただし3期推移では272.4→233.4→261.2と過去最高には届かず、3期連続増収増益とは言えない。PER約8倍・PBR1.32倍と割安感はあるが、ROE8.1%は15%水準を下回り資本効率に課題。素材業は商品市況・原材料価格変動の影響を受けやすく、収益の安定性に懸念が残る。NC比1.59は財務健全性をある程度示すが、セクター特性上、景気サイクルへの依存度が高い点はリスク要因。",
+      "risk_checks": {
+        "roe_15_percent": false,
+        "equity_ratio_50_percent": false,
+        "debt_to_profit_5x": false,
+        "fcf_stability": false,
+        "liquidity_risk": false,
+        "one_time_profit_risk": true
+      },
+      "trend_score": 7,
+      "quality_score": 4,
+      "upward_revision": false
+    },
+    "2788": {
+      "ai_comment": "売上は3期連続で増収（292→309→438億円）となり、直近期は前年比+41.7%と大幅な成長を示している。しかし営業利益の伸びは+25.2%にとどまり、売上増加に比べて利益率が低下傾向にある点は注意が必要。PERは7.1倍と割安水準で、PBR0.43倍も資産価値に対して低評価。ROE12.5%は及第点だが15%未満。NC比1.97はネットキャッシュ状況がやや懸念される。Consumer Cyclicalセクターは景気感応度が高く、消費環境の悪化が業績を直撃するリスクがある。競争優位性は平均的で、利益率の薄さが事業の質の低さを示唆している。バリュエーション面での割安感はあるものの、収益性の改善が課題。",
+      "risk_checks": {
+        "roe_15_percent": false,
+        "equity_ratio_50_percent": false,
+        "debt_to_profit_5x": false,
+        "fcf_stability": false,
+        "liquidity_risk": true,
+        "one_time_profit_risk": true
+      },
+      "trend_score": 7,
+      "quality_score": 4,
+      "upward_revision": false
+    },
+    "8138": {
+      "ai_comment": "SANKYO KASEI CORPは化学素材メーカーとして、直近期に売上3.4%増・営業利益21.5%増と増収増益を達成。ただし過去3期の売上推移は267.4→262.3→271.2億円とV字回復の形で、3期連続成長ではない。営業利益率は約1.7%と低水準であり収益性に課題が残る。PBR0.44倍・PER4.8倍と割安感は強いが、ROE7.22%はやや物足りない。素材・化学セクターは景気敏感で参入障壁は中程度。NC比1.47倍は財務健全性をある程度示すが、薄利体質のため外部環境悪化時のリスクは高い。バリュー株として注目余地はあるが、収益性改善の持続性が鍵となる。",
+      "risk_checks": {
+        "roe_15_percent": false,
+        "equity_ratio_50_percent": true,
+        "debt_to_profit_5x": false,
+        "fcf_stability": false,
+        "liquidity_risk": false,
+        "one_time_profit_risk": true
+      },
+      "trend_score": 7,
+      "quality_score": 4,
+      "upward_revision": false
+    },
+    "7670": {
+      "ai_comment": "O-WELL CORPORATIONは売上が前期比-2.3%と減収となったが、営業利益は+33.2%と大幅増益を達成しており、収益性改善が顕著。過去3期売上は643→711→694億円と増収後に微減収となった。PER6.3倍・PBR0.5倍と割安感が強く、ROE8.33%は平均的水準。NC比1.17は財務健全性をある程度示す。産業財セクターとして競争は一定程度存在するが、際立った競争優位性は確認しにくい。コスト管理による利益改善は評価できるが、売上の持続的成長が課題。割安な指標から下値リスクは限定的とみられるが、トップライン回復が今後の株価上昇の鍵となる。",
+      "risk_checks": {
+        "roe_15_percent": false,
+        "equity_ratio_50_percent": false,
+        "debt_to_profit_5x": false,
+        "fcf_stability": true,
+        "liquidity_risk": false,
+        "one_time_profit_risk": true
+      },
+      "trend_score": 2,
+      "quality_score": 4,
+      "upward_revision": false
+    },
+    "7521": {
+      "ai_comment": "武蔵精密工業は自動車部品（差動装置・変速機部品）を主力とするインダストリアル企業。直近期の売上は373.9億円と12.8%増収、営業利益は211.4%の大幅増益を記録し業績回復が鮮明。ただし過去3期の推移は370.7→331.4→373.9億円と一時落ち込みがあり、3期連続増収増益ではない。PER6倍・PBR0.55倍と割安感が強く、ROE10.1%はまずまず。自動車部品市場は競争が激しくEV化の影響も受けやすいが、差動装置など機械式コンポーネントに強みを持つ。NC比1.1倍はやや財務的余裕に課題あり。バリュー株としての魅力はあるが、事業環境の変化リスクと収益安定性に注意が必要。",
+      "risk_checks": {
+        "roe_15_percent": false,
+        "equity_ratio_50_percent": false,
+        "debt_to_profit_5x": false,
+        "fcf_stability": false,
+        "liquidity_risk": true,
+        "one_time_profit_risk": true
+      },
+      "trend_score": 7,
+      "quality_score": 4,
+      "upward_revision": false
+    },
+    "7218": {
+      "ai_comment": "田中精密工業はConsumer Cyclicalセクターの精密部品メーカー。売上は342→425→404億円と一度増加後に減収、営業利益も前期比-26.2%と大幅減益となっており、直近期は減収減益。自動車向け精密部品が主力とみられるが、市場環境の悪化や原価上昇が影響している可能性が高い。PERは6.15倍と割安感があるが、PBR0.43倍・ROE7.44%は資本効率の低さを示す。NC比が1.0超で財務的な安定性は一定程度あるが、収益性の改善が急務。競争優位性は業界内で一定水準を保つも、差別化は限定的。バリュー株的な側面が強いが、業績回復のカタリストが見えにくい状況。",
+      "risk_checks": {
+        "roe_15_percent": false,
+        "equity_ratio_50_percent": true,
+        "debt_to_profit_5x": false,
+        "fcf_stability": false,
+        "liquidity_risk": false,
+        "one_time_profit_risk": false
+      },
+      "trend_score": 2,
+      "quality_score": 4,
+      "upward_revision": false
+    },
+    "5984": {
+      "ai_comment": "カネフサは切削工具・木工機械刃物の専門メーカーで、一定のニッチ市場での競争優位を持つ。直近期は売上が微増（+0.8%）に回復したものの、営業利益は前期比▲29.1%と大幅減益となっており、コスト増・価格競争の影響が懸念される。3期の売上推移（211→201→202億円）は一度落ち込んだ後の微回復に留まる。PBRは0.37倍と割安感が強く、解散価値以下だが、ROE3.22%と資本効率は低い。PER約9倍は割安だが収益性の低さを反映。NC比1.14と財務は比較的健全だが、利益率の改善が最大課題。特定産業向け特殊工具という参入障壁はあるが、製造コスト上昇・需要停滞リスクが続く局面にある。",
+      "risk_checks": {
+        "roe_15_percent": false,
+        "equity_ratio_50_percent": true,
+        "debt_to_profit_5x": false,
+        "fcf_stability": false,
+        "liquidity_risk": false,
+        "one_time_profit_risk": false
+      },
+      "trend_score": 2,
+      "quality_score": 7,
+      "upward_revision": false
+    },
+    "5921": {
+      "ai_comment": "川岸工業は橋梁・鋼構造物メーカーで、直近期は売上が前期比12.1%減と落ち込んだが、営業利益は12.2%増と収益性は改善傾向にある。3期の売上推移は増収後に急減しており、公共インフラ受注の波があることを示す。PERは8.4倍、PBR0.42倍と割安感はあるが、ROE5.0%と資本効率は低水準。橋梁業界は国内インフラ老朽化対策や更新需要が中長期的に存在するが、競合も多く入札競争が激しい。NC比1.77倍は財務健全性をある程度示す。減収増益という構造は、コスト管理の改善を示すが、トップライン成長の持続性に不透明感が残る。今後の受注動向と公共投資予算の確保が業績を左右する重要なポイントとなろう。",
+      "risk_checks": {
+        "roe_15_percent": false,
+        "equity_ratio_50_percent": true,
+        "debt_to_profit_5x": false,
+        "fcf_stability": false,
+        "liquidity_risk": false,
+        "one_time_profit_risk": false
+      },
+      "trend_score": 2,
+      "quality_score": 4,
+      "upward_revision": false
+    },
+    "1420": {
+      "ai_comment": "SANYO HOMES CORPORATIONは住宅建設・販売セクターの中堅企業。売上は3期で409.7→458.6→455.2億円と一時的な拡大後に微減に転じており、直近期は前期比-0.7%と小幅減収。営業利益は前期比+0.3%とほぼ横ばいで推移し、成長の勢いは限定的。ROE4.39%は低水準であり資本効率に課題。PBR0.55倍と割安に放置されているが、PER7.4倍は市場の成長期待の低さを示す。住宅業界は金利上昇・資材高コスト・人口動態の悪化という逆風下にあり、競争優位性は平均的。NC比1.2超は財務安定性の目安を一応クリアするが、収益力の低さが懸念材料。株価的な割安感はあるものの、業績の力強さに欠ける点がリスク。",
+      "risk_checks": {
+        "roe_15_percent": false,
+        "equity_ratio_50_percent": false,
+        "debt_to_profit_5x": true,
+        "fcf_stability": false,
+        "liquidity_risk": false,
+        "one_time_profit_risk": false
+      },
+      "trend_score": 4,
+      "quality_score": 4,
+      "upward_revision": false
+    },
+    "7537": {
+      "ai_comment": "MARUBUN CORPは電子部品商社として一定のポジションを持つが、直近業績は売上・営業利益ともに大幅な減少（売上-10.8%、営業利益-31.0%）が見られ、過去3期の売上推移も2364.9億円をピークに下落基調にある。テクノロジーセクターにおける部品需要の調整局面が影響していると推察される。PBR0.55倍、PER9.4倍と割安感はあるが、ROE7.84%はやや低水準。商社ビジネスゆえ競争優位性は限定的で利益率も低い。NC比1.65はやや高めで財務負担に注意が必要。需要回復次第での業績改善余地はあるが、現状はリスクが先行する局面と判断される。",
+      "risk_checks": {
+        "roe_15_percent": false,
+        "equity_ratio_50_percent": false,
+        "debt_to_profit_5x": true,
+        "fcf_stability": false,
+        "liquidity_risk": true,
+        "one_time_profit_risk": false
+      },
+      "trend_score": 2,
+      "quality_score": 4,
+      "upward_revision": false
+    },
+    "4629": {
+      "ai_comment": "DAISHIN CHEMICALは売上が343.9→324.6→347.1億円と3期で回復基調にあるが、中間期で一度落ち込んでおり連続増収とは言えない。直近期は売上+6.9%と回復したものの、営業利益は-3.2%と減益となり増収減益の構図。ROEは3.56%と低水準でPBRも0.46倍と資本効率の改善が課題。NC比1.51はネットキャッシュが潤沢で財務安全性は一定程度確保されている。化学素材セクターは参入障壁が中程度で競争は激しく、収益率の低さが事業の質の課題を示している。PERは約9.8倍と割安感はあるが、収益力の低さと減益トレンドが懸念材料。",
+      "risk_checks": {
+        "roe_15_percent": false,
+        "equity_ratio_50_percent": true,
+        "debt_to_profit_5x": false,
+        "fcf_stability": false,
+        "liquidity_risk": false,
+        "one_time_profit_risk": false
+      },
+      "trend_score": 2,
+      "quality_score": 4,
+      "upward_revision": false
+    },
+    "5915": {
+      "ai_comment": "KOMAIHALTEC（駒井ハルテック）は橋梁・鉄塔等の重構造物メーカー。直近期は売上が前期比▲26.8%、営業利益▲60.2%と大幅な減収減益となっており、業績トレンドは明確に悪化。過去3期の売上推移も増収後に急反落しており、公共工事の受注変動に業績が大きく左右される構造的脆弱性が露呈している。PBR0.28倍・PER5.9倍と極めて割安に放置されているが、ROE4%と資本効率は低い。NC比1.26はネットキャッシュ超過を示し財務的安定性は一定確保。ただし受注依存型ビジネスモデルゆえ競争優位性は平均的で、公共インフラ需要継続が支援材料も収益安定性に欠ける。",
+      "risk_checks": {
+        "roe_15_percent": false,
+        "equity_ratio_50_percent": true,
+        "debt_to_profit_5x": false,
+        "fcf_stability": false,
+        "liquidity_risk": false,
+        "one_time_profit_risk": true
+      },
+      "trend_score": 2,
+      "quality_score": 4,
+      "upward_revision": false
+    },
+    "5408": {
+      "ai_comment": "中山製鋼所は直近3期で売上が1885億→1844億→1693億円と連続減収。営業利益も前期比31.6%減と大幅な落ち込みを示しており、業績トレンドは明確な下降局面にある。鉄鋼セクターは景気敏感業種であり、需要低迷・原材料コスト・競争激化の影響を受けやすく、競争優位性は限定的。一方でPBR0.31倍・PER約8倍と割安感は強く、NC比1.57は一定の財務安定性を示唆する。ROE5.33%は低水準でありリターン効率に課題。中小型電炉メーカーとしての事業基盤は安定しているものの、収益性改善の触媒に乏しい。鉄鋼需要回復や合理化効果が業績反転のカギとなるが、短期的な上振れ余地は小さい。",
+      "risk_checks": {
+        "roe_15_percent": false,
+        "equity_ratio_50_percent": false,
+        "debt_to_profit_5x": true,
+        "fcf_stability": false,
+        "liquidity_risk": false,
+        "one_time_profit_risk": false
+      },
+      "trend_score": 0,
+      "quality_score": 2,
+      "upward_revision": false
+    },
+    "6292": {
+      "ai_comment": "カワタ製造は樹脂・粉体処理機器を手掛ける産業機械メーカー。直近期は売上15.2%減、営業利益21.2%減と大幅な減収減益となり、業績トレンドは明確に悪化。3期推移を見ると188→245→208と山型を描き、ピークアウト感が強い。事業は樹脂成形周辺装置という特定ニッチ市場に特化しており一定の技術的参入障壁は存在するが、設備投資サイクルに業績が大きく左右される構造的課題を抱える。PBR0.43倍と資産価値対比で割安だが、ROE4.36%と資本効率は低水準。PER約10倍は割安感あるも収益性の乏しさを映す。NC比1.26は財務健全性に一定の余裕を示す。自動車・電子部品向け設備需要の回復が鍵だが、当面は需要低迷リスクが継続する見込み。",
+      "risk_checks": {
+        "roe_15_percent": false,
+        "equity_ratio_50_percent": true,
+        "debt_to_profit_5x": false,
+        "fcf_stability": false,
+        "liquidity_risk": false,
+        "one_time_profit_risk": false
+      },
+      "trend_score": 2,
+      "quality_score": 4,
+      "upward_revision": false
+    },
+    "7219": {
+      "ai_comment": "HKS LIMITEDは自動車アフターパーツ専門メーカーとして一定のブランド力を持つが、売上は3期連続で緩やかに減収傾向（92.4→90.0→89.8億円）が続いており、業績モメンタムは弱い。直近の売上前年比-0.3%、営業利益前年比-5.5%と減収減益。PBR0.31倍と資産価値対比で株価は割安感があるが、ROE3.39%と低水準でありバリュートラップのリスクも孕む。PER9倍台は割安だが収益力の低さが課題。Consumer Cyclicalセクターとして景気感応度が高く、自動車スポーツ部品市場の縮小懸念もある。NC比1.49は流動性に一定の余裕があるとみられる。",
+      "risk_checks": {
+        "roe_15_percent": false,
+        "equity_ratio_50_percent": true,
+        "debt_to_profit_5x": false,
+        "fcf_stability": false,
+        "liquidity_risk": false,
+        "one_time_profit_risk": false
+      },
+      "trend_score": 2,
+      "quality_score": 4,
+      "upward_revision": false
+    },
+    "3320": {
+      "ai_comment": "CROSS PLUS INCは売上高が3期連続で増収基調（570.6→601.9→620.0億円）を維持しており、トップラインの成長は続いている。一方、直近期の営業利益は前期比42.7%減と大幅に落ち込んでおり、収益性の悪化が顕著。アパレル・消費財の卸売・小売事業が中心とみられ、競争激化や原価・物流コスト上昇が利益を圧迫していると推察される。PBR0.52倍・PER約7.2倍と割安水準だが、ROE7.61%は低水準。NC比1.07は流動性に大きな懸念はないが、利益率の低さと収益安定性に課題あり。今後の利益回復が株価評価の鍵となる。",
+      "risk_checks": {
+        "roe_15_percent": false,
+        "equity_ratio_50_percent": false,
+        "debt_to_profit_5x": true,
+        "fcf_stability": false,
+        "liquidity_risk": false,
+        "one_time_profit_risk": true
+      },
+      "trend_score": 2,
+      "quality_score": 2,
+      "upward_revision": false
+    },
+    "7229": {
+      "ai_comment": "豊技研工業は自動車部品メーカーとして本田技研工業への依存度が高く、直近3期で売上は2180億→2162億→1792億円と一貫して減少傾向にある。直近期は売上前年比▲17.1%、営業利益▲42.9%と大幅な減収減益であり、業績トレンドは明確に悪化している。EV化の進展によりガソリンエンジン関連部品の需要縮小リスクが高まっており、事業の質にも課題がある。PBR0.41倍・PER8.5倍と割安に見えるが、ROE4.45%と資本効率は低く、構造的な収益力の弱さを示す。NC比1.38は財務健全性に一定の余裕を示すが、抜本的な事業転換が求められる局面にある。",
+      "risk_checks": {
+        "roe_15_percent": false,
+        "equity_ratio_50_percent": true,
+        "debt_to_profit_5x": false,
+        "fcf_stability": false,
+        "liquidity_risk": false,
+        "one_time_profit_risk": false
+      },
+      "trend_score": 0,
+      "quality_score": 2,
+      "upward_revision": false
+    },
+    "6899": {
+      "ai_comment": "ASTIコーポレーションは自動車向け電子部品を主力とするテクノロジー企業。直近売上は654.4億円と2.9%増収を確保したものの、営業利益は32.1%の大幅減益となっており、収益性の低下が顕著。過去3期の売上推移は648.8→636.1→654.4億円と一時落ち込みからの回復基調にあるが、利益水準は依然として低い。PBR0.31倍は資産価値に対する市場評価の低さを示し、ROE2.55%は資本効率の改善余地が大きい。自動車電装部品市場は競争が激しく、原材料・物流コスト上昇が利益を圧迫している可能性が高い。PER8.4倍は割安に見えるが、構造的な収益改善が見えないと再評価は難しい。財務健全性・流動性リスクにも注意が必要。",
+      "risk_checks": {
+        "roe_15_percent": false,
+        "equity_ratio_50_percent": false,
+        "debt_to_profit_5x": true,
+        "fcf_stability": false,
+        "liquidity_risk": true,
+        "one_time_profit_risk": false
+      },
+      "trend_score": 2,
+      "quality_score": 2,
+      "upward_revision": false
+    },
+    "8040": {
+      "ai_comment": "TOKYO SOIRは売上高が3期連続で増収トレンド（142.4→150.3→157.0億円）を維持しており、売上成長率4.5%は安定的。しかし営業利益は前期比53.3%減と大幅な落ち込みを示しており、コスト増加や利益率悪化が深刻な懸念材料。純利益5.0億円とPER7.1倍・PBR0.35倍は割安感があるが、ROE4.78%は低水準。ウェディング・フォーマルウェア業界は競争が激しく参入障壁は限定的。バリュエーション面での魅力はあるものの、収益性改善が急務であり、営業利益の急激な悪化が続く場合はファンダメンタルズの再評価が必要。",
+      "risk_checks": {
+        "roe_15_percent": false,
+        "equity_ratio_50_percent": false,
+        "debt_to_profit_5x": true,
+        "fcf_stability": false,
+        "liquidity_risk": true,
+        "one_time_profit_risk": true
+      },
+      "trend_score": 2,
+      "quality_score": 2,
+      "upward_revision": false
+    }
+  },
+  "finance": {
+    "5280": {
+      "ai_comment": "YOSHICON CO LTDは過去3期で売上が147.0→239.1→274.7億円と急拡大し、今期は売上高+14.9%・営業利益+53.7%と大幅増益を達成。成長モメンタムは明確に強い。ただし不動産セクターである性質上、収益の主体が用地売却・開発物件の売上計上に偏っている可能性が高く、一過性の売却益依存リスクには注意が必要。自己資本比率61.92%は不動産業として高水準で財務健全性は良好。PER4.5倍・PBR0.65倍は割安圏にあり、市場評価は低い。ROE11.0%はまずまずだが15%には届かず。金利上昇局面での調達コスト増加と販売在庫の回転鈍化リスクは景気敏感な同社事業に影響しやすい。還元姿勢・手数料収入の比率が不明確な点が事業品質評価の制約となる。",
+      "risk_checks": {
+        "roe_15_percent": false,
+        "profit_stability": true,
+        "dividend_stability": true,
+        "one_time_profit_risk": false,
+        "liquidity_risk": false,
+        "financial_health": true
+      },
+      "trend_score": 8,
+      "quality_score": 5,
+      "upward_revision": false
+    },
+    "8935": {
+      "ai_comment": "FJ NEXT HOLDINGSは3期連続増収を達成しており、売上は846.9億円から1124.3億円へ着実に拡大。営業利益は微増（+0.6%）にとどまり、売上増加に対して利益率が低下傾向にある点は懸念材料。収益の主軸は分譲マンション（ガーラシリーズ）の売却益であり、手数料型の安定収益ではなく在庫回転型ビジネスモデルのため景気・金利変動の影響を受けやすい。自己資本比率69.13%は不動産業として高水準であり財務健全性は評価できる。PER7.4倍・PBR0.72倍と割安感があるが、ROE8.89%は資本効率として平凡。金利上昇局面では購入者の住宅ローン負担増加により需要が冷え込むリスクがある。還元姿勢は安定配当を維持しているものの、利益成長の鈍化が今後の課題。",
+      "risk_checks": {
+        "roe_15_percent": false,
+        "profit_stability": true,
+        "dividend_stability": true,
+        "one_time_profit_risk": false,
+        "liquidity_risk": false,
+        "financial_health": true
+      },
+      "trend_score": 6,
+      "quality_score": 4,
+      "upward_revision": false
+    },
+    "8860": {
+      "ai_comment": "FUJI CORPORATION LIMITEDは3期連続増収を達成し、売上は1146.7億円から1239.3億円へ着実に拡大。営業利益も前期比8.7%増と増益基調を維持しており、業績トレンドは良好。ただし不動産セクターの特性上、売却益依存の一過性収益が含まれる可能性があり、経常的収益力の精査が必要。自己資本比率29.84%はやや低水準で財務レバレッジへの依存度が高く、金利上昇局面では調達コスト増加リスクが顕在化しやすい。NC比がマイナス（-0.293）であることから純有利子負債を抱えており、金利変動感応度は高い。PER5.8倍・PBR0.52倍と割安感は強いが、ROE8.71%は15%に届かず資本効率に改善余地あり。景気後退局面では不動産取引量減少による売上・利益の急減リスクも念頭に置く必要がある。収益の質と株主還元姿勢の透明性向上が評価向上の鍵となる。",
+      "risk_checks": {
+        "roe_15_percent": false,
+        "profit_stability": true,
+        "dividend_stability": true,
+        "one_time_profit_risk": false,
+        "liquidity_risk": true,
+        "financial_health": true
+      },
+      "trend_score": 6,
+      "quality_score": 4,
+      "upward_revision": false
+    },
+    "8596": {
+      "ai_comment": "九州リースサービスは今期売上393.4億円（前期比+17.4%）、営業利益56.6億円（+21.9%）と大幅増収増益を達成。過去3期の売上は335.1→368.0→393.4億円と概ね拡大基調にあり、トレンドは良好。リース・割賦事業は金利上昇局面でコスト増圧力が生じやすく、調達コストと運用利回りのスプレッド管理が重要課題。収益源はリース手数料・残価収益が中心で安定性はある程度確保されているが、景気後退時の信用コスト増や設備投資需要の落ち込みに対する感応度は高い。自己資本比率21%と低めでレバレッジ依存型の収益構造。ROE8.4%はセクター平均並みだが目標水準には届かず。PER8.8倍・PBR0.72倍と割安感はあるが、株主還元の積極性や資本効率改善の姿勢が今後の評価を左右する。地域密着型で事業継続性はあるが成長余力はやや限定的。",
+      "risk_checks": {
+        "roe_15_percent": false,
+        "profit_stability": true,
+        "dividend_stability": true,
+        "one_time_profit_risk": false,
+        "liquidity_risk": true,
+        "financial_health": true
+      },
+      "trend_score": 7,
+      "quality_score": 5,
+      "upward_revision": false
+    },
+    "8897": {
+      "ai_comment": "MIRARTH HOLDINGSは3期連続増収を達成しており売上成長は明確だが、直近期の営業利益は前期比▲7.1%と減益に転じており収益性の悪化が懸念される。不動産デベロッパーとしての収益構造は、マンション・リゾート用地などの売却益に依存する割合が高く、利益の安定性・再現性は相対的に低い。自己資本比率22.36%は不動産セクターとしては標準的だが、金利上昇局面では借入コスト増大と物件評価への影響が複合的にリスクとなる。NC比がマイナスであり純有利子負債を抱える構造。PBR0.69倍・PER6.5倍と割安感はあるが、ROE9.85%はセクター平均並みで15%には届かない。景気敏感度が高く、リゾート・観光関連事業も内包するため景気後退局面での業績変動リスクは大きい。資本還元姿勢は積極的とは言えず、株主価値向上への取り組みが今後の評価の鍵となる。",
+      "risk_checks": {
+        "roe_15_percent": false,
+        "profit_stability": true,
+        "dividend_stability": true,
+        "one_time_profit_risk": false,
+        "liquidity_risk": true,
+        "financial_health": true
+      },
+      "trend_score": 5,
+      "quality_score": 4,
+      "upward_revision": false
+    },
+    "3232": {
+      "ai_comment": "三重交通グループホールディングスは3期連続増収を達成し、直近期の売上は1038.5億円（前期比+5.7%）、営業利益は84.2億円（同+14.2%）と増益基調が明確。バス・タクシー・旅行・不動産など多角化した収益構造を持ち、交通事業は生活インフラとして需要の底堅さがある。一方、交通事業は運賃規制・燃料コスト・人件費の上昇リスクを抱え、金利上昇局面では有利子負債のコスト増加が懸念される（NC比-1.16はネットキャッシュポジティブであり財務健全性は良好）。自己資本比率34.6%は地方交通持株会社として標準的水準。PER9.5倍・PBR0.82倍と割安感があるが、ROE9.64%はやや低く資本効率改善余地が残る。観光需要回復が追い風だが、地方人口減少による構造的需要減が中長期リスク。収益の一過性依存は低く安定性は評価できる。",
+      "risk_checks": {
+        "roe_15_percent": false,
+        "profit_stability": true,
+        "dividend_stability": true,
+        "one_time_profit_risk": false,
+        "liquidity_risk": false,
+        "financial_health": true
+      },
+      "trend_score": 7,
+      "quality_score": 6,
+      "upward_revision": false
+    },
+    "8917": {
+      "ai_comment": "FIRST JUKEN CO LTDは建材・住宅関連のConsumer Cyclical企業。直近期は売上19.2%増・営業利益36.2%増と回復基調だが、3期推移は433.7→359.9→428.8億円と一旦大幅減収を経ており、景気感応度の高さが露呈している。利益の絶対水準（営業利益率5.8%）は薄く、素利益14.4億円はPER11倍台に反映されている。自己資本比率65.96%と財務健全性は高く、流動性リスクは低い。ROE3.52%は低水準でPBR0.4倍のバリュー圏に放置されており、資本効率改善・株主還元強化が課題。収益源は製品販売中心で手数料等安定収益は限定的。金利上昇局面では住宅着工抑制を通じ間接的に受注減リスクあり。業績回復は評価できるが持続性・収益の質に懸念が残る。",
+      "risk_checks": {
+        "roe_15_percent": false,
+        "profit_stability": true,
+        "dividend_stability": true,
+        "one_time_profit_risk": false,
+        "liquidity_risk": false,
+        "financial_health": true
+      },
+      "trend_score": 5,
+      "quality_score": 4,
+      "upward_revision": false
+    },
+    "3293": {
+      "ai_comment": "売上は3期で141.6→130.9→132.8億円と一度落ち込み後に微回復だが、水準は依然ピーク比低い。営業利益は前期比21.6%増と大幅改善しており、コスト管理の効果が窺える。ただし純利益7.7億円に対し営業利益12.3億円と乖離があり、特別損失等の影響を精査する必要がある。PBR0.37倍と資産価値に対して株価は割安圏だが、ROE4.48%は低水準で資本効率に課題。NC比がマイナス（ネットキャッシュ状態）で財務健全性は高く、金利上昇リスクへの耐性は相対的に良好。不動産販売業は景気感応度が高く、住宅ローン金利上昇局面では需要減退リスクあり。収益源が売却益依存とみられ、手数料収入等ストック型収益の割合が低い点が質的懸念。自己資本比率53.78%は安定的。増益基調は評価できるが、持続性には不透明感が残る。",
+      "risk_checks": {
+        "roe_15_percent": false,
+        "profit_stability": true,
+        "dividend_stability": true,
+        "one_time_profit_risk": false,
+        "liquidity_risk": false,
+        "financial_health": true
+      },
+      "trend_score": 5,
+      "quality_score": 4,
+      "upward_revision": false
+    },
+    "8844": {
+      "ai_comment": "COSMOS INITIAは3期連続で増収を達成し、直近期は売上4.0%増・営業利益27.3%増と増益幅が拡大している点は評価できる。ただし不動産会社特有の売却益依存型収益構造が懸念され、利益の一過性リスクは払拭しきれない。自己資本比率27.88%はやや低水準でレバレッジ依存度が高く、金利上昇局面では調達コスト増大が財務を直撃するリスクがある。NC比1.03は純有利子負債が自己資本とほぼ同水準であり流動性に余裕は少ない。PER8.0倍・PBR0.72倍と割安感はあるが、ROE10.79%はセクター水準としては及第点であり15%には届かない。景気敏感セクターであり金利・不動産市況の変化に業績が左右されやすい構造は継続的な注意を要する。",
+      "risk_checks": {
+        "roe_15_percent": false,
+        "profit_stability": true,
+        "dividend_stability": true,
+        "one_time_profit_risk": false,
+        "liquidity_risk": true,
+        "financial_health": true
+      },
+      "trend_score": 6,
+      "quality_score": 4,
+      "upward_revision": false
+    },
+    "3297": {
+      "ai_comment": "東武住販は不動産仲介・販売を主軸とする地域密着型企業。直近期は売上81.9億円（前期比+12.7%）、営業利益5.1億円（同+63.9%）と大幅改善。ただし過去3期の売上推移は76.7→72.6→81.9億円と一時的な落込みがあり、安定成長とは言い難い。不動産売買仲介は景気・金利感応度が高く、日銀の利上げ局面では住宅ローン需要の冷え込みリスクが懸念される。収益源は売却益や仲介手数料が中心とみられ、ストック型手数料収入の乏しさが利益の安定性を損なう要因。自己資本比率72.11%と財務健全性は高く、流動性リスクは限定的。PBR0.78倍と割安感があるが、ROE7.75%はリターンとしてやや低水準。資本還元姿勢・成長投資の方向性が今後の評価を左右する。",
+      "risk_checks": {
+        "roe_15_percent": false,
+        "profit_stability": true,
+        "dividend_stability": true,
+        "one_time_profit_risk": false,
+        "liquidity_risk": false,
+        "financial_health": true
+      },
+      "trend_score": 5,
+      "quality_score": 4,
+      "upward_revision": false
+    },
+    "3277": {
+      "ai_comment": "三精ランディックは過去3期で売上が155億→233億→256億円と急拡大しており、売上成長は顕著。ただし最新期は売上+10%に対し営業利益は-12.6%と収益性が悪化しており、一過性の売却益依存型ビジネスモデルの脆弱性が露呈。不動産売買・底地ビジネスが主軸であり、収益は物件売却益に依存する割合が高く、安定したフィー収入の比率は低い。ROE8.24%はNC比0.89と合わせると財務レバレッジは控えめで健全だが、金利上昇局面では仕入コスト増と販売価格転嫁の遅れが利益を圧迫するリスクがある。PER6.2倍・PBR0.86倍と割安感はあるが、景気感応度の高い事業特性と利益の変動性を踏まえると積極的な評価は難しい。自己資本比率38.5%は不動産業としてやや低め。株主還元姿勢は明確ではなく、資本効率改善の余地が残る。",
+      "risk_checks": {
+        "roe_15_percent": false,
+        "profit_stability": true,
+        "dividend_stability": true,
+        "one_time_profit_risk": false,
+        "liquidity_risk": false,
+        "financial_health": true
+      },
+      "trend_score": 5,
+      "quality_score": 4,
+      "upward_revision": false
+    },
+    "8881": {
+      "ai_comment": "売上は3期連続で減収（823.5→810.2→762.4億円）、営業利益も微減と業績トレンドは下向き。不動産セクター特有の金利上昇リスクにさらされており、日銀の利上げ局面では借入コスト増加と不動産需要冷え込みの二重圧力が懸念される。収益源は不動産売却益への依存度が高いとみられ、手数料・管理収入等の安定収益比率が低い場合は利益の変動リスクが大きい。自己資本比率51.21%は不動産会社として健全水準を維持しているが、ROE3.01%は極めて低く資本効率に課題がある。PBR0.49倍と株価は純資産を大きく下回り割安感はあるものの、収益性改善の見通しが乏しく株主還元姿勢も積極的とは言えない。景気敏感セクターであり、マクロ環境悪化時の業績下振れリスクは高い。",
+      "risk_checks": {
+        "roe_15_percent": false,
+        "profit_stability": true,
+        "dividend_stability": true,
+        "one_time_profit_risk": false,
+        "liquidity_risk": false,
+        "financial_health": true
+      },
+      "trend_score": 3,
+      "quality_score": 3,
+      "upward_revision": false
+    },
+    "8891": {
+      "ai_comment": "売上は3期連続増収（228→291→304億円）と堅調な成長を示しているが、直近期の営業利益は前期比▲14.6%と減益に転じており、収益性の低下が懸念される。営業利益率は約5.1%と不動産セクターとしては薄利であり、売却益等の一過性収益への依存度が高い可能性がある。自己資本比率37.45%はやや低めで、金利上昇局面では財務負担増のリスクがある。NC比1.06はほぼ均衡しており流動性に余裕は乏しい。PER7.3・PBR0.64と割安感はあるが、ROE8.88%はリスクに見合う水準とは言えず資本効率の改善が課題。景気感応度が高い不動産業態であり、市況悪化時の収益変動リスクは相応に大きい。手数料収入の安定化と資本政策の明確化が評価向上の鍵となる。",
+      "risk_checks": {
+        "roe_15_percent": false,
+        "profit_stability": true,
+        "dividend_stability": true,
+        "one_time_profit_risk": false,
+        "liquidity_risk": true,
+        "financial_health": true
+      },
+      "trend_score": 5,
+      "quality_score": 4,
+      "upward_revision": false
+    },
+    "8869": {
+      "ai_comment": "売上は3期連続増収（623→712→799億円）で成長トレンドは明確。ただし営業利益率は約6.6%と低水準で、不動産売買・仲介中心の収益構造から売却益依存の一過性リスクが高い。自己資本比率22%は不動産業界内では許容範囲だが、NC比0.91と有利子負債負担は相応に重く、金利上昇局面では財務コスト増加が利益を直撃するリスクがある。PER3.97・PBR0.64と市場評価は割安圏だが、ROE8.53%はやや低く資本効率改善余地あり。景気感応度が高い業態であり、不動産市況悪化・金利上昇の二重リスクに対する耐性は限定的。増収ペースに対し利益成長が鈍い点（売上+12%に対し営業利益+5%）は収益の質の低下を示唆しており、事業継続性・安定性の観点では慎重に見る必要がある。",
+      "risk_checks": {
+        "roe_15_percent": false,
+        "profit_stability": true,
+        "dividend_stability": true,
+        "one_time_profit_risk": false,
+        "liquidity_risk": true,
+        "financial_health": true
+      },
+      "trend_score": 5,
+      "quality_score": 4,
+      "upward_revision": false
+    },
+    "8772": {
+      "ai_comment": "ASAX（アサックス）は不動産担保ローン専業のノンバンクで、3期連続増収増益を達成しており業績トレンドは堅調。売上高は61.8→67.5→75.2億円と安定成長し、営業利益率は約69%と高水準を維持。収益の大半は不動産担保貸付による利息収入であり、売却益等の一過性収益への依存は低く、収益の質は高い。一方、金利上昇局面では調達コスト増加が利ざや圧縮リスクとなり得る。自己資本比率41.5%はノンバンクとして許容水準だが、レバレッジ依存の事業モデルゆえ流動性管理は重要。ROE6.9%はやや低く資本効率改善余地あり。PBR0.57倍と割安感が強く、株主還元姿勢の強化が株価再評価の鍵。景気後退局面では担保物件の価値下落や不良債権増加リスクが顕在化しやすい点は留意が必要。",
+      "risk_checks": {
+        "roe_15_percent": false,
+        "profit_stability": true,
+        "dividend_stability": true,
+        "one_time_profit_risk": false,
+        "liquidity_risk": true,
+        "financial_health": true
+      },
+      "trend_score": 7,
+      "quality_score": 6,
+      "upward_revision": false
+    },
+    "8864": {
+      "ai_comment": "AIRPORT FACILITIES COは空港関連施設の管理・運営を主体とする不動産系企業。直近期は売上19.9%増、営業利益40.4%増と大幅改善を記録し、3期売上推移も255→260→311億円と加速成長を示す。空港インフラという社会インフラ的性格から収益の安定性は比較的高く、テナント賃料・管理手数料収入が主体であり売却益依存度は低いと見られる。一方、ROE4.3%は低水準で資本効率に課題あり。PBR0.81倍と割安感があるものの、ROEの低さが評価を抑制。自己資本比率55%超で財務健全性は良好、ネットキャッシュ比率も極めて低く実質無借金経営に近い。金利上昇局面での直接的な借入コスト増加リスクは限定的。インバウンド需要回復が追い風であるが、航空需要・景気変動への感応度は残存する。利益一過性リスクは低いが、ROE改善と資本還元強化が今後の評価向上の鍵。",
+      "risk_checks": {
+        "roe_15_percent": false,
+        "profit_stability": true,
+        "dividend_stability": true,
+        "one_time_profit_risk": false,
+        "liquidity_risk": false,
+        "financial_health": true
+      },
+      "trend_score": 7,
+      "quality_score": 6,
+      "upward_revision": false
+    },
+    "9633": {
+      "ai_comment": "売上は3期連続増収（163.2→170.9→183.9億円）でトレンドは良好。営業利益も同率で増加しているが、純利益30.4億円は営業利益2.7億円を大幅に上回っており、不動産売却益等の一過性利益への依存が強く示唆される。収益の質という観点では懸念材料。Industrialsセクターながら劇場・不動産関連事業を持つ同社は、景気敏感性が高く金利上昇局面では不動産評価・売却環境に影響を受けやすい。PBR0.69倍と資産価値に対して割安だが、ROE19.58%は一過性益が押し上げている可能性が高い。自己資本比率53.71%は健全水準。ネットキャッシュがマイナスであり財務レバレッジに注意が必要。資本還元姿勢や継続的な収益基盤の強化が今後の評価を左右する。",
+      "risk_checks": {
+        "roe_15_percent": true,
+        "profit_stability": true,
+        "dividend_stability": true,
+        "one_time_profit_risk": true,
+        "liquidity_risk": false,
+        "financial_health": true
+      },
+      "trend_score": 6,
+      "quality_score": 4,
+      "upward_revision": false
+    },
+    "3495": {
+      "ai_comment": "高麗住販は不動産販売・賃貸を主軸とする中堅不動産会社。売上は93.2→100.4→115.3億円と3期連続増収を達成し、直近の増収率14.9%は顕著。営業利益も増加基調だが、増益率7.0%は増収率を下回り、利益率はやや低下傾向（営業利益率約9.3%）。不動産販売業は売却益依存の一過性利益リスクが内在しており、収益の安定性には限界がある。自己資本比率34.75%は業界平均並みだが、金利上昇局面では調達コスト増加と販売需要鈍化の二重リスクが懸念される。NC比0.22は財務健全性を示す。PER6.6倍・PBR1.06倍は割安感があり、ROE16.38%は高水準で資本効率は良好。景気感応度は高く、マクロ環境の悪化時には業績変動リスクが顕在化しやすい。資本還元姿勢は低PERから見て積極的とは言えず、今後の株主還元強化が課題。",
+      "risk_checks": {
+        "roe_15_percent": true,
+        "profit_stability": true,
+        "dividend_stability": true,
+        "one_time_profit_risk": false,
+        "liquidity_risk": false,
+        "financial_health": true
+      },
+      "trend_score": 7,
+      "quality_score": 5,
+      "upward_revision": false
+    },
+    "3477": {
+      "ai_comment": "FORLIFEは不動産関連のConsumer Cyclical企業。売上は過去3期で141.1→139.9→147.7億円と一時的な落ち込みを経て回復基調にあり、直近期は前期比+5.6%の増収を実現。営業利益は前期比+126.2%と大幅改善だが、これは前期の落ち込みからの反動増の側面が強く、一過性要因の可能性を排除できない。不動産セクター特有の売却益依存型収益構造が懸念され、安定的な手数料収入比率の確認が必要。金利上昇局面では仕入コスト・販売環境の悪化リスクが高い。自己資本比率41.31%は一定の健全性を示すが、NC比1.04はほぼ均衡水準であり流動性に余裕は乏しい。PER8.4倍・PBR0.84倍は割安感があるものの、景気敏感セクターゆえ下値リスクも存在。ROE13.86%は水準としてまずまずだが15%未達。還元姿勢・資本政策の積極性は現時点では限定的と判断。",
+      "risk_checks": {
+        "roe_15_percent": false,
+        "profit_stability": true,
+        "dividend_stability": true,
+        "one_time_profit_risk": false,
+        "liquidity_risk": true,
+        "financial_health": true
+      },
+      "trend_score": 5,
+      "quality_score": 4,
+      "upward_revision": false
+    },
+    "2993": {
+      "ai_comment": "売上は3期連続増収（91.6→93.7→100.2億円）で成長トレンドは維持されているが、直近期の営業利益は前期比▲1.3%と減益に転じており、コスト増圧力が顕在化。素利益が営業利益を上回る構造（20.7億円 vs 18.0億円）は、売却益等の一過性利益への依存が示唆され、収益の質に懸念が残る。自己資本比率17.89%と低水準で財務レバレッジが高く、金利上昇局面では借入コスト増加が収益を直撃するリスクが大きい。NC比がマイナス（-3.75）であり流動性リスクも無視できない。PER6.0倍・PBR0.94倍と割安感があるものの、ROE17.33%は高水準で資本効率は評価できる。不動産セクター特有の景気感応度の高さと金利リスクを踏まえると、事業の安定性・継続性には注意が必要。株主還元姿勢の明確化が今後の評価向上の鍵となる。",
+      "risk_checks": {
+        "roe_15_percent": true,
+        "profit_stability": true,
+        "dividend_stability": true,
+        "one_time_profit_risk": false,
+        "liquidity_risk": true,
+        "financial_health": true
+      },
+      "trend_score": 5,
+      "quality_score": 4,
+      "upward_revision": false
+    },
+    "8908": {
+      "ai_comment": "毎日コムネットは不動産賃貸管理・学生向け住居サービスを主軸とする安定型の不動産会社。直近期は売上222.6億円（前期比+7.1%）、営業利益25.2億円（+10.0%）と増収増益を達成。ただし過去3期の売上推移は212.5→207.7→222.6億円と一時的に減収を挟んでおり、連続増収ではない点に留意が必要。収益源は管理手数料・賃貸仲介が中心であり売却益依存度は相対的に低く、収益の質は比較的良好。自己資本比率42.4%とバランスシートは堅実で、NC比率0.35と財務負担も軽微。PER8.4倍・PBR1.15倍と割安圏にあるが、ROE12.2%は15%未満で資本効率に改善余地あり。金利上昇局面では借入コスト増や住宅需要抑制のリスクがあるものの、学生・単身者向け安定需要に支えられた耐景気感応度は低め。還元姿勢・成長投資の積極度が今後の評価ポイント。",
+      "risk_checks": {
+        "roe_15_percent": false,
+        "profit_stability": true,
+        "dividend_stability": true,
+        "one_time_profit_risk": false,
+        "liquidity_risk": false,
+        "financial_health": true
+      },
+      "trend_score": 6,
+      "quality_score": 6,
+      "upward_revision": false
+    },
+    "8928": {
+      "ai_comment": "穴吹興産は四国地盤の不動産デベロッパー。過去3期の売上は1138→1345→1310億円と拡大後に微減。営業利益は前期比ほぼ横ばい（-0.5%）で一定の安定性は示すが、不動産販売（マンション分譲等）依存度が高く売却益偏重の収益構造が懸念点。手数料・管理収入等ストック型収益比率は限定的とみられる。PER5.3倍・PBR0.59倍と割安感は強いが、自己資本比率29%は不動産セクターとしてやや低水準で金利上昇局面での財務負担増大リスクが残る。NC比0.50は過大ではないが、金利感応度は引き続き注視が必要。ROEは8.54%と中程度。景気感応度は高く、住宅市況悪化時の業績下振れリスクも内包。還元姿勢は低PBRから積極的とはいえず、資本効率改善が課題。",
+      "risk_checks": {
+        "roe_15_percent": false,
+        "profit_stability": true,
+        "dividend_stability": false,
+        "one_time_profit_risk": false,
+        "liquidity_risk": false,
+        "financial_health": true
+      },
+      "trend_score": 5,
+      "quality_score": 4,
+      "upward_revision": false
+    },
+    "8793": {
+      "ai_comment": "NEC CAPITAL SOLUTIONSは売上が3期連続でわずかに減収傾向にあり、最新期は営業利益が前年比33.5%の大幅減と収益性の悪化が顕著。リース・割賦・ファイナンス事業を中心とするビジネスモデルは金利上昇局面で調達コスト増の影響を受けやすく、現在の金利環境は逆風。自己資本比率9.88%と財務レバレッジが高く、金利変動リスクへの耐性は限定的。収益源はリース料・割賦収入が中心で比較的安定しているが、景気後退時には設備投資の縮小がリース需要に直結するため景気感応度は高め。PBR0.71倍と割安感はあるが、ROE5.46%と低く資本効率の改善が課題。株主還元姿勢は安定配当維持が基本方針だが、利益減少下では持続性に注意が必要。業績回復の明確なカタリストが見えにくい状況。",
+      "risk_checks": {
+        "roe_15_percent": false,
+        "profit_stability": true,
+        "dividend_stability": true,
+        "one_time_profit_risk": false,
+        "liquidity_risk": true,
+        "financial_health": true
+      },
+      "trend_score": 3,
+      "quality_score": 4,
+      "upward_revision": false
+    },
+    "3452": {
+      "ai_comment": "B-LOTは3期連続増収を達成し、直近期は売上31.6%増・営業利益15.3%増と成長軌道を維持。ただし不動産売買（売却益）依存型のビジネスモデルが主軸であり、収益の安定性には懸念が残る。PER6倍台・PBR1.35倍と割安感があり、ROE22.32%は高水準。自己資本比率31%はやや低く、金利上昇局面では調達コスト増加と不動産市況軟化のダブルパンチリスクがある。NC比0.33は比較的健全だが、景気敏感セクターゆえ景況悪化時の売上急減リスクは高い。手数料収入比率が低く一過性の売却益依存体質が続く限り、収益の質は中程度に留まる。資本還元姿勢についても積極性は限定的とみられる。",
+      "risk_checks": {
+        "roe_15_percent": true,
+        "profit_stability": true,
+        "dividend_stability": true,
+        "one_time_profit_risk": false,
+        "liquidity_risk": false,
+        "financial_health": true
+      },
+      "trend_score": 7,
+      "quality_score": 4,
+      "upward_revision": false
+    },
+    "3276": {
+      "ai_comment": "売上は3期連続増収（562.3→573.5→589.9億円）で安定した成長軌道を維持。営業利益も前期比5.7%増と増収を上回るペースで拡大しており、収益性の改善傾向が確認できる。管理業務中心の手数料収入モデルは景気感応度が低く、金利変動の直接影響も限定的で収益の質は高い。ROE19.62%は不動産管理セクターとして優秀。自己資本比率49.83%とNC比0.11は財務健全性を示す。PBR2.38倍はプレミアム評価を受けており市場からの信頼度は高い。一方、PER11.56倍はやや割安感があり上値余地も存在。一過性利益への依存度は低く、ストック型収益基盤が強みだが、人口動態や空室率の変化が中長期リスクとなり得る。総じて安定性・収益質ともに優良な銘柄と評価できる。",
+      "risk_checks": {
+        "roe_15_percent": true,
+        "profit_stability": true,
+        "dividend_stability": true,
+        "one_time_profit_risk": false,
+        "liquidity_risk": false,
+        "financial_health": true
+      },
+      "trend_score": 8,
+      "quality_score": 8,
+      "upward_revision": false
+    },
+    "8737": {
+      "ai_comment": "AKATSUKI CORPはFinancial Servicesセクターに分類されるが、実態はゲーム・エンターテインメント事業が主体。3期連続で増収（393→467→565億円）を達成しており売上成長モメンタムは明確。ただし営業利益率は約6.7%と薄利であり、営業利益の伸び率（9.7%）が売上伸び率（21%）を大きく下回る点は収益効率の低下を示唆する。純利益26.3億円に対してPER6.85倍は割安感があるが、ROE14.72%は15%基準をわずかに下回る。自己資本比率19.42%は金融セクターとして一概に低いとは言えないが事業特性上やや脆弱。NC比0.69はネットキャッシュポジションがプラスであり流動性リスクは限定的。収益源の安定性や一過性利益依存の有無が不透明であり、景気感応度が高いゲームコンテンツ依存の構造は質的リスク要因。金利変動の直接影響は軽微と判断。",
+      "risk_checks": {
+        "roe_15_percent": false,
+        "profit_stability": true,
+        "dividend_stability": true,
+        "one_time_profit_risk": false,
+        "liquidity_risk": false,
+        "financial_health": true
+      },
+      "trend_score": 6,
+      "quality_score": 4,
+      "upward_revision": false
+    },
+    "3242": {
+      "ai_comment": "アーバネットコーポレーションは3期連続で増収増益を達成しており、売上高は202.6億円から339.3億円へと約1.7倍に拡大。営業利益率は約10.3%と不動産デベロッパーとして堅実な水準を維持している。ただし主力事業はマンション等の不動産売却益依存型であり、収益の一過性リスクが高く、景気・金利変動への感応度が大きい。自己資本比率27.84%はやや低水準で、金利上昇局面では資金調達コスト増が利益を圧迫するリスクがある。NC比0.44はネットキャッシュポジションではなく有利子負債依存構造を示す。PER4.7倍・PBR1.0倍と割安感があるが、ROEは10.67%と目標水準15%に未達。景気後退や不動産市況悪化時の業績変動リスクに留意が必要。資本還元姿勢は積極的とは言えず、事業の継続性・安定性には課題が残る。",
+      "risk_checks": {
+        "roe_15_percent": false,
+        "profit_stability": true,
+        "dividend_stability": true,
+        "one_time_profit_risk": false,
+        "liquidity_risk": true,
+        "financial_health": true
+      },
+      "trend_score": 7,
+      "quality_score": 4,
+      "upward_revision": false
+    },
+    "8707": {
+      "ai_comment": "岩井コスモホールディングスは3期連続増収を達成し、売上は196.9億円から257.5億円へ約31%拡大。営業利益増益率13.8%は売上増収率7.1%を上回り、収益効率の改善が確認できる。ただし証券業は株式市況・売買代金に収益が大きく左右されるため、現局面の好業績が市況依存の一過性要因を含む可能性に留意が必要。収益源は手数料収入に加え、トレーディング損益・金融収益も混在し、金利上昇局面では資金調達コスト増や債券評価損リスクが生じ得る。PER10.3倍・PBR1.19倍と割安感はあるが、ROEは9.93%と金融業として標準的な水準にとどまる。自己資本比率36.5%はレバレッジ型金融業として許容範囲内。資本政策・株主還元の継続性と景気敏感性の高さを踏まえると事業の質は中程度と評価する。",
+      "risk_checks": {
+        "roe_15_percent": false,
+        "profit_stability": true,
+        "dividend_stability": true,
+        "one_time_profit_risk": false,
+        "liquidity_risk": false,
+        "financial_health": true
+      },
+      "trend_score": 7,
+      "quality_score": 5,
+      "upward_revision": false
+    },
+    "4809": {
+      "ai_comment": "PARACAは3期連続で売上・営業利益ともに増収増益を達成しており、トレンドは良好。売上成長率7.6%、営業利益成長率8.1%と利益成長が売上成長を若干上回り、収益性の改善が見られる。インダストリアルセクターとしては景気循環の影響を受けやすい点が懸念されるが、ネットキャッシュポジション（NC比-1.14はネットキャッシュ）は財務健全性を示す。自己資本比率42.3%は中程度で安定的。PER10.2倍・PBR1.01倍と割安感があり、ROE9.77%はまずまずだが15%には届かない。一過性利益依存の証拠は見当たらず、継続的な事業収益が主体とみられる。金利変動への直接的な感応度は低いと推測されるが、設備投資型事業であれば資本コスト上昇の影響には注意が必要。",
+      "risk_checks": {
+        "roe_15_percent": false,
+        "profit_stability": true,
+        "dividend_stability": true,
+        "one_time_profit_risk": false,
+        "liquidity_risk": false,
+        "financial_health": true
+      },
+      "trend_score": 7,
+      "quality_score": 6,
+      "upward_revision": false
+    },
+    "7187": {
+      "ai_comment": "J-LEASE COは不動産リース・ファイナンス系企業で、過去3期の売上は109.6→132.2→172.7億円と連続増収、成長率も加速傾向。営業利益率は約18%と安定しており、一過性利益への依存は限定的と見られる。ROE35.31%は非常に高水準で資本効率が優れるが、PBR3.34倍と株価はその高ROEを相応に織り込んでいる。PER9.7倍はバリュエーション的に割安感がある。自己資本比率37.8%はリース・不動産系としてやや中程度で、金利上昇局面では資金調達コスト増や物件評価下落リスクに留意が必要。NC比率0.084は比較的低くレバレッジ過多ではない。収益源の内訳開示が限られるが、手数料・賃料収入ベースなら安定性高い。景気敏感セクターにつき経済悪化時の賃貸需要減退リスクは内在する。総じて成長トレンドは良好だが金利・景気リスクへの感応度に注視が必要。",
+      "risk_checks": {
+        "roe_15_percent": true,
+        "profit_stability": true,
+        "dividend_stability": true,
+        "one_time_profit_risk": false,
+        "liquidity_risk": false,
+        "financial_health": true
+      },
+      "trend_score": 8,
+      "quality_score": 6,
+      "upward_revision": false
+    },
+    "3280": {
+      "ai_comment": "STRUST CO LIMITEDは3期連続増収を達成しており（156.2→180.4→192.2億円）、売上成長の継続性は評価できる。特に営業利益が前期比75.3%増と大幅改善しており、収益性の向上が顕著。ただし、不動産セクターとして売却益依存の一過性利益が含まれる可能性があり、利益の持続性には注意が必要。自己資本比率21.71%と低水準であり、金利上昇局面での財務負担増大リスクが存在する。NC比0.315は比較的抑制されているものの、レバレッジ依存の事業構造は金利感応度が高い。PER2.9倍・PBR0.6倍と割安水準だが、ROE14.04%はやや目標水準に届かず。景気敏感セクターとして景気後退局面での収益急減リスクも内在する。収益源の質や株主還元姿勢の開示が限定的な点も課題。",
+      "risk_checks": {
+        "roe_15_percent": false,
+        "profit_stability": true,
+        "dividend_stability": false,
+        "one_time_profit_risk": false,
+        "liquidity_risk": true,
+        "financial_health": true
+      },
+      "trend_score": 7,
+      "quality_score": 4,
+      "upward_revision": false
+    },
+    "9820": {
+      "ai_comment": "MT GENEX CORPORATIONは売上が3期連続増収（32.6→37.9→39.5億円）と堅調な拡大基調にある一方、直近期の営業利益は前年比-6.3%と減益に転じており、収益性の低下が懸念材料。自己資本比率80.62%と財務健全性は高く、流動性リスクは低い。NC比0.94はほぼネットキャッシュ中立水準で安定的。PBR0.89倍と割安感があるものの、ROE6.42%は資本効率として物足りない。Industrialsセクターとして景気感応度は中程度。収益源の質や一過性利益の依存度は開示情報から明確には判断しにくいが、営業利益率が約10.4%から低下傾向にある点は注視が必要。金利変動の直接的影響は限定的とみられるが、設備投資・調達コスト上昇リスクは残る。増収を維持しながら利益率を回復できるかが今後の焦点。",
+      "risk_checks": {
+        "roe_15_percent": false,
+        "profit_stability": true,
+        "dividend_stability": true,
+        "one_time_profit_risk": false,
+        "liquidity_risk": false,
+        "financial_health": true
+      },
+      "trend_score": 5,
+      "quality_score": 5,
+      "upward_revision": false
+    },
+    "8931": {
+      "ai_comment": "売上は3期で427→388→401億円と一時落ち込みがあり、3期連続増収増益とは言えないが、直近期は増収かつ営業利益が16.7%増と収益性が顕著に改善。ただし不動産業特有の売却益依存型収益構造のリスクがあり、一過性利益の混入有無が不透明。自己資本比率29.76%はやや低水準で、金利上昇局面での借入コスト増大・不動産評価下落の影響を受けやすい。NC比0.12は負債管理上は比較的良好。PER5.3倍・PBR0.53倍と割安感は強いが、ROE9.48%はセクター内では中程度。景気感応度が高い業態であり、市況悪化時の収益変動リスクに注意が必要。株主還元姿勢の積極性は現時点では限定的とみられる。",
+      "risk_checks": {
+        "roe_15_percent": false,
+        "profit_stability": true,
+        "dividend_stability": false,
+        "one_time_profit_risk": false,
+        "liquidity_risk": true,
+        "financial_health": true
+      },
+      "trend_score": 5,
+      "quality_score": 4,
+      "upward_revision": false
+    },
+    "7196": {
+      "ai_comment": "CASA INCは家賃債務保証事業を中核とする金融サービス企業。売上は3期連続増収（102.9→112.2→121.6億円）で成長軌道を維持しており、営業利益は前期比65.6%増と大幅改善。ただし純利益6.0億円に対し営業利益13.0億円と乖離が大きく、一過性費用や税負担の影響を精査する必要がある。収益源は保証料・手数料収入が主体であり、売却益依存型ではなくストック型収益として質は比較的高い。自己資本比率47.65%は財務健全性を示すが、ROE8.01%はやや低水準。PER6.3倍・PBR0.98倍と割安感があるものの、低ROEが課題。金利上昇局面では調達コスト増の影響は限定的だが、不動産市場の冷え込みや賃貸需要減退が直接的リスク。景気感応度は中程度で、賃貸市場の安定性に依存している。",
+      "risk_checks": {
+        "roe_15_percent": false,
+        "profit_stability": true,
+        "dividend_stability": false,
+        "one_time_profit_risk": true,
+        "liquidity_risk": false,
+        "financial_health": true
+      },
+      "trend_score": 7,
+      "quality_score": 6,
+      "upward_revision": false
+    },
+    "8929": {
+      "ai_comment": "直近期の売上は前期比26.4%増と大幅拡大し、過去3期でも459億円水準へ急成長している点は評価できる。ただし営業利益の伸びは7.4%増にとどまり、売上増加ペースに対して利益率の改善が乏しく、コスト構造や利益の質に課題がある。不動産関連サービス・資産管理コンサルビジネスが主軸であり、手数料系収益と不動産売却益が混在するため、一過性利益への依存度が懸念される。金利上昇局面では顧客の不動産取引意欲が低下するリスクがあり、景気感応度はやや高い。ROE24.78%は高水準で資本効率は良好だが、PBR2.63倍はやや割高感もある。自己資本比率43.77%とNC比0.16はバランスシート上概ね健全。増収基調は継続しているが利益の安定性と収益構造の透明性向上が今後の鍵となる。",
+      "risk_checks": {
+        "roe_15_percent": true,
+        "profit_stability": true,
+        "dividend_stability": true,
+        "one_time_profit_risk": false,
+        "liquidity_risk": false,
+        "financial_health": true
+      },
+      "trend_score": 6,
+      "quality_score": 5,
+      "upward_revision": false
+    },
+    "8739": {
+      "ai_comment": "SPARX GROUPは3期連続増収を達成し、売上は133.6億→165.0億→179.6億円と堅調な拡大基調にある。営業利益率は約43%と高水準を維持しており、運用資産からの管理報酬を中心とした手数料収入基盤はある程度安定している。ただし、資産運用会社としての性格上、市場環境・株価動向に収益が連動しやすく、成功報酬や売却益など変動性の高い収益も混在する点はリスク要因。金利上昇局面では運用資産評価への影響も無視できない。ROE15.67%はリターン面で合格水準。PBR2.05倍・PER13倍は割高感なく、資本効率と株価評価のバランスは良好。自己資本比率67.1%は財務健全性を示す。景気感応度は高く、リセッション時には運用残高縮小リスクが顕在化しやすい。収益源の質向上と安定したフィー収入比率の拡大が今後の評価ポイント。",
+      "risk_checks": {
+        "roe_15_percent": true,
+        "profit_stability": true,
+        "dividend_stability": true,
+        "one_time_profit_risk": false,
+        "liquidity_risk": false,
+        "financial_health": true
+      },
+      "trend_score": 7,
+      "quality_score": 6,
+      "upward_revision": false
+    },
+    "7192": {
+      "ai_comment": "売上は3期で73.3→71.1→75.7億円と一時減収後に回復基調へ転換しており、最新期は前期比+6.4%増収を達成。ただし営業利益の伸びは+0.2%と微増に留まり、増収効果がコスト増で吸収されている点は懸念材料。収益源は住宅ローン関連の仲介・保証手数料が主軸とみられ、売却益依存型より安定性は高いが、金利上昇局面では新規住宅ローン需要の冷え込みリスクが顕在化しやすい。日銀の利上げ方向への政策転換は中長期的に逆風となる可能性がある。PER9.1倍・PBR1.03倍と割安感があるものの、ROE11.2%は15%には未達。自己資本比率39.7%は金融系として許容水準だが財務余力に限界もある。景気敏感性は高く、不動産市況悪化時の業績下振れリスクには注意が必要。還元姿勢・資本政策の積極性については情報が限定的で判断が難しい。",
+      "risk_checks": {
+        "roe_15_percent": false,
+        "profit_stability": true,
+        "dividend_stability": true,
+        "one_time_profit_risk": false,
+        "liquidity_risk": false,
+        "financial_health": true
+      },
+      "trend_score": 5,
+      "quality_score": 5,
+      "upward_revision": false
+    },
+    "7191": {
+      "ai_comment": "ENTRUST INCは3期連続で増収を達成しており（64.9→89.7→105.7億円）、売上成長率17.9%は堅調。営業利益率は約22%と高水準を維持し、利益の安定性は評価できる。ただし営業利益の伸び率（12.3%）が売上伸び率（17.9%）を下回っており、費用増加が利益を圧迫している点は要注視。純利益13.6億円に対してPER15.7倍は割安感あり、PBR3.27倍はやや高め。ROE19.51%は資本効率が良好。自己資本比率61.89%と財務健全性は高く、流動性リスクは低い。金融サービス業として金利変動の影響を受ける可能性があるが、手数料収入ベースの収益構造であれば安定性は高い。景気感応度は中程度と判断される。",
+      "risk_checks": {
+        "roe_15_percent": true,
+        "profit_stability": true,
+        "dividend_stability": true,
+        "one_time_profit_risk": false,
+        "liquidity_risk": false,
+        "financial_health": true
+      },
+      "trend_score": 7,
+      "quality_score": 7,
+      "upward_revision": false
+    },
+    "3245": {
+      "ai_comment": "DEAR LIFEは過去3期で売上が435億→469億→785億円と急拡大し、直近期は売上・営業利益ともに約67%増の高成長を実現。自己資本比率59.3%と財務健全性は高く、ROE18.94%も優秀。ただし不動産セクターの特性上、収益の大部分が不動産売却益に依存している可能性が高く、一過性利益の混在リスクがある。NC比0.51は資産規模に対し純有利子負債が一定水準あり、金利上昇局面では調達コスト増加の影響を受けやすい。PER8.7倍・PBR1.69倍と割安感はあるが、景気後退や不動産市況の悪化時には売上の急減速リスクが存在する。手数料収入比率の向上と安定収益基盤の構築が今後の評価向上の鍵となる。",
+      "risk_checks": {
+        "roe_15_percent": true,
+        "profit_stability": true,
+        "dividend_stability": true,
+        "one_time_profit_risk": false,
+        "liquidity_risk": false,
+        "financial_health": true
+      },
+      "trend_score": 7,
+      "quality_score": 5,
+      "upward_revision": false
+    },
+    "8999": {
+      "ai_comment": "グランディハウスは住宅分譲・注文住宅を主軸とする地方不動産会社。売上は3期で552→515→540億円と一時落ち込んだ後に回復基調だが、営業利益率は約2.2%と極めて低水準。収益源は住宅売却益に依存し、手数料収入等のストック型収益は限定的。金利上昇局面では住宅需要の冷え込みと資金調達コスト増が直撃しやすく、景気感応度は高い。自己資本比率36%はやや低め、NC比0.60は許容範囲内だが財務の余裕は少ない。ROEは1.96%と著しく低く、資本効率の改善余地が大きい。PBR0.7倍の割安感はあるが、利益の絶対額・安定性ともに見劣りする。配当・株主還元への積極的な姿勢も確認しにくく、事業の質・資本政策双方に課題が残る。中期的な収益改善策の具体性が問われる局面。",
+      "risk_checks": {
+        "roe_15_percent": false,
+        "profit_stability": true,
+        "dividend_stability": true,
+        "one_time_profit_risk": true,
+        "liquidity_risk": false,
+        "financial_health": true
+      },
+      "trend_score": 4,
+      "quality_score": 3,
+      "upward_revision": false
+    },
+    "8789": {
+      "ai_comment": "FINTECH GLOBAL INCは過去3期で売上が93.0→138.1→144.3億円と堅調な増収トレンドを維持しており、直近期の営業利益は前期比32.5%増と大幅改善。FinTech・金融サービス領域でのM&Aアドバイザリーや投資銀行業務が主軸とみられ、収益源の質は手数料・アドバイザリー収入主体と推察されるが、売却益や案件一過性収益への依存度が不透明な点はリスク。ROE19.35%は業種平均を上回り資本効率は高い。自己資本比率40.63%は財務安定性の観点でやや保守的水準。金利上昇局面ではM&A・資金調達案件の減少懸念があり景気感応度は相応に高い。PER11.8倍・PBR2.14倍はバリュエーション面でやや割高感はないが、利益の持続性確認が重要。還元姿勢・配当政策の透明性向上が株主価値向上の鍵となる。",
+      "risk_checks": {
+        "roe_15_percent": true,
+        "profit_stability": true,
+        "dividend_stability": true,
+        "one_time_profit_risk": false,
+        "liquidity_risk": false,
+        "financial_health": true
+      },
+      "trend_score": 7,
+      "quality_score": 6,
+      "upward_revision": false
+    },
+    "3299": {
+      "ai_comment": "MUGEN ESTATEは3期連続で大幅増収増益を達成しており、売上は312億→516億→622億円と急拡大。営業利益率も15.5%に改善し収益性は向上している。ただし不動産売買・仲介中心のビジネスモデルは売却益依存度が高く、景気後退や金利上昇局面では収益が急減するリスクがある。自己資本比率36.7%はNC比0.52と合わせて見ると財務レバレッジが相応に高く、金利上昇コスト転嫁が課題。PER8.7倍・PBR1.54倍とバリュエーションは割安感あり、ROE18.97%は高水準。ただし不動産流通業特有の収益変動リスクと景気感応度の高さから事業の質はやや割り引いて評価。資本還元姿勢の明確化が株価評価向上の鍵となる。",
+      "risk_checks": {
+        "roe_15_percent": true,
+        "profit_stability": true,
+        "dividend_stability": true,
+        "one_time_profit_risk": false,
+        "liquidity_risk": false,
+        "financial_health": true
+      },
+      "trend_score": 7,
+      "quality_score": 5,
+      "upward_revision": false
+    },
+    "3284": {
+      "ai_comment": "HOOSIERS HOLDINGSは不動産・住宅関連のConsumer Cyclical銘柄。3期連続増収（792.9→864.2→921.5億円）で売上成長は安定しているが、営業利益率は約10%と低水準で、増収率（6.6%）に対して営業利益増益率（3.2%）が劣後しており利益の伸びに鈍化傾向が見られる。自己資本比率23.43%は不動産セクターとして許容範囲内だが財務レバレッジは高め。NC比0.46は中程度の負債水準で金利上昇局面では利払い負担増加リスクがある。収益源は不動産販売・開発主体と推察され、売却益依存型の収益構造は景気後退・金利上昇に対して脆弱性を持つ。ROE12.96%はPBR1.14倍に対してやや物足りず、資本効率改善余地あり。PER9.76倍と割安感があるが、景気感応度の高いセクター特性と利益の質を考慮すると慎重な評価が必要。",
+      "risk_checks": {
+        "roe_15_percent": false,
+        "profit_stability": true,
+        "dividend_stability": true,
+        "one_time_profit_risk": false,
+        "liquidity_risk": true,
+        "financial_health": true
+      },
+      "trend_score": 6,
+      "quality_score": 4,
+      "upward_revision": false
+    },
+    "8747": {
+      "ai_comment": "売上は3期連続増収（68.7→74.0→76.6億円）で安定した成長軌道を維持。営業利益率は約27%と証券会社としては良水準。ただし自己資本比率10.96%は金融機関特性を考慮しても低め。ROE13.88%はまずまずだが15%には届かず。PER8.1倍・PBR1.07倍は割安感あり。収益源は手数料収入と自己売買益の混在が想定され、景気・市場環境への感応度は高い。金利上昇局面では債券価格下落リスクや顧客の株式取引活発化による二面性がある。売上成長率3.5%・営業利益成長率4.0%と増収増益は継続しているが伸び率はやや鈍化気味。中小証券会社として事業継続性・競争優位性の持続には注意が必要。資本還元姿勢の明確な情報は限定的。総じて安定成長だが爆発力に乏しい堅実型の評価。",
+      "risk_checks": {
+        "roe_15_percent": false,
+        "profit_stability": true,
+        "dividend_stability": true,
+        "one_time_profit_risk": false,
+        "liquidity_risk": true,
+        "financial_health": true
+      },
+      "trend_score": 6,
+      "quality_score": 5,
+      "upward_revision": false
+    },
+    "8699": {
+      "ai_comment": "HS HOLDINGSは3期連続で売上が減収（553.9→422.0→369.9億円、直近-12.3%）と業績トレンドは明確な悪化傾向にある。営業利益が非開示である点は透明性の観点から懸念材料。純利益121億円は一定水準を確保しているが、売却益など一過性収益への依存が疑われる。金融サービスセクターとして金利変動・市場環境の影響を受けやすく、景気感応度は高い。自己資本比率74.89%は健全で財務基盤は安定。PBR0.4倍・PER2.7倍と著しく割安な評価は市場の収益持続性への懐疑を反映。ROE14.01%は及第点だが収益源の質（手数料vs売却益）の不透明さが質評価を下げる。株主還元姿勢の積極性は確認しづらく、総合的に再評価には業績反転の証拠が必要。",
+      "risk_checks": {
+        "roe_15_percent": false,
+        "profit_stability": false,
+        "dividend_stability": true,
+        "one_time_profit_risk": true,
+        "liquidity_risk": false,
+        "financial_health": true
+      },
+      "trend_score": 2,
+      "quality_score": 3,
+      "upward_revision": false
+    },
+    "7175": {
+      "ai_comment": "今村証券は地方証券会社として安定した自己資本基盤（61.35%）を持つが、業績は減収減益トレンドが顕著。売上は48.2億円→41.9億円と直近2期で大幅減少し、営業利益も33%超の減益となっている。収益源は株式委託手数料や売却益など市況依存型が中心とみられ、利益の安定性に欠ける。金利上昇局面では債券評価損リスクや顧客の投資行動変容が懸念される。PBRは0.53倍と低く市場評価は低迷、ROEも6.29%と資本効率は低い。PER約10倍は割高感はないが、景気敏感セクター特有のボラティリティが高く、収益の質・安定性とも課題が残る。資本還元姿勢の明確化が株価再評価の鍵となろう。",
+      "risk_checks": {
+        "roe_15_percent": false,
+        "profit_stability": true,
+        "dividend_stability": false,
+        "one_time_profit_risk": false,
+        "liquidity_risk": false,
+        "financial_health": true
+      },
+      "trend_score": 3,
+      "quality_score": 3,
+      "upward_revision": false
+    },
+    "3300": {
+      "ai_comment": "売上は3期連続で24%超の高成長を維持しており、直近期は523.7億円と力強い拡大が続く。営業利益も44.8%増と増収以上のペースで改善しており、収益効率の向上が見られる。ただし自己資本比率21%と財務レバレッジが高く、不動産セクター特有の金利上昇リスクに対する脆弱性が懸念される。NC比がほぼゼロ水準でネットキャッシュ的立場はほぼ中立。収益源はDX推進による管理・仲介手数料主体とみられるが、不動産売却益など景気連動的な一過性収益の混在が疑われ、利益の持続安定性には精査が必要。PER約9.7倍・PBR2.25倍はバリュー的水準ながらROE28%超は高い資本効率を示す。金利上昇局面では調達コスト増と取引件数減少の双方向リスクがあり、景気感応度はやや高い。",
+      "risk_checks": {
+        "roe_15_percent": true,
+        "profit_stability": true,
+        "dividend_stability": true,
+        "one_time_profit_risk": false,
+        "liquidity_risk": true,
+        "financial_health": true
+      },
+      "trend_score": 7,
+      "quality_score": 5,
+      "upward_revision": false
+    },
+    "3241": {
+      "ai_comment": "WILL CO.LTDは不動産セクターにおいて3期連続増収を達成しており（94.7→115.5→132.1億円）、売上成長率14.4%と堅調な拡大基調にある。営業利益も12.2%増と増益継続だが、営業利益率は約8.5%と不動産業としては中程度。自己資本比率32.36%はやや低く、金利上昇局面では資金調達コスト増大リスクが懸念される。NC比がほぼゼロに近い水準（-0.107）は流動性に若干の余裕があることを示す。PER7.9倍・PBR1.23倍はバリュエーション的に割安感があるが、ROE14.31%は15%未満でやや見劣り。収益源の内訳が開示されていないため手数料収入と売却益の比率が不明な点はリスク要因。景気感応度は高い業種であり、金利・景況の変化には注意が必要。総じて成長継続中だが財務安定性と収益の質に課題が残る。",
+      "risk_checks": {
+        "roe_15_percent": false,
+        "profit_stability": true,
+        "dividend_stability": true,
+        "one_time_profit_risk": false,
+        "liquidity_risk": true,
+        "financial_health": true
+      },
+      "trend_score": 7,
+      "quality_score": 5,
+      "upward_revision": false
+    },
+    "2999": {
+      "ai_comment": "HOME POSITION CO LTDは3期連続で売上が減少傾向（198.5→197.3→173.6億円）にあり、直近期は前年比▲12.0%と大幅な減収。一方、営業利益は前年比+198.8%と急増しており、コスト削減や不動産売却益等の一過性要因が含まれている可能性が高く、利益の質には懸念が残る。消費者向け不動産・住宅関連事業は金利上昇局面において住宅ローン需要の減退や取得コスト増加の影響を受けやすく、金利感応度が高い。自己資本比率39.86%はやや中程度、PBR0.76倍と割安水準だがROE6.72%は低く資本効率改善余地がある。NC比1.15はネットキャッシュポジションで財務は比較的健全。景気敏感セクターであり収益安定性に課題があるが、割安感はある。",
+      "risk_checks": {
+        "roe_15_percent": false,
+        "profit_stability": false,
+        "dividend_stability": true,
+        "one_time_profit_risk": false,
+        "liquidity_risk": false,
+        "financial_health": true
+      },
+      "trend_score": 3,
+      "quality_score": 4,
+      "upward_revision": false
+    },
+    "2981": {
+      "ai_comment": "LANDIX INCは3期連続増収を達成し、売上は150.2億→170.4億→202.7億円と順調に拡大。営業利益は76.5%増と大幅改善しており、利益率の向上が顕著。ただし不動産セクターの特性上、売却益依存の一過性利益が含まれる可能性があり、利益の持続性には注視が必要。PER約6倍は割安感があるが、PBR1.28倍・ROE16.83%はバランス良好。自己資本比率38.29%はやや保守的な水準で、NC比0.43は財務レバレッジが抑制されている。金利上昇局面では資金調達コスト増加や不動産流動性低下のリスクが懸念される。景気感応度が高いセクターであり、マクロ環境の悪化時には業績変動幅が大きくなりうる点がリスク要因。収益源の質と資本還元姿勢の透明性向上が今後の評価ポイント。",
+      "risk_checks": {
+        "roe_15_percent": true,
+        "profit_stability": true,
+        "dividend_stability": true,
+        "one_time_profit_risk": false,
+        "liquidity_risk": false,
+        "financial_health": true
+      },
+      "trend_score": 7,
+      "quality_score": 5,
+      "upward_revision": false
+    },
+    "8818": {
+      "ai_comment": "売上は3期連続増収（188.8→193.1→195.8億円）を達成しており、トップライン成長の継続性は評価できる。しかし営業利益は前期比-2.0%と減益転落しており、コスト増圧力が利益を圧迫している点が懸念材料。自己資本比率43.09%は不動産セクターとしてやや堅実な水準。NC比がマイナス（-0.77）であり実質的にネットキャッシュポジションに近く、金利上昇リスクへの耐性は相対的に高い。ROE5.75%は低水準で資本効率の改善余地が大きい。収益源はビル賃貸主体と推察され、売却益依存が低く安定性は高いが、景気後退時の空室率上昇リスクには注意が必要。PBR1.14倍、PER18.9倍は割高感はないが、ROEの低さから資本政策・株主還元の強化が今後の株価カタリストとなるかが焦点。総じて安定型ながら成長性・資本効率に改善余地あり。",
+      "risk_checks": {
+        "roe_15_percent": false,
+        "profit_stability": true,
+        "dividend_stability": true,
+        "one_time_profit_risk": false,
+        "liquidity_risk": false,
+        "financial_health": true
+      },
+      "trend_score": 5,
+      "quality_score": 6,
+      "upward_revision": false
+    },
+    "3482": {
+      "ai_comment": "ロードスターキャピタルは3期連続で増収増益を達成しており、売上は236億→287億→344億円と安定成長。営業利益率も約33%と高水準。ただし収益源の主体は不動産売却益であり、一過性要素への依存度が高い点はリスク。自己資本比率23.87%は不動産会社として許容範囲内だが、金利上昇局面では調達コスト増加や物件評価下落リスクが顕在化しやすい。NC比0.48は比較的健全だが、金利感応度は依然高い。ROE26.8%は高水準でリターン効率は優秀。PER6.2倍・PBR1.58倍はバリュー寄りの評価。景気敏感セクターゆえ景気悪化時の売却益減少リスクは無視できない。手数料収入等の安定収益比率の向上が課題であり、収益の質向上が評価改善の鍵となる。",
+      "risk_checks": {
+        "roe_15_percent": true,
+        "profit_stability": true,
+        "dividend_stability": true,
+        "one_time_profit_risk": false,
+        "liquidity_risk": false,
+        "financial_health": true
+      },
+      "trend_score": 7,
+      "quality_score": 5,
+      "upward_revision": false
+    },
+    "8914": {
+      "ai_comment": "AREALINKは3期連続で増収増益を達成しており、売上は208.8→224.6→247.0億円と安定した右肩上がりを示す。営業利益率も約19.9%と不動産セクターとして高水準。主力はトランクルーム・貸倉庫の運営・仲介であり、ストック型の賃料収入が収益の中核を担うため、一過性の売却益依存度が低く利益の質は相対的に高い。自己資本比率47.87%はネットキャッシュポジション（NC比マイナス）と合わせ財務健全性を示す。一方、金利上昇局面では不動産取得コストや借入コストへの影響が懸念される。PBR2.09倍・PER17倍は市場からの一定の評価を反映しているが、ROEは11.96%と15%未満にとどまり資本効率改善の余地がある。景気敏感性はやや低め（インフラ的需要）だが、個人・法人の可処分所得低下時には契約解除リスクも存在する。",
+      "risk_checks": {
+        "roe_15_percent": false,
+        "profit_stability": true,
+        "dividend_stability": true,
+        "one_time_profit_risk": false,
+        "liquidity_risk": false,
+        "financial_health": true
+      },
+      "trend_score": 8,
+      "quality_score": 7,
+      "upward_revision": false
+    },
+    "8771": {
+      "ai_comment": "イー・ギャランティは売上・営業利益ともに3期連続増収増益を達成し、業績トレンドは良好。売上成長率11.6%に対し営業利益成長率5.2%とやや乖離があるが、営業利益率は約49.9%と極めて高水準を維持。収益源は企業間取引の信用保証手数料が中心であり、売却益依存でない安定したフィービジネスモデルが強み。自己資本比率73.8%と財務健全性も高く、NCF比率も適切。金利上昇局面では保証需要が変動するリスクがあるものの、中小企業の資金繰り支援需要は景気後退期にも一定程度底堅い。ROEは14.33%と15%未満であり資本効率の更なる向上が課題。PBR3.86倍・PER22.8倍と市場の成長期待は織り込み済み。景気敏感性は中程度で、信用コストの悪化リスクは注視が必要。",
+      "risk_checks": {
+        "roe_15_percent": false,
+        "profit_stability": true,
+        "dividend_stability": true,
+        "one_time_profit_risk": false,
+        "liquidity_risk": false,
+        "financial_health": true
+      },
+      "trend_score": 8,
+      "quality_score": 8,
+      "upward_revision": false
+    },
+    "5845": {
+      "ai_comment": "ZENHOREN CO. LTD（全保連）は賃貸保証事業を主軸とする産業セクター企業。売上は238.5→245.1→256.6億円と3期連続増収を達成し、営業利益も14.6%増と安定した成長軌道にある。収益源は賃貸保証の手数料・保証料収入が中心であり、売却益等の一過性利益への依存度は低く、収益の質は高い。ただし自己資本比率が31.59%とやや低水準であり、財務レバレッジへの依存が見られる点はリスク要因。金利上昇局面では資金調達コスト増加の影響を受ける可能性があるが、事業モデル上の直接的な金利感応度は相対的に低い。ROE22.54%は高水準で資本効率は優秀。景気感応度は賃貸市場に連動するが、住居系保証は景気悪化時にも一定の需要が維持されやすい。PER14倍台は割安感あり、PBR3.42倍は成長期待を反映。総合的に安定成長企業として評価できる。",
+      "risk_checks": {
+        "roe_15_percent": true,
+        "profit_stability": true,
+        "dividend_stability": true,
+        "one_time_profit_risk": false,
+        "liquidity_risk": false,
+        "financial_health": true
+      },
+      "trend_score": 8,
+      "quality_score": 7,
+      "upward_revision": false
+    },
+    "5533": {
+      "ai_comment": "ELITZ HOLDINGS（旧エリッツ）は不動産仲介・管理を主軸とする関西圏の中堅不動産会社。売上は3期連続増収（55.6→58.4→63.9億円）で増収ペースが加速しており、営業利益も増益基調を維持。ただし営業利益率は約16%と不動産仲介業としては標準的水準。収益源は仲介手数料・管理料が中心で売却益依存度が低く、収益の質は比較的安定している。自己資本比率55.6%は不動産業として健全で財務基盤は良好。NC比0.22と実質無借金に近く金利上昇リスクは限定的。ROE13.17%はやや15%を下回るが改善傾向にある。PER10倍・PBR1.36倍は割安感がある。景気感応度は中程度で賃貸管理収入が景気耐性を高めている。資本還元姿勢は中立的。総じて安定成長型の優良地方不動産銘柄と評価できる。",
+      "risk_checks": {
+        "roe_15_percent": false,
+        "profit_stability": true,
+        "dividend_stability": true,
+        "one_time_profit_risk": false,
+        "liquidity_risk": false,
+        "financial_health": true
+      },
+      "trend_score": 7,
+      "quality_score": 6,
+      "upward_revision": false
+    },
+    "3486": {
+      "ai_comment": "売上は3期連続で大幅増収（+56.3%）を達成し、成長モメンタムは強い。しかし営業利益の伸び（+25.0%）が売上増に比べ鈍く、利益率が低下傾向にある点は注意が必要。不動産販売・売却益依存型の収益構造は景気サイクルや金利上昇局面で大きく変動しやすく、安定性に課題がある。自己資本比率31.87%は不動産業としてやや低め、NC比0.27は相対的に低水準で短期流動性リスクは限定的。PER6.2倍・PBR2.33倍はバリュエーション的に割安感あり。ROE29.42%と高収益性は評価できるが、金利上昇局面では仕入コスト・借入コスト上昇が利益圧迫要因となるリスクが高い。手数料収入より売却益依存の構造的脆弱性が事業の質を抑制する。",
+      "risk_checks": {
+        "roe_15_percent": true,
+        "profit_stability": true,
+        "dividend_stability": true,
+        "one_time_profit_risk": false,
+        "liquidity_risk": false,
+        "financial_health": true
+      },
+      "trend_score": 6,
+      "quality_score": 4,
+      "upward_revision": false
+    },
+    "2982": {
+      "ai_comment": "AD WORKS GRPは3期連続増収を達成し、売上は278.6→413.4→499.1億円と急拡大。営業利益も31.7%増と好調で成長モメンタムは明確。ただし不動産セクターとして売却益依存の収益構造が懸念され、景気や金利変動に対する感応度が高い。自己資本比率31.33%はやや低水準で、金利上昇局面では資金調達コスト増大リスクがある。NC比0.388は過度なレバレッジではないが注視が必要。PER8.87倍・PBR1.0倍と割安感があり市場評価は控えめ。ROE8.59%は資本効率として平均的水準にとどまる。手数料収入より売却益・開発利益への依存度が高いとみられ収益の安定性に課題。配当還元姿勢は現時点では積極的とは言えず、資本政策の明確化が株価上昇の鍵となる。景気敏感セクターとして下振れリスクを内包しつつも、成長軌道は評価できる。",
+      "risk_checks": {
+        "roe_15_percent": false,
+        "profit_stability": true,
+        "dividend_stability": true,
+        "one_time_profit_risk": false,
+        "liquidity_risk": true,
+        "financial_health": true
+      },
+      "trend_score": 7,
+      "quality_score": 4,
+      "upward_revision": false
+    },
+    "8898": {
+      "ai_comment": "売上は3期連続増収（38.0→38.5→40.5億円）で安定的な成長軌道にある。営業利益率は約26.4%と高水準で、一過性利益への依存度は低く、フランチャイズ加盟店からの手数料収入が主体であるため収益の質は高い。自己資本比率83.45%と財務健全性は極めて高く、金利上昇局面でも直接的な借入依存リスクは限定的。ただしROEは12.13%と15%未満であり資本効率にやや課題が残る。不動産仲介市場は景気・金利感応度が高く、住宅ローン金利上昇は取引件数を抑制するリスクがある。フランチャイズビジネスモデルは景気悪化時に加盟店離脱リスクも存在する。株主還元姿勢は安定的だが成長投資余地との兼ね合いが今後の焦点。全体としては安定高品質なビジネスモデルを維持しており、評価は概ね良好。",
+      "risk_checks": {
+        "roe_15_percent": false,
+        "profit_stability": true,
+        "dividend_stability": true,
+        "one_time_profit_risk": false,
+        "liquidity_risk": false,
+        "financial_health": true
+      },
+      "trend_score": 7,
+      "quality_score": 7,
+      "upward_revision": false
+    },
+    "8877": {
+      "ai_comment": "ESLEADは分譲マンション販売を主軸とする不動産会社。売上は3期で799→802→948億円と直近期に大きく加速、営業利益も25%増と好調。ただし収益の大部分はマンション売却益に依存しており、一過性・在庫回転型の収益構造であるため、利益の持続安定性には懸念が残る。金利上昇局面では住宅ローン需要の冷え込みや在庫リスクが顕在化しやすく、景気感応度も高い。自己資本比率32%はやや低く、有利子負債依存度（NC比0.63）もそれなりの水準。PER約10倍・PBR1.22倍と割安感はあるが、ROE12.7%は同業比でやや見劣り。配当・還元姿勢は積極的とは言えず、資本効率改善余地あり。事業の継続性・収益の質の観点では改善の余地が大きく、慎重な評価が妥当。",
+      "risk_checks": {
+        "roe_15_percent": false,
+        "profit_stability": true,
+        "dividend_stability": true,
+        "one_time_profit_risk": false,
+        "liquidity_risk": true,
+        "financial_health": true
+      },
+      "trend_score": 6,
+      "quality_score": 4,
+      "upward_revision": false
+    },
+    "4346": {
+      "ai_comment": "NEXYZ GROUPは3期連続で売上が拡大し（219.5→245.0→284.3億円）、直近期の営業利益は前期比53.2%増と大幅改善。成長モメンタムは明確でトレンドは良好。ただし自己資本比率17.75%と財務基盤はやや脆弱で、NC比0.37はネットキャッシュポジション良好と読めるが、PBR2.52倍に対しROE21.3%は評価に値する。エネルギーソリューション・環境関連事業は景気感応度が中程度だが、法人向け契約型収益（ストック性）を持つため収益の質は比較的安定。金利上昇局面では借入コスト増と設備投資先の需要変動リスクあり。素利益9.2億円と営業利益18.2億円の乖離は非営業費用・税負担の重さを示唆。資本還元姿勢・配当政策の透明性向上が課題。全体として成長性と収益改善は評価できるが、財務レバレッジと利益の質に留意が必要。",
+      "risk_checks": {
+        "roe_15_percent": true,
+        "profit_stability": true,
+        "dividend_stability": true,
+        "one_time_profit_risk": false,
+        "liquidity_risk": false,
+        "financial_health": true
+      },
+      "trend_score": 7,
+      "quality_score": 5,
+      "upward_revision": false
+    },
+    "3496": {
+      "ai_comment": "AZOOMは駐車場・土地活用のマッチングプラットフォームを主軸とし、3期連続で27〜30%超の増収を達成。売上82.7→105.4→134.8億円と加速度的な成長を示し、営業利益率も19.4%に達する。収益源はストック型の管理手数料・マッチング手数料が中心であり、不動産売却益依存度が低い点は質が高い。自己資本比率76.76%と財務健全性は極めて高く、無借金に近い状態（NC比0.097）で金利変動リスクはほぼ軽微。ROE26.83%は資本効率として優秀。一方、PBR9.09倍・PER29倍と成長期待が株価に織り込まれており、景気後退局面での駐車場稼働率低下や競合参入が業績変動要因となり得る。事業継続性・利益安定性とも高水準と評価。",
+      "risk_checks": {
+        "roe_15_percent": true,
+        "profit_stability": true,
+        "dividend_stability": true,
+        "one_time_profit_risk": false,
+        "liquidity_risk": false,
+        "financial_health": true
+      },
+      "trend_score": 9,
+      "quality_score": 8,
+      "upward_revision": false
+    },
+    "3490": {
+      "ai_comment": "AZプランニングは3期連続増収を達成し（93.7→115.1→124.3億円）、売上前年比+8.0%と安定成長を維持。特筆すべきは営業利益の大幅改善（+46.9%）で収益性の向上が明確。ただし不動産セクター特有の課題として、収益の大半が物件売却益や仲介手数料に依存する可能性があり、景気後退や金利上昇局面での影響を受けやすい。自己資本比率22.34%は不動産業としては平均的だが財務基盤はやや脆弱。NC比0.596は純有利子負債が自己資本を超えていない水準。金利上昇環境下での借入コスト増大リスクは要注意。ROE15.62%は高水準で資本効率は良好。PER6.2倍・PBR1.09倍とバリュエーションは割安圏。景気感応度が高い業種特性と利益の一過性リスクがスコアを抑制する主因。",
+      "risk_checks": {
+        "roe_15_percent": true,
+        "profit_stability": true,
+        "dividend_stability": true,
+        "one_time_profit_risk": true,
+        "liquidity_risk": true,
+        "financial_health": true
+      },
+      "trend_score": 7,
+      "quality_score": 5,
+      "upward_revision": false
+    },
+    "3294": {
+      "ai_comment": "E'GRAND CO LTDは3期連続増収を達成しており売上成長モメンタムは維持されているが、直近期の営業利益は前年比▲26.1%と大幅減益となっており収益性の悪化が懸念される。不動産業としての収益源は売却益依存が高いと推察され、一過性利益の影響を受けやすい構造と考えられる。自己資本比率36.74%はやや低水準であり、NC比0.747は有利子負債依存度が相応に高いことを示す。金利上昇局面では資金調達コストの増加が利益を直撃するリスクがある。PERは約9.8倍と割安感があるがROE7.66%は不動産業として平均的水準にとどまる。PBR1.02倍は純資産水準での評価を示す。景気感応度が高いセクターであり、市況悪化時の利益変動リスクは大きい。資本政策・株主還元の積極性は確認できず、事業の質・安定性はやや課題が残る。",
+      "risk_checks": {
+        "roe_15_percent": false,
+        "profit_stability": true,
+        "dividend_stability": true,
+        "one_time_profit_risk": false,
+        "liquidity_risk": true,
+        "financial_health": true
+      },
+      "trend_score": 4,
+      "quality_score": 4,
+      "upward_revision": false
+    },
+    "3266": {
+      "ai_comment": "売上は3期連続増収（41.4→56.7→58.4億円）で安定した成長基調を維持。営業利益は前期比33.8%増と大幅改善しており、収益性の向上が顕著。ただし金融サービスセクターとして不動産ファンド組成・売却益など一過性収益への依存度が懸念材料。手数料収入の比率拡大が収益安定化の鍵となる。自己資本比率45.17%は同業比で健全水準だが、金利上昇局面では調達コスト増・不動産市況悪化を通じた業績への波及リスクが存在する。ROE9.9%はまずまずだが15%には未達。PER10.5倍・PBR1.04倍と割安感があり株主還元強化への余地もある。景気敏感セクターであり金利・不動産市況の変動に業績が左右されやすい点は引き続き注視が必要。",
+      "risk_checks": {
+        "roe_15_percent": false,
+        "profit_stability": true,
+        "dividend_stability": true,
+        "one_time_profit_risk": false,
+        "liquidity_risk": false,
+        "financial_health": true
+      },
+      "trend_score": 6,
+      "quality_score": 5,
+      "upward_revision": false
+    },
+    "2986": {
+      "ai_comment": "LA HOLDINGS CO LTDは過去3期で売上が182.5→315.0→447.1億円と急拡大し、営業利益も38.7%増と高成長を維持している。ただし不動産セクター特有の売却益依存型収益構造である可能性が高く、利益の一過性リスクが懸念される。自己資本比率25.45%は不動産業として許容範囲だが、金利上昇局面では借入コスト増加と物件評価下落の二重リスクに晒される。NC比0.15は比較的低水準で流動性リスクは限定的。ROE25.99%は高水準で資本効率は優秀。PER9.3倍・PBR2.35倍はバリュエーション的に割高感はなく、成長を織り込んでいない可能性もある。景気感応度は高く、金利・景気サイクルへの依存度が業績の持続性を左右する最大リスク要因である。",
+      "risk_checks": {
+        "roe_15_percent": true,
+        "profit_stability": true,
+        "dividend_stability": true,
+        "one_time_profit_risk": false,
+        "liquidity_risk": false,
+        "financial_health": true
+      },
+      "trend_score": 7,
+      "quality_score": 5,
+      "upward_revision": false
+    },
+    "8996": {
+      "ai_comment": "売上は3期推移で129.7→117.9→144.9億円と中間期に一時的な減収があり、成長の安定性にやや懸念が残る。直近期は売上22.9%増・営業利益28.6%増と回復基調は鮮明だが、不動産売買仲介・販売系の収益モデルが想定され、景気後退局面や金利上昇時に売却益が急減するリスクが高い。自己資本比率20.92%は不動産セクターとして標準的だが、NC比がマイナス（-0.18）であり純有利子負債保有状態で金利上昇の影響を受けやすい。ROEは14.38%と概ね良好も15%未満。PER8.4倍・PBR1.03倍と割安感はあるが、収益の質（手数料収入よりも売却益依存の可能性）・景気感応度の高さが事業評価の足を引く。資本還元姿勢・株主政策の情報が限定的な点も留意が必要。",
+      "risk_checks": {
+        "roe_15_percent": false,
+        "profit_stability": true,
+        "dividend_stability": true,
+        "one_time_profit_risk": false,
+        "liquidity_risk": true,
+        "financial_health": true
+      },
+      "trend_score": 5,
+      "quality_score": 4,
+      "upward_revision": false
+    },
+    "8704": {
+      "ai_comment": "TRADERS HOLDINGSは3期連続増収増益を達成し、直近期は売上32.9%増・営業利益50.3%増と加速感が顕著。ただし金融サービスセクターとして収益源の質が問われる。FX・CFD等のトレーディング関連収益は市場ボラティリティに依存しやすく、景気・金利変動局面での収益安定性には懸念が残る。手数料収入ベースの構造は一定評価できるが、トレーダーの取引活況が継続する保証はなく一過性要素を排除できない。自己資本比率13.92%は金融業として許容範囲内だが資本基盤は薄く、レバレッジリスクに留意が必要。ROE26.12%は高水準で株主還元効率は良好。PER8.3倍・PBR1.48倍はバリュエーション的に割安感があるが、景気敏感セクターのディスカウントとも解釈できる。成長継続性と収益の再現性の見極めが投資判断の核心となる。",
+      "risk_checks": {
+        "roe_15_percent": true,
+        "profit_stability": true,
+        "dividend_stability": true,
+        "one_time_profit_risk": false,
+        "liquidity_risk": true,
+        "financial_health": true
+      },
+      "trend_score": 7,
+      "quality_score": 5,
+      "upward_revision": false
+    },
+    "8518": {
+      "ai_comment": "売上は38.7→24.4→30.9億円と一度落込んだ後に回復基調。今期は売上+26.5%、営業利益+129.2%と大幅改善だが、過去の振れ幅が大きく安定性には課題が残る。素利益4.0億円が営業利益2.8億円を上回る構造は売却益等一過性利益への依存を示唆しており、収益の質は必ずしも高くない。金融サービスセクターとして金利変動や景気サイクルに敏感で、景気後退局面での業績悪化リスクは相応に大きい。PBR0.58倍と割安感はあるが、ROE5.87%と資本効率は低く、還元姿勢も積極的とは言えない水準。自己資本比率44%はある程度の財務基盤を示すが、NC比0.42と財務レバレッジも限定的。業績回復は評価できるが一過性要因排除後の実力値の見極めが必要。",
+      "risk_checks": {
+        "roe_15_percent": false,
+        "profit_stability": false,
+        "dividend_stability": true,
+        "one_time_profit_risk": false,
+        "liquidity_risk": false,
+        "financial_health": true
+      },
+      "trend_score": 5,
+      "quality_score": 4,
+      "upward_revision": false
+    },
+    "5834": {
+      "ai_comment": "売上は3期で395.7→541.5→419.2億円と直近期に大幅減収（-22.6%）となっており、増収トレンドは崩れている。一方、営業利益は+26.7%と増益を達成しており、利益率は改善している点は評価できる。ただしリース・ファイナンス系企業として売却益など一過性収益への依存度が懸念され、利益の質の精査が必要。金利上昇局面ではリース原価・調達コストへの影響が大きく、金利変動リスクは中程度以上と判断する。自己資本比率23.8%はリース業として標準的だが、レバレッジ依存の構造は景気悪化時に脆弱性を示す。PER7.9倍・PBR1.65倍と割安感はあるものの、ROE17.4%は高水準で資本効率は良好。収益源の質・資本還元姿勢の透明性向上が今後の評価向上の鍵となる。",
+      "risk_checks": {
+        "roe_15_percent": true,
+        "profit_stability": true,
+        "dividend_stability": true,
+        "one_time_profit_risk": false,
+        "liquidity_risk": false,
+        "financial_health": true
+      },
+      "trend_score": 5,
+      "quality_score": 5,
+      "upward_revision": false
+    },
+    "5527": {
+      "ai_comment": "売上は3期連続増収（369.7→416.1→509.1億円）で年率22%超の高成長を維持。営業利益も約50%増と大幅改善しており、スケールメリットが利益率向上に寄与し始めている点は評価できる。ただし自己資本比率19.26%と低水準で財務レバレッジへの依存度が高く、金利上昇局面では資金調達コストの増大が収益を直撃するリスクがある。NC比0.61は比較的良好だが、不動産テック企業として売却益依存型の収益構造を持つ可能性があり、手数料・ストック型収入の比率が鍵。PER8倍・PBR1.05倍と割安感があり市場の評価は抑制的。ROEは12.9%と15%未満にとどまり資本効率に改善余地あり。景気後退時の不動産市況悪化による収益変動リスクは高く、事業の質・安定性については引き続き精査が必要。",
+      "risk_checks": {
+        "roe_15_percent": false,
+        "profit_stability": true,
+        "dividend_stability": true,
+        "one_time_profit_risk": false,
+        "liquidity_risk": true,
+        "financial_health": true
+      },
+      "trend_score": 7,
+      "quality_score": 4,
+      "upward_revision": false
+    },
+    "7199": {
+      "ai_comment": "プレミアムグループは自動車関連の割賦・保証サービスを主力とする金融サービス企業。3期連続で売上・営業利益とも増収増益を達成しており、トレンドは明確に上向き。売上成長率15.4%は堅調。ただし自己資本比率10.23%と低水準で財務レバレッジが高く、金利上昇局面では調達コスト増が収益を圧迫するリスクが顕在化しやすい。NC比がマイナスであることも資金調達依存を示唆。収益源は手数料・割賦金利収入が主体で比較的安定しているが、景気後退時の信用コスト上昇には注意が必要。ROE24.58%は高水準で資本効率は優秀。PER約14.7倍・PBR2.85倍は金融株としてやや割高感あり。金利変動と景気感応度が主要リスクであり、安定成長継続には信用管理の巧拙が鍵となる。",
+      "risk_checks": {
+        "roe_15_percent": true,
+        "profit_stability": true,
+        "dividend_stability": true,
+        "one_time_profit_risk": false,
+        "liquidity_risk": true,
+        "financial_health": true
+      },
+      "trend_score": 7,
+      "quality_score": 6,
+      "upward_revision": false
+    },
+    "3467": {
+      "ai_comment": "売上は3期連続増収（258.5→276.1→307.4億円）で成長トレンドは明確。営業利益は前期比58.2%増と大幅改善しており、収益性の向上が顕著。ただし不動産デベロッパーとして売却益依存の利益構造が懸念され、一過性収益の混在リスクがある。ROE21.86%は高水準だが、自己資本比率21.71%と低く財務レバレッジへの依存が強い。金利上昇局面では調達コスト増・販売価格下押し双方のリスクを抱え、景気感応度も高い。PER8.8倍・PBR2.08倍は割安感と資産収益性の高さを示すが、NC比0.399は有利子負債の重さを示唆。収益の質・安定性の観点では手数料型収入比率の低さが課題。資本還元姿勢は現時点では限定的とみられ、財務基盤の強化が優先課題となろう。",
+      "risk_checks": {
+        "roe_15_percent": true,
+        "profit_stability": true,
+        "dividend_stability": true,
+        "one_time_profit_risk": false,
+        "liquidity_risk": true,
+        "financial_health": true
+      },
+      "trend_score": 7,
+      "quality_score": 4,
+      "upward_revision": false
+    },
+    "3489": {
+      "ai_comment": "FAITHNETWORK CO LTDは不動産セクターで3期連続増収を達成し、直近期は売上34.2%増・営業利益116.2%増と急成長。ただし営業利益率は約15%で改善傾向にあるものの、不動産売却益依存の収益構造は景気・金利変動に対する脆弱性を内包する。自己資本比率32.51%はやや低水準で、金利上昇局面では借入コスト増大と物件流動性低下の二重リスクが顕在化しやすい。NC比0.24は比較的健全だが、PBR2.54倍はバリュエーション面でのリスクも示唆。ROE28.36%は高水準だが一過性の売却益がかさ上げしている可能性があり、手数料等のストック収益比率の確認が重要。PER8.2倍は割安感があり、増益トレンドが継続する場合は評価余地がある。資本還元姿勢は現状不明瞭で、今後の配当政策が株主価値に影響する。",
+      "risk_checks": {
+        "roe_15_percent": true,
+        "profit_stability": true,
+        "dividend_stability": true,
+        "one_time_profit_risk": false,
+        "liquidity_risk": true,
+        "financial_health": true
+      },
+      "trend_score": 7,
+      "quality_score": 5,
+      "upward_revision": false
+    },
+    "8700": {
+      "ai_comment": "丸八証券は3期売上推移が25.0→32.6→30.8億円と直近期に減収となり、営業利益も前期比33.8%減と大幅に落ち込んでいる。証券業の収益は株式市場の動向や売買代金に左右されやすく、手数料収入や売却益等の市況依存度が高いため収益の質・安定性に課題がある。自己資本比率76.57%と財務健全性は高く、流動性リスクは低い。ただしROEは5.17%と低水準で資本効率の改善余地が大きい。PBR0.85倍と解散価値を下回る水準で市場評価も低い。金利上昇局面では債券評価損リスクや顧客の運用行動変化も懸念され、景気敏感性が高い。収益源の多角化・安定化が課題であり、業績の持続的回復には市況改善と手数料収入基盤の強化が必要。",
+      "risk_checks": {
+        "roe_15_percent": false,
+        "profit_stability": true,
+        "dividend_stability": false,
+        "one_time_profit_risk": false,
+        "liquidity_risk": false,
+        "financial_health": true
+      },
+      "trend_score": 3,
+      "quality_score": 4,
+      "upward_revision": false
+    },
+    "3480": {
+      "ai_comment": "JSBは学生向け賃貸仲介・管理を主軸とする不動産サービス企業。売上は3期連続増収（637.8→695.3→760.5億円、+19.2%累計）と堅調な成長を維持。しかし直近期の営業利益は前期比-5.5%と減益に転落しており、売上増加に対してコスト増（人件費・IT投資等）が利益を圧迫している点が懸念材料。収益源は管理手数料・仲介手数料中心で売却益依存度が低く、収益の質は相対的に高い。自己資本比率46.8%と財務健全性は良好、ネットキャッシュ比率もほぼ中立。PER13.9倍・PBR1.78倍は割高感なく、ROE12.37%は許容範囲内だが15%未満。金利上昇局面では借入コスト上昇よりも学生需要の継続性が鍵で、景気感応度は比較的低い。増益回帰が課題。",
+      "risk_checks": {
+        "roe_15_percent": false,
+        "profit_stability": true,
+        "dividend_stability": true,
+        "one_time_profit_risk": false,
+        "liquidity_risk": false,
+        "financial_health": true
+      },
+      "trend_score": 6,
+      "quality_score": 7,
+      "upward_revision": false
+    },
+    "3238": {
+      "ai_comment": "売上は3期で増減を繰り返し安定性に欠ける。直近期は売上▲3.3%・営業利益▲27.0%と大幅な減益であり、収益の安定性に懸念がある。不動産デベロッパーとして収益の大半は物件売却益に依存しており、手数料等のストック収入が乏しく収益の質は低い。自己資本比率22.58%と低水準で財務基盤は脆弱であり、金利上昇局面では借入コスト増加と物件需要鈍化の双方からダブルパンチを受けるリスクが高い。NC比がマイナスでありネットキャッシュポジションにある点は唯一の救いだが、PBR0.39倍・PER6.5倍と市場評価は低く、ROE4.85%と資本効率も低い。景気感応度が高く、金利・地価動向に業績が左右されやすい事業構造であり、株主還元姿勢も明確ではない。総合的に成長ドライバーが見えにくく慎重な評価が妥当。",
+      "risk_checks": {
+        "roe_15_percent": false,
+        "profit_stability": true,
+        "dividend_stability": false,
+        "one_time_profit_risk": true,
+        "liquidity_risk": true,
+        "financial_health": true
+      },
+      "trend_score": 3,
+      "quality_score": 3,
+      "upward_revision": false
+    },
+    "8927": {
+      "ai_comment": "MEIHO ENTERPRISEは3期連続で大幅増収を達成し、売上は152.5億円から298.0億円へと約2倍に拡大。営業利益も同率で増加しており、成長モメンタムは強い。ただし不動産セクター特有の課題として、収益の大部分が不動産売却益に依存している可能性が高く、利益の一過性リスクが懸念される。自己資本比率32.74%はやや低水準で、金利上昇局面では借入コスト増大が利益を圧迫するリスクがある。NC比0.54は許容範囲内だが、レバレッジ依存体質は金利感応度を高める。PER6.9倍・PBR1.28倍と割安感があり、ROE19.88%は高水準で資本効率は良好。景気後退時の販売棟数減少や地価下落リスクへの耐性が課題。手数料収入などストック型収益の比率拡大が事業の質向上に不可欠。",
+      "risk_checks": {
+        "roe_15_percent": true,
+        "profit_stability": true,
+        "dividend_stability": false,
+        "one_time_profit_risk": false,
+        "liquidity_risk": false,
+        "financial_health": true
+      },
+      "trend_score": 7,
+      "quality_score": 4,
+      "upward_revision": false
+    },
+    "8904": {
+      "ai_comment": "AVANTIA（アバンティア）は注文住宅・建売住宅を中心とするConsumer Cyclical企業。直近期は売上が前期比▲2.5%と減収に転じた一方、営業利益は+38.7%と大幅増益を達成しており、コスト構造改善や採算重視の販売方針が奏功したとみられる。ただし純利益6.4億円に対しPER約19倍・PBR0.44倍という乖離は、市場が持続的収益力に懐疑的であることを示す。ROE2.28%は極めて低水準で資本効率に課題あり。住宅事業は金利上昇局面で購買力低下・需要減退リスクが高く、景気感応度も大きい。収益源は住宅販売（売却益型）が主体で手数料収入等の安定収益比率は低いとみられ、収益の質は高くない。自己資本比率39%はやや低め、NCR1.52は流動性に一定の懸念。3期売上は増加後に減少、利益は改善傾向だが安定性には疑問が残る。",
+      "risk_checks": {
+        "roe_15_percent": false,
+        "profit_stability": true,
+        "dividend_stability": false,
+        "one_time_profit_risk": true,
+        "liquidity_risk": true,
+        "financial_health": true
+      },
+      "trend_score": 5,
+      "quality_score": 3,
+      "upward_revision": false
+    },
+    "8551": {
+      "ai_comment": "北日本銀行は直近期に売上が前期比▲14.7%と大幅減収となり、過去3期では増収後の反落という不安定な推移を示す。純利益40.1億円は確保しているものの、営業利益が非開示であり収益構造の透明性に課題がある。地方銀行として金利変動の影響を強く受ける構造で、日銀の政策変更局面では利鞘改善の恩恵も期待されるが、与信コスト増加リスクも伴う。PBR0.4倍と株価は純資産を大幅に下回り、市場の評価は低水準。ROE4.64%は低く資本効率の改善余地が大きい。収益源は貸出利息中心で手数料収入の拡大が課題。自己資本比率5.66%は地銀として一定水準を維持しているが、NC比率がマイナス33%超と資金調達構造に注意が必要。還元姿勢・資本政策の積極性は限定的とみられ、地域経済の景気感応度が高い点もリスク要因となる。",
+      "risk_checks": {
+        "roe_15_percent": false,
+        "profit_stability": false,
+        "dividend_stability": true,
+        "one_time_profit_risk": true,
+        "liquidity_risk": true,
+        "financial_health": true
+      },
+      "trend_score": 3,
+      "quality_score": 3,
+      "upward_revision": false
+    },
+    "3454": {
+      "ai_comment": "FIRST BROTHERS（ファーストブラザーズ）は不動産ファンド運用・不動産投資を主軸とする金融サービス企業。直近期は売上13%増・営業利益87%増と大幅改善し収益性は回復基調にある。ただし過去3期の売上推移（222.7→168.7→190.6億円）は一度大きく落ち込んでおり、安定性に課題が残る。収益源は不動産売却益やファンド運用報酬が中心で、売却タイミングへの依存度が高く一過性利益の混在リスクがある。金利上昇局面では調達コスト増・不動産バリュエーション低下の双方向リスクを抱える。自己資本比率29.1%はやや低めで財務レバレッジが高く、景気後退局面での脆弱性が懸念される。PBR0.63倍・PER9.4倍と割安感はあるが、ROE6.69%は資本コストをカバーできていない可能性が高い。資本還元姿勢は現時点で積極的とは言い難く、事業の景気感応度は高い。",
+      "risk_checks": {
+        "roe_15_percent": false,
+        "profit_stability": true,
+        "dividend_stability": false,
+        "one_time_profit_risk": true,
+        "liquidity_risk": true,
+        "financial_health": true
+      },
+      "trend_score": 5,
+      "quality_score": 4,
+      "upward_revision": false
+    },
+    "2975": {
+      "ai_comment": "スター・マイカHDは中古マンション再生・賃貸・売却を軸とする不動産会社。過去3期で売上は488.8→558.5→691.6億円と連続増収、営業利益も前期比32.4%増と加速しており業績モメンタムは強い。ただし収益の主体は物件売却益であり、金利上昇局面では取得コスト増・バリュエーション低下・販売鈍化の三重リスクが顕在化しやすい。自己資本比率25.7%は不動産セクターとして標準的だが、NC比0.48はネットキャッシュが薄く有利子負債依存が高め。ROE14.09%は水準として良好だが15%未達。PBR1.85倍・PER13.2倍はセクター平均並みで割安感は限定的。収益の質は手数料収入より売却益依存が高く景気敏感性が高い点が課題。成長継続性は評価できるが、金利環境と在庫回転の動向が今後のカギを握る。",
+      "risk_checks": {
+        "roe_15_percent": false,
+        "profit_stability": true,
+        "dividend_stability": true,
+        "one_time_profit_risk": false,
+        "liquidity_risk": true,
+        "financial_health": true
+      },
+      "trend_score": 7,
+      "quality_score": 5,
+      "upward_revision": false
+    },
+    "7388": {
+      "ai_comment": "FP PARTNERは保険代理店を中核とするFPサービス企業。直近期は売上前年比▲9.9%、営業利益▲44.0%と大幅な減収減益に転落。3期の売上推移は増収後に反落しており、トレンドの安定性に欠ける。収益源は保険募集手数料が主体で、継続収入（コミッション）の性質上、景気や金利変動よりも契約獲得競争・規制環境の影響が大きい。ただし一過性利益依存は低く、ストック型手数料収入の質は一定程度評価できる。ROE17.28%と資本効率は高水準を維持しているが、利益率の急低下は人件費・採用コスト増が主因とみられ、構造的課題の解消が急務。自己資本比率64%と財務健全性は高い。PER27倍・PBR4.55倍はバリュエーション面でやや割高感があり、業績回復の確認が投資判断の鍵となる。景気感応度はやや低いが、金融規制強化リスクに留意が必要。",
+      "risk_checks": {
+        "roe_15_percent": true,
+        "profit_stability": true,
+        "dividend_stability": true,
+        "one_time_profit_risk": false,
+        "liquidity_risk": false,
+        "financial_health": true
+      },
+      "trend_score": 3,
+      "quality_score": 6,
+      "upward_revision": false
+    },
+    "7198": {
+      "ai_comment": "SBI ARUHIは住宅ローン専門金融機関で、今期は売上222.9億円（前期比+9.2%）、営業利益71.0億円（+16.8%）と増収増益を達成。しかし3期推移は226→204→223と一度減収を経ており、連続増収ではない点は留意が必要。純利益19.0億円に対し営業利益71億円と乖離が大きく、金利コストや信用コストの影響が収益を圧迫していることが示唆される。収益構造は住宅ローンの利ざや・手数料が中心だが、金利上昇局面では調達コスト増加や借換需要の減退リスクが顕在化しやすい。自己資本比率20.42%は金融機関として低水準であり財務余力に課題。PBR0.9倍・PER21倍はバリュー圏だが、ROE4.53%は低く資本効率改善が課題。金利変動感応度が高く、景気後退・不動産市況悪化への脆弱性がある。事業の継続性は一定程度担保されるが、収益の質・資本政策の観点からは評価が限定的。",
+      "risk_checks": {
+        "roe_15_percent": false,
+        "profit_stability": true,
+        "dividend_stability": true,
+        "one_time_profit_risk": true,
+        "liquidity_risk": true,
+        "financial_health": true
+      },
+      "trend_score": 5,
+      "quality_score": 4,
+      "upward_revision": false
+    },
+    "3457": {
+      "ai_comment": "&DO HOLDINGS（旧ハウスドゥ）は不動産売買・仲介・フランチャイズを核とする企業。過去3期は増収から減収へ転換し、直近期は売上▲4.2%・営業利益▲27.0%と収益悪化が顕著。収益構造は不動産売買（売却益依存）が主体であり、金利上昇局面では仕入コスト増・販売鈍化の二重圧迫を受けやすい。FC加盟店手数料などストック性収入も存在するが、規模的には売買フローに依存する割合が高く、収益の安定性は低い。自己資本比率25.6%はやや低水準であり、有利子負債依存の事業構造から金利変動リスクは大きい。ROEは12.7%とPBR1.21倍に対し相応だが、15%には未達。景気・金利感応度が高い業種特性から、現局面では業績下振れリスクが続くと見られる。株主還元姿勢は積極的とは言えず、資本効率改善が課題。総じて事業の質・安定性ともに中程度以下と評価する。",
+      "risk_checks": {
+        "roe_15_percent": false,
+        "profit_stability": true,
+        "dividend_stability": true,
+        "one_time_profit_risk": false,
+        "liquidity_risk": true,
+        "financial_health": true
+      },
+      "trend_score": 3,
+      "quality_score": 4,
+      "upward_revision": false
+    },
+    "3236": {
+      "ai_comment": "プロパースト社は3期連続増収を達成し、売上は200億円台から278億円へと着実に拡大。営業利益も増加傾向にあるが、増収率19.5%に対し営業利益増加率9.1%と利益率は若干低下しており、原価・販管費の上昇圧力が懸念される。不動産デベロッパーとして収益の大部分が物件売却益に依存する構造と推測され、景気・金利変動に対する感応度は高い。PBRが13.79と極めて高水準である一方、PERは5倍台と割安感があり市場の評価に乖離が見られる。ROE16%はリスク閾値を上回るが、自己資本比率40%はやや低めで有利子負債依存の財務構造が透けて見える。金利上昇局面では調達コスト増と物件需要減退の二重リスクに直面しやすい。収益の安定性・還元姿勢の明確化が課題。",
+      "risk_checks": {
+        "roe_15_percent": true,
+        "profit_stability": true,
+        "dividend_stability": true,
+        "one_time_profit_risk": false,
+        "liquidity_risk": true,
+        "financial_health": true
+      },
+      "trend_score": 6,
+      "quality_score": 4,
+      "upward_revision": false
+    },
+    "8708": {
+      "ai_comment": "相澤証券グループは3期連続増収を達成しており、売上は127.5億→189.8億→205.9億円と堅調な拡大トレンドにある。営業利益は前期比62.4%増と大幅改善を示したが、純利益31.7億円が営業利益18.9億円を大きく上回る点は一過性利益（有価証券売却益等）への依存が疑われ、利益の質に課題がある。証券業として収益は株式市場の動向や売買委託手数料に左右されやすく、景気感応度は高い。金利上昇局面では債券価格下落リスクと自己勘定の含み損拡大が懸念される一方、運用収益の改善余地もある。自己資本比率40.69%は証券会社として一定の健全性を示すが、ROE7.12%は業種平均を下回り資本効率に改善余地がある。PBR1.01倍と株価は簿価近辺で推移しており、株主還元姿勢の強化が評価向上の鍵となろう。",
+      "risk_checks": {
+        "roe_15_percent": false,
+        "profit_stability": false,
+        "dividend_stability": true,
+        "one_time_profit_risk": false,
+        "liquidity_risk": false,
+        "financial_health": true
+      },
+      "trend_score": 6,
+      "quality_score": 4,
+      "upward_revision": false
+    },
+    "2983": {
+      "ai_comment": "ARR PLANNER CO LTDは直近期で売上25.3%増、営業利益306.2%増と大幅な業績改善を示した。ただし過去3期の売上推移（312→320→401億円）をみると、直近の急拡大は一過性の売却益や大型案件依存の可能性が高く、利益の持続性には慎重な判断が必要。自己資本比率19.63%は不動産業としては標準的だが薄く、金利上昇局面では借入コスト増大と資産評価下落の双方リスクを抱える。NC比0.21は比較的低水準でネットキャッシュポジションに近いが、流動性はまだ脆弱。PER9.4倍と割安感があるものの、PBR2.51倍はやや高め。ROE25.36%は高水準で資本効率は良好。収益源の質が手数料型か売却益型かが鍵であり、景気感応度が高いセクター特性上、景気後退・金利上昇には注意が必要。",
+      "risk_checks": {
+        "roe_15_percent": true,
+        "profit_stability": true,
+        "dividend_stability": true,
+        "one_time_profit_risk": false,
+        "liquidity_risk": true,
+        "financial_health": true
+      },
+      "trend_score": 6,
+      "quality_score": 4,
+      "upward_revision": false
+    },
+    "8395": {
+      "ai_comment": "佐賀銀行（BANK OF SAGA）は過去3期で売上が420.1→443.0→479.1億円と安定的な増収トレンドを維持しており、直近の売上成長率は8.2%と地方銀行としては堅調。純利益75億円はPER約9.8倍・PBR0.65倍と割安水準に位置する。一方、自己資本比率3.66%は銀行業特有の低水準であり財務レバレッジは高い。ROE6.44%は地銀平均並みだが15%には遠く、資本効率改善余地は大きい。営業利益が非開示のため収益構造の詳細把握が困難だが、金利上昇局面では貸出利ザヤ改善の恩恵が期待される半面、保有債券の含み損リスクも内包する。収益源は貸出利息依存が主体とみられ、手数料収入・非金利収益の拡充が課題。地域密着型の安定した事業基盤を持つが、人口減少が続く佐賀県地盤の景気感応度は中程度。株主還元姿勢は低PBR是正圧力の中で改善が期待される。",
+      "risk_checks": {
+        "roe_15_percent": false,
+        "profit_stability": false,
+        "dividend_stability": true,
+        "one_time_profit_risk": true,
+        "liquidity_risk": false,
+        "financial_health": false
+      },
+      "trend_score": 6,
+      "quality_score": 5,
+      "upward_revision": false
+    },
+    "3484": {
+      "ai_comment": "INNOVATION HOLDINGS CO LTDは3期連続増収（130.7→142.6→166.6億円）を達成し、直近期の売上成長率16.8%、営業利益成長率41.8%と加速傾向にある点は評価できる。ただし不動産セクターとして収益源の質が問われる。PBR4.55倍は高水準で成長期待を反映するが、自己資本比率25.64%はやや低く財務レバレッジへの依存が大きい。NC比がほぼゼロ近傍（-0.22）であり流動性は限界的。金利上昇局面では借入コスト増加と不動産市況悪化の二重リスクが存在する。ROE25.65%は高いが財務レバレッジ起因の可能性があり収益の持続性に注意が必要。手数料収入より売却益・開発利益依存が疑われ、景気敏感度は高い。PER16.5倍は相対的に許容範囲だが、金利・景気変動に対する脆弱性を踏まえると保守的な評価が妥当。",
+      "risk_checks": {
+        "roe_15_percent": true,
+        "profit_stability": true,
+        "dividend_stability": true,
+        "one_time_profit_risk": false,
+        "liquidity_risk": true,
+        "financial_health": true
+      },
+      "trend_score": 7,
+      "quality_score": 4,
+      "upward_revision": false
+    },
+    "8622": {
+      "ai_comment": "水戸証券は売上が111.9→145.5→139.8億円と直近期に減収に転じ、営業利益も前期比22.3%減と収益性が悪化している。素利益が24.2億円と営業利益を上回る点は有価証券売却益等の一過性利益への依存が示唆され、収益の質に懸念がある。収益源は株式売買手数料や投信販売手数料が中心の伝統的リテール証券であり、景気・相場環境への感応度が高い。金利上昇局面では債券価格下落リスクや顧客の投資行動変化が業績に影響しやすい。自己資本比率63%と財務健全性は高く流動性リスクは低い。ROE6.04%はセクター平均を下回り資本効率が課題。PBR1.07倍と割高感はないが、減益トレンド継続時の下振れリスクに注意が必要。還元姿勢・資本政策の積極性も乏しく、総合的な事業の質はやや低水準と判断する。",
+      "risk_checks": {
+        "roe_15_percent": false,
+        "profit_stability": false,
+        "dividend_stability": true,
+        "one_time_profit_risk": false,
+        "liquidity_risk": false,
+        "financial_health": true
+      },
+      "trend_score": 3,
+      "quality_score": 4,
+      "upward_revision": false
+    },
+    "3491": {
+      "ai_comment": "GA TECHNOLOGIESは不動産テック企業で、3期連続で売上高が大幅増収（CAGR約30%）を達成しており成長トレンドは明確。営業利益も92%増と急拡大しているが、絶対水準は71億円と売上比2.9%に留まり利益率は低い。収益構造は不動産売買仲介・販売が主体で、売却益依存の要素が強く手数料収入と比べ景気変動や金利上昇の影響を受けやすい。日銀の利上げ局面では住宅ローン金利上昇が購入需要を抑制するリスクがあり、金利感応度は高い。自己資本比率37%はやや低め、NC比はほぼゼロで財務レバレッジは限定的。ROEは12.6%と15%未満。株主還元姿勢は成長投資優先で配当は限定的。PER13.7倍・PBR1.82倍は成長期待を一定織り込んだ水準。不動産市況悪化・金利上昇局面での収益安定性に懸念が残る。",
+      "risk_checks": {
+        "roe_15_percent": false,
+        "profit_stability": true,
+        "dividend_stability": true,
+        "one_time_profit_risk": false,
+        "liquidity_risk": false,
+        "financial_health": true
+      },
+      "trend_score": 7,
+      "quality_score": 4,
+      "upward_revision": false
+    },
+    "2970": {
+      "ai_comment": "GLC GP INCは3期連続で売上が80.6→114.3→171.3億円と急拡大し、売上前期比49.8%増・営業利益45.5%増と高い成長軌道を維持している。ただし不動産セクターとして収益源の質が問題で、手数料収入より売却益・仲介益への依存が高い可能性があり、景気後退局面や金利上昇時には収益が急減するリスクがある。自己資本比率22.63%は不動産業として許容範囲内だが、金利上昇局面では調達コスト増が利益を圧迫しやすい。NC比率0.081は低水準で流動性リスクは限定的。ROE23.23%は高水準で資本効率は優秀だが、PBR2.96倍はやや高く市場の期待値が高い状態。PER12.8倍は割安感があるものの、利益の持続性・一過性利益の有無がカギとなる。成長ペースは評価できるが収益の質と金利感応度に注意が必要。",
+      "risk_checks": {
+        "roe_15_percent": true,
+        "profit_stability": true,
+        "dividend_stability": true,
+        "one_time_profit_risk": false,
+        "liquidity_risk": false,
+        "financial_health": true
+      },
+      "trend_score": 7,
+      "quality_score": 5,
+      "upward_revision": false
+    },
+    "8624": {
+      "ai_comment": "一縁証券は3期売上推移で166.6→188.4→188.0億円と直近はほぼ横ばいで、売上前年比▲0.2%・営業利益前年比▲18.4%と減益基調が鮮明。証券会社として市況依存の売買手数料や投資信託販売手数料が収益の主体であり、景気・株式相場に対して高い感応度を持つ。自己資本比率65.54%と財務健全性は高いが、ROE5.7%は資本効率の低さを示す。PER25倍・PBR1.58倍はバリュエーション的に割安感は薄く、収益悪化局面での株価下落リスクがある。金利上昇局面では債券価格下落による評価損リスクもある。株主還元や資本政策の積極性も限定的とみられ、事業の質・安定性ともに中程度の評価にとどまる。",
+      "risk_checks": {
+        "roe_15_percent": false,
+        "profit_stability": true,
+        "dividend_stability": true,
+        "one_time_profit_risk": false,
+        "liquidity_risk": false,
+        "financial_health": true
+      },
+      "trend_score": 4,
+      "quality_score": 4,
+      "upward_revision": false
+    },
+    "8343": {
+      "ai_comment": "秋田銀行は直近期に売上が469.6億円と前期比21.4%増の大幅回復を示したが、過去3期の推移（432.7→386.7→469.6億円）は一度落ち込みがあり安定性にやや欠ける。純利益56.6億円に対し営業利益が非開示で、利益構造の透明性が低い。地方銀行として金利上昇局面では貸出利鞘拡大の恩恵が見込まれるが、同時に保有債券の含み損リスクも存在する。ROE3.62%は低水準で資本効率に課題があり、PBR0.5倍と市場からの評価も低い。収益源は伝統的な利鞘収入が中心で、手数料収入・非金利収入の多様化は限定的とみられる。自己資本比率4.52%は地方銀行として一般的な水準だが、秋田県の人口減少・地域経済縮小という構造的課題が長期的な収益圧迫要因となる。株主還元姿勢の積極化が期待されるが、資本余力は限られる。",
+      "risk_checks": {
+        "roe_15_percent": false,
+        "profit_stability": false,
+        "dividend_stability": true,
+        "one_time_profit_risk": true,
+        "liquidity_risk": false,
+        "financial_health": false
+      },
+      "trend_score": 5,
+      "quality_score": 4,
+      "upward_revision": false
+    },
+    "8365": {
+      "ai_comment": "富山銀行は3期連続で売上が減収（104.0→97.2→89.5億円、直近-7.9%）と業績トレンドは明確に悪化している。営業利益が非開示であり、純利益9.5億円のみ確認可能だが、収益の透明性に課題がある。PBR0.39倍と著しく割安だが、ROE3.35%と資本効率は低水準で、収益力の弱さを反映している。地方銀行特有の課題として、低金利環境下での利ざや縮小が売上減少の主因とみられ、金利上昇局面では一定の恩恵も期待できる。自己資本比率5.19%は地銀として最低限の水準。NC比がマイナス35%超と深刻であり、流動性リスクに注意が必要。収益源は伝統的な利息収入中心で手数料収入の多様化は限定的とみられ、事業の質・安定性ともに低位。地方経済の縮小・人口減少も長期リスク要因。",
+      "risk_checks": {
+        "roe_15_percent": false,
+        "profit_stability": false,
+        "dividend_stability": true,
+        "one_time_profit_risk": true,
+        "liquidity_risk": true,
+        "financial_health": true
+      },
+      "trend_score": 2,
+      "quality_score": 3,
+      "upward_revision": false
+    },
+    "2998": {
+      "ai_comment": "CREAL INCは不動産クラウドファンディングプラットフォームを運営する金融サービス企業。売上は3期で164→210→418億円と急拡大し、直近期は前期比約2倍の成長を達成。営業利益も微増ながら増益を維持しており、成長トレンドは明確。ただし自己資本比率9.96%と低水準で財務レバレッジが高く、金利上昇局面では調達コスト増と不動産市況悪化の双方向リスクにさらされる脆弱性がある。収益源は手数料収入ベースであるが、不動産売却益や運用物件の価値変動に依存する部分も残存。ROE25.62%は高水準だが低資本基盤に起因する面が大きく、資本の厚みを増す必要がある。景気感応度は高く、信用収縮や不動産価格下落時には業績が急減速するリスクを内包。現状の成長継続性を評価しつつも、財務健全性と収益の質に課題あり。",
+      "risk_checks": {
+        "roe_15_percent": true,
+        "profit_stability": true,
+        "dividend_stability": true,
+        "one_time_profit_risk": false,
+        "liquidity_risk": true,
+        "financial_health": true
+      },
+      "trend_score": 7,
+      "quality_score": 5,
+      "upward_revision": false
+    },
+    "3479": {
+      "ai_comment": "TKPは貸会議室・宴会場の運用を主軸とするアセットライト型不動産サービス企業。売上は365億円→592億円へV字回復し、コロナ禍からの正常化が鮮明。ただし営業利益の伸び（+28%）が売上伸び（+62%）を大幅に下回り、収益性改善は道半ば。利益の質は手数料・稼働収入ベースで比較的安定しているが、景気・イベント需要に強く連動する景気感応型ビジネスのため下振れリスクは残る。自己資本比率34%はやや低水準で、NC比がマイナス圏（ネットキャッシュ）はポジティブ。ROEは9.1%と資本効率は改善余地あり。金利上昇局面では賃借コスト増加リスクに注意が必要。PER25倍、PBR1.76倍はバリュエーション上の割高感もあり、回復継続への期待が相当程度織り込まれている。増収基調は評価できるが利益率の持続的改善が課題。",
+      "risk_checks": {
+        "roe_15_percent": false,
+        "profit_stability": true,
+        "dividend_stability": true,
+        "one_time_profit_risk": false,
+        "liquidity_risk": false,
+        "financial_health": true
+      },
+      "trend_score": 6,
+      "quality_score": 5,
+      "upward_revision": false
+    },
+    "8558": {
+      "ai_comment": "TOWA BANKは売上がほぼ横ばい（293.4→297.4→297.5億円）で成長性は乏しいものの安定的な推移を示している。営業利益は非開示だが純利益45.2億円は確認できる。ROE4.99%は地銀水準としても低く、収益力の改善余地が大きい。PBR0.43倍は資産価値に対して大幅に割り引かれており、市場の評価が低い。自己資本比率3.8%は銀行としては許容範囲内だが、金利上昇局面では債券含み損リスクや調達コスト上昇に注意が必要。収益源は主に利鞘収入と推定され、金利変動感応度が高い。手数料収入の比率拡大や資本効率改善が課題であり、景気後退局面では信用コスト増大リスクも孕む。株主還元姿勢は不明瞭で、低PBR是正に向けた具体的施策が求められる。",
+      "risk_checks": {
+        "roe_15_percent": false,
+        "profit_stability": false,
+        "dividend_stability": true,
+        "one_time_profit_risk": true,
+        "liquidity_risk": true,
+        "financial_health": false
+      },
+      "trend_score": 4,
+      "quality_score": 3,
+      "upward_revision": false
+    },
+    "8613": {
+      "ai_comment": "丸三証券は3期連続増収を達成しており売上成長の継続性は評価できるが、直近期の営業利益が前期比4.1%減と減益に転じた点は懸念材料。売上成長が収益拡大に結びついていない構造的な問題が示唆される。証券業としての収益源は株式売買手数料や引受手数料等のフロー型収益が主体であり、相場環境や投資家センチメントに大きく左右される景気感応度の高いビジネスモデル。金利上昇局面では債券価格下落リスクや顧客の運用行動変化が生じうる。一方、自己資本比率66.8%と財務基盤は堅固で流動性リスクは低い。ROEは7.74%と資本効率は業界平均水準ながら15%には届かず、資本政策の一層の強化が望まれる。PBR1.43倍・PER15.5倍は概ね適正水準。安定感はあるが高い成長期待は持ちにくい。",
+      "risk_checks": {
+        "roe_15_percent": false,
+        "profit_stability": true,
+        "dividend_stability": false,
+        "one_time_profit_risk": false,
+        "liquidity_risk": false,
+        "financial_health": true
+      },
+      "trend_score": 5,
+      "quality_score": 4,
+      "upward_revision": false
+    },
+    "8563": {
+      "ai_comment": "大東銀行は地方銀行として福島県を主な営業基盤とする。売上（業務粗利益相当）は3期推移で115.2→118.2→111.4億円と直近期に大幅減収(-5.8%)へ転落しており、業績モメンタムは明確に悪化している。ROE4.18%は低水準で、自己資本比率3.74%は地銀として最低水準に近く財務的余裕に乏しい。PBR0.42倍は解散価値を大きく下回り市場の低評価を示す。低金利長期化の逆風下で利鞘圧迫が継続し、地方経済の縮小・人口減少による貸出需要低迷も構造的課題。収益源は利息収入依存が高く手数料収入等の安定収益多様化は限定的。NC比がマイナス57%超と深刻な水準にあり、資産の質・収益性への懸念が残る。資本還元余力も乏しく株主還元姿勢は消極的とみられる。景気感応度は高く、地域経済悪化時のリスクは大きい。",
+      "risk_checks": {
+        "roe_15_percent": false,
+        "profit_stability": false,
+        "dividend_stability": true,
+        "one_time_profit_risk": true,
+        "liquidity_risk": true,
+        "financial_health": false
+      },
+      "trend_score": 2,
+      "quality_score": 3,
+      "upward_revision": false
+    },
+    "8537": {
+      "ai_comment": "TAIKO BANKは過去3期で売上が194.2→195.8→188.0億円と直近期に減収転落しており、業績トレンドは芳しくない。純利益24.9億円は確保しているが、営業利益が開示されておらず収益構造の透明性に懸念が残る。PBR0.29倍という低評価は市場の慎重姿勢を反映しており、自己資本比率4.47%は地銀水準としてギリギリの水準。ROE3.33%は資本効率が低く、株主還元の余地も限定的。金利上昇局面では利鞘改善の期待もあるが、融資先の信用リスク増大や有価証券含み損の影響も懸念される。NC比がマイナス57.9と深刻なキャッシュフロー懸念を示しており、収益源の質・安定性ともに課題が多い。地方銀行特有の人口減少・地域経済縮小リスクも中長期的な収益圧迫要因となる。",
+      "risk_checks": {
+        "roe_15_percent": false,
+        "profit_stability": false,
+        "dividend_stability": true,
+        "one_time_profit_risk": true,
+        "liquidity_risk": true,
+        "financial_health": false
+      },
+      "trend_score": 3,
+      "quality_score": 3,
+      "upward_revision": false
+    },
+    "8387": {
+      "ai_comment": "四国銀行は3期連続で売上が減収傾向（564.8→488.0→470.8億円）であり、業績トレンドは弱い。純利益68.1億円は確保しているものの、営業利益が非開示で収益構造の透明性に課題がある。ROEは4.26%と低水準で資本効率は不十分。PBR0.51倍は市場の評価が低いことを示し、金利上昇局面での預貸利鞘改善に期待はかかるが、地方銀行として人口減少・地域経済縮小の構造的逆風を受けやすい。収益源は伝統的な利息収益中心で手数料収入の比率向上が課題。NC比がマイナス圏であり資本効率・株主還元の改善余地は限定的。金利上昇は預貸収益にプラスに働く可能性があるが、保有有価証券の含み損リスクも内在する。総じて安定性はあるものの成長性・収益性ともに低く、慎重な評価が妥当。",
+      "risk_checks": {
+        "roe_15_percent": false,
+        "profit_stability": false,
+        "dividend_stability": true,
+        "one_time_profit_risk": true,
+        "liquidity_risk": false,
+        "financial_health": false
+      },
+      "trend_score": 3,
+      "quality_score": 4,
+      "upward_revision": false
+    },
+    "7343": {
+      "ai_comment": "売上は3期連続増収（43.2→52.2→60.2億円）で成長トレンドは維持しているが、直近期の営業利益は前年比▲27.9%と大幅減益となっており、売上成長と利益成長の乖離が拡大している。IFA（独立系ファイナンシャルアドバイザー）事業を主軸とする同社は、手数料収入と金融商品の販売コミッションが主な収益源であり、株式・投信市況の変動に収益が左右されやすい景気敏感型ビジネスモデルである。金利上昇局面は一部商品の魅力低下につながるリスクもある。自己資本比率73.64%と財務健全性は高く、ネットキャッシュも一定水準保有。ただしROEは5.86%と低水準であり、資本効率の改善が課題。利益の質・安定性に懸念が残り、一過性要因の排除と構造的収益力の向上が今後の評価ポイントとなる。",
+      "risk_checks": {
+        "roe_15_percent": false,
+        "profit_stability": true,
+        "dividend_stability": true,
+        "one_time_profit_risk": true,
+        "liquidity_risk": false,
+        "financial_health": true
+      },
+      "trend_score": 5,
+      "quality_score": 4,
+      "upward_revision": false
+    },
+    "3461": {
+      "ai_comment": "PALMA CO LTDは直近期に売上が23.1億円と前期比17.7%の大幅減収となり、3期推移（23.5→28.1→23.1）は一時的な拡大後に反落するV字型で安定性に欠ける。一方、営業利益は前期比19.3%増と増益を確保しており、コスト削減効果が窺えるが、売上規模の縮小を伴う利益改善は持続性に疑問が残る。自己資本比率63.85%と財務健全性は高く、ネットキャッシュ比率も約0.60と良好。PER約29.9倍、PBR1.65倍は成長期待を一定程度織り込む水準だが、ROE5.06%は低く資本効率に課題がある。産業セクターとして景気感応度は中程度で、金利変動の直接影響は限定的。収益源の質や株主還元姿勢の開示が乏しく、事業継続性の評価は保守的にとどまる。",
+      "risk_checks": {
+        "roe_15_percent": false,
+        "profit_stability": true,
+        "dividend_stability": true,
+        "one_time_profit_risk": false,
+        "liquidity_risk": false,
+        "financial_health": true
+      },
+      "trend_score": 4,
+      "quality_score": 4,
+      "upward_revision": false
+    },
+    "8541": {
+      "ai_comment": "愛媛銀行は3期連続増収を達成しており、売上は381.8億円から438.4億円へ着実に拡大している。ただし純利益57.1億円に対し営業利益が開示されておらず、収益構造の透明性に課題がある。自己資本比率4.57%は地銀水準として低位であり、財務的な余裕度は限定的。PBR0.43倍と株価は純資産を大きく下回り、市場評価は依然低い。ROE4.22%は業界平均並みだが15%には大きく届かない。金利上昇局面では貸出利鞘改善の恩恵が期待できる一方、保有債券の評価損リスクも存在する。手数料収入の比率や売却益依存度が不明瞭な点が質的評価を抑制する要因。景気感応度は高く、地域経済の動向に収益が左右されやすい構造は変わらない。増収継続は評価できるものの、収益の質と資本効率の改善が今後の課題となる。",
+      "risk_checks": {
+        "roe_15_percent": false,
+        "profit_stability": false,
+        "dividend_stability": true,
+        "one_time_profit_risk": true,
+        "liquidity_risk": true,
+        "financial_health": false
+      },
+      "trend_score": 5,
+      "quality_score": 4,
+      "upward_revision": false
+    },
+    "8364": {
+      "ai_comment": "清水銀行は売上高が3期連続で増収（203.5→209.1→211.9億円）と安定成長を維持しているものの、増収率は鈍化傾向にある。純利益18.6億円と収益規模は小さく、ROE2.6%は地銀平均を下回る低水準。自己資本比率3.96%は銀行業として最低限の水準であり、資本の厚みに乏しい。PBR0.37倍は資産価値に対して株価が大幅に割安であることを示すが、収益力の低さが市場評価を抑制している。金利上昇局面では利ざやの改善が期待される一方、債券評価損リスクも残存する。収益源は貸出金利息中心と推測され、手数料収入の多様化は限定的とみられる。NC比がマイナス圏で資金繰りに一定の懸念があり、株主還元余力も限られる。地域経済の停滞が収益の上限を規定しやすく、景気感応度は中程度。総じて安定性はあるが成長余力は低い。",
+      "risk_checks": {
+        "roe_15_percent": false,
+        "profit_stability": false,
+        "dividend_stability": true,
+        "one_time_profit_risk": true,
+        "liquidity_risk": true,
+        "financial_health": false
+      },
+      "trend_score": 5,
+      "quality_score": 4,
+      "upward_revision": false
+    },
+    "3475": {
+      "ai_comment": "GOOD COM ASSETは不動産販売（主に投資用マンション）を主力とする企業。売上は221.9→597.5→545.8億円と急成長後に反落しており、業績の安定性に懸念がある。今期は売上-8.7%、営業利益-46.2%と大幅減益で、利益率も約5.4%から約2.9%へ悪化。投資用不動産の販売は景気・金利感応度が高く、日銀の利上げ局面では購入者の借入コスト上昇により需要が抑制されるリスクが大きい。収益の大部分が不動産売却益に依存しており、手数料等のストック型収益が薄い点も質的課題。PBR3.59倍・PER28.6倍と評価は高く、業績悪化局面では割高感が顕在化しやすい。ROEは10.71%と15%未満。自己資本比率30.68%はやや低水準で財務的な余裕は限定的。景気悪化・金利上昇の二重リスクを抱えており、現状では投資魅力は限定的と判断する。",
+      "risk_checks": {
+        "roe_15_percent": false,
+        "profit_stability": true,
+        "dividend_stability": true,
+        "one_time_profit_risk": false,
+        "liquidity_risk": true,
+        "financial_health": true
+      },
+      "trend_score": 3,
+      "quality_score": 3,
+      "upward_revision": false
+    },
+    "8344": {
+      "ai_comment": "山形銀行は3期売上推移で増収後に減収（453億円、前期比-4.0%）となり、業績トレンドは安定を欠く。純利益44.1億円と収益規模は小さく、ROE3.25%は低水準。自己資本比率4.29%は地銀として標準的だが、NC比-33.2は資金調達コストが収益を圧迫している可能性を示唆。金利上昇局面では預貸金利ざや改善の期待がある一方、保有債券の評価損リスクも残存する。収益構造は伝統的な利息収入依存型とみられ、手数料収入の多様化は限定的。PBR0.49倍と株価は純資産を大幅に下回り市場評価は低い。PER約15倍は概ね妥当水準。地方銀行特有の人口減少・地域経済縮小という構造的課題を抱えており、収益成長の持続性には疑問符が付く。資本還元姿勢の積極化が株価改善の鍵となろう。",
+      "risk_checks": {
+        "roe_15_percent": false,
+        "profit_stability": false,
+        "dividend_stability": true,
+        "one_time_profit_risk": true,
+        "liquidity_risk": true,
+        "financial_health": false
+      },
+      "trend_score": 3,
+      "quality_score": 3,
+      "upward_revision": false
+    },
+    "8713": {
+      "ai_comment": "フィデアホールディングスは東北地方を地盤とする地方銀行持株会社。売上は475.2→456.5→461.2億円と一時減収後やや回復しているが、成長モメンタムは乏しい。営業利益が非開示であり収益構造の透明性に課題がある。純利益28.2億円は規模対比で低水準であり、利益の安定性はやや懸念される。地方銀行特有の構造的課題として、貸出利ザヤの縮小・人口減少による融資需要低迷が継続しており、金利上昇局面では一定の追い風が期待されるが、保有債券の含み損リスクも伴う。収益源は伝統的な利息収入が中心で、手数料収入比率の向上が課題。PBR0.4倍と低評価が継続しており、資本効率改善への市場期待は低い。ROE3.65%は地銀平均水準ながら、自己資本比率2.64%は銀行業特有の数値。PER約8.6倍は割安感があるも、構造的成長力の欠如が評価を抑制している。",
+      "risk_checks": {
+        "roe_15_percent": false,
+        "profit_stability": false,
+        "dividend_stability": true,
+        "one_time_profit_risk": true,
+        "liquidity_risk": true,
+        "financial_health": false
+      },
+      "trend_score": 3,
+      "quality_score": 3,
+      "upward_revision": false
+    },
+    "8399": {
+      "ai_comment": "琉球銀行は3期連続で売上高が増加しており（520億→565億→607億円）、トップラインの成長トレンドは明確。ただし純利益57.5億円に対してROE4.11%と収益効率は低水準にとどまる。金利上昇局面は預貸利鞘の改善要因となる一方、保有有価証券の評価損リスクも内包。NC比がマイナス25と大きく、資金調達コストの上昇圧力が収益を圧迫する懸念がある。自己資本比率4.7%は地銀水準としてやや低く、資本の厚みに課題。収益源は伝統的な利鞘収入が中心で手数料収入の多様化は限定的。沖縄経済の観光・建設需要に連動した景気感応度は高く、景況悪化時の与信コスト増加リスクに注意が必要。配当還元姿勢はPBR0.64倍と市場評価が低く、株主還元強化への期待感は乏しい段階。",
+      "risk_checks": {
+        "roe_15_percent": false,
+        "profit_stability": false,
+        "dividend_stability": true,
+        "one_time_profit_risk": true,
+        "liquidity_risk": true,
+        "financial_health": false
+      },
+      "trend_score": 6,
+      "quality_score": 4,
+      "upward_revision": false
+    },
+    "8383": {
+      "ai_comment": "鳥取銀行は3期連続で増収基調（121.5→129.3→138.8億円）を維持しており、売上成長率7.3%は地銀としては良好。ただし営業利益が非開示で収益構造の透明性に課題があり、純利益13.1億円にとどまる。金利上昇局面では利鞘改善の恩恵が期待されるが、地方経済の縮小・人口減少リスクが長期的な収益基盤を圧迫する。ROE2.74%は極めて低水準で資本効率の改善余地が大きい。PBR0.32倍は資産価値に対して大幅割安だが、収益力の低さがディスカウント要因。自己資本比率4.34%は銀行業として最低限の水準であり財務的な余裕は限定的。手数料収入の拡充や資本政策の強化が急務で、利益の質・還元姿勢ともに改善が必要。",
+      "risk_checks": {
+        "roe_15_percent": false,
+        "profit_stability": false,
+        "dividend_stability": true,
+        "one_time_profit_risk": true,
+        "liquidity_risk": true,
+        "financial_health": false
+      },
+      "trend_score": 5,
+      "quality_score": 3,
+      "upward_revision": false
+    },
+    "8542": {
+      "ai_comment": "TOMATO BANKは3期連続で売上増収（202.9→213.0→222.1億円）を達成しており、トップライン成長の継続性は評価できる。ただし営業利益が非開示であり、純利益18.2億円の内訳や一過性利益依存度の確認が困難。ROE3.25%は金融機関として低水準であり、収益効率の改善余地が大きい。自己資本比率4.1%は地銀として標準的だが、NC比がマイナス64.87と大幅なマイナスで信用リスクや資産品質への懸念が残る。PBR0.32倍と著しく割安水準にあり市場の評価は低い。金利上昇局面では預貸スプレッド改善の恩恵が期待されるが、収益源の質（手数料収入比率・有価証券売却益依存度）の詳細開示が限定的。資本政策・株主還元の積極性も不透明であり、事業の継続性は担保されるが高成長は期待しにくい。",
+      "risk_checks": {
+        "roe_15_percent": false,
+        "profit_stability": false,
+        "dividend_stability": true,
+        "one_time_profit_risk": true,
+        "liquidity_risk": true,
+        "financial_health": false
+      },
+      "trend_score": 5,
+      "quality_score": 3,
+      "upward_revision": false
+    },
+    "7185": {
+      "ai_comment": "廣瀬通商（FX・CFD取引業）は直近期において売上高102.0億円（前期比▲4.8%）、営業利益30.6億円（▲28.0%）と減収減益が続いており、業績トレンドは軟調。過去3期の売上推移も103.2→107.1→102.0億円と増収後に失速しており、方向感に乏しい。FX専業の性質上、収益は顧客スプレッド収入が主体で手数料型に近いが、ボラティリティ環境に大きく左右される景気敏感・市場感応度の高いビジネスモデル。金利変動は顧客の取引活発化に一定影響を及ぼす。自己資本比率16.81%と金融業態としては低め、ROE11.28%はやや物足りず。PBR1.1倍、PER13.9倍と評価は低位安定。資本還元姿勢や利益の一過性依存については情報不足だが、コア収益の持続性には不確実性が残る。中期的な収益回復の見通しが重要。",
+      "risk_checks": {
+        "roe_15_percent": false,
+        "profit_stability": true,
+        "dividend_stability": false,
+        "one_time_profit_risk": false,
+        "liquidity_risk": true,
+        "financial_health": true
+      },
+      "trend_score": 3,
+      "quality_score": 4,
+      "upward_revision": false
+    },
+    "8614": {
+      "ai_comment": "東洋証券は直近期で売上高が前期比6.1%減、営業利益は39.2%減と大幅な減益となっており、業績トレンドは悪化傾向にある。3期の売上推移（83.4→120.2→112.9億円）を見ると、一度急拡大した後に反落しており、安定成長とは言い難い。純利益26.5億円は営業利益7.0億円を大きく上回っており、株式売却益や有価証券評価益など一過性・非経常要因への依存が疑われる点はリスクである。収益構造は伝統的な証券会社として株式売買委託手数料への依存度が高く、景気や相場環境に対する感応度が非常に高い。金利上昇局面では債券関連収益への影響も懸念される。ROE8.81%はやや低水準で、資本効率の改善余地がある。PBR1.73倍は証券セクターとして標準的だが、収益の持続性に不透明感が残る。自己資本比率43.41%は証券会社として安定的な水準。株主還元の積極性は限定的とみられ、事業の質・安定性ともに平均を下回る。",
+      "risk_checks": {
+        "roe_15_percent": false,
+        "profit_stability": false,
+        "dividend_stability": true,
+        "one_time_profit_risk": true,
+        "liquidity_risk": false,
+        "financial_health": true
+      },
+      "trend_score": 3,
+      "quality_score": 4,
+      "upward_revision": false
+    },
+    "8362": {
+      "ai_comment": "福井銀行は過去3期で売上が501.5億→509.4億→561.2億円と増収トレンドを維持しており、直近期は前年比10.2%増と加速。日銀の利上げ局面において地方銀行として預貸金利ざや改善の恩恵を受けていると見られる。ただし純利益71.7億円に対し営業利益が非開示であり、有価証券売却益など一過性収益への依存度が不透明。PBR0.53倍と割安圏だが、ROE5.25%は資本効率の低さを示す。自己資本比率3.18%は銀行業の特性上やむを得ないが、NC比がマイナス44と大きく、収益源の手数料収入比率向上が課題。地方経済の人口減少・企業数減少が長期リスクであり、景気感応度も高い。資本還元姿勢は改善余地あり。",
+      "risk_checks": {
+        "roe_15_percent": false,
+        "profit_stability": false,
+        "dividend_stability": true,
+        "one_time_profit_risk": true,
+        "liquidity_risk": true,
+        "financial_health": false
+      },
+      "trend_score": 6,
+      "quality_score": 4,
+      "upward_revision": false
+    },
+    "5535": {
+      "ai_comment": "MIGALO HOLDINGSは3期連続増収を達成し、売上は372.6億→517.1億円と着実に拡大。ただし売上成長率21.2%に対し営業利益成長率は8.5%と利益率が低下傾向にあり、販管費や仕入コスト増が懸念される。純利益13.9億円に対しPER約30倍は割高感があり、利益の質や一過性要因の有無を精査する必要がある。不動産業として金利上昇局面では仕入コストおよび購入需要の双方に悪影響が及ぶリスクが高い。自己資本比率20.51%は不動産業としても低水準であり財務レバレッジへの依存が顕著。ROE12.44%はPBR1.57倍に対してやや物足りず、収益源が売却益中心であれば景気敏感度も高い。資本還元姿勢・手数料収入比率の開示が乏しく、事業の継続的安定性には疑問が残る。",
+      "risk_checks": {
+        "roe_15_percent": false,
+        "profit_stability": true,
+        "dividend_stability": false,
+        "one_time_profit_risk": false,
+        "liquidity_risk": true,
+        "financial_health": true
+      },
+      "trend_score": 6,
+      "quality_score": 4,
+      "upward_revision": false
+    },
+    "8349": {
+      "ai_comment": "東北銀行は過去3期で売上が126.9→139.5→136.2億円と直近期に減収に転じており、業績トレンドに陰りが見られる。営業利益は非開示だが、純利益10.7億円は地方銀行として小規模であり、収益力の脆弱性が懸念される。自己資本比率3.5%は地銀として低水準であり、財務安全性に不安が残る。NC比がマイナス圏と大幅な負値を示しており、収益の質・安定性に課題がある。金利上昇局面では預貸利鞘の改善期待がある一方、保有有価証券の評価損リスクも内包する。PBR0.39倍と市場評価は低く、ROE3.02%は資本コストを下回る公算が高い。収益源は伝統的な利鞘収入依存と推察され、手数料収入等の多様化が進んでいない可能性が高い。地方経済の縮小・人口減少による景気感応リスクも大きく、事業の持続的成長には構造的な課題が多い。",
+      "risk_checks": {
+        "roe_15_percent": false,
+        "profit_stability": false,
+        "dividend_stability": true,
+        "one_time_profit_risk": true,
+        "liquidity_risk": true,
+        "financial_health": false
+      },
+      "trend_score": 3,
+      "quality_score": 3,
+      "upward_revision": false
+    },
+    "7150": {
+      "ai_comment": "島根銀行は3期連続増収（69.4→78.3→86.8億円）を達成しており、売上成長率10.9%は地方銀行としては良好な水準。ただし営業利益が非開示であり、最終利益6.1億円にとどまることから収益の絶対水準は低い。ROE4.08%はやや物足りなく、PBR0.33倍という低評価が示す通り市場の期待値は限定的。自己資本比率2.62%は銀行の国内基準（4%）を下回るリスクがあり、資本の脆弱性が懸念される。金利上昇局面では貸出利回り改善が期待できる一方、有価証券の含み損リスクも存在する。収益源は伝統的な預貸利鞘中心と推測され、手数料収入の多様化は限定的。地方銀行として景気感応度は高く、島根県の人口減少・経済縮小という構造的逆風が中長期リスク。増収トレンドは評価できるが、収益の質と資本充実が課題。",
+      "risk_checks": {
+        "roe_15_percent": false,
+        "profit_stability": false,
+        "dividend_stability": true,
+        "one_time_profit_risk": true,
+        "liquidity_risk": true,
+        "financial_health": false
+      },
+      "trend_score": 6,
+      "quality_score": 4,
+      "upward_revision": false
+    },
+    "5843": {
+      "ai_comment": "NIPPON INSURE CO LTDは過去3期（28.8→32.2→37.4億円）にわたり売上が一貫して増加しており、直近の増収率16.1%は保険セクターとして堅調な成長を示す。ただし営業利益が開示されておらず収益構造の透明性に課題がある。純利益5.3億円からROE21.18%と資本効率は高水準で評価できる。PBR2.61倍は保険会社としてやや割高感があるが、ROEの高さで正当化される側面もある。自己資本比率46.74%は安定水準。保険会社としての収益源が保険料収入（フロー収益）中心であれば安定性は高いが、運用益・売却益依存度が不明で金利変動リスクの評価が難しい。NC比がマイナスであることは短期的な流動性に若干の注意が必要。景気感応度は中程度と想定されるが、金利上昇局面では運用収益の改善も期待できる。増収継続トレンドは明確で事業継続性は良好と判断する。",
+      "risk_checks": {
+        "roe_15_percent": true,
+        "profit_stability": false,
+        "dividend_stability": true,
+        "one_time_profit_risk": true,
+        "liquidity_risk": true,
+        "financial_health": true
+      },
+      "trend_score": 7,
+      "quality_score": 6,
+      "upward_revision": false
+    },
+    "8338": {
+      "ai_comment": "つくばバンクは茨城県地盤の地方銀行。売上は3期で319.7→354.9→338.1億円と直近期に減収転落しており、業績トレンドは不安定。純利益41.0億円は一定水準を維持しているが、営業利益が非開示であり収益構造の透明性に課題がある。自己資本比率3.17%は地銀として低めであり、財務基盤の脆弱さが懸念される。PBR0.47倍と株価は解散価値を大きく下回っており市場の評価は厳しい。ROE4.47%は低水準で資本効率に改善余地がある。日銀の利上げ局面は預貸金利ザヤ改善への期待があるが、地域経済の人口減少・企業数縮小による融資残高の伸び悩みリスクも大きい。収益の柱が伝統的な利鞘収入に偏重しており手数料収入等非金利収入の拡大が急務。株主還元姿勢も現時点では積極的とは言えず、総合的な評価は低め。",
+      "risk_checks": {
+        "roe_15_percent": false,
+        "profit_stability": false,
+        "dividend_stability": true,
+        "one_time_profit_risk": true,
+        "liquidity_risk": true,
+        "financial_health": false
+      },
+      "trend_score": 3,
+      "quality_score": 3,
+      "upward_revision": false
+    },
+    "8706": {
+      "ai_comment": "極東証券は直近3期で売上が61.7→107.2→118.7億円と大幅な増収基調を示しており、トレンドは良好。ただし営業利益が非開示であり、利益構造の透明性に課題がある。純利益44.5億円に対しPER13倍・PBR1.05倍は割安感があるが、証券業の収益は株式市況・売買代金に大きく左右されるため一過性の要素が強い。自己資本比率65.66%と財務健全性は高く、ネットキャッシュ比率はわずかにマイナスと実質無借金に近い。ROE8.61%は証券業として標準的だが15%には及ばない。収益源は手数料収入と売却益が混在すると推測され、景気感応度は高い。金利上昇局面では債券価格下落リスクがある一方、株式市場活況時の恩恵も期待できる。還元姿勢・配当政策の詳細は不明だが、業績成長に見合う株主還元が求められる。",
+      "risk_checks": {
+        "roe_15_percent": false,
+        "profit_stability": false,
+        "dividend_stability": false,
+        "one_time_profit_risk": true,
+        "liquidity_risk": false,
+        "financial_health": true
+      },
+      "trend_score": 6,
+      "quality_score": 4,
+      "upward_revision": false
+    },
+    "7383": {
+      "ai_comment": "NET PROTECTIONS HOLDINGSはBNPL（後払い決済）を中核とする手数料収入型ビジネスで、売上は3期連続増収（193.3→208.4→230.3億円）と安定成長を維持。営業利益は前期比434.7%増と大幅改善だが、過去の低水準からの回復であり構造的改善か一過性かの見極めが必要。収益源は加盟店手数料が主体でストック性が高く質は良好。一方、自己資本比率27%と資本基盤はやや薄く、BNPL事業は信用コスト・貸倒リスクが景気悪化局面で拡大しやすい。金利上昇局面では調達コスト増が利益を圧迫するリスクあり。ROE7.04%は業界水準対比低く資本効率改善余地大。景気感応度は中程度だが消費低迷時には加盟店取扱高減少と延滞率上昇が同時に生じるリスクを内包する。",
+      "risk_checks": {
+        "roe_15_percent": false,
+        "profit_stability": false,
+        "dividend_stability": true,
+        "one_time_profit_risk": false,
+        "liquidity_risk": true,
+        "financial_health": true
+      },
+      "trend_score": 6,
+      "quality_score": 6,
+      "upward_revision": false
+    },
+    "7326": {
+      "ai_comment": "SBIインシュアランスグループは3期連続増収を達成しており、売上は937億→1071億→1169億円と着実に拡大している。ただし純利益は19.9億円と売上規模に対して低水準であり、収益性の改善が課題。自己資本比率19.48%はノンバンク・保険持株会社として一定水準だが、ROE4.69%は金融業として見劣りする。損保・生保を中心とした保険料収入が主体のため収益源の質は比較的安定しているが、保険金支払いの増加や自然災害リスクが利益を圧迫しやすい構造。金利上昇局面では運用収益の改善が期待されるが、現時点での貢献は限定的。デジタル保険・通販型保険への注力はコスト優位性につながる一方、価格競争激化リスクも存在する。SBIグループのエコシステムを活用したクロスセルは成長ドライバーとなり得るが、利益安定性と資本効率の向上が今後の評価を左右する。",
+      "risk_checks": {
+        "roe_15_percent": false,
+        "profit_stability": false,
+        "dividend_stability": true,
+        "one_time_profit_risk": true,
+        "liquidity_risk": true,
+        "financial_health": true
+      },
+      "trend_score": 6,
+      "quality_score": 5,
+      "upward_revision": false
+    }
+  }
 }
