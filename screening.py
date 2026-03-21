@@ -1638,6 +1638,37 @@ FINANCE_AI_RISK_KEYS = [
 ]
 
 
+def _ai_cache_path():
+    return os.path.join(os.path.dirname(os.path.abspath(__file__)), "ai_cache.json")
+
+
+def load_ai_cache():
+    path = _ai_cache_path()
+    if not os.path.isfile(path):
+        return {}
+    try:
+        with open(path, "r", encoding="utf-8") as f:
+            data = json.load(f)
+            return data if isinstance(data, dict) else {}
+    except Exception:
+        return {}
+
+
+def save_ai_cache(cache_data):
+    path = _ai_cache_path()
+    with open(path, "w", encoding="utf-8") as f:
+        json.dump(cache_data, f, ensure_ascii=False, indent=2)
+
+
+def get_cached_ai(cache, code, mode="general"):
+    if not cache or not isinstance(cache, dict):
+        return None
+    sect = cache.get(mode)
+    if not isinstance(sect, dict):
+        return None
+    return sect.get(str(code))
+
+
 def _default_risk_checks():
     return {k: None for k in AI_RISK_KEYS}
 
@@ -2151,10 +2182,16 @@ def run_screening_finance_tab():
         print("Step3 (finance): 0 pass")
         step5_save_finance([])
         return
-    if ENABLE_AI and anthropic and os.environ.get("ANTHROPIC_API_KEY"):
-        print("AI (finance tab)...")
+    skip_ai = os.getenv("SKIP_AI", "true").lower() == "true"
+    ai_cache = load_ai_cache()
+
+    if not skip_ai and ENABLE_AI and anthropic and os.environ.get("ANTHROPIC_API_KEY"):
+        print(
+            "AI\u5206\u6790\u3092\u5b9f\u884c\u3057\u307e\u3059\uff08\u91d1\u878d\u30bf\u30d6\u3001API\u4f7f\u7528\uff09..."
+        )
+        if "finance" not in ai_cache:
+            ai_cache["finance"] = {}
         for i, r in enumerate(second_f):
-            print(f"[AI finance] {r.get('name_jp', r.get('code'))}")
             time.sleep(3)
             ai_comment, risk_checks, trend_score, quality_score, upward_revision = generate_ai_analysis(
                 r, finance_mode=True
@@ -2164,14 +2201,41 @@ def run_screening_finance_tab():
             r["trend_score"] = trend_score
             r["quality_score"] = quality_score
             r["upward_revision"] = upward_revision
+            code = str(r.get("code", ""))
+            ai_cache["finance"][code] = {
+                "ai_comment": ai_comment,
+                "risk_checks": risk_checks,
+                "trend_score": trend_score,
+                "quality_score": quality_score,
+                "upward_revision": upward_revision,
+            }
             if (i + 1) % 5 == 0 or (i + 1) == len(second_f):
-                print(f"  AI finance {i+1}/{len(second_f)} done", flush=True)
+                print(
+                    f"  AI\u5206\u6790\uff08\u91d1\u878d\uff09 {i+1}/{len(second_f)} \u5b8c\u4e86",
+                    flush=True,
+                )
+        _jst_ai = timezone(timedelta(hours=9))
+        ai_cache["generated_at"] = datetime.now(_jst_ai).strftime("%Y-%m-%dT%H:%M:%S+09:00")
+        save_ai_cache(ai_cache)
     else:
+        print(
+            "AI\u30ad\u30e3\u30c3\u30b7\u30e5\u304b\u3089\u8aad\u307f\u8fbc\u307f\uff08\u91d1\u878d\u30bf\u30d6\u3001API\u30b9\u30ad\u30c3\u30d7\uff09..."
+        )
         for r in second_f:
-            r["trend_score"] = 0
-            r["quality_score"] = 0
-            r["upward_revision"] = False
-            r["risk_checks"] = {}
+            code = str(r.get("code", ""))
+            cached = get_cached_ai(ai_cache, code, "finance")
+            if cached:
+                r["ai_comment"] = cached.get("ai_comment", "")
+                r["risk_checks"] = cached.get("risk_checks", {})
+                r["trend_score"] = cached.get("trend_score", 0)
+                r["quality_score"] = cached.get("quality_score", 0)
+                r["upward_revision"] = cached.get("upward_revision", False)
+            else:
+                r["ai_comment"] = ""
+                r["risk_checks"] = {}
+                r["trend_score"] = 0
+                r["quality_score"] = 0
+                r["upward_revision"] = False
     for r in second_f:
         try:
             finalize_finance_risk_checks(r, yf.Ticker(f"{r['code']}.T"))
@@ -2194,6 +2258,10 @@ def run_screening():
         print("=" * 60)
         print(f"[DEBUG] ENABLE_AI={ENABLE_AI}")
         print(f"[DEBUG] API\u30AD\u30FC\u8A2D\u5B9A\u6E08\u307F={bool(os.environ.get('ANTHROPIC_API_KEY'))}")
+        print(
+            f"[DEBUG] SKIP_AI={os.getenv('SKIP_AI', 'true')!r} "
+            f"-> skip={os.getenv('SKIP_AI', 'true').lower() == 'true'}"
+        )
         stocks = step1_get_list_from_jpx()
         if stocks is None or len(stocks) == 0:
             print("???????????????")
@@ -2211,26 +2279,62 @@ def run_screening():
                     print("Step3 \u901A\u904B 0 \u4EF6\u306E\u305F\u3081\u7D42\u4E86\u3057\u307E\u3059\u3002")
                     out = step5_save([])
                 else:
-                    if ENABLE_AI and anthropic and os.environ.get("ANTHROPIC_API_KEY"):
-                        print("AI \u5206\u6790\u3092\u5B9F\u884C\u3057\u307E\u3059 (\u4E8C\u6B21\u901A\u904B\u9298\u67C4\u306E\u307F)...")
+                    skip_ai = os.getenv("SKIP_AI", "true").lower() == "true"
+                    ai_cache = load_ai_cache()
+
+                    if not skip_ai and ENABLE_AI and anthropic and os.environ.get("ANTHROPIC_API_KEY"):
+                        print(
+                            "AI\u5206\u6790\u3092\u5b9f\u884c\u3057\u307e\u3059\uff08API\u4f7f\u7528\uff09..."
+                        )
+                        if "general" not in ai_cache:
+                            ai_cache["general"] = {}
                         for i, r in enumerate(second):
-                            print(f"[AI] \u51E6\u7406\u958B\u59CB: {r.get('name_jp', r.get('code'))}")
                             time.sleep(3)
-                            ai_comment, risk_checks, trend_score, quality_score, upward_revision = generate_ai_analysis(
-                                r, finance_mode=False
+                            ai_comment, risk_checks, trend_score, quality_score, upward_revision = (
+                                generate_ai_analysis(r, finance_mode=False)
                             )
                             r["ai_comment"] = ai_comment
                             r["risk_checks"] = risk_checks
                             r["trend_score"] = trend_score
                             r["quality_score"] = quality_score
                             r["upward_revision"] = upward_revision
+                            code = str(r.get("code", ""))
+                            ai_cache["general"][code] = {
+                                "ai_comment": ai_comment,
+                                "risk_checks": risk_checks,
+                                "trend_score": trend_score,
+                                "quality_score": quality_score,
+                                "upward_revision": upward_revision,
+                            }
                             if (i + 1) % 5 == 0 or (i + 1) == len(second):
-                                print(f"  AI \u5206\u6790 {i+1}/{len(second)} \u5B8C\u4E86", flush=True)
+                                print(
+                                    f"  AI\u5206\u6790 {i+1}/{len(second)} \u5b8c\u4e86",
+                                    flush=True,
+                                )
+                        _jst_ai = timezone(timedelta(hours=9))
+                        ai_cache["generated_at"] = datetime.now(_jst_ai).strftime(
+                            "%Y-%m-%dT%H:%M:%S+09:00"
+                        )
+                        save_ai_cache(ai_cache)
                     else:
+                        print(
+                            "AI\u30ad\u30e3\u30c3\u30b7\u30e5\u304b\u3089\u8aad\u307f\u8fbc\u307f\uff08API\u30b9\u30ad\u30c3\u30d7\uff09..."
+                        )
                         for r in second:
-                            r["trend_score"] = 0
-                            r["quality_score"] = 0
-                            r["upward_revision"] = False
+                            code = str(r.get("code", ""))
+                            cached = get_cached_ai(ai_cache, code, "general")
+                            if cached:
+                                r["ai_comment"] = cached.get("ai_comment", "")
+                                r["risk_checks"] = cached.get("risk_checks", {})
+                                r["trend_score"] = cached.get("trend_score", 0)
+                                r["quality_score"] = cached.get("quality_score", 0)
+                                r["upward_revision"] = cached.get("upward_revision", False)
+                            else:
+                                r["ai_comment"] = ""
+                                r["risk_checks"] = {}
+                                r["trend_score"] = 0
+                                r["quality_score"] = 0
+                                r["upward_revision"] = False
                     results = step4_scoring(second)
                     out = step5_save(results)
         elapsed = time.perf_counter() - start_time

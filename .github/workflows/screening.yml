@@ -2,7 +2,8 @@ name: Daily Stock Screening
 
 on:
   schedule:
-    - cron: '0 12 * * 1-5'  # 月〜金 JST21:00
+    - cron: '0 12 * * 1-5' # Mon-Fri JST 21:00
+    - cron: '0 12 15 * *' # Monthly 15th JST 21:00 (full AI)
   workflow_dispatch:
 
 permissions:
@@ -26,19 +27,26 @@ jobs:
         run: pip install yfinance pandas requests openpyxl xlrd anthropic python-dotenv
 
       - name: Run screening
+        working-directory: screening-ui
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          SKIP_AI: ${{ github.event.schedule == '0 12 15 * *' && 'false' || 'true' }}
         run: python screening.py
 
       - name: Copy result to public
         run: |
           mkdir -p screening-ui/public
-          cp screening_result.json screening-ui/public/screening_result.json
+          cp screening-ui/screening_result.json screening-ui/public/screening_result.json
+          if [ -f screening-ui/screening_result_finance.json ]; then
+            cp screening-ui/screening_result_finance.json screening-ui/public/screening_result_finance.json
+          fi
 
       - name: Commit and push
         run: |
           git config --global user.email "action@github.com"
           git config --global user.name "GitHub Actions"
-          git add screening_result.json screening-ui/public/screening_result.json
+          git add screening-ui/screening_result.json screening-ui/public/screening_result.json
+          git add -f screening-ui/screening_result_finance.json screening-ui/public/screening_result_finance.json 2>/dev/null || true
+          git add -f screening-ui/ai_cache.json 2>/dev/null || true
           git diff --staged --quiet || git commit -m "update screening result $(date +'%Y-%m-%d')"
           git push
