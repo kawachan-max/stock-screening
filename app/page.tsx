@@ -631,6 +631,8 @@ export default function Home() {
               return (
                 <div
                   key={r.code}
+                  id={`stock-${i}`}
+                  style={{ scrollMarginTop: "80px" }}
                   className="rounded-xl border border-[#e5e0d8] bg-white p-3 shadow-sm transition-shadow hover:shadow-md sm:p-4"
                 >
                   <div className="flex flex-col items-stretch justify-between gap-3 sm:flex-row sm:flex-wrap sm:items-start">
@@ -739,7 +741,19 @@ export default function Home() {
                           setModalOpen(true);
                           return;
                         }
+                        const willExpand = !isExpanded;
                         setExpandedCode(isExpanded ? null : r.code);
+                        if (willExpand) {
+                          const el = document.getElementById(`stock-${i}`);
+                          if (el) {
+                            setTimeout(() => {
+                              el.scrollIntoView({
+                                behavior: "smooth",
+                                block: "start",
+                              });
+                            }, 100);
+                          }
+                        }
                       }}
                       className="text-xs text-[#92400e] font-medium hover:underline"
                     >
