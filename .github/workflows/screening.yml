@@ -27,7 +27,7 @@ jobs:
 
       - name: Get day of week
         id: get-day
-        run: echo "day=$(date -u +%A)" >> $GITHUB_OUTPUT
+        run: echo "day=$(LC_TIME=C date -u +%A)" >> $GITHUB_OUTPUT
 
       - name: Run screening
         working-directory: screening-ui
