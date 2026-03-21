@@ -76,7 +76,7 @@ const TOOLTIP_GROWTH_SCORE: TooltipContent = {
 };
 
 const TOOLTIP_QUALITY_DETAIL: TooltipContent = {
-  title: "\u4e8b\u696d\u306e\u8cea\u30fb\u53ce\u76ca\u6027\uff08\u6700\u592715\u70b9\uff09",
+  title: "\u53ce\u76ca\u6027\uff08\u6700\u592715\u70b9\uff09",
   desc: "ROE\u3068ROIC\u306e\u6c34\u6e96\u3068\u55b6\u696d\u5229\u76ca\u7387\u306e\u5b89\u5b9a\u6027\u3067\u4e8b\u696d\u306e\u8cea\u3092\u8a55\u4fa1\u3057\u307e\u3059",
   formula: "ROE\u30b9\u30b3\u30a2(5)\uff0bROIC\u30b9\u30b3\u30a2(5)\uff0b\u53ce\u76ca\u5b89\u5b9a\u6027\u30b9\u30b3\u30a2(5)",
   intent: "\u55b6\u696d\u5229\u76ca\u306e\u7d9a\u304f\u5b9f\u7e3e\u3092\u898b\u306a\u304c\u3089\u3001\u5229\u76ca\u306e\u8cea\u3092\u8a55\u4fa1\u3057\u307e\u3059",
@@ -222,7 +222,7 @@ const LABEL_CHEAP = "\u5272\u5B89\u5EA6";
 const LABEL_CHEAP_SHORT = "\u5272\u5B89";
 const LABEL_GROWTH = "\u6210\u9577\u6027";
 const LABEL_GROWTH_SHORT = "\u6210\u9577";
-const LABEL_QUALITY_DETAIL = "\u4E8B\u696D\u306E\u8CEA\u30FB\u53CE\u76CA\u6027";
+const LABEL_QUALITY_DETAIL = "\u53CE\u76CA\u6027";
 const LABEL_BONUS = "\u30DC\u30FC\u30CA\u30B9";
 const LABEL_SHAREHOLDER = "\u682A\u4E3B\u9084\u5143\u4F59\u5730";
 const LABEL_AI_TREND = "AI\u696d\u7e3e\u5206\u6790";
