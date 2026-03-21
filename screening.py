@@ -2301,16 +2301,26 @@ def run_screening():
                     print("Step3 \u901A\u904B 0 \u4EF6\u306E\u305F\u3081\u7D42\u4E86\u3057\u307E\u3059\u3002")
                     out = step5_save([])
                 else:
+                    for r in second:
+                        r["ai_comment"] = ""
+                        r["risk_checks"] = {}
+                        r["trend_score"] = 0
+                        r["quality_score"] = 0
+                        r["upward_revision"] = False
+                    scored_all = step4_scoring(second)
+                    top_second = scored_all[:MAX_JSON_STOCKS]
+
                     skip_ai = os.getenv("SKIP_AI", "true").lower() == "true"
                     ai_cache = load_ai_cache()
 
                     if not skip_ai and ENABLE_AI and anthropic and os.environ.get("ANTHROPIC_API_KEY"):
                         print(
-                            "AI\u5206\u6790\u3092\u5b9f\u884c\u3057\u307e\u3059\uff08API\u4f7f\u7528\uff09..."
+                            "AI\u5206\u6790\u3092\u5b9f\u884c\u3057\u307e\u3059\uff08API\u4f7f\u7528\u3001\u4e0a\u4f4d"
+                            f"{MAX_JSON_STOCKS}\u4ef6\u306e\u307f\uff09..."
                         )
                         if "general" not in ai_cache:
                             ai_cache["general"] = {}
-                        for i, r in enumerate(second):
+                        for i, r in enumerate(top_second):
                             time.sleep(3)
                             ai_comment, risk_checks, trend_score, quality_score, upward_revision = (
                                 generate_ai_analysis(r, finance_mode=False)
@@ -2328,9 +2338,9 @@ def run_screening():
                                 "quality_score": quality_score,
                                 "upward_revision": upward_revision,
                             }
-                            if (i + 1) % 5 == 0 or (i + 1) == len(second):
+                            if (i + 1) % 5 == 0 or (i + 1) == len(top_second):
                                 print(
-                                    f"  AI\u5206\u6790 {i+1}/{len(second)} \u5b8c\u4e86",
+                                    f"  AI\u5206\u6790 {i+1}/{len(top_second)} \u5b8c\u4e86",
                                     flush=True,
                                 )
                         _jst_ai = timezone(timedelta(hours=9))
@@ -2340,9 +2350,10 @@ def run_screening():
                         save_ai_cache(ai_cache)
                     else:
                         print(
-                            "AI\u30ad\u30e3\u30c3\u30b7\u30e5\u304b\u3089\u8aad\u307f\u8fbc\u307f\uff08API\u30b9\u30ad\u30c3\u30d7\uff09..."
+                            "AI\u30ad\u30e3\u30c3\u30b7\u30e5\u304b\u3089\u8aad\u307f\u8fbc\u307f\uff08API\u30b9\u30ad\u30c3\u30d7\u3001\u4e0a\u4f4d"
+                            f"{MAX_JSON_STOCKS}\u4ef6\u306e\u307f\uff09..."
                         )
-                        for r in second:
+                        for r in top_second:
                             code = str(r.get("code", ""))
                             cached = get_cached_ai(ai_cache, code, "general")
                             if cached:
@@ -2357,7 +2368,7 @@ def run_screening():
                                 r["trend_score"] = 0
                                 r["quality_score"] = 0
                                 r["upward_revision"] = False
-                    results = step4_scoring(second)
+                    results = step4_scoring(top_second)
                     out = step5_save(results)
         elapsed = time.perf_counter() - start_time
         print("\n" + "=" * 60)
