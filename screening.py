@@ -55,6 +55,9 @@ SLEEP_SEC = 0.5
 TEST_LIMIT = 0  # 0 = \u5168\u9298\u67C4\u300250 = \u30C6\u30B9\u30C8\u5B9F\u884C
 ENABLE_AI = True  # True \u3067\u4E0A\u4F4D\u9298\u67C4\u304B\u3089 AI \u5206\u6790\u3092\u5B9F\u884C
 
+# JSON\u51fa\u529b\u30fb\u91d1\u878d\u30bf\u30d6AI\u5bfe\u8c61\u306e\u4e0a\u4f4d\u4ef6\u6570
+MAX_JSON_STOCKS = 50
+
 # JPX XLS ?????? code -> ??????????Step1????
 JPX_NAME_MAP = {}
 
@@ -2066,6 +2069,7 @@ def step5_save(results):
             "tenbagger_stars": int(r.get("tenbagger_stars", 0) or 0),
             "tab": "general",
         })
+    out = sorted(out, key=lambda x: x["score"], reverse=True)[:MAX_JSON_STOCKS]
     JST = timezone(timedelta(hours=9))
     updated_at = datetime.now(JST).strftime("%Y-%m-%dT%H:%M:%S+09:00")
     result = {"updated_at": updated_at, "stocks": out}
@@ -2143,6 +2147,7 @@ def step5_save_finance(results):
             "chart_signals": r.get("chart_signals", {}),
             "tab": "finance",
         })
+    out = sorted(out, key=lambda x: x["score"], reverse=True)[:MAX_JSON_STOCKS]
     JST = timezone(timedelta(hours=9))
     updated_at = datetime.now(JST).strftime("%Y-%m-%dT%H:%M:%S+09:00")
     result = {"updated_at": updated_at, "stocks": out}
@@ -2182,16 +2187,32 @@ def run_screening_finance_tab():
         print("Step3 (finance): 0 pass")
         step5_save_finance([])
         return
+
+    for r in second_f:
+        r["ai_comment"] = ""
+        r["risk_checks"] = {}
+        r["trend_score"] = 0
+        r["quality_score"] = 0
+        r["upward_revision"] = False
+    for r in second_f:
+        try:
+            finalize_finance_risk_checks(r, yf.Ticker(f"{r['code']}.T"))
+        except Exception as ex:
+            print(f"  finalize_finance_risk_checks {r.get('code')}: {ex}", flush=True)
+    scored_all = step4_scoring_finance(second_f)
+    top_f = scored_all[:MAX_JSON_STOCKS]
+
     skip_ai = os.getenv("SKIP_AI", "true").lower() == "true"
     ai_cache = load_ai_cache()
 
     if not skip_ai and ENABLE_AI and anthropic and os.environ.get("ANTHROPIC_API_KEY"):
         print(
-            "AI\u5206\u6790\u3092\u5b9f\u884c\u3057\u307e\u3059\uff08\u91d1\u878d\u30bf\u30d6\u3001API\u4f7f\u7528\uff09..."
+            "AI\u5206\u6790\u3092\u5b9f\u884c\u3057\u307e\u3059\uff08\u91d1\u878d\u30bf\u30d6\u3001API\u4f7f\u7528\u3001\u4e0a\u4f4d"
+            f"{MAX_JSON_STOCKS}\u4ef6\u306e\u307f\uff09..."
         )
         if "finance" not in ai_cache:
             ai_cache["finance"] = {}
-        for i, r in enumerate(second_f):
+        for i, r in enumerate(top_f):
             time.sleep(3)
             ai_comment, risk_checks, trend_score, quality_score, upward_revision = generate_ai_analysis(
                 r, finance_mode=True
@@ -2209,9 +2230,9 @@ def run_screening_finance_tab():
                 "quality_score": quality_score,
                 "upward_revision": upward_revision,
             }
-            if (i + 1) % 5 == 0 or (i + 1) == len(second_f):
+            if (i + 1) % 5 == 0 or (i + 1) == len(top_f):
                 print(
-                    f"  AI\u5206\u6790\uff08\u91d1\u878d\uff09 {i+1}/{len(second_f)} \u5b8c\u4e86",
+                    f"  AI\u5206\u6790\uff08\u91d1\u878d\uff09 {i+1}/{len(top_f)} \u5b8c\u4e86",
                     flush=True,
                 )
         _jst_ai = timezone(timedelta(hours=9))
@@ -2219,9 +2240,10 @@ def run_screening_finance_tab():
         save_ai_cache(ai_cache)
     else:
         print(
-            "AI\u30ad\u30e3\u30c3\u30b7\u30e5\u304b\u3089\u8aad\u307f\u8fbc\u307f\uff08\u91d1\u878d\u30bf\u30d6\u3001API\u30b9\u30ad\u30c3\u30d7\uff09..."
+            "AI\u30ad\u30e3\u30c3\u30b7\u30e5\u304b\u3089\u8aad\u307f\u8fbc\u307f\uff08\u91d1\u878d\u30bf\u30d6\u3001API\u30b9\u30ad\u30c3\u30d7\u3001\u4e0a\u4f4d"
+            f"{MAX_JSON_STOCKS}\u4ef6\u306e\u307f\uff09..."
         )
-        for r in second_f:
+        for r in top_f:
             code = str(r.get("code", ""))
             cached = get_cached_ai(ai_cache, code, "finance")
             if cached:
@@ -2236,12 +2258,12 @@ def run_screening_finance_tab():
                 r["trend_score"] = 0
                 r["quality_score"] = 0
                 r["upward_revision"] = False
-    for r in second_f:
+    for r in top_f:
         try:
             finalize_finance_risk_checks(r, yf.Ticker(f"{r['code']}.T"))
         except Exception as ex:
             print(f"  finalize_finance_risk_checks {r.get('code')}: {ex}", flush=True)
-    results_f = step4_scoring_finance(second_f)
+    results_f = step4_scoring_finance(top_f)
     out_f = step5_save_finance(results_f)
     print(f"Tab2 done: {len(out_f)} stocks")
 
