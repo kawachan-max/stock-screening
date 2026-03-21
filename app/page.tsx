@@ -283,7 +283,7 @@ const RISK_CHECK_ITEMS: { key: keyof NonNullable<Row["risk_checks"]>; label: str
   { key: "one_time_profit_risk", label: "\u4E00\u904E\u6027\u5229\u76CA\u30EA\u30B9\u30AF", inverted: true },
 ];
 
-const RISK_CHECK_TOOLTIPS: Record<keyof NonNullable<Row["risk_checks"]>, TooltipContent> = {
+const RISK_CHECK_TOOLTIPS: Record<string, TooltipContent> = {
   roe_15_percent: {
     title: "ROE 15\uff05\u4ee5\u4e0a\u306e\u7d99\u7d9a",
     desc: "\u682a\u4e3b\u306e\u304a\u91d1\u3092\u4f7f\u3063\u3066\u3069\u308c\u3060\u3051\u52b9\u7387\u3088\u304f\u5229\u76ca\u3092\u51fa\u305b\u308b\u304b\u3002\u30d0\u30d5\u30a7\u30c3\u30c8\u304c\u91cd\u8996\u3059\u308b\u512a\u826f\u4f01\u696d\u306e\u57fa\u6e96",
@@ -410,17 +410,17 @@ type Row = {
   equity_ratio?: number | null;
   ai_comment?: string;
   risk_checks?: {
-    roe_15_percent?: boolean | null;
-    equity_ratio_50_percent?: boolean | null;
-    debt_to_profit_5x?: boolean | null;
-    fcf_stability?: boolean | null;
-    liquidity_risk?: boolean | null;
-    one_time_profit_risk?: boolean | null;
-    dividend_stability?: boolean | null;
-    profit_stability?: boolean | null;
-    financial_health?: boolean | null;
-    capital_adequacy?: boolean | null;
-    revenue_diversity?: boolean | null;
+    roe_15_percent?: boolean;
+    equity_ratio_50_percent?: boolean;
+    debt_to_profit_5x?: boolean;
+    fcf_stability?: boolean;
+    liquidity_risk?: boolean;
+    one_time_profit_risk?: boolean;
+    profit_stability?: boolean;
+    dividend_stability?: boolean;
+    financial_health?: boolean;
+    capital_adequacy?: boolean;
+    revenue_diversity?: boolean;
   } | null;
   tab?: "general" | "finance";
 };
@@ -1233,7 +1233,7 @@ export default function Home() {
                               ];
                               const tip = isFinance
                                 ? RISK_CHECK_TOOLTIPS_FINANCE[key]
-                                : RISK_CHECK_TOOLTIPS[key as keyof NonNullable<Row["risk_checks"]>];
+                                : RISK_CHECK_TOOLTIPS[key as string];
                               let badge: "\u25CE" | "\u25CB" | "\u25B3" | "\u00D7" = "\u25B3";
                               let badgeClass = "bg-amber-100 text-amber-700";
                               let suffix = "";
