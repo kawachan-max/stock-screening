@@ -102,6 +102,18 @@ const TOOLTIP_RISK_SCORE: TooltipContent = {
   formula: "\u51fa\u6765\u9ad8\u30ea\u30b9\u30af(-3)\uff0b\u4e00\u904e\u6027\u5229\u76ca(-4)\uff0bROE\u4f4e\u4f4d(-2)\uff0b\u81ea\u5df1\u8cc7\u672c(-3)\uff0b\u9577\u671f\u8ca0\u50b5(-4)\uff0bFCF(-4)\uff0b\u8907\u6570\u00d7\u8ffd\u52a0\u30da\u30ca\u30eb\u30c6\u30a3",
   intent: "\u3069\u308c\u3060\u3051\u826f\u3044\u30b9\u30b3\u30a2\u3067\u3082\u30ea\u30b9\u30af\u304c\u9ad8\u3051\u308c\u3070\u6e1b\u70b9\u3002\u5371\u967a\u306a\u9298\u67c4\u3092\u6392\u9664\u3059\u308b\u305f\u3081\u306e\u4ed5\u7d44\u307f",
 };
+const TOOLTIP_AI_TREND: TooltipContent = {
+  title: "AI\u696d\u7e3e\u5206\u6790\uff08\u6700\u592710\u70b9\uff09",
+  desc: "AI\u304c\u6c7a\u7b97\u66f8\u3092\u8aad\u307f\u3001\u58f2\u4e0a\u30fb\u5229\u76ca\u306e\u30c8\u30ec\u30f3\u30c9\u3092\u5206\u6790\u3057\u3066\u70b9\u6570\u5316\u3057\u307e\u3059",
+  formula: "3\u671f\u9023\u7d9a\u5897\u53ce\u5897\u76ca\u219210\u70b9\u3001\u5897\u53ce or \u5897\u76ca\u21927\u70b9\u3001\u6a2a\u3070\u3044\u21924\u70b9\u3001\u6e1b\u53ce\u6e1b\u76ca\u21920\u70b9",
+  intent: "AI\u304c\u5ba2\u89b3\u7684\u306b\u696d\u7e3e\u306e\u6d41\u308c\u3092\u5224\u5b9a\u3057\u307e\u3059",
+};
+const TOOLTIP_AI_QUALITY: TooltipContent = {
+  title: "AI\u7af6\u4e89\u512a\u4f4d\u6027\uff08\u6700\u592710\u70b9\uff09",
+  desc: "AI\u304c\u4e8b\u696d\u306e\u7af6\u4e89\u512a\u4f4d\u6027\u30fb\u53c2\u5165\u969c\u58c1\u30fb\u53ce\u76ca\u57fa\u76e4\u306e\u5f37\u3055\u3092\u8a55\u4fa1\u3057\u307e\u3059",
+  formula: "\u5f37\u56fa\u306a\u512a\u4f4d\u6027\u219210\u70b9\u3001\u4e00\u5b9a\u306e\u512a\u4f4d\u6027\u21927\u70b9\u3001\u5e73\u5747\u7684\u21924\u70b9\u3001\u61f8\u5ff5\u21920\u70b9",
+  intent: "\u4e8b\u696d\u304c\u9577\u671f\u7684\u306b\u7a3c\u304e\u7d9a\u3051\u3089\u308c\u308b\u304b\u3092AI\u304c\u5224\u5b9a\u3057\u307e\u3059",
+};
 
 const UNLOCK_PASSWORD = "tenbagger2024";
 const STORAGE_KEY = "tenbagger_unlocked";
@@ -784,7 +796,8 @@ export default function Home() {
                           <div className="flex items-center gap-2">
                             <span className="flex items-center gap-0.5 w-28 text-xs shrink-0">
                               {LABEL_AI_TREND}
-                            </span>
+                            
+                    <IndicatorTooltip content={TOOLTIP_AI_TREND} /></span>
                             <div className="flex-1 h-1.5 rounded-full bg-[#e5e0d8] overflow-hidden">
                               <div
                                 className="h-full rounded-full bg-purple-400"
@@ -797,7 +810,8 @@ export default function Home() {
                           <div className="flex items-center gap-2">
                             <span className="flex items-center gap-0.5 w-28 text-xs shrink-0">
                               {LABEL_AI_QUALITY}
-                            </span>
+                            
+                    <IndicatorTooltip content={TOOLTIP_AI_QUALITY} /></span>
                             <div className="flex-1 h-1.5 rounded-full bg-[#e5e0d8] overflow-hidden">
                               <div
                                 className="h-full rounded-full bg-indigo-400"
