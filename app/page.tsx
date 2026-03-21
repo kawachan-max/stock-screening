@@ -632,7 +632,7 @@ export default function Home() {
                 <div
                   key={r.code}
                   id={`stock-${i}`}
-                  style={{ scrollMarginTop: "80px" }}
+                  style={{ scrollMarginTop: "120px" }}
                   className="rounded-xl border border-[#e5e0d8] bg-white p-3 shadow-sm transition-shadow hover:shadow-md sm:p-4"
                 >
                   <div className="flex flex-col items-stretch justify-between gap-3 sm:flex-row sm:flex-wrap sm:items-start">
