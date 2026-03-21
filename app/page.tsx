@@ -324,11 +324,11 @@ const RISK_CHECK_TOOLTIPS: Record<keyof NonNullable<Row["risk_checks"]>, Tooltip
 
 const RISK_CHECK_ITEMS_FINANCE: { key: string; label: string; inverted: boolean }[] = [
   { key: "roe_15_percent", label: "ROE 15%\u4ee5\u4e0a\u306e\u7d99\u7d9a", inverted: false },
-  { key: "capital_adequacy", label: "\u81ea\u5df1\u8cc7\u672c\u6bd4\u7387 8%\u4ee5\u4e0a", inverted: false },
-  { key: "dividend_stability", label: "\u914d\u5f53\u306e\u5b89\u5b9a\u6027", inverted: false },
   { key: "profit_stability", label: "\u5229\u76ca\u306e\u5b89\u5b9a\u6027", inverted: false },
-  { key: "revenue_diversity", label: "\u53ce\u76ca\u6e90\u306e\u5206\u6563", inverted: false },
+  { key: "dividend_stability", label: "\u914d\u5f53\u306e\u5b89\u5b9a\u6027", inverted: false },
+  { key: "one_time_profit_risk", label: "\u4e00\u904e\u6027\u5229\u76ca\u4f9d\u5b58", inverted: true },
   { key: "liquidity_risk", label: "\u51fa\u6765\u9ad8\uff08\u6d41\u52d5\u6027\uff09", inverted: true },
+  { key: "financial_health", label: "\u8ca1\u52d9\u5065\u5168\u6027", inverted: false },
 ];
 
 const RISK_CHECK_TOOLTIPS_FINANCE: Record<string, TooltipContent> = {
@@ -338,31 +338,31 @@ const RISK_CHECK_TOOLTIPS_FINANCE: Record<string, TooltipContent> = {
     formula: "",
     intent: "",
   },
-  capital_adequacy: {
-    title: "\u81ea\u5df1\u8cc7\u672c\u6bd4\u7387 8\uff05\u4ee5\u4e0a",
-    desc: "\u9280\u884cBIS\u7b49\u3092\u53c2\u8003\u306b\u3001\u81ea\u5df1\u8cc7\u672c\u6bd4\u73878\uff05\u672a\u6e80\u306f\u8981\u6ce8\u610f",
-    formula: "\u81ea\u5df1\u8cc7\u672c \u00f7 \u7dcf\u8cc7\u7523 \u00d7 100",
-    intent: "",
-  },
-  dividend_stability: {
-    title: "\u914d\u5f53\u306e\u5b89\u5b9a\u6027",
-    desc: "\u904e\u53bb4\u671f\u306e\u5e74\u9593\u914d\u5f53\u304c3\u9023\u7d9a\u53b3\u683c\u6e1b\u5c11\u3067\u306a\u3044\u304b",
-    formula: "",
-    intent: "",
-  },
   profit_stability: {
     title: "\u5229\u76ca\u306e\u5b89\u5b9a\u6027",
     desc: "\u6700\u65b03\u671f\u306e\u55b6\u696d\u5229\u76ca\u304c\u3059\u3079\u3066\u30d7\u30e9\u30b9\u304b",
     formula: "",
     intent: "",
   },
-  revenue_diversity: {
-    title: "\u53ce\u76ca\u6e90\u306e\u5206\u6563",
-    desc: "\u55b6\u696d\u5229\u76ca\u3068\u7d20\u5229\u76ca\u306e\u5dee\u304c\u5927\u304d\u3059\u304e\u306a\u3044\u304b\uff0850\uff05\u672a\u6e80\uff09",
+  dividend_stability: {
+    title: "\u914d\u5f53\u306e\u5b89\u5b9a\u6027",
+    desc: "\u5e74\u9593\u914d\u5f53\u306e\u6700\u65b0\u5e74\u304c\u524d\u5e74\u672a\u6e80\u306b\u6e1b\u914d\u3057\u3066\u3044\u306a\u3044\u304b\uff08\u53d6\u5f97\u4e0d\u53ef\u6642\u306f\u8981\u6ce8\u610f\u5916\uff09",
+    formula: "",
+    intent: "",
+  },
+  one_time_profit_risk: {
+    title: "\u4e00\u904e\u6027\u5229\u76ca\u4f9d\u5b58",
+    desc: "\u55b6\u696d\u5229\u76ca\u3068\u7d20\u5229\u76ca\u306e\u5dee\uff08\u5f62\u614b\u7387\uff09\u304c50\uff05\u672a\u6e80\u3067\u3001\u4e00\u904e\u6027\u5229\u76ca\u4f9d\u5b58\u3067\u306a\u3044\u304b",
     formula: "",
     intent: "",
   },
   liquidity_risk: RISK_CHECK_TOOLTIPS.liquidity_risk,
+  financial_health: {
+    title: "\u8ca1\u52d9\u5065\u5168\u6027",
+    desc: "\u81ea\u5df1\u8cc7\u672c\u6bd4\u73875\uff05\u4ee5\u4e0a\uff08\u9280\u884c8\uff05\u7406\u60f3\u3092\u53c2\u8003\u3057\u4e0d\u52d5\u7523\u542b\u30815\uff05\u7de9\u548c\uff09",
+    formula: "\u81ea\u5df1\u8cc7\u672c \u00f7 \u7dcf\u8cc7\u7523 \u00d7 100",
+    intent: "",
+  },
 };
 const DASH = "\u2014";
 
@@ -416,9 +416,10 @@ type Row = {
     fcf_stability?: boolean | null;
     liquidity_risk?: boolean | null;
     one_time_profit_risk?: boolean | null;
-    capital_adequacy?: boolean | null;
     dividend_stability?: boolean | null;
     profit_stability?: boolean | null;
+    financial_health?: boolean | null;
+    capital_adequacy?: boolean | null;
     revenue_diversity?: boolean | null;
   } | null;
   tab?: "general" | "finance";

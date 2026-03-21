@@ -1512,27 +1512,29 @@ def calc_score_finance(row):
         return bool(val) is False
 
     bad_roe = is_bad("roe_15_percent", inverted=False)
-    bad_capital = is_bad("capital_adequacy", inverted=False)
-    bad_dividend = is_bad("dividend_stability", inverted=False)
     bad_profit_stab = is_bad("profit_stability", inverted=False)
-    bad_revenue_div = is_bad("revenue_diversity", inverted=False)
+    bad_dividend = is_bad("dividend_stability", inverted=False)
+    bad_one_time = is_bad("one_time_profit_risk", inverted=True)
     bad_liquidity = is_bad("liquidity_risk", inverted=True)
+    bad_financial = is_bad("financial_health", inverted=False)
 
     individual = 0
     if bad_roe:
         individual -= 2
-    if bad_capital:
-        individual -= 3
-    if bad_dividend:
-        individual -= 4
     if bad_profit_stab:
         individual -= 4
-    if bad_revenue_div:
+    if bad_dividend:
+        individual -= 4
+    if bad_one_time:
         individual -= 4
     if bad_liquidity:
         individual -= 3
+    if bad_financial:
+        individual -= 3
 
-    xcount = sum([bad_roe, bad_capital, bad_dividend, bad_profit_stab, bad_revenue_div, bad_liquidity])
+    xcount = sum(
+        [bad_roe, bad_profit_stab, bad_dividend, bad_one_time, bad_liquidity, bad_financial]
+    )
     if xcount <= 2:
         additional = 0
     elif xcount == 3:
@@ -1605,11 +1607,11 @@ AI_RISK_KEYS = [
 
 FINANCE_AI_RISK_KEYS = [
     "roe_15_percent",
-    "capital_adequacy",
-    "dividend_stability",
     "profit_stability",
-    "revenue_diversity",
+    "dividend_stability",
+    "one_time_profit_risk",
     "liquidity_risk",
+    "financial_health",
 ]
 
 
@@ -1622,41 +1624,38 @@ def _default_finance_risk_checks():
 
 
 def _finance_dividend_stability_ok(ticker):
-    """\u914d\u5f53\u306e\u5b89\u5b9a\u6027: 4\u671f\u5206\u306e\u5e74\u9593\u914d\u5f53\u304c3\u9023\u7d9a\u53b3\u683c\u6e1b\u5c11\u3067\u306a\u3044\u3002\u53d6\u5f97\u4e0d\u53ef\u306fTrue\u3002"""
+    """\u914d\u5f53\u306e\u5b89\u5b9a\u6027: \u76f4\u8fd1\u5e74\u9593\u914d\u5f53\u304c\u524d\u5e74\u4ee5\u4e0b\u306b\u6e1b\u3063\u3066\u3044\u306a\u3044\u3002\u53d6\u5f97\u4e0d\u53ef\u306fTrue\u3002"""
     try:
         divs = getattr(ticker, "dividends", None)
-        if divs is None or not hasattr(divs, "resample") or len(divs) < 5:
+        if divs is None or not hasattr(divs, "resample") or len(divs) < 2:
             return True
-        annual = divs.resample("Y").sum()
-        if annual is None or len(annual) < 4:
+        try:
+            annual = divs.resample("YE").sum()
+        except Exception:
+            annual = divs.resample("Y").sum()
+        if annual is None or len(annual) < 2:
             return True
-        vals = []
-        for x in annual.iloc[-4:].tolist():
-            try:
-                fx = float(x)
-                if math.isnan(fx):
-                    return True
-                vals.append(fx)
-            except (TypeError, ValueError):
-                return True
-        if len(vals) < 4:
+        try:
+            last = float(annual.iloc[-1])
+            prev = float(annual.iloc[-2])
+        except (TypeError, ValueError, IndexError):
             return True
-        a, b, c, d = vals[0], vals[1], vals[2], vals[3]
-        three_strict_cuts = a > b and b > c and c > d
-        return not three_strict_cuts
+        if math.isnan(last) or math.isnan(prev):
+            return True
+        return last >= prev
     except Exception:
         return True
 
 
 def compute_finance_programmatic_risk_checks(row, ticker):
-    """\u91d1\u878d\u30bf\u30d6\u7528\u30ea\u30b9\u30af\uff084\u9805\u76ee\uff09\u3092\u30c7\u30fc\u30bf\u304b\u3089\u7b97\u51fa\u3002"""
+    """\u91d1\u878d\u30bf\u30d6\u7528\u30ea\u30b9\u30af\uff084\u9805\u76ee\uff09\u3092\u30d7\u30ed\u30b0\u30e9\u30e0\u8a08\u7b97\u3002"""
     out = {}
     er = row.get("equity_ratio")
     try:
         if er is not None:
-            out["capital_adequacy"] = float(er) >= 8.0
+            out["financial_health"] = float(er) >= 5.0
     except (TypeError, ValueError):
-        out["capital_adequacy"] = None
+        out["financial_health"] = None
 
     out["dividend_stability"] = _finance_dividend_stability_ok(ticker)
 
@@ -1681,17 +1680,17 @@ def compute_finance_programmatic_risk_checks(row, ticker):
             np0 = float(al[0].get("NP") or 0)
             denom = max(abs(op0), abs(np0), 1e-9)
             gap = abs(op0 - np0) / denom
-            out["revenue_diversity"] = gap < 0.5
+            out["one_time_profit_risk"] = gap >= 0.5
         except (TypeError, ValueError):
-            out["revenue_diversity"] = True
+            out["one_time_profit_risk"] = False
     else:
-        out["revenue_diversity"] = True
+        out["one_time_profit_risk"] = False
 
     return out
 
 
 def finalize_finance_risk_checks(row, ticker):
-    """AI\uff082\u9805\u76ee\uff09\u3068\u30d7\u30ed\u30b0\u30e9\u30e0\uff084\u9805\u76ee\uff09\u3092\u7d50\u5408\u3057\u3066row[\u0022risk_checks\u0022]\u3092\u5b8c\u6210\u3002"""
+    """AI\uff082\u9805\u76ee\uff09\u3068\u30d7\u30ed\u30b0\u30e9\u30e0\uff084\u9805\u76ee\uff09\u3092\u7d50\u5408\u3057\u30666\u9805\u76ee\u306erisk_checks\u3092\u5b8c\u6210\u3002"""
     prog = compute_finance_programmatic_risk_checks(row, ticker)
     ai_rc = row.get("risk_checks") or {}
     out = _default_finance_risk_checks()
@@ -2058,6 +2057,8 @@ def step5_save_finance(results):
             nc_rounded = round(float(nc_raw), 2)
         except (TypeError, ValueError):
             nc_rounded = 0.0
+        rc_src = r.get("risk_checks") or {}
+        risk_checks_out = {k: rc_src.get(k) for k in FINANCE_AI_RISK_KEYS}
         out.append({
             "code": r["code"],
             "name": base_name,
@@ -2079,9 +2080,9 @@ def step5_save_finance(results):
             "roe": r.get("roe"),
             "roic": r.get("roic"),
             "pbr": r.get("pbr"),
-            "equity_ratio": r.get("equity_ratio", 0),
+            "equity_ratio": round(float(r.get("equity_ratio") or 0), 2),
             "ai_comment": r.get("ai_comment", ""),
-            "risk_checks": r.get("risk_checks"),
+            "risk_checks": risk_checks_out,
             "trend_score": r.get("trend_score", 0),
             "quality_score": r.get("quality_score", 0),
             "chart_signals": r.get("chart_signals", {}),
