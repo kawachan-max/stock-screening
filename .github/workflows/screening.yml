@@ -2,8 +2,7 @@ name: Daily Stock Screening
 
 on:
   schedule:
-    - cron: '0 12 * * 1-5' # Mon-Fri JST 21:00
-    - cron: '0 12 15 * *' # Monthly 15th JST 21:00 (full AI)
+    - cron: '0 12 * * 1-5' # Mon-Fri UTC 12:00 (data daily; AI Mon & Thu only)
   workflow_dispatch:
 
 permissions:
@@ -26,11 +25,15 @@ jobs:
       - name: Install dependencies
         run: pip install yfinance pandas requests openpyxl xlrd anthropic python-dotenv
 
+      - name: Get day of week
+        id: get-day
+        run: echo "day=$(date -u +%A)" >> $GITHUB_OUTPUT
+
       - name: Run screening
         working-directory: screening-ui
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
-          SKIP_AI: ${{ github.event.schedule == '0 12 15 * *' && 'false' || 'true' }}
+          SKIP_AI: ${{ contains(fromJSON('["Monday","Thursday"]'), steps.get-day.outputs.day) && 'false' || 'true' }}
         run: python screening.py
 
       - name: Copy result to public
