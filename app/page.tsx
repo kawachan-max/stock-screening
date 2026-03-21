@@ -123,9 +123,10 @@ const TOOLTIP_AI_QUALITY: TooltipContent = {
 };
 
 const TOOLTIP_CHEAP_SCORE_FINANCE: TooltipContent = {
-  title: "\u5272\u5b89\u5ea6\u30b9\u30b3\u30a2\uff08\u6700\u592725\u70b9\uff09",
+  title: "\u5272\u5b89\u5ea6\u30b9\u30b3\u30a2\uff08\u6700\u592735\u70b9\uff09",
   desc: "PBR\u3068PER\u3067\u5272\u5b89\u5ea6\u3092\u8a55\u4fa1\uff08\u91d1\u878d\u30fb\u4e0d\u52d5\u7523\u5411\u3051\uff09",
-  formula: "PBR\u30b9\u30b3\u30a2\uff08\u6700\u592720\u70b9\uff09\uff0bPER\u30b9\u30b3\u30a2\uff08\u6700\u59275\u70b9\uff09",
+  formula:
+    "PBR<0.5=30\u30010.5\u301c0.8=24\u30010.8\u301c1.0=18\u30011.0\u301c1.2=8\u30011.2\u301c1.5=3\u30011.5+=0\u3001PER<8=5\u30018\u301c12=3\u300112\u301c20=1\u300120+=0",
   intent: "\u91d1\u878d\u30fb\u4e0d\u52d5\u7523\u306f\u8ca1\u52d9\u69cb\u9020\u304c\u7570\u306a\u308b\u305f\u3081PBR\u3092\u91cd\u8996",
 };
 
@@ -137,17 +138,32 @@ const TOOLTIP_GROWTH_SCORE_FINANCE: TooltipContent = {
 };
 
 const TOOLTIP_AI_TREND_FINANCE: TooltipContent = {
-  title: "AI\u696d\u7e3e\u5206\u6790\uff08\u6700\u592715\u70b9\uff09",
-  desc: "\u6700\u592715\u70b9\uff08\u5229\u76ca\u306e\u5b89\u5b9a\u6027\u30fb\u91d1\u5229\u5f71\u97ff\u30fb\u53ce\u76ca\u306e\u8cea\u3092\u91cd\u8996\uff09",
-  formula: "AI\u304c\u696d\u7e3e\u30c8\u30ec\u30f3\u30c9\u30920\u301c15\u3067\u8a55\u4fa1",
+  title: "AI\u696d\u7e3e\u5206\u6790\uff08\u6700\u592710\u70b9\uff09",
+  desc: "\u6700\u592710\u70b9\uff08\u5229\u76ca\u306e\u5b89\u5b9a\u6027\u30fb\u91d1\u5229\u5f71\u97ff\u30fb\u53ce\u76ca\u306e\u8cea\u3092\u91cd\u8996\uff09",
+  formula: "AI\u304c\u696d\u7e3e\u30c8\u30ec\u30f3\u30c9\u30920\u301c10\u3067\u8a55\u4fa1",
   intent: "\u91d1\u878d\u30fb\u4e0d\u52d5\u7523\u5411\u3051\u306b\u30d7\u30ed\u30f3\u30d7\u30c8\u3092\u5f37\u5316",
 };
 
 const TOOLTIP_AI_QUALITY_FINANCE: TooltipContent = {
-  title: "AI\u4e8b\u696d\u8a55\u4fa1\uff08\u6700\u592715\u70b9\uff09",
-  desc: "\u6700\u592715\u70b9\uff08\u4e8b\u696d\u306e\u7d99\u7d9a\u6027\u30fb\u8cc7\u672c\u653f\u7b56\u30fb\u9084\u5143\u59ff\u52e2\u3092\u91cd\u8996\uff09",
-  formula: "AI\u304c\u4e8b\u696d\u8cea\u30920\u301c15\u3067\u8a55\u4fa1",
+  title: "AI\u4e8b\u696d\u8a55\u4fa1\uff08\u6700\u592710\u70b9\uff09",
+  desc: "\u6700\u592710\u70b9\uff08\u4e8b\u696d\u306e\u7d99\u7d9a\u6027\u30fb\u8cc7\u672c\u653f\u7b56\u30fb\u9084\u5143\u59ff\u52e2\u3092\u91cd\u8996\uff09",
+  formula: "AI\u304c\u4e8b\u696d\u8cea\u30920\u301c10\u3067\u8a55\u4fa1",
   intent: "\u7d99\u7d9a\u6027\u30fb\u8fd4\u5143\u30fb\u8cc7\u672c\u653f\u7b56\u306e\u89b3\u70b9\u3092\u91cd\u8996",
+};
+
+const TOOLTIP_QUALITY_EARNINGS_FINANCE: TooltipContent = {
+  title: "\u8cea\u30fb\u6536\u76ca\u6027\uff08\u6700\u592720\u70b9\uff09",
+  desc: "ROE\u30fb\u55b6\u696d\u5229\u76ca\u5b89\u5b9a\u6027\u30fb\u914d\u5f53\u5b89\u5b9a\u6027\u30fb\u81ea\u5df1\u8cc7\u672c\u6bd4\u3067\u8a55\u4fa1",
+  formula:
+    "ROE5\u70b9+\u5229\u76ca\u5b895+\u914d\u5f535+\u81ea\u5df1\u8cc7\u672c5\u3001\u5897\u914d3\u9023\u7d9a=5\u6e1b\u914d\u306a\u3057=3\u6e1b\u914d=0\u7b49",
+  intent: "\u91d1\u878d\u30fb\u4e0d\u52d5\u7523\u306e\u8cea\u3068\u53ce\u76ca\u306e\u5b89\u5b9a\u6027",
+};
+
+const TOOLTIP_SHAREHOLDER_RETURN_FINANCE: TooltipContent = {
+  title: "\u682a\u4e3b\u9084\u5143\uff08\u6700\u592710\u70b9\uff09",
+  desc: "\u914d\u5f53\u5229\u56de\u308a\u30fb\u914d\u5f53\u6027\u5411\u30fb\u9084\u5143\u59ff\u52e2\uff08\u5897\u914d\u30fb\u8cb7\u5c3d\u7b49\uff09",
+  formula: "\u5229\u56de\u308a4+\u6027\u54113+\u59ff\u52e23\u3001\u7121\u914d\u6642\u6027\u5411\u306f0",
+  intent: "\u682a\u4e3b\u3078\u306e\u8fd4\u3057\u306e\u5145\u5b9f\u5ea6",
 };
 
 const TAB_GENERAL = "\u4e00\u822c\u4e8b\u696d\u4f1a\u793e";
@@ -264,6 +280,8 @@ const LABEL_GROWTH_SHORT = "\u6210\u9577";
 const LABEL_QUALITY_DETAIL = "\u53CE\u76CA\u6027";
 const LABEL_BONUS = "\u30DC\u30FC\u30CA\u30B9";
 const LABEL_SHAREHOLDER = "\u682A\u4E3B\u9084\u5143\u4F59\u5730";
+const LABEL_QUALITY_EARNINGS_FINANCE = "\u8cea\u30fb\u6536\u76ca\u6027";
+const LABEL_SHAREHOLDER_RETURN_FINANCE = "\u682a\u4e3b\u9084\u5143\u4f59\u5730";
 const LABEL_AI_TREND = "AI\u696d\u7e3e\u5206\u6790";
 const LABEL_AI_QUALITY = "AI\u7af6\u4e89\u512a\u4f4d\u6027";
 const LABEL_RISK = "\u30EA\u30B9\u30AF\u51CF\u70B9";
@@ -549,16 +567,9 @@ function getGradeFromAIScore(s: number): GradeKey {
 }
 
 function getFinanceValuationBadge(v: number): GradeKey {
-  if (v >= 20) return "excellent";
-  if (v >= 14) return "good";
-  if (v >= 7) return "fair";
-  return "poor";
-}
-
-function getGradeFromGrowthScoreFinance(s: number): GradeKey {
-  if (s >= 12) return "excellent";
-  if (s >= 8) return "good";
-  if (s >= 4) return "fair";
+  if (v >= 28) return "excellent";
+  if (v >= 20) return "good";
+  if (v >= 12) return "fair";
   return "poor";
 }
 
@@ -773,9 +784,10 @@ export default function Home() {
         <div className="space-y-3">
           {rows.map((r, i) => {
               const isFinance = screeningTab === "finance";
-              const maxCheap = isFinance ? 25 : 30;
-              const maxGrowth = isFinance ? 15 : 20;
-              const maxAi = isFinance ? 15 : 10;
+              const maxCheap = isFinance ? 35 : 30;
+              const maxGrowth = 20;
+              const maxAi = 10;
+              const maxQualityDetail = isFinance ? 20 : 15;
               const valuationScore = isFinance
                 ? (r.valuation_score ?? 0)
                 : (r.valuation_score ?? getCheapScore(r.net_cash_ratio, r.per));
@@ -783,20 +795,25 @@ export default function Home() {
                 ? getFinanceValuationBadge(r.valuation_score ?? 0)
                 : getCheapBadge(valuationScore);
               const growthScore = r.growth_score ?? (r.score - valuationScore);
-              const growthBadge =
-                r.growth_score != null
-                  ? isFinance
-                    ? getGradeFromGrowthScoreFinance(r.growth_score)
-                    : getGradeFromGrowthScore(r.growth_score)
-                  : isFinance
-                    ? getGradeFromGrowthScoreFinance(
-                        Math.min(15, Math.max(0, growthScore)),
-                      )
-                    : getGrowthBadge(r.score, valuationScore);
+              const growthBadge = isFinance
+                ? "fair"
+                : r.growth_score != null
+                  ? getGradeFromGrowthScore(r.growth_score)
+                  : getGrowthBadge(r.score, valuationScore);
               const tipCheap = isFinance ? TOOLTIP_CHEAP_SCORE_FINANCE : TOOLTIP_CHEAP_SCORE;
               const tipGrowth = isFinance ? TOOLTIP_GROWTH_SCORE_FINANCE : TOOLTIP_GROWTH_SCORE;
               const tipAiTrend = isFinance ? TOOLTIP_AI_TREND_FINANCE : TOOLTIP_AI_TREND;
               const tipAiQuality = isFinance ? TOOLTIP_AI_QUALITY_FINANCE : TOOLTIP_AI_QUALITY;
+              const tipQualityBreakdown = isFinance
+                ? TOOLTIP_QUALITY_EARNINGS_FINANCE
+                : TOOLTIP_QUALITY_DETAIL;
+              const labelQualityBreakdown = isFinance ? LABEL_QUALITY_EARNINGS_FINANCE : LABEL_QUALITY_DETAIL;
+              const tipShareholderBreakdown = isFinance
+                ? TOOLTIP_SHAREHOLDER_RETURN_FINANCE
+                : TOOLTIP_SHAREHOLDER_SCORE;
+              const labelShareholderBreakdown = isFinance
+                ? LABEL_SHAREHOLDER_RETURN_FINANCE
+                : LABEL_SHAREHOLDER;
               const isExpanded = expandedCode === r.code;
               return (
                 <div
@@ -892,12 +909,17 @@ export default function Home() {
                             {GRADE_LABELS[cheapBadge]}
                           </span>
                         </span>
-                        <span className="inline-flex items-center gap-1">
-                          <span className="text-[10px] text-gray-400 sm:text-xs">{LABEL_GROWTH_SHORT}</span>
-                          <span className={`rounded px-1.5 py-0.5 text-[10px] font-medium sm:text-xs ${getBadgeClass(growthBadge)}`} title={LABEL_GROWTH}>
-                            {GRADE_LABELS[growthBadge]}
+                        {!isFinance ? (
+                          <span className="inline-flex items-center gap-1">
+                            <span className="text-[10px] text-gray-400 sm:text-xs">{LABEL_GROWTH_SHORT}</span>
+                            <span
+                              className={`rounded px-1.5 py-0.5 text-[10px] font-medium sm:text-xs ${getBadgeClass(growthBadge)}`}
+                              title={LABEL_GROWTH}
+                            >
+                              {GRADE_LABELS[growthBadge]}
+                            </span>
                           </span>
-                        </span>
+                        ) : null}
                       </div>
                     </div>
                   </div>
@@ -965,36 +987,45 @@ export default function Home() {
                             </span>
                           </div>
 
-                          <div className="flex items-center gap-2">
-                            <span className="flex items-center gap-0.5 w-28 text-xs shrink-0">
-                              {LABEL_GROWTH}
-                              <IndicatorTooltip content={tipGrowth} />
-                            </span>
-                            <div className="flex-1 h-1.5 rounded-full bg-[#e5e0d8] overflow-hidden">
-                              <div
-                                className="h-full rounded-full bg-blue-500"
-                                style={{
-                                  width: `${Math.min(100, ((r.growth_score ?? growthScore) / maxGrowth) * 100)}%`,
-                                }}
-                              />
+                          {!isFinance ? (
+                            <div className="flex items-center gap-2">
+                              <span className="flex items-center gap-0.5 w-28 text-xs shrink-0">
+                                {LABEL_GROWTH}
+                                <IndicatorTooltip content={tipGrowth} />
+                              </span>
+                              <div className="flex-1 h-1.5 rounded-full bg-[#e5e0d8] overflow-hidden">
+                                <div
+                                  className="h-full rounded-full bg-blue-500"
+                                  style={{
+                                    width: `${Math.min(100, ((r.growth_score ?? growthScore) / maxGrowth) * 100)}%`,
+                                  }}
+                                />
+                              </div>
+                              <span className="text-xs tabular-nums w-12 shrink-0">
+                                {(r.growth_score ?? growthScore)}/{maxGrowth}
+                              </span>
                             </div>
-                            <span className="text-xs tabular-nums w-12 shrink-0">
-                              {(r.growth_score ?? growthScore)}/{maxGrowth}
-                            </span>
-                          </div>
+                          ) : null}
 
                           <div className="flex items-center gap-2">
                             <span className="flex items-center gap-0.5 w-28 text-xs shrink-0">
-                              {LABEL_QUALITY_DETAIL}
-                              <IndicatorTooltip content={TOOLTIP_QUALITY_DETAIL} />
+                              {labelQualityBreakdown}
+                              <IndicatorTooltip content={tipQualityBreakdown} />
                             </span>
                             <div className="flex-1 h-1.5 rounded-full bg-[#e5e0d8] overflow-hidden">
                               <div
                                 className="h-full rounded-full bg-cyan-500"
-                                style={{ width: `${Math.min(100, ((r.quality_score_detail ?? 0) / 15) * 100)}%` }}
+                                style={{
+                                  width: `${Math.min(
+                                    100,
+                                    ((r.quality_score_detail ?? 0) / maxQualityDetail) * 100,
+                                  )}%`,
+                                }}
                               />
                             </div>
-                            <span className="text-xs tabular-nums w-10">{r.quality_score_detail ?? 0}/15</span>
+                            <span className="text-xs tabular-nums w-10">
+                              {r.quality_score_detail ?? 0}/{maxQualityDetail}
+                            </span>
                           </div>
 
                           <div className="flex items-center gap-2">
@@ -1035,8 +1066,8 @@ export default function Home() {
 
                           <div className="flex items-center gap-2">
                             <span className="flex items-center gap-0.5 w-28 text-xs shrink-0">
-                              {LABEL_SHAREHOLDER}
-                              <IndicatorTooltip content={TOOLTIP_SHAREHOLDER_SCORE} />
+                              {labelShareholderBreakdown}
+                              <IndicatorTooltip content={tipShareholderBreakdown} />
                             </span>
                             <div className="flex-1 h-1.5 rounded-full bg-[#e5e0d8] overflow-hidden">
                               <div
