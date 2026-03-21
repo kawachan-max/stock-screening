@@ -166,7 +166,7 @@ const TOOLTIP_SHAREHOLDER_RETURN_FINANCE: TooltipContent = {
   intent: "\u682a\u4e3b\u3078\u306e\u8fd4\u3057\u306e\u5145\u5b9f\u5ea6",
 };
 
-const TAB_GENERAL = "\u4e00\u822c\u4e8b\u696d\u4f1a\u793e";
+const TAB_GENERAL = "\u901a\u5e38\u92d8\u67c4";
 const TAB_FINANCE = "\u91d1\u878d\u30fb\u4e0d\u52d5\u7523";
 
 const UNLOCK_PASSWORD = "tenbagger2024";
