@@ -251,15 +251,15 @@ def step2_first_filter(stocks_df):
                 nm = rows["name"].values[0] if len(rows) else ""
             if not nm:
                 nm = code
-            # dividend_yield: 配当利回り（%）= info["dividendYield"] * 100
+            # dividend_yield: yfinance info["dividendYield"] is already % (e.g. 3.45); do not *100
             raw_div = info.get("dividendYield", 0)
             try:
-                v = float(raw_div)
-                if math.isnan(v):
-                    v = 0
+                raw_div = float(raw_div)
+                if math.isnan(raw_div):
+                    raw_div = 0.0
             except Exception:
-                v = 0
-            div_yield = round(v * 100, 2)
+                raw_div = 0.0
+            div_yield = round(raw_div, 2)
 
             # chart_signals: 1y/week で簡易トレンド判定
             chart_signals = {
