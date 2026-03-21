@@ -34,6 +34,10 @@ MAX_MARKET_CAP = 50_000_000_000  # 500?E?E
 MAX_PER = 10.0
 MIN_NET_CASH_RATIO = 1.0
 
+# Tab2 finance / real estate (JPX 33-sector names, same strings as EXCLUDE_SECTORS)
+MAX_MARKET_CAP_FINANCE = 500_000_000_000  # 5000\u5104\u5186
+MAX_PER_FINANCE = 30.0
+
 EXCLUDE_SECTORS = [
     "\u9280\u884C\u696D", "\u4FDD\u967A\u696D",
     "\u8A3C\u5238\u3001\u5546\u54C1\u5148\u7269\u53D6\u5F15\u696D", "\u305D\u306E\u4ED6\u91D1\u878D\u696D", "\u4E0D\u52D5\u7523\u696D",
@@ -176,6 +180,67 @@ def step1_get_list_from_jpx():
     return df
 
 
+def step1_get_finance_list_from_jpx():
+    """JPX XLS: 33-sector column; keep only bank/insurance/securities/real estate/other finance."""
+    print("Step1 (finance): JPX list (finance sectors)...")
+    global JPX_NAME_MAP
+    try:
+        r = requests.get(JPX_LIST_URL, timeout=30)
+        r.raise_for_status()
+    except Exception as e:
+        print(f"  JPX download failed: {e}")
+        return pd.DataFrame(columns=["code", "name", "market", "sector"])
+    content = BytesIO(r.content)
+    df = None
+    for engine in ["xlrd", "openpyxl"]:
+        try:
+            df = pd.read_excel(content, engine=engine)
+            break
+        except Exception:
+            content.seek(0)
+            continue
+    if df is None or df.empty or df.shape[1] < 6:
+        print("  JPX XLS invalid for finance list")
+        return pd.DataFrame(columns=["code", "name", "market", "sector"])
+    df = pd.DataFrame({
+        "code": df.iloc[:, 1],
+        "name": df.iloc[:, 2],
+        "market": df.iloc[:, 3],
+        "sector": df.iloc[:, 5],
+    })
+
+    def to_code(x):
+        try:
+            n = int(float(x))
+            return str(n).zfill(4)
+        except Exception:
+            s = str(x).strip()
+            return "".join(c for c in s if c.isdigit()).zfill(4)[:4]
+
+    df["code"] = df["code"].apply(to_code)
+    df = df[df["code"].str.len() >= 4]
+    df = df[df["code"].str.match(r"^[1-9]\d{3}$")]
+    df = df.drop_duplicates(subset=["code"], keep="first")
+    df = df.sort_values("code", ascending=False).reset_index(drop=True)
+    m = df["market"].astype(str)
+    m_prime = m.str.contains("\u30D7\u30E9\u30A4\u30E0", na=False, regex=False)
+    m_std = m.str.contains("\u30B9\u30BF\u30F3\u30C0\u30FC\u30C9", na=False, regex=False)
+    m_growth = m.str.contains("\u30B0\u30ED\u30FC\u30B9", na=False, regex=False)
+    df = df[(m_prime | m_std | m_growth)].copy()
+    s = df["sector"].astype(str)
+    include_mask = s.str.contains(EXCLUDE_SECTORS[0], na=False, regex=False)
+    for exc in EXCLUDE_SECTORS[1:]:
+        include_mask = include_mask | s.str.contains(exc, na=False, regex=False)
+    df = df.loc[include_mask].copy()
+    print(f"  finance sector rows: {len(df)}")
+    for _, row in df.iterrows():
+        c = str(row["code"]).strip()
+        nm = str(row.get("name", "") or "").strip()
+        if c and nm:
+            JPX_NAME_MAP[c] = nm
+    return df
+
+
 def _market_label_for_code(stocks_df, code):
     """JPX XLS market column joined by stock code (\u5e02\u5834\u30fb\u5546\u54c1\u533a\u5206)."""
     if stocks_df is None or "market" not in stocks_df.columns:
@@ -312,6 +377,112 @@ def step2_first_filter(stocks_df):
                 print(f"    ??? {code}: {e}", flush=True)
             continue
     print(f"  ????: {len(first_pass)} ??")
+    return first_pass
+
+
+def step2_first_filter_finance(stocks_df):
+    print("Step2 (finance): first filter (PBR focus tab)...")
+    codes = stocks_df["code"].tolist()
+    if TEST_LIMIT > 0:
+        codes = codes[:TEST_LIMIT]
+    first_pass = []
+    total = len(codes)
+    for i, code in enumerate(codes):
+        progress_interval = 10 if TEST_LIMIT > 0 else 100
+        if (i + 1) % progress_interval == 0 or (i + 1) == total:
+            print(f"  progress {i+1}/{total} passed {len(first_pass)}", flush=True)
+        time.sleep(SLEEP_SEC)
+        try:
+            ticker = yf.Ticker(f"{code}.T")
+            info = ticker.info or {}
+            price = info.get("currentPrice") or info.get("regularMarketPrice")
+            if price is None or (isinstance(price, float) and math.isnan(price)) or float(price) <= 0:
+                continue
+            price = float(price)
+            market_cap = info.get("marketCap")
+            if market_cap is None or (isinstance(market_cap, float) and math.isnan(market_cap)):
+                continue
+            market_cap = float(market_cap)
+            if market_cap < MIN_MARKET_CAP or market_cap > MAX_MARKET_CAP_FINANCE:
+                continue
+            pe = info.get("trailingPE")
+            if pe is None or (isinstance(pe, float) and math.isnan(pe)):
+                continue
+            per = float(pe)
+            if not per or per <= 0 or per > MAX_PER_FINANCE:
+                continue
+            eps = info.get("trailingEps")
+            if eps is None:
+                eps = price / per if per else 0
+            try:
+                fin = ticker.financials
+                if fin is not None and not fin.empty and "Net Income" in fin.index:
+                    net_income = fin.loc["Net Income"].iloc[0]
+                    if net_income is not None and not (isinstance(net_income, float) and math.isnan(net_income)):
+                        if float(net_income) <= 0:
+                            continue
+            except Exception:
+                pass
+            nm = info.get("shortName") or ""
+            if not nm and "name" in stocks_df.columns:
+                rows = stocks_df[stocks_df["code"] == code]
+                nm = rows["name"].values[0] if len(rows) else ""
+            if not nm:
+                nm = code
+            raw_div = info.get("dividendYield", 0)
+            try:
+                raw_div = float(raw_div)
+                if math.isnan(raw_div):
+                    raw_div = 0.0
+            except Exception:
+                raw_div = 0.0
+            div_yield = round(raw_div, 2)
+            chart_signals = {
+                "volume_surge": False,
+                "above_ma": False,
+                "near_high": False,
+            }
+            try:
+                hist = ticker.history(period="1y", interval="1wk")
+                if hist is not None and not hist.empty and "Volume" in hist.columns and "Close" in hist.columns:
+                    vol = hist["Volume"].dropna()
+                    close = hist["Close"].dropna()
+                    if len(vol) >= 21:
+                        latest_vol = float(vol.iloc[-1])
+                        avg20 = float(vol.iloc[-21:-1].mean())
+                        if avg20 > 0 and latest_vol >= 2 * avg20:
+                            chart_signals["volume_surge"] = True
+                    if len(close) >= 13:
+                        latest_close = float(close.iloc[-1])
+                        ma13 = float(close.rolling(window=13).mean().iloc[-1])
+                        if ma13 > 0 and latest_close > ma13:
+                            chart_signals["above_ma"] = True
+                    if len(close) >= 52:
+                        latest_close = float(close.iloc[-1])
+                        high52 = float(close.iloc[-52:].max())
+                        if high52 > 0 and latest_close >= 0.9 * high52:
+                            chart_signals["near_high"] = True
+            except Exception:
+                pass
+            website = info.get("website", "") or ""
+            jpx_market = _market_label_for_code(stocks_df, code)
+            first_pass.append({
+                "code": code,
+                "name": nm,
+                "price": price,
+                "market_cap": market_cap,
+                "per": per,
+                "eps": eps,
+                "info": info,
+                "dividend_yield": div_yield,
+                "website": website,
+                "market": jpx_market,
+                "chart_signals": chart_signals,
+                "screening_tab": "finance",
+            })
+        except Exception:
+            continue
+    print(f"  Step2 finance pass: {len(first_pass)}")
     return first_pass
 
 
@@ -661,6 +832,168 @@ def step3_detail_and_net_cash(first_pass):
     return second
 
 
+def step3_detail_finance(first_pass):
+    print("Step3 (finance): detail (no NC ratio gate)...")
+    second = []
+    total = len(first_pass)
+    for i, row in enumerate(first_pass):
+        progress_interval = 10 if TEST_LIMIT > 0 else 100
+        if (i + 1) % progress_interval == 0 or (i + 1) == total:
+            print(f"  progress {i+1}/{total} passed {len(second)}", flush=True)
+        time.sleep(SLEEP_SEC)
+        try:
+            code = row["code"]
+            ticker = yf.Ticker(f"{code}.T")
+            bs = get_balance_sheet(ticker)
+            if bs is None:
+                continue
+            nc = calc_net_cash_ratio(bs, row["market_cap"])
+            if nc is None:
+                nc = 0.0
+            annual_list = get_financials_3periods(ticker)
+            if not annual_list:
+                continue
+            np_latest = annual_list[0]["NP"]
+            np_val = float(np_latest) if np_latest is not None else 0
+            if np_val <= 0:
+                continue
+            fin = ticker.financials
+            info = row.get("info") or {}
+            bs_raw = ticker.balance_sheet
+            shareholder_score = calc_shareholder_score(ticker, info, bs_raw)
+            risk_penalty = calc_risk_penalty(ticker, info, fin, bs)
+            roe_pct, roic_pct = get_roe_roic(fin, bs)
+            raw_pr = info.get("payoutRatio", 0)
+            try:
+                v = float(raw_pr)
+                if math.isnan(v):
+                    v = 0
+            except Exception:
+                v = 0
+            payout_ratio = round(v * 100, 2)
+            pbr = info.get("priceToBook")
+            if pbr is not None and not (isinstance(pbr, float) and math.isnan(pbr)):
+                pbr = round(float(pbr), 2)
+            else:
+                pbr = None
+            cash_score = 0
+            policy_change_score = 1
+            bonus_operating_cf_3y = False
+            bonus_dividend_3y_increasing = False
+            try:
+                if bs_raw is not None and not bs_raw.empty and "Cash And Cash Equivalents" in bs_raw.index and bs_raw.shape[1] >= 2:
+                    c0 = _num(bs_raw.loc["Cash And Cash Equivalents"].iloc[0])
+                    c1 = _num(bs_raw.loc["Cash And Cash Equivalents"].iloc[1])
+                    if c1 and c1 != 0:
+                        if c0 > c1:
+                            cash_score = 3
+                        elif abs(c0 - c1) / abs(c1) <= 0.05:
+                            cash_score = 1
+                cashflow = getattr(ticker, "cashflow", None)
+                if cashflow is not None and not cashflow.empty:
+                    for key in (
+                        "Operating Cash Flow",
+                        "Net Cash Provided By Operating Activities",
+                        "NetCashProvidedByOperatingActivities",
+                    ):
+                        if key in cashflow.index:
+                            vals = cashflow.loc[key].iloc[:3].tolist()
+                            if len(vals) >= 3:
+                                ok = True
+                                for vv in vals:
+                                    try:
+                                        fvv = float(vv)
+                                        if math.isnan(fvv) or fvv <= 0:
+                                            ok = False
+                                            break
+                                    except Exception:
+                                        ok = False
+                                        break
+                                bonus_operating_cf_3y = ok
+                            break
+                divs = getattr(ticker, "dividends", None)
+                if divs is not None and hasattr(divs, "resample") and len(divs) >= 10:
+                    annual = divs.resample("Y").sum()
+                    if annual is not None and len(annual) >= 3:
+                        last3 = annual.iloc[-3:].tolist()
+                        try:
+                            a0 = float(last3[0])
+                            a1 = float(last3[1])
+                            a2 = float(last3[2])
+                            if a0 > 0 and a1 > 0 and a2 > 0 and a0 < a1 and a1 < a2:
+                                bonus_dividend_3y_increasing = True
+                        except Exception:
+                            pass
+                    div_inc = False
+                    div_maintain = False
+                    if annual is not None and len(annual) >= 2:
+                        prev = float(annual.iloc[-2])
+                        last = float(annual.iloc[-1])
+                        if prev > 0:
+                            chg = (last - prev) / abs(prev)
+                            if chg >= 0.01:
+                                div_inc = True
+                            elif abs(chg) <= 0.01:
+                                div_maintain = True
+                        else:
+                            div_inc = last > 0
+                    buyback = False
+                    try:
+                        cashflow2 = getattr(ticker, "cashflow", None)
+                        if cashflow2 is not None and not cashflow2.empty:
+                            for key in (
+                                "Repurchase Of Stock",
+                                "RepurchaseOfStock",
+                                "PaymentsForRepurchaseOfStock",
+                                "Stock BuyBack",
+                                "Repurchase Of Common Stock",
+                                "Repurchase Of Equity",
+                            ):
+                                if key in cashflow2.index:
+                                    vrep = cashflow2.loc[key].iloc[0]
+                                    fvp = float(vrep)
+                                    if not math.isnan(fvp) and fvp < 0:
+                                        buyback = True
+                                        break
+                    except Exception:
+                        pass
+                    if div_inc or buyback:
+                        policy_change_score = 2
+                    elif div_maintain and not buyback:
+                        policy_change_score = 1
+                    else:
+                        policy_change_score = 0
+            except Exception:
+                pass
+            r = dict(row)
+            r["yf_bs"] = bs
+            r["net_cash_ratio"] = nc
+            r["annual_list"] = annual_list
+            r["sales"] = annual_list[0]["Sales"]
+            r["op"] = annual_list[0]["OP"]
+            r["np"] = np_latest
+            r["eq"] = bs["eq"]
+            r["ta"] = bs["ta"]
+            r["odp"] = r["np"]
+            r["shareholder_score"] = shareholder_score
+            r["risk_penalty"] = risk_penalty
+            r["roe"] = roe_pct
+            r["roic"] = roic_pct
+            r["payout_ratio"] = payout_ratio
+            r["pbr"] = pbr
+            r["cash_score"] = cash_score
+            r["policy_change_score"] = policy_change_score
+            r["bonus_operating_cf_3y"] = bonus_operating_cf_3y
+            r["bonus_dividend_3y_increasing"] = bonus_dividend_3y_increasing
+            r["upward_revision"] = False
+            second.append(r)
+        except Exception as e:
+            print(f"    ERROR finance {row.get('code')}: {e}", flush=True)
+            continue
+    print(f"  Step3 finance pass: {len(second)}")
+    return second
+
+
 # =============================
 # Step4: \u30B9\u30B3\u30A2\u30EA\u30F3\u30B0
 # =============================
@@ -926,8 +1259,14 @@ def calc_score(row):
     risk_penalty = min(0, max(-30, risk_penalty))
 
     # AI components (0-10 each)
-    trend_score = row.get("trend_score", 0) or 0
-    quality_score = row.get("quality_score", 0) or 0
+    try:
+        trend_score = max(0, min(10, int(row.get("trend_score", 0) or 0)))
+    except (TypeError, ValueError):
+        trend_score = 0
+    try:
+        quality_score = max(0, min(10, int(row.get("quality_score", 0) or 0)))
+    except (TypeError, ValueError):
+        quality_score = 0
 
     total_score = (
         valuation_score
@@ -942,6 +1281,8 @@ def calc_score(row):
 
     total_score = max(0, total_score)
 
+    row["trend_score"] = trend_score
+    row["quality_score"] = quality_score
     row["valuation_score"] = valuation_score
     row["growth_score"] = growth_score
     row["quality_score_detail"] = quality_score_detail
@@ -953,10 +1294,293 @@ def calc_score(row):
     return total_score
 
 
+def calc_score_finance(row):
+    """Finance tab: valuation PBR+PER max 25, growth max 15, AI trend/quality max 15 each."""
+    per = row.get("per", 0) or 0
+    pbr = row.get("pbr")
+    pbr_score = 0
+    try:
+        if pbr is not None:
+            pb = float(pbr)
+            if pb <= 0.3:
+                pbr_score = 20
+            elif pb <= 0.5:
+                pbr_score = 16
+            elif pb <= 0.7:
+                pbr_score = 13
+            elif pb <= 1.0:
+                pbr_score = 10
+            elif pb <= 1.5:
+                pbr_score = 6
+            elif pb <= 2.0:
+                pbr_score = 3
+            else:
+                pbr_score = 0
+    except Exception:
+        pbr_score = 0
+
+    per_score_fin = 0
+    if per <= 5:
+        per_score_fin = 5
+    elif per <= 8:
+        per_score_fin = 4
+    elif per <= 10:
+        per_score_fin = 3
+    elif per <= 15:
+        per_score_fin = 2
+    elif per <= 20:
+        per_score_fin = 1
+    else:
+        per_score_fin = 0
+
+    valuation_score = min(25, max(0, pbr_score + per_score_fin))
+
+    annual_list = row.get("annual_list") or []
+    sales0 = sales1 = sales2 = 0.0
+    np0 = np1 = np2 = 0.0
+    if len(annual_list) >= 3:
+        sales0 = float(annual_list[0].get("Sales", 0) or 0)
+        sales1 = float(annual_list[1].get("Sales", 0) or 0)
+        sales2 = float(annual_list[2].get("Sales", 0) or 0)
+        np0 = float(annual_list[0].get("NP", 0) or 0)
+        np1 = float(annual_list[1].get("NP", 0) or 0)
+        np2 = float(annual_list[2].get("NP", 0) or 0)
+
+    revenue_consecutive = 4 if (sales0 > sales1 > sales2) else 0
+    profit_consecutive = 4 if (np0 > np1 > np2) else 0
+
+    revenue_growth_score = 0
+    if sales1 != 0:
+        try:
+            revenue_growth_pct = (sales0 - sales1) / abs(sales1) * 100
+            if revenue_growth_pct >= 20:
+                revenue_growth_score = 4
+            elif revenue_growth_pct >= 10:
+                revenue_growth_score = 3
+            elif revenue_growth_pct >= 5:
+                revenue_growth_score = 2
+            elif revenue_growth_pct >= 0:
+                revenue_growth_score = 1
+        except Exception:
+            revenue_growth_score = 0
+
+    profit_growth_score = 0
+    if np1 != 0:
+        try:
+            profit_growth_pct = (np0 - np1) / abs(np1) * 100
+            if profit_growth_pct >= 20:
+                profit_growth_score = 3
+            elif profit_growth_pct >= 10:
+                profit_growth_score = 2
+            elif profit_growth_pct >= 5:
+                profit_growth_score = 1
+            elif profit_growth_pct >= 0:
+                profit_growth_score = 1
+        except Exception:
+            profit_growth_score = 0
+
+    growth_score = revenue_consecutive + revenue_growth_score + profit_consecutive + profit_growth_score
+    growth_score = min(15, max(0, growth_score))
+
+    roe = row.get("roe") or 0
+    roic = row.get("roic") or 0
+    roe_score = 0
+    if roe >= 15:
+        roe_score = 5
+    elif roe >= 10:
+        roe_score = 4
+    elif roe >= 8:
+        roe_score = 3
+    elif roe >= 5:
+        roe_score = 1
+
+    roic_score = 0
+    if roic >= 15:
+        roic_score = 5
+    elif roic >= 10:
+        roic_score = 4
+    elif roic >= 8:
+        roic_score = 3
+    elif roic >= 5:
+        roic_score = 1
+
+    stability_count = 0
+    for j in range(3):
+        if len(annual_list) < 3:
+            break
+        sj = float(annual_list[j].get("Sales", 0) or 0)
+        oj = float(annual_list[j].get("OP", 0) or 0)
+        if sj > 0:
+            margin = oj / sj * 100
+            if margin >= 5:
+                stability_count += 1
+
+    stability_score = 0
+    if stability_count == 3:
+        stability_score = 5
+    elif stability_count == 2:
+        stability_score = 3
+    elif stability_count == 1:
+        stability_score = 1
+
+    quality_score_detail = min(15, max(0, roe_score + roic_score + stability_score))
+
+    payout_ratio = row.get("payout_ratio")
+    try:
+        payout_ratio = float(payout_ratio) if payout_ratio is not None else 0.0
+    except Exception:
+        payout_ratio = 0.0
+
+    dividend_yield = row.get("dividend_yield")
+    try:
+        dividend_yield = float(dividend_yield) if dividend_yield is not None else 0.0
+    except Exception:
+        dividend_yield = 0.0
+
+    payout_score = 0
+    if payout_ratio > 0 and dividend_yield > 0:
+        if payout_ratio < 30:
+            payout_score = 3
+        elif payout_ratio < 50:
+            payout_score = 2
+        else:
+            payout_score = 1
+
+    cash_score = row.get("cash_score") or 0
+    try:
+        cash_score = int(cash_score)
+    except Exception:
+        cash_score = 0
+    cash_score = min(3, max(0, cash_score))
+
+    policy_change_score = row.get("policy_change_score") or 0
+    try:
+        policy_change_score = int(policy_change_score)
+    except Exception:
+        policy_change_score = 1
+    policy_change_score = min(2, max(0, policy_change_score))
+
+    pbr_for_sh = row.get("pbr")
+    pbr_score_sh = 0
+    try:
+        if pbr_for_sh is not None:
+            pbf = float(pbr_for_sh)
+            if pbf < 1.0:
+                pbr_score_sh = 2
+            elif pbf < 2.0:
+                pbr_score_sh = 1
+    except Exception:
+        pbr_score_sh = 0
+
+    shareholder_score = min(10, max(0, payout_score + cash_score + policy_change_score + pbr_score_sh))
+
+    nc = row.get("net_cash_ratio", 0) or 0
+    bonus_operating_cf_3y = bool(row.get("bonus_operating_cf_3y"))
+    bonus_dividend_3y_increasing = bool(row.get("bonus_dividend_3y_increasing"))
+    upward_revision = bool(row.get("upward_revision"))
+    bonus_combo1 = bool(dividend_yield >= 3.0 and pbr_for_sh is not None and float(pbr_for_sh) < 1.0)
+    bonus_combo2 = bool(nc >= 2.0 and per <= 5)
+
+    bonus_score = 0
+    if bonus_operating_cf_3y:
+        bonus_score += 1
+    if bonus_dividend_3y_increasing:
+        bonus_score += 1
+    if upward_revision:
+        bonus_score += 1
+    if bonus_combo1:
+        bonus_score += 1
+    if bonus_combo2:
+        bonus_score += 1
+    bonus_score = min(5, max(0, bonus_score))
+
+    risk_checks = row.get("risk_checks") or {}
+
+    def is_bad(key, inverted):
+        val = risk_checks.get(key)
+        if val is None:
+            return False
+        if inverted:
+            return bool(val) is True
+        return bool(val) is False
+
+    bad_roe = is_bad("roe_15_percent", inverted=False)
+    bad_equity = is_bad("equity_ratio_50_percent", inverted=False)
+    bad_debt = is_bad("debt_to_profit_5x", inverted=False)
+    bad_fcf = is_bad("fcf_stability", inverted=False)
+    bad_liquidity = is_bad("liquidity_risk", inverted=True)
+    bad_one_time = is_bad("one_time_profit_risk", inverted=True)
+
+    individual = 0
+    if bad_roe:
+        individual -= 2
+    if bad_equity:
+        individual -= 3
+    if bad_debt:
+        individual -= 4
+    if bad_fcf:
+        individual -= 4
+    if bad_liquidity:
+        individual -= 3
+    if bad_one_time:
+        individual -= 4
+
+    xcount = sum([bad_roe, bad_equity, bad_debt, bad_fcf, bad_liquidity, bad_one_time])
+    if xcount <= 2:
+        additional = 0
+    elif xcount == 3:
+        additional = -3
+    elif xcount == 4:
+        additional = -6
+    else:
+        additional = -10
+
+    risk_penalty = min(0, max(-30, individual + additional))
+
+    trend_score = row.get("trend_score", 0) or 0
+    try:
+        trend_score = max(0, min(15, int(trend_score)))
+    except Exception:
+        trend_score = 0
+    quality_score = row.get("quality_score", 0) or 0
+    try:
+        quality_score = max(0, min(15, int(quality_score)))
+    except Exception:
+        quality_score = 0
+
+    total_score = (
+        valuation_score
+        + growth_score
+        + quality_score_detail
+        + shareholder_score
+        + trend_score
+        + quality_score
+        + bonus_score
+        + risk_penalty
+    )
+    total_score = max(0, total_score)
+
+    row["valuation_score"] = valuation_score
+    row["growth_score"] = growth_score
+    row["quality_score_detail"] = quality_score_detail
+    row["shareholder_score"] = shareholder_score
+    row["bonus_score"] = bonus_score
+    row["risk_penalty"] = risk_penalty
+    row["score"] = total_score
+    return total_score
+
+
 def step4_scoring(second_pass):
     print("Step4: ????????????...")
     for r in second_pass:
         r["score"] = calc_score(r)
+    return sorted(second_pass, key=lambda x: -x["score"])
+
+
+def step4_scoring_finance(second_pass):
+    print("Step4 (finance): scoring...")
+    for r in second_pass:
+        r["score"] = calc_score_finance(r)
     return sorted(second_pass, key=lambda x: -x["score"])
 
 
@@ -1001,7 +1625,7 @@ def _format_3y(values):
         return "N/A"
 
 
-def generate_ai_analysis(row):
+def generate_ai_analysis(row, finance_mode=False):
     try:
         if not os.environ.get("ANTHROPIC_API_KEY"):
             return "", _default_risk_checks(), 0, 0, False
@@ -1054,45 +1678,76 @@ def generate_ai_analysis(row):
         net_latest_oku = fmt_oku(net_income_3y[0]) if len(net_income_3y) >= 1 else "N/A"
 
         if len(revenue_3y) >= 3:
-            revenue_trend = f"{fmt_oku(revenue_3y[2])}? ? {fmt_oku(revenue_3y[1])}? ? {fmt_oku(revenue_3y[0])}?"
+            revenue_trend = f"{fmt_oku(revenue_3y[2])} -> {fmt_oku(revenue_3y[1])} -> {fmt_oku(revenue_3y[0])}"
         else:
             revenue_trend = "N/A"
 
+        pbr_s = row.get("pbr", "N/A")
+        ai_cap = 15 if finance_mode else 10
+
+        if finance_mode:
+            rubric_trend = f"""trend_score (AI\u696d\u7e3e\u5206\u6790\u3001\u6700\u5927{ai_cap}\u70b9):
+\u30fb\u5229\u76ca\u306e\u5b89\u5b9a\u6027\u30fb\u4e00\u904e\u6027\u5229\u76ca\u4f9d\u5b58\u306e\u6709\u7121\u3092\u91cd\u8996
+\u30fb\u91d1\u5229\u5909\u52d5\u306e\u5f71\u97ff\u306e\u5927\u304d\u3055
+\u30fb3\u671f\u9023\u7d9a\u5897\u6536\u5897\u76ca\u306a\u3089\u9ad8\u70b9\u3001\u6e1b\u53ce\u6e1b\u76ca\u7d99\u7d9a\u306f\u4f4e\u70b9
+\u30fb0\u301c{ai_cap}\u306e\u6574\u6570\u3067\u8a55\u4fa1"""
+
+            rubric_quality = f"""quality_score (AI\u4e8b\u696d\u8a55\u4fa1\u3001\u6700\u5927{ai_cap}\u70b9):
+\u30fb\u53ce\u76ca\u6e90\u306e\u8cea\uff08\u624b\u6570\u6599\u53ce\u5165vs\u58f2\u5374\u76ca\u7b49\uff09
+\u30fb\u8cc7\u672c\u653f\u7b56\u30fb\u9084\u5143\u59ff\u52e2
+\u30fb\u666f\u6c17\u611f\u6027\u30fb\u4e8b\u696d\u306e\u7d99\u7d9a\u6027
+\u30fb0\u301c{ai_cap}\u306e\u6574\u6570\u3067\u8a55\u4fa1"""
+
+            finance_axes = """
+\u3010\u91d1\u878d\u30fb\u4e0d\u52d5\u7523\u5411\u3051\u89b3\u70b9\u3011
+\u30fb\u5229\u76ca\u306e\u5b89\u5b9a\u6027\uff08\u4e00\u904e\u6027\u5229\u76ca\u4f9d\u5b58\u306e\u6709\u7121\uff09
+\u30fb\u91d1\u5229\u5909\u52d5\u306e\u5f71\u97ff
+\u30fb\u53ce\u76ca\u6e90\u306e\u8cea\uff08\u624b\u6570\u6599\u53ce\u5165vs\u58f2\u5374\u76ca\u7b49\uff09
+\u30fb\u8cc7\u672c\u653f\u7b56\u30fb\u9084\u5143\u59ff\u52e2
+\u30fb\u666f\u6c17\u611f\u6027
+"""
+        else:
+            rubric_trend = """trend_score (\u696d\u7e3e\u30c8\u30ec\u30f3\u30c9\u3001\u6700\u592710\u70b9):
+\u30fb3\u671f\u9023\u7d9a\u5897\u6536\u5897\u76ca \u2192 10\u70b9
+\u30fb\u5897\u6536 or \u5897\u76ca(\u76f4\u8fd1) \u2192 7\u70b9
+\u30fb\u6a2a\u3070\u3044(\u00b15%\u4ee5\u5185) \u2192 4\u70b9
+\u30fb\u6e1b\u6536 or \u6e1b\u76ca(\u76f4\u8fd1) \u2192 2\u70b9
+\u30fb\u6e1b\u6536\u6e1b\u76ca\u304c\u7d9a\u304f \u2192 0\u70b9"""
+
+            rubric_quality = """quality_score (\u4e8b\u696d\u306e\u8cea\u3001\u6700\u592710\u70b9):
+\u30fb\u5f37\u56fa\u306a\u7af6\u4e89\u512a\u4f4d\u6027\u30fb\u53c2\u5165\u969c\u58c1 \u2192 10\u70b9
+\u30fb\u4e00\u5b9a\u306e\u7af6\u4e89\u512a\u4f4d \u2192 7\u70b9
+\u30fb\u5e73\u5747\u7684 \u2192 4\u70b9
+\u30fb\u7af6\u4e89\u6fc0\u5316\u30fb\u53ce\u76ca\u4e0d\u5b89\u5b9a \u2192 2\u70b9
+\u30fb\u7d9a\u304d\u61f8\u5ff5 \u2192 0\u70b9"""
+
+            finance_axes = ""
+
         prompt = f"""
-???: {name_jp}
-??: {sector}
+\u9298\u67c4: {name_jp}
+\u30bb\u30af\u30bf\u30fc: {sector}
 
-?????????
-???????: {revenue_latest_oku}??
-??????: {revenue_yoy_str}%
-????????: {op_latest_oku}??
-???????: {op_income_yoy_str}%
-???????: {net_latest_oku}??
+\u6700\u65b0\u696d\u7e3e\u6982\u8981
+\u58f2\u4e0a: {revenue_latest_oku}\u5104\u5186
+\u58f2\u4e0a\u540c\u6bd4: {revenue_yoy_str}%
+\u55b6\u696d\u5229\u76ca: {op_latest_oku}\u5104\u5186
+\u55b6\u696d\u5229\u76ca\u540c\u6bd4: {op_income_yoy_str}%
+\u7d20\u5229\u76ca: {net_latest_oku}\u5104\u5186
 
-???3???????
-{revenue_trend}
+\u904e\u53bb3\u671f\u58f2\u4e0a\u63a8\u79fb: {revenue_trend}
 
-??????
-NC??: {row.get('net_cash_ratio', 'N/A')} / PER: {row.get('per', 'N/A')}? / ROE: {row.get('roe', 'N/A')}%
+\u6307\u6a19
+NC\u6bd4: {row.get('net_cash_ratio', 'N/A')} / PER: {row.get('per', 'N/A')} / PBR: {pbr_s} / ROE: {row.get('roe', 'N/A')}%
+{finance_axes}
 
-\u4EE5\u4E0B\u306EJSON\u5F62\u5F0F\u3067\u306F\u306A\u304F\u56DE\u7B54\u3057\u3066\u304F\u3060\u3055\u3044\u3002
+\u4ee5\u4e0b\u306eJSON\u306e\u307f\u3067\u56de\u7b54\uff08markdown\u7981\u6b62\uff09\u3002
 
-trend_score (\u696D\u7E8C\u30C8\u30EC\u30F3\u30C9\u3001\u6700\u592710\u70B9):
-\u30FB3\u671F\u9023\u7D9A\u5897\u6536\u5897\u76CA \u2192 10\u70B9
-\u30FB\u5897\u6536 or \u5897\u76CA(\u76F4\u8FD1) \u2192 7\u70B9
-\u30FB\u6A2A\u3070\u3044(\u00B15%\u4EE5\u5185) \u2192 4\u70B9
-\u30FB\u6E1B\u6536 or \u6E1B\u76CA(\u76F4\u8FD1) \u2192 2\u70B9
-\u30FB\u6E1B\u6536\u6E1B\u76CA\u304C\u7D9A\u3044\u3066\u3044\u308B \u2192 0\u70B9
+{rubric_trend}
 
-quality_score (\u4E8B\u696D\u306E\u8CEA\u3001\u6700\u592710\u70B9):
-\u30FB\u5F37\u56FA\u306A\u7AF6\u4E89\u512A\u4F4D\u6027\u30FB\u9AD8\u3044\u53C2\u5165\u969C\u58C1\u30FB\u5B89\u5B9A\u3057\u305F\u6536\u76CA\u57FA\u76E4 \u2192 10\u70B9
-\u30FB\u4E00\u5B9A\u306E\u7AF6\u4E89\u512A\u4F4D\u6027\u3042\u308A \u2192 7\u70B9
-\u30FB\u5E73\u5747\u7684\u306A\u4E8B\u696D\u54C1\u8CEA \u2192 4\u70B9
-\u30FB\u7AF6\u4E89\u6FC0\u5316\u30FB\u6536\u76CA\u4E0D\u5B89\u5B9A \u2192 2\u70B9
-\u30FB\u4E8B\u696D\u306E\u7D9A\u7D9A\u6027\u306B\u61F8\u5FFD \u2192 0\u70B9
+{rubric_quality}
 
-JSON\u30B5\u30F3\u30D7\u30EB:
-{{"ai_comment": "\u696D\u7E8C\u30C8\u30EC\u30F3\u30C9\u30FB\u4E8B\u696D\u306E\u8CEA\u30FB\u5C06\u6765\u6027\u3093300\u5B57\u7A0B\u5EA6\u3067",
+JSON\u30b5\u30f3\u30d7\u30eb:
+{{"ai_comment": "\u696d\u7e3e\u30c8\u30ec\u30f3\u30c9\u30fb\u4e8b\u696d\u8cea\u30fb\u5c06\u6765\u6027\u3092300\u5b57\u7a0b\u5ea6",
   "trend_score": 7,
   "quality_score": 4,
   "risk_checks": {{
@@ -1109,7 +1764,7 @@ JSON\u30B5\u30F3\u30D7\u30EB:
 
         message = client.messages.create(
             model="claude-sonnet-4-6",
-            max_tokens=1000,
+            max_tokens=1200 if finance_mode else 1000,
             system="You are a Japanese stock analyst. Respond ONLY in valid JSON format with no markdown.",
             messages=[{"role": "user", "content": prompt}]
         )
@@ -1129,20 +1784,15 @@ JSON\u30B5\u30F3\u30D7\u30EB:
 
         ai_comment = (data.get("ai_comment") or "").strip()
         trend_score = data.get("trend_score")
-        if trend_score is not None:
-            try:
-                trend_score = max(0, min(10, int(trend_score)))
-            except (TypeError, ValueError):
-                trend_score = 0
-        else:
+        try:
+            trend_score = max(0, min(ai_cap, int(trend_score))) if trend_score is not None else 0
+        except (TypeError, ValueError):
             trend_score = 0
+
         quality_score = data.get("quality_score")
-        if quality_score is not None:
-            try:
-                quality_score = max(0, min(10, int(quality_score)))
-            except (TypeError, ValueError):
-                quality_score = 0
-        else:
+        try:
+            quality_score = max(0, min(ai_cap, int(quality_score))) if quality_score is not None else 0
+        except (TypeError, ValueError):
             quality_score = 0
 
         risk_checks = data.get("risk_checks") or {}
@@ -1160,127 +1810,7 @@ JSON\u30B5\u30F3\u30D7\u30EB:
         import traceback
         traceback.print_exc()
         return "", _default_risk_checks(), 0, 0, False
-    base_name = (row.get("name") or row.get("code") or "").strip() or row.get("code", "")
-    name_jp = JPX_NAME_MAP.get(row["code"], base_name)
-    code = row.get("code", "")
-    net_cash_ratio = row.get("net_cash_ratio")
-    per = row.get("per")
-    market_cap_oku = round(row["market_cap"] / 1e8, 1) if row.get("market_cap") else None
-    roe = row.get("roe")
-    roic = row.get("roic")
-    payout_ratio = row.get("payout_ratio")
-    pbr = row.get("pbr")
-    net_cash_str = str(net_cash_ratio) if net_cash_ratio is not None else "N/A"
-    per_str = f"{per}\u500D" if per is not None else "N/A"
-    market_str = f"{market_cap_oku}\u5104\u5186" if market_cap_oku is not None else "N/A"
-    roe_str = f"{roe}%" if roe is not None else "N/A"
-    roic_str = f"{roic}%" if roic is not None else "N/A"
-    payout_str = f"{payout_ratio}%" if payout_ratio is not None else "N/A"
-    pbr_str = f"{pbr}\u500D" if pbr is not None else "N/A"
 
-    # \u904E\u53BB3\u671F\u306E\u58F2\u4E0A\u30FB\u55B6\u696D\u5229\u76CA\u30FB\u7D20\u5229\u76CA
-    annual_list = row.get("annual_list") or []
-    if not annual_list:
-        try:
-            ticker = yf.Ticker(f"{code}.T")
-            annual_list = get_financials_3periods(ticker)
-        except Exception:
-            pass
-    revenue_3y = _format_3y([a.get("Sales") for a in annual_list[:3]])
-    op_income_3y = _format_3y([a.get("OP") for a in annual_list[:3]])
-    net_income_3y = _format_3y([a.get("NP") for a in annual_list[:3]])
-
-    # \u4F1A\u793E\u4E88\u60F3\u30FB\u30A2\u30CA\u30EA\u30B9\u30C8\u8A55\u4FA1
-    revenue_estimate = "N/A"
-    earnings_estimate = "N/A"
-    recommendation_mean = "N/A"
-    try:
-        ticker = yf.Ticker(f"{code}.T")
-        info = ticker.info or {}
-        revenue_estimate = info.get("revenueEstimate") or info.get("targetRevenueMean") or "N/A"
-        if isinstance(revenue_estimate, (int, float)) and not math.isnan(revenue_estimate):
-            revenue_estimate = str(int(revenue_estimate))
-        earnings_estimate = info.get("earningsEstimate") or info.get("targetEarningsMean") or "N/A"
-        if isinstance(earnings_estimate, (int, float)) and not math.isnan(earnings_estimate):
-            earnings_estimate = str(earnings_estimate)
-        rec = info.get("recommendationMean")
-        if rec is not None and not (isinstance(rec, float) and math.isnan(rec)):
-            recommendation_mean = str(round(rec, 2))
-    except Exception:
-        pass
-
-    system_prompt = """You are a Japanese stock analyst specializing in value investing.
-Analyze the TREND and BUSINESS QUALITY, not just the numbers.
-Respond ONLY in valid JSON format."""
-
-    user_prompt = f"""\u9298\u67C4\u540D: {name_jp}
-\u6642\u4FA1\u7D4C\u984D: {market_str}
-
-?\u8CA1\u52D9\u6307\u6807?
-NC\u6BD4\u7387: {net_cash_str} / PER: {per_str} / PBR: {pbr_str}
-ROE: {roe_str} / ROIC: {roic_str} / \u914D\u5F53\u6027\u5411: {payout_str}%
-
-?\u904E\u53BB3\u671F\u306E\u696D\u7E8C\u63A8\u79FB?
-\u58F2\u4E0A\u9AD8: {revenue_3y}\uFF08\u5358\u4F4D\uff1A\u767E\u8429\u5186\uff09
-\u55B6\u696D\u5229\u76CA: {op_income_3y}
-\u7D20\u5229\u76CA: {net_income_3y}
-
-?\u4F1A\u793E\u4E88\u60F3\u30FB\u30A2\u30CA\u30EA\u30B9\u30C8\u8A55\u4FA1?
-\u901A\u671F\u58F2\u4E0A\u4E88\u60F3: {revenue_estimate}
-\u901A\u671F\u5229\u76CA\u4E88\u60F3: {earnings_estimate}
-\u30A2\u30CA\u30EA\u30B9\u30C8\u8A55\u4FA1(recommendationMean): {recommendation_mean}
-
-\u4EE5\u4E0B\u306EJSON\u5F62\u5F0F\u306E\u307F\u3067\u56DE\u7B54\u3057\u3066\u304F\u3060\u3055\u3044\u3002
-\u30FBai_comment: \u696D\u7E8C\u30C8\u30EC\u30F3\u30C9\u30FB\u4E8B\u696D\u306E\u8CEA\u30FB\u5C06\u6765\u6027\u30FB\u6295\u8CC7\u5224\u65AD\u3093300\u5B57\u7A0B\u5EA6\u3067\u8A18\u8FF0\u3002\u6570\u5024\u306E\u8AAC\u660E\u3067\u306F\u306A\u304F\u89B3\u5BDF\u3092\u66F8\u304F\u3002
-\u30FBrisk_checks: \u5404\u9805\u76EE\u3092true/false\u3067\u8A55\u4FA1\u3002
-
-{{"ai_comment": "...",
-  "risk_checks": {{
-    "roe_15_percent": true or false,
-    "equity_ratio_50_percent": true or false,
-    "debt_to_profit_5x": true or false,
-    "fcf_stability": true or false,
-    "liquidity_risk": true or false,
-    "one_time_profit_risk": true or false
-  }},
-  "upward_revision": false
-}}"""
-
-    try:
-        print(f"  [AI] Calling Claude API for {name_jp} ({row.get('code', '')})...", flush=True)
-        client = anthropic.Anthropic(api_key=api_key)
-        message = client.messages.create(
-            model="claude-sonnet-4-6",
-            max_tokens=1000,
-            system=system_prompt,
-            messages=[{"role": "user", "content": user_prompt}],
-        )
-        text = (message.content[0].text if message.content else "") or ""
-        print(f"  [AI] \u30EC\u30B9\u30DD\u30F3\u30B9\u5168\u4F53: {text!r}", flush=True)
-        if not text.strip():
-            print(f"  [AI] WARNING: Empty response for {name_jp}", flush=True)
-            return "", _default_risk_checks(), 0, 0, False
-        try:
-            data = json.loads(text)
-            print(f"  [AI] JSON\u30D1\u30FC\u30B9\u7D50\u679C: {data}", flush=True)
-        except json.JSONDecodeError as e:
-            print(f"  [AI] JSON parse error for {name_jp}: {e}", flush=True)
-            print(f"  [AI] Raw response (first 500 chars): {text[:500]!r}", flush=True)
-            return "", _default_risk_checks(), 0, 0, False
-        ai_comment = (data.get("ai_comment") or "").strip()
-        risk_checks = data.get("risk_checks") or {}
-        for k in AI_RISK_KEYS:
-            if k not in risk_checks:
-                risk_checks[k] = None
-        trend_score = 0
-        quality_score = 0
-        upward_revision = bool(data.get("upward_revision", False))
-        return ai_comment, risk_checks, trend_score, quality_score, upward_revision
-    except Exception as e:
-        import traceback
-        print(f"  [AI] ERROR for {name_jp} ({row.get('code', '')}): {e}", flush=True)
-        traceback.print_exc()
-        return "", _default_risk_checks(), 0, 0, False
 
 
 # =============================
@@ -1342,6 +1872,7 @@ def step5_save(results):
             "trend_score": r.get("trend_score", 0),
             "quality_score": r.get("quality_score", 0),
             "chart_signals": r.get("chart_signals", {}),
+            "tab": "general",
         })
     JST = timezone(timedelta(hours=9))
     updated_at = datetime.now(JST).strftime("%Y-%m-%dT%H:%M:%S+09:00")
@@ -1352,70 +1883,205 @@ def step5_save(results):
     return out
 
 
+def step5_save_finance(results):
+    """Write screening_result_finance.json and copy to public/."""
+    out = []
+    for r in results:
+        per_val = round(float(r.get("per") or 0), 2)
+        if per_val == 0:
+            try:
+                ticker = yf.Ticker(f"{r['code']}.T")
+                info = ticker.info or {}
+                pe = info.get("trailingPE")
+                if pe is not None and not (isinstance(pe, float) and math.isnan(pe)):
+                    pe_f = float(pe)
+                    if pe_f >= 0.01:
+                        per_val = round(pe_f, 2)
+                    else:
+                        price = info.get("currentPrice") or info.get("regularMarketPrice")
+                        ni = info.get("netIncomeToCommon") or info.get("netIncome")
+                        sh = info.get("sharesOutstanding")
+                        if price and ni and sh and float(sh) > 0:
+                            eps = float(ni) / float(sh)
+                            per_val = round(float(price) / eps, 2)
+            except Exception:
+                pass
+        if per_val > MAX_PER_FINANCE:
+            continue
+        base_name = (r.get("name") or r["code"] or "").strip() or r["code"]
+        name_jp = JPX_NAME_MAP.get(r["code"], base_name)
+        div_yield = r.get("dividend_yield")
+        if div_yield is not None and not (isinstance(div_yield, float) and math.isnan(div_yield)):
+            div_yield = round(float(div_yield), 2)
+        else:
+            div_yield = None
+        nc_raw = r.get("net_cash_ratio", 0) or 0
+        try:
+            nc_rounded = round(float(nc_raw), 2)
+        except (TypeError, ValueError):
+            nc_rounded = 0.0
+        out.append({
+            "code": r["code"],
+            "name": base_name,
+            "name_jp": name_jp,
+            "website": r.get("website", ""),
+            "market": r.get("market", ""),
+            "score": r["score"],
+            "valuation_score": r.get("valuation_score", 0),
+            "growth_score": r.get("growth_score", 0),
+            "shareholder_score": r.get("shareholder_score", 0),
+            "quality_score_detail": r.get("quality_score_detail", 0),
+            "bonus_score": r.get("bonus_score", 0),
+            "risk_penalty": r.get("risk_penalty", 0),
+            "net_cash_ratio": nc_rounded,
+            "per": per_val,
+            "market_cap_oku": round(r["market_cap"] / 1e8, 1),
+            "dividend_yield": div_yield,
+            "payout_ratio": r.get("payout_ratio"),
+            "roe": r.get("roe"),
+            "roic": r.get("roic"),
+            "pbr": r.get("pbr"),
+            "ai_comment": r.get("ai_comment", ""),
+            "risk_checks": r.get("risk_checks"),
+            "trend_score": r.get("trend_score", 0),
+            "quality_score": r.get("quality_score", 0),
+            "chart_signals": r.get("chart_signals", {}),
+            "tab": "finance",
+        })
+    JST = timezone(timedelta(hours=9))
+    updated_at = datetime.now(JST).strftime("%Y-%m-%dT%H:%M:%S+09:00")
+    result = {"updated_at": updated_at, "stocks": out}
+    with open("screening_result_finance.json", "w", encoding="utf-8") as f:
+        json.dump(result, f, ensure_ascii=False, indent=2)
+    pub_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), "public")
+    os.makedirs(pub_dir, exist_ok=True)
+    pub_path = os.path.join(pub_dir, "screening_result_finance.json")
+    with open(pub_path, "w", encoding="utf-8") as f:
+        json.dump(result, f, ensure_ascii=False, indent=2)
+    print("Step5 (finance): screening_result_finance.json + public/")
+    return out
+
+
 # =============================
-# ???
+# Tab2 finance pipeline (always run after general)
 # =============================
-def run_screening():
-    start_time = time.perf_counter()
+def run_screening_finance_tab():
+    print("\n" + "=" * 60)
+    print("Tab2: finance / real estate screening")
     print("=" * 60)
-    print("??????????JPX + yfinance?")
-    print("=" * 60)
-    print(f"[DEBUG] ENABLE_AI={ENABLE_AI}")
-    print(f"[DEBUG] API\u30AD\u30FC\u8A2D\u5B9A\u6E08\u307F={bool(os.environ.get('ANTHROPIC_API_KEY'))}")
-    stocks = step1_get_list_from_jpx()
-    if stocks is None or len(stocks) == 0:
-        print("???????????????")
-        step5_save([])
+    stocks_f = step1_get_finance_list_from_jpx()
+    if stocks_f is None or len(stocks_f) == 0:
+        print("Step1 (finance): 0 rows")
+        step5_save_finance([])
         return
     if TEST_LIMIT > 0:
-        print(f"??????: ?? {TEST_LIMIT} ????")
-    first = step2_first_filter(stocks)
-    if not first:
-        print("Step2 ?? 0 ????????")
-        step5_save([])
+        stocks_f = stocks_f.iloc[:TEST_LIMIT].copy()
+        print(f"TEST_LIMIT: finance first {TEST_LIMIT} codes")
+    first_f = step2_first_filter_finance(stocks_f)
+    if not first_f:
+        print("Step2 (finance): 0 pass")
+        step5_save_finance([])
         return
-    second = step3_detail_and_net_cash(first)
-    if not second:
-        print("Step3 \u901A\u904B 0 \u4EF6\u306E\u305F\u3081\u7D42\u4E86\u3057\u307E\u3059\u3002")
-        step5_save([])
+    second_f = step3_detail_finance(first_f)
+    if not second_f:
+        print("Step3 (finance): 0 pass")
+        step5_save_finance([])
         return
     if ENABLE_AI and anthropic and os.environ.get("ANTHROPIC_API_KEY"):
-        print("AI \u5206\u6790\u3092\u5B9F\u884C\u3057\u307E\u3059 (\u4E8C\u6B21\u901A\u904B\u9298\u67C4\u306E\u307F)...")
-        for i, r in enumerate(second):
-            print(f"[AI] \u51E6\u7406\u958B\u59CB: {r.get('name_jp', r.get('code'))}")
+        print("AI (finance tab)...")
+        for i, r in enumerate(second_f):
+            print(f"[AI finance] {r.get('name_jp', r.get('code'))}")
             time.sleep(3)
-            ai_comment, risk_checks, trend_score, quality_score, upward_revision = generate_ai_analysis(r)
+            ai_comment, risk_checks, trend_score, quality_score, upward_revision = generate_ai_analysis(
+                r, finance_mode=True
+            )
             r["ai_comment"] = ai_comment
             r["risk_checks"] = risk_checks
             r["trend_score"] = trend_score
             r["quality_score"] = quality_score
             r["upward_revision"] = upward_revision
-            if (i + 1) % 5 == 0 or (i + 1) == len(second):
-                print(f"  AI \u5206\u6790 {i+1}/{len(second)} \u5B8C\u4E86", flush=True)
+            if (i + 1) % 5 == 0 or (i + 1) == len(second_f):
+                print(f"  AI finance {i+1}/{len(second_f)} done", flush=True)
     else:
-        for r in second:
+        for r in second_f:
             r["trend_score"] = 0
             r["quality_score"] = 0
             r["upward_revision"] = False
-    results = step4_scoring(second)
-    out = step5_save(results)
-    elapsed = time.perf_counter() - start_time
-    print("\n" + "=" * 60)
-    print(f"?????????: {len(out)} ????")
-    print(f"??E???E {elapsed:.1f} ?E({elapsed/60:.1f} ?E")
-    print("=" * 60)
-    if out:
-        print(pd.DataFrame(out).head(30).to_string(index=False))
-    if TEST_LIMIT > 0 and out:
-        print("\n--- \u30B9\u30B3\u30A2\u5185\u8A33 (\u5148\u982D10\u4ED6) ---")
-        for r in out[:10]:
-            print(f"  {r['code']} {r.get('name_jp', r.get('name', ''))}: "
-                  f"\u5272\u5B89\u5EA6={r.get('valuation_score', 0)}, "
-                  f"\u6210\u9577\u6027={r.get('growth_score', 0)}, "
-                  f"\u682A\u4E3B\u9084\u5143={r.get('shareholder_score', 0)}, "
-                  f"\u30EA\u30B9\u30AF={r.get('risk_penalty', 0)}, "
-                  f"\u5408\u8A08={r['score']} | "
-                  f"ROE={r.get('roe')}, ROIC={r.get('roic')}, PBR={r.get('pbr')}, \u914D\u5F53\u6027\u5411={r.get('payout_ratio')}%")
+    results_f = step4_scoring_finance(second_f)
+    out_f = step5_save_finance(results_f)
+    print(f"Tab2 done: {len(out_f)} stocks")
+
+
+# =============================
+# ???
+# =============================
+def run_screening():
+    start_time = time.perf_counter()
+    out = []
+    try:
+        print("=" * 60)
+        print("??????????JPX + yfinance?")
+        print("=" * 60)
+        print(f"[DEBUG] ENABLE_AI={ENABLE_AI}")
+        print(f"[DEBUG] API\u30AD\u30FC\u8A2D\u5B9A\u6E08\u307F={bool(os.environ.get('ANTHROPIC_API_KEY'))}")
+        stocks = step1_get_list_from_jpx()
+        if stocks is None or len(stocks) == 0:
+            print("???????????????")
+            out = step5_save([])
+        else:
+            if TEST_LIMIT > 0:
+                print(f"??????: ?? {TEST_LIMIT} ????")
+            first = step2_first_filter(stocks)
+            if not first:
+                print("Step2 ?? 0 ????????")
+                out = step5_save([])
+            else:
+                second = step3_detail_and_net_cash(first)
+                if not second:
+                    print("Step3 \u901A\u904B 0 \u4EF6\u306E\u305F\u3081\u7D42\u4E86\u3057\u307E\u3059\u3002")
+                    out = step5_save([])
+                else:
+                    if ENABLE_AI and anthropic and os.environ.get("ANTHROPIC_API_KEY"):
+                        print("AI \u5206\u6790\u3092\u5B9F\u884C\u3057\u307E\u3059 (\u4E8C\u6B21\u901A\u904B\u9298\u67C4\u306E\u307F)...")
+                        for i, r in enumerate(second):
+                            print(f"[AI] \u51E6\u7406\u958B\u59CB: {r.get('name_jp', r.get('code'))}")
+                            time.sleep(3)
+                            ai_comment, risk_checks, trend_score, quality_score, upward_revision = generate_ai_analysis(
+                                r, finance_mode=False
+                            )
+                            r["ai_comment"] = ai_comment
+                            r["risk_checks"] = risk_checks
+                            r["trend_score"] = trend_score
+                            r["quality_score"] = quality_score
+                            r["upward_revision"] = upward_revision
+                            if (i + 1) % 5 == 0 or (i + 1) == len(second):
+                                print(f"  AI \u5206\u6790 {i+1}/{len(second)} \u5B8C\u4E86", flush=True)
+                    else:
+                        for r in second:
+                            r["trend_score"] = 0
+                            r["quality_score"] = 0
+                            r["upward_revision"] = False
+                    results = step4_scoring(second)
+                    out = step5_save(results)
+        elapsed = time.perf_counter() - start_time
+        print("\n" + "=" * 60)
+        print(f"?????????: {len(out)} ????")
+        print(f"??E???E {elapsed:.1f} ?E({elapsed/60:.1f} ?E")
+        print("=" * 60)
+        if out:
+            print(pd.DataFrame(out).head(30).to_string(index=False))
+        if TEST_LIMIT > 0 and out:
+            print("\n--- \u30B9\u30B3\u30A2\u5185\u8A33 (\u5148\u982D10\u4ED6) ---")
+            for r in out[:10]:
+                print(f"  {r['code']} {r.get('name_jp', r.get('name', ''))}: "
+                      f"\u5272\u5B89\u5EA6={r.get('valuation_score', 0)}, "
+                      f"\u6210\u9577\u6027={r.get('growth_score', 0)}, "
+                      f"\u682A\u4E3B\u9084\u5143={r.get('shareholder_score', 0)}, "
+                      f"\u30EA\u30B9\u30AF={r.get('risk_penalty', 0)}, "
+                      f"\u5408\u8A08={r['score']} | "
+                      f"ROE={r.get('roe')}, ROIC={r.get('roic')}, PBR={r.get('pbr')}, \u914D\u5F53\u6027\u5411={r.get('payout_ratio')}%")
+    finally:
+        run_screening_finance_tab()
 
 
 if __name__ == "__main__":

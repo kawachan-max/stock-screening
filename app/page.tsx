@@ -115,6 +115,37 @@ const TOOLTIP_AI_QUALITY: TooltipContent = {
   intent: "\u4e8b\u696d\u304c\u9577\u671f\u7684\u306b\u7a3c\u304e\u7d9a\u3051\u3089\u308c\u308b\u304b\u3092AI\u304c\u5224\u5b9a\u3057\u307e\u3059",
 };
 
+const TOOLTIP_CHEAP_SCORE_FINANCE: TooltipContent = {
+  title: "\u5272\u5b89\u5ea6\u30b9\u30b3\u30a2\uff08\u6700\u592725\u70b9\uff09",
+  desc: "PBR\u3068PER\u3067\u5272\u5b89\u5ea6\u3092\u8a55\u4fa1\uff08\u91d1\u878d\u30fb\u4e0d\u52d5\u7523\u5411\u3051\uff09",
+  formula: "PBR\u30b9\u30b3\u30a2\uff08\u6700\u592720\u70b9\uff09\uff0bPER\u30b9\u30b3\u30a2\uff08\u6700\u59275\u70b9\uff09",
+  intent: "\u91d1\u878d\u30fb\u4e0d\u52d5\u7523\u306f\u8ca1\u52d9\u69cb\u9020\u304c\u7570\u306a\u308b\u305f\u3081PBR\u3092\u91cd\u8996",
+};
+
+const TOOLTIP_GROWTH_SCORE_FINANCE: TooltipContent = {
+  title: "\u6210\u9577\u6027\u30b9\u30b3\u30a2\uff08\u6700\u592715\u70b9\uff09",
+  desc: "\u6700\u592715\u70b9\uff08\u91d1\u878d\u30fb\u4e0d\u52d5\u7523\u306f\u6210\u9577\u6027\u306e\u6bd4\u91cd\u3092\u8efd\u6e1b\uff09",
+  formula: "3\u671f\u9023\u7d9a\u5897\u6536(4)\uff0b\u58f2\u4e0a\u6210\u9577\u7387(4)\uff0b3\u671f\u9023\u7d9a\u5897\u76ca(4)\uff0b\u5229\u76ca\u6210\u9577\u7387(3)",
+  intent: "\u4e00\u822c\u4e8b\u696d\u30bf\u30d6\u3088\u308a\u6210\u9577\u9805\u76ee\u306e\u6bd4\u91cd\u3092\u4e0b\u3052\u305f\u914d\u70b9",
+};
+
+const TOOLTIP_AI_TREND_FINANCE: TooltipContent = {
+  title: "AI\u696d\u7e3e\u5206\u6790\uff08\u6700\u592715\u70b9\uff09",
+  desc: "\u6700\u592715\u70b9\uff08\u5229\u76ca\u306e\u5b89\u5b9a\u6027\u30fb\u91d1\u5229\u5f71\u97ff\u30fb\u53ce\u76ca\u306e\u8cea\u3092\u91cd\u8996\uff09",
+  formula: "AI\u304c\u696d\u7e3e\u30c8\u30ec\u30f3\u30c9\u30920\u301c15\u3067\u8a55\u4fa1",
+  intent: "\u91d1\u878d\u30fb\u4e0d\u52d5\u7523\u5411\u3051\u306b\u30d7\u30ed\u30f3\u30d7\u30c8\u3092\u5f37\u5316",
+};
+
+const TOOLTIP_AI_QUALITY_FINANCE: TooltipContent = {
+  title: "AI\u4e8b\u696d\u8a55\u4fa1\uff08\u6700\u592715\u70b9\uff09",
+  desc: "\u6700\u592715\u70b9\uff08\u4e8b\u696d\u306e\u7d99\u7d9a\u6027\u30fb\u8cc7\u672c\u653f\u7b56\u30fb\u9084\u5143\u59ff\u52e2\u3092\u91cd\u8996\uff09",
+  formula: "AI\u304c\u4e8b\u696d\u8cea\u30920\u301c15\u3067\u8a55\u4fa1",
+  intent: "\u7d99\u7d9a\u6027\u30fb\u8fd4\u5143\u30fb\u8cc7\u672c\u653f\u7b56\u306e\u89b3\u70b9\u3092\u91cd\u8996",
+};
+
+const TAB_GENERAL = "\u4e00\u822c\u4e8b\u696d\u4f1a\u793e";
+const TAB_FINANCE = "\u91d1\u878d\u30fb\u4e0d\u52d5\u7523";
+
 const UNLOCK_PASSWORD = "tenbagger2024";
 const STORAGE_KEY = "tenbagger_unlocked";
 const MAX_SCORE = 100;
@@ -167,6 +198,8 @@ const UPDATE_SCAN = "\u30B9\u30AD\u30E3\u30F3\u6570";
 const UPDATE_MARKETS = "\u9298\u67C4";
 const UPDATE_DATE = "\u66F4\u65B0\u65E5";
 const MSG_NO_JSON = "screening_result.json \u3092 public \u306B\u914D\u7F6E\u3057\u3066\u304F\u3060\u3055\u3044\u3002";
+const MSG_NO_JSON_FINANCE =
+  "screening_result_finance.json \u3092 public \u306B\u914D\u7F6E\u3057\u3066\u304F\u3060\u3055\u3044\u3002";
 const MSG_LOADING = "\u30C7\u30FC\u30BF\u3092\u8AAD\u307F\u8FBC\u307F\u4E2D...";
 const RANK_SUFFIX = "\u4F4D";
 const MASK_NAME = "\u2588\u2588\u2588\u2588\u2588\u2588";
@@ -331,6 +364,7 @@ type Row = {
     liquidity_risk: boolean | null;
     one_time_profit_risk: boolean | null;
   } | null;
+  tab?: "general" | "finance";
 };
 
 const POPUP_WIDTH = 280;
@@ -456,6 +490,20 @@ function getGradeFromAIScore(s: number): GradeKey {
   return "poor";
 }
 
+function getFinanceValuationBadge(v: number): GradeKey {
+  if (v >= 20) return "excellent";
+  if (v >= 14) return "good";
+  if (v >= 7) return "fair";
+  return "poor";
+}
+
+function getGradeFromGrowthScoreFinance(s: number): GradeKey {
+  if (s >= 12) return "excellent";
+  if (s >= 8) return "good";
+  if (s >= 4) return "fair";
+  return "poor";
+}
+
 function getBadgeClass(grade: GradeKey): string {
   const classes: Record<GradeKey, string> = {
     excellent: "bg-emerald-100 text-emerald-700",
@@ -472,14 +520,23 @@ function formatDate(iso: string): string {
   return `${d.getFullYear()}\u5e74${d.getMonth() + 1}\u6708${d.getDate()}\u65e5`;
 }
 
-function getStockTag(r: Row): string {
+function getStockTag(r: Row, isFinanceTab: boolean): string {
   const tags: string[] = [];
-  if (r.net_cash_ratio >= 1.5) tags.push("\u9ad8NC");
-  else if (r.net_cash_ratio >= 1.0) tags.push("NC\u5272\u5b89");
-  if (r.per <= 5) tags.push("\u8d85\u4f4e\u500d");
-  else if (r.per <= 8) tags.push("\u4f4e\u500d");
+  if (isFinanceTab) {
+    const pb = r.pbr;
+    if (pb != null && pb <= 0.5) tags.push("\u8d85\u4f4ePBR");
+    else if (pb != null && pb <= 1.0) tags.push("\u4f4ePBR");
+    if (r.per <= 8) tags.push("\u4f4ePER");
+    else if (r.per <= 12) tags.push("PER\u901a\u5e38");
+  } else {
+    if (r.net_cash_ratio >= 1.5) tags.push("\u9ad8NC");
+    else if (r.net_cash_ratio >= 1.0) tags.push("NC\u5272\u5b89");
+    if (r.per <= 5) tags.push("\u8d85\u4f4e\u500d");
+    else if (r.per <= 8) tags.push("\u4f4e\u500d");
+  }
   if ((r.roe ?? 0) >= 15) tags.push("ROE\u512a\u79c0");
-  if ((r.trend_score ?? 0) >= 8) tags.push("\u696d\u7e3e\u5897\u52a0");
+  const trendTh = isFinanceTab ? 10 : 8;
+  if ((r.trend_score ?? 0) >= trendTh) tags.push("\u696d\u7e3e\u5897\u52a0");
   if ((r.shareholder_score ?? 0) >= 12) tags.push("\u9084\u5143\u4f59\u5730\u5927");
   if ((r.dividend_yield ?? 0) >= 3.5) tags.push("\uD83D\uDCB0\u9AD8\u914D\u5F53");
   if (r.chart_signals?.volume_surge) tags.push("\uD83D\uDCCA\u51fa\u6765\u9ad8\u6025\u5897");
@@ -497,9 +554,17 @@ export default function Home() {
   const [password, setPassword] = useState("");
   const [passwordError, setPasswordError] = useState("");
   const [expandedCode, setExpandedCode] = useState<string | null>(null);
+  const [screeningTab, setScreeningTab] = useState<"general" | "finance">("general");
 
   useEffect(() => {
-    fetch("/screening_result.json")
+    setExpandedCode(null);
+  }, [screeningTab]);
+
+  useEffect(() => {
+    setLoading(true);
+    const url =
+      screeningTab === "finance" ? "/screening_result_finance.json" : "/screening_result.json";
+    fetch(url)
       .then((res) => {
         if (!res.ok) {
           setRows([]);
@@ -529,7 +594,7 @@ export default function Home() {
       .finally(() => {
         setLoading(false);
       });
-  }, []);
+  }, [screeningTab]);
 
   useEffect(() => {
     const stored = localStorage.getItem(STORAGE_KEY);
@@ -592,6 +657,31 @@ export default function Home() {
           </div>
         </div>
 
+        <div className="max-w-4xl mx-auto px-4 pb-2 flex flex-wrap gap-2">
+          <button
+            type="button"
+            onClick={() => setScreeningTab("general")}
+            className={
+              screeningTab === "general"
+                ? "bg-[#d97706] text-white font-bold rounded-full px-4 py-2 text-sm"
+                : "bg-[#f5f0e8] text-[#6b6b6b] rounded-full px-4 py-2 text-sm"
+            }
+          >
+            {TAB_GENERAL}
+          </button>
+          <button
+            type="button"
+            onClick={() => setScreeningTab("finance")}
+            className={
+              screeningTab === "finance"
+                ? "bg-[#d97706] text-white font-bold rounded-full px-4 py-2 text-sm"
+                : "bg-[#f5f0e8] text-[#6b6b6b] rounded-full px-4 py-2 text-sm"
+            }
+          >
+            {TAB_FINANCE}
+          </button>
+        </div>
+
         <div className="max-w-4xl mx-auto px-4 pt-2 pb-3">
           <Link
             href="/about"
@@ -614,7 +704,9 @@ export default function Home() {
             <span className="ml-3 text-sm text-[#d97706] sm:text-base">{MSG_LOADING}</span>
           </div>
         ) : rows.length === 0 ? (
-          <p className="py-8 text-sm text-[#6b6b6b]">{MSG_NO_JSON}</p>
+          <p className="py-8 text-sm text-[#6b6b6b]">
+            {screeningTab === "finance" ? MSG_NO_JSON_FINANCE : MSG_NO_JSON}
+          </p>
         ) : (
           <>
         <p className="mb-4 text-[11px] text-[#6b6b6b] sm:text-xs">
@@ -623,10 +715,31 @@ export default function Home() {
 
         <div className="space-y-3">
           {rows.map((r, i) => {
-              const valuationScore = r.valuation_score ?? getCheapScore(r.net_cash_ratio, r.per);
-              const cheapBadge = getCheapBadge(valuationScore);
+              const isFinance = screeningTab === "finance";
+              const maxCheap = isFinance ? 25 : 30;
+              const maxGrowth = isFinance ? 15 : 20;
+              const maxAi = isFinance ? 15 : 10;
+              const valuationScore = isFinance
+                ? (r.valuation_score ?? 0)
+                : (r.valuation_score ?? getCheapScore(r.net_cash_ratio, r.per));
+              const cheapBadge = isFinance
+                ? getFinanceValuationBadge(r.valuation_score ?? 0)
+                : getCheapBadge(valuationScore);
               const growthScore = r.growth_score ?? (r.score - valuationScore);
-              const growthBadge = r.growth_score != null ? getGradeFromGrowthScore(r.growth_score) : getGrowthBadge(r.score, valuationScore);
+              const growthBadge =
+                r.growth_score != null
+                  ? isFinance
+                    ? getGradeFromGrowthScoreFinance(r.growth_score)
+                    : getGradeFromGrowthScore(r.growth_score)
+                  : isFinance
+                    ? getGradeFromGrowthScoreFinance(
+                        Math.min(15, Math.max(0, growthScore)),
+                      )
+                    : getGrowthBadge(r.score, valuationScore);
+              const tipCheap = isFinance ? TOOLTIP_CHEAP_SCORE_FINANCE : TOOLTIP_CHEAP_SCORE;
+              const tipGrowth = isFinance ? TOOLTIP_GROWTH_SCORE_FINANCE : TOOLTIP_GROWTH_SCORE;
+              const tipAiTrend = isFinance ? TOOLTIP_AI_TREND_FINANCE : TOOLTIP_AI_TREND;
+              const tipAiQuality = isFinance ? TOOLTIP_AI_QUALITY_FINANCE : TOOLTIP_AI_QUALITY;
               const isExpanded = expandedCode === r.code;
               return (
                 <div
@@ -645,7 +758,7 @@ export default function Home() {
                           {i < lockCount && !isUnlocked ? MASK_NAME : displayName(r)}
                         </div>
                         {!(i < lockCount && !isUnlocked) && (() => {
-                          const tagLine = getStockTag(r);
+                          const tagLine = getStockTag(r, isFinance);
                           return (
                             <>
                               {tagLine ? (
@@ -768,29 +881,37 @@ export default function Home() {
                           <div className="flex items-center gap-2">
                             <span className="flex items-center gap-0.5 w-28 text-xs shrink-0">
                               {LABEL_CHEAP}
-                              <IndicatorTooltip content={TOOLTIP_CHEAP_SCORE} />
+                              <IndicatorTooltip content={tipCheap} />
                             </span>
                             <div className="flex-1 h-1.5 rounded-full bg-[#e5e0d8] overflow-hidden">
                               <div
                                 className="h-full rounded-full bg-emerald-500"
-                                style={{ width: `${Math.min(100, ((r.valuation_score ?? valuationScore) / 30) * 100)}%` }}
+                                style={{
+                                  width: `${Math.min(100, ((r.valuation_score ?? valuationScore) / maxCheap) * 100)}%`,
+                                }}
                               />
                             </div>
-                            <span className="text-xs tabular-nums w-10">{(r.valuation_score ?? valuationScore)}/30</span>
+                            <span className="text-xs tabular-nums w-12 shrink-0">
+                              {(r.valuation_score ?? valuationScore)}/{maxCheap}
+                            </span>
                           </div>
 
                           <div className="flex items-center gap-2">
                             <span className="flex items-center gap-0.5 w-28 text-xs shrink-0">
                               {LABEL_GROWTH}
-                              <IndicatorTooltip content={TOOLTIP_GROWTH_SCORE} />
+                              <IndicatorTooltip content={tipGrowth} />
                             </span>
                             <div className="flex-1 h-1.5 rounded-full bg-[#e5e0d8] overflow-hidden">
                               <div
                                 className="h-full rounded-full bg-blue-500"
-                                style={{ width: `${Math.min(100, ((r.growth_score ?? growthScore) / 20) * 100)}%` }}
+                                style={{
+                                  width: `${Math.min(100, ((r.growth_score ?? growthScore) / maxGrowth) * 100)}%`,
+                                }}
                               />
                             </div>
-                            <span className="text-xs tabular-nums w-10">{(r.growth_score ?? growthScore)}/20</span>
+                            <span className="text-xs tabular-nums w-12 shrink-0">
+                              {(r.growth_score ?? growthScore)}/{maxGrowth}
+                            </span>
                           </div>
 
                           <div className="flex items-center gap-2">
@@ -810,29 +931,37 @@ export default function Home() {
                           <div className="flex items-center gap-2">
                             <span className="flex items-center gap-0.5 w-28 text-xs shrink-0">
                               {LABEL_AI_TREND}
-                            
-                    <IndicatorTooltip content={TOOLTIP_AI_TREND} /></span>
+                              <IndicatorTooltip content={tipAiTrend} />
+                            </span>
                             <div className="flex-1 h-1.5 rounded-full bg-[#e5e0d8] overflow-hidden">
                               <div
                                 className="h-full rounded-full bg-purple-400"
-                                style={{ width: `${Math.min(100, ((r.trend_score ?? 0) / 10) * 100)}%` }}
+                                style={{
+                                  width: `${Math.min(100, ((r.trend_score ?? 0) / maxAi) * 100)}%`,
+                                }}
                               />
                             </div>
-                            <span className="text-xs tabular-nums w-10">{(r.trend_score ?? 0)}/10</span>
+                            <span className="text-xs tabular-nums w-12 shrink-0">
+                              {(r.trend_score ?? 0)}/{maxAi}
+                            </span>
                           </div>
 
                           <div className="flex items-center gap-2">
                             <span className="flex items-center gap-0.5 w-28 text-xs shrink-0">
                               {LABEL_AI_QUALITY}
-                            
-                    <IndicatorTooltip content={TOOLTIP_AI_QUALITY} /></span>
+                              <IndicatorTooltip content={tipAiQuality} />
+                            </span>
                             <div className="flex-1 h-1.5 rounded-full bg-[#e5e0d8] overflow-hidden">
                               <div
                                 className="h-full rounded-full bg-indigo-400"
-                                style={{ width: `${Math.min(100, ((r.quality_score ?? 0) / 10) * 100)}%` }}
+                                style={{
+                                  width: `${Math.min(100, ((r.quality_score ?? 0) / maxAi) * 100)}%`,
+                                }}
                               />
                             </div>
-                            <span className="text-xs tabular-nums w-10">{(r.quality_score ?? 0)}/10</span>
+                            <span className="text-xs tabular-nums w-12 shrink-0">
+                              {(r.quality_score ?? 0)}/{maxAi}
+                            </span>
                           </div>
 
                           <div className="flex items-center gap-2">
