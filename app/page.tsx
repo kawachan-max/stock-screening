@@ -68,6 +68,20 @@ const TOOLTIP_PAYOUT: TooltipContent = {
   intent: "30%\u672A\u6E80\uFF1D\u9084\u5143\u4F59\u5730",
 };
 
+const TOOLTIP_THEORETICAL: TooltipContent = {
+  title: "\u7406\u8ad6\u682a\u4fa1",
+  desc: "\u8cc7\u7523\u4fa1\u5024\uff08BPS\u00d7\u81ea\u5df1\u8cc7\u672c\u6bd4\u7387\u306b\u3088\u308b\u5272\u5f15\u8a55\u4fa1\uff09\u3068\u4e8b\u696d\u4fa1\u5024\uff08EPS\u00d7\u57fa\u6e96PER\u00d7ROE\u88dc\u6b63\uff09\u306e\u5408\u8a08",
+  formula: "\u8cc7\u7523\u4fa1\u5024(BPS\u00d7\u5272\u5f15\u7387) + \u4e8b\u696d\u4fa1\u5024(EPS\u00d712\u00d7ROE\u88dc\u6b63)",
+  intent: "\u73fe\u5728\u306e\u682a\u4fa1\u304c\u7406\u8ad6\u7684\u306a\u4fa1\u5024\u3068\u6bd4\u3079\u3066\u5272\u5b89\u304b\u5272\u9ad8\u304b\u306e\u76ee\u5b89\u3002\u7c21\u6613\u8a08\u7b97\u306e\u305f\u3081\u53c2\u8003\u5024",
+};
+
+const TOOLTIP_UPSIDE: TooltipContent = {
+  title: "\u4e0a\u6607\u4f59\u5730",
+  desc: "\u7406\u8ad6\u682a\u4fa1\u3068\u73fe\u5728\u306e\u682a\u4fa1\u306e\u304b\u3044\u308a\u7387",
+  formula: "(\u7406\u8ad6\u682a\u4fa1 - \u73fe\u5728\u682a\u4fa1) \u00f7 \u73fe\u5728\u682a\u4fa1 \u00d7 100",
+  intent: "\u30d7\u30e9\u30b9\u306a\u3089\u5272\u5b89\u306e\u53ef\u80fd\u6027\u3001\u30de\u30a4\u30ca\u30b9\u306a\u3089\u5272\u9ad8\u306e\u53ef\u80fd\u6027\u3002\u7c21\u6613\u8a08\u7b97\u306e\u305f\u3081\u53c2\u8003\u5024",
+};
+
 const TOOLTIP_CHEAP_SCORE: TooltipContent = {
   title: "\u5272\u5b89\u5ea6\u30b9\u30b3\u30a2\uff08\u6700\u592730\u70b9\uff09",
   desc: "\u30cd\u30c3\u30c8\u30ad\u30e3\u30c3\u30b7\u30e5\u6bd4\u7387\uff08NC\u6bd4\u7387\uff09\u3068PER\u3067\u5272\u5b89\u5ea6\u3092\u70b9\u6570\u5316\u3057\u307e\u3059",
@@ -232,6 +246,8 @@ const LABEL_NC = "\u30CD\u30C3\u30C8\u30AD\u30E3\u30C3\u30B7\u30E5\u6BD4\u7387";
 const LABEL_MARKETCAP = "\u6642\u4fa1\u7dcf\u984d";
 const LABEL_DIVIDEND = "\u914D\u5F53\u5229\u56DE\u308A";
 const LABEL_PAYOUT = "\u914D\u5F53\u6027\u5411";
+const LABEL_THEORETICAL = "\u7406\u8ad6\u682a\u4fa1";
+const LABEL_UPSIDE = "\u4e0a\u6607\u4f59\u5730";
 const LABEL_SCORE = "\u30B9\u30B3\u30A2";
 const FOOTER_DISCLAIMER = "\u672C\u30B5\u30FC\u30D3\u30B9\u306F\u60C5\u5831\u63D0\u4F9B\u3092\u76EE\u7684\u3068\u3057\u3066\u304A\u308A\u3001\u6295\u8CC7\u52A9\u8A00\u3067\u306F\u3042\u308A\u307E\u305B\u3093\u3002\u6295\u8CC7\u5224\u65AD\u306F\u3054\u81EA\u8EAB\u306E\u8CAC\u4EFB\u3067\u884C\u3063\u3066\u304F\u3060\u3055\u3044\u3002";
 const DISCLAIMER_TITLE = "\u514d\u8cac\u4e8b\u9805";
@@ -443,6 +459,8 @@ type Row = {
   } | null;
   tab?: "general" | "finance";
   tenbagger_stars?: number;
+  theoretical_price?: number;
+  upside_percent?: number;
 };
 
 const POPUP_WIDTH = 280;
@@ -1194,6 +1212,48 @@ export default function Home() {
                                   {r.payout_ratio != null ? `${r.payout_ratio}%` : DASH}
                                 </div>
                               </div>
+                              <div className="bg-[#f5f0e8] rounded-lg p-3">
+                                <div className="text-xs text-gray-500 flex items-center gap-0.5">
+                                  {LABEL_THEORETICAL}
+                                  <IndicatorTooltip content={TOOLTIP_THEORETICAL} />
+                                </div>
+                                <div className="text-sm font-medium text-gray-800 mt-0.5">
+                                  {r.theoretical_price != null &&
+                                  r.theoretical_price !== undefined &&
+                                  r.theoretical_price > 0
+                                    ? `${r.theoretical_price.toLocaleString()}\u5186`
+                                    : DASH}
+                                </div>
+                              </div>
+                              <div className="bg-[#f5f0e8] rounded-lg p-3">
+                                <div className="text-xs text-gray-500 flex items-center gap-0.5">
+                                  {LABEL_UPSIDE}
+                                  <IndicatorTooltip content={TOOLTIP_UPSIDE} />
+                                </div>
+                                <div
+                                  className={`text-sm font-medium mt-0.5 ${
+                                    r.upside_percent != null &&
+                                    r.upside_percent !== undefined &&
+                                    r.upside_percent > 0
+                                      ? "text-green-600"
+                                      : r.upside_percent != null &&
+                                          r.upside_percent !== undefined &&
+                                          r.upside_percent < 0
+                                        ? "text-red-500"
+                                        : "text-gray-800"
+                                  }`}
+                                >
+                                  {r.upside_percent != null &&
+                                  r.upside_percent !== undefined &&
+                                  r.upside_percent > 0
+                                    ? `+${r.upside_percent}%`
+                                    : r.upside_percent != null &&
+                                        r.upside_percent !== undefined &&
+                                        r.upside_percent < 0
+                                      ? `${r.upside_percent}%`
+                                      : DASH}
+                                </div>
+                              </div>
                             </>
                           ) : (
                             <>
@@ -1261,6 +1321,48 @@ export default function Home() {
                                 </div>
                                 <div className="text-sm font-medium text-gray-800 mt-0.5">
                                   {r.payout_ratio != null ? `${r.payout_ratio}%` : DASH}
+                                </div>
+                              </div>
+                              <div className="bg-[#f5f0e8] rounded-lg p-3">
+                                <div className="text-xs text-gray-500 flex items-center gap-0.5">
+                                  {LABEL_THEORETICAL}
+                                  <IndicatorTooltip content={TOOLTIP_THEORETICAL} />
+                                </div>
+                                <div className="text-sm font-medium text-gray-800 mt-0.5">
+                                  {r.theoretical_price != null &&
+                                  r.theoretical_price !== undefined &&
+                                  r.theoretical_price > 0
+                                    ? `${r.theoretical_price.toLocaleString()}\u5186`
+                                    : DASH}
+                                </div>
+                              </div>
+                              <div className="bg-[#f5f0e8] rounded-lg p-3">
+                                <div className="text-xs text-gray-500 flex items-center gap-0.5">
+                                  {LABEL_UPSIDE}
+                                  <IndicatorTooltip content={TOOLTIP_UPSIDE} />
+                                </div>
+                                <div
+                                  className={`text-sm font-medium mt-0.5 ${
+                                    r.upside_percent != null &&
+                                    r.upside_percent !== undefined &&
+                                    r.upside_percent > 0
+                                      ? "text-green-600"
+                                      : r.upside_percent != null &&
+                                          r.upside_percent !== undefined &&
+                                          r.upside_percent < 0
+                                        ? "text-red-500"
+                                        : "text-gray-800"
+                                  }`}
+                                >
+                                  {r.upside_percent != null &&
+                                  r.upside_percent !== undefined &&
+                                  r.upside_percent > 0
+                                    ? `+${r.upside_percent}%`
+                                    : r.upside_percent != null &&
+                                        r.upside_percent !== undefined &&
+                                        r.upside_percent < 0
+                                      ? `${r.upside_percent}%`
+                                      : DASH}
                                 </div>
                               </div>
                             </>

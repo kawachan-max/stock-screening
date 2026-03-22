@@ -655,6 +655,84 @@ def calc_net_cash_ratio(bs, market_cap):
     return net_cash / market_cap
 
 
+def calc_theoretical_price(row, info):
+    """theoretical_price = asset_value + business_value (yfinance info + row roe/equity_ratio %)."""
+    info = info or {}
+    try:
+        bps = float(info.get("bookValue") or 0)
+    except (TypeError, ValueError):
+        bps = 0.0
+    if isinstance(bps, float) and math.isnan(bps):
+        bps = 0.0
+    try:
+        eps = float(info.get("trailingEps") or 0)
+    except (TypeError, ValueError):
+        eps = 0.0
+    if isinstance(eps, float) and math.isnan(eps):
+        eps = 0.0
+    sp_raw = info.get("currentPrice")
+    if sp_raw is None:
+        sp_raw = info.get("regularMarketPrice", 0)
+    try:
+        stock_price = float(sp_raw or 0)
+    except (TypeError, ValueError):
+        stock_price = 0.0
+    if isinstance(stock_price, float) and math.isnan(stock_price):
+        stock_price = 0.0
+
+    try:
+        er = float(row.get("equity_ratio") or 0)
+    except (TypeError, ValueError):
+        er = 0.0
+    if isinstance(er, float) and math.isnan(er):
+        er = 0.0
+    if er >= 70:
+        discount_rate = 1.0
+    elif er >= 50:
+        discount_rate = 0.8
+    elif er >= 30:
+        discount_rate = 0.6
+    else:
+        discount_rate = 0.4
+
+    if bps < 0:
+        asset_value = 0.0
+    else:
+        asset_value = bps * discount_rate
+
+    try:
+        roe = float(row.get("roe") or 0)
+    except (TypeError, ValueError):
+        roe = 0.0
+    if isinstance(roe, float) and math.isnan(roe):
+        roe = 0.0
+    if roe >= 20:
+        roe_correction = 1.2
+    elif roe >= 15:
+        roe_correction = 1.1
+    elif roe >= 10:
+        roe_correction = 1.0
+    elif roe >= 8:
+        roe_correction = 0.8
+    else:
+        roe_correction = 0.6
+
+    base_per = 12.0
+    if eps < 0:
+        business_value = 0.0
+    else:
+        business_value = eps * base_per * roe_correction
+
+    theoretical_price = asset_value + business_value
+    row["theoretical_price"] = round(theoretical_price, 0)
+
+    if stock_price <= 0:
+        upside = 0.0
+    else:
+        upside = round((theoretical_price - stock_price) / stock_price * 100, 1)
+    row["upside_percent"] = upside
+
+
 def step3_detail_and_net_cash(first_pass):
     print("Step3: ???????????E?E????E??????E???????...")
     second = []
@@ -805,6 +883,13 @@ def step3_detail_and_net_cash(first_pass):
             except Exception:
                 pass
 
+            try:
+                ta_val = float(bs.get("ta") or 0)
+                eq_val = float(bs.get("eq") or 0)
+                equity_ratio_pct = round(eq_val / ta_val * 100, 2) if ta_val > 0 else 0.0
+            except (TypeError, ValueError):
+                equity_ratio_pct = 0.0
+
             r = dict(row)
             r["yf_bs"] = bs
             r["net_cash_ratio"] = nc
@@ -821,12 +906,15 @@ def step3_detail_and_net_cash(first_pass):
             r["roic"] = roic_pct
             r["payout_ratio"] = payout_ratio
             r["pbr"] = pbr
+            r["equity_ratio"] = equity_ratio_pct
             # New scoring inputs
             r["cash_score"] = cash_score
             r["policy_change_score"] = policy_change_score
             r["bonus_operating_cf_3y"] = bonus_operating_cf_3y
             r["bonus_dividend_3y_increasing"] = bonus_dividend_3y_increasing
             r["upward_revision"] = False
+            info_latest = ticker.info or {}
+            calc_theoretical_price(r, info_latest)
             second.append(r)
         except Exception as e:
             import traceback
@@ -1015,6 +1103,8 @@ def step3_detail_finance(first_pass):
             r["finance_dividend_quality_score"] = finance_dividend_quality_score
             r["finance_recent_div_increase"] = finance_recent_div_increase
             r["upward_revision"] = False
+            info_latest = ticker.info or {}
+            calc_theoretical_price(r, info_latest)
             second.append(r)
         except Exception as e:
             print(f"    ERROR finance {row.get('code')}: {e}", flush=True)
@@ -2068,6 +2158,8 @@ def step5_save(results):
             "chart_signals": r.get("chart_signals", {}),
             "tenbagger_stars": int(r.get("tenbagger_stars", 0) or 0),
             "tab": "general",
+            "theoretical_price": r.get("theoretical_price", 0),
+            "upside_percent": r.get("upside_percent", 0),
         })
     out = sorted(out, key=lambda x: x["score"], reverse=True)[:MAX_JSON_STOCKS]
     JST = timezone(timedelta(hours=9))
@@ -2146,6 +2238,8 @@ def step5_save_finance(results):
             "quality_score": r.get("quality_score", 0),
             "chart_signals": r.get("chart_signals", {}),
             "tab": "finance",
+            "theoretical_price": r.get("theoretical_price", 0),
+            "upside_percent": r.get("upside_percent", 0),
         })
     out = sorted(out, key=lambda x: x["score"], reverse=True)[:MAX_JSON_STOCKS]
     JST = timezone(timedelta(hours=9))
