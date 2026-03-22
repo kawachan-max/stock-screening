@@ -24,7 +24,9 @@ const HOWTO_TITLE = "\u30e9\u30f3\u30ad\u30f3\u30b0\u306e\u898b\u65b9";
 const HOWTO_NEW_DESC =
   "\u6709\u6599\u30d7\u30e9\u30f3\u3067\u306f\u3001\u30b9\u30b3\u30a2\u5185\u8a33\u30fb\u6307\u6a19\u30b0\u30ea\u30c3\u30c9\u30fbAI\u5206\u6790\u30b3\u30e1\u30f3\u30c8\u30fb\u30ea\u30b9\u30af\u30c1\u30a7\u30c3\u30af\u306a\u3069\u3001\u5168\u3066\u306e\u60c5\u5831\u304c\u78ba\u8a8d\u3067\u304d\u307e\u3059\u3002";
 const HOWTO_LOCK = "\u30ed\u30c3\u30af\u89e3\u9664";
-const HOWTO_LOCK_DESC = "1\uff5e10\u4f4d\u306f\u6709\u6599\u30d7\u30e9\u30f3\u3067\u89e3\u653e\u3002note\u8a18\u4e8b\uff08\uffe51\uff0c980\uff09\u306e\u30d1\u30b9\u30ef\u30fc\u30c9\u3092\u5165\u529b";
+const HOWTO_LOCK_DESC =
+  "\u4e0a\u4f4d10\u9298\u67c4\u306f\u6709\u6599\u30d7\u30e9\u30f3\u3067\u89e3\u653e\u3055\u308c\u307e\u3059\u3002note\u8a18\u4e8b\u3092\u8cfc\u5165\u3057\u3001\u8a18\u4e8b\u5185\u306e\u30d1\u30b9\u30ef\u30fc\u30c9\u3092\u5165\u529b\u3057\u3066\u304f\u3060\u3055\u3044\u3002";
+const HOWTO_LOCK_LINK_TEXT = "note\u8a18\u4e8b\u3092\u8cfc\u5165\u3059\u308b \u2192";
 const DIFF_TITLE = "\u306a\u305c\u3053\u306e\u30b5\u30fc\u30d3\u30b9\u306f\u4ed6\u3068\u9055\u3046\u306e\u304b\uff1f";
 const DIFF_QUOTE = "\u300c\u4e2d\u8eab\u306e\u308f\u304b\u3089\u306a\u3044\u3082\u306e\u306b\u306f\u6295\u8cc7\u3057\u306a\u3044\u300d\u2014 \u30a6\u30a9\u30fc\u30ec\u30f3\u30fb\u30d0\u30d5\u30a7\u30c3\u30c8";
 const DIFF_BODY1 = "\u30a4\u30f3\u30d5\u30eb\u30a8\u30f3\u30b5\u30fc\u306e\u6839\u62e0\u306e\u306a\u3044\u9298\u67c4\u63a8\u5968\u3084\u3001\u4e2d\u8eab\u306e\u308f\u304b\u3089\u306a\u3044\u8a3c\u5238\u4f1a\u793e\u304c\u63d0\u6848\u3059\u308b\u30d5\u30a1\u30f3\u30c9\u30fb\u4ed5\u7d44\u307f\u50b5\u306b\u8e0a\u3089\u3055\u308c\u3066\u3044\u307e\u305b\u3093\u304b\uff1f";
@@ -118,10 +120,20 @@ export default function AboutPage() {
                 className="rounded-lg border border-gray-200 shadow-sm w-full"
               />
             </div>
-            <p className="mt-4">
-              <span className="font-bold">{"\uD83D\uDD12 "}{HOWTO_LOCK}</span>
-              <span className="block text-xs text-gray-500">{HOWTO_LOCK_DESC}</span>
-            </p>
+            <div className="mt-4">
+              <p className="text-sm font-bold flex items-center gap-2">
+                {"\ud83d\udd13"} {HOWTO_LOCK}
+              </p>
+              <p className="text-sm text-gray-600 mt-1">{HOWTO_LOCK_DESC}</p>
+              <a
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block mt-2 bg-[#d97706] text-white font-bold text-sm px-4 py-2 rounded-full hover:bg-[#b45309] transition-colors"
+              >
+                {HOWTO_LOCK_LINK_TEXT}
+              </a>
+            </div>
           </section>
           <section className="bg-white rounded-lg p-4 mb-6">
             <h2 className="text-sm font-bold text-gray-800 mb-3">{STANCE_TITLE}</h2>
