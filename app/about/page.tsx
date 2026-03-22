@@ -126,7 +126,7 @@ export default function AboutPage() {
               </p>
               <p className="text-sm text-gray-600 mt-1">{HOWTO_LOCK_DESC}</p>
               <a
-                href="#"
+                href="https://note.com/dreamy_okapi3047/n/n0fafb7449d15"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-block mt-2 bg-[#d97706] text-white font-bold text-sm px-4 py-2 rounded-full hover:bg-[#b45309] transition-colors"
