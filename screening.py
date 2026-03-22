@@ -1849,7 +1849,7 @@ def finalize_finance_risk_checks(row, ticker):
     else:
         try:
             roe_v = float(row.get("roe") or 0)
-            out["roe_15_percent"] = roe_v >= 15.0
+            out["roe_15_percent"] = roe_v >= 10.0
         except (TypeError, ValueError):
             out["roe_15_percent"] = None
     if ai_rc.get("liquidity_risk") is not None:
@@ -1990,6 +1990,7 @@ def generate_ai_analysis(row, finance_mode=False):
                 "\n\uff08\u6ce8\uff09JSON\u5185 risk_checks \u306f"
                 " roe_15_percent \u3068 liquidity_risk \u306e2\u30ad\u30fc\u306e\u307f\u8a18\u8f09"
                 "\u3059\u308b\u4e8b\u3002\u4ed6\u9805\u76ee\u306f\u30b5\u30fc\u30d0\u5074\u3067\u8a08\u7b97\u3059\u308b\u3002"
+                " roe_15_percent \u306f ROE 10%\u4ee5\u4e0a\u306e\u7d99\u7d9a\u3067\u3042\u308c\u3070 true\u3002"
             )
             risk_sample_inner = """    "roe_15_percent": true,
     "liquidity_risk": false"""

@@ -358,7 +358,7 @@ const RISK_CHECK_TOOLTIPS: Record<string, TooltipContent> = {
 };
 
 const RISK_CHECK_ITEMS_FINANCE: { key: string; label: string; inverted: boolean }[] = [
-  { key: "roe_15_percent", label: "ROE 15%\u4ee5\u4e0a\u306e\u7d99\u7d9a", inverted: false },
+  { key: "roe_15_percent", label: "ROE 10%\u4ee5\u4e0a\u306e\u7d99\u7d9a", inverted: false },
   { key: "profit_stability", label: "\u5229\u76ca\u306e\u5b89\u5b9a\u6027", inverted: false },
   { key: "dividend_stability", label: "\u914d\u5f53\u306e\u5b89\u5b9a\u6027", inverted: false },
   { key: "one_time_profit_risk", label: "\u4e00\u904e\u6027\u5229\u76ca\u4f9d\u5b58", inverted: true },
@@ -368,8 +368,8 @@ const RISK_CHECK_ITEMS_FINANCE: { key: string; label: string; inverted: boolean 
 
 const RISK_CHECK_TOOLTIPS_FINANCE: Record<string, TooltipContent> = {
   roe_15_percent: {
-    title: "ROE 15\uff05\u4ee5\u4e0a\u306e\u7d99\u7d9a",
-    desc: "\u91d1\u878d\u30bf\u30d6\u7528\u3002ROE15\uff05\u4ee5\u4e0a\u304c\u7d99\u7d9a\u3059\u308b\u304b",
+    title: "ROE 10\uff05\u4ee5\u4e0a\u306e\u7d99\u7d9a",
+    desc: "\u91d1\u878d\u30bf\u30d6\u7528\u3002ROE10\uff05\u4ee5\u4e0a\u304c\u7d99\u7d9a\u3059\u308b\u304b",
     formula: "",
     intent: "",
   },
