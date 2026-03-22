@@ -1,3 +1,164 @@
 {
-  "records": []
+  "records": [
+    {
+      "date": "2026-03-22",
+      "code": "7991",
+      "name": "MAMIYA-OP CO LTD",
+      "tab": "general",
+      "score": 79,
+      "stock_price": 1448,
+      "theoretical_price": 5011,
+      "upside_percent": 246.1
+    },
+    {
+      "date": "2026-03-22",
+      "code": "8152",
+      "name": "SOMAR CORPORATION",
+      "tab": "general",
+      "score": 70,
+      "stock_price": 5930,
+      "theoretical_price": 22785,
+      "upside_percent": 284.2
+    },
+    {
+      "date": "2026-03-22",
+      "code": "5363",
+      "name": "TYK CORPORATION",
+      "tab": "general",
+      "score": 66,
+      "stock_price": 573,
+      "theoretical_price": 1297,
+      "upside_percent": 126.3
+    },
+    {
+      "date": "2026-03-22",
+      "code": "8135",
+      "name": "ZETT CORPORATION",
+      "tab": "general",
+      "score": 63,
+      "stock_price": 470,
+      "theoretical_price": 2599,
+      "upside_percent": 452.9
+    },
+    {
+      "date": "2026-03-22",
+      "code": "2449",
+      "name": "PRAP JAPAN INC",
+      "tab": "general",
+      "score": 60,
+      "stock_price": 1062,
+      "theoretical_price": 2213,
+      "upside_percent": 108.4
+    },
+    {
+      "date": "2026-03-22",
+      "code": "5280",
+      "name": "YOSHICON CO LTD",
+      "tab": "finance",
+      "score": 70,
+      "stock_price": 2630,
+      "theoretical_price": 10230,
+      "upside_percent": 289.0
+    },
+    {
+      "date": "2026-03-22",
+      "code": "8935",
+      "name": "FJ NEXT HOLDINGS CO LTD",
+      "tab": "finance",
+      "score": 66,
+      "stock_price": 1675,
+      "theoretical_price": 4021,
+      "upside_percent": 140.1
+    },
+    {
+      "date": "2026-03-22",
+      "code": "8860",
+      "name": "FUJI CORPORATION LIMITED",
+      "tab": "finance",
+      "score": 64,
+      "stock_price": 840,
+      "theoretical_price": 2038,
+      "upside_percent": 142.6
+    },
+    {
+      "date": "2026-03-22",
+      "code": "8596",
+      "name": "KYUSHU LEASING SERVICE",
+      "tab": "finance",
+      "score": 63,
+      "stock_price": 1407,
+      "theoretical_price": 2319,
+      "upside_percent": 64.8
+    },
+    {
+      "date": "2026-03-22",
+      "code": "8897",
+      "name": "MIRARTH HOLDINGS INC",
+      "tab": "finance",
+      "score": 62,
+      "stock_price": 407,
+      "theoretical_price": 834,
+      "upside_percent": 104.9
+    },
+    {
+      "date": "2026-03-22",
+      "code": "3232",
+      "name": "MIE KOTSU GROUP HOLDINGS INC",
+      "tab": "finance",
+      "score": 62,
+      "stock_price": 563,
+      "theoretical_price": 981,
+      "upside_percent": 74.3
+    },
+    {
+      "date": "2026-03-22",
+      "code": "8917",
+      "name": "FIRST JUKEN CO LTD",
+      "tab": "finance",
+      "score": 61,
+      "stock_price": 1175,
+      "theoretical_price": 3082,
+      "upside_percent": 162.3
+    },
+    {
+      "date": "2026-03-22",
+      "code": "3293",
+      "name": "AZUMA HOUSE CO LTD",
+      "tab": "finance",
+      "score": 61,
+      "stock_price": 785,
+      "theoretical_price": 2204,
+      "upside_percent": 180.8
+    },
+    {
+      "date": "2026-03-22",
+      "code": "8844",
+      "name": "COSMOS INITIA CO",
+      "tab": "finance",
+      "score": 60,
+      "stock_price": 1120,
+      "theoretical_price": 2287,
+      "upside_percent": 104.2
+    },
+    {
+      "date": "2026-03-22",
+      "code": "3297",
+      "name": "TOUBUJYUHAN CO LTD",
+      "tab": "finance",
+      "score": 60,
+      "stock_price": 1287,
+      "theoretical_price": 2572,
+      "upside_percent": 99.8
+    },
+    {
+      "date": "2026-03-22",
+      "code": "3277",
+      "name": "SANSEI LANDIC CO LTD",
+      "tab": "finance",
+      "score": 60,
+      "stock_price": 1430,
+      "theoretical_price": 3211,
+      "upside_percent": 124.5
+    }
+  ]
 }
