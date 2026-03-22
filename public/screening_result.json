@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-22T21:16:37+09:00",
+  "updated_at": "2026-03-22T23:10:13+09:00",
   "stocks": [
     {
       "code": "7991",
@@ -39,7 +39,9 @@
         "near_high": false
       },
       "tenbagger_stars": 5,
-      "tab": "general"
+      "tab": "general",
+      "theoretical_price": 5011.0,
+      "upside_percent": 246.1
     },
     {
       "code": "8152",
@@ -79,7 +81,9 @@
         "near_high": false
       },
       "tenbagger_stars": 4,
-      "tab": "general"
+      "tab": "general",
+      "theoretical_price": 22785.0,
+      "upside_percent": 284.2
     },
     {
       "code": "5363",
@@ -119,7 +123,9 @@
         "near_high": false
       },
       "tenbagger_stars": 3,
-      "tab": "general"
+      "tab": "general",
+      "theoretical_price": 1297.0,
+      "upside_percent": 126.3
     },
     {
       "code": "8135",
@@ -159,7 +165,9 @@
         "near_high": false
       },
       "tenbagger_stars": 3,
-      "tab": "general"
+      "tab": "general",
+      "theoretical_price": 2599.0,
+      "upside_percent": 452.9
     },
     {
       "code": "2449",
@@ -199,7 +207,9 @@
         "near_high": false
       },
       "tenbagger_stars": 2,
-      "tab": "general"
+      "tab": "general",
+      "theoretical_price": 2213.0,
+      "upside_percent": 108.4
     },
     {
       "code": "9867",
@@ -239,7 +249,9 @@
         "near_high": true
       },
       "tenbagger_stars": 3,
-      "tab": "general"
+      "tab": "general",
+      "theoretical_price": 23051.0,
+      "upside_percent": 117.3
     },
     {
       "code": "4231",
@@ -279,7 +291,9 @@
         "near_high": false
       },
       "tenbagger_stars": 2,
-      "tab": "general"
+      "tab": "general",
+      "theoretical_price": 3691.0,
+      "upside_percent": 244.0
     },
     {
       "code": "6797",
@@ -319,7 +333,9 @@
         "near_high": true
       },
       "tenbagger_stars": 3,
-      "tab": "general"
+      "tab": "general",
+      "theoretical_price": 3725.0,
+      "upside_percent": 207.9
     },
     {
       "code": "6360",
@@ -359,7 +375,9 @@
         "near_high": true
       },
       "tenbagger_stars": 3,
-      "tab": "general"
+      "tab": "general",
+      "theoretical_price": 7640.0,
+      "upside_percent": 93.2
     },
     {
       "code": "5956",
@@ -399,7 +417,9 @@
         "near_high": false
       },
       "tenbagger_stars": 2,
-      "tab": "general"
+      "tab": "general",
+      "theoretical_price": 1954.0,
+      "upside_percent": 211.6
     },
     {
       "code": "7434",
@@ -439,7 +459,9 @@
         "near_high": true
       },
       "tenbagger_stars": 2,
-      "tab": "general"
+      "tab": "general",
+      "theoretical_price": 5067.0,
+      "upside_percent": 173.1
     },
     {
       "code": "6748",
@@ -479,7 +501,9 @@
         "near_high": false
       },
       "tenbagger_stars": 2,
-      "tab": "general"
+      "tab": "general",
+      "theoretical_price": 2035.0,
+      "upside_percent": 168.1
     },
     {
       "code": "5697",
@@ -519,7 +543,9 @@
         "near_high": false
       },
       "tenbagger_stars": 2,
-      "tab": "general"
+      "tab": "general",
+      "theoretical_price": 2019.0,
+      "upside_percent": 173.6
     },
     {
       "code": "6393",
@@ -559,7 +585,9 @@
         "near_high": true
       },
       "tenbagger_stars": 3,
-      "tab": "general"
+      "tab": "general",
+      "theoretical_price": 7434.0,
+      "upside_percent": 135.6
     },
     {
       "code": "5757",
@@ -599,7 +627,9 @@
         "near_high": false
       },
       "tenbagger_stars": 1,
-      "tab": "general"
+      "tab": "general",
+      "theoretical_price": 9916.0,
+      "upside_percent": 134.4
     },
     {
       "code": "6743",
@@ -639,7 +669,9 @@
         "near_high": false
       },
       "tenbagger_stars": 2,
-      "tab": "general"
+      "tab": "general",
+      "theoretical_price": 2006.0,
+      "upside_percent": 156.2
     },
     {
       "code": "5603",
@@ -679,7 +711,9 @@
         "near_high": true
       },
       "tenbagger_stars": 3,
-      "tab": "general"
+      "tab": "general",
+      "theoretical_price": 4685.0,
+      "upside_percent": 194.6
     },
     {
       "code": "7975",
@@ -719,7 +753,9 @@
         "near_high": false
       },
       "tenbagger_stars": 2,
-      "tab": "general"
+      "tab": "general",
+      "theoretical_price": 4025.0,
+      "upside_percent": 241.1
     },
     {
       "code": "7538",
@@ -759,7 +795,9 @@
         "near_high": true
       },
       "tenbagger_stars": 2,
-      "tab": "general"
+      "tab": "general",
+      "theoretical_price": 1603.0,
+      "upside_percent": 278.9
     },
     {
       "code": "7427",
@@ -799,7 +837,9 @@
         "near_high": true
       },
       "tenbagger_stars": 2,
-      "tab": "general"
+      "tab": "general",
+      "theoretical_price": 2369.0,
+      "upside_percent": 168.9
     },
     {
       "code": "5753",
@@ -839,7 +879,9 @@
         "near_high": true
       },
       "tenbagger_stars": 2,
-      "tab": "general"
+      "tab": "general",
+      "theoretical_price": 5280.0,
+      "upside_percent": 95.3
     },
     {
       "code": "6249",
@@ -879,7 +921,9 @@
         "near_high": true
       },
       "tenbagger_stars": 1,
-      "tab": "general"
+      "tab": "general",
+      "theoretical_price": 8415.0,
+      "upside_percent": 195.1
     },
     {
       "code": "8076",
@@ -919,7 +963,9 @@
         "near_high": true
       },
       "tenbagger_stars": 2,
-      "tab": "general"
+      "tab": "general",
+      "theoretical_price": 3611.0,
+      "upside_percent": 72.8
     },
     {
       "code": "2788",
@@ -959,7 +1005,9 @@
         "near_high": false
       },
       "tenbagger_stars": 3,
-      "tab": "general"
+      "tab": "general",
+      "theoretical_price": 1063.0,
+      "upside_percent": 206.4
     },
     {
       "code": "7521",
@@ -999,7 +1047,9 @@
         "near_high": true
       },
       "tenbagger_stars": 2,
-      "tab": "general"
+      "tab": "general",
+      "theoretical_price": 9747.0,
+      "upside_percent": 243.0
     },
     {
       "code": "7670",
@@ -1039,7 +1089,9 @@
         "near_high": false
       },
       "tenbagger_stars": 3,
-      "tab": "general"
+      "tab": "general",
+      "theoretical_price": 3010.0,
+      "upside_percent": 173.9
     },
     {
       "code": "8138",
@@ -1079,7 +1131,9 @@
         "near_high": true
       },
       "tenbagger_stars": 3,
-      "tab": "general"
+      "tab": "general",
+      "theoretical_price": 14706.0,
+      "upside_percent": 229.7
     },
     {
       "code": "7218",
@@ -1119,7 +1173,9 @@
         "near_high": false
       },
       "tenbagger_stars": 2,
-      "tab": "general"
+      "tab": "general",
+      "theoretical_price": 3480.0,
+      "upside_percent": 205.3
     },
     {
       "code": "5984",
@@ -1159,7 +1215,9 @@
         "near_high": true
       },
       "tenbagger_stars": 2,
-      "tab": "general"
+      "tab": "general",
+      "theoretical_price": 2808.0,
+      "upside_percent": 249.2
     },
     {
       "code": "5921",
@@ -1199,7 +1257,9 @@
         "near_high": true
       },
       "tenbagger_stars": 2,
-      "tab": "general"
+      "tab": "general",
+      "theoretical_price": 14232.0,
+      "upside_percent": 224.9
     },
     {
       "code": "1420",
@@ -1239,7 +1299,9 @@
         "near_high": true
       },
       "tenbagger_stars": 2,
-      "tab": "general"
+      "tab": "general",
+      "theoretical_price": 1467.0,
+      "upside_percent": 107.2
     },
     {
       "code": "7537",
@@ -1279,7 +1341,9 @@
         "near_high": false
       },
       "tenbagger_stars": 2,
-      "tab": "general"
+      "tab": "general",
+      "theoretical_price": 2091.0,
+      "upside_percent": 86.5
     },
     {
       "code": "4629",
@@ -1319,7 +1383,9 @@
         "near_high": true
       },
       "tenbagger_stars": 2,
-      "tab": "general"
+      "tab": "general",
+      "theoretical_price": 4224.0,
+      "upside_percent": 148.9
     },
     {
       "code": "5915",
@@ -1359,7 +1425,9 @@
         "near_high": true
       },
       "tenbagger_stars": 2,
-      "tab": "general"
+      "tab": "general",
+      "theoretical_price": 6852.0,
+      "upside_percent": 241.1
     },
     {
       "code": "5408",
@@ -1399,7 +1467,9 @@
         "near_high": false
       },
       "tenbagger_stars": 1,
-      "tab": "general"
+      "tab": "general",
+      "theoretical_price": 2536.0,
+      "upside_percent": 311.7
     },
     {
       "code": "6292",
@@ -1439,7 +1509,9 @@
         "near_high": true
       },
       "tenbagger_stars": 2,
-      "tab": "general"
+      "tab": "general",
+      "theoretical_price": 2066.0,
+      "upside_percent": 158.0
     },
     {
       "code": "3320",
@@ -1479,7 +1551,9 @@
         "near_high": true
       },
       "tenbagger_stars": 2,
-      "tab": "general"
+      "tab": "general",
+      "theoretical_price": 3467.0,
+      "upside_percent": 152.9
     },
     {
       "code": "7219",
@@ -1519,7 +1593,9 @@
         "near_high": true
       },
       "tenbagger_stars": 2,
-      "tab": "general"
+      "tab": "general",
+      "theoretical_price": 9365.0,
+      "upside_percent": 305.6
     },
     {
       "code": "7229",
@@ -1559,7 +1635,9 @@
         "near_high": true
       },
       "tenbagger_stars": 1,
-      "tab": "general"
+      "tab": "general",
+      "theoretical_price": 8360.0,
+      "upside_percent": 178.7
     },
     {
       "code": "6899",
@@ -1599,7 +1677,9 @@
         "near_high": false
       },
       "tenbagger_stars": 2,
-      "tab": "general"
+      "tab": "general",
+      "theoretical_price": 8478.0,
+      "upside_percent": 247.3
     },
     {
       "code": "8040",
@@ -1639,7 +1719,9 @@
         "near_high": true
       },
       "tenbagger_stars": 2,
-      "tab": "general"
+      "tab": "general",
+      "theoretical_price": 4099.0,
+      "upside_percent": 286.7
     }
   ]
 }

@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-22T17:04:33+09:00",
+  "updated_at": "2026-03-22T22:56:46+09:00",
   "stocks": [
     {
       "code": "5280",
@@ -39,7 +39,9 @@
         "above_ma": false,
         "near_high": false
       },
-      "tab": "finance"
+      "tab": "finance",
+      "theoretical_price": 10230.0,
+      "upside_percent": 289.0
     },
     {
       "code": "8935",
@@ -79,7 +81,9 @@
         "above_ma": true,
         "near_high": false
       },
-      "tab": "finance"
+      "tab": "finance",
+      "theoretical_price": 4021.0,
+      "upside_percent": 140.1
     },
     {
       "code": "8860",
@@ -119,7 +123,9 @@
         "above_ma": false,
         "near_high": true
       },
-      "tab": "finance"
+      "tab": "finance",
+      "theoretical_price": 2038.0,
+      "upside_percent": 142.6
     },
     {
       "code": "8596",
@@ -159,7 +165,9 @@
         "above_ma": false,
         "near_high": true
       },
-      "tab": "finance"
+      "tab": "finance",
+      "theoretical_price": 2319.0,
+      "upside_percent": 64.8
     },
     {
       "code": "8897",
@@ -199,7 +207,9 @@
         "above_ma": true,
         "near_high": false
       },
-      "tab": "finance"
+      "tab": "finance",
+      "theoretical_price": 834.0,
+      "upside_percent": 104.9
     },
     {
       "code": "3232",
@@ -239,7 +249,9 @@
         "above_ma": false,
         "near_high": true
       },
-      "tab": "finance"
+      "tab": "finance",
+      "theoretical_price": 981.0,
+      "upside_percent": 74.3
     },
     {
       "code": "8917",
@@ -279,7 +291,9 @@
         "above_ma": false,
         "near_high": true
       },
-      "tab": "finance"
+      "tab": "finance",
+      "theoretical_price": 3082.0,
+      "upside_percent": 162.3
     },
     {
       "code": "3293",
@@ -319,7 +333,9 @@
         "above_ma": false,
         "near_high": true
       },
-      "tab": "finance"
+      "tab": "finance",
+      "theoretical_price": 2204.0,
+      "upside_percent": 180.8
     },
     {
       "code": "8844",
@@ -359,7 +375,9 @@
         "above_ma": false,
         "near_high": false
       },
-      "tab": "finance"
+      "tab": "finance",
+      "theoretical_price": 2287.0,
+      "upside_percent": 104.2
     },
     {
       "code": "3297",
@@ -399,7 +417,9 @@
         "above_ma": true,
         "near_high": true
       },
-      "tab": "finance"
+      "tab": "finance",
+      "theoretical_price": 2572.0,
+      "upside_percent": 99.8
     },
     {
       "code": "3277",
@@ -439,7 +459,9 @@
         "above_ma": true,
         "near_high": true
       },
-      "tab": "finance"
+      "tab": "finance",
+      "theoretical_price": 3211.0,
+      "upside_percent": 124.5
     },
     {
       "code": "8881",
@@ -479,7 +501,9 @@
         "above_ma": false,
         "near_high": false
       },
-      "tab": "finance"
+      "tab": "finance",
+      "theoretical_price": 1809.0,
+      "upside_percent": 145.8
     },
     {
       "code": "8891",
@@ -519,7 +543,9 @@
         "above_ma": true,
         "near_high": true
       },
-      "tab": "finance"
+      "tab": "finance",
+      "theoretical_price": 6025.0,
+      "upside_percent": 125.4
     },
     {
       "code": "8869",
@@ -559,7 +585,9 @@
         "above_ma": false,
         "near_high": false
       },
-      "tab": "finance"
+      "tab": "finance",
+      "theoretical_price": 3132.0,
+      "upside_percent": 203.8
     },
     {
       "code": "8772",
@@ -599,7 +627,9 @@
         "above_ma": false,
         "near_high": true
       },
-      "tab": "finance"
+      "tab": "finance",
+      "theoretical_price": 1777.0,
+      "upside_percent": 100.6
     },
     {
       "code": "8864",
@@ -639,7 +669,9 @@
         "above_ma": false,
         "near_high": false
       },
-      "tab": "finance"
+      "tab": "finance",
+      "theoretical_price": 1335.0,
+      "upside_percent": 36.3
     },
     {
       "code": "9633",
@@ -679,7 +711,9 @@
         "above_ma": true,
         "near_high": true
       },
-      "tab": "finance"
+      "tab": "finance",
+      "theoretical_price": 4542.0,
+      "upside_percent": 167.5
     },
     {
       "code": "3477",
@@ -719,7 +753,9 @@
         "above_ma": false,
         "near_high": true
       },
-      "tab": "finance"
+      "tab": "finance",
+      "theoretical_price": 1877.0,
+      "upside_percent": 115.0
     },
     {
       "code": "2993",
@@ -759,7 +795,9 @@
         "above_ma": true,
         "near_high": true
       },
-      "tab": "finance"
+      "tab": "finance",
+      "theoretical_price": 6796.0,
+      "upside_percent": 162.6
     },
     {
       "code": "3495",
@@ -799,7 +837,9 @@
         "above_ma": false,
         "near_high": false
       },
-      "tab": "finance"
+      "tab": "finance",
+      "theoretical_price": 6105.0,
+      "upside_percent": 156.5
     },
     {
       "code": "8908",
@@ -839,7 +879,9 @@
         "above_ma": false,
         "near_high": true
       },
-      "tab": "finance"
+      "tab": "finance",
+      "theoretical_price": 1649.0,
+      "upside_percent": 94.7
     },
     {
       "code": "8793",
@@ -879,7 +921,9 @@
         "above_ma": false,
         "near_high": true
       },
-      "tab": "finance"
+      "tab": "finance",
+      "theoretical_price": 4912.0,
+      "upside_percent": 19.8
     },
     {
       "code": "8928",
@@ -919,7 +963,9 @@
         "above_ma": true,
         "near_high": true
       },
-      "tab": "finance"
+      "tab": "finance",
+      "theoretical_price": 6668.0,
+      "upside_percent": 148.3
     },
     {
       "code": "3452",
@@ -959,7 +1005,9 @@
         "above_ma": false,
         "near_high": false
       },
-      "tab": "finance"
+      "tab": "finance",
+      "theoretical_price": 4121.0,
+      "upside_percent": 184.0
     },
     {
       "code": "3276",
@@ -999,7 +1047,9 @@
         "above_ma": true,
         "near_high": true
       },
-      "tab": "finance"
+      "tab": "finance",
+      "theoretical_price": 1841.0,
+      "upside_percent": 39.3
     },
     {
       "code": "3242",
@@ -1039,7 +1089,9 @@
         "above_ma": false,
         "near_high": false
       },
-      "tab": "finance"
+      "tab": "finance",
+      "theoretical_price": 1595.0,
+      "upside_percent": 196.4
     },
     {
       "code": "8737",
@@ -1079,7 +1131,9 @@
         "above_ma": true,
         "near_high": false
       },
-      "tab": "finance"
+      "tab": "finance",
+      "theoretical_price": 1464.0,
+      "upside_percent": 112.5
     },
     {
       "code": "8707",
@@ -1119,7 +1173,9 @@
         "above_ma": false,
         "near_high": true
       },
-      "tab": "finance"
+      "tab": "finance",
+      "theoretical_price": 5146.0,
+      "upside_percent": 43.3
     },
     {
       "code": "4809",
@@ -1159,7 +1215,9 @@
         "above_ma": true,
         "near_high": true
       },
-      "tab": "finance"
+      "tab": "finance",
+      "theoretical_price": 3164.0,
+      "upside_percent": 53.3
     },
     {
       "code": "3280",
@@ -1199,7 +1257,9 @@
         "above_ma": false,
         "near_high": true
       },
-      "tab": "finance"
+      "tab": "finance",
+      "theoretical_price": 5219.0,
+      "upside_percent": 383.2
     },
     {
       "code": "7187",
@@ -1239,7 +1299,9 @@
         "above_ma": false,
         "near_high": false
       },
-      "tab": "finance"
+      "tab": "finance",
+      "theoretical_price": 2113.0,
+      "upside_percent": 66.1
     },
     {
       "code": "8931",
@@ -1279,7 +1341,9 @@
         "above_ma": false,
         "near_high": true
       },
-      "tab": "finance"
+      "tab": "finance",
+      "theoretical_price": 4375.0,
+      "upside_percent": 158.2
     },
     {
       "code": "9820",
@@ -1319,7 +1383,9 @@
         "above_ma": false,
         "near_high": false
       },
-      "tab": "finance"
+      "tab": "finance",
+      "theoretical_price": 5725.0,
+      "upside_percent": 60.8
     },
     {
       "code": "7196",
@@ -1359,7 +1425,9 @@
         "above_ma": false,
         "near_high": false
       },
-      "tab": "finance"
+      "tab": "finance",
+      "theoretical_price": 1520.0,
+      "upside_percent": 112.6
     },
     {
       "code": "7192",
@@ -1399,7 +1467,9 @@
         "above_ma": true,
         "near_high": true
       },
-      "tab": "finance"
+      "tab": "finance",
+      "theoretical_price": 1240.0,
+      "upside_percent": 89.6
     },
     {
       "code": "8929",
@@ -1439,7 +1509,9 @@
         "above_ma": false,
         "near_high": false
       },
-      "tab": "finance"
+      "tab": "finance",
+      "theoretical_price": 1942.0,
+      "upside_percent": 51.7
     },
     {
       "code": "8999",
@@ -1479,7 +1551,9 @@
         "above_ma": false,
         "near_high": true
       },
-      "tab": "finance"
+      "tab": "finance",
+      "theoretical_price": 694.0,
+      "upside_percent": 15.8
     },
     {
       "code": "3284",
@@ -1519,7 +1593,9 @@
         "above_ma": false,
         "near_high": true
       },
-      "tab": "finance"
+      "tab": "finance",
+      "theoretical_price": 1979.0,
+      "upside_percent": 58.0
     },
     {
       "code": "8699",
@@ -1559,7 +1635,9 @@
         "above_ma": false,
         "near_high": true
       },
-      "tab": "finance"
+      "tab": "finance",
+      "theoretical_price": 8653.0,
+      "upside_percent": 599.0
     },
     {
       "code": "7175",
@@ -1599,7 +1677,9 @@
         "above_ma": true,
         "near_high": true
       },
-      "tab": "finance"
+      "tab": "finance",
+      "theoretical_price": 2947.0,
+      "upside_percent": 122.3
     },
     {
       "code": "2999",
@@ -1639,7 +1719,9 @@
         "above_ma": false,
         "near_high": false
       },
-      "tab": "finance"
+      "tab": "finance",
+      "theoretical_price": 680.0,
+      "upside_percent": 43.7
     },
     {
       "code": "8747",
@@ -1679,7 +1761,9 @@
         "above_ma": true,
         "near_high": true
       },
-      "tab": "finance"
+      "tab": "finance",
+      "theoretical_price": 5886.0,
+      "upside_percent": 84.8
     },
     {
       "code": "3300",
@@ -1719,7 +1803,9 @@
         "above_ma": true,
         "near_high": true
       },
-      "tab": "finance"
+      "tab": "finance",
+      "theoretical_price": 4249.0,
+      "upside_percent": 66.8
     },
     {
       "code": "3241",
@@ -1759,7 +1845,9 @@
         "above_ma": true,
         "near_high": true
       },
-      "tab": "finance"
+      "tab": "finance",
+      "theoretical_price": 1154.0,
+      "upside_percent": 101.0
     },
     {
       "code": "3294",
@@ -1799,7 +1887,9 @@
         "above_ma": false,
         "near_high": true
       },
-      "tab": "finance"
+      "tab": "finance",
+      "theoretical_price": 2733.0,
+      "upside_percent": 32.4
     },
     {
       "code": "8877",
@@ -1839,7 +1929,9 @@
         "above_ma": false,
         "near_high": false
       },
-      "tab": "finance"
+      "tab": "finance",
+      "theoretical_price": 10141.0,
+      "upside_percent": 63.8
     },
     {
       "code": "8996",
@@ -1879,7 +1971,9 @@
         "above_ma": true,
         "near_high": true
       },
-      "tab": "finance"
+      "tab": "finance",
+      "theoretical_price": 1882.0,
+      "upside_percent": 82.4
     },
     {
       "code": "3238",
@@ -1919,7 +2013,9 @@
         "above_ma": false,
         "near_high": false
       },
-      "tab": "finance"
+      "tab": "finance",
+      "theoretical_price": 787.0,
+      "upside_percent": 112.8
     },
     {
       "code": "8551",
@@ -1959,7 +2055,9 @@
         "above_ma": false,
         "near_high": false
       },
-      "tab": "finance"
+      "tab": "finance",
+      "theoretical_price": 7866.0,
+      "upside_percent": 70.8
     },
     {
       "code": "8904",
@@ -1999,7 +2097,9 @@
         "above_ma": false,
         "near_high": true
       },
-      "tab": "finance"
+      "tab": "finance",
+      "theoretical_price": 1479.0,
+      "upside_percent": 75.1
     }
   ]
 }
