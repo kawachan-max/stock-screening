@@ -1224,6 +1224,11 @@ export default function Home() {
                                     ? `${r.theoretical_price.toLocaleString()}\u5186`
                                     : DASH}
                                 </div>
+                                <span className="text-[10px] text-gray-400 block mt-1">
+                                  {
+                                    "\u203b\u91d1\u878d\u30fb\u4e0d\u52d5\u7523\u306f\u7cbe\u5ea6\u304c\u4f4e\u3044\u5834\u5408\u304c\u3042\u308a\u307e\u3059"
+                                  }
+                                </span>
                               </div>
                               <div className="bg-[#f5f0e8] rounded-lg p-3">
                                 <div className="text-xs text-gray-500 flex items-center gap-0.5">
@@ -1253,6 +1258,9 @@ export default function Home() {
                                       ? `${r.upside_percent}%`
                                       : DASH}
                                 </div>
+                                <span className="text-[10px] text-gray-400 block mt-1">
+                                  {"\u203b\u53c2\u8003\u5024"}
+                                </span>
                               </div>
                             </>
                           ) : (

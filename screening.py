@@ -2256,6 +2256,118 @@ def step5_save_finance(results):
     return out
 
 
+PRICE_HISTORY_FILE = "price_history.json"
+
+
+def _price_history_path():
+    return os.path.join(os.path.dirname(os.path.abspath(__file__)), PRICE_HISTORY_FILE)
+
+
+def _fetch_current_stock_price_jpy(code):
+    try:
+        ticker = yf.Ticker(f"{code}.T")
+        info = ticker.info or {}
+        p = info.get("currentPrice") or info.get("regularMarketPrice")
+        if p is None:
+            return 0.0
+        pf = float(p)
+        if isinstance(pf, float) and math.isnan(pf):
+            return 0.0
+        return pf
+    except Exception:
+        return 0.0
+
+
+def record_price_history(general_stocks, finance_stocks):
+    """Score>=60: append snapshots to price_history.json; upsert by (date, code)."""
+    path = _price_history_path()
+    if os.path.exists(path):
+        try:
+            with open(path, "r", encoding="utf-8") as f:
+                data = json.load(f)
+        except Exception:
+            data = {"records": []}
+    else:
+        data = {"records": []}
+    records = data.get("records")
+    if not isinstance(records, list):
+        records = []
+
+    JST = timezone(timedelta(hours=9))
+    today = datetime.now(JST).strftime("%Y-%m-%d")
+
+    def build_entries(stocks, tab):
+        entries = []
+        if not stocks:
+            return entries
+        for s in stocks:
+            try:
+                score = float(s.get("score") or 0)
+            except (TypeError, ValueError):
+                score = 0.0
+            if score < 60:
+                continue
+            code = str(s.get("code") or "").strip()
+            if not code:
+                continue
+            name = (s.get("name") or code).strip()
+            tp = s.get("theoretical_price")
+            try:
+                theoretical_price = int(round(float(tp))) if tp is not None else 0
+            except (TypeError, ValueError):
+                theoretical_price = 0
+            up = s.get("upside_percent")
+            try:
+                upside_percent = round(float(up), 1) if up is not None else 0.0
+            except (TypeError, ValueError):
+                upside_percent = 0.0
+            if isinstance(upside_percent, float) and math.isnan(upside_percent):
+                upside_percent = 0.0
+
+            stock_price_f = _fetch_current_stock_price_jpy(code)
+            stock_price = int(round(stock_price_f))
+
+            rec = {
+                "date": today,
+                "code": code,
+                "name": name,
+                "tab": tab,
+                "score": int(round(score)),
+                "stock_price": stock_price,
+                "theoretical_price": theoretical_price,
+                "upside_percent": upside_percent,
+            }
+            th_f = float(theoretical_price)
+            if th_f > 0 and stock_price_f > th_f:
+                rec["tracking_ended"] = True
+                rec["end_reason"] = "exceeded_theoretical"
+            entries.append(rec)
+        return entries
+
+    by_key = {}
+    for row in build_entries(general_stocks, "general"):
+        by_key[(row["date"], row["code"])] = row
+    for row in build_entries(finance_stocks, "finance"):
+        by_key[(row["date"], row["code"])] = row
+    new_rows = list(by_key.values())
+
+    keys_today = {(today, str(r["code"])) for r in new_rows}
+    filtered = [
+        r
+        for r in records
+        if (r.get("date"), str(r.get("code") or "")) not in keys_today
+    ]
+    filtered.extend(new_rows)
+    data["records"] = filtered
+
+    with open(path, "w", encoding="utf-8") as f:
+        json.dump(data, f, ensure_ascii=False, indent=2)
+    print(
+        f"Price history: {len(new_rows)} record(s) -> {path}",
+        flush=True,
+    )
+
+
 # =============================
 # Tab2 finance pipeline (always run after general)
 # =============================
@@ -2266,21 +2378,18 @@ def run_screening_finance_tab():
     stocks_f = step1_get_finance_list_from_jpx()
     if stocks_f is None or len(stocks_f) == 0:
         print("Step1 (finance): 0 rows")
-        step5_save_finance([])
-        return
+        return step5_save_finance([])
     if TEST_LIMIT > 0:
         stocks_f = stocks_f.iloc[:TEST_LIMIT].copy()
         print(f"TEST_LIMIT: finance first {TEST_LIMIT} codes")
     first_f = step2_first_filter_finance(stocks_f)
     if not first_f:
         print("Step2 (finance): 0 pass")
-        step5_save_finance([])
-        return
+        return step5_save_finance([])
     second_f = step3_detail_finance(first_f)
     if not second_f:
         print("Step3 (finance): 0 pass")
-        step5_save_finance([])
-        return
+        return step5_save_finance([])
 
     for r in second_f:
         r["ai_comment"] = ""
@@ -2360,6 +2469,7 @@ def run_screening_finance_tab():
     results_f = step4_scoring_finance(top_f)
     out_f = step5_save_finance(results_f)
     print(f"Tab2 done: {len(out_f)} stocks")
+    return out_f
 
 
 # =============================
@@ -2482,7 +2592,17 @@ def run_screening():
                       f"\u5408\u8A08={r['score']} | "
                       f"ROE={r.get('roe')}, ROIC={r.get('roic')}, PBR={r.get('pbr')}, \u914D\u5F53\u6027\u5411={r.get('payout_ratio')}%")
     finally:
-        run_screening_finance_tab()
+        out_f = []
+        try:
+            _fin = run_screening_finance_tab()
+            if isinstance(_fin, list):
+                out_f = _fin
+        except Exception as _ex:
+            print(f"run_screening_finance_tab: {_ex}", flush=True)
+        try:
+            record_price_history(out, out_f)
+        except Exception as _ex:
+            print(f"record_price_history: {_ex}", flush=True)
 
 
 if __name__ == "__main__":

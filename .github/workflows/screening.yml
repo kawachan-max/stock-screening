@@ -51,5 +51,6 @@ jobs:
           git add screening-ui/screening_result.json screening-ui/public/screening_result.json
           git add -f screening-ui/screening_result_finance.json screening-ui/public/screening_result_finance.json 2>/dev/null || true
           git add -f screening-ui/ai_cache.json 2>/dev/null || true
+          git add -f screening-ui/price_history.json 2>/dev/null || true
           git diff --staged --quiet || git commit -m "update screening result $(date +'%Y-%m-%d')"
           git push
