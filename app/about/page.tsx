@@ -96,7 +96,7 @@ export default function AboutPage() {
                 <img
                   src="/book_top.png"
                   alt={"\u53c2\u8003\u66f8\u7c4d"}
-                  className="rounded-lg shadow-md max-w-lg w-full"
+                  className="rounded-lg shadow-md max-w-xl w-full"
                 />
               </div>
               <h3 className="text-base font-bold text-gray-800 mb-3">{HYBRID_TITLE}</h3>
