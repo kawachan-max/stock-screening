@@ -92,6 +92,13 @@ export default function AboutPage() {
             <p className="text-sm text-gray-600 mb-2">{CATCH_7}</p>
             <p className="text-sm text-gray-700 mb-6">{CATCH_8}</p>
             <div className="mt-6 mb-6">
+              <div className="flex justify-center my-6">
+                <img
+                  src="/book_top.png"
+                  alt={"\u53c2\u8003\u66f8\u7c4d"}
+                  className="rounded-lg shadow-md max-w-sm w-full"
+                />
+              </div>
               <h3 className="text-base font-bold text-gray-800 mb-3">{HYBRID_TITLE}</h3>
               <div className="space-y-2 text-sm text-gray-700">
                 <p>{HYBRID_1}</p>
