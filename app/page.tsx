@@ -778,8 +778,8 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="mx-auto max-w-4xl px-4 pb-4">
-            <div className="mb-4 flex flex-wrap items-center gap-2">
+          <div className="mx-auto max-w-4xl px-4 pb-2">
+            <div className="mb-2 flex flex-wrap items-center gap-2">
               <button
                 type="button"
                 onClick={() => setScreeningTab("general")}
@@ -806,7 +806,7 @@ export default function Home() {
           </div>
         </header>
 
-        <div className="max-w-4xl mx-auto px-3 py-6 sm:px-4 sm:py-8">
+        <div className="mx-auto max-w-4xl px-3 pt-3 pb-6 sm:px-4 sm:pt-4 sm:pb-8">
         {loading ? (
           <div className="flex items-center justify-center py-20">
             <div
@@ -863,7 +863,7 @@ export default function Home() {
                 <div
                   key={r.code}
                   id={`stock-${r.code}`}
-                  style={{ scrollMarginTop: "120px" }}
+                  style={{ scrollMarginTop: "80px" }}
                   className="rounded-xl border border-[#e5e0d8] bg-white p-3 shadow-sm transition-shadow hover:shadow-md sm:p-4"
                 >
                   <div className="flex flex-col items-stretch justify-between gap-3 sm:flex-row sm:flex-wrap sm:items-start">
@@ -1008,7 +1008,7 @@ export default function Home() {
                             if (el) {
                               el.scrollIntoView({
                                 behavior: "smooth",
-                                block: "start",
+                                block: "nearest",
                               });
                             }
                           }, 100);
