@@ -42,4 +42,5 @@ jobs:
           git add -f ai_cache.json 2>/dev/null || true
           git add -f price_history.json 2>/dev/null || true
           git diff --staged --quiet || git commit -m "update screening result $(date +'%Y-%m-%d')"
+          git pull --rebase origin main
           git push
