@@ -91,6 +91,15 @@ def get_jquants_quarterly(code):
         f_sales = to_num(latest.get("FSales"))
         f_op = to_num(latest.get("FOP"))
         f_np = to_num(latest.get("FNP"))
+        fy_records = [d for d in quarterly if d.get("CurPerType") == "FY" and d.get("Sales") and d["Sales"] != ""]
+        prev_fy = None
+        if fy_records:
+            last_fy = fy_records[-1]
+            prev_fy = {
+                "sales": to_num(last_fy.get("Sales")),
+                "op": to_num(last_fy.get("OP")),
+                "np": to_num(last_fy.get("NP")),
+            }
         # \u30b5\u30de\u30ea\u30fc\u30c6\u30ad\u30b9\u30c8\u751f\u6210\uff08AI\u5206\u6790\u30d7\u30ed\u30f3\u30d7\u30c8\u7528\uff09
         lines = []
         lines.append(f"[Latest Quarterly Report] Disclosed: {latest.get('DiscDate', 'N/A')}")
@@ -127,6 +136,7 @@ def get_jquants_quarterly(code):
                 "op": latest_op,
                 "np": latest_np,
             },
+            "prev_fy": prev_fy,
         }
     except Exception as e:
         print(f"  [J-Quants] {code} error: {e}")
@@ -2004,7 +2014,7 @@ def calc_forecast_adjustment(jquants_data, row):
         return 0
 
     forecast = jquants_data.get("forecast", {})
-    latest = jquants_data.get("latest", {})
+    prev_fy = jquants_data.get("prev_fy", {})
 
     if not forecast:
         return 0
@@ -2013,9 +2023,9 @@ def calc_forecast_adjustment(jquants_data, row):
     f_op = forecast.get("f_op")
     f_np = forecast.get("f_np")
 
-    l_sales = latest.get("sales")
-    l_op = latest.get("op")
-    l_np = latest.get("np")
+    l_sales = prev_fy.get("sales") if prev_fy else None
+    l_op = prev_fy.get("op") if prev_fy else None
+    l_np = prev_fy.get("np") if prev_fy else None
 
     roe_actual = row.get("roe", 0) or 0
 
