@@ -859,11 +859,12 @@ export default function Home() {
                 ? LABEL_SHAREHOLDER_RETURN_FINANCE
                 : LABEL_SHAREHOLDER;
               const isExpanded = expandedCode === r.code;
+              const isLockedRow = i < lockCount && !isUnlocked;
               return (
                 <div
                   key={r.code}
                   id={`stock-${r.code}`}
-                  style={{ scrollMarginTop: "80px" }}
+                  style={{ scrollMarginTop: "160px" }}
                   className="rounded-xl border border-[#e5e0d8] bg-white p-3 shadow-sm transition-shadow hover:shadow-md sm:p-4"
                 >
                   <div className="flex flex-col items-stretch justify-between gap-3 sm:flex-row sm:flex-wrap sm:items-start">
@@ -1002,7 +1003,7 @@ export default function Home() {
                         }
                         const willExpand = !isExpanded;
                         setExpandedCode(isExpanded ? null : r.code);
-                        if (willExpand) {
+                        if (willExpand && !isLockedRow) {
                           setTimeout(() => {
                             const el = document.getElementById(`stock-${r.code}`);
                             if (el) {
