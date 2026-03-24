@@ -737,16 +737,24 @@ export default function Home() {
             </h1>
             <p className="mt-0.5 text-[11px] leading-snug text-[#6b6b6b] sm:text-xs">{SUBTITLE}</p>
           </div>
-          <div className="w-full shrink-0 sm:w-auto">
+          <div className="flex w-full shrink-0 flex-row items-center justify-center gap-2 sm:w-auto sm:justify-end">
+            <button
+              type="button"
+              onClick={() => window.location.reload()}
+              className="text-gray-500 hover:text-gray-700 text-lg p-1 cursor-pointer"
+              title={"\u30c7\u30fc\u30bf\u3092\u66f4\u65b0"}
+            >
+              {"\ud83d\udd04"}
+            </button>
             {isUnlocked ? (
-              <span className="inline-flex w-full items-center justify-center gap-1.5 rounded-lg bg-[#f0ece6] px-3 py-2 text-sm text-[#16a34a] sm:w-auto sm:justify-start sm:py-1.5">
+              <span className="inline-flex min-w-0 flex-1 items-center justify-center gap-1.5 rounded-lg bg-[#f0ece6] px-3 py-2 text-sm text-[#16a34a] sm:flex-initial sm:justify-start sm:py-1.5">
                 {BADGE_PAID}
               </span>
             ) : (
               <button
                 type="button"
                 onClick={openModal}
-                className="inline-flex w-full items-center justify-center gap-1.5 rounded-lg bg-[#1a1a1a] px-3 py-2 text-xs font-medium text-white transition-colors hover:opacity-90 sm:w-auto sm:py-1.5 sm:text-sm"
+                className="inline-flex min-w-0 flex-1 items-center justify-center gap-1.5 rounded-lg bg-[#1a1a1a] px-3 py-2 text-xs font-medium text-white transition-colors hover:opacity-90 sm:flex-initial sm:py-1.5 sm:text-sm"
               >
                 {`\uD83D\uDD13 \u4e0a\u4f4d${lockCount}\u4f4d\u3092\u89e3\u653e`}
               </button>
