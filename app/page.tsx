@@ -1485,11 +1485,11 @@ export default function Home() {
 
       {modalOpen && (
         <div
-          className="fixed inset-0 z-30 flex items-center justify-center p-4 bg-black/40"
+          className="fixed inset-0 z-50 flex items-center justify-center overflow-y-auto bg-black/40 p-4"
           onClick={() => setModalOpen(false)}
         >
           <div
-            className="w-full max-w-md rounded-2xl border border-[#e5e0d8] bg-white p-6 shadow-xl"
+            className="my-auto w-full max-w-sm max-h-[90vh] overflow-y-auto rounded-2xl border border-[#e5e0d8] bg-white p-6 shadow-xl"
             onClick={(e) => e.stopPropagation()}
           >
             <h2 className="text-lg font-semibold mb-2 text-[#1a1a1a]">
