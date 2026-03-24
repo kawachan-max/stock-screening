@@ -738,24 +738,24 @@ export default function Home() {
               </h1>
               <p className="mt-0.5 text-[11px] leading-snug text-[#6b6b6b] sm:text-xs">{SUBTITLE}</p>
             </div>
-            <div className="flex w-full max-w-full flex-nowrap items-stretch gap-2">
+            <div className="mx-auto flex gap-2 flex-nowrap max-w-md">
               <Link
                 href="/about"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex min-w-0 flex-1 items-center justify-center truncate text-xs px-3 py-1.5 rounded-full border border-gray-300 text-gray-600 hover:bg-gray-100"
+                className="inline-flex shrink-0 items-center justify-center text-xs px-3 py-1.5 rounded-full border border-gray-300 text-gray-600 hover:bg-gray-100"
               >
                 {TAB_SERVICE_ABOUT}
               </Link>
               {isUnlocked ? (
-                <span className="inline-flex min-w-0 flex-1 items-center justify-center truncate text-xs px-3 py-1.5 rounded-full bg-orange-500 text-white">
+                <span className="inline-flex shrink-0 items-center justify-center text-xs px-3 py-1.5 rounded-full bg-orange-500 text-white">
                   {BTN_PAID_UNLOCKED}
                 </span>
               ) : (
                 <button
                   type="button"
                   onClick={openModal}
-                  className="inline-flex min-w-0 flex-1 cursor-pointer items-center justify-center truncate text-xs px-3 py-1.5 rounded-full bg-orange-500 text-white hover:bg-orange-600"
+                  className="inline-flex shrink-0 cursor-pointer items-center justify-center text-xs px-3 py-1.5 rounded-full bg-orange-500 text-white hover:bg-orange-600"
                 >
                   {BTN_PAID_LOCKED}
                 </button>
@@ -855,7 +855,7 @@ export default function Home() {
               return (
                 <div
                   key={r.code}
-                  id={`stock-${i}`}
+                  id={`stock-${r.code}`}
                   style={{ scrollMarginTop: "120px" }}
                   className="rounded-xl border border-[#e5e0d8] bg-white p-3 shadow-sm transition-shadow hover:shadow-md sm:p-4"
                 >
@@ -996,15 +996,15 @@ export default function Home() {
                         const willExpand = !isExpanded;
                         setExpandedCode(isExpanded ? null : r.code);
                         if (willExpand) {
-                          const el = document.getElementById(`stock-${i}`);
-                          if (el) {
-                            setTimeout(() => {
+                          setTimeout(() => {
+                            const el = document.getElementById(`stock-${r.code}`);
+                            if (el) {
                               el.scrollIntoView({
                                 behavior: "smooth",
                                 block: "start",
                               });
-                            }, 100);
-                          }
+                            }
+                          }, 100);
                         }
                       }}
                       className="text-xs text-[#92400e] font-medium hover:underline"
