@@ -24,6 +24,7 @@ jobs:
       - name: Run screening
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          JQUANTS_API_KEY: ${{ secrets.JQUANTS_API_KEY }}
           SKIP_AI: ${{ contains(fromJSON('["Monday","Thursday"]'), steps.get-day.outputs.day) && 'false' || 'true' }}
         run: python screening.py
       - name: Copy result to public

@@ -22,6 +22,105 @@ try:
 except ImportError:
     anthropic = None
 
+JQUANTS_API_KEY = os.getenv("JQUANTS_API_KEY", "")
+
+
+def get_jquants_quarterly(code):
+    """J-Quants API\u304b\u3089\u6700\u65b0\u56db\u534a\u671f\u6c7a\u7b97\u30c7\u30fc\u30bf\u3092\u53d6\u5f97"""
+    if not JQUANTS_API_KEY:
+        return None
+    code_5 = str(code).strip()
+    if len(code_5) == 4:
+        code_5 = code_5 + "0"
+    try:
+        headers = {"x-api-key": JQUANTS_API_KEY}
+        r = requests.get(
+            "https://api.jquants.com/v2/fins/summary",
+            params={"code": code_5},
+            headers=headers,
+            timeout=30
+        )
+        if r.status_code != 200:
+            return None
+        data = r.json().get("data", [])
+        # \u56db\u534a\u671f\u6c7a\u7b97\u3067\u58f2\u4e0a\u30c7\u30fc\u30bf\u3042\u308a\u306e\u3082\u306e
+        quarterly = [
+            d for d in data
+            if d.get("CurPerType") in ["1Q", "2Q", "3Q", "4Q", "FY"]
+            and d.get("Sales") and d["Sales"] != ""
+        ]
+        if not quarterly:
+            return None
+        latest = quarterly[-1]
+        latest_per_type = latest.get("CurPerType", "")
+        latest_fy_end = latest.get("CurFYEn", "")
+        # \u524d\u5e74\u540c\u671f\u3092\u63a2\u3059
+        prev_year = None
+        for q in quarterly:
+            if (q.get("CurPerType") == latest_per_type and
+                q.get("CurFYEn") != latest_fy_end and
+                q.get("Sales") and q["Sales"] != ""):
+                prev_year = q
+
+        def to_num(val):
+            try:
+                return float(val) if val and val != "" else None
+            except (TypeError, ValueError):
+                return None
+
+        def to_million(val):
+            return int(round(val / 1_000_000)) if val else None
+
+        latest_sales = to_num(latest.get("Sales"))
+        latest_op = to_num(latest.get("OP"))
+        latest_np = to_num(latest.get("NP"))
+        latest_eps = to_num(latest.get("EPS"))
+        yoy_sales = None
+        yoy_op = None
+        yoy_np = None
+        if prev_year:
+            prev_sales = to_num(prev_year.get("Sales"))
+            prev_op = to_num(prev_year.get("OP"))
+            prev_np = to_num(prev_year.get("NP"))
+            if prev_sales and latest_sales and prev_sales > 0:
+                yoy_sales = round((latest_sales - prev_sales) / prev_sales * 100, 1)
+            if prev_op and latest_op and prev_op > 0:
+                yoy_op = round((latest_op - prev_op) / prev_op * 100, 1)
+            if prev_np and latest_np and prev_np > 0:
+                yoy_np = round((latest_np - prev_np) / prev_np * 100, 1)
+        f_sales = to_num(latest.get("FSales"))
+        f_op = to_num(latest.get("FOP"))
+        f_np = to_num(latest.get("FNP"))
+        # \u30b5\u30de\u30ea\u30fc\u30c6\u30ad\u30b9\u30c8\u751f\u6210\uff08AI\u5206\u6790\u30d7\u30ed\u30f3\u30d7\u30c8\u7528\uff09
+        lines = []
+        lines.append(f"[Latest Quarterly Report] Disclosed: {latest.get('DiscDate', 'N/A')}")
+        lines.append(f"Period: {latest.get('CurPerSt', '')}~{latest.get('CurPerEn', '')} ({latest_per_type})")
+        if latest_sales:
+            lines.append(f"Revenue: {to_million(latest_sales)}M JPY")
+        if latest_op:
+            lines.append(f"Operating Profit: {to_million(latest_op)}M JPY")
+        if latest_np:
+            lines.append(f"Net Profit: {to_million(latest_np)}M JPY")
+        if latest_eps:
+            lines.append(f"EPS: {latest_eps} JPY")
+        if yoy_sales is not None or yoy_op is not None or yoy_np is not None:
+            yo_parts = []
+            if yoy_sales is not None:
+                yo_parts.append(f"Revenue {yoy_sales:+.1f}%")
+            if yoy_op is not None:
+                yo_parts.append(f"OP {yoy_op:+.1f}%")
+            if yoy_np is not None:
+                yo_parts.append(f"NP {yoy_np:+.1f}%")
+            if yo_parts:
+                lines.append("YoY Change: " + " / ".join(yo_parts))
+        if f_sales:
+            lines.append(f"Full-Year Forecast: Revenue {to_million(f_sales)}M / OP {to_million(f_op)}M / NP {to_million(f_np)}M JPY")
+        return "\n".join(lines)
+    except Exception as e:
+        print(f"  [J-Quants] {code} error: {e}")
+        return None
+
+
 # ?E???E????E???????E????????????E CRITICAL ????E?E# for _name in ("urllib3", "urllib3.connectionpool", "yfinance"):
 #     logging.getLogger(_name).setLevel(logging.CRITICAL)
 
@@ -1883,7 +1982,7 @@ def _format_3y(values):
         return "N/A"
 
 
-def generate_ai_analysis(row, finance_mode=False):
+def generate_ai_analysis(row, finance_mode=False, jquants_data=None):
     try:
         if not os.environ.get("ANTHROPIC_API_KEY"):
             return "", ({} if finance_mode else _default_risk_checks()), 0, 0, False
@@ -2039,6 +2138,15 @@ JSON\u30b5\u30f3\u30d7\u30eb:
   "upward_revision": false
 }}
 """
+
+        if jquants_data:
+            prompt += f"\n\nLatest Quarterly Financial Data (from J-Quants/JPX official):\n{jquants_data}\n"
+            prompt += (
+                "IMPORTANT: This quarterly data is the most recent official financial report. "
+                "If it shows significant decline in revenue or profit compared to previous year, "
+                "this MUST be reflected in your analysis and scores. "
+                "Do not rely solely on annual data if quarterly data shows deterioration.\n"
+            )
 
         message = client.messages.create(
             model="claude-sonnet-4-6",
@@ -2418,8 +2526,11 @@ def run_screening_finance_tab():
             ai_cache["finance"] = {}
         for i, r in enumerate(top_f):
             time.sleep(3)
+            jquants_data = get_jquants_quarterly(r.get("code", ""))
+            if jquants_data:
+                print("    [J-Quants] quarterly data found", flush=True)
             ai_comment, risk_checks, trend_score, quality_score, upward_revision = generate_ai_analysis(
-                r, finance_mode=True
+                r, finance_mode=True, jquants_data=jquants_data
             )
             r["ai_comment"] = ai_comment
             r["risk_checks"] = risk_checks
@@ -2527,8 +2638,11 @@ def run_screening():
                             ai_cache["general"] = {}
                         for i, r in enumerate(top_second):
                             time.sleep(3)
+                            jquants_data = get_jquants_quarterly(r.get("code", ""))
+                            if jquants_data:
+                                print("    [J-Quants] quarterly data found", flush=True)
                             ai_comment, risk_checks, trend_score, quality_score, upward_revision = (
-                                generate_ai_analysis(r, finance_mode=False)
+                                generate_ai_analysis(r, finance_mode=False, jquants_data=jquants_data)
                             )
                             r["ai_comment"] = ai_comment
                             r["risk_checks"] = risk_checks
