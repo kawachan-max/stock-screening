@@ -159,6 +159,86 @@
       "stock_price": 1430,
       "theoretical_price": 3211,
       "upside_percent": 124.5
+    },
+    {
+      "date": "2026-03-24",
+      "code": "7991",
+      "name": "MAMIYA-OP CO LTD",
+      "tab": "general",
+      "score": 77,
+      "stock_price": 1418,
+      "theoretical_price": 5011,
+      "upside_percent": 253.4
+    },
+    {
+      "date": "2026-03-24",
+      "code": "8152",
+      "name": "SOMAR CORPORATION",
+      "tab": "general",
+      "score": 70,
+      "stock_price": 5700,
+      "theoretical_price": 22785,
+      "upside_percent": 299.7
+    },
+    {
+      "date": "2026-03-24",
+      "code": "5363",
+      "name": "TYK CORPORATION",
+      "tab": "general",
+      "score": 64,
+      "stock_price": 559,
+      "theoretical_price": 1297,
+      "upside_percent": 132.0
+    },
+    {
+      "date": "2026-03-24",
+      "code": "8135",
+      "name": "ZETT CORPORATION",
+      "tab": "general",
+      "score": 62,
+      "stock_price": 456,
+      "theoretical_price": 2599,
+      "upside_percent": 467.4
+    },
+    {
+      "date": "2026-03-24",
+      "code": "5280",
+      "name": "YOSHICON CO LTD",
+      "tab": "finance",
+      "score": 65,
+      "stock_price": 2596,
+      "theoretical_price": 10231,
+      "upside_percent": 294.1
+    },
+    {
+      "date": "2026-03-24",
+      "code": "8917",
+      "name": "FIRST JUKEN CO LTD",
+      "tab": "finance",
+      "score": 61,
+      "stock_price": 1149,
+      "theoretical_price": 3083,
+      "upside_percent": 168.3
+    },
+    {
+      "date": "2026-03-24",
+      "code": "3293",
+      "name": "AZUMA HOUSE CO LTD",
+      "tab": "finance",
+      "score": 61,
+      "stock_price": 784,
+      "theoretical_price": 2204,
+      "upside_percent": 181.1
+    },
+    {
+      "date": "2026-03-24",
+      "code": "8935",
+      "name": "FJ NEXT HOLDINGS CO LTD",
+      "tab": "finance",
+      "score": 61,
+      "stock_price": 1632,
+      "theoretical_price": 4022,
+      "upside_percent": 146.4
     }
   ]
 }
