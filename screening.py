@@ -1557,12 +1557,6 @@ def calc_score(row):
         tenbagger_stars += 1
     tenbagger_stars = min(5, max(0, int(tenbagger_stars)))
 
-    # forecast_adj \u304c\u5927\u304d\u304f\u30de\u30a4\u30ca\u30b9\u306a\u3089\u2606\u3092\u6e1b\u3089\u3059\uff08\u540c\u4e00\u95a2\u6570\u5185\u3067\u8a08\u7b97\u6e08\u307f\u306e forecast_adj \u3092\u4f7f\u7528\uff09
-    if forecast_adj <= -3:
-        tenbagger_stars = max(0, tenbagger_stars - 2)
-    elif forecast_adj <= -1:
-        tenbagger_stars = max(0, tenbagger_stars - 1)
-
     row["trend_score"] = trend_score
     row["quality_score"] = quality_score
     row["valuation_score"] = valuation_score
@@ -2011,52 +2005,26 @@ def _sales_growth_pct(row):
 
 
 def calc_forecast_adjustment(jquants_data, row):
-    """
-    J-Quants\u306e\u901a\u671f\u4e88\u60f3\u3068\u524d\u671f\u5b9f\u7e3e\u3092\u6bd4\u8f03\u3057\u3001\u30da\u30ca\u30eb\u30c6\u30a3/\u30dc\u30fc\u30ca\u30b9\u3092\u8fd4\u3059\u3002
-    \u63a7\u3048\u3081\u8a2d\u8a08\uff1a\u6e1b\u70b9\u6700\u5927-5\u3001\u52a0\u70b9\u6700\u5927+3\u3002
-    \u65e5\u672c\u4f01\u696d\u306e\u4fdd\u5b88\u7684\u4e88\u60f3\u3092\u8003\u616e\u3057\u3001\u5272\u5b89\u5ea6\u306e\u30e1\u30a4\u30f3\u8a55\u4fa1\u3092\u5d29\u3055\u306a\u3044\u5fae\u8abf\u6574\u3002
-    """
     if not jquants_data or not isinstance(jquants_data, dict):
         return 0
 
     forecast = jquants_data.get("forecast", {})
     prev_fy = jquants_data.get("prev_fy", {})
 
-    if not forecast:
+    if not forecast or not prev_fy:
         return 0
 
     f_sales = forecast.get("f_sales")
     f_op = forecast.get("f_op")
     f_np = forecast.get("f_np")
 
-    l_sales = prev_fy.get("sales") if prev_fy else None
-    l_op = prev_fy.get("op") if prev_fy else None
-    l_np = prev_fy.get("np") if prev_fy else None
+    l_sales = prev_fy.get("sales")
+    l_op = prev_fy.get("op")
+    l_np = prev_fy.get("np")
 
     roe_actual = row.get("roe", 0) or 0
 
-    penalty = 0
-
-    if f_sales and l_sales and l_sales > 0:
-        sales_growth = (f_sales - l_sales) / l_sales * 100
-        if sales_growth < 0:
-            penalty -= 1
-
-    if f_op and l_op and l_op > 0:
-        op_growth = (f_op - l_op) / l_op * 100
-        if op_growth <= -20:
-            penalty -= 2
-
-    if f_np and l_np and roe_actual > 0 and l_np != 0:
-        equity = l_np / (roe_actual / 100)
-        if equity > 0:
-            forecast_roe = f_np / equity * 100
-            if roe_actual - forecast_roe >= 5:
-                penalty -= 2
-
-    if penalty < -5:
-        penalty = -5
-
+    # \u52a0\u70b9\u306e\u307f\uff08\u6700\u5927+3\uff09
     bonus = 0
 
     if f_sales and l_sales and l_sales > 0:
@@ -2079,7 +2047,7 @@ def calc_forecast_adjustment(jquants_data, row):
     if bonus > 3:
         bonus = 3
 
-    return penalty + bonus
+    return bonus
 
 
 def _format_3y(values):
