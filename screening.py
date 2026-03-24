@@ -719,6 +719,8 @@ def get_roe_roic(fin, bs):
     ic = eq + ltd - cash
     if ic and ic > 0 and op:
         roic_pct = round((op / ic) * 100, 2)
+        if roic_pct > 100.0:
+            roic_pct = 100.0
     return roe_pct, roic_pct
 
 
