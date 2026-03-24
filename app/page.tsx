@@ -727,47 +727,54 @@ export default function Home() {
   const lockCount = rows.length >= 20 ? 10 : 5;
   const displayName = (r: Row) => (r.name_jp || r.name || r.code) || r.code;
 
+  const headerActions = (
+    <>
+      <Link
+        href="/about"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="inline-flex shrink-0 items-center justify-center text-xs px-3 py-1.5 rounded-full border border-gray-300 text-gray-600 hover:bg-gray-100"
+      >
+        {TAB_SERVICE_ABOUT}
+      </Link>
+      {isUnlocked ? (
+        <span className="inline-flex shrink-0 items-center justify-center text-xs px-3 py-1.5 rounded-full bg-orange-500 text-white">
+          {BTN_PAID_UNLOCKED}
+        </span>
+      ) : (
+        <button
+          type="button"
+          onClick={openModal}
+          className="inline-flex shrink-0 cursor-pointer items-center justify-center text-xs px-3 py-1.5 rounded-full bg-orange-500 text-white hover:bg-orange-600"
+        >
+          {BTN_PAID_LOCKED}
+        </button>
+      )}
+      <button
+        type="button"
+        onClick={() => window.location.reload()}
+        className="inline-flex shrink-0 cursor-pointer items-center justify-center text-xs px-2 py-1.5 rounded-full border border-gray-300 text-gray-500 hover:bg-gray-100"
+        title={"\u30c7\u30fc\u30bf\u3092\u66f4\u65b0"}
+      >
+        {"\ud83d\udd04"}
+      </button>
+    </>
+  );
+
   return (
     <>
       <main className="min-h-screen bg-[#f9f7f4] text-[#1a1a1a]">
         <header className="sticky top-0 z-40 border-b border-[#e5e0d8] bg-white backdrop-blur">
-          <div className="mx-auto flex max-w-4xl flex-col gap-3 px-4 py-4">
-            <div className="min-w-0">
-              <h1 className="text-lg font-bold tracking-tight text-[#1a1a1a] sm:text-xl">
-                {TITLE}
-              </h1>
-              <p className="mt-0.5 text-[11px] leading-snug text-[#6b6b6b] sm:text-xs">{SUBTITLE}</p>
-            </div>
-            <div className="mx-auto flex gap-2 flex-nowrap max-w-md">
-              <Link
-                href="/about"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex shrink-0 items-center justify-center text-xs px-3 py-1.5 rounded-full border border-gray-300 text-gray-600 hover:bg-gray-100"
-              >
-                {TAB_SERVICE_ABOUT}
-              </Link>
-              {isUnlocked ? (
-                <span className="inline-flex shrink-0 items-center justify-center text-xs px-3 py-1.5 rounded-full bg-orange-500 text-white">
-                  {BTN_PAID_UNLOCKED}
-                </span>
-              ) : (
-                <button
-                  type="button"
-                  onClick={openModal}
-                  className="inline-flex shrink-0 cursor-pointer items-center justify-center text-xs px-3 py-1.5 rounded-full bg-orange-500 text-white hover:bg-orange-600"
-                >
-                  {BTN_PAID_LOCKED}
-                </button>
-              )}
-              <button
-                type="button"
-                onClick={() => window.location.reload()}
-                className="inline-flex shrink-0 cursor-pointer items-center justify-center text-xs px-2 py-1.5 rounded-full border border-gray-300 text-gray-500 hover:bg-gray-100"
-                title={"\u30c7\u30fc\u30bf\u3092\u66f4\u65b0"}
-              >
-                {"\ud83d\udd04"}
-              </button>
+          <div className="mx-auto max-w-4xl px-4 py-4">
+            <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between sm:gap-3">
+              <div className="min-w-0">
+                <h1 className="text-lg font-bold tracking-tight text-[#1a1a1a] sm:text-xl">
+                  {TITLE}
+                </h1>
+                <p className="mt-0.5 text-[11px] leading-snug text-[#6b6b6b] sm:text-xs">{SUBTITLE}</p>
+                <div className="mt-2 flex flex-nowrap gap-2 sm:hidden">{headerActions}</div>
+              </div>
+              <div className="mt-1 hidden shrink-0 flex-nowrap gap-2 sm:flex">{headerActions}</div>
             </div>
           </div>
 
