@@ -552,24 +552,24 @@ function getCheapScore(net_cash_ratio: number, per: number): number {
 }
 
 function getCheapBadge(cheapScore: number): GradeKey {
-  if (cheapScore >= 22) return "excellent";
-  if (cheapScore >= 14) return "good";
-  if (cheapScore >= 5) return "fair";
+  if (cheapScore >= 24) return "excellent";
+  if (cheapScore >= 18) return "good";
+  if (cheapScore >= 12) return "fair";
   return "poor";
 }
 
 function getGrowthBadge(score: number, cheapScore: number): GradeKey {
   const rest = score - cheapScore;
-  if (rest >= 35) return "excellent";
-  if (rest >= 25) return "good";
-  if (rest >= 15) return "fair";
+  if (rest >= 30) return "excellent";
+  if (rest >= 20) return "good";
+  if (rest >= 12) return "fair";
   return "poor";
 }
 
 function getGradeFromGrowthScore(s: number): GradeKey {
-  if (s >= 35) return "excellent";
-  if (s >= 25) return "good";
-  if (s >= 15) return "fair";
+  if (s >= 16) return "excellent";
+  if (s >= 12) return "good";
+  if (s >= 8) return "fair";
   return "poor";
 }
 
