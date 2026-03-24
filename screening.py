@@ -1557,6 +1557,12 @@ def calc_score(row):
         tenbagger_stars += 1
     tenbagger_stars = min(5, max(0, int(tenbagger_stars)))
 
+    # forecast_adj \u304c\u5927\u304d\u304f\u30de\u30a4\u30ca\u30b9\u306a\u3089\u2606\u3092\u6e1b\u3089\u3059\uff08\u540c\u4e00\u95a2\u6570\u5185\u3067\u8a08\u7b97\u6e08\u307f\u306e forecast_adj \u3092\u4f7f\u7528\uff09
+    if forecast_adj <= -3:
+        tenbagger_stars = max(0, tenbagger_stars - 2)
+    elif forecast_adj <= -1:
+        tenbagger_stars = max(0, tenbagger_stars - 1)
+
     row["trend_score"] = trend_score
     row["quality_score"] = quality_score
     row["valuation_score"] = valuation_score
