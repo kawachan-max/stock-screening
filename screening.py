@@ -115,7 +115,19 @@ def get_jquants_quarterly(code):
                 lines.append("YoY Change: " + " / ".join(yo_parts))
         if f_sales:
             lines.append(f"Full-Year Forecast: Revenue {to_million(f_sales)}M / OP {to_million(f_op)}M / NP {to_million(f_np)}M JPY")
-        return "\n".join(lines)
+        return {
+            "summary_text": "\n".join(lines),
+            "forecast": {
+                "f_sales": f_sales,
+                "f_op": f_op,
+                "f_np": f_np,
+            },
+            "latest": {
+                "sales": latest_sales,
+                "op": latest_op,
+                "np": latest_np,
+            },
+        }
     except Exception as e:
         print(f"  [J-Quants] {code} error: {e}")
         return None
@@ -1499,6 +1511,9 @@ def calc_score(row):
         + risk_penalty
     )
 
+    jq = row.get("jquants_data")
+    forecast_adj = calc_forecast_adjustment(jq, row) if jq else 0
+    total_score = total_score + forecast_adj
     total_score = max(0, total_score)
 
     tenbagger_stars = 0
@@ -1540,6 +1555,7 @@ def calc_score(row):
     row["shareholder_score"] = shareholder_score
     row["bonus_score"] = bonus_score
     row["risk_penalty"] = risk_penalty
+    row["forecast_adj"] = forecast_adj
     row["score"] = total_score
     row["tenbagger_stars"] = tenbagger_stars
 
@@ -1782,6 +1798,9 @@ def calc_score_finance(row):
         + bonus_score
         + risk_penalty
     )
+    jq = row.get("jquants_data")
+    forecast_adj = calc_forecast_adjustment(jq, row) if jq else 0
+    total_score = total_score + forecast_adj
     total_score = max(0, total_score)
 
     row["valuation_score"] = valuation_score
@@ -1790,6 +1809,7 @@ def calc_score_finance(row):
     row["shareholder_score"] = shareholder_score
     row["bonus_score"] = bonus_score
     row["risk_penalty"] = risk_penalty
+    row["forecast_adj"] = forecast_adj
     row["trend_score"] = trend_score
     row["quality_score"] = quality_score
     row["score"] = total_score
@@ -1972,6 +1992,78 @@ def _sales_growth_pct(row):
         return round((float(s0) - float(s1)) / float(s1) * 100, 2)
     except (TypeError, ValueError):
         return None
+
+
+def calc_forecast_adjustment(jquants_data, row):
+    """
+    J-Quants\u306e\u901a\u671f\u4e88\u60f3\u3068\u524d\u671f\u5b9f\u7e3e\u3092\u6bd4\u8f03\u3057\u3001\u30da\u30ca\u30eb\u30c6\u30a3/\u30dc\u30fc\u30ca\u30b9\u3092\u8fd4\u3059\u3002
+    \u63a7\u3048\u3081\u8a2d\u8a08\uff1a\u6e1b\u70b9\u6700\u5927-5\u3001\u52a0\u70b9\u6700\u5927+3\u3002
+    \u65e5\u672c\u4f01\u696d\u306e\u4fdd\u5b88\u7684\u4e88\u60f3\u3092\u8003\u616e\u3057\u3001\u5272\u5b89\u5ea6\u306e\u30e1\u30a4\u30f3\u8a55\u4fa1\u3092\u5d29\u3055\u306a\u3044\u5fae\u8abf\u6574\u3002
+    """
+    if not jquants_data or not isinstance(jquants_data, dict):
+        return 0
+
+    forecast = jquants_data.get("forecast", {})
+    latest = jquants_data.get("latest", {})
+
+    if not forecast:
+        return 0
+
+    f_sales = forecast.get("f_sales")
+    f_op = forecast.get("f_op")
+    f_np = forecast.get("f_np")
+
+    l_sales = latest.get("sales")
+    l_op = latest.get("op")
+    l_np = latest.get("np")
+
+    roe_actual = row.get("roe", 0) or 0
+
+    penalty = 0
+
+    if f_sales and l_sales and l_sales > 0:
+        sales_growth = (f_sales - l_sales) / l_sales * 100
+        if sales_growth < 0:
+            penalty -= 1
+
+    if f_op and l_op and l_op > 0:
+        op_growth = (f_op - l_op) / l_op * 100
+        if op_growth <= -20:
+            penalty -= 2
+
+    if f_np and l_np and roe_actual > 0 and l_np != 0:
+        equity = l_np / (roe_actual / 100)
+        if equity > 0:
+            forecast_roe = f_np / equity * 100
+            if roe_actual - forecast_roe >= 5:
+                penalty -= 2
+
+    if penalty < -5:
+        penalty = -5
+
+    bonus = 0
+
+    if f_sales and l_sales and l_sales > 0:
+        sales_growth = (f_sales - l_sales) / l_sales * 100
+        if sales_growth >= 20:
+            bonus += 1
+
+    if f_op and l_op and l_op > 0:
+        op_growth = (f_op - l_op) / l_op * 100
+        if op_growth >= 20:
+            bonus += 1
+
+    if f_np and l_np and roe_actual > 0 and l_np != 0:
+        equity = l_np / (roe_actual / 100)
+        if equity > 0:
+            forecast_roe = f_np / equity * 100
+            if forecast_roe - roe_actual >= 5:
+                bonus += 1
+
+    if bonus > 3:
+        bonus = 3
+
+    return penalty + bonus
 
 
 def _format_3y(values):
@@ -2254,6 +2346,7 @@ def step5_save(results):
             "quality_score_detail": r.get("quality_score_detail", 0),
             "bonus_score": r.get("bonus_score", 0),
             "risk_penalty": r.get("risk_penalty", 0),
+            "forecast_adj": calc_forecast_adjustment(r.get("jquants_data"), r) if r.get("jquants_data") else 0,
             "net_cash_ratio": round(r["net_cash_ratio"], 2),
             "per": per_val,
             "market_cap_oku": round(r["market_cap"] / 1e8, 1),
@@ -2334,6 +2427,7 @@ def step5_save_finance(results):
             "quality_score_detail": r.get("quality_score_detail", 0),
             "bonus_score": r.get("bonus_score", 0),
             "risk_penalty": r.get("risk_penalty", 0),
+            "forecast_adj": calc_forecast_adjustment(r.get("jquants_data"), r) if r.get("jquants_data") else 0,
             "net_cash_ratio": nc_rounded,
             "per": per_val,
             "market_cap_oku": round(r["market_cap"] / 1e8, 1),
@@ -2529,10 +2623,12 @@ def run_screening_finance_tab():
         for i, r in enumerate(top_f):
             time.sleep(3)
             jquants_data = get_jquants_quarterly(r.get("code", ""))
+            r["jquants_data"] = jquants_data
             if jquants_data:
                 print("    [J-Quants] quarterly data found", flush=True)
+            jq_text = jquants_data["summary_text"] if jquants_data and isinstance(jquants_data, dict) else jquants_data
             ai_comment, risk_checks, trend_score, quality_score, upward_revision = generate_ai_analysis(
-                r, finance_mode=True, jquants_data=jquants_data
+                r, finance_mode=True, jquants_data=jq_text
             )
             r["ai_comment"] = ai_comment
             r["risk_checks"] = risk_checks
@@ -2641,10 +2737,12 @@ def run_screening():
                         for i, r in enumerate(top_second):
                             time.sleep(3)
                             jquants_data = get_jquants_quarterly(r.get("code", ""))
+                            r["jquants_data"] = jquants_data
                             if jquants_data:
                                 print("    [J-Quants] quarterly data found", flush=True)
+                            jq_text = jquants_data["summary_text"] if jquants_data and isinstance(jquants_data, dict) else jquants_data
                             ai_comment, risk_checks, trend_score, quality_score, upward_revision = (
-                                generate_ai_analysis(r, finance_mode=False, jquants_data=jquants_data)
+                                generate_ai_analysis(r, finance_mode=False, jquants_data=jq_text)
                             )
                             r["ai_comment"] = ai_comment
                             r["risk_checks"] = risk_checks
