@@ -191,6 +191,8 @@ const MAX_SCORE = 100;
 const TITLE = "\u30c6\u30f3\u30d0\u30fc\u30ac\u30fc\u3092\u72d9\u3046\u5272\u5b89\u5c0f\u578b\u6210\u9577\u682a";
 const SUBTITLE = "\u6e05\u539f\u9054\u90ce\u5f0f \u00d7 \u30d0\u30d5\u30a7\u30c3\u30c8\u6d41 \u00d7 AI\u6c7a\u7b97\u5206\u6790 \uff5c \u6bce\u55b6\u696d\u65e5\u66f4\u65b0";
 const TAB_SERVICE_ABOUT = "\u3053\u306e\u30b5\u30fc\u30d3\u30b9\u306b\u3064\u3044\u3066";
+const BTN_PAID_UNLOCKED = "\u2705 \u6709\u6599\u30d7\u30e9\u30f3";
+const BTN_PAID_LOCKED = "\ud83d\udd12 \u4e0a\u4f4d10\u4f4d\u3092\u89e3\u653e";
 const MODAL_BENEFITS_TITLE = "\u89e3\u653e\u3067\u304d\u308b\u3053\u3068";
 const BENEFIT_1 = "\u4e0a\u4f4d1\uff5e10\u4f4d\u306e\u9298\u67c4\u540d\u30fb\u8a3c\u5238\u30b3\u30fc\u30c9";
 const BENEFIT_2 = "\u30b9\u30b3\u30a2\u5185\u8a33\u5168\u9805\u76ee\uff08\u5272\u5b89\u5ea6\u30fb\u6210\u9577\u6027\u30fb\u696d\u7e3e\u30fb\u7af6\u4e89\u512a\u4f4d\u6027\u30fb\u682a\u4e3b\u9084\u5143\u30fb\u30ea\u30b9\u30af\uff09";
@@ -223,7 +225,6 @@ const DIFF_QUOTE = "\u300c\u4e2d\u8eab\u306e\u308f\u304b\u3089\u306a\u3044\u3082
 const DIFF_BODY1 = "\u30a4\u30f3\u30d5\u30eb\u30a8\u30f3\u30b5\u30fc\u306e\u6839\u62e0\u306e\u306a\u3044\u9298\u67c4\u63a8\u5968\u3084\u3001\u4e2d\u8eab\u306e\u308f\u304b\u3089\u306a\u3044\u8a3c\u5238\u4f1a\u793e\u304c\u63d0\u6848\u3059\u308b\u30d5\u30a1\u30f3\u30c9\u30fb\u4ed7\u7d44\u307f\u50b5\u306b\u8e0a\u3089\u3055\u308c\u3066\u3044\u307e\u305b\u3093\u304b\uff1f";
 const DIFF_BODY2 = "\u3053\u306e\u30b5\u30fc\u30d3\u30b9\u306f\u30012\u4eba\u306e\u5049\u5927\u306a\u6295\u8cc7\u5bb6\u306e\u6295\u8cc7\u6cd5\u3092\u3082\u3068\u306b\u3001\u3059\u3079\u3066\u306e\u6839\u62e0\u3092\u30b9\u30b3\u30a2\u3067\u898b\u3048\u308b\u5316\u3057\u3066\u3044\u307e\u3059\u3002";
 const DIFF_BODY3 = "\u3042\u306a\u305f\u81ea\u8eab\u304c\u9298\u67c4\u3092\u898b\u6975\u3081\u308b\u76ee\u3092\u990a\u3044\u306a\u304c\u3089\u7b2c\u4e8c\u306e\u30e6\u30cb\u30af\u30ed\u3001\u7b2c\u4e8c\u306e\u30cb\u30c8\u30ea\u3092\u8ab0\u3088\u308a\u3082\u65e9\u304f\u898b\u3064\u3051\u308b\u3053\u3068\u304c\u3067\u304d\u308b\u3002\u305d\u308c\u304c\u3053\u306e\u30b5\u30fc\u30d3\u30b9\u306e\u672c\u8cea\u3067\u3059\u3002";
-const BADGE_PAID = "\u2705 \u6709\u6599\u30D7\u30E9\u30F3";
 const BADGE_MARKET_CAP = "\u6642\u4FA1\u7DCF\u984D 30\u301C500\u5104\u5186";
 const BADGE_PER = "PER 10\u500D\u4EE5\u4E0B";
 const BADGE_NC = "NC\u6BD4\u7387 1.0\u4EE5\u4E0A";
@@ -730,72 +731,72 @@ export default function Home() {
     <>
       <main className="min-h-screen bg-[#f9f7f4] text-[#1a1a1a]">
         <header className="sticky top-0 z-40 border-b border-[#e5e0d8] bg-white backdrop-blur">
-        <div className="max-w-4xl mx-auto flex flex-col gap-3 px-4 py-4 sm:flex-row sm:items-center sm:justify-between sm:gap-3">
-          <div className="min-w-0">
-            <h1 className="text-lg font-bold tracking-tight text-[#1a1a1a] sm:text-xl">
-              {TITLE}
-            </h1>
-            <p className="mt-0.5 text-[11px] leading-snug text-[#6b6b6b] sm:text-xs">{SUBTITLE}</p>
-          </div>
-          <div className="flex w-full shrink-0 flex-row items-center justify-center gap-2 sm:w-auto sm:justify-end">
-            <button
-              type="button"
-              onClick={() => window.location.reload()}
-              className="text-gray-500 hover:text-gray-700 text-lg p-1 cursor-pointer"
-              title={"\u30c7\u30fc\u30bf\u3092\u66f4\u65b0"}
-            >
-              {"\ud83d\udd04"}
-            </button>
-            {isUnlocked ? (
-              <span className="inline-flex min-w-0 flex-1 items-center justify-center gap-1.5 rounded-lg bg-[#f0ece6] px-3 py-2 text-sm text-[#16a34a] sm:flex-initial sm:justify-start sm:py-1.5">
-                {BADGE_PAID}
-              </span>
-            ) : (
+          <div className="mx-auto flex max-w-4xl flex-col gap-3 px-4 py-4">
+            <div className="min-w-0">
+              <h1 className="text-lg font-bold tracking-tight text-[#1a1a1a] sm:text-xl">
+                {TITLE}
+              </h1>
+              <p className="mt-0.5 text-[11px] leading-snug text-[#6b6b6b] sm:text-xs">{SUBTITLE}</p>
+            </div>
+            <div className="flex w-full max-w-full flex-nowrap items-stretch gap-2">
+              <Link
+                href="/about"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex min-w-0 flex-1 items-center justify-center truncate text-xs px-3 py-1.5 rounded-full border border-gray-300 text-gray-600 hover:bg-gray-100"
+              >
+                {TAB_SERVICE_ABOUT}
+              </Link>
+              {isUnlocked ? (
+                <span className="inline-flex min-w-0 flex-1 items-center justify-center truncate text-xs px-3 py-1.5 rounded-full bg-orange-500 text-white">
+                  {BTN_PAID_UNLOCKED}
+                </span>
+              ) : (
+                <button
+                  type="button"
+                  onClick={openModal}
+                  className="inline-flex min-w-0 flex-1 cursor-pointer items-center justify-center truncate text-xs px-3 py-1.5 rounded-full bg-orange-500 text-white hover:bg-orange-600"
+                >
+                  {BTN_PAID_LOCKED}
+                </button>
+              )}
               <button
                 type="button"
-                onClick={openModal}
-                className="inline-flex min-w-0 flex-1 items-center justify-center gap-1.5 rounded-lg bg-[#1a1a1a] px-3 py-2 text-xs font-medium text-white transition-colors hover:opacity-90 sm:flex-initial sm:py-1.5 sm:text-sm"
+                onClick={() => window.location.reload()}
+                className="inline-flex shrink-0 cursor-pointer items-center justify-center text-xs px-2 py-1.5 rounded-full border border-gray-300 text-gray-500 hover:bg-gray-100"
+                title={"\u30c7\u30fc\u30bf\u3092\u66f4\u65b0"}
               >
-                {`\uD83D\uDD13 \u4e0a\u4f4d${lockCount}\u4f4d\u3092\u89e3\u653e`}
+                {"\ud83d\udd04"}
               </button>
-            )}
+            </div>
           </div>
-        </div>
 
-        <div className="max-w-4xl mx-auto px-4">
-          <div className="flex items-center gap-2 mb-4 flex-wrap">
-            <button
-              type="button"
-              onClick={() => setScreeningTab("general")}
-              className={
-                screeningTab === "general"
-                  ? "bg-[#d97706] text-white font-bold rounded-full px-4 py-2 text-sm"
-                  : "bg-[#f5f0e8] text-[#6b6b6b] rounded-full px-4 py-2 text-sm"
-              }
-            >
-              {TAB_GENERAL}
-            </button>
-            <button
-              type="button"
-              onClick={() => setScreeningTab("finance")}
-              className={
-                screeningTab === "finance"
-                  ? "bg-[#d97706] text-white font-bold rounded-full px-4 py-2 text-sm"
-                  : "bg-[#f5f0e8] text-[#6b6b6b] rounded-full px-4 py-2 text-sm"
-              }
-            >
-              {TAB_FINANCE}
-            </button>
-            <a
-              href="/about"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center bg-[#f5f0e8] text-[#6b6b6b] rounded-full px-4 py-2 text-sm hover:bg-[#ebe5db]"
-            >
-              {TAB_SERVICE_ABOUT}
-            </a>
+          <div className="mx-auto max-w-4xl px-4 pb-4">
+            <div className="mb-4 flex flex-wrap items-center gap-2">
+              <button
+                type="button"
+                onClick={() => setScreeningTab("general")}
+                className={
+                  screeningTab === "general"
+                    ? "rounded-full bg-[#d97706] px-4 py-2 text-sm font-bold text-white"
+                    : "rounded-full bg-[#f5f0e8] px-4 py-2 text-sm text-[#6b6b6b]"
+                }
+              >
+                {TAB_GENERAL}
+              </button>
+              <button
+                type="button"
+                onClick={() => setScreeningTab("finance")}
+                className={
+                  screeningTab === "finance"
+                    ? "rounded-full bg-[#d97706] px-4 py-2 text-sm font-bold text-white"
+                    : "rounded-full bg-[#f5f0e8] px-4 py-2 text-sm text-[#6b6b6b]"
+                }
+              >
+                {TAB_FINANCE}
+              </button>
+            </div>
           </div>
-        </div>
         </header>
 
         <div className="max-w-4xl mx-auto px-3 py-6 sm:px-4 sm:py-8">
