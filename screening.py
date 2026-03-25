@@ -278,6 +278,7 @@ def step1_get_list_from_jpx():
     m_std = m.str.contains("\u30B9\u30BF\u30F3\u30C0\u30FC\u30C9", na=False, regex=False)
     m_growth = m.str.contains("\u30B0\u30ED\u30FC\u30B9", na=False, regex=False)
     df = df[(m_prime | m_std | m_growth)].copy()
+    df["market"] = df["market"].astype(str).str.replace("\uFF08\u5185\u56FD\u682A\u5F0F\uFF09", "", regex=False).str.strip()
     print(f"  ?????????E??: {len(df)}")
     # ??: EXCLUDE_SECTORS ???
     s = df["sector"].astype(str)
@@ -354,6 +355,7 @@ def step1_get_finance_list_from_jpx():
     m_std = m.str.contains("\u30B9\u30BF\u30F3\u30C0\u30FC\u30C9", na=False, regex=False)
     m_growth = m.str.contains("\u30B0\u30ED\u30FC\u30B9", na=False, regex=False)
     df = df[(m_prime | m_std | m_growth)].copy()
+    df["market"] = df["market"].astype(str).str.replace("\uFF08\u5185\u56FD\u682A\u5F0F\uFF09", "", regex=False).str.strip()
     s = df["sector"].astype(str)
     include_mask = s.str.contains(EXCLUDE_SECTORS[0], na=False, regex=False)
     for exc in EXCLUDE_SECTORS[1:]:
