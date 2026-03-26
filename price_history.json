@@ -449,6 +449,26 @@
       "stock_price": 1170,
       "theoretical_price": 3082,
       "upside_percent": 163.4
+    },
+    {
+      "date": "2026-03-27",
+      "code": "9867",
+      "name": "SOLEKIA LIMITED",
+      "tab": "general",
+      "score": 60,
+      "stock_price": 10140,
+      "theoretical_price": 23051,
+      "upside_percent": 127.3
+    },
+    {
+      "date": "2026-03-27",
+      "code": "8917",
+      "name": "FIRST JUKEN CO LTD",
+      "tab": "finance",
+      "score": 62,
+      "stock_price": 1169,
+      "theoretical_price": 3082,
+      "upside_percent": 163.6
     }
   ]
 }
