@@ -1765,8 +1765,6 @@ def calc_score_finance(row):
         individual -= 4
     if bad_liquidity:
         individual -= 3
-    if bad_financial:
-        individual -= 4
     ocf_neg = 0
     try:
         ocf_neg = int(risk_checks.get("operating_cf_neg_streak", 0) or 0)
@@ -1777,6 +1775,19 @@ def calc_score_finance(row):
     elif ocf_neg >= 3:
         individual -= 7
     elif ocf_neg >= 2:
+        individual -= 4
+    eq_risk = 0
+    try:
+        eq_risk = int(risk_checks.get("equity_risk_level", 0) or 0)
+    except (TypeError, ValueError):
+        eq_risk = 0
+    if bad_financial and eq_risk == 0:
+        individual -= 4
+    if eq_risk >= 3:
+        individual -= 10
+    elif eq_risk >= 2:
+        individual -= 7
+    elif eq_risk >= 1:
         individual -= 4
     individual = max(-30, individual)
 
@@ -1845,7 +1856,11 @@ def calc_score_finance(row):
     total_score = total_score + forecast_adj
     total_score = max(0, total_score)
 
-    if bad_financial and ocf_neg >= 2:
+    if eq_risk >= 2 and ocf_neg >= 2:
+        total_score = min(45, total_score)
+    elif eq_risk >= 1 and ocf_neg >= 2:
+        total_score = min(55, total_score)
+    elif bad_financial and ocf_neg >= 2:
         total_score = min(65, total_score)
 
     annual_list_tb = row.get("annual_list") or []
@@ -1946,6 +1961,7 @@ FINANCE_AI_RISK_KEYS = [
     "one_time_profit_risk",
     "liquidity_risk",
     "financial_health",
+    "equity_risk_level",
     "operating_cf_neg_streak",
 ]
 
@@ -2019,21 +2035,37 @@ def compute_finance_programmatic_risk_checks(row, ticker, sector=""):
     er = row.get("equity_ratio")
     try:
         if er is not None:
-            erf = float(er)
+            er_val = float(er)
             sec = str(sector or "")
             if "\u4e0d\u52d5\u7523" in sec:
-                out["financial_health"] = erf >= 20.0
+                out["financial_health"] = er_val >= 30.0
+                if er_val >= 40:
+                    out["equity_risk_level"] = 0
+                elif er_val >= 30:
+                    out["equity_risk_level"] = 0
+                elif er_val >= 20:
+                    out["equity_risk_level"] = 1
+                elif er_val >= 15:
+                    out["equity_risk_level"] = 2
+                else:
+                    out["equity_risk_level"] = 3
             elif (
                 "\u9280\u884c" in sec
                 or "\u4fdd\u967a" in sec
                 or "\u8a3c\u5238" in sec
                 or "\u91d1\u878d" in sec
             ):
-                out["financial_health"] = erf >= 8.0
+                out["financial_health"] = er_val >= 8.0
+                out["equity_risk_level"] = 0
             else:
-                out["financial_health"] = erf >= 10.0
+                out["financial_health"] = er_val >= 10.0
+                out["equity_risk_level"] = 0
+        else:
+            out["financial_health"] = None
+            out["equity_risk_level"] = 0
     except (TypeError, ValueError):
         out["financial_health"] = None
+        out["equity_risk_level"] = 0
 
     out["dividend_stability"] = _finance_dividend_stability_ok(ticker)
 
@@ -2104,12 +2136,14 @@ def finalize_finance_risk_checks(row, ticker, sector=""):
     ai_rc = row.get("risk_checks") or {}
     out = _default_finance_risk_checks()
     for k, v in prog.items():
-        if k == "operating_cf_neg_streak":
+        if k in ("operating_cf_neg_streak", "equity_risk_level"):
             continue
         if v is not None:
             out[k] = bool(v)
     if prog.get("operating_cf_neg_streak") is not None:
         out["operating_cf_neg_streak"] = int(prog["operating_cf_neg_streak"])
+    if prog.get("equity_risk_level") is not None:
+        out["equity_risk_level"] = int(prog["equity_risk_level"])
     if ai_rc.get("roe_15_percent") is not None:
         out["roe_15_percent"] = bool(ai_rc["roe_15_percent"])
     else:

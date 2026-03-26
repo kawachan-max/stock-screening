@@ -400,7 +400,7 @@ const RISK_CHECK_TOOLTIPS_FINANCE: Record<string, TooltipContent> = {
   liquidity_risk: RISK_CHECK_TOOLTIPS.liquidity_risk,
   financial_health: {
     title: "\u8ca1\u52d9\u5065\u5168\u6027",
-    desc: "\u81ea\u5df1\u8cc7\u672c\u6bd4\u73875\uff05\u4ee5\u4e0a\uff08\u9280\u884c8\uff05\u7406\u60f3\u3092\u53c2\u8003\u3057\u4e0d\u52d5\u7523\u542b\u30815\uff05\u7de9\u548c\uff09",
+    desc: "\u4e0d\u52d5\u7523:40%\u4ee5\u4e0a\u5b89\u5fc3/30%\u5408\u683c/20%\u6ce8\u610f/15%\u5371\u967a \u91d1\u878d:8%\u4ee5\u4e0a",
     formula: "\u81ea\u5df1\u8cc7\u672c \u00f7 \u7dcf\u8cc7\u7523 \u00d7 100",
     intent: "",
   },
@@ -460,6 +460,7 @@ type Row = {
     profit_stability?: boolean;
     dividend_stability?: boolean;
     financial_health?: boolean;
+    equity_risk_level?: number;
     operating_cf_neg_streak?: number;
     capital_adequacy?: boolean;
     revenue_diversity?: boolean;
@@ -1413,6 +1414,55 @@ export default function Home() {
                         <div className="grid grid-cols-2 gap-2 text-xs">
                           {(isFinance ? RISK_CHECK_ITEMS_FINANCE : RISK_CHECK_ITEMS).map(
                             ({ key, label, inverted }) => {
+                              if (isFinance && key === "financial_health") {
+                                const rc = r.risk_checks as Record<string, unknown> | null;
+                                const eqLvl = Number(rc?.equity_risk_level ?? 0);
+                                const fh = rc?.financial_health;
+                                const fhTip =
+                                  "\u4e0d\u52d5\u7523:40%\u4ee5\u4e0a\u5b89\u5fc3/30%\u5408\u683c/20%\u6ce8\u610f/15%\u5371\u967a \u91d1\u878d:8%\u4ee5\u4e0a";
+                                let fhText: string;
+                                let fhClass: string;
+                                if (eqLvl >= 3) {
+                                  fhText = "\u00d7 \u91cd\u5927\u30ea\u30b9\u30af";
+                                  fhClass =
+                                    "bg-red-100 text-red-700 font-bold";
+                                } else if (eqLvl >= 2) {
+                                  fhText = "\u00d7 \u30ea\u30b9\u30af\u3042\u308a";
+                                  fhClass = "bg-red-100 text-red-700";
+                                } else if (eqLvl >= 1) {
+                                  fhText = "\u25b3 \u6ce8\u610f";
+                                  fhClass =
+                                    "bg-amber-100 text-amber-800";
+                                } else if (eqLvl === 0 && fh === true) {
+                                  fhText = "\u25ce \u554f\u984c\u306a\u3057";
+                                  fhClass =
+                                    "bg-emerald-100 text-emerald-700";
+                                } else if (eqLvl === 0 && fh === false) {
+                                  fhText = "\u00d7";
+                                  fhClass = "bg-red-100 text-red-700";
+                                } else {
+                                  fhText = "\u25b3";
+                                  fhClass = "bg-amber-100 text-amber-700";
+                                }
+                                const tip = RISK_CHECK_TOOLTIPS_FINANCE.financial_health;
+                                return (
+                                  <div key={key} className="flex items-center gap-1.5 flex-wrap">
+                                    <span
+                                      className="text-[#6b6b6b] flex items-center gap-0.5"
+                                      title={fhTip}
+                                    >
+                                      {label}
+                                      {tip ? <IndicatorTooltip content={tip} /> : null}
+                                    </span>
+                                    <span
+                                      title={fhTip}
+                                      className={`inline-flex items-center px-1.5 py-0.5 rounded font-medium shrink-0 ${fhClass}`}
+                                    >
+                                      {fhText}
+                                    </span>
+                                  </div>
+                                );
+                              }
                               if (isFinance && key === "operating_cf_neg_streak") {
                                 const streak = Number(
                                   (r.risk_checks as Record<string, unknown> | null)?.[
