@@ -595,6 +595,18 @@ def step2_first_filter_finance(stocks_df):
                 pass
             website = info.get("website", "") or ""
             jpx_market = _market_label_for_code(stocks_df, code)
+            if "sector" in stocks_df.columns:
+                _sec_vals = stocks_df.loc[stocks_df["code"] == code, "sector"].values
+                sector_jpx = _sec_vals[0] if len(_sec_vals) > 0 else ""
+            else:
+                sector_jpx = ""
+            try:
+                if sector_jpx is None or (isinstance(sector_jpx, float) and math.isnan(sector_jpx)):
+                    sector_jpx = ""
+                else:
+                    sector_jpx = str(sector_jpx).strip()
+            except Exception:
+                sector_jpx = str(sector_jpx or "").strip()
             first_pass.append({
                 "code": code,
                 "name": nm,
@@ -606,6 +618,7 @@ def step2_first_filter_finance(stocks_df):
                 "dividend_yield": div_yield,
                 "website": website,
                 "market": jpx_market,
+                "sector": sector_jpx,
                 "chart_signals": chart_signals,
                 "screening_tab": "finance",
             })
@@ -1587,13 +1600,11 @@ def calc_score_finance(row):
             pb = float(pbr)
             if pb < 0.5:
                 pbr_score = 30
-            elif pb < 0.8:
-                pbr_score = 24
-            elif pb < 1.0:
-                pbr_score = 18
-            elif pb < 1.2:
-                pbr_score = 8
-            elif pb < 1.5:
+            elif pb < 0.7:
+                pbr_score = 20
+            elif pb < 0.9:
+                pbr_score = 10
+            elif pb < 1.1:
                 pbr_score = 3
             else:
                 pbr_score = 0
@@ -1756,10 +1767,29 @@ def calc_score_finance(row):
         individual -= 3
     if bad_financial:
         individual -= 4
-    individual = max(-20, individual)
+    ocf_neg = 0
+    try:
+        ocf_neg = int(risk_checks.get("operating_cf_neg_streak", 0) or 0)
+    except (TypeError, ValueError):
+        ocf_neg = 0
+    if ocf_neg >= 4:
+        individual -= 10
+    elif ocf_neg >= 3:
+        individual -= 7
+    elif ocf_neg >= 2:
+        individual -= 4
+    individual = max(-30, individual)
 
     xcount = sum(
-        [bad_roe, bad_profit_stab, bad_dividend, bad_one_time, bad_liquidity, bad_financial]
+        [
+            bad_roe,
+            bad_profit_stab,
+            bad_dividend,
+            bad_one_time,
+            bad_liquidity,
+            bad_financial,
+            (ocf_neg >= 2),
+        ]
     )
     if xcount <= 2:
         additional = 0
@@ -1815,6 +1845,60 @@ def calc_score_finance(row):
     total_score = total_score + forecast_adj
     total_score = max(0, total_score)
 
+    if bad_financial and ocf_neg >= 2:
+        total_score = min(65, total_score)
+
+    annual_list_tb = row.get("annual_list") or []
+    sales0 = sales1 = sales2 = 0.0
+    np0 = np1 = np2 = 0.0
+    if len(annual_list_tb) >= 3:
+        sales0 = float(annual_list_tb[0].get("Sales", 0) or 0)
+        sales1 = float(annual_list_tb[1].get("Sales", 0) or 0)
+        sales2 = float(annual_list_tb[2].get("Sales", 0) or 0)
+        np0 = float(annual_list_tb[0].get("NP", 0) or 0)
+        np1 = float(annual_list_tb[1].get("NP", 0) or 0)
+        np2 = float(annual_list_tb[2].get("NP", 0) or 0)
+    tenbagger_stars = 0
+    try:
+        _mc = float(row.get("market_cap") or 0)
+        if _mc > 0 and _mc < TENBAGGER_MAX_MARKET_CAP:
+            tenbagger_stars += 1
+    except (TypeError, ValueError):
+        pass
+    if len(annual_list_tb) >= 3:
+        if sales0 > sales1 > sales2 and sales1 != 0:
+            try:
+                if (sales0 - sales1) / abs(sales1) * 100 >= 10.0:
+                    tenbagger_stars += 1
+            except Exception:
+                pass
+        if np0 > np1 > np2:
+            try:
+                _op0 = float(annual_list_tb[0].get("OP", 0) or 0)
+                _op1 = float(annual_list_tb[1].get("OP", 0) or 0)
+                if _op1 != 0 and (_op0 - _op1) / abs(_op1) * 100 >= 10.0:
+                    tenbagger_stars += 1
+            except Exception:
+                pass
+    try:
+        if float(row.get("roe") or 0) >= 15.0:
+            tenbagger_stars += 1
+    except (TypeError, ValueError):
+        pass
+    try:
+        nc_tb = float(row.get("net_cash_ratio") or 0)
+    except (TypeError, ValueError):
+        nc_tb = 0.0
+    try:
+        per_tb = float(row.get("per") or 0)
+    except (TypeError, ValueError):
+        per_tb = 0.0
+    if nc_tb >= 0.7 and per_tb > 0 and per_tb <= 12:
+        tenbagger_stars += 1
+    tenbagger_stars = min(5, max(0, int(tenbagger_stars)))
+    if ocf_neg >= 3:
+        tenbagger_stars = min(2, tenbagger_stars)
+
     row["valuation_score"] = valuation_score
     row["growth_score"] = growth_score
     row["quality_score_detail"] = quality_score_detail
@@ -1825,6 +1909,7 @@ def calc_score_finance(row):
     row["trend_score"] = trend_score
     row["quality_score"] = quality_score
     row["score"] = total_score
+    row["tenbagger_stars"] = tenbagger_stars
     return total_score
 
 
@@ -1861,6 +1946,7 @@ FINANCE_AI_RISK_KEYS = [
     "one_time_profit_risk",
     "liquidity_risk",
     "financial_health",
+    "operating_cf_neg_streak",
 ]
 
 
@@ -1927,13 +2013,25 @@ def _finance_dividend_stability_ok(ticker):
         return True
 
 
-def compute_finance_programmatic_risk_checks(row, ticker):
+def compute_finance_programmatic_risk_checks(row, ticker, sector=""):
     """\u91d1\u878d\u30bf\u30d6\u7528\u30ea\u30b9\u30af\uff084\u9805\u76ee\uff09\u3092\u30d7\u30ed\u30b0\u30e9\u30e0\u8a08\u7b97\u3002"""
     out = {}
     er = row.get("equity_ratio")
     try:
         if er is not None:
-            out["financial_health"] = float(er) >= 5.0
+            erf = float(er)
+            sec = str(sector or "")
+            if "\u4e0d\u52d5\u7523" in sec:
+                out["financial_health"] = erf >= 20.0
+            elif (
+                "\u9280\u884c" in sec
+                or "\u4fdd\u967a" in sec
+                or "\u8a3c\u5238" in sec
+                or "\u91d1\u878d" in sec
+            ):
+                out["financial_health"] = erf >= 8.0
+            else:
+                out["financial_health"] = erf >= 10.0
     except (TypeError, ValueError):
         out["financial_health"] = None
 
@@ -1966,17 +2064,52 @@ def compute_finance_programmatic_risk_checks(row, ticker):
     else:
         out["one_time_profit_risk"] = False
 
+    try:
+        cf = getattr(ticker, "cashflow", None)
+        if cf is not None and not cf.empty:
+            ocf_key = None
+            for k in (
+                "Operating Cash Flow",
+                "Total Cash From Operating Activities",
+                "Cash Flow From Continuing Operating Activities",
+            ):
+                if k in cf.index:
+                    ocf_key = k
+                    break
+            if ocf_key:
+                ocf_vals = cf.loc[ocf_key].iloc[:4].tolist()
+                neg_streak = 0
+                for v in ocf_vals:
+                    try:
+                        if float(v) < 0:
+                            neg_streak += 1
+                        else:
+                            break
+                    except (TypeError, ValueError):
+                        break
+                out["operating_cf_neg_streak"] = neg_streak
+            else:
+                out["operating_cf_neg_streak"] = 0
+        else:
+            out["operating_cf_neg_streak"] = 0
+    except Exception:
+        out["operating_cf_neg_streak"] = 0
+
     return out
 
 
-def finalize_finance_risk_checks(row, ticker):
+def finalize_finance_risk_checks(row, ticker, sector=""):
     """AI\uff082\u9805\u76ee\uff09\u3068\u30d7\u30ed\u30b0\u30e9\u30e0\uff084\u9805\u76ee\uff09\u3092\u7d50\u5408\u3057\u30666\u9805\u76ee\u306erisk_checks\u3092\u5b8c\u6210\u3002"""
-    prog = compute_finance_programmatic_risk_checks(row, ticker)
+    prog = compute_finance_programmatic_risk_checks(row, ticker, sector=sector)
     ai_rc = row.get("risk_checks") or {}
     out = _default_finance_risk_checks()
     for k, v in prog.items():
+        if k == "operating_cf_neg_streak":
+            continue
         if v is not None:
             out[k] = bool(v)
+    if prog.get("operating_cf_neg_streak") is not None:
+        out["operating_cf_neg_streak"] = int(prog["operating_cf_neg_streak"])
     if ai_rc.get("roe_15_percent") is not None:
         out["roe_15_percent"] = bool(ai_rc["roe_15_percent"])
     else:
@@ -2406,6 +2539,7 @@ def step5_save_finance(results):
             "name_jp": name_jp,
             "website": r.get("website", ""),
             "market": r.get("market", ""),
+            "sector": r.get("sector", ""),
             "score": r["score"],
             "valuation_score": r.get("valuation_score", 0),
             "growth_score": 0,
@@ -2431,6 +2565,7 @@ def step5_save_finance(results):
             "tab": "finance",
             "theoretical_price": r.get("theoretical_price", 0),
             "upside_percent": r.get("upside_percent", 0),
+            "tenbagger_stars": int(r.get("tenbagger_stars", 0) or 0),
         })
     out = sorted(out, key=lambda x: x["score"], reverse=True)[:MAX_JSON_STOCKS]
     JST = timezone(timedelta(hours=9))
@@ -2590,7 +2725,9 @@ def run_screening_finance_tab():
         r["upward_revision"] = False
     for r in second_f:
         try:
-            finalize_finance_risk_checks(r, yf.Ticker(f"{r['code']}.T"))
+            finalize_finance_risk_checks(
+                r, yf.Ticker(f"{r['code']}.T"), sector=r.get("sector", "")
+            )
         except Exception as ex:
             print(f"  finalize_finance_risk_checks {r.get('code')}: {ex}", flush=True)
     scored_all = step4_scoring_finance(second_f)
@@ -2659,7 +2796,9 @@ def run_screening_finance_tab():
                 r["upward_revision"] = False
     for r in top_f:
         try:
-            finalize_finance_risk_checks(r, yf.Ticker(f"{r['code']}.T"))
+            finalize_finance_risk_checks(
+                r, yf.Ticker(f"{r['code']}.T"), sector=r.get("sector", "")
+            )
         except Exception as ex:
             print(f"  finalize_finance_risk_checks {r.get('code')}: {ex}", flush=True)
     results_f = step4_scoring_finance(top_f)

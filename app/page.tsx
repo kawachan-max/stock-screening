@@ -365,6 +365,11 @@ const RISK_CHECK_ITEMS_FINANCE: { key: string; label: string; inverted: boolean 
   { key: "one_time_profit_risk", label: "\u4e00\u904e\u6027\u5229\u76ca\u4f9d\u5b58", inverted: true },
   { key: "liquidity_risk", label: "\u51fa\u6765\u9ad8\uff08\u6d41\u52d5\u6027\uff09", inverted: true },
   { key: "financial_health", label: "\u8ca1\u52d9\u5065\u5168\u6027", inverted: false },
+  {
+    key: "operating_cf_neg_streak",
+    label: "\u55b6\u696dCF\u306e\u5b89\u5b9a\u6027",
+    inverted: false,
+  },
 ];
 
 const RISK_CHECK_TOOLTIPS_FINANCE: Record<string, TooltipContent> = {
@@ -455,6 +460,7 @@ type Row = {
     profit_stability?: boolean;
     dividend_stability?: boolean;
     financial_health?: boolean;
+    operating_cf_neg_streak?: number;
     capital_adequacy?: boolean;
     revenue_diversity?: boolean;
   } | null;
@@ -1407,6 +1413,45 @@ export default function Home() {
                         <div className="grid grid-cols-2 gap-2 text-xs">
                           {(isFinance ? RISK_CHECK_ITEMS_FINANCE : RISK_CHECK_ITEMS).map(
                             ({ key, label, inverted }) => {
+                              if (isFinance && key === "operating_cf_neg_streak") {
+                                const streak = Number(
+                                  (r.risk_checks as Record<string, unknown> | null)?.[
+                                    "operating_cf_neg_streak"
+                                  ] ?? 0,
+                                );
+                                const ocfTip =
+                                  "\u55b6\u696dCF\u304c2\u671f\u4ee5\u4e0a\u9023\u7d9a\u30de\u30a4\u30ca\u30b9\u306a\u3089\u30ea\u30b9\u30af";
+                                let ocfText: string;
+                                let ocfClass: string;
+                                if (streak >= 4) {
+                                  ocfText = "\u00d7 \u91cd\u5927\u30ea\u30b9\u30af";
+                                  ocfClass =
+                                    "bg-red-100 text-red-700 font-bold";
+                                } else if (streak >= 2) {
+                                  ocfText = "\u00d7 \u30ea\u30b9\u30af\u3042\u308a";
+                                  ocfClass = "bg-red-100 text-red-700";
+                                } else {
+                                  ocfText = "\u25ce \u554f\u984c\u306a\u3057";
+                                  ocfClass =
+                                    "bg-emerald-100 text-emerald-700";
+                                }
+                                return (
+                                  <div key={key} className="flex items-center gap-1.5 flex-wrap">
+                                    <span
+                                      className="text-[#6b6b6b] flex items-center gap-0.5"
+                                      title={ocfTip}
+                                    >
+                                      {label}
+                                    </span>
+                                    <span
+                                      title={ocfTip}
+                                      className={`inline-flex items-center px-1.5 py-0.5 rounded font-medium shrink-0 ${ocfClass}`}
+                                    >
+                                      {ocfText}
+                                    </span>
+                                  </div>
+                                );
+                              }
                               const val = (r.risk_checks as Record<string, boolean | null | undefined> | null)?.[
                                 key
                               ];
