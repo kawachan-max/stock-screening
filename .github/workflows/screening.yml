@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 120
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
       - uses: actions/setup-python@v5
@@ -30,9 +30,24 @@ jobs:
       - name: Copy result to public
         run: |
           mkdir -p public
-          cp screening_result.json public/screening_result.json
+          RESULT_COUNT=$(python -c "import json;f=open('screening_result.json','r',encoding='utf-8');d=json.load(f);print(len(d.get('results',[]) if isinstance(d,dict) else d))" 2>/dev/null || echo "0")
+          echo "Screening results count: $RESULT_COUNT"
+          if [ "$RESULT_COUNT" -gt "100" ]; then
+            cp screening_result.json public/screening_result.json
+            echo "Results copied to public/"
+          else
+            echo "WARNING: Results count ($RESULT_COUNT) is too low. Skipping copy to prevent empty data deployment."
+            echo "Keeping existing public/screening_result.json"
+          fi
           if [ -f screening_result_finance.json ]; then
-            cp screening_result_finance.json public/screening_result_finance.json
+            FIN_COUNT=$(python -c "import json;f=open('screening_result_finance.json','r',encoding='utf-8');d=json.load(f);print(len(d.get('results',[]) if isinstance(d,dict) else d))" 2>/dev/null || echo "0")
+            echo "Finance results count: $FIN_COUNT"
+            if [ "$FIN_COUNT" -gt "10" ]; then
+              cp screening_result_finance.json public/screening_result_finance.json
+              echo "Finance results copied to public/"
+            else
+              echo "WARNING: Finance results count ($FIN_COUNT) is too low. Skipping copy."
+            fi
           fi
       - name: Commit and push
         run: |
