@@ -469,6 +469,36 @@
       "stock_price": 1174,
       "theoretical_price": 3082,
       "upside_percent": 162.6
+    },
+    {
+      "date": "2026-03-31",
+      "code": "8152",
+      "name": "SOMAR CORPORATION",
+      "tab": "general",
+      "score": 63,
+      "stock_price": 5710,
+      "theoretical_price": 22788,
+      "upside_percent": 299.1
+    },
+    {
+      "date": "2026-03-31",
+      "code": "8917",
+      "name": "FIRST JUKEN CO LTD",
+      "tab": "finance",
+      "score": 61,
+      "stock_price": 1165,
+      "theoretical_price": 3082,
+      "upside_percent": 164.6
+    },
+    {
+      "date": "2026-03-31",
+      "code": "8881",
+      "name": "NISSHIN GROUP HLDGS CO LTD",
+      "tab": "finance",
+      "score": 61,
+      "stock_price": 707,
+      "theoretical_price": 1809,
+      "upside_percent": 155.8
     }
   ]
 }
