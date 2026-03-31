@@ -1,7 +1,7 @@
 name: Daily Stock Screening
 on:
   schedule:
-    - cron: '0 13 * * 1-5'
+    - cron: '0 14 * * 1-5'
   workflow_dispatch:
 permissions:
   contents: write
