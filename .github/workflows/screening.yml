@@ -30,7 +30,7 @@ jobs:
       - name: Copy result to public
         run: |
           mkdir -p public
-          RESULT_COUNT=$(python -c "import json;f=open('screening_result.json','r',encoding='utf-8');d=json.load(f);print(len(d.get('results',[]) if isinstance(d,dict) else d))" 2>/dev/null || echo "0")
+          RESULT_COUNT=$(python -c "import json;f=open('screening_result.json','r',encoding='utf-8');d=json.load(f);print(len(d.get('stocks', d.get('results',[])) if isinstance(d,dict) else d))" 2>/dev/null || echo "0")
           echo "Screening results count: $RESULT_COUNT"
           if [ "$RESULT_COUNT" -gt "100" ]; then
             cp screening_result.json public/screening_result.json
@@ -40,7 +40,7 @@ jobs:
             echo "Keeping existing public/screening_result.json"
           fi
           if [ -f screening_result_finance.json ]; then
-            FIN_COUNT=$(python -c "import json;f=open('screening_result_finance.json','r',encoding='utf-8');d=json.load(f);print(len(d.get('results',[]) if isinstance(d,dict) else d))" 2>/dev/null || echo "0")
+            FIN_COUNT=$(python -c "import json;f=open('screening_result_finance.json','r',encoding='utf-8');d=json.load(f);print(len(d.get('stocks', d.get('results',[])) if isinstance(d,dict) else d))" 2>/dev/null || echo "0")
             echo "Finance results count: $FIN_COUNT"
             if [ "$FIN_COUNT" -gt "10" ]; then
               cp screening_result_finance.json public/screening_result_finance.json
