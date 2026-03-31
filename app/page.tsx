@@ -189,7 +189,6 @@ const MAX_SCORE = 100;
 
 // All copy as Unicode escapes (ASCII-safe, no encoding issues)
 const TITLE = "\u30c6\u30f3\u30d0\u30fc\u30ac\u30fc\u3092\u72d9\u3046\u5272\u5b89\u5c0f\u578b\u6210\u9577\u682a";
-const SUBTITLE = "\u6e05\u539f\u9054\u90ce\u5f0f \u00d7 \u30d0\u30d5\u30a7\u30c3\u30c8\u6d41 \u00d7 AI\u6c7a\u7b97\u5206\u6790 \uff5c \u6bce\u55b6\u696d\u65e5\u66f4\u65b0";
 const TAB_SERVICE_ABOUT = "\u3053\u306e\u30b5\u30fc\u30d3\u30b9\u306b\u3064\u3044\u3066";
 const BTN_PAID_UNLOCKED = "\u2705 \u6709\u6599\u30d7\u30e9\u30f3";
 const BTN_PAID_LOCKED = "\ud83d\udd12 \u4e0a\u4f4d10\u4f4d\u3092\u89e3\u653e";
@@ -617,6 +616,21 @@ function formatDate(iso: string): string {
   return `${d.getFullYear()}\u5e74${d.getMonth() + 1}\u6708${d.getDate()}\u65e5`;
 }
 
+function formatDatetime(s: string): string {
+  try {
+    const d = new Date(s);
+    if (isNaN(d.getTime())) return s;
+    const y = d.getFullYear();
+    const m = String(d.getMonth() + 1).padStart(2, "0");
+    const day = String(d.getDate()).padStart(2, "0");
+    const h = String(d.getHours()).padStart(2, "0");
+    const min = String(d.getMinutes()).padStart(2, "0");
+    return `${y}/${m}/${day} ${h}:${min}`;
+  } catch {
+    return s;
+  }
+}
+
 function formatTenbaggerExpectLabel(n: number): string | null {
   if (n < 2 || n > 5) return null;
   const fire = "\uD83D\uDD25";
@@ -778,7 +792,9 @@ export default function Home() {
                 <h1 className="text-lg font-bold tracking-tight text-[#1a1a1a] sm:text-xl">
                   {TITLE}
                 </h1>
-                <p className="mt-0.5 text-[11px] leading-snug text-[#6b6b6b] sm:text-xs">{SUBTITLE}</p>
+                <p className="mt-0.5 text-[11px] leading-snug text-[#6b6b6b] sm:text-xs">
+                  {"\u6700\u7d42\u66f4\u65b0: "}{updatedAt ? formatDatetime(updatedAt) : "---"}
+                </p>
                 <div className="mt-2 flex flex-nowrap gap-2 sm:hidden">{headerActions}</div>
               </div>
               <div className="mt-1 hidden shrink-0 flex-nowrap gap-2 sm:flex">{headerActions}</div>
