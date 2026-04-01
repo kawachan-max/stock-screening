@@ -1573,6 +1573,21 @@ export default function Home() {
             })}
         </div>
 
+          {!isUnlocked && (
+            <div className="mt-8 flex flex-col items-center gap-3 rounded-xl bg-[#f5f5f5] p-6 text-center">
+              <p className="text-sm text-[#6b6b6b]">
+                {"\u4e0a\u4f4d1\uff5e20\u4f4d\u306f\u8cfc\u5165\u5f8c\u306b\u9298\u67c4\u540d\u3092\u8868\u793a\u3057\u307e\u3059\u3002"}
+              </p>
+              <button
+                type="button"
+                onClick={openModal}
+                className="rounded-xl bg-gradient-to-r from-amber-500 to-amber-600 px-8 py-3 text-sm font-bold text-white shadow-md shadow-amber-900/25"
+              >
+                {"\u4e0a\u4f4d20\u4f4d\u3092\u89e3\u653e\u3059\u308b"}
+              </button>
+            </div>
+          )}
+
           <div className="mt-12 rounded-xl bg-[#f5f0e8] p-6">
             <h2 className="text-sm font-bold text-[#4a4a4a] mb-3">{DISCLAIMER_TITLE}</h2>
             <p className="text-xs text-[#6b6b6b] leading-relaxed mb-2">{"\u30FB "}{DISCLAIMER_1}</p>
@@ -1585,7 +1600,7 @@ export default function Home() {
 
           <footer className="mt-12 border-t border-[#e5e0d8] py-6">
             <p className="text-xs leading-relaxed text-[#9ca3af]">
-              {FOOTER_DISCLAIMER}
+              {"\u30c6\u30f3\u30d0\u30fc\u30ac\u30fc\u3092\u72d9\u3046\u5272\u5b89\u5c0f\u578b\u6210\u9577\u682a"}
             </p>
           </footer>
           </>
