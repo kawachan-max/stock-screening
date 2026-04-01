@@ -192,7 +192,7 @@ const TITLE = "\u30c6\u30f3\u30d0\u30fc\u30ac\u30fc\u3092\u72d9\u3046\u5272\u5b8
 const SUBTITLE = "\u6e05\u539f\u9054\u90ce\u5f0f \u00d7 \u30d0\u30d5\u30a7\u30c3\u30c8\u6d41 \u00d7 AI\u6c7a\u7b97\u5206\u6790 \uff5c \u6bce\u55b6\u696d\u65e5\u66f4\u65b0";
 const TAB_SERVICE_ABOUT = "\u3053\u306e\u30b5\u30fc\u30d3\u30b9\u306b\u3064\u3044\u3066";
 const BTN_PAID_UNLOCKED = "\u2705 \u6709\u6599\u30d7\u30e9\u30f3";
-const BTN_PAID_LOCKED = "\ud83d\udd12 \u4e0a\u4f4d10\u4f4d\u3092\u89e3\u653e";
+const BTN_PAID_LOCKED = "\ud83d\udd12 \u4e0a\u4f4d20\u4f4d\u3092\u89e3\u653e";
 const MODAL_BENEFITS_TITLE = "\u89e3\u653e\u3067\u304d\u308b\u3053\u3068";
 const BENEFIT_1 = "\u4e0a\u4f4d1\uff5e10\u4f4d\u306e\u9298\u67c4\u540d\u30fb\u8a3c\u5238\u30b3\u30fc\u30c9";
 const BENEFIT_2 = "\u30b9\u30b3\u30a2\u5185\u8a33\u5168\u9805\u76ee\uff08\u5272\u5b89\u5ea6\u30fb\u6210\u9577\u6027\u30fb\u696d\u7e3e\u30fb\u7af6\u4e89\u512a\u4f4d\u6027\u30fb\u682a\u4e3b\u9084\u5143\u30fb\u30ea\u30b9\u30af\uff09";
@@ -270,10 +270,10 @@ const BTN_CANCEL = "\u30AD\u30E3\u30F3\u30BB\u30EB";
 const SEP_LINE = "\uFF5C";
 
 // ?????????????????????????????????
-const MODAL_UNLOCK_TITLE = (lockCount: number) =>
-  `\uD83D\uDD13 1\u301C${lockCount}\u4F4D\u3092\u89E3\u653E\u3059\u308B`;
-const MODAL_UNLOCK_DESC = (lockCount: number) =>
-  `note\u306e\u6709\u6599\u8a18\u4e8b\u306b\u8a18\u8f09\u306e\u30d1\u30b9\u30ef\u30fc\u30c9\u3092\u5165\u529b\u3059\u308b\u3068 1\u301c${lockCount}\u4f4d\u306e\u9298\u67c4\u540d\u304c\u8868\u793a\u3055\u308c\u307e\u3059`;
+const MODAL_UNLOCK_TITLE = () =>
+  "\uD83D\uDD13 1\u301C20\u4F4D\u3092\u89E3\u653E\u3059\u308B";
+const MODAL_UNLOCK_DESC = () =>
+  "note\u306e\u6709\u6599\u8a18\u4e8b\u306b\u8a18\u8f09\u306e\u30d1\u30b9\u30ef\u30fc\u30c9\u3092\u5165\u529b\u3059\u308b\u3068 1\u301c20\u4f4d\u306e\u9298\u67c4\u540d\u304c\u8868\u793a\u3055\u308c\u307e\u3059";
 
 const PITCH_UNIQLO = "\u30E6\u30CB\u30AF\u30ED\uff08\u30D5\u30A1\u30FC\u30B9\u30C8\u30EA\u30C6\u30A4\u30EA\u30F3\u30B0\uff09";
 const PITCH_UNIQLO_GROWTH = "\u4E0A\u5834\u6642\u304B\u3089\u7D04900\u500D\u306B\u6210\u9577";
@@ -746,7 +746,7 @@ export default function Home() {
     return "text-[#6b6b6b]";
   };
 
-  const lockCount = rows.length >= 20 ? 10 : 5;
+  const lockCount = 20;
   const displayName = (r: Row) => (r.name_jp || r.name || r.code) || r.code;
 
   const headerActions = (
@@ -1019,13 +1019,13 @@ export default function Home() {
                     <button
                       type="button"
                       onClick={() => {
-                        if (!isUnlocked) {
+                        if (!isUnlocked && i < lockCount) {
                           setModalOpen(true);
                           return;
                         }
                         const willExpand = !isExpanded;
                         setExpandedCode(isExpanded ? null : r.code);
-                        if (willExpand && !isLockedRow) {
+                        if (willExpand && (isUnlocked || i >= lockCount)) {
                           setTimeout(() => {
                             const el = document.getElementById(`stock-${r.code}`);
                             if (el) {
@@ -1042,7 +1042,7 @@ export default function Home() {
                       {isExpanded ? BTN_DETAIL_CLOSE : BTN_DETAIL_OPEN}
                     </button>
                   </div>
-                  {isUnlocked && isExpanded && (
+                  {(isUnlocked || i >= lockCount) && isExpanded && (
                     <div className="mt-4 pt-4 border-t border-[#e5e0d8] space-y-4 text-sm">
                       <section>
                         <h3 className="text-xs font-semibold text-[#6b6b6b] mb-2">{LABEL_SCORE_BREAKDOWN}</h3>
@@ -1603,10 +1603,10 @@ export default function Home() {
             onClick={(e) => e.stopPropagation()}
           >
             <h2 className="text-lg font-semibold mb-2 text-[#1a1a1a]">
-              {MODAL_UNLOCK_TITLE(lockCount)}
+              {MODAL_UNLOCK_TITLE()}
             </h2>
             <p className="text-sm text-[#6b6b6b] mb-4">
-              {MODAL_UNLOCK_DESC(lockCount)}
+              {MODAL_UNLOCK_DESC()}
             </p>
             <input
               type="password"
