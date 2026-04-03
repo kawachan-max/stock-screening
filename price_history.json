@@ -619,6 +619,46 @@
       "stock_price": 722,
       "theoretical_price": 1809,
       "upside_percent": 150.5
+    },
+    {
+      "date": "2026-04-04",
+      "code": "9867",
+      "name": "SOLEKIA LIMITED",
+      "tab": "general",
+      "score": 63,
+      "stock_price": 9650,
+      "theoretical_price": 23060,
+      "upside_percent": 139.0
+    },
+    {
+      "date": "2026-04-04",
+      "code": "6149",
+      "name": "ODAWARA ENGINEERING CO",
+      "tab": "general",
+      "score": 62,
+      "stock_price": 1907,
+      "theoretical_price": 8099,
+      "upside_percent": 324.7
+    },
+    {
+      "date": "2026-04-04",
+      "code": "8917",
+      "name": "FIRST JUKEN CO LTD",
+      "tab": "finance",
+      "score": 61,
+      "stock_price": 1200,
+      "theoretical_price": 3082,
+      "upside_percent": 156.9
+    },
+    {
+      "date": "2026-04-04",
+      "code": "5280",
+      "name": "YOSHICON CO LTD",
+      "tab": "finance",
+      "score": 60,
+      "stock_price": 2495,
+      "theoretical_price": 10233,
+      "upside_percent": 310.1
     }
   ]
 }
