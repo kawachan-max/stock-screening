@@ -659,6 +659,36 @@
       "stock_price": 2495,
       "theoretical_price": 10233,
       "upside_percent": 310.1
+    },
+    {
+      "date": "2026-04-07",
+      "code": "8917",
+      "name": "FIRST JUKEN CO LTD",
+      "tab": "finance",
+      "score": 60,
+      "stock_price": 1210,
+      "theoretical_price": 3082,
+      "upside_percent": 154.7
+    },
+    {
+      "date": "2026-04-07",
+      "code": "5280",
+      "name": "YOSHICON CO LTD",
+      "tab": "finance",
+      "score": 60,
+      "stock_price": 2500,
+      "theoretical_price": 10233,
+      "upside_percent": 309.3
+    },
+    {
+      "date": "2026-04-07",
+      "code": "8881",
+      "name": "NISSHIN GROUP HLDGS CO LTD",
+      "tab": "finance",
+      "score": 60,
+      "stock_price": 717,
+      "theoretical_price": 1809,
+      "upside_percent": 152.3
     }
   ]
 }
