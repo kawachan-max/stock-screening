@@ -709,6 +709,26 @@
       "stock_price": 2517,
       "theoretical_price": 10233,
       "upside_percent": 306.5
+    },
+    {
+      "date": "2026-04-09",
+      "code": "8917",
+      "name": "FIRST JUKEN CO LTD",
+      "tab": "finance",
+      "score": 60,
+      "stock_price": 1215,
+      "theoretical_price": 3082,
+      "upside_percent": 153.7
+    },
+    {
+      "date": "2026-04-09",
+      "code": "5280",
+      "name": "YOSHICON CO LTD",
+      "tab": "finance",
+      "score": 60,
+      "stock_price": 2609,
+      "theoretical_price": 10232,
+      "upside_percent": 292.2
     }
   ]
 }
