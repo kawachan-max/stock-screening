@@ -729,6 +729,66 @@
       "stock_price": 2609,
       "theoretical_price": 10232,
       "upside_percent": 292.2
+    },
+    {
+      "date": "2026-04-10",
+      "code": "7991",
+      "name": "MAMIYA-OP CO LTD",
+      "tab": "general",
+      "score": 62,
+      "stock_price": 1406,
+      "theoretical_price": 5012,
+      "upside_percent": 256.5
+    },
+    {
+      "date": "2026-04-10",
+      "code": "6149",
+      "name": "ODAWARA ENGINEERING CO",
+      "tab": "general",
+      "score": 62,
+      "stock_price": 1956,
+      "theoretical_price": 8100,
+      "upside_percent": 314.1
+    },
+    {
+      "date": "2026-04-10",
+      "code": "8152",
+      "name": "SOMAR CORPORATION",
+      "tab": "general",
+      "score": 61,
+      "stock_price": 5940,
+      "theoretical_price": 22787,
+      "upside_percent": 283.6
+    },
+    {
+      "date": "2026-04-10",
+      "code": "8917",
+      "name": "FIRST JUKEN CO LTD",
+      "tab": "finance",
+      "score": 61,
+      "stock_price": 1214,
+      "theoretical_price": 3083,
+      "upside_percent": 153.9
+    },
+    {
+      "date": "2026-04-10",
+      "code": "5280",
+      "name": "YOSHICON CO LTD",
+      "tab": "finance",
+      "score": 60,
+      "stock_price": 2567,
+      "theoretical_price": 10231,
+      "upside_percent": 298.5
+    },
+    {
+      "date": "2026-04-10",
+      "code": "8881",
+      "name": "NISSHIN GROUP HLDGS CO LTD",
+      "tab": "finance",
+      "score": 60,
+      "stock_price": 716,
+      "theoretical_price": 1809,
+      "upside_percent": 152.6
     }
   ]
 }
