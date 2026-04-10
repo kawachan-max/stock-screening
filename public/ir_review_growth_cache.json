@@ -1,0 +1,13 @@
+{
+  "7991": {
+    "review_status": "neutral",
+    "catalysts_found": [],
+    "risks_found": [],
+    "score_adjustment": 0,
+    "add_badges": [],
+    "ir_comment": "",
+    "review_note": "IR審査エラー: ANTHROPIC_API_KEY missing",
+    "source_urls": [],
+    "reviewed_at": "2026-04-10"
+  }
+}

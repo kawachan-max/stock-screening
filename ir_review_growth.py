@@ -117,7 +117,7 @@ A. \u30ab\u30bf\u30ea\u30b9\u30c8\uff08\u30d7\u30e9\u30b9\u8a55\u4fa1\uff09:
    - \u5897\u914d\u767a\u8868: score_adjustment +2\u301c+4, badge "\u2b06\ufe0f\u5897\u914d\u767a\u8868" positive
    - \u4e0a\u65b9\u4fee\u6b63: score_adjustment +3\u301c+6, badge "\u2b06\ufe0f\u4e0a\u65b9\u4fee\u6b63" positive
    - PBR\u6539\u5584\u5bfe\u5fdc\u30fb\u4e2d\u8a08\u6210\u9577\u6226\u7565: score_adjustment +2\u301c+3, badge "\u2b06\ufe0f\u9084\u5143\u5f37\u5316" positive
-   - MBO\u30fbTOB: score_adjustment +5, badge "\ud83d\udea8MBO/TOB" positive
+   - MBO\u30fbTOB: score_adjustment +5, badge "\u2757MBO/TOB" positive
 
 B. \u30ea\u30b9\u30af\uff08\u30de\u30a4\u30ca\u30b9\u8a55\u4fa1\uff09:
    - \u4e0b\u65b9\u4fee\u6b63: score_adjustment -5\u301c-10, badge "\u26a0\ufe0f\u4e0b\u65b9\u4fee\u6b63" negative
