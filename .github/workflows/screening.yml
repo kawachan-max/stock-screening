@@ -27,6 +27,11 @@ jobs:
           JQUANTS_API_KEY: ${{ secrets.JQUANTS_API_KEY }}
           SKIP_AI: ${{ contains(fromJSON('["Monday","Thursday"]'), steps.get-day.outputs.day) && 'false' || 'true' }}
         run: python screening.py
+      - name: Run IR review
+        if: ${{ contains(fromJSON('["Monday","Thursday"]'), steps.get-day.outputs.day) }}
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: python ir_review_growth.py --results-dir .
       - name: Copy result to public
         run: |
           mkdir -p public
@@ -57,6 +62,7 @@ jobs:
           git add -f screening_result_finance.json public/screening_result_finance.json 2>/dev/null || true
           git add -f ai_cache.json 2>/dev/null || true
           git add -f price_history.json 2>/dev/null || true
+          git add -f ir_review_growth_cache.json 2>/dev/null || true
           git diff --staged --quiet || git commit -m "update screening result $(date +'%Y-%m-%d')"
           git pull --rebase origin main
           git push
