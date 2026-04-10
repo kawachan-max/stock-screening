@@ -25,10 +25,10 @@ jobs:
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           JQUANTS_API_KEY: ${{ secrets.JQUANTS_API_KEY }}
-          SKIP_AI: ${{ contains(fromJSON('["Monday","Thursday"]'), steps.get-day.outputs.day) && 'false' || 'true' }}
+          SKIP_AI: 'false'
         run: python screening.py
       - name: Run IR review
-        if: ${{ contains(fromJSON('["Monday","Thursday"]'), steps.get-day.outputs.day) }}
+        if: true
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
         run: python ir_review_growth.py --results-dir .
