@@ -909,6 +909,36 @@
       "stock_price": 2485,
       "theoretical_price": 10232,
       "upside_percent": 311.8
+    },
+    {
+      "date": "2026-04-16",
+      "code": "8152",
+      "name": "SOMAR CORPORATION",
+      "tab": "general",
+      "score": 61,
+      "stock_price": 5720,
+      "theoretical_price": 22787,
+      "upside_percent": 298.4
+    },
+    {
+      "date": "2026-04-16",
+      "code": "8917",
+      "name": "FIRST JUKEN CO LTD",
+      "tab": "finance",
+      "score": 61,
+      "stock_price": 1200,
+      "theoretical_price": 3082,
+      "upside_percent": 156.8
+    },
+    {
+      "date": "2026-04-16",
+      "code": "5280",
+      "name": "YOSHICON CO LTD",
+      "tab": "finance",
+      "score": 60,
+      "stock_price": 2489,
+      "theoretical_price": 10232,
+      "upside_percent": 311.1
     }
   ]
 }
