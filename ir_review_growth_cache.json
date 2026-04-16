@@ -324,5 +324,105 @@
     "review_note": "IR審査エラー: Error code: 529 - {'type': 'error', 'error': {'typ",
     "source_urls": [],
     "reviewed_at": "2026-04-13"
+  },
+  "8904": {
+    "review_status": "negative",
+    "catalysts_found": [],
+    "risks_found": [
+      "業績下方修正",
+      "戸建住宅事業の低迷"
+    ],
+    "score_adjustment": -8,
+    "add_badges": [
+      {
+        "text": "⚠️下方修正",
+        "type": "negative"
+      }
+    ],
+    "ir_comment": "<cite index='39-2'>2025年8月期の連結経常利益を従来予想の20億円→11億円に45.0％下方修正</cite>した。<cite index='39-2'>戸建住宅事業の販売件数が当初計画を下回り、愛知県の市中在庫が過剰な状況が長期化</cite>している。<cite index='20-3'>第3四半期累計では営業利益4,700万円と減収ながら黒字転換</cite>したものの、<cite index='20-3'>年間配当金は前期と同額の38円を維持</cite>する予定。",
+    "review_note": "愛知県の戸建住宅市場低迷により大幅下方修正。ただし配当維持の方針を継続している。",
+    "source_urls": [
+      "https://kabutan.jp/news/?b=k202504110046",
+      "https://finance.yahoo.co.jp/quote/8904.T/financials",
+      "https://avantia-g.jp/corp/ir/library/earnings_release.html"
+    ],
+    "reviewed_at": "2026-04-16"
+  },
+  "3477": {
+    "review_status": "positive",
+    "catalysts_found": [
+      "増配発表（2025年3月13日）：期末配当を17.50円から27.50円に10円増配",
+      "業績上方修正（2025年3月13日）：営業利益600百万円（前期比+129.9%、会社予想比+46.3%）"
+    ],
+    "risks_found": [],
+    "score_adjustment": 7,
+    "add_badges": [
+      "⬆️増配発表",
+      "⬆️上方修正"
+    ],
+    "ir_comment": "2025年3月13日に業績上方修正と10円増配を発表。営業利益は前期比129.9%増の600百万円、会社予想比も46.3%上回る。配当は17.50円から27.50円へ大幅増額。住宅着工漸減や金利上昇リスクがある中でも保守的計画を上回る好業績を達成。",
+    "review_note": "業績上方修正と大幅増配（10円）を同時発表。利益面で想定以上の改善を達成し株主還元も強化。",
+    "source_urls": [
+      "https://www.nikkei.com/nkd/disclosure/tdnr/20250313592939/",
+      "https://moneyworld.jp/news/PFE1820_ainews",
+      "https://irbank.net/E32793/dividend",
+      "https://ir.forlifeand.com/ja/irnews.html"
+    ],
+    "reviewed_at": "2026-04-16"
+  },
+  "7434": {
+    "review_status": "positive",
+    "catalysts_found": [
+      "2024年10月17日に自社株買い発表（10万株・1億9560万円上限、発行済み株式総数の2.5%）",
+      "2026年5月期第3四半期にて配当増額修正発表（期末配当37円→40円に3円増額）"
+    ],
+    "risks_found": [
+      "2025年5月期1Qにて経常利益13.9%減益で着地",
+      "大株主であるキッツが保有割合減少（2024年10月24日変更報告書提出）"
+    ],
+    "score_adjustment": 2,
+    "add_badges": [
+      {
+        "text": "⬆️自社株買い",
+        "color": "positive"
+      },
+      {
+        "text": "⬆️増配発表",
+        "color": "positive"
+      }
+    ],
+    "ir_comment": "<cite index=\"12-1\">2024年10月17日に立会外で10万株・1億9560万円を上限とする自社株買い（発行済み株式総数の2.5%）を発表</cite>。<cite index=\"25-2\">2026年5月期第3四半期決算では期末一括配当を従来計画の37円→40円（前期は37円）に増額修正</cite>した。一方で<cite index=\"12-1\">2025年5月期1Qは減益、経常利益は13.9％減</cite>となった。",
+    "review_note": "自社株買いと配当増額の株主還元策を実施している点は評価できるが、足元の業績は減益基調",
+    "source_urls": [
+      "https://www.kabutec.jp/sp/i.php?code=7434",
+      "https://finance.yahoo.co.jp/news/detail/bb33dc1ea6522c596b5ffab9acad090c96cf1772"
+    ],
+    "reviewed_at": "2026-04-16"
+  },
+  "8147": {
+    "review_status": "negative",
+    "catalysts_found": [
+      "株主優待制度の拡充をポジティブ視されている"
+    ],
+    "risks_found": [
+      "2025年3月期第2四半期累計の経常利益が前年同期比23.2％減の3.7億円に減少",
+      "通期計画の9億円に対する進捗率が41.6％にとどまり、5年平均の50.6％を下回っている",
+      "直近3ヵ月の7-9月期経常利益が前年同期比49.8％減の1.2億円に落ち込み"
+    ],
+    "score_adjustment": -3,
+    "add_badges": [
+      {
+        "label": "⬆️優待拡充",
+        "type": "positive"
+      }
+    ],
+    "ir_comment": "2025年3月期第2四半期決算で経常利益が前年同期比23.2％減少し、通期計画に対する進捗が低調。特に7-9月期は49.8％の大幅減益となった。ただし、株主優待制度の拡充により保有期間3年未満は2,500円、3年以上は3,500円のQUOカードを贈呈する制度を導入。",
+    "review_note": "業績進捗の低迷が懸念材料だが、株主優待拡充がプラス材料として評価されている",
+    "source_urls": [
+      "https://minkabu.jp/stock/8147/settlement",
+      "https://web.fisco.jp/platform/companies/0814700",
+      "https://yutai-guide.daiwair.co.jp/stock/detail/8147"
+    ],
+    "reviewed_at": "2026-04-16"
   }
 }
