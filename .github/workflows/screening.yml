@@ -54,6 +54,10 @@ jobs:
               echo "WARNING: Finance results count ($FIN_COUNT) is too low. Skipping copy."
             fi
           fi
+      - name: Run LINE notification
+        env:
+          LINE_CHANNEL_ACCESS_TOKEN_GROWTH: ${{ secrets.LINE_CHANNEL_ACCESS_TOKEN_GROWTH }}
+        run: python line_notify_growth.py --results-dir .
       - name: Commit and push
         run: |
           git config --global user.email "action@github.com"
@@ -63,6 +67,8 @@ jobs:
           git add -f ai_cache.json 2>/dev/null || true
           git add -f price_history.json 2>/dev/null || true
           git add -f ir_review_growth_cache.json 2>/dev/null || true
+          git add -f screening_result_prev.json 2>/dev/null || true
+          git add -f screening_result_finance_prev.json 2>/dev/null || true
           git diff --staged --quiet || git commit -m "update screening result $(date +'%Y-%m-%d')"
           git pull --rebase origin main
           git push
