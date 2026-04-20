@@ -424,5 +424,20 @@
       "https://yutai-guide.daiwair.co.jp/stock/detail/8147"
     ],
     "reviewed_at": "2026-04-16"
+  },
+  "6797": {
+    "review_status": "neutral",
+    "catalysts_found": [],
+    "risks_found": [],
+    "score_adjustment": 0,
+    "add_badges": [],
+    "ir_comment": "<cite index=\"15-1,29-1\">2025年4月1日付で1:2の株式分割を実施</cite>。<cite index=\"37-2\">2025年3月期は売上高172.62億円（1.8%減）だが、営業利益27.52億円（17.4%増）、経常利益27.82億円（18.3%増）、純利益22.06億円（31.3%増）と大幅増益</cite>。<cite index=\"29-1\">配当性向30%以上を目安に安定配当方針</cite>を掲げている。",
+    "review_note": "株式分割により流動性向上。増収減益予想だが、コスト管理により利益率改善が継続。特段の大きなカタリストやリスクは確認されず。",
+    "source_urls": [
+      "https://www.nagoya-denki.co.jp/ir/",
+      "https://www.buffett-code.com/company/6797/",
+      "https://finance.yahoo.co.jp/quote/6797.T/financials"
+    ],
+    "reviewed_at": "2026-04-20"
   }
 }
