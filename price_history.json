@@ -1049,6 +1049,36 @@
       "stock_price": 2554,
       "theoretical_price": 10231,
       "upside_percent": 300.6
+    },
+    {
+      "date": "2026-04-25",
+      "code": "6149",
+      "name": "ODAWARA ENGINEERING CO",
+      "tab": "general",
+      "score": 62,
+      "stock_price": 1952,
+      "theoretical_price": 8099,
+      "upside_percent": 314.9
+    },
+    {
+      "date": "2026-04-25",
+      "code": "8917",
+      "name": "FIRST JUKEN CO LTD",
+      "tab": "finance",
+      "score": 61,
+      "stock_price": 1162,
+      "theoretical_price": 3082,
+      "upside_percent": 165.3
+    },
+    {
+      "date": "2026-04-25",
+      "code": "5280",
+      "name": "YOSHICON CO LTD",
+      "tab": "finance",
+      "score": 61,
+      "stock_price": 2521,
+      "theoretical_price": 10231,
+      "upside_percent": 305.8
     }
   ]
 }
