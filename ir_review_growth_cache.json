@@ -439,5 +439,115 @@
       "https://finance.yahoo.co.jp/quote/6797.T/financials"
     ],
     "reviewed_at": "2026-04-20"
+  },
+  "2449": {
+    "review_status": "positive",
+    "catalysts_found": [
+      "増配発表",
+      "中期成長戦略",
+      "業績好調"
+    ],
+    "risks_found": [
+      "海外事業減収"
+    ],
+    "score_adjustment": 3,
+    "add_badges": [
+      "⬆️増配発表",
+      "⬆️還元強化"
+    ],
+    "ir_comment": "2025年8月期決算では<cite index=\"12-2\">売上高7.3%増の73.88億円、営業利益25.4%増の7.18億円と増収増益を達成</cite>。<cite index=\"12-2\">配当は期初予想40円から1円増配の41円とした</cite>。<cite index=\"13-2\">累進配当政策を導入し原則として減配せず配当維持もしくは増配を行う方針</cite>。<cite index=\"13-2\">中期経営計画では2027年8月期に売上高100億円、営業利益11億円を目標</cite>として設定。",
+    "review_note": "増配実施と累進配当政策の導入により株主還元を強化。中期経営計画での成長戦略も明確で前向きな材料が多い。",
+    "source_urls": [
+      "https://www.bridge-salon.jp/report_bridge/archives/2025/11/251117_2449.html",
+      "https://www.prapgroup.com/ir/stock_bond/dividends.html",
+      "https://irbank.net/E05498/pl"
+    ],
+    "reviewed_at": "2026-04-27"
+  },
+  "8860": {
+    "review_status": "negative",
+    "catalysts_found": [
+      "2024年5月2日に増配発表。2024年3月期配当は前年比増配となり、配当利回りは改善",
+      "2025年3月期決算で営業利益72.64億円と過去最高益達成、前期比15.6%増"
+    ],
+    "risks_found": [
+      "ヘイトハラスメント訴訟で2022年9月に最高裁で敗訴確定。会社と会長に132万円の損害賠償命令と差別文書の配布差止めが確定",
+      "2013年頃から継続的に民族差別的文書を全従業員に配布していたことが司法で認定され、企業コンプライアンス上の重大なリスク",
+      "ブルーリボン訴訟でも敗訴（2024年1月）し、訴訟リスクが継続"
+    ],
+    "score_adjustment": -8,
+    "add_badges": [
+      "⬆️増配発表",
+      "⚠️不祥事"
+    ],
+    "ir_comment": "<cite index=\"11-5,26-5\">2025年3月期決算で営業利益は前期比15.6%増の72.64億円で過去最高益を達成</cite>。<cite index=\"21-1,22-1\">2024年5月2日に剰余金の配当（増配）を発表</cite>。<cite index=\"9-2,28-1\">2026年3月期第1四半期も売上高371.11億円（前年同期比20.9%増）、営業利益25.18億円（同12.0%増）と好調</cite>。一方、<cite index=\"33-1,33-3,37-2\">ヘイトハラスメント訴訟で2022年9月に最高裁で敗訴が確定し、132万円の損害賠償と差別文書配布差止めが命じられた</cite>重大なコンプライアンス問題が存在。",
+    "review_note": "業績は好調で増配も実施しているが、ヘイトハラスメント訴訟敗訴という深刻なESGリスクが株価に長期的な悪影響を与える可能性",
+    "source_urls": [
+      "https://irbank.net/8860/140120240502581305",
+      "https://www.nikkei.com/article/DGXZQOUF0965H0Z00C22A9000000/",
+      "https://www.kitaosaka-law.gr.jp/post-info/%E3%83%95%E3%82%B8%E4%BD%8F%E5%AE%85%E3%83%98%E3%82%A4%E3%83%88%E3%83%8F%E3%83%A9%E3%82%B9%E3%83%A1%E3%83%B3%E3%83%88%E8%A3%81%E5%88%A4%E3%83%BB%E6%9C%80%E9%AB%98%E8%A3%81%E3%81%A7%E5%8E%9F%E5%91%8A/",
+      "https://finance.yahoo.co.jp/quote/8860.T/financials"
+    ],
+    "reviewed_at": "2026-04-27"
+  },
+  "8747": {
+    "review_status": "positive",
+    "catalysts_found": [
+      "大幅増収増益（営業収益90.75億円・前年同期比56.5%増、経常利益46.44億円・前年同期比170.0%増）",
+      "18期ぶりの売上高過去最高更新",
+      "連続での経常利益・最終利益過去最高更新"
+    ],
+    "risks_found": [
+      "自己資本比率の大幅低下（5.1%まで低下、財務健全性への懸念）",
+      "過去の訴訟リスク（説明義務違反等で損害賠償責任が発生した過去の判例）"
+    ],
+    "score_adjustment": 3,
+    "add_badges": [
+      "⬆️上方修正"
+    ],
+    "ir_comment": "<cite index=\"2-2,7-2\">2026年2月6日発表の第3四半期決算で営業収益90.75億円（前年同期比56.5%増）、経常利益46.44億円（前年同期比170.0%増）と大幅増収増益。18期ぶりの売上高過去最高更新を達成</cite>。<cite index=\"2-2\">一方で自己資本比率は5.1%に低下しており財務健全性への注意が必要</cite>。",
+    "review_note": "過去最高業績更新も自己資本比率低下と過去の訴訟リスクに要注意",
+    "source_urls": [
+      "https://finance.yahoo.co.jp/quote/8747.T",
+      "https://minkabu.jp/stock/8747/settlement",
+      "https://clnn.org/cln/29103"
+    ],
+    "reviewed_at": "2026-04-27"
+  },
+  "8150": {
+    "review_status": "positive",
+    "catalysts_found": [
+      "2025年2月14日に配当予想を上方修正、105円から120円へ15円増配発表",
+      "2024年10月24日に第2四半期業績予想上方修正を発表",
+      "2024年7月25日に上半期業績予想上方修正を発表",
+      "V76中期経営計画でROE8%以上の安定達成を目標に設定"
+    ],
+    "risks_found": [
+      "2025年2月14日に株式売出し（270万株）を発表、希薄化リスク"
+    ],
+    "score_adjustment": 1,
+    "add_badges": [
+      {
+        "text": "⬆️増配発表",
+        "type": "positive"
+      },
+      {
+        "text": "⬆️上方修正",
+        "type": "positive"
+      },
+      {
+        "text": "⚠️希薄化",
+        "type": "negative"
+      }
+    ],
+    "ir_comment": "2025年2月に業績・配当予想上方修正を発表、年間配当を105円→120円（15円増配）に引き上げ。第2四半期、第3四半期と2度の上方修正を実施。V76中期経営計画でROE8%以上の安定達成目標。一方で270万株の株式売出しも発表。",
+    "review_note": "複数回の上方修正と増配発表でポジティブだが、株式売出しによる希薄化懸念がマイナス要因として作用",
+    "source_urls": [
+      "https://irbank.net/8150/ir",
+      "https://www.nikkei.com/nkd/disclosure/tdnr/20250212569578/",
+      "https://diamond.jp/zai/articles/-/1046088",
+      "https://www.sanshin.co.jp/en/ir/investor/"
+    ],
+    "reviewed_at": "2026-04-27"
   }
 }

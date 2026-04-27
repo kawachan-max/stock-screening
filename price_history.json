@@ -1079,6 +1079,26 @@
       "stock_price": 2521,
       "theoretical_price": 10231,
       "upside_percent": 305.8
+    },
+    {
+      "date": "2026-04-28",
+      "code": "5280",
+      "name": "YOSHICON CO LTD",
+      "tab": "finance",
+      "score": 61,
+      "stock_price": 2511,
+      "theoretical_price": 10231,
+      "upside_percent": 307.4
+    },
+    {
+      "date": "2026-04-28",
+      "code": "8881",
+      "name": "NISSHIN GROUP HLDGS CO LTD",
+      "tab": "finance",
+      "score": 60,
+      "stock_price": 686,
+      "theoretical_price": 1809,
+      "upside_percent": 163.7
     }
   ]
 }
