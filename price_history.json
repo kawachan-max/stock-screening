@@ -1119,6 +1119,36 @@
       "stock_price": 2535,
       "theoretical_price": 10230,
       "upside_percent": 303.5
+    },
+    {
+      "date": "2026-05-01",
+      "code": "8152",
+      "name": "SOMAR CORPORATION",
+      "tab": "general",
+      "score": 62,
+      "stock_price": 5520,
+      "theoretical_price": 22784,
+      "upside_percent": 312.8
+    },
+    {
+      "date": "2026-05-01",
+      "code": "8135",
+      "name": "ZETT CORPORATION",
+      "tab": "general",
+      "score": 61,
+      "stock_price": 428,
+      "theoretical_price": 2599,
+      "upside_percent": 507.2
+    },
+    {
+      "date": "2026-05-01",
+      "code": "5280",
+      "name": "YOSHICON CO LTD",
+      "tab": "finance",
+      "score": 62,
+      "stock_price": 2540,
+      "theoretical_price": 10230,
+      "upside_percent": 302.8
     }
   ]
 }
