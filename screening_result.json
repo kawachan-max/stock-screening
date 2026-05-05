@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-05-05T01:45:05+09:00",
+  "updated_at": "2026-05-06T01:24:22+09:00",
   "stocks": [
     {
       "code": "9867",
@@ -23,7 +23,7 @@
       "roe": 9.73,
       "roic": 83.7,
       "pbr": 0.67,
-      "ai_comment": "SOLEKIAは3期連続増収を達成し、直近3Qでは売上高前年同期比+15.6%、営業利益+118.8%と大幅な増益基調にある。通期予想も増収増益見通しで業績モメンタムは良好。ただし営業利益率は約6%台と薄く、テクノロジー系ITサービス企業として競争環境は厳しい。PERは6倍台と割安感があり、PBR0.67倍で資産価値割れ、ROE9.73%は平均的水準。NC比1.14は流動性にやや余裕あり。財務の安定性と継続的な増収は評価できるが、収益性の低さと競争激化リスクには注意が必要。中小型IT企業として事業規模拡大への取り組みが今後の鍵となる。\n\n【IR審査】2026年3月期第2四半期は売上高140億円（前年同期比+9.8%）、営業利益9.6億円（同+56.1%）の大幅増益。IT投資需要拡大やWindows 10更新需要が寄与。通期予想は増収増益を維持。特別配当は15円から通期予想では廃止見込み。",
+      "ai_comment": "SOLEKIAは3期連続増収を達成し、直近3Qでは売上高前年同期比+15.6%、営業利益+118.8%と大幅な増益基調にある。通期予想も増収増益見通しで業績モメンタムは良好。ただし営業利益率は約6%台と薄く、テクノロジー系ITサービス企業として競争環境は厳しい。PERは6倍台と割安感があり、PBR0.67倍で資産価値割れ、ROE9.73%は平均的水準。NC比1.14は流動性にやや余裕あり。財務の安定性と継続的な増収は評価できるが、収益性の低さと競争激化リスクには注意が必要。中小型IT企業として事業規模拡大への取り組みが今後の鍵となる。",
       "risk_checks": {
         "roe_15_percent": false,
         "equity_ratio_50_percent": true,
@@ -42,60 +42,7 @@
       "tenbagger_stars": 3,
       "tab": "general",
       "theoretical_price": 23054.0,
-      "upside_percent": 146.3,
-      "_source": "general",
-      "ir_review_status": "neutral",
-      "ir_review_note": "業績は堅調も、東証PBR改善要請下で株主還元強化策の具体的発表はなし。投資単位引下げ検討を表明。",
-      "ir_reviewed_at": "2026-04-30"
-    },
-    {
-      "code": "6743",
-      "name": "DAIDO SIGNAL CO",
-      "name_jp": "大同信号",
-      "website": "https://www.daido-signal.co.jp",
-      "market": "スタンダード",
-      "score": 58,
-      "valuation_score": 14,
-      "growth_score": 13,
-      "shareholder_score": 6,
-      "quality_score_detail": 5,
-      "bonus_score": 1,
-      "risk_penalty": -6,
-      "forecast_adj": 1,
-      "net_cash_ratio": 1.2,
-      "per": 8.53,
-      "market_cap_oku": 126.3,
-      "dividend_yield": 3.14,
-      "payout_ratio": 16.08,
-      "roe": 6.35,
-      "roic": 5.36,
-      "pbr": 0.48,
-      "ai_comment": "大同信号は鉄道信号・交通インフラ向けに特化した企業で、一定の参入障壁を持つ。直近3期の売上は195→207.7→219.1億円と連続増収。ただし直近本決算では営業利益が-11.1%と減益。四半期データ（3Q累計）では売上+11.7%・営業利益+42.7%と大幅改善が確認でき、通期予想も増収増益見込み（売上244億円・営業利益18億円）であり、業績回復トレンドが顕著。PBR0.48倍・PER8.5倍と割安感あり。ROE6.35%はやや低水準。公共インフラ向けで安定需要があるが、収益率の改善余地が課題。NC比1.2超は財務健全性に懸念あり。総合的には割安で業績回復中の銘柄として注目に値する。\n\n【IR審査】<cite index=\"2-1,11-1,12-1,15-2,20-1,21-2,33-2,34-3,34-4\">大同信号は2024年5月に179万株（12億4500万円上限）の自社株買いを実施し、8億525万円を取得。2025年5月と11月に2回連続増配を発表、配当予想を15円に上方修正。2025年6月にPBR改善を目指すPLAN2026を策定し、業績連動株主還元と政策保有株式縮減を実施。ROE向上とPBR1倍達成を目標とする資本効率改善施策を推進中。</cite>",
-      "risk_checks": {
-        "roe_15_percent": false,
-        "equity_ratio_50_percent": true,
-        "debt_to_profit_5x": false,
-        "fcf_stability": true,
-        "liquidity_risk": false,
-        "one_time_profit_risk": false
-      },
-      "trend_score": 7,
-      "quality_score": 7,
-      "chart_signals": {
-        "volume_surge": false,
-        "above_ma": false,
-        "near_high": false
-      },
-      "tenbagger_stars": 2,
-      "tab": "general",
-      "theoretical_price": 2006.0,
-      "upside_percent": 152.1,
-      "_source": "general",
-      "score_before_ir": 48,
-      "badges": [],
-      "ir_review_status": "positive",
-      "ir_review_note": "<cite index=\"2-1,11-1,12-1,15-2\">複数のカタリストが揃う。自社株買い実施・2回の増配・上方修正・PBR改善施策により株主還元強化が鮮明。</cite>",
-      "ir_reviewed_at": "2026-04-30"
+      "upside_percent": 146.3
     },
     {
       "code": "8152",
@@ -103,7 +50,7 @@
       "name_jp": "ソマール",
       "website": "https://www.somar.co.jp",
       "market": "スタンダード",
-      "score": 54,
+      "score": 56,
       "valuation_score": 18,
       "growth_score": 19,
       "shareholder_score": 9,
@@ -119,7 +66,7 @@
       "roe": 12.82,
       "roic": 21.08,
       "pbr": 0.5,
-      "ai_comment": "ソマール株式会社は基礎素材セクターに属し、過去3期の売上推移（250.6→266.5→303.6億円）は一貫した増収を示している。直近通期では売上前年比+13.9%、営業利益+43.0%と大幅な増益を達成し、業績トレンドは良好。しかし最新四半期（3Q累計）では売上+1.3%と伸び鈍化、営業利益▲4.1%、純利益▲33.1%と明確な減速・減益が確認される。PERは4.8倍と割安感があるものの、PBR0.5倍・ROE12.82%はやや低位。NetCash比率も良好でバランスシートは堅固。ただし四半期レベルでの収益悪化傾向が継続すれば通期目標達成にリスクが生じる可能性があり、今後の動向を注視すべき局面にある。\n\n【IR審査】2025年3月期決算では増収増益となったものの、草加事業所のコーティング製品事業用資産について減損損失29,089千円を特別損失に計上。売上高は303億6351万円（+13.93%）、親会社株主に帰属する当期純利益は25億8659万円（+88.66%）となった。筆頭株主はナガツタコーポレーションが18.75%保有。",
+      "ai_comment": "ソマール株式会社は基礎素材セクターに属し、過去3期の売上推移（250.6→266.5→303.6億円）は一貫した増収を示している。直近通期では売上前年比+13.9%、営業利益+43.0%と大幅な増益を達成し、業績トレンドは良好。しかし最新四半期（3Q累計）では売上+1.3%と伸び鈍化、営業利益▲4.1%、純利益▲33.1%と明確な減速・減益が確認される。PERは4.8倍と割安感があるものの、PBR0.5倍・ROE12.82%はやや低位。NetCash比率も良好でバランスシートは堅固。ただし四半期レベルでの収益悪化傾向が継続すれば通期目標達成にリスクが生じる可能性があり、今後の動向を注視すべき局面にある。",
       "risk_checks": {
         "roe_15_percent": false,
         "equity_ratio_50_percent": true,
@@ -138,71 +85,7 @@
       "tenbagger_stars": 4,
       "tab": "general",
       "theoretical_price": 22783.0,
-      "upside_percent": 312.0,
-      "_source": "general",
-      "score_before_ir": 56,
-      "badges": [],
-      "ir_review_status": "neutral",
-      "ir_review_note": "業績は好調だが減損損失計上により一過性の要因あり。株価に影響を与える重要な株主還元策は確認されず。",
-      "ir_reviewed_at": "2026-04-30"
-    },
-    {
-      "code": "3388",
-      "name": "MEIJI ELECTRIC INDUSTRIES CO LT",
-      "name_jp": "明治電機工業",
-      "website": "https://www.meijidenki.co.jp",
-      "market": "プライム",
-      "score": 54,
-      "valuation_score": 14,
-      "growth_score": 14,
-      "shareholder_score": 8,
-      "quality_score_detail": 5,
-      "bonus_score": 1,
-      "risk_penalty": -6,
-      "forecast_adj": 0,
-      "net_cash_ratio": 1.03,
-      "per": 8.42,
-      "market_cap_oku": 261.9,
-      "dividend_yield": 4.28,
-      "payout_ratio": 30.35,
-      "roe": 7.08,
-      "roic": 12.44,
-      "pbr": 0.73,
-      "ai_comment": "明治電機工業は3期連続で増収を達成しており、直近の3Q累計では売上高+1.4%と成長は鈍化しているものの、営業利益は+40.3%と大幅増益を実現。年間予想も売上825億円、営業利益37.3億円と前期比で改善見込み。PER8.4倍・PBR0.73倍と割安感があり、NC比も1.03と財務は概ね健全。一方でROEは7%台と低水準で資本効率に課題が残る。産業用機器・電気設備の販売が主力で競争は一定程度あるが、技術商社としての専門性が参入障壁を形成。中期的には製造業向け設備投資の需要増が追い風となる可能性がある。\n\n【IR審査】2026年3月期第3四半期決算で売上高1.4%増、営業利益40.2%増と増収増益。半導体・物流関連需要が底堅く推移し、生産性向上による収益改善が奏功。通期は売上高4.9%増、営業利益13.2%増を予想し、年間配当も前期比28円増の88円へ大幅増配予定。",
-      "risk_checks": {
-        "roe_15_percent": false,
-        "equity_ratio_50_percent": true,
-        "debt_to_profit_5x": false,
-        "fcf_stability": true,
-        "liquidity_risk": false,
-        "one_time_profit_risk": false
-      },
-      "trend_score": 7,
-      "quality_score": 4,
-      "chart_signals": {
-        "volume_surge": false,
-        "above_ma": false,
-        "near_high": false
-      },
-      "tenbagger_stars": 3,
-      "tab": "general",
-      "theoretical_price": 4014.0,
-      "upside_percent": 95.4,
-      "_source": "general",
-      "score_before_ir": 47,
-      "badges": [
-        {
-          "text": "⬆️増配発表",
-          "sentiment": "positive"
-        },
-        {
-          "text": "⬆️上方修正",
-          "sentiment": "positive"
-        }
-      ],
-      "ir_review_status": "positive",
-      "ir_review_note": "大幅増配（前期比+47%）と営業利益の大幅改善（Q3累計40.2%増）が株価上昇の主要カタリスト。",
-      "ir_reviewed_at": "2026-04-30"
+      "upside_percent": 312.0
     },
     {
       "code": "5363",
@@ -210,7 +93,7 @@
       "name_jp": "東京窯業",
       "website": "https://www.tyk.co.jp",
       "market": "スタンダード",
-      "score": 52,
+      "score": 55,
       "valuation_score": 14,
       "growth_score": 18,
       "shareholder_score": 8,
@@ -226,7 +109,7 @@
       "roe": 7.65,
       "roic": 17.98,
       "pbr": 0.58,
-      "ai_comment": "TYK CORPORATIONは直近年次ベースで3期連続増収増益を達成し、売上・営業利益ともに堅調な伸びを示している。ただし最新四半期（2025年3Q）では営業利益が前年同期比▲23.1%と大幅減益に転じており、通期予想も売上305億円・営業利益36億円と前期実績（319億円・45億円）を下回る見込み。業績モメンタムの減速が顕著であり注意が必要。事業はBasic Materials（耐火物等）で一定の技術参入障壁はあるが、鉄鋼・素材需要に連動する景気敏感セクターであり収益の安定性は限定的。PBR0.58倍・PER8.9倍と割安感はあるが、ROE7.65%はやや低水準。有利子負債対利益倍率（NC比1.26倍）は健全だが、業績下押しリスクを踏まえた慎重な評価が妥当。\n\n【IR審査】<cite index=\"1-2,1-3\">直近では2024年11月14日と2025年2月14日に配当予想及び業績予想の修正を発表しています。2023年11月14日には中期経営計画（2024年度～2028年度）を策定し成長戦略を示している</cite>一方で、<cite index=\"13-4\">市場では「前期の減配をネガティブ視」</cite>されており、配当政策に不透明感があります。",
+      "ai_comment": "TYK CORPORATIONは直近年次ベースで3期連続増収増益を達成し、売上・営業利益ともに堅調な伸びを示している。ただし最新四半期（2025年3Q）では営業利益が前年同期比▲23.1%と大幅減益に転じており、通期予想も売上305億円・営業利益36億円と前期実績（319億円・45億円）を下回る見込み。業績モメンタムの減速が顕著であり注意が必要。事業はBasic Materials（耐火物等）で一定の技術参入障壁はあるが、鉄鋼・素材需要に連動する景気敏感セクターであり収益の安定性は限定的。PBR0.58倍・PER8.9倍と割安感はあるが、ROE7.65%はやや低水準。有利子負債対利益倍率（NC比1.26倍）は健全だが、業績下押しリスクを踏まえた慎重な評価が妥当。",
       "risk_checks": {
         "roe_15_percent": false,
         "equity_ratio_50_percent": true,
@@ -245,45 +128,34 @@
       "tenbagger_stars": 3,
       "tab": "general",
       "theoretical_price": 1297.0,
-      "upside_percent": 118.3,
-      "_source": "general",
-      "score_before_ir": 55,
-      "badges": [
-        {
-          "text": "⚠️業績懸念",
-          "type": "negative"
-        }
-      ],
-      "ir_review_status": "negative",
-      "ir_review_note": "中期経営計画策定は評価材料も、減配懸念と相場での投資家心理悪化が影響",
-      "ir_reviewed_at": "2026-04-30"
+      "upside_percent": 118.3
     },
     {
-      "code": "5697",
-      "name": "SANYU CO LTD",
-      "name_jp": "サンユウ",
-      "website": "https://www.sanyu-cfs.co.jp",
+      "code": "4231",
+      "name": "TIGERS POLYMER CORP",
+      "name_jp": "タイガースポリマー",
+      "website": "https://www.tiger-poly.com",
       "market": "スタンダード",
-      "score": 52,
-      "valuation_score": 16,
-      "growth_score": 10,
+      "score": 51,
+      "valuation_score": 18,
+      "growth_score": 15,
       "shareholder_score": 9,
-      "quality_score_detail": 3,
+      "quality_score_detail": 8,
       "bonus_score": 2,
-      "risk_penalty": -6,
+      "risk_penalty": -12,
       "forecast_adj": 0,
       "net_cash_ratio": 1.37,
-      "per": 7.04,
-      "market_cap_oku": 39.5,
-      "dividend_yield": 3.82,
-      "payout_ratio": 23.7,
-      "roe": 4.58,
-      "roic": 9.54,
-      "pbr": 0.39,
-      "ai_comment": "SANYU CO LTDは基礎素材セクターの企業で、3期連続増収を達成しており業績トレンドは安定的に推移している。直近3Q累計では売上+5.0%・営業利益+26.5%・純利益+32.9%と大幅な増益を記録しており、通期予想に対しても進捗は良好。ただしPBR0.39倍・PER7倍と割安感は強い一方、ROE4.58%と資本効率は低く改善余地が大きい。NC比1.37はネットキャッシュが潤沢であることを示し財務健全性は高い。競合との差別化や参入障壁は業種特性上平均的であり、収益率も営業利益率約3%程度と薄利であるが、足元の利益改善モメンタムは評価できる。\n\n【IR審査】2025年2月に通期経常利益を4％増益に上方修正し、配当も2円増額を発表。第3四半期は売上高5.0％増、営業利益26.4％増と好調な業績を達成。また、資本コストや株価を意識した経営対応も公表している。",
+      "per": 4.94,
+      "market_cap_oku": 190.1,
+      "dividend_yield": 3.6,
+      "payout_ratio": 25.39,
+      "roe": 7.66,
+      "roic": 11.22,
+      "pbr": 0.43,
+      "ai_comment": "タイガースポリマーは売上が3期連続で増収を達成しており、直近3Qでも前年比+4.4%と堅調に推移している。一方で通期営業利益は前年比-11.3%と減益となったものの、直近3Qでは営業利益+29.6%・純利益+47.3%と大幅に回復しており、業績改善トレンドが鮮明になっている。PER約4.9倍・PBR0.43倍と割安感は強いが、ROE7.66%は15%に遠く及ばず資本効率に課題がある。ゴム・樹脂製品の製造業であり競争環境は厳しく、参入障壁は平均的。NC比1.37は財務健全性の観点でやや改善余地があるが、流動性リスクは限定的とみられる。直近の四半期改善を重視し、トレンドスコアはやや引き上げ。",
       "risk_checks": {
         "roe_15_percent": false,
-        "equity_ratio_50_percent": true,
+        "equity_ratio_50_percent": false,
         "debt_to_profit_5x": false,
         "fcf_stability": true,
         "liquidity_risk": false,
@@ -298,14 +170,8 @@
       },
       "tenbagger_stars": 2,
       "tab": "general",
-      "theoretical_price": 2019.0,
-      "upside_percent": 208.7,
-      "_source": "general",
-      "score_before_ir": 45,
-      "badges": [],
-      "ir_review_status": "positive",
-      "ir_review_note": "業績上方修正・増配・PBR改善対応と好材料が揃っており、株主還元強化の姿勢が明確",
-      "ir_reviewed_at": "2026-04-30"
+      "theoretical_price": 3691.0,
+      "upside_percent": 279.4
     },
     {
       "code": "5956",
@@ -313,7 +179,7 @@
       "name_jp": "トーソー",
       "website": "https://www.toso.co.jp",
       "market": "スタンダード",
-      "score": 48,
+      "score": 49,
       "valuation_score": 19,
       "growth_score": 13,
       "shareholder_score": 9,
@@ -329,7 +195,7 @@
       "roe": 3.4,
       "roic": 6.95,
       "pbr": 0.35,
-      "ai_comment": "東ソーではなくTOSO CO LTD（トーソー株式会社）は窓装飾品（カーテンレール・ブラインド等）の製造販売を手掛ける。直近3期の売上は213.0→216.1→227.9億円と緩やかに増収基調を維持。最新四半期（3Q累計）では売上+3.2%、営業利益+80.1%と大幅増益を達成しており、業績モメンタムは良好。ただしROE3.4%と低水準でPBR0.35倍と割安放置。内装建材市場は住宅着工動向に左右され競合も多く、参入障壁は中程度。通期予想営業利益600百万円に対して3Q時点で641百万円を既に超過しており、上方修正の可能性が高い。バリュエーション面での割安感は魅力だが収益性の低さが課題。\n\n【IR審査】<cite index=\"13-1,13-2\">2025年3月期は売上高227億8900万円（前年同期比5.5％増）、営業利益7億4600万円（同54.5％増）の大幅増益を達成。2026年3月期は売上高235億円、営業利益6億円を見込む。</cite><cite index=\"20-4\">配当は前期11.5円から今期10円予想。</cite>",
+      "ai_comment": "東ソーではなくTOSO CO LTD（トーソー株式会社）は窓装飾品（カーテンレール・ブラインド等）の製造販売を手掛ける。直近3期の売上は213.0→216.1→227.9億円と緩やかに増収基調を維持。最新四半期（3Q累計）では売上+3.2%、営業利益+80.1%と大幅増益を達成しており、業績モメンタムは良好。ただしROE3.4%と低水準でPBR0.35倍と割安放置。内装建材市場は住宅着工動向に左右され競合も多く、参入障壁は中程度。通期予想営業利益600百万円に対して3Q時点で641百万円を既に超過しており、上方修正の可能性が高い。バリュエーション面での割安感は魅力だが収益性の低さが課題。",
       "risk_checks": {
         "roe_15_percent": false,
         "equity_ratio_50_percent": true,
@@ -348,22 +214,7 @@
       "tenbagger_stars": 2,
       "tab": "general",
       "theoretical_price": 1954.0,
-      "upside_percent": 228.4,
-      "_source": "general",
-      "score_before_ir": 49,
-      "badges": [
-        {
-          "badge": "⬆️上方修正",
-          "type": "positive"
-        },
-        {
-          "badge": "⚠️減配予想",
-          "type": "negative"
-        }
-      ],
-      "ir_review_status": "positive",
-      "ir_review_note": "<cite index=\"13-1\">前期の大幅増益は評価されるが、来期業績・配当ともに減少予想がネガティブ要因。</cite>",
-      "ir_reviewed_at": "2026-04-30"
+      "upside_percent": 228.4
     },
     {
       "code": "7434",
@@ -387,7 +238,7 @@
       "roe": 5.56,
       "roic": 7.69,
       "pbr": 0.43,
-      "ai_comment": "OTAKE CORPは3期連続増収トレンドを維持しており、直近3Qでも売上+8.0%・営業利益+13.1%・純利益+10.7%と加速感が見られる。通期予想も増収増益で進捗率は良好。ただしPBR0.43倍・ROE5.56%と資本効率は低く、営業利益率は約3%程度と薄利構造が課題。Industrialsセクターで競争優位性は限定的。NC比1.19は財務健全性に一定の懸念があり、PER7.8倍は割安だが収益の質向上が急務。中期的な利益率改善と資本効率向上が株価再評価の鍵となる。\n\n【IR審査】2025年7月に2025年5月期決算を発表し、<cite index=\"15-1\">経常損益は1,212百万円で事前予想値1,150百万円を5.4%上回る</cite>結果となった。<cite index=\"34-1\">自己株式立会外買付取引による自己株式の取得</cite>を10月に実施したが、これは<cite index=\"29-1,35-3\">譲渡制限付株式報酬</cite>用の処分に関連するもので株主還元目的ではない。配管資材卸売業として安定した事業基盤を持つ。",
+      "ai_comment": "OTAKE CORPは3期連続増収トレンドを維持しており、直近3Qでも売上+8.0%・営業利益+13.1%・純利益+10.7%と加速感が見られる。通期予想も増収増益で進捗率は良好。ただしPBR0.43倍・ROE5.56%と資本効率は低く、営業利益率は約3%程度と薄利構造が課題。Industrialsセクターで競争優位性は限定的。NC比1.19は財務健全性に一定の懸念があり、PER7.8倍は割安だが収益の質向上が急務。中期的な利益率改善と資本効率向上が株価再評価の鍵となる。",
       "risk_checks": {
         "roe_15_percent": false,
         "equity_ratio_50_percent": false,
@@ -406,11 +257,93 @@
       "tenbagger_stars": 2,
       "tab": "general",
       "theoretical_price": 5215.0,
-      "upside_percent": 176.5,
-      "_source": "general",
-      "ir_review_status": "neutral",
-      "ir_review_note": "決算は若干の上振れを示したが、大幅な業績上方修正や株主還元強化等の明確なカタリストは確認できず",
-      "ir_reviewed_at": "2026-05-04"
+      "upside_percent": 176.5
+    },
+    {
+      "code": "3388",
+      "name": "MEIJI ELECTRIC INDUSTRIES CO LT",
+      "name_jp": "明治電機工業",
+      "website": "https://www.meijidenki.co.jp",
+      "market": "プライム",
+      "score": 47,
+      "valuation_score": 14,
+      "growth_score": 14,
+      "shareholder_score": 8,
+      "quality_score_detail": 5,
+      "bonus_score": 1,
+      "risk_penalty": -6,
+      "forecast_adj": 0,
+      "net_cash_ratio": 1.03,
+      "per": 8.42,
+      "market_cap_oku": 261.9,
+      "dividend_yield": 4.28,
+      "payout_ratio": 30.35,
+      "roe": 7.08,
+      "roic": 12.44,
+      "pbr": 0.73,
+      "ai_comment": "明治電機工業は3期連続で増収を達成しており、直近の3Q累計では売上高+1.4%と成長は鈍化しているものの、営業利益は+40.3%と大幅増益を実現。年間予想も売上825億円、営業利益37.3億円と前期比で改善見込み。PER8.4倍・PBR0.73倍と割安感があり、NC比も1.03と財務は概ね健全。一方でROEは7%台と低水準で資本効率に課題が残る。産業用機器・電気設備の販売が主力で競争は一定程度あるが、技術商社としての専門性が参入障壁を形成。中期的には製造業向け設備投資の需要増が追い風となる可能性がある。",
+      "risk_checks": {
+        "roe_15_percent": false,
+        "equity_ratio_50_percent": true,
+        "debt_to_profit_5x": false,
+        "fcf_stability": true,
+        "liquidity_risk": false,
+        "one_time_profit_risk": false
+      },
+      "trend_score": 7,
+      "quality_score": 4,
+      "chart_signals": {
+        "volume_surge": false,
+        "above_ma": false,
+        "near_high": false
+      },
+      "tenbagger_stars": 3,
+      "tab": "general",
+      "theoretical_price": 4014.0,
+      "upside_percent": 95.4
+    },
+    {
+      "code": "6743",
+      "name": "DAIDO SIGNAL CO",
+      "name_jp": "大同信号",
+      "website": "https://www.daido-signal.co.jp",
+      "market": "スタンダード",
+      "score": 47,
+      "valuation_score": 14,
+      "growth_score": 13,
+      "shareholder_score": 6,
+      "quality_score_detail": 5,
+      "bonus_score": 1,
+      "risk_penalty": -6,
+      "forecast_adj": 0,
+      "net_cash_ratio": 1.2,
+      "per": 8.53,
+      "market_cap_oku": 126.3,
+      "dividend_yield": 3.14,
+      "payout_ratio": 16.08,
+      "roe": 6.35,
+      "roic": 5.36,
+      "pbr": 0.48,
+      "ai_comment": "大同信号は鉄道信号・交通インフラ向けに特化した企業で、一定の参入障壁を持つ。直近3期の売上は195→207.7→219.1億円と連続増収。ただし直近本決算では営業利益が-11.1%と減益。四半期データ（3Q累計）では売上+11.7%・営業利益+42.7%と大幅改善が確認でき、通期予想も増収増益見込み（売上244億円・営業利益18億円）であり、業績回復トレンドが顕著。PBR0.48倍・PER8.5倍と割安感あり。ROE6.35%はやや低水準。公共インフラ向けで安定需要があるが、収益率の改善余地が課題。NC比1.2超は財務健全性に懸念あり。総合的には割安で業績回復中の銘柄として注目に値する。",
+      "risk_checks": {
+        "roe_15_percent": false,
+        "equity_ratio_50_percent": true,
+        "debt_to_profit_5x": false,
+        "fcf_stability": true,
+        "liquidity_risk": false,
+        "one_time_profit_risk": false
+      },
+      "trend_score": 7,
+      "quality_score": 7,
+      "chart_signals": {
+        "volume_surge": false,
+        "above_ma": false,
+        "near_high": false
+      },
+      "tenbagger_stars": 2,
+      "tab": "general",
+      "theoretical_price": 2006.0,
+      "upside_percent": 152.1
     },
     {
       "code": "8147",
@@ -418,7 +351,7 @@
       "name_jp": "トミタ",
       "website": "https://www.tomitaj.co.jp",
       "market": "スタンダード",
-      "score": 45,
+      "score": 46,
       "valuation_score": 14,
       "growth_score": 15,
       "shareholder_score": 7,
@@ -434,7 +367,7 @@
       "roe": 5.29,
       "roic": 13.34,
       "pbr": 0.48,
-      "ai_comment": "TOMITA CO LTDは産業機械・設備系の卸売企業と見られ、3期連続で売上は増収基調（202→213→217億円）を維持。直近通期では営業利益が26.9%増と大幅改善を示したが、最新3Q累計（2025年12月期）では売上+0.9%・営業利益-1.3%と増収ながら減益に転じており、勢いの鈍化が懸念される。通期予想営業利益600M円は前期比で低水準であり、収益性の改善余地は限定的。PBR0.48倍・PER8.65倍と割安感は強いが、ROE5.29%と資本効率は低い。Industrialsセクターの卸売業として競争優位性は平均的。NC比1.49は財務安定を示すが、負債水準や利益規模からリスク管理が必要。中期的な収益構造の改善が株価再評価の鍵となる。\n\n【IR審査】<cite index='35-2,13-3'>2025年3月期第2四半期累計の連結経常利益は前年同期比23.2％減の3.7億円となり、通期計画の9億円に対する進捗率は41.6％にとどまって5年平均の50.6％も下回った</cite>。<cite index='19-1,19-2'>北米での大型案件が好調で売上を牽引したが、日本での減収が影響した</cite>。<cite index='26-1,26-2'>株主優待制度の拡充がポジティブ視された</cite>。",
+      "ai_comment": "TOMITA CO LTDは産業機械・設備系の卸売企業と見られ、3期連続で売上は増収基調（202→213→217億円）を維持。直近通期では営業利益が26.9%増と大幅改善を示したが、最新3Q累計（2025年12月期）では売上+0.9%・営業利益-1.3%と増収ながら減益に転じており、勢いの鈍化が懸念される。通期予想営業利益600M円は前期比で低水準であり、収益性の改善余地は限定的。PBR0.48倍・PER8.65倍と割安感は強いが、ROE5.29%と資本効率は低い。Industrialsセクターの卸売業として競争優位性は平均的。NC比1.49は財務安定を示すが、負債水準や利益規模からリスク管理が必要。中期的な収益構造の改善が株価再評価の鍵となる。",
       "risk_checks": {
         "roe_15_percent": false,
         "equity_ratio_50_percent": true,
@@ -453,12 +386,50 @@
       "tenbagger_stars": 3,
       "tab": "general",
       "theoretical_price": 2917.0,
-      "upside_percent": 150.1,
-      "_source": "general",
-      "score_before_ir": 46,
-      "ir_review_status": "neutral",
-      "ir_review_note": "第2四半期業績は売上増収も利益減益で進捗が遅れている。株主優待拡充は小幅プラス要因。",
-      "ir_reviewed_at": "2026-05-04"
+      "upside_percent": 150.1
+    },
+    {
+      "code": "5697",
+      "name": "SANYU CO LTD",
+      "name_jp": "サンユウ",
+      "website": "https://www.sanyu-cfs.co.jp",
+      "market": "スタンダード",
+      "score": 45,
+      "valuation_score": 16,
+      "growth_score": 10,
+      "shareholder_score": 9,
+      "quality_score_detail": 3,
+      "bonus_score": 2,
+      "risk_penalty": -6,
+      "forecast_adj": 0,
+      "net_cash_ratio": 1.37,
+      "per": 7.04,
+      "market_cap_oku": 39.5,
+      "dividend_yield": 3.82,
+      "payout_ratio": 23.7,
+      "roe": 4.58,
+      "roic": 9.54,
+      "pbr": 0.39,
+      "ai_comment": "SANYU CO LTDは基礎素材セクターの企業で、3期連続増収を達成しており業績トレンドは安定的に推移している。直近3Q累計では売上+5.0%・営業利益+26.5%・純利益+32.9%と大幅な増益を記録しており、通期予想に対しても進捗は良好。ただしPBR0.39倍・PER7倍と割安感は強い一方、ROE4.58%と資本効率は低く改善余地が大きい。NC比1.37はネットキャッシュが潤沢であることを示し財務健全性は高い。競合との差別化や参入障壁は業種特性上平均的であり、収益率も営業利益率約3%程度と薄利であるが、足元の利益改善モメンタムは評価できる。",
+      "risk_checks": {
+        "roe_15_percent": false,
+        "equity_ratio_50_percent": true,
+        "debt_to_profit_5x": false,
+        "fcf_stability": true,
+        "liquidity_risk": false,
+        "one_time_profit_risk": false
+      },
+      "trend_score": 7,
+      "quality_score": 4,
+      "chart_signals": {
+        "volume_surge": false,
+        "above_ma": false,
+        "near_high": false
+      },
+      "tenbagger_stars": 2,
+      "tab": "general",
+      "theoretical_price": 2019.0,
+      "upside_percent": 208.7
     },
     {
       "code": "7538",
@@ -482,7 +453,7 @@
       "roe": 10.38,
       "roic": 6.91,
       "pbr": 0.42,
-      "ai_comment": "大水（DAISUI）は食品・飲料の卸売業を中心とするコンシューマー・ディフェンシブ銘柄。直近3Q累計では売上高+6.6%、営業利益+14.0%と改善傾向にあり、通期予想を上回るペースで推移している点は評価できる。ただし通期予想営業利益690億円に対し3Q時点で797億円と既に超過しており、予想修正の可能性がある。PBR0.42倍・PER4.4倍と割安感は強いが、ROE10.38%はまずまずで、NC比1.35は財務的に安定。一方で卸売業の構造上、競争優位性は限定的で利益率も低い。営業利益率は1%未満と薄利であり、コスト増や競争激化で収益が大きく変動するリスクがある。配当維持の安定性は評価できるが、成長余地は限定的。\n\n【IR審査】<cite index=\"23-1\">2024年11月7日に中間決算を発表</cite>し、<cite index=\"26-2\">25年3月期の連結経常利益は前の期比17.4％減の8億2400万円、26年3月期は前期比0.7％増の8億3000万円とほぼ横ばい見通し</cite>。<cite index=\"28-1\">日水系水産卸大手で近畿7市場に拠点</cite>。<cite index=\"21-1,11-1\">直近第3四半期の経常利益進捗率113%</cite>と堅調な業績推移を示している。",
+      "ai_comment": "大水（DAISUI）は食品・飲料の卸売業を中心とするコンシューマー・ディフェンシブ銘柄。直近3Q累計では売上高+6.6%、営業利益+14.0%と改善傾向にあり、通期予想を上回るペースで推移している点は評価できる。ただし通期予想営業利益690億円に対し3Q時点で797億円と既に超過しており、予想修正の可能性がある。PBR0.42倍・PER4.4倍と割安感は強いが、ROE10.38%はまずまずで、NC比1.35は財務的に安定。一方で卸売業の構造上、競争優位性は限定的で利益率も低い。営業利益率は1%未満と薄利であり、コスト増や競争激化で収益が大きく変動するリスクがある。配当維持の安定性は評価できるが、成長余地は限定的。",
       "risk_checks": {
         "roe_15_percent": false,
         "equity_ratio_50_percent": false,
@@ -501,11 +472,7 @@
       "tenbagger_stars": 2,
       "tab": "general",
       "theoretical_price": 1603.0,
-      "upside_percent": 314.2,
-      "_source": "general",
-      "ir_review_status": "neutral",
-      "ir_review_note": "検索した範囲では直近半年以内の自社株買い、増配、業績修正等の重要なIR情報は確認されませんでした。業績は堅調ながら特筆すべき株価カタリストは見当たらない状況です。",
-      "ir_reviewed_at": "2026-04-30"
+      "upside_percent": 314.2
     },
     {
       "code": "6497",
@@ -548,8 +515,7 @@
       "tenbagger_stars": 2,
       "tab": "general",
       "theoretical_price": 3592.0,
-      "upside_percent": 170.3,
-      "_source": "general"
+      "upside_percent": 170.3
     },
     {
       "code": "1850",
@@ -592,8 +558,7 @@
       "tenbagger_stars": 3,
       "tab": "general",
       "theoretical_price": 1098.0,
-      "upside_percent": 159.1,
-      "_source": "general"
+      "upside_percent": 159.1
     },
     {
       "code": "8046",
@@ -636,8 +601,7 @@
       "tenbagger_stars": 3,
       "tab": "general",
       "theoretical_price": 2511.0,
-      "upside_percent": 172.9,
-      "_source": "general"
+      "upside_percent": 172.9
     },
     {
       "code": "8150",
@@ -645,7 +609,7 @@
       "name_jp": "三信電気",
       "website": "https://www.sanshin.co.jp",
       "market": "プライム",
-      "score": 42,
+      "score": 41,
       "valuation_score": 16,
       "growth_score": 9,
       "shareholder_score": 8,
@@ -661,7 +625,7 @@
       "roe": 8.7,
       "roic": 18.56,
       "pbr": 0.75,
-      "ai_comment": "三洋電機商事（SANSHIN ELECTRONICS）は電子部品・半導体商社として安定した事業基盤を持つ。直近3Qでは売上+11.7%、営業利益+16.2%、純利益+40.4%と力強い回復を示しており、通期予想に対する進捗も順調。過去3期の売上推移は1611→1402→1573億円と一度落ち込んだ後に回復局面にある。営業利益率は3.5%程度と商社として低水準だが、PER7倍・PBR0.75倍と割安感がある。ROE8.7%はやや物足りないものの、NC比が1に近く財務健全性は良好。競争優位性は限定的で電子部品商社の競争環境は厳しいが、メーカー系の強みを活かした一定の安定性はある。\n\n【IR審査】2025年2月に業績・配当予想上方修正を発表、年間配当を105円→120円（15円増配）に引き上げ。第2四半期、第3四半期と2度の上方修正を実施。V76中期経営計画でROE8%以上の安定達成目標。一方で270万株の株式売出しも発表。",
+      "ai_comment": "三洋電機商事（SANSHIN ELECTRONICS）は電子部品・半導体商社として安定した事業基盤を持つ。直近3Qでは売上+11.7%、営業利益+16.2%、純利益+40.4%と力強い回復を示しており、通期予想に対する進捗も順調。過去3期の売上推移は1611→1402→1573億円と一度落ち込んだ後に回復局面にある。営業利益率は3.5%程度と商社として低水準だが、PER7倍・PBR0.75倍と割安感がある。ROE8.7%はやや物足りないものの、NC比が1に近く財務健全性は良好。競争優位性は限定的で電子部品商社の競争環境は厳しいが、メーカー系の強みを活かした一定の安定性はある。",
       "risk_checks": {
         "roe_15_percent": false,
         "equity_ratio_50_percent": false,
@@ -680,75 +644,7 @@
       "tenbagger_stars": 1,
       "tab": "general",
       "theoretical_price": 5840.0,
-      "upside_percent": 117.0,
-      "_source": "general",
-      "score_before_ir": 41,
-      "badges": [
-        {
-          "text": "⬆️増配発表",
-          "type": "positive"
-        },
-        {
-          "text": "⬆️上方修正",
-          "type": "positive"
-        },
-        {
-          "text": "⚠️希薄化",
-          "type": "negative"
-        }
-      ],
-      "ir_review_status": "positive",
-      "ir_review_note": "複数回の上方修正と増配発表でポジティブだが、株式売出しによる希薄化懸念がマイナス要因として作用",
-      "ir_reviewed_at": "2026-04-27"
-    },
-    {
-      "code": "4231",
-      "name": "TIGERS POLYMER CORP",
-      "name_jp": "タイガースポリマー",
-      "website": "https://www.tiger-poly.com",
-      "market": "スタンダード",
-      "score": 40,
-      "valuation_score": 18,
-      "growth_score": 15,
-      "shareholder_score": 9,
-      "quality_score_detail": 8,
-      "bonus_score": 2,
-      "risk_penalty": -12,
-      "forecast_adj": 0,
-      "net_cash_ratio": 1.37,
-      "per": 4.94,
-      "market_cap_oku": 190.1,
-      "dividend_yield": 3.6,
-      "payout_ratio": 25.39,
-      "roe": 7.66,
-      "roic": 11.22,
-      "pbr": 0.43,
-      "ai_comment": "タイガースポリマーは売上が3期連続で増収を達成しており、直近3Qでも前年比+4.4%と堅調に推移している。一方で通期営業利益は前年比-11.3%と減益となったものの、直近3Qでは営業利益+29.6%・純利益+47.3%と大幅に回復しており、業績改善トレンドが鮮明になっている。PER約4.9倍・PBR0.43倍と割安感は強いが、ROE7.66%は15%に遠く及ばず資本効率に課題がある。ゴム・樹脂製品の製造業であり競争環境は厳しく、参入障壁は平均的。NC比1.37は財務健全性の観点でやや改善余地があるが、流動性リスクは限定的とみられる。直近の四半期改善を重視し、トレンドスコアはやや引き上げ。\n\n【IR審査】2026年2月に自社株買いを発表したプラス材料があるものの、2025年3月期第3四半期決算は売上高352億円（前年同期比5.1%減）、営業利益19億円（同35.7%減）と減収減益。通期も減収減益予想を継続し、年間配当も34円（前期比13円減配）と大幅減配を実施している。",
-      "risk_checks": {
-        "roe_15_percent": false,
-        "equity_ratio_50_percent": false,
-        "debt_to_profit_5x": false,
-        "fcf_stability": true,
-        "liquidity_risk": false,
-        "one_time_profit_risk": false
-      },
-      "trend_score": 7,
-      "quality_score": 4,
-      "chart_signals": {
-        "volume_surge": false,
-        "above_ma": false,
-        "near_high": false
-      },
-      "tenbagger_stars": 2,
-      "tab": "general",
-      "theoretical_price": 3691.0,
-      "upside_percent": 279.4,
-      "_source": "general",
-      "score_before_ir": 51,
-      "badges": [],
-      "ir_review_status": "negative",
-      "ir_review_note": "自社株買い発表があるがリスク要因が優勢。第3四半期決算の大幅減益と減配実施が株価に重し。",
-      "ir_reviewed_at": "2026-04-30"
+      "upside_percent": 117.0
     },
     {
       "code": "3583",
@@ -791,8 +687,50 @@
       "tenbagger_stars": 3,
       "tab": "general",
       "theoretical_price": 4289.0,
-      "upside_percent": 232.7,
-      "_source": "general"
+      "upside_percent": 232.7
+    },
+    {
+      "code": "7991",
+      "name": "MAMIYA-OP CO LTD",
+      "name_jp": "マミヤ・オーピー",
+      "website": "https://www.mamiya-op.co.jp",
+      "market": "スタンダード",
+      "score": 38,
+      "valuation_score": 16,
+      "growth_score": 20,
+      "shareholder_score": 8,
+      "quality_score_detail": 15,
+      "bonus_score": 1,
+      "risk_penalty": -28,
+      "forecast_adj": 0,
+      "net_cash_ratio": 1.18,
+      "per": 5.52,
+      "market_cap_oku": 128.8,
+      "dividend_yield": 4.01,
+      "payout_ratio": 39.87,
+      "roe": 18.79,
+      "roic": 38.61,
+      "pbr": 0.49,
+      "ai_comment": "直近四半期（2025年12月期3Q）では売上前年比-39.7%、営業利益-69.1%と急激な悪化が確認されており、年間業績の好調トレンドから一転して大幅減収減益局面に入っている。通期予想も売上210億円・営業利益20億円と前期比で大幅な下方修正水準であり、トレンドの継続性は失われた。PBR0.49倍・PER5.5倍と割安感はあるが、ROE18.79%は過去実績であり直近の収益力低下を反映していない。事業の質は産業機械・部品関連で一定の競争力を持つが、需要変動に業績が大きく左右される構造的脆弱性が露呈した。流動性リスクおよび一時利益剥落リスクに注意が必要。",
+      "risk_checks": {
+        "roe_15_percent": true,
+        "equity_ratio_50_percent": false,
+        "debt_to_profit_5x": false,
+        "fcf_stability": false,
+        "liquidity_risk": true,
+        "one_time_profit_risk": true
+      },
+      "trend_score": 2,
+      "quality_score": 4,
+      "chart_signals": {
+        "volume_surge": false,
+        "above_ma": false,
+        "near_high": false
+      },
+      "tenbagger_stars": 5,
+      "tab": "general",
+      "theoretical_price": 5011.0,
+      "upside_percent": 301.9
     },
     {
       "code": "8135",
@@ -800,7 +738,7 @@
       "name_jp": "ゼット",
       "website": "https://zett.jp",
       "market": "スタンダード",
-      "score": 39,
+      "score": 37,
       "valuation_score": 20,
       "growth_score": 13,
       "shareholder_score": 9,
@@ -816,7 +754,7 @@
       "roe": 20.56,
       "roic": 19.64,
       "pbr": 0.56,
-      "ai_comment": "ゼット株式会社は野球・スポーツ用品メーカーとして3期連続増収を達成し、売上は498.9→519.6→553.1億円と安定成長。営業利益も前期比22.2%増と改善傾向にある。ただし最新3Q(2025年12月期)では純利益が前年同期比▲79.1%と大幅減益となっており、通期予想の純利益880百万円に対して達成度に懸念が残る。PER2.9倍・PBR0.56倍と割安感は強く、ROE20.56%は高水準。スポーツ用品市場は国内競合・海外ブランドとの競争が激しく、参入障壁は限定的。NC比1.28は流動性に若干の注意が必要。\n\n【IR審査】<cite index=\"5-1,35-3\">ゼット株式会社の第３四半期連結累計期間は、売上高426.15億円（前年同期比6.6％増）、営業利益7.18億円（同11.9％増）と増収増益を達成しました。主力の卸売部門が好調で、スポーツ用品市場の需要拡大を背景に成長しています。</cite><cite index=\"24-1\">ROEは上昇傾向にあり、資本効率が改善していることを示します。一般的には、PBRを中心としたバリュエーションの改善が期待されます。</cite>",
+      "ai_comment": "ゼット株式会社は野球・スポーツ用品メーカーとして3期連続増収を達成し、売上は498.9→519.6→553.1億円と安定成長。営業利益も前期比22.2%増と改善傾向にある。ただし最新3Q(2025年12月期)では純利益が前年同期比▲79.1%と大幅減益となっており、通期予想の純利益880百万円に対して達成度に懸念が残る。PER2.9倍・PBR0.56倍と割安感は強く、ROE20.56%は高水準。スポーツ用品市場は国内競合・海外ブランドとの競争が激しく、参入障壁は限定的。NC比1.28は流動性に若干の注意が必要。",
       "risk_checks": {
         "roe_15_percent": true,
         "equity_ratio_50_percent": false,
@@ -835,13 +773,7 @@
       "tenbagger_stars": 3,
       "tab": "general",
       "theoretical_price": 2599.0,
-      "upside_percent": 511.5,
-      "_source": "general",
-      "score_before_ir": 37,
-      "badges": [],
-      "ir_review_status": "positive",
-      "ir_review_note": "<cite index=\"39-2\">2月13日発表の第3四半期決算で経常利益は前年同期比9.6％増の8.8億円に伸び、通期計画の13億円に対する進捗率は68.4％に達した。</cite>業績は堅調推移だが、上方修正や株主還元強化の発表はなし。",
-      "ir_reviewed_at": "2026-04-30"
+      "upside_percent": 511.5
     },
     {
       "code": "6393",
@@ -884,8 +816,7 @@
       "tenbagger_stars": 3,
       "tab": "general",
       "theoretical_price": 7433.0,
-      "upside_percent": 149.3,
-      "_source": "general"
+      "upside_percent": 149.3
     },
     {
       "code": "6748",
@@ -928,8 +859,7 @@
       "tenbagger_stars": 2,
       "tab": "general",
       "theoretical_price": 1416.0,
-      "upside_percent": 83.7,
-      "_source": "general"
+      "upside_percent": 83.7
     },
     {
       "code": "3895",
@@ -972,8 +902,7 @@
       "tenbagger_stars": 2,
       "tab": "general",
       "theoretical_price": 1548.0,
-      "upside_percent": 276.6,
-      "_source": "general"
+      "upside_percent": 276.6
     },
     {
       "code": "8138",
@@ -1016,8 +945,7 @@
       "tenbagger_stars": 3,
       "tab": "general",
       "theoretical_price": 14706.0,
-      "upside_percent": 235.0,
-      "_source": "general"
+      "upside_percent": 235.0
     },
     {
       "code": "7218",
@@ -1060,8 +988,7 @@
       "tenbagger_stars": 2,
       "tab": "general",
       "theoretical_price": 3480.0,
-      "upside_percent": 239.5,
-      "_source": "general"
+      "upside_percent": 239.5
     },
     {
       "code": "5958",
@@ -1104,8 +1031,7 @@
       "tenbagger_stars": 2,
       "tab": "general",
       "theoretical_price": 10675.0,
-      "upside_percent": 146.8,
-      "_source": "general"
+      "upside_percent": 146.8
     },
     {
       "code": "6797",
@@ -1129,7 +1055,7 @@
       "roe": 9.85,
       "roic": 15.33,
       "pbr": 0.64,
-      "ai_comment": "直近3Q累計では売上高-1.8%、営業利益-65.2%、純利益-37.2%と大幅な利益悪化が顕在化。通期予想は売上175億円・営業利益22.5億円と前期比で減益見通し。過去3期の売上は180→176→173億円と漸減トレンドが継続しており、増益局面は一時的だった可能性が高い。道路標識・交通インフラ関連事業は公共投資依存度が高く参入障壁は一定程度あるが、競合他社との価格競争や原材料コスト上昇の影響を受けやすい。PBR0.64倍・PER6.5倍と割安感はあるが、ROE9.85%はやや低水準。利益の急減速が懸念材料であり、今後の受注動向と収益回復が焦点。\n\n【IR審査】<cite index=\"15-1,29-1\">2025年4月1日付で1:2の株式分割を実施</cite>。<cite index=\"37-2\">2025年3月期は売上高172.62億円（1.8%減）だが、営業利益27.52億円（17.4%増）、経常利益27.82億円（18.3%増）、純利益22.06億円（31.3%増）と大幅増益</cite>。<cite index=\"29-1\">配当性向30%以上を目安に安定配当方針</cite>を掲げている。",
+      "ai_comment": "直近3Q累計では売上高-1.8%、営業利益-65.2%、純利益-37.2%と大幅な利益悪化が顕在化。通期予想は売上175億円・営業利益22.5億円と前期比で減益見通し。過去3期の売上は180→176→173億円と漸減トレンドが継続しており、増益局面は一時的だった可能性が高い。道路標識・交通インフラ関連事業は公共投資依存度が高く参入障壁は一定程度あるが、競合他社との価格競争や原材料コスト上昇の影響を受けやすい。PBR0.64倍・PER6.5倍と割安感はあるが、ROE9.85%はやや低水準。利益の急減速が懸念材料であり、今後の受注動向と収益回復が焦点。",
       "risk_checks": {
         "roe_15_percent": false,
         "equity_ratio_50_percent": true,
@@ -1148,11 +1074,7 @@
       "tenbagger_stars": 3,
       "tab": "general",
       "theoretical_price": 3725.0,
-      "upside_percent": 203.3,
-      "_source": "general",
-      "ir_review_status": "neutral",
-      "ir_review_note": "株式分割により流動性向上。増収減益予想だが、コスト管理により利益率改善が継続。特段の大きなカタリストやリスクは確認されず。",
-      "ir_reviewed_at": "2026-04-20"
+      "upside_percent": 203.3
     },
     {
       "code": "6249",
@@ -1195,8 +1117,7 @@
       "tenbagger_stars": 1,
       "tab": "general",
       "theoretical_price": 8415.0,
-      "upside_percent": 232.0,
-      "_source": "general"
+      "upside_percent": 232.0
     },
     {
       "code": "5603",
@@ -1239,66 +1160,7 @@
       "tenbagger_stars": 3,
       "tab": "general",
       "theoretical_price": 4685.0,
-      "upside_percent": 253.0,
-      "_source": "general"
-    },
-    {
-      "code": "7991",
-      "name": "MAMIYA-OP CO LTD",
-      "name_jp": "マミヤ・オーピー",
-      "website": "https://www.mamiya-op.co.jp",
-      "market": "スタンダード",
-      "score": 32,
-      "valuation_score": 16,
-      "growth_score": 20,
-      "shareholder_score": 8,
-      "quality_score_detail": 15,
-      "bonus_score": 1,
-      "risk_penalty": -28,
-      "forecast_adj": 0,
-      "net_cash_ratio": 1.18,
-      "per": 5.52,
-      "market_cap_oku": 128.8,
-      "dividend_yield": 4.01,
-      "payout_ratio": 39.87,
-      "roe": 18.79,
-      "roic": 38.61,
-      "pbr": 0.49,
-      "ai_comment": "直近四半期（2025年12月期3Q）では売上前年比-39.7%、営業利益-69.1%と急激な悪化が確認されており、年間業績の好調トレンドから一転して大幅減収減益局面に入っている。通期予想も売上210億円・営業利益20億円と前期比で大幅な下方修正水準であり、トレンドの継続性は失われた。PBR0.49倍・PER5.5倍と割安感はあるが、ROE18.79%は過去実績であり直近の収益力低下を反映していない。事業の質は産業機械・部品関連で一定の競争力を持つが、需要変動に業績が大きく左右される構造的脆弱性が露呈した。流動性リスクおよび一時利益剥落リスクに注意が必要。\n\n【IR審査】マミヤ・オーピーは<cite index=\"22-1\">2026年3月期第3四半期で売上高171億8,700万円（前年同期比39.7％減）、営業利益18億6,200万円（同69.1％減）と大幅な減収減益</cite>を発表。<cite index=\"22-1\">主力の電子機器事業で特需終息の影響を受け、通期予想も下方修正</cite>された。一方、<cite index=\"39-1\">2024年1月26日に配当方針の変更及び配当予想の修正（増配）</cite>を発表している。",
-      "risk_checks": {
-        "roe_15_percent": true,
-        "equity_ratio_50_percent": false,
-        "debt_to_profit_5x": false,
-        "fcf_stability": false,
-        "liquidity_risk": true,
-        "one_time_profit_risk": true
-      },
-      "trend_score": 2,
-      "quality_score": 4,
-      "chart_signals": {
-        "volume_surge": false,
-        "above_ma": false,
-        "near_high": false
-      },
-      "tenbagger_stars": 5,
-      "tab": "general",
-      "theoretical_price": 5011.0,
-      "upside_percent": 301.9,
-      "_source": "general",
-      "score_before_ir": 38,
-      "badges": [
-        {
-          "text": "⚠️下方修正",
-          "type": "negative"
-        },
-        {
-          "text": "⚠️一過性",
-          "type": "negative"
-        }
-      ],
-      "ir_review_status": "negative",
-      "ir_review_note": "パチンコ業界向け特需の剥落により大幅な業績悪化。増配実施済みだが、今後の業績見通しに不透明感が残る。",
-      "ir_reviewed_at": "2026-04-30"
+      "upside_percent": 253.0
     },
     {
       "code": "5753",
@@ -1306,14 +1168,14 @@
       "name_jp": "日本伸銅",
       "website": "https://www.nippon-shindo.co.jp",
       "market": "スタンダード",
-      "score": 32,
+      "score": 31,
       "valuation_score": 19,
       "growth_score": 9,
       "shareholder_score": 6,
       "quality_score_detail": 13,
       "bonus_score": 1,
       "risk_penalty": -26,
-      "forecast_adj": 1,
+      "forecast_adj": 0,
       "net_cash_ratio": 1.66,
       "per": 7.65,
       "market_cap_oku": 55.2,
@@ -1341,8 +1203,7 @@
       "tenbagger_stars": 2,
       "tab": "general",
       "theoretical_price": 5280.0,
-      "upside_percent": 104.6,
-      "_source": "general"
+      "upside_percent": 104.6
     },
     {
       "code": "7537",
@@ -1385,8 +1246,7 @@
       "tenbagger_stars": 1,
       "tab": "general",
       "theoretical_price": 2091.0,
-      "upside_percent": 75.3,
-      "_source": "general"
+      "upside_percent": 75.3
     },
     {
       "code": "5997",
@@ -1429,8 +1289,7 @@
       "tenbagger_stars": 2,
       "tab": "general",
       "theoretical_price": 2319.0,
-      "upside_percent": 183.1,
-      "_source": "general"
+      "upside_percent": 183.1
     },
     {
       "code": "7887",
@@ -1438,14 +1297,14 @@
       "name_jp": "南海プライウッド",
       "website": "https://www.nankaiplywood.co.jp",
       "market": "スタンダード",
-      "score": 31,
+      "score": 29,
       "valuation_score": 16,
       "growth_score": 6,
       "shareholder_score": 6,
       "quality_score_detail": 0,
       "bonus_score": 1,
       "risk_penalty": -13,
-      "forecast_adj": 2,
+      "forecast_adj": 0,
       "net_cash_ratio": 1.02,
       "per": 6.92,
       "market_cap_oku": 102.2,
@@ -1473,8 +1332,7 @@
       "tenbagger_stars": 2,
       "tab": "general",
       "theoretical_price": 7441.0,
-      "upside_percent": 252.6,
-      "_source": "general"
+      "upside_percent": 252.6
     },
     {
       "code": "8165",
@@ -1517,8 +1375,7 @@
       "tenbagger_stars": 4,
       "tab": "general",
       "theoretical_price": 1504.0,
-      "upside_percent": 1022.6,
-      "_source": "general"
+      "upside_percent": 1022.6
     },
     {
       "code": "5984",
@@ -1526,14 +1383,14 @@
       "name_jp": "兼房",
       "website": "https://www.kanefusa.co.jp",
       "market": "スタンダード",
-      "score": 28,
+      "score": 27,
       "valuation_score": 14,
       "growth_score": 5,
       "shareholder_score": 9,
       "quality_score_detail": 3,
       "bonus_score": 1,
       "risk_penalty": -13,
-      "forecast_adj": 1,
+      "forecast_adj": 0,
       "net_cash_ratio": 1.18,
       "per": 8.69,
       "market_cap_oku": 108.1,
@@ -1561,8 +1418,7 @@
       "tenbagger_stars": 2,
       "tab": "general",
       "theoretical_price": 2808.0,
-      "upside_percent": 260.9,
-      "_source": "general"
+      "upside_percent": 260.9
     },
     {
       "code": "7521",
@@ -1570,14 +1426,14 @@
       "name_jp": "ムサシ",
       "website": "https://www.musashinet.co.jp",
       "market": "スタンダード",
-      "score": 27,
+      "score": 26,
       "valuation_score": 16,
       "growth_score": 9,
       "shareholder_score": 9,
       "quality_score_detail": 12,
       "bonus_score": 0,
       "risk_penalty": -26,
-      "forecast_adj": 1,
+      "forecast_adj": 0,
       "net_cash_ratio": 1.12,
       "per": 5.98,
       "market_cap_oku": 191.5,
@@ -1605,52 +1461,7 @@
       "tenbagger_stars": 2,
       "tab": "general",
       "theoretical_price": 9750.0,
-      "upside_percent": 246.8,
-      "_source": "general"
-    },
-    {
-      "code": "5757",
-      "name": "CK SAN-ETSU CO LTD",
-      "name_jp": "ＣＫサンエツ",
-      "website": "https://www.cksanetu.co.jp",
-      "market": "プライム",
-      "score": 26,
-      "valuation_score": 14,
-      "growth_score": 9,
-      "shareholder_score": 9,
-      "quality_score_detail": 13,
-      "bonus_score": 1,
-      "risk_penalty": -27,
-      "forecast_adj": 1,
-      "net_cash_ratio": 1.01,
-      "per": 8.3,
-      "market_cap_oku": 358.9,
-      "dividend_yield": 2.12,
-      "payout_ratio": 17.56,
-      "roe": 9.96,
-      "roic": 21.09,
-      "pbr": 0.68,
-      "ai_comment": "CKサンエツは直近3Qで売上高が前年比+12.6%と増収を維持しているものの、営業利益は▲0.1%とほぼ横ばい、純利益は▲87.9%と大幅減益となっており、業績の質が急速に悪化している。通期予想は売上1450億円・営業利益130億円・純利益23億円と低水準に留まり、年間業績の達成見通しにも不透明感が漂う。銅合金・黄銅製品メーカーとして一定の技術優位性は持つが、素材産業特有の価格競争・景気感応度の高さがリスク。PBR0.68倍・PER8.3倍と割安感はあるが、ROE9.96%はやや低く、純利益の急減が今後のROEをさらに押し下げる懸念がある。財務健全性の確認が急務。",
-      "risk_checks": {
-        "roe_15_percent": false,
-        "equity_ratio_50_percent": true,
-        "debt_to_profit_5x": false,
-        "fcf_stability": false,
-        "liquidity_risk": true,
-        "one_time_profit_risk": true
-      },
-      "trend_score": 2,
-      "quality_score": 4,
-      "chart_signals": {
-        "volume_surge": false,
-        "above_ma": false,
-        "near_high": true
-      },
-      "tenbagger_stars": 1,
-      "tab": "general",
-      "theoretical_price": 9917.0,
-      "upside_percent": 133.1,
-      "_source": "general"
+      "upside_percent": 246.8
     },
     {
       "code": "6360",
@@ -1693,8 +1504,50 @@
       "tenbagger_stars": 3,
       "tab": "general",
       "theoretical_price": 7644.0,
-      "upside_percent": 91.1,
-      "_source": "general"
+      "upside_percent": 91.1
+    },
+    {
+      "code": "5757",
+      "name": "CK SAN-ETSU CO LTD",
+      "name_jp": "ＣＫサンエツ",
+      "website": "https://www.cksanetu.co.jp",
+      "market": "プライム",
+      "score": 25,
+      "valuation_score": 14,
+      "growth_score": 9,
+      "shareholder_score": 9,
+      "quality_score_detail": 13,
+      "bonus_score": 1,
+      "risk_penalty": -27,
+      "forecast_adj": 0,
+      "net_cash_ratio": 1.01,
+      "per": 8.3,
+      "market_cap_oku": 358.9,
+      "dividend_yield": 2.12,
+      "payout_ratio": 17.56,
+      "roe": 9.96,
+      "roic": 21.09,
+      "pbr": 0.68,
+      "ai_comment": "CKサンエツは直近3Qで売上高が前年比+12.6%と増収を維持しているものの、営業利益は▲0.1%とほぼ横ばい、純利益は▲87.9%と大幅減益となっており、業績の質が急速に悪化している。通期予想は売上1450億円・営業利益130億円・純利益23億円と低水準に留まり、年間業績の達成見通しにも不透明感が漂う。銅合金・黄銅製品メーカーとして一定の技術優位性は持つが、素材産業特有の価格競争・景気感応度の高さがリスク。PBR0.68倍・PER8.3倍と割安感はあるが、ROE9.96%はやや低く、純利益の急減が今後のROEをさらに押し下げる懸念がある。財務健全性の確認が急務。",
+      "risk_checks": {
+        "roe_15_percent": false,
+        "equity_ratio_50_percent": true,
+        "debt_to_profit_5x": false,
+        "fcf_stability": false,
+        "liquidity_risk": true,
+        "one_time_profit_risk": true
+      },
+      "trend_score": 2,
+      "quality_score": 4,
+      "chart_signals": {
+        "volume_surge": false,
+        "above_ma": false,
+        "near_high": true
+      },
+      "tenbagger_stars": 1,
+      "tab": "general",
+      "theoretical_price": 9917.0,
+      "upside_percent": 133.1
     },
     {
       "code": "3320",
@@ -1737,8 +1590,7 @@
       "tenbagger_stars": 2,
       "tab": "general",
       "theoretical_price": 4354.0,
-      "upside_percent": 225.9,
-      "_source": "general"
+      "upside_percent": 225.9
     },
     {
       "code": "7670",
@@ -1781,8 +1633,7 @@
       "tenbagger_stars": 3,
       "tab": "general",
       "theoretical_price": 3010.0,
-      "upside_percent": 188.3,
-      "_source": "general"
+      "upside_percent": 188.3
     },
     {
       "code": "3420",
@@ -1825,8 +1676,7 @@
       "tenbagger_stars": 2,
       "tab": "general",
       "theoretical_price": 4027.0,
-      "upside_percent": 165.8,
-      "_source": "general"
+      "upside_percent": 165.8
     },
     {
       "code": "5921",
@@ -1869,52 +1719,7 @@
       "tenbagger_stars": 2,
       "tab": "general",
       "theoretical_price": 14232.0,
-      "upside_percent": 239.7,
-      "_source": "general"
-    },
-    {
-      "code": "1420",
-      "name": "SANYO HOMES CORPORATION",
-      "name_jp": "サンヨーホームズ",
-      "website": "https://www.sanyohomes.co.jp",
-      "market": "スタンダード",
-      "score": 18,
-      "valuation_score": 16,
-      "growth_score": 6,
-      "shareholder_score": 6,
-      "quality_score_detail": 1,
-      "bonus_score": 1,
-      "risk_penalty": -18,
-      "forecast_adj": 2,
-      "net_cash_ratio": 1.38,
-      "per": 6.43,
-      "market_cap_oku": 73.1,
-      "dividend_yield": 4.05,
-      "payout_ratio": 26.02,
-      "roe": 4.39,
-      "roic": 6.42,
-      "pbr": 0.48,
-      "ai_comment": "サンヨーホームズは3期売上推移で増収後に微減収となり、トレンドはやや鈍化。直近3Q累計では売上前年比+7.5%と回復基調だが、営業利益は-200百万円と赤字転落しており収益面に懸念。通期予想は売上610億円・営業利益20億円を掲げるが達成には4Q偏重が必要。住宅業界は金利上昇・資材コスト高騰で競争激化が続き、PBR0.48倍・ROE4.39%と資本効率は低水準。PER6.4倍と割安感はあるものの、収益安定性に乏しく積極評価は難しい局面。財務健全性・FCF動向を引き続き注視する必要がある。",
-      "risk_checks": {
-        "roe_15_percent": false,
-        "equity_ratio_50_percent": false,
-        "debt_to_profit_5x": true,
-        "fcf_stability": false,
-        "liquidity_risk": true,
-        "one_time_profit_risk": false
-      },
-      "trend_score": 2,
-      "quality_score": 2,
-      "chart_signals": {
-        "volume_surge": false,
-        "above_ma": false,
-        "near_high": false
-      },
-      "tenbagger_stars": 2,
-      "tab": "general",
-      "theoretical_price": 1467.0,
-      "upside_percent": 137.4,
-      "_source": "general"
+      "upside_percent": 239.7
     },
     {
       "code": "2788",
@@ -1957,8 +1762,7 @@
       "tenbagger_stars": 2,
       "tab": "general",
       "theoretical_price": 920.0,
-      "upside_percent": 171.3,
-      "_source": "general"
+      "upside_percent": 171.3
     },
     {
       "code": "5408",
@@ -2001,8 +1805,50 @@
       "tenbagger_stars": 1,
       "tab": "general",
       "theoretical_price": 2536.0,
-      "upside_percent": 314.5,
-      "_source": "general"
+      "upside_percent": 314.5
+    },
+    {
+      "code": "1420",
+      "name": "SANYO HOMES CORPORATION",
+      "name_jp": "サンヨーホームズ",
+      "website": "https://www.sanyohomes.co.jp",
+      "market": "スタンダード",
+      "score": 16,
+      "valuation_score": 16,
+      "growth_score": 6,
+      "shareholder_score": 6,
+      "quality_score_detail": 1,
+      "bonus_score": 1,
+      "risk_penalty": -18,
+      "forecast_adj": 0,
+      "net_cash_ratio": 1.38,
+      "per": 6.43,
+      "market_cap_oku": 73.1,
+      "dividend_yield": 4.05,
+      "payout_ratio": 26.02,
+      "roe": 4.39,
+      "roic": 6.42,
+      "pbr": 0.48,
+      "ai_comment": "サンヨーホームズは3期売上推移で増収後に微減収となり、トレンドはやや鈍化。直近3Q累計では売上前年比+7.5%と回復基調だが、営業利益は-200百万円と赤字転落しており収益面に懸念。通期予想は売上610億円・営業利益20億円を掲げるが達成には4Q偏重が必要。住宅業界は金利上昇・資材コスト高騰で競争激化が続き、PBR0.48倍・ROE4.39%と資本効率は低水準。PER6.4倍と割安感はあるものの、収益安定性に乏しく積極評価は難しい局面。財務健全性・FCF動向を引き続き注視する必要がある。",
+      "risk_checks": {
+        "roe_15_percent": false,
+        "equity_ratio_50_percent": false,
+        "debt_to_profit_5x": true,
+        "fcf_stability": false,
+        "liquidity_risk": true,
+        "one_time_profit_risk": false
+      },
+      "trend_score": 2,
+      "quality_score": 2,
+      "chart_signals": {
+        "volume_surge": false,
+        "above_ma": false,
+        "near_high": false
+      },
+      "tenbagger_stars": 2,
+      "tab": "general",
+      "theoretical_price": 1467.0,
+      "upside_percent": 137.4
     },
     {
       "code": "7219",
@@ -2045,8 +1891,7 @@
       "tenbagger_stars": 2,
       "tab": "general",
       "theoretical_price": 9841.0,
-      "upside_percent": 335.8,
-      "_source": "general"
+      "upside_percent": 335.8
     },
     {
       "code": "6899",
@@ -2089,8 +1934,7 @@
       "tenbagger_stars": 2,
       "tab": "general",
       "theoretical_price": 8478.0,
-      "upside_percent": 257.0,
-      "_source": "general"
+      "upside_percent": 257.0
     },
     {
       "code": "7229",
@@ -2133,8 +1977,7 @@
       "tenbagger_stars": 1,
       "tab": "general",
       "theoretical_price": 8360.0,
-      "upside_percent": 179.1,
-      "_source": "general"
+      "upside_percent": 179.1
     }
   ]
 }
