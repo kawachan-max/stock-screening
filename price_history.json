@@ -1239,6 +1239,36 @@
       "stock_price": 702,
       "theoretical_price": 1809,
       "upside_percent": 157.7
+    },
+    {
+      "date": "2026-05-09",
+      "code": "8152",
+      "name": "SOMAR CORPORATION",
+      "tab": "general",
+      "score": 66,
+      "stock_price": 5460,
+      "theoretical_price": 22786,
+      "upside_percent": 317.3
+    },
+    {
+      "date": "2026-05-09",
+      "code": "5280",
+      "name": "YOSHICON CO LTD",
+      "tab": "finance",
+      "score": 61,
+      "stock_price": 2300,
+      "theoretical_price": 7874,
+      "upside_percent": 242.4
+    },
+    {
+      "date": "2026-05-09",
+      "code": "8881",
+      "name": "NISSHIN GROUP HLDGS CO LTD",
+      "tab": "finance",
+      "score": 60,
+      "stock_price": 693,
+      "theoretical_price": 1809,
+      "upside_percent": 161.0
     }
   ]
 }
