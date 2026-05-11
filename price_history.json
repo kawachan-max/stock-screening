@@ -1269,6 +1269,16 @@
       "stock_price": 693,
       "theoretical_price": 1809,
       "upside_percent": 161.0
+    },
+    {
+      "date": "2026-05-12",
+      "code": "5280",
+      "name": "YOSHICON CO LTD",
+      "tab": "finance",
+      "score": 61,
+      "stock_price": 2296,
+      "theoretical_price": 7875,
+      "upside_percent": 243.0
     }
   ]
 }

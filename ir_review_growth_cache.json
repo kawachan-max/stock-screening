@@ -452,21 +452,24 @@
     "review_status": "negative",
     "catalysts_found": [],
     "risks_found": [
-      "課徴金納付命令（2024年6月）",
-      "コンプライアンス体制見直し必要性"
+      "独占禁止法違反による課徴金4億5千4百万円の納付",
+      "公正取引委員会からの排除措置命令・課徴金納付命令",
+      "取締役に対する損害賠償請求訴訟の提起",
+      "前年同期比純利益56.4%減益（特別損失の影響）"
     ],
-    "score_adjustment": -8,
+    "score_adjustment": -12,
     "add_badges": [
-      "⚠️不祥事"
+      "⚠️不祥事",
+      "⚠️一過性"
     ],
-    "ir_comment": "<cite index=\"41-2,45-2\">2024年6月にLPガス容器用バルブの価格カルテルで公正取引委員会から課徴金4.5億円の納付命令</cite>を受領。<cite index=\"42-1\">2025年12月期連結決算では売上高127億円（5.1%増）、営業利益12億円（9.4%増）の増収増益</cite>だが、<cite index=\"42-1\">課徴金を特別損失計上し当期純利益は56.4%減益</cite>。<cite index=\"46-1,46-2\">再発防止に向けコンプライアンス推進室新設など組織改革を実施中</cite>。",
-    "review_note": "2024年6月にLPガスバルブカルテルで課徴金4.5億円納付。コンプライアンス体制強化中だが信頼回復には時間要す",
+    "ir_comment": "ハマイは<cite index=\"22-1\">2024年6月に公正取引委員会から独占禁止法違反として排除措置命令及び課徴金納付命令を受け、課徴金額4億5千4百万円を特別損失として計上</cite>した。この影響により<cite index=\"22-1\">親会社株主に帰属する当期純利益は3億9千6百万円、前年同期比5億1千2百万円(56.4%)の減益</cite>となった。また<cite index=\"17-1\">12月27日に取締役に対する損害賠償請求訴訟の提起</cite>も開示されており、コンプライアンス関連リスクが表面化している。",
+    "review_note": "独占禁止法違反による課徴金納付と関連訴訟により、短期的には企業信用リスクが高まっている状況。コンプライアンス体制の再構築が急務。",
     "source_urls": [
-      "https://www.hamai-net.com/corporation/ir/index.html",
-      "https://news.yahoo.co.jp/articles/8cbfee183cd26f23f56581accb0a00417fc0988f",
-      "https://www.buffett-code.com/company/6497/"
+      "https://www.buffett-code.com/company/6497/",
+      "https://s.kabutan.jp/stocks/6497/news/",
+      "https://finance.yahoo.co.jp/quote/6497.T/disclosure"
     ],
-    "reviewed_at": "2026-04-13"
+    "reviewed_at": "2026-05-11"
   },
   "5697": {
     "review_status": "positive",
@@ -700,5 +703,40 @@
       "https://www.sanshin.co.jp/en/ir/investor/"
     ],
     "reviewed_at": "2026-04-27"
+  },
+  "3134": {
+    "review_status": "negative",
+    "catalysts_found": [
+      "株主還元方針維持（配当性向20％以上維持）",
+      "スピンオフ実施によりコマース事業に特化"
+    ],
+    "risks_found": [
+      "NE株式会社のスピンオフによる業績下方修正",
+      "営業利益69.3%減の大幅減益予想",
+      "子会社分離によるスケールメリット減少"
+    ],
+    "score_adjustment": -7,
+    "add_badges": [
+      "⚠️下方修正"
+    ],
+    "ir_comment": "<cite index=\"21-1,21-2\">2026年4月期第3四半期はNE株式会社の連結除外により減収減益となり、通期予想は売上高216.73億円(前期比5.3%減)、営業利益7.23億円(同69.3%減)を見込んでいます</cite>。<cite index=\"24-2\">子会社NEのスピンオフ上場に伴い営業利益を29億2000万円から20億7300万円(同11.9%減)へ下方修正</cite>しています。<cite index=\"11-2\">配当方針は配当性向20%以上を維持し、業績連動による利益還元を継続</cite>する方針です。",
+    "review_note": "スピンオフによる収益基盤の分離で業績見通しが大幅に悪化。コマース事業特化によるポジティブ面はあるが、短期的にはネガティブ要素が大きい。",
+    "source_urls": [
+      "https://finance.yahoo.co.jp/quote/3134.T",
+      "https://minkabu.jp/news/4343674",
+      "https://gokigen-life.tokyo/3134yutai/"
+    ],
+    "reviewed_at": "2026-05-11"
+  },
+  "6393": {
+    "review_status": "neutral",
+    "catalysts_found": [],
+    "risks_found": [],
+    "score_adjustment": 0,
+    "add_badges": [],
+    "ir_comment": "",
+    "review_note": "IR審査エラー: Expecting value: line 11 column 23 (char 265)",
+    "source_urls": [],
+    "reviewed_at": "2026-05-11"
   }
 }
