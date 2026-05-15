@@ -1299,6 +1299,26 @@
       "stock_price": 2255,
       "theoretical_price": 7874,
       "upside_percent": 249.2
+    },
+    {
+      "date": "2026-05-16",
+      "code": "8891",
+      "name": "AMG HOLDINGS CO LTD",
+      "tab": "finance",
+      "score": 62,
+      "stock_price": 1743,
+      "theoretical_price": 6024,
+      "upside_percent": 245.6
+    },
+    {
+      "date": "2026-05-16",
+      "code": "5280",
+      "name": "YOSHICON CO LTD",
+      "tab": "finance",
+      "score": 62,
+      "stock_price": 2190,
+      "theoretical_price": 7873,
+      "upside_percent": 259.5
     }
   ]
 }
