@@ -11,52 +11,43 @@
     "reviewed_at": "2026-04-13"
   },
   "8152": {
-    "review_status": "neutral",
-    "catalysts_found": [],
-    "risks_found": [
-      "減損損失29,089千円（2025年3月期）"
+    "review_status": "positive",
+    "catalysts_found": [
+      "2025年3月期決算で大幅増配（前期70円→100円）を発表",
+      "業績大幅改善（売上高13.9%増、営業利益43.0%増、純利益88.7%増）"
     ],
-    "score_adjustment": -2,
+    "risks_found": [],
+    "score_adjustment": 4,
     "add_badges": [
-      "⚠️一過性"
+      "⬆️増配発表"
     ],
-    "ir_comment": "2025年3月期決算では増収増益となったものの、草加事業所のコーティング製品事業用資産について減損損失29,089千円を特別損失に計上。売上高は303億6351万円（+13.93%）、親会社株主に帰属する当期純利益は25億8659万円（+88.66%）となった。筆頭株主はナガツタコーポレーションが18.75%保有。",
-    "review_note": "業績は好調だが減損損失計上により一過性の要因あり。株価に影響を与える重要な株主還元策は確認されず。",
+    "ir_comment": "2025年3月期決算で大幅な業績改善を達成。売上高303.6億円（+13.9%）、営業利益25.7億円（+43.0%）、純利益25.8億円（+88.7%）。AI・EV関連、半導体市場回復を背景に主力の高機能材料事業が好調。年間配当を70円から100円へ大幅増配（42.9%増）。政策保有株売却益6.5億円も計上。",
+    "review_note": "業績大幅改善と30円増配（+42.9%）発表。AI・EV関連需要で高機能材料事業好調。筆頭株主ナガツタコーポレーション32.9%保有で安定。",
     "source_urls": [
-      "https://www.somar.co.jp/upload/ir/2CNCXX3-ir_file.pdf",
-      "https://irbank.net/8152/ir"
+      "https://www.somar.co.jp/ir/result/",
+      "https://kessannote.com/company/8152/quarter/081220250313593338",
+      "https://www.buffett-code.com/company/8152/mainshareholder"
     ],
-    "reviewed_at": "2026-04-30"
+    "reviewed_at": "2026-05-18"
   },
   "8917": {
     "review_status": "negative",
-    "catalysts_found": [
-      "25年10月期営業利益55.9%増V字回復見込み（特別利益として負ののれん発生益により最終利益は89.1%上方修正）"
-    ],
+    "catalysts_found": [],
     "risks_found": [
-      "24年10月期経常利益17.5%下方修正（住宅需要冷え込み、販売棟数減少）",
-      "25年10月期経常利益14.5%下方修正（27.5億円→23.5億円）",
-      "住宅需要の継続的な低迷"
+      "下方修正"
     ],
-    "score_adjustment": -8,
+    "score_adjustment": -7,
     "add_badges": [
-      {
-        "text": "⚠️下方修正",
-        "type": "negative"
-      },
-      {
-        "text": "⚠️需要減速",
-        "type": "negative"
-      }
+      "⚠️下方修正"
     ],
-    "ir_comment": "24年10月期は住宅需要の冷え込みにより戸建分譲販売棟数が予想下回り、経常利益を17.5%下方修正。25年10月期も経常利益を14.5%下方修正したが、KHCグループ買収効果により営業利益は55.9%増のV字回復を見込む。特別利益により最終利益は大幅増益予想。",
-    "review_note": "住宅需要低迷により2期連続の業績下方修正。25年10月期の利益回復見込みはあるが市況環境に注意。",
+    "ir_comment": "<cite index=\"31-1,32-1\">2025年12月10日に業績下方修正を発表。2025年10月期の連結経常利益を27.5億円から23.5億円に14.5%下方修正</cite>。<cite index=\"31-1\">主力の戸建分譲における販売棟数が当初計画の1,260棟を11.1%下回る1,120棟にとどまったことが原因</cite>。<cite index=\"21-1\">2025年12月15日発表の決算では売上高428億8,300万円（前年比19.2%増）、営業利益24億9,000万円（同36.2%増）と増収増益を達成</cite>。",
+    "review_note": "販売棟数減により業績下方修正を発表。ただし最終的には増収増益を確保。配当継続方針維持。",
     "source_urls": [
-      "https://kabutan.jp/news/?b=k202412130095",
       "https://kabutan.jp/news/?b=k202512100006",
-      "https://web.fisco.jp/platform/companies/0891700"
+      "https://finance.yahoo.co.jp/quote/8917.T",
+      "https://kabuyoho.jp/reportTop?bcode=8917"
     ],
-    "reviewed_at": "2026-04-30"
+    "reviewed_at": "2026-05-18"
   },
   "5280": {
     "review_status": "neutral",
@@ -65,20 +56,33 @@
     "score_adjustment": 0,
     "add_badges": [],
     "ir_comment": "",
-    "review_note": "IR審査エラー: Expecting value: line 13 column 23 (char 366)",
+    "review_note": "IR審査エラー: Expecting value: line 13 column 23 (char 320)",
     "source_urls": [],
-    "reviewed_at": "2026-04-30"
+    "reviewed_at": "2026-05-18"
   },
   "8881": {
-    "review_status": "neutral",
-    "catalysts_found": [],
+    "review_status": "positive",
+    "catalysts_found": [
+      "増配発表（2026年3月期は配当35円へ12円増配）",
+      "業績上方修正（2025年11月に売上高840億→850億円、営業利益38億→53億円へ上方修正）",
+      "配当性向50%方針の明確化による株主還元強化"
+    ],
     "risks_found": [],
-    "score_adjustment": 0,
-    "add_badges": [],
-    "ir_comment": "",
-    "review_note": "IR審査エラー: Expecting value: line 5 column 23 (char 124)",
-    "source_urls": [],
-    "reviewed_at": "2026-04-30"
+    "score_adjustment": 7,
+    "add_badges": [
+      "⬆️増配発表",
+      "⬆️上方修正",
+      "⬆️還元強化"
+    ],
+    "ir_comment": "2026年3月期決算で売上高878億円（前年比15.2%増）、営業利益67億円（同93.7%増）と大幅増益を達成。配当は23円→35円へ52%増配発表。建設事業の利益率向上を背景に業績上方修正も実施。現金400億超の潤沢な財務基盤を背景に配当性向50%方針で株主還元を強化中。",
+    "review_note": "大幅増配と業績上方修正により株価材料は豊富。建設事業の高収益体質への転換が業績を牽引している。",
+    "source_urls": [
+      "https://nisshin-hd.co.jp/",
+      "https://finance.yahoo.co.jp/quote/8881.T",
+      "https://minkabu.jp/stock/8881",
+      "https://irbank.net/8881/ir"
+    ],
+    "reviewed_at": "2026-05-18"
   },
   "8935": {
     "review_status": "positive",
@@ -106,124 +110,103 @@
     "review_status": "negative",
     "catalysts_found": [],
     "risks_found": [
-      "下方修正",
-      "業績下振れ"
+      "通期業績下方修正（2026年3月期Q3決算）",
+      "不動産・建設事業の大幅な売上減少",
+      "中核事業の収益性低下"
     ],
-    "score_adjustment": -8,
+    "score_adjustment": -7,
     "add_badges": [
       "⚠️下方修正"
     ],
-    "ir_comment": "<cite index=\"30-2\">2026年3月期第3四半期決算は、売上高78.96億円（前年同期比21.5％減）、経常利益5.85億円（同38.1％減）と減収減益となりました。不動産・建設事業の落ち込みが大きく影響し、通期予想も下方修正されています。</cite> <cite index=\"22-1\">2025年3月期決算は、売上高132.79億円（前年同期比1.5％増）、経常利益11.52億円（同19.8％増）と堅調な業績を示していま。自己資本比率も53.8％に上昇し、財務体質の改善が進んでいます。</cite>",
-    "review_note": "2026年3月期第3四半期で大幅な減収減益となり、通期予想の下方修正が実施された。主力の不動産・建設事業の落ち込みが業績悪化の主因。",
+    "ir_comment": "2026年3月期Q3決算では売上高78.96億円（前年同期比21.5％減）、経常利益5.85億円（同38.1％減）と大幅減収減益となり、通期予想も下方修正されています。不動産・建設事業の落ち込みが大きく、株価を意識した経営への転換が株主から強く求められている状況です。",
+    "review_note": "主力の不動産・建設事業が大幅な収益悪化により通期下方修正を実施。株主から株価無視経営への不満が高まっている。",
     "source_urls": [
       "https://finance.yahoo.co.jp/quote/3293.T",
-      "https://finance.yahoo.co.jp/quote/3293.T/financials",
       "https://azumahouse.com/ir/",
-      "https://irbank.net/3293/ir"
+      "https://irbank.net/E30066"
     ],
-    "reviewed_at": "2026-04-30"
+    "reviewed_at": "2026-05-18"
   },
   "8135": {
     "review_status": "positive",
     "catalysts_found": [
-      "2026年3月期第3四半期の業績好調（売上高6.6%増、営業利益11.9%増）",
-      "投資有価証券売却益により純利益大幅増",
-      "ROE上昇傾向による資本効率改善"
+      "売上高・利益大幅増益（第3四半期売上高5.13%増、純利益370%増）",
+      "ROE上昇傾向で資本効率改善"
     ],
-    "risks_found": [
-      "前年特別利益の反動で一部利益減少",
-      "通期業績は据え置きで上方修正なし"
-    ],
-    "score_adjustment": 2,
+    "risks_found": [],
+    "score_adjustment": 3,
     "add_badges": [
-      "⬆️業績好調"
+      "⬆️好業績"
     ],
-    "ir_comment": "<cite index=\"5-1,35-3\">ゼット株式会社の第３四半期連結累計期間は、売上高426.15億円（前年同期比6.6％増）、営業利益7.18億円（同11.9％増）と増収増益を達成しました。主力の卸売部門が好調で、スポーツ用品市場の需要拡大を背景に成長しています。</cite><cite index=\"24-1\">ROEは上昇傾向にあり、資本効率が改善していることを示します。一般的には、PBRを中心としたバリュエーションの改善が期待されます。</cite>",
-    "review_note": "<cite index=\"39-2\">2月13日発表の第3四半期決算で経常利益は前年同期比9.6％増の8.8億円に伸び、通期計画の13億円に対する進捗率は68.4％に達した。</cite>業績は堅調推移だが、上方修正や株主還元強化の発表はなし。",
+    "ir_comment": "<cite index='22-1,24-1'>2025年2月13日発表の第3四半期決算で売上高5.13%増、純利益370.33%増を記録</cite>。<cite index='24-1'>通期計画の13億円に対する進捗率68.4%と順調</cite>。<cite index='34-1'>ROE上昇傾向で資本効率が改善しており、PBR改善も期待される</cite>。",
+    "review_note": "第3四半期好決算で増収増益を維持、資本効率改善も進展している。自社株買い・配当増額等の特別な株主還元策は確認されず。",
     "source_urls": [
-      "https://zett.jp/ir/",
-      "https://finance.yahoo.co.jp/quote/8135.T/financials",
-      "https://minkabu.jp/stock/8135/settlement"
+      "https://irbank.net/8135/pl",
+      "https://minkabu.jp/stock/8135/settlement",
+      "https://zett.jp/ir/"
     ],
-    "reviewed_at": "2026-04-30"
+    "reviewed_at": "2026-05-18"
   },
   "7991": {
     "review_status": "negative",
     "catalysts_found": [
-      "2024年1月に配当方針変更および増配発表"
+      "増配発表（前期90円→100円）"
     ],
     "risks_found": [
-      "2026年3月期第3四半期で大幅減収減益（売上高39.7%減、営業利益69.1%減）",
-      "電子機器事業の特需終息による業績悪化",
-      "通期予想の下方修正"
+      "大幅な業績下方修正（経常利益48.5％減）",
+      "新株予約権による希薄化リスク（17.63％）",
+      "主力事業の特需終息",
+      "今期配当予想未定"
     ],
-    "score_adjustment": -6,
+    "score_adjustment": -12,
     "add_badges": [
-      {
-        "text": "⚠️下方修正",
-        "type": "negative"
-      },
-      {
-        "text": "⚠️一過性",
-        "type": "negative"
-      }
+      "⚠️下方修正",
+      "⚠️希薄化"
     ],
-    "ir_comment": "マミヤ・オーピーは<cite index=\"22-1\">2026年3月期第3四半期で売上高171億8,700万円（前年同期比39.7％減）、営業利益18億6,200万円（同69.1％減）と大幅な減収減益</cite>を発表。<cite index=\"22-1\">主力の電子機器事業で特需終息の影響を受け、通期予想も下方修正</cite>された。一方、<cite index=\"39-1\">2024年1月26日に配当方針の変更及び配当予想の修正（増配）</cite>を発表している。",
-    "review_note": "パチンコ業界向け特需の剥落により大幅な業績悪化。増配実施済みだが、今後の業績見通しに不透明感が残る。",
+    "ir_comment": "2026年3月期は主力の電子機器事業で特需が終息し、経常利益が前期比48.5％減の35億円まで大幅減益の見通し。加えてSMBC日興証券への第三者割当で17.63％の希薄化リスクが発生。前期は増配したが今期配当は未定となっている。",
+    "review_note": "業績大幅悪化と希薄化リスクで投資環境は厳しい状況。前期増配も今期は不透明。",
     "source_urls": [
       "https://irbank.net/7991/ir",
-      "https://finance.yahoo.co.jp/quote/7991.T",
-      "https://www.nikkei.com/nkd/disclosure/tdnr/20240126519892/",
-      "https://irbank.net/7991/pl"
+      "https://minkabu.jp/stock/7991/settlement",
+      "https://web.fisco.jp/platform/companies/0799100"
     ],
-    "reviewed_at": "2026-04-30"
+    "reviewed_at": "2026-05-18"
   },
   "7175": {
-    "review_status": "positive",
-    "catalysts_found": [
-      "第3四半期業績の大幅な増収増益（営業収益6.4%増、四半期純利益23.3%増）",
-      "株券委託手数料の大幅増加（22.5%増）",
-      "受入手数料全体の増加（20.1%増）"
-    ],
-    "risks_found": [
-      "トレーディング損益の大幅減少（95.6%減）",
-      "長期的な純利益率・営業利益率の低下傾向",
-      "ROEとROAが低水準での推移"
-    ],
-    "score_adjustment": 1,
+    "review_status": "neutral",
+    "catalysts_found": [],
+    "risks_found": [],
+    "score_adjustment": 0,
     "add_badges": [],
-    "ir_comment": "最新の第3四半期決算では営業収益34億5,100万円（前年同期比6.4%増）、四半期純利益7億2,200万円（同23.3%増）と増収増益を達成。株式市場の好調を背景に株券委託手数料が22.5%増と大幅に伸びたが、トレーディング損益は95.6%減と課題も残る。",
-    "review_note": "最新決算は増収増益だが、トレーディング損益の課題やROE低水準など構造的問題が残存。業績回復トレンドは評価するも慎重判断が必要。",
+    "ir_comment": "第3四半期決算では営業収益34.5億円（前年同期比6.4%増）、四半期純利益7.2億円（同23.3%増）と増収増益を達成。株券委託手数料が22.5%増と好調。ただし、トレーディング損益は95.6%減と課題も。",
+    "review_note": "最新決算は増収増益だが、特筆すべき株主還元策や業績修正等の発表は確認されず。",
     "source_urls": [
       "https://finance.yahoo.co.jp/quote/7175.T",
-      "https://finance.yahoo.co.jp/quote/7175.T/disclosure"
+      "https://finance.yahoo.co.jp/quote/7175.T/disclosure",
+      "https://www.imamura.co.jp/ir/"
     ],
-    "reviewed_at": "2026-04-30"
+    "reviewed_at": "2026-05-18"
   },
   "8891": {
     "review_status": "positive",
     "catalysts_found": [
-      "自社株買い：2024年8月20日に発行済株式数の3.1%にあたる9万株（約1.54億円上限）の自社株買いを実施",
-      "増配予定：2026年3月期に年間配当70円を予定（10円増配）"
+      "増配発表（年間60円→70円の10円増配）"
     ],
     "risks_found": [
-      "国内証券が投資判断と目標株価を引き下げ",
-      "増収効果が利益に直結せず、前期営業利益は14.59%の減益",
-      "ROE低下傾向で資本効率が悪化"
+      "業績予想の修正（2025年11月7日発表）の内容が詳細不明"
     ],
-    "score_adjustment": 5,
+    "score_adjustment": 3,
     "add_badges": [
-      "⬆️自社株買い",
       "⬆️増配発表"
     ],
-    "ir_comment": "<cite index=\"17-2,33-2\">2024年8月に発行済株式数3.1%の自社株買いを実施。2026年3月期に10円増配の70円配当を予定し、営業利益も23.8%増の大幅増益</cite>となった。<cite index=\"1-1\">注文建築事業は売上順調で、モアグレース高蔵寺フォレストフォートは完売</cite>している。",
-    "review_note": "<cite index=\"17-2,33-2\">自社株買いと増配予定というダブルの株主還元策が評価材料</cite>だが、<cite index=\"24-2\">証券会社の格下げ</cite>もあり注視が必要。",
+    "ir_comment": "2026年3月期は売上高320億円（前期比5.2％増）、営業利益16.5億円（6.4％増）を見込む。配当は年間60円から70円へ10円増配を予定。第1四半期は売上高6.0％減も営業利益11.6％増の利益成長を実現。第3四半期は営業利益73.9％増と大幅増益達成。",
+    "review_note": "増配発表が最大のポジティブ材料。業績は順調な成長を示すが、2025年11月の業績予想修正の詳細が不明なのがリスク要因。",
     "source_urls": [
-      "https://web.fisco.jp/platform/companies/0889100",
-      "https://finance.yahoo.co.jp/quote/8891.T",
-      "https://irbank.net/8891/ir"
+      "https://www.amg-hd.co.jp/ir/",
+      "https://finance.yahoo.co.jp/quote/8891.T/financials",
+      "https://www.amg-hd.co.jp/ir/ir2025.php"
     ],
-    "reviewed_at": "2026-04-30"
+    "reviewed_at": "2026-05-18"
   },
   "3388": {
     "review_status": "positive",
@@ -253,146 +236,129 @@
     "reviewed_at": "2026-04-30"
   },
   "8699": {
+    "review_status": "negative",
+    "catalysts_found": [],
+    "risks_found": [
+      "不当取引疑義・東京地裁決定",
+      "業績予想未開示継続",
+      "配当額未定"
+    ],
+    "score_adjustment": -12,
+    "add_badges": [
+      "⚠️不祥事",
+      "⚠️一過性"
+    ],
+    "ir_comment": "<cite index=\"11-1\">第3四半期決算は営業収益413億円（前年同期比48.6%増）、営業損失拡大も経常利益132億円（13.9%増）、純利益111億円（19.5%増）</cite>と増益。<cite index=\"34-1\">配当は業績予想が困難として未定、前期は年間配当金10円</cite>。リユース事業好調だが海外金融事業の不確実性により業績予想を開示せず。",
+    "review_note": "<cite index=\"38-1\">東京地裁が「関係者間で不合理な取引が繰り返されている蓋然性が高い」と判示</cite>し、ガバナンス面でリスクが表面化。",
+    "source_urls": [
+      "https://hs-hd.co.jp/irinfos/",
+      "https://finance.yahoo.co.jp/quote/8699.T/financials",
+      "https://finance.yahoo.co.jp/quote/8699.T/forum"
+    ],
+    "reviewed_at": "2026-05-18"
+  },
+  "9633": {
+    "review_status": "positive",
+    "catalysts_found": [
+      "自社株買い継続実施（2024年8月～2025年3月、上限30万株・3.5億円、2025年4月7日時点で30万株・3.26億円完了）"
+    ],
+    "risks_found": [
+      "連結業績予想で大幅減益予想（2026年3月期：営業利益81.3%減、経常利益81.6%減、当期純利益80.3%減）"
+    ],
+    "score_adjustment": 0,
+    "add_badges": [
+      "⬆️自社株買い",
+      "⚠️下方修正"
+    ],
+    "ir_comment": "<cite index=\"7-1\">2024年8月から2025年3月まで自社株買いを実施し、上限30万株・3.5億円のうち30万株・3.26億円を取得完了</cite>。<cite index=\"16-1\">2026年3月期は営業利益81.3%減、経常利益81.6%減、当期純利益80.3%減の大幅減益予想</cite>、<cite index=\"16-1\">配当は1株10円維持予定</cite>。",
+    "review_note": "自社株買いによるプラス効果と大幅減益予想によるマイナス効果が相殺される状況",
+    "source_urls": [
+      "https://irbank.net/E04589/edinet",
+      "https://finance.yahoo.co.jp/quote/9633.T/financials",
+      "https://www.theatres.co.jp/investor/"
+    ],
+    "reviewed_at": "2026-05-18"
+  },
+  "5363": {
+    "review_status": "positive",
+    "catalysts_found": [
+      "中期経営計画(2024-2028年度)の初回策定・公表",
+      "資本コストを意識した企業価値向上の取り組み",
+      "新素材事業への挑戦"
+    ],
+    "risks_found": [],
+    "score_adjustment": 2,
+    "add_badges": [
+      "⬆️還元強化"
+    ],
+    "ir_comment": "<cite index=\"21-1\">東京窯業は2023年11月14日に初回となる中期経営計画(2024-2028年度)を策定・公表し、資本コストを意識した経営により企業価値向上を図る方針を明確化</cite>。<cite index=\"1-1\">通期連結売上高6.4%増の319億3343万円、親会社株主に帰属する当期純利益31.6%増の31億3012万円</cite>となり好調な業績を継続している。",
+    "review_note": "中計策定により企業価値向上への本格的な取り組み姿勢が評価される。特に不祥事や大きなリスクは見当たらない。",
+    "source_urls": [
+      "https://irbank.net/E01149",
+      "https://www.tyk.co.jp/common/file/companyinfo/2024-2028_management_plan.pdf",
+      "https://irbank.net/5363/140120231113586999"
+    ],
+    "reviewed_at": "2026-05-18"
+  },
+  "4231": {
     "review_status": "neutral",
     "catalysts_found": [],
     "risks_found": [],
     "score_adjustment": 0,
     "add_badges": [],
-    "ir_comment": "2026年3月期3Q累計で営業収益413億円（前年同期比48.6%増）と大幅増収。第1四半期の経常利益は43.7億円（前年同期比17.1%増）と増益。ただし中間期では営業損失7.86億円を計上。配当予想は未定で前期実績は10円。",
-    "review_note": "業績は増収基調だが営業損失が発生。配当予想未定が懸念材料。特段のカタリストやリスクは確認されず。",
-    "source_urls": [
-      "https://hs-hd.co.jp/irinfos/",
-      "https://finance.yahoo.co.jp/quote/8699.T/financials"
-    ],
-    "reviewed_at": "2026-04-30"
+    "ir_comment": "",
+    "review_note": "IR審査エラー: Expecting value: line 12 column 23 (char 261)",
+    "source_urls": [],
+    "reviewed_at": "2026-05-18"
   },
-  "9633": {
+  "5956": {
     "review_status": "positive",
     "catalysts_found": [
-      "自社株買い実行中（2024年8月から30万株・3.5億円上限）",
-      "通期業績予想の上方修正（2024年11月13日発表）",
-      "配当予想の修正発表（2024年11月13日）"
+      "自己株式取得の発表",
+      "業績上方修正発表",
+      "新中期経営計画策定"
     ],
     "risks_found": [],
     "score_adjustment": 6,
     "add_badges": [
       "⬆️自社株買い",
-      "⬆️上方修正"
+      "⬆️上方修正",
+      "⬆️還元強化"
     ],
-    "ir_comment": "2024年8月から自社株買いを積極実行し、12月時点で30万株・3.26億円を取得済み。11月には通期業績予想および配当予想を修正。第三四半期は売上高7.81%増、純利益958.27%増と大幅な増益を達成。映像・飲食・不動産事業が堅調に推移。",
-    "review_note": "自社株買い実行と業績上方修正により株主還元が強化。財務改善とPBR改善対応も評価される。",
+    "ir_comment": "2026年3月期第3四半期は増収増益を達成し、営業利益は前年同期比79.9%増と大幅改善。自己株式取得や新中期経営計画の策定など株主還元強化に向けた取り組みが確認される。",
+    "review_note": "業績好調と株主還元強化の方針が複合的にプラス要因となる",
     "source_urls": [
-      "https://irbank.net/E04589/edinet",
-      "https://irbank.net/E04589/reports",
-      "https://www.theatres.co.jp/investor/",
-      "https://irbank.net/9633/pl"
+      "https://irbank.net/5956/ir",
+      "https://finance.yahoo.co.jp/quote/5956.T",
+      "https://www.toso.co.jp/ir/"
     ],
-    "reviewed_at": "2026-04-30"
-  },
-  "5363": {
-    "review_status": "negative",
-    "catalysts_found": [
-      "中期経営計画（2024年度〜2028年度）策定"
-    ],
-    "risks_found": [
-      "2024年3月期の実質的な減配懸念"
-    ],
-    "score_adjustment": -3,
-    "add_badges": [
-      {
-        "text": "⚠️業績懸念",
-        "type": "negative"
-      }
-    ],
-    "ir_comment": "<cite index=\"1-2,1-3\">直近では2024年11月14日と2025年2月14日に配当予想及び業績予想の修正を発表しています。2023年11月14日には中期経営計画（2024年度～2028年度）を策定し成長戦略を示している</cite>一方で、<cite index=\"13-4\">市場では「前期の減配をネガティブ視」</cite>されており、配当政策に不透明感があります。",
-    "review_note": "中期経営計画策定は評価材料も、減配懸念と相場での投資家心理悪化が影響",
-    "source_urls": [
-      "https://irbank.net/E01149/reports",
-      "https://irbank.net/5363/140120231113586999",
-      "https://web.fisco.jp/platform/companies/0536300"
-    ],
-    "reviewed_at": "2026-04-30"
-  },
-  "4231": {
-    "review_status": "negative",
-    "catalysts_found": [
-      "自社株買い発表（2026年2月）",
-      "過去の大幅な増配実績（2024年3月期に配当45円・前期比33円増）"
-    ],
-    "risks_found": [
-      "業績下方修正要因（2025年3月期減収減益予想継続）",
-      "減配実施（2025年3月期年間配当34円・前期比13円減配）"
-    ],
-    "score_adjustment": -11,
-    "add_badges": [
-      "⬆️自社株買い",
-      "⚠️減配"
-    ],
-    "ir_comment": "2026年2月に自社株買いを発表したプラス材料があるものの、2025年3月期第3四半期決算は売上高352億円（前年同期比5.1%減）、営業利益19億円（同35.7%減）と減収減益。通期も減収減益予想を継続し、年間配当も34円（前期比13円減配）と大幅減配を実施している。",
-    "review_note": "自社株買い発表があるがリスク要因が優勢。第3四半期決算の大幅減益と減配実施が株価に重し。",
-    "source_urls": [
-      "https://tigers.jp/ir/",
-      "https://irbank.net/4231",
-      "https://finance.yahoo.co.jp/quote/4231.T/financials",
-      "https://diamond.jp/zai/articles/-/1028780"
-    ],
-    "reviewed_at": "2026-04-30"
-  },
-  "5956": {
-    "review_status": "positive",
-    "catalysts_found": [
-      "業績上方修正（2025年3月期決算で前年同期比営業利益54.5％増）",
-      "配当予想の修正発表（2025年5月12日）"
-    ],
-    "risks_found": [
-      "次期業績予想で営業利益19.7%減の見通し",
-      "配当が前期11.5円から今期10円への減配予想"
-    ],
-    "score_adjustment": -1,
-    "add_badges": [
-      {
-        "badge": "⬆️上方修正",
-        "type": "positive"
-      },
-      {
-        "badge": "⚠️減配予想",
-        "type": "negative"
-      }
-    ],
-    "ir_comment": "<cite index=\"13-1,13-2\">2025年3月期は売上高227億8900万円（前年同期比5.5％増）、営業利益7億4600万円（同54.5％増）の大幅増益を達成。2026年3月期は売上高235億円、営業利益6億円を見込む。</cite><cite index=\"20-4\">配当は前期11.5円から今期10円予想。</cite>",
-    "review_note": "<cite index=\"13-1\">前期の大幅増益は評価されるが、来期業績・配当ともに減少予想がネガティブ要因。</cite>",
-    "source_urls": [
-      "https://www.toso.co.jp/ir/",
-      "https://www.nikkei.com/nkd/disclosure/tdnr/20250509538717/",
-      "https://online.ibnewsnet.com/sp/gy250513-02.html"
-    ],
-    "reviewed_at": "2026-04-30"
+    "reviewed_at": "2026-05-18"
   },
   "6743": {
     "review_status": "positive",
     "catalysts_found": [
-      "2024年5月16日に自社株買い実施（上限179万株、12億4500万円）",
-      "2025年5月15日に増配発表（期末配当12円→15円、3円増配）",
-      "2025年11月7日に2026年3月期業績予想修正（上方修正）及び増配発表",
-      "PBR改善を目指す中期経営計画PLAN2026策定（2025年6月3日）"
+      "自社株買い実施（2024年5月-9月、8億525万円）",
+      "配当増額（2025年3月期12円→15円、2026年3月期25円予想）",
+      "業績上方修正（2026年3月期経常利益上方修正）",
+      "中期経営計画「PLAN2026」によるPBR改善・成長戦略"
     ],
     "risks_found": [],
-    "score_adjustment": 10,
+    "score_adjustment": 12,
     "add_badges": [
       "⬆️自社株買い",
       "⬆️増配発表",
       "⬆️上方修正",
       "⬆️還元強化"
     ],
-    "ir_comment": "<cite index=\"2-1,11-1,12-1,15-2,20-1,21-2,33-2,34-3,34-4\">大同信号は2024年5月に179万株（12億4500万円上限）の自社株買いを実施し、8億525万円を取得。2025年5月と11月に2回連続増配を発表、配当予想を15円に上方修正。2025年6月にPBR改善を目指すPLAN2026を策定し、業績連動株主還元と政策保有株式縮減を実施。ROE向上とPBR1倍達成を目標とする資本効率改善施策を推進中。</cite>",
-    "review_note": "<cite index=\"2-1,11-1,12-1,15-2\">複数のカタリストが揃う。自社株買い実施・2回の増配・上方修正・PBR改善施策により株主還元強化が鮮明。</cite>",
+    "ir_comment": "大同信号は複数のポジティブな材料を発表している。2024年に8億525万円の自社株買いを実施し、2025年3月期に増配（12円→15円）、2026年3月期も25円への配当増額を予想。また、2025年11月に2026年3月期業績上方修正を発表し、中期経営計画「PLAN2026」でPBR改善と資本効率向上に取り組んでいる。第3四半期決算も増収増益で堅調な業績を維持している。",
+    "review_note": "自社株買い、連続増配、上方修正、中計でのPBR改善対応など複数のカタリストが揃っており、株主還元強化の姿勢が明確",
     "source_urls": [
       "https://irbank.net/E01816/reports",
-      "https://irbank.net/E01816/dividend",
-      "https://www.daido-signal.co.jp/financial/disclosure.html",
-      "https://www.daido-signal.co.jp/assets/image/news/pdf/daido_news_20250603.pdf"
+      "https://irbank.net/E01816/buyback",
+      "https://www.daido-signal.co.jp/financial/file/daido_ir_20250627-3.pdf",
+      "https://irbank.net/E01816/dividend"
     ],
-    "reviewed_at": "2026-04-30"
+    "reviewed_at": "2026-05-18"
   },
   "7538": {
     "review_status": "neutral",
@@ -412,17 +378,21 @@
   "9867": {
     "review_status": "neutral",
     "catalysts_found": [],
-    "risks_found": [],
-    "score_adjustment": 0,
-    "add_badges": [],
-    "ir_comment": "2026年3月期第2四半期は売上高140億円（前年同期比+9.8%）、営業利益9.6億円（同+56.1%）の大幅増益。IT投資需要拡大やWindows 10更新需要が寄与。通期予想は増収増益を維持。特別配当は15円から通期予想では廃止見込み。",
-    "review_note": "業績は堅調も、東証PBR改善要請下で株主還元強化策の具体的発表はなし。投資単位引下げ検討を表明。",
-    "source_urls": [
-      "https://finance.yahoo.co.jp/quote/9867.T",
-      "https://www.solekia.com/news/",
-      "https://irbank.net/E02718/dividend"
+    "risks_found": [
+      "配当減額（特別配当廃止）"
     ],
-    "reviewed_at": "2026-04-30"
+    "score_adjustment": -5,
+    "add_badges": [
+      "⚠️一過性"
+    ],
+    "ir_comment": "2026年3月期第3四半期決算では、売上高291億円（前期比3.8％増）、営業利益19億1,000万円（同10.6％増）と増収増益予想を維持。ただし配当は50円（普通配当のみ）に減額予定で、前期の特別配当15円分が廃止される。自己資本比率は53.1％に改善し、財務は健全。",
+    "review_note": "通期業績予想は順調も、特別配当廃止により実質減配となるため軽微なリスク要因と判断",
+    "source_urls": [
+      "https://finance.yahoo.co.jp/quote/9867.T/financials",
+      "https://www.solekia.com/ir/",
+      "https://irbank.net/E02718"
+    ],
+    "reviewed_at": "2026-05-18"
   },
   "5757": {
     "review_status": "negative",
@@ -472,26 +442,26 @@
     "reviewed_at": "2026-05-11"
   },
   "5697": {
-    "review_status": "positive",
+    "review_status": "negative",
     "catalysts_found": [
-      "上方修正（通期経常利益4％増益に修正）",
-      "増配発表（配当2円増額）",
-      "PBR改善対応発表"
+      "資本コストや株価を意識した経営の実現に向けた対応を発表"
     ],
-    "risks_found": [],
-    "score_adjustment": 7,
+    "risks_found": [
+      "2026年3月期の配当予想で減配（22円→20円）",
+      "通期業績予想で減益見込み（営業利益4.3％減、経常利益6.3％減、純利益9.1％減）"
+    ],
+    "score_adjustment": -6,
     "add_badges": [
-      "⬆️上方修正",
-      "⬆️増配発表",
-      "⬆️還元強化"
+      "⬆️還元強化",
+      "⚠️減配"
     ],
-    "ir_comment": "2025年2月に通期経常利益を4％増益に上方修正し、配当も2円増額を発表。第3四半期は売上高5.0％増、営業利益26.4％増と好調な業績を達成。また、資本コストや株価を意識した経営対応も公表している。",
-    "review_note": "業績上方修正・増配・PBR改善対応と好材料が揃っており、株主還元強化の姿勢が明確",
+    "ir_comment": "<cite index=\"31-1\">資本コストや株価を意識した経営の実現に向けた対応に関するお知らせを発表</cite>した一方で、<cite index=\"15-1\">2026年3月期の配当予想は期末配当金を1株当たり20円とし、前期の22円から2円の減配</cite>となった。<cite index=\"15-1\">通期業績予想では増収減益を見込み、営業利益6.4億円（前期比4.3％減）、経常利益6.8億円（前期比6.3％減）、純利益4.1億円（前期比9.1％減）</cite>を予想している。",
+    "review_note": "PBR改善対応を発表したが減配と減益予想でマイナス要因が上回る",
     "source_urls": [
       "https://irbank.net/5697/ir",
-      "https://finance.yahoo.co.jp/quote/5697.T"
+      "https://finance.yahoo.co.jp/quote/5697.T/financials"
     ],
-    "reviewed_at": "2026-04-30"
+    "reviewed_at": "2026-05-18"
   },
   "7235": {
     "review_status": "neutral",
@@ -621,52 +591,49 @@
   "8860": {
     "review_status": "negative",
     "catalysts_found": [
-      "2024年5月2日に増配発表。2024年3月期配当は前年比増配となり、配当利回りは改善",
-      "2025年3月期決算で営業利益72.64億円と過去最高益達成、前期比15.6%増"
+      "2025年5月発表の中期経営計画による成長戦略",
+      "累進的配当政策による配当維持方針"
     ],
     "risks_found": [
-      "ヘイトハラスメント訴訟で2022年9月に最高裁で敗訴確定。会社と会長に132万円の損害賠償命令と差別文書の配布差止めが確定",
-      "2013年頃から継続的に民族差別的文書を全従業員に配布していたことが司法で認定され、企業コンプライアンス上の重大なリスク",
-      "ブルーリボン訴訟でも敗訴（2024年1月）し、訴訟リスクが継続"
+      "2026年4月業績予想下方修正（減益予想）",
+      "ヘイトハラスメント訴訟における最高裁確定判決"
     ],
-    "score_adjustment": -8,
+    "score_adjustment": -3,
     "add_badges": [
-      "⬆️増配発表",
-      "⚠️不祥事"
+      "⚠️下方修正"
     ],
-    "ir_comment": "<cite index=\"11-5,26-5\">2025年3月期決算で営業利益は前期比15.6%増の72.64億円で過去最高益を達成</cite>。<cite index=\"21-1,22-1\">2024年5月2日に剰余金の配当（増配）を発表</cite>。<cite index=\"9-2,28-1\">2026年3月期第1四半期も売上高371.11億円（前年同期比20.9%増）、営業利益25.18億円（同12.0%増）と好調</cite>。一方、<cite index=\"33-1,33-3,37-2\">ヘイトハラスメント訴訟で2022年9月に最高裁で敗訴が確定し、132万円の損害賠償と差別文書配布差止めが命じられた</cite>重大なコンプライアンス問題が存在。",
-    "review_note": "業績は好調で増配も実施しているが、ヘイトハラスメント訴訟敗訴という深刻なESGリスクが株価に長期的な悪影響を与える可能性",
+    "ir_comment": "<cite index=\"16-1,19-1\">2026年4月に業績予想を下方修正し、通期で減益を見込んでいます。</cite> 一方で、<cite index=\"22-1\">累進的配当政策により減配なしの方針を維持しています。</cite> <cite index=\"26-1\">2025年5月発表の中期経営計画では売上・利益ともに前計画を上回る結果となり、収益構造の強化を目指しています。</cite>",
+    "review_note": "<cite index=\"16-1,31-1\">2026年4月の下方修正により減益予想となったが、</cite> <cite index=\"26-1\">中計では成長戦略を打ち出している。</cite>",
     "source_urls": [
-      "https://irbank.net/8860/140120240502581305",
-      "https://www.nikkei.com/article/DGXZQOUF0965H0Z00C22A9000000/",
-      "https://www.kitaosaka-law.gr.jp/post-info/%E3%83%95%E3%82%B8%E4%BD%8F%E5%AE%85%E3%83%98%E3%82%A4%E3%83%88%E3%83%8F%E3%83%A9%E3%82%B9%E3%83%A1%E3%83%B3%E3%83%88%E8%A3%81%E5%88%A4%E3%83%BB%E6%9C%80%E9%AB%98%E8%A3%81%E3%81%A7%E5%8E%9F%E5%91%8A/",
-      "https://finance.yahoo.co.jp/quote/8860.T/financials"
+      "https://www.fuji-jutaku.co.jp/ir/",
+      "https://www.fuji-jutaku.co.jp/assets/dl/ir/strategy/plan/plan2026-2028.pdf",
+      "https://finance.biggo.jp/news/jpx_tdnet_140120260414503239"
     ],
-    "reviewed_at": "2026-04-27"
+    "reviewed_at": "2026-05-18"
   },
   "8747": {
-    "review_status": "positive",
+    "review_status": "negative",
     "catalysts_found": [
-      "大幅増収増益（営業収益90.75億円・前年同期比56.5%増、経常利益46.44億円・前年同期比170.0%増）",
-      "18期ぶりの売上高過去最高更新",
-      "連続での経常利益・最終利益過去最高更新"
+      "第3四半期大幅増収増益（営業収益56.5%増、経常利益170.0%増）",
+      "受入手数料55.4%増と好調"
     ],
     "risks_found": [
-      "自己資本比率の大幅低下（5.1%まで低下、財務健全性への懸念）",
-      "過去の訴訟リスク（説明義務違反等で損害賠償責任が発生した過去の判例）"
+      "第1四半期減収減益（営業収益22.8%減、経常利益27.6%減）",
+      "自己資本比率5.1%まで低下（財務健全性の懸念）",
+      "商品・金融デリバティブ取引の総売買高減少"
     ],
-    "score_adjustment": 3,
+    "score_adjustment": -3,
     "add_badges": [
-      "⬆️上方修正"
+      "⚠️財務悪化"
     ],
-    "ir_comment": "<cite index=\"2-2,7-2\">2026年2月6日発表の第3四半期決算で営業収益90.75億円（前年同期比56.5%増）、経常利益46.44億円（前年同期比170.0%増）と大幅増収増益。18期ぶりの売上高過去最高更新を達成</cite>。<cite index=\"2-2\">一方で自己資本比率は5.1%に低下しており財務健全性への注意が必要</cite>。",
-    "review_note": "過去最高業績更新も自己資本比率低下と過去の訴訟リスクに要注意",
+    "ir_comment": "第3四半期は大幅増収増益を達成し受入手数料が好調だったが、第1四半期は減収減益で、自己資本比率が5.1%まで低下し財務健全性に懸念。商品・金融デリバティブ取引の総売買高減少も業績の変動性を示唆。",
+    "review_note": "業績は好調だが自己資本比率の大幅低下により財務リスクが顕在化。証券業の特性上変動性も高く注意が必要。",
     "source_urls": [
       "https://finance.yahoo.co.jp/quote/8747.T",
-      "https://minkabu.jp/stock/8747/settlement",
-      "https://clnn.org/cln/29103"
+      "https://finance.yahoo.co.jp/quote/8747.T/financials",
+      "https://www.nikkei.com/nkd/disclosure/tdnr/20260129541326/"
     ],
-    "reviewed_at": "2026-04-27"
+    "reviewed_at": "2026-05-18"
   },
   "8150": {
     "review_status": "positive",
@@ -738,5 +705,75 @@
     "review_note": "IR審査エラー: Expecting value: line 11 column 23 (char 265)",
     "source_urls": [],
     "reviewed_at": "2026-05-11"
+  },
+  "8914": {
+    "review_status": "negative",
+    "catalysts_found": [
+      "配当性向目安を30%から35%に変更し中間配当開始",
+      "2024年12月期期末配当増配（6円増配）",
+      "2025年12月期も3.5円の増配予定"
+    ],
+    "risks_found": [
+      "2025年9月に95万株の売出し実施（希薄化リスク）"
+    ],
+    "score_adjustment": -2,
+    "add_badges": [
+      "⬆️増配発表",
+      "⚠️希薄化"
+    ],
+    "ir_comment": "エリアリンクは2024年12月期に配当性向目安を30%から35%に引き上げ、中間配当を開始し年44.5円（6円増）に増配。2025年12月期も48円への増配を予定。一方、2025年9月に林会長による95万株の売出しが実施されたことで株式希薄化の影響が懸念される。業績は好調で3Q経常利益が17.14%増と堅調な成長を維持している。",
+    "review_note": "増配施策は評価されるが、大型売出しによる希薄化リスクがマイナス要因として現在の株価に影響している状況。",
+    "source_urls": [
+      "https://irbank.net/8914/ir",
+      "https://finance.yahoo.co.jp/news/detail/ddd20f4487af08d2c25f7cad96f7d6fa00b29079",
+      "https://moneyworld.jp/news/PNU2033_ainews"
+    ],
+    "reviewed_at": "2026-05-18"
+  },
+  "5753": {
+    "review_status": "negative",
+    "catalysts_found": [],
+    "risks_found": [
+      "営業利益47.6%減の減益",
+      "通期業績予想で営業利益36.3%減の見込み",
+      "デリバティブ取引の影響による業績悪化"
+    ],
+    "score_adjustment": -5,
+    "add_badges": [
+      "⚠️一過性"
+    ],
+    "ir_comment": "<cite index=\"11-1\">日本伸銅の第1四半期は売上高12.7%増も営業利益47.6%減の3億2,100万円と大幅減益</cite>。<cite index=\"11-1\">通期では営業利益36.3%減の11億7,000万円を見込む</cite>。<cite index=\"11-1\">デリバティブ取引の影響で経常利益と四半期純利益は改善したものの、本業の収益性悪化が懸念</cite>される。",
+    "review_note": "<cite index=\"11-1\">売上増も営業利益大幅減益、通期も大幅減益見通し</cite>。一過性要因による影響大。",
+    "source_urls": [
+      "https://finance.yahoo.co.jp/quote/5753.T/financials",
+      "https://www.nippon-shindo.co.jp/stockinform/",
+      "https://finance.yahoo.co.jp/quote/5753.T"
+    ],
+    "reviewed_at": "2026-05-18"
+  },
+  "8138": {
+    "review_status": "positive",
+    "catalysts_found": [
+      "自社株買い実施（2025年2月）",
+      "増配予定の発表",
+      "業績上方修正（経常利益5.5億円→5.7億円）",
+      "1Q経常利益31％増益"
+    ],
+    "risks_found": [],
+    "score_adjustment": 8,
+    "add_badges": [
+      "⬆️自社株買い",
+      "⬆️増配発表",
+      "⬆️上方修正"
+    ],
+    "ir_comment": "2024年度は業績好調で1Q経常利益が31％増益。通期予想も5.5億円から5.7億円に上方修正。2025年2月に自社株買いを実施し、増配も予定。政策保有株売却益やコスト適正化が寄与し、自己資本比率も改善。",
+    "review_note": "自社株買い、上方修正、増配予定と複数のポジティブ要素が重なる状況。業績改善と株主還元強化が評価される。",
+    "source_urls": [
+      "https://irbank.net/8138",
+      "https://minkabu.jp/stock/8138/news",
+      "https://finance.yahoo.co.jp/quote/8138.T",
+      "https://minkabu.jp/stock/8138/settlement"
+    ],
+    "reviewed_at": "2026-05-18"
   }
 }

@@ -1319,6 +1319,46 @@
       "stock_price": 2190,
       "theoretical_price": 7873,
       "upside_percent": 259.5
+    },
+    {
+      "date": "2026-05-19",
+      "code": "9867",
+      "name": "SOLEKIA LIMITED",
+      "tab": "general",
+      "score": 61,
+      "stock_price": 10100,
+      "theoretical_price": 23525,
+      "upside_percent": 132.9
+    },
+    {
+      "date": "2026-05-19",
+      "code": "8891",
+      "name": "AMG HOLDINGS CO LTD",
+      "tab": "finance",
+      "score": 65,
+      "stock_price": 1754,
+      "theoretical_price": 6024,
+      "upside_percent": 243.4
+    },
+    {
+      "date": "2026-05-19",
+      "code": "5280",
+      "name": "YOSHICON CO LTD",
+      "tab": "finance",
+      "score": 61,
+      "stock_price": 2193,
+      "theoretical_price": 7874,
+      "upside_percent": 259.1
+    },
+    {
+      "date": "2026-05-19",
+      "code": "8881",
+      "name": "NISSHIN GROUP HLDGS CO LTD",
+      "tab": "finance",
+      "score": 61,
+      "stock_price": 658,
+      "theoretical_price": 1875,
+      "upside_percent": 185.0
     }
   ]
 }
