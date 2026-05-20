@@ -1399,6 +1399,36 @@
       "stock_price": 660,
       "theoretical_price": 1875,
       "upside_percent": 184.1
+    },
+    {
+      "date": "2026-05-21",
+      "code": "8891",
+      "name": "AMG HOLDINGS CO LTD",
+      "tab": "finance",
+      "score": 65,
+      "stock_price": 1736,
+      "theoretical_price": 6024,
+      "upside_percent": 247.0
+    },
+    {
+      "date": "2026-05-21",
+      "code": "5280",
+      "name": "YOSHICON CO LTD",
+      "tab": "finance",
+      "score": 61,
+      "stock_price": 2161,
+      "theoretical_price": 7873,
+      "upside_percent": 264.3
+    },
+    {
+      "date": "2026-05-21",
+      "code": "8881",
+      "name": "NISSHIN GROUP HLDGS CO LTD",
+      "tab": "finance",
+      "score": 61,
+      "stock_price": 644,
+      "theoretical_price": 1875,
+      "upside_percent": 191.2
     }
   ]
 }
