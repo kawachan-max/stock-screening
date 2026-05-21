@@ -1,14 +1,28 @@
 {
   "6149": {
-    "review_status": "neutral",
-    "catalysts_found": [],
-    "risks_found": [],
-    "score_adjustment": 0,
-    "add_badges": [],
-    "ir_comment": "",
-    "review_note": "IR審査エラー: Error code: 529 - {'type': 'error', 'error': {'typ",
-    "source_urls": [],
-    "reviewed_at": "2026-04-13"
+    "review_status": "positive",
+    "catalysts_found": [
+      "大幅増益で業績好転（2025年上期売上高181.2億円、営業利益30.5億円と前年比162%増）",
+      "配当増額実施（2025年12月期配当70円で年間配当増加）",
+      "中期経営計画（2024-2026年）の売上目標180億円に対し進捗良好"
+    ],
+    "risks_found": [
+      "案件検収タイミングによる売上変動リスク",
+      "xEV市場投資動向による需要変動リスク",
+      "海外売上比率の高さによる為替・地政学リスク"
+    ],
+    "score_adjustment": 4,
+    "add_badges": [
+      "⬆️増配発表"
+    ],
+    "ir_comment": "<cite index=\"14-1\">2025年12月期の配当は70円（前期50円から増配）</cite>を決定。<cite index=\"11-1\">売上高182.38億円（前期比38.4%増）、営業利益30.51億円（同162.2%増）</cite>と大幅な業績改善を達成。<cite index=\"24-1\">中期経営計画（2024-2026年）で売上高180億円、営業利益18億円を目標</cite>に設定し、順調に進捗している。",
+    "review_note": "2025年は大型案件の反動と消耗品・改造案件の好調で大幅増益。増配も実施し株主還元強化。中期計画の進捗も良好でポジティブ要因が多い。",
+    "source_urls": [
+      "https://odawara-eng.co.jp/wp-content/uploads/2026/02/20260213_1.pdf",
+      "https://odawara-eng.co.jp/irinfo/disclosed/",
+      "https://www.buffett-code.com/company/6149/"
+    ],
+    "reviewed_at": "2026-05-21"
   },
   "8152": {
     "review_status": "positive",
@@ -476,22 +490,34 @@
   },
   "8904": {
     "review_status": "negative",
-    "catalysts_found": [],
+    "catalysts_found": [
+      "新中期経営計画2028策定（ROE・PBR改善戦略含む）"
+    ],
     "risks_found": [
-      "業績下方修正"
+      "2025年4月業績大幅下方修正（経常利益45%下方修正）",
+      "戸建住宅事業の不振継続（愛知県の市中在庫過剰）",
+      "第3四半期営業利益1.71億円赤字（前年同期比）"
     ],
     "score_adjustment": -7,
     "add_badges": [
-      "⚠️下方修正"
+      {
+        "text": "⚠️下方修正",
+        "type": "negative"
+      },
+      {
+        "text": "⬆️還元強化",
+        "type": "positive"
+      }
     ],
-    "ir_comment": "2025年4月11日に連結経常利益を20億円から11億円に45%下方修正を発表。戸建住宅市場の低迷が長期化し、特に愛知県の市中在庫過剰が影響。第3四半期は黒字転換したものの、通期では当初計画を大幅下回る見通し。",
-    "review_note": "大幅下方修正により投資家心理が悪化。主力の戸建住宅事業の低迷が継続している。",
+    "ir_comment": "<cite index=\"22-1\">25年8月期の連結経常利益を従来予想の20億円→11億円に45.0％下方修正</cite>し増益率が大幅縮小。<cite index=\"25-1\">「中期経営計画2028」を策定し、「収益性の改善」と「売上・利益の成長回帰」を図る事業戦略と「ＲＯＥ及びＰＢＲの改善」を図る財務戦略</cite>を発表したが、<cite index=\"22-1\">愛知県の市中在庫が過剰な状況が長期化</cite>し主力の戸建住宅事業が苦戦継続。",
+    "review_note": "業績下方修正の影響大きいが、新中期計画でのPBR改善戦略は評価ポイント。戸建住宅市場の回復遅れが懸念。",
     "source_urls": [
       "https://kabutan.jp/news/?b=k202504110046",
-      "https://finance.yahoo.co.jp/quote/8904.T/financials",
+      "https://www.daiwair.co.jp/td_download.cgi?c=8904&i=3082899",
+      "https://www.buffett-code.com/company/8904/",
       "https://irbank.net/8904/ir"
     ],
-    "reviewed_at": "2026-05-04"
+    "reviewed_at": "2026-05-21"
   },
   "3477": {
     "review_status": "positive",
@@ -567,26 +593,25 @@
   "2449": {
     "review_status": "positive",
     "catalysts_found": [
-      "増配発表",
-      "中期成長戦略",
-      "業績好調"
+      "増配発表（40円→41円）",
+      "業績予想上回り",
+      "累進配当導入・株主還元強化",
+      "中計発表（2027年売上100億円目標）"
     ],
-    "risks_found": [
-      "海外事業減収"
-    ],
-    "score_adjustment": 3,
+    "risks_found": [],
+    "score_adjustment": 9,
     "add_badges": [
       "⬆️増配発表",
       "⬆️還元強化"
     ],
-    "ir_comment": "2025年8月期決算では<cite index=\"12-2\">売上高7.3%増の73.88億円、営業利益25.4%増の7.18億円と増収増益を達成</cite>。<cite index=\"12-2\">配当は期初予想40円から1円増配の41円とした</cite>。<cite index=\"13-2\">累進配当政策を導入し原則として減配せず配当維持もしくは増配を行う方針</cite>。<cite index=\"13-2\">中期経営計画では2027年8月期に売上高100億円、営業利益11億円を目標</cite>として設定。",
-    "review_note": "増配実施と累進配当政策の導入により株主還元を強化。中期経営計画での成長戦略も明確で前向きな材料が多い。",
+    "ir_comment": "2025年8月期は売上高73.9億円（+7.3％）、営業利益7.2億円（+25.4％）の増収増益。利益が予想上回りで1円増配実施。累進配当導入で株主還元強化を表明。中期経営計画で2027年売上100億円目標設定。",
+    "review_note": "増配と累進配当導入、業績好調で株主還元姿勢が評価される",
     "source_urls": [
       "https://www.bridge-salon.jp/report_bridge/archives/2025/11/251117_2449.html",
       "https://www.prapgroup.com/ir/stock_bond/dividends.html",
-      "https://irbank.net/E05498/pl"
+      "https://www.prapgroup.com/ir/upload_file/m003-m003_01/20251023_FY25Q4.pdf"
     ],
-    "reviewed_at": "2026-04-27"
+    "reviewed_at": "2026-05-21"
   },
   "8860": {
     "review_status": "negative",
@@ -775,5 +800,20 @@
       "https://minkabu.jp/stock/8138/settlement"
     ],
     "reviewed_at": "2026-05-18"
+  },
+  "4624": {
+    "review_status": "neutral",
+    "catalysts_found": [],
+    "risks_found": [],
+    "score_adjustment": 0,
+    "add_badges": [],
+    "ir_comment": "<cite index=\"3-2,11-1,15-1\">2024年11月6日に2025年3月期第2四半期決算短信を発表。配当利回りは1.7%程度で維持されている。</cite><cite index=\"22-1\">予想経常利益は850百万円で増益率12.6%となっている。</cite><cite index=\"5-1\">原材料価格、エネルギー価格、物流コスト、人件費上昇への対処として、生産効率化・業務効率化、販売シェア・販売数量の維持、不急コスト抑制により収益確保を目指す方針。</cite>",
+    "review_note": "直近半年で特に大きなIRカタリストやリスクファクターは確認されず。経常利益増益見通しは維持も、コスト上昇圧力への対応が課題。",
+    "source_urls": [
+      "https://www.isamu.co.jp/",
+      "https://irbank.net/4624",
+      "https://kabuyoho.jp/reportDps?bcode=4624"
+    ],
+    "reviewed_at": "2026-05-21"
   }
 }
