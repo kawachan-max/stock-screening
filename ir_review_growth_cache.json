@@ -225,29 +225,27 @@
   "3388": {
     "review_status": "positive",
     "catalysts_found": [
-      "増配発表（88円へ28円増配）",
-      "業績上方修正（営業利益40.2%増、通期営業利益13.2%増見込み）"
+      "第1四半期連結経常利益前年同期比3.3倍の6.1億円に急拡大（2025年7月31日発表）",
+      "営業利益5.35億円（前年同期比1080.0％増）という大幅増益を記録",
+      "自己資本比率が63.4％から67.0％へ上昇",
+      "配当性向30％を目処とした安定配当方針を継続"
     ],
-    "risks_found": [],
-    "score_adjustment": 7,
+    "risks_found": [
+      "自動車業界の投資抑制影響により売上高は前年同期比2.9％減",
+      "PBR0.71倍と1倍割れの状態が継続"
+    ],
+    "score_adjustment": 4,
     "add_badges": [
-      {
-        "text": "⬆️増配発表",
-        "sentiment": "positive"
-      },
-      {
-        "text": "⬆️上方修正",
-        "sentiment": "positive"
-      }
+      "⬆️上方修正"
     ],
-    "ir_comment": "2026年3月期第3四半期決算で売上高1.4%増、営業利益40.2%増と増収増益。半導体・物流関連需要が底堅く推移し、生産性向上による収益改善が奏功。通期は売上高4.9%増、営業利益13.2%増を予想し、年間配当も前期比28円増の88円へ大幅増配予定。",
-    "review_note": "大幅増配（前期比+47%）と営業利益の大幅改善（Q3累計40.2%増）が株価上昇の主要カタリスト。",
+    "ir_comment": "<cite index=\"20-1,26-1\">第1四半期決算で経常利益が前年同期比3.3倍の6.1億円に急拡大し、営業利益率も0.3％から3.2％に大幅改善。次世代モビリティ開発向け投資や半導体・物流関連需要増大、円安傾向による海外売上利益増加が寄与。自己資本比率も67.0％に上昇し財務基盤が強化された。</cite>",
+    "review_note": "<cite index=\"20-1\">第1四半期で大幅増益を実現したが、自動車業界投資抑制の影響で売上減少リスクもある。</cite>",
     "source_urls": [
-      "https://finance.yahoo.co.jp/quote/3388.T/financials",
-      "https://www.meijidenki.co.jp/ja/ir.html",
-      "https://irbank.net/E02992/dividend"
+      "https://www.meijidenki.co.jp/ja/ir/library.html",
+      "https://kabutan.jp/news/?b=k202507310167",
+      "https://finance.yahoo.co.jp/quote/3388.T/financials"
     ],
-    "reviewed_at": "2026-04-30"
+    "reviewed_at": "2026-05-25"
   },
   "8699": {
     "review_status": "negative",
@@ -542,19 +540,28 @@
     "reviewed_at": "2026-04-16"
   },
   "7434": {
-    "review_status": "neutral",
-    "catalysts_found": [],
-    "risks_found": [],
-    "score_adjustment": 0,
-    "add_badges": [],
-    "ir_comment": "2025年7月に2025年5月期決算を発表し、<cite index=\"15-1\">経常損益は1,212百万円で事前予想値1,150百万円を5.4%上回る</cite>結果となった。<cite index=\"34-1\">自己株式立会外買付取引による自己株式の取得</cite>を10月に実施したが、これは<cite index=\"29-1,35-3\">譲渡制限付株式報酬</cite>用の処分に関連するもので株主還元目的ではない。配管資材卸売業として安定した事業基盤を持つ。",
-    "review_note": "決算は若干の上振れを示したが、大幅な業績上方修正や株主還元強化等の明確なカタリストは確認できず",
-    "source_urls": [
-      "https://kabuyoho.jp/reportTop?bcode=7434",
-      "https://web.fisco.jp/platform/companies/0743400",
-      "https://www.nikkei.com/nkd/disclosure/tdnr/20251024578299/"
+    "review_status": "positive",
+    "catalysts_found": [
+      "業績上方修正（2025年5月期）",
+      "2Q大幅増収増益（売上8.0%増、営業益21.3%増）",
+      "投資需要回復による業績改善"
     ],
-    "reviewed_at": "2026-05-04"
+    "risks_found": [
+      "人件費・原材料価格上昇",
+      "今後の利益伸び率鈍化"
+    ],
+    "score_adjustment": 4,
+    "add_badges": [
+      "⬆️上方修正"
+    ],
+    "ir_comment": "2026年5月期第2四半期は大幅な増収増益を達成し、前期も予想を上回る業績で着地。投資需要の回復が業績を牽引している一方、コスト上昇が懸念材料。",
+    "review_note": "業績上方修正と2Q好調な決算で株価にプラス材料。ただし今後の利益成長ペース鈍化見込み。",
+    "source_urls": [
+      "https://finance.yahoo.co.jp/quote/7434.T",
+      "https://kabuyoho.jp/reportTop?bcode=7434",
+      "https://www.ullet.com/7434.html"
+    ],
+    "reviewed_at": "2026-05-25"
   },
   "8147": {
     "review_status": "neutral",
@@ -815,5 +822,16 @@
       "https://kabuyoho.jp/reportDps?bcode=4624"
     ],
     "reviewed_at": "2026-05-21"
+  },
+  "8864": {
+    "review_status": "neutral",
+    "catalysts_found": [],
+    "risks_found": [],
+    "score_adjustment": 0,
+    "add_badges": [],
+    "ir_comment": "",
+    "review_note": "IR審査エラー: Expecting value: line 13 column 23 (char 322)",
+    "source_urls": [],
+    "reviewed_at": "2026-05-25"
   }
 }

@@ -1509,6 +1509,26 @@
       "stock_price": 655,
       "theoretical_price": 1876,
       "upside_percent": 186.3
+    },
+    {
+      "date": "2026-05-26",
+      "code": "8891",
+      "name": "AMG HOLDINGS CO LTD",
+      "tab": "finance",
+      "score": 66,
+      "stock_price": 1762,
+      "theoretical_price": 6024,
+      "upside_percent": 241.9
+    },
+    {
+      "date": "2026-05-26",
+      "code": "8881",
+      "name": "NISSHIN GROUP HLDGS CO LTD",
+      "tab": "finance",
+      "score": 61,
+      "stock_price": 644,
+      "theoretical_price": 1876,
+      "upside_percent": 191.2
     }
   ]
 }
