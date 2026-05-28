@@ -431,27 +431,23 @@
     "reviewed_at": "2026-04-13"
   },
   "6497": {
-    "review_status": "negative",
-    "catalysts_found": [],
-    "risks_found": [
-      "独占禁止法違反による課徴金4億5千4百万円の納付",
-      "公正取引委員会からの排除措置命令・課徴金納付命令",
-      "取締役に対する損害賠償請求訴訟の提起",
-      "前年同期比純利益56.4%減益（特別損失の影響）"
+    "review_status": "positive",
+    "catalysts_found": [
+      "増配発表"
     ],
-    "score_adjustment": -12,
+    "risks_found": [],
+    "score_adjustment": 3,
     "add_badges": [
-      "⚠️不祥事",
-      "⚠️一過性"
+      "⬆️増配発表"
     ],
-    "ir_comment": "ハマイは<cite index=\"22-1\">2024年6月に公正取引委員会から独占禁止法違反として排除措置命令及び課徴金納付命令を受け、課徴金額4億5千4百万円を特別損失として計上</cite>した。この影響により<cite index=\"22-1\">親会社株主に帰属する当期純利益は3億9千6百万円、前年同期比5億1千2百万円(56.4%)の減益</cite>となった。また<cite index=\"17-1\">12月27日に取締役に対する損害賠償請求訴訟の提起</cite>も開示されており、コンプライアンス関連リスクが表面化している。",
-    "review_note": "独占禁止法違反による課徴金納付と関連訴訟により、短期的には企業信用リスクが高まっている状況。コンプライアンス体制の再構築が急務。",
+    "ir_comment": "<cite index=\"22-1\">2026年12月期の配当予想は、中間配当20円、期末配当25円の年間45円を予定していて、前期の年間配当40円から増配となる見通しです。</cite>また、<cite index=\"22-1\">2026年12月期の連結業績予想は、売上高131億円（前期比3.0%増）、営業利益12.5億円（同2.2%増）を見込んでおり</cite>、緩やかな増収増益予想を発表しています。",
+    "review_note": "<cite index=\"22-1\">来期配当が年間45円（前期40円から12.5%増配）</cite>と増配を発表し、安定した株主還元姿勢を示しています。",
     "source_urls": [
-      "https://www.buffett-code.com/company/6497/",
-      "https://s.kabutan.jp/stocks/6497/news/",
-      "https://finance.yahoo.co.jp/quote/6497.T/disclosure"
+      "https://finance.yahoo.co.jp/quote/6497.T/dividend",
+      "https://finance.yahoo.co.jp/quote/6497.Q/financials",
+      "https://irbank.net/E01652"
     ],
-    "reviewed_at": "2026-05-11"
+    "reviewed_at": "2026-05-28"
   },
   "5697": {
     "review_status": "negative",
