@@ -516,24 +516,23 @@
   "3477": {
     "review_status": "positive",
     "catalysts_found": [
-      "増配発表（2025年3月13日）：期末配当を17.50円から27.50円に10円増配",
-      "業績上方修正（2025年3月13日）：営業利益600百万円（前期比+129.9%、会社予想比+46.3%）"
+      "業績上方修正（2025年3月期、営業利益+46.3%、経常利益+42.9%、純利益+34.1%）",
+      "増配発表（17.5円→27.5円、+10円の大幅増配）"
     ],
     "risks_found": [],
     "score_adjustment": 7,
     "add_badges": [
-      "⬆️増配発表",
-      "⬆️上方修正"
+      "⬆️上方修正",
+      "⬆️増配発表"
     ],
-    "ir_comment": "2025年3月13日に業績上方修正と10円増配を発表。営業利益は前期比129.9%増の600百万円、会社予想比も46.3%上回る。配当は17.50円から27.50円へ大幅増額。住宅着工漸減や金利上昇リスクがある中でも保守的計画を上回る好業績を達成。",
-    "review_note": "業績上方修正と大幅増配（10円）を同時発表。利益面で想定以上の改善を達成し株主還元も強化。",
+    "ir_comment": "2025年3月13日に業績上方修正と大幅増配を発表。2025年3月期の営業利益は当初予想比46.3%増、経常利益は42.9%増、純利益は34.1%増となった。期末配当も17.5円から27.5円に10円の大幅増配。配当性向20%を目途とする基本方針の下、好業績を株主に還元する姿勢を示している。",
+    "review_note": "業績大幅上方修正と大幅増配により、株主還元強化の姿勢が明確。低価格戸建て住宅事業が好調で収益性向上。",
     "source_urls": [
-      "https://www.nikkei.com/nkd/disclosure/tdnr/20250313592939/",
       "https://moneyworld.jp/news/PFE1820_ainews",
-      "https://irbank.net/E32793/dividend",
-      "https://ir.forlifeand.com/ja/irnews.html"
+      "https://ir.forlifeand.com/ja/irnews.html",
+      "https://irbank.net/E32793/dividend"
     ],
-    "reviewed_at": "2026-04-16"
+    "reviewed_at": "2026-06-01"
   },
   "7434": {
     "review_status": "positive",
@@ -700,28 +699,30 @@
     "reviewed_at": "2026-04-27"
   },
   "3134": {
-    "review_status": "negative",
+    "review_status": "critical",
     "catalysts_found": [
-      "株主還元方針維持（配当性向20％以上維持）",
-      "スピンオフ実施によりコマース事業に特化"
+      "NEスピンオフ実施（コングロマリットディスカウント解消期待）",
+      "株主優待制度の拡充発表"
     ],
     "risks_found": [
-      "NE株式会社のスピンオフによる業績下方修正",
-      "営業利益69.3%減の大幅減益予想",
-      "子会社分離によるスケールメリット減少"
+      "業績大幅下方修正（営業利益69.3%減）",
+      "NE連結除外による業績低下"
     ],
     "score_adjustment": -7,
     "add_badges": [
-      "⚠️下方修正"
+      {
+        "text": "⚠️下方修正",
+        "type": "negative"
+      }
     ],
-    "ir_comment": "<cite index=\"21-1,21-2\">2026年4月期第3四半期はNE株式会社の連結除外により減収減益となり、通期予想は売上高216.73億円(前期比5.3%減)、営業利益7.23億円(同69.3%減)を見込んでいます</cite>。<cite index=\"24-2\">子会社NEのスピンオフ上場に伴い営業利益を29億2000万円から20億7300万円(同11.9%減)へ下方修正</cite>しています。<cite index=\"11-2\">配当方針は配当性向20%以上を維持し、業績連動による利益還元を継続</cite>する方針です。",
-    "review_note": "スピンオフによる収益基盤の分離で業績見通しが大幅に悪化。コマース事業特化によるポジティブ面はあるが、短期的にはネガティブ要素が大きい。",
+    "ir_comment": "<cite index=\"23-1,29-1\">2026年4月期はNE株式会社の連結除外により売上高216.73億円（前期比5.3%減）、営業利益7.23億円（同69.3%減）と大幅減益予想。一方でNE社のスピンオフが2025年11月4日に実施され、コングロマリットディスカウント解消が期待される</cite>。<cite index=\"31-1\">2026年4月期第2四半期末を基準日として子会社株式を現物配当することが決定</cite>。",
+    "review_note": "<cite index=\"23-1\">NE連結除外で見かけ上の大幅減益だが、実態はコマース事業への集中とスピンオフによる企業価値向上期待</cite>。",
     "source_urls": [
+      "https://irbank.net/3134/ir",
       "https://finance.yahoo.co.jp/quote/3134.T",
-      "https://minkabu.jp/news/4343674",
-      "https://gokigen-life.tokyo/3134yutai/"
+      "https://omega-inv.com/ja/wp-content/uploads/sites/2/2025/10/3134Hamee_FY2025Q1_251016final.pdf"
     ],
-    "reviewed_at": "2026-05-11"
+    "reviewed_at": "2026-06-01"
   },
   "6393": {
     "review_status": "neutral",
@@ -829,5 +830,92 @@
     "review_note": "IR審査エラー: Expecting value: line 13 column 23 (char 322)",
     "source_urls": [],
     "reviewed_at": "2026-05-25"
+  },
+  "3236": {
+    "review_status": "positive",
+    "catalysts_found": [
+      "自己株買いの発表（2025年10月20日・11月4日）",
+      "増配発表（2025年7月14日）：前回予想4円から6円に50%増配"
+    ],
+    "risks_found": [],
+    "score_adjustment": 8,
+    "add_badges": [
+      "⬆️自社株買い",
+      "⬆️増配発表"
+    ],
+    "ir_comment": "プロパストは2025年7月に1株当たり配当金を前回予想4円から6円に50%増配を発表。同年10月に自己株買いを決議し、11月に取得を完了。業績は2025年10月期第1四半期で売上高15.08%減・純利益18.68%減となったものの、株主還元を強化している。",
+    "review_note": "増配・自己株買い実施により株主還元強化が確認されたため、総合的にプラス評価",
+    "source_urls": [
+      "https://www.nikkei.com/nkd/disclosure/tdnr/20250714513832/",
+      "https://irbank.net/3236/ir",
+      "https://moneyworld.jp/news/PLB5696_ainews"
+    ],
+    "reviewed_at": "2026-06-01"
+  },
+  "7192": {
+    "review_status": "negative",
+    "catalysts_found": [],
+    "risks_found": [
+      "株主優待廃止（2024年3月で廃止）",
+      "業績下方修正見込み（2026年3月期減収減益予想）"
+    ],
+    "score_adjustment": -3,
+    "add_badges": [
+      "⚠️一過性"
+    ],
+    "ir_comment": "<cite index=\"1-1,5-1\">2024年5月決算発表で営業収益2.94%減、親会社株主に帰属する当期純利益12.75%減となり減収減益。直近2年間で二期連続減収減益傾向が続いている</cite>。<cite index=\"18-1,27-1\">2024年3月分をもって株主優待制度を廃止し、配当等による利益還元に集約</cite>。",
+    "review_note": "減収減益傾向が継続し、住宅ローン市場の低迷が業績に影響している状況",
+    "source_urls": [
+      "https://irbank.net/7192/pl",
+      "https://minkabu.jp/stock/7192/settlement",
+      "https://diamond.jp/zai/articles/-/1013223",
+      "https://finance.yahoo.co.jp/quote/7192.T/dividend"
+    ],
+    "reviewed_at": "2026-06-01"
+  },
+  "5819": {
+    "review_status": "positive",
+    "catalysts_found": [
+      "PBR改善対応・中計成長戦略"
+    ],
+    "risks_found": [],
+    "score_adjustment": 2,
+    "add_badges": [
+      "⬆️還元強化"
+    ],
+    "ir_comment": "2024年10月30日に「資本コストや株価を意識した経営の実現に向けた対応について」を公表。PBR0.63倍と低位でありながら、東証の要請に応じて株主価値向上への取り組みを開示。直近決算では売上高過去最高を更新し、人的資本投資を継続中。",
+    "review_note": "PBR改善対応開示により株主価値向上への意識を明確化。業績は堅調だが今期減益予想を織り込み済み",
+    "source_urls": [
+      "https://www.canare.co.jp/ir/ir_news/",
+      "https://irbank.net/5819",
+      "https://www.canare.co.jp/ir/library/"
+    ],
+    "reviewed_at": "2026-06-01"
+  },
+  "8046": {
+    "review_status": "positive",
+    "catalysts_found": [
+      "業績上方修正：2026年1月30日に第3四半期決算発表と同時に、通期経常利益を21億円から24億円に14.3%上方修正",
+      "増配：2025年3月期に剰余金の配当(増配)を発表",
+      "株主還元強化：資本コストや株価を意識した経営の実現に向けた対応について発表"
+    ],
+    "risks_found": [
+      "配当据え置き：2026年3月期の年間配当金は130円で前期と同額を予定、増配継続せず"
+    ],
+    "score_adjustment": 4,
+    "add_badges": [
+      "⬆️上方修正",
+      "⬆️増配発表",
+      "⬆️還元強化"
+    ],
+    "ir_comment": "2026年1月30日の第3四半期決算で通期経常利益を21億円から24億円に14.3%上方修正。Q3累計経常利益は前年同期比46.1%増の20.7億円に拡大し好調な業績。2025年3月期に増配を実施し、資本コストや株価を意識した経営も推進中。都市再開発や防災・減災関連需要が成長を下支え。",
+    "review_note": "業績好調で上方修正実施。株主還元強化も評価されるが、26年3月期配当は据え置き予定。",
+    "source_urls": [
+      "https://www.mrfj.co.jp/news/settlement-information",
+      "https://irbank.net/8046/140120260129540949",
+      "https://minkabu.jp/stock/8046/settlement",
+      "https://finance.yahoo.co.jp/quote/8046.T/financials"
+    ],
+    "reviewed_at": "2026-06-01"
   }
 }
