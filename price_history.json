@@ -1689,6 +1689,46 @@
       "stock_price": 2152,
       "theoretical_price": 7837,
       "upside_percent": 264.2
+    },
+    {
+      "date": "2026-06-03",
+      "code": "8891",
+      "name": "AMG HOLDINGS CO LTD",
+      "tab": "finance",
+      "score": 66,
+      "stock_price": 1694,
+      "theoretical_price": 6539,
+      "upside_percent": 286.0
+    },
+    {
+      "date": "2026-06-03",
+      "code": "8747",
+      "name": "YUTAKA TRUSTY SECURITIES CO LTD",
+      "tab": "finance",
+      "score": 63,
+      "stock_price": 2149,
+      "theoretical_price": 10627,
+      "upside_percent": 394.5
+    },
+    {
+      "date": "2026-06-03",
+      "code": "8881",
+      "name": "NISSHIN GROUP HLDGS CO LTD",
+      "tab": "finance",
+      "score": 62,
+      "stock_price": 620,
+      "theoretical_price": 1875,
+      "upside_percent": 202.5
+    },
+    {
+      "date": "2026-06-03",
+      "code": "5280",
+      "name": "YOSHICON CO LTD",
+      "tab": "finance",
+      "score": 61,
+      "stock_price": 2109,
+      "theoretical_price": 7785,
+      "upside_percent": 269.1
     }
   ]
 }
