@@ -607,25 +607,23 @@
   "2449": {
     "review_status": "positive",
     "catalysts_found": [
-      "増配発表（40円→41円）",
-      "業績予想上回り",
-      "累進配当導入・株主還元強化",
-      "中計発表（2027年売上100億円目標）"
+      "累進配当導入（2024年10月）",
+      "中期経営計画発表（2025-2027年8月期：売上100億円、営業利益11億円目標）",
+      "各種戦略的業務提携の拡大"
     ],
     "risks_found": [],
-    "score_adjustment": 9,
+    "score_adjustment": 3,
     "add_badges": [
-      "⬆️増配発表",
       "⬆️還元強化"
     ],
-    "ir_comment": "2025年8月期は売上高73.9億円（+7.3％）、営業利益7.2億円（+25.4％）の増収増益。利益が予想上回りで1円増配実施。累進配当導入で株主還元強化を表明。中期経営計画で2027年売上100億円目標設定。",
-    "review_note": "増配と累進配当導入、業績好調で株主還元姿勢が評価される",
+    "ir_comment": "<cite index=\"12-1,14-1\">2024年10月に累進配当を導入し、原則として減配せず配当維持もしくは増配を行う配当政策を発表。</cite><cite index=\"3-1,12-1\">2025年8月期から2027年8月期までの中期経営計画では売上高100億円、営業利益11億円、ROE8.0％以上を目標として設定。</cite><cite index=\"6-1,22-1\">ORIGRESS PARKS、メディコレ、フィナンテック等との戦略的業務提携を相次いで発表し、事業領域を拡大している。</cite>",
+    "review_note": "<cite index=\"12-1\">累進配当導入と中期経営計画による成長戦略が株主還元強化の明確なシグナル。業務提携による事業拡大も評価できる。</cite>",
     "source_urls": [
-      "https://www.bridge-salon.jp/report_bridge/archives/2025/11/251117_2449.html",
-      "https://www.prapgroup.com/ir/stock_bond/dividends.html",
-      "https://www.prapgroup.com/ir/upload_file/m003-m003_01/20251023_FY25Q4.pdf"
+      "https://www.bridge-salon.jp/report_bridge/archives/2024/11/241113_2449.html",
+      "https://kabureturn.jp/housin/2449-h/",
+      "https://www.bridge-salon.jp/report_bridge/archives/2025/11/251117_2449.html"
     ],
-    "reviewed_at": "2026-05-21"
+    "reviewed_at": "2026-06-08"
   },
   "8860": {
     "review_status": "negative",
@@ -772,22 +770,26 @@
     "review_status": "negative",
     "catalysts_found": [],
     "risks_found": [
-      "営業利益47.6%減の減益",
-      "通期業績予想で営業利益36.3%減の見込み",
-      "デリバティブ取引の影響による業績悪化"
+      "デリバティブ損失による経常利益減少",
+      "業績見通し下方修正（営業利益36.3%減予想）",
+      "銅相場変動による収益不安定性"
     ],
-    "score_adjustment": -5,
+    "score_adjustment": -7,
     "add_badges": [
-      "⚠️一過性"
+      {
+        "text": "⚠️一過性",
+        "type": "negative"
+      }
     ],
-    "ir_comment": "<cite index=\"11-1\">日本伸銅の第1四半期は売上高12.7%増も営業利益47.6%減の3億2,100万円と大幅減益</cite>。<cite index=\"11-1\">通期では営業利益36.3%減の11億7,000万円を見込む</cite>。<cite index=\"11-1\">デリバティブ取引の影響で経常利益と四半期純利益は改善したものの、本業の収益性悪化が懸念</cite>される。",
-    "review_note": "<cite index=\"11-1\">売上増も営業利益大幅減益、通期も大幅減益見通し</cite>。一過性要因による影響大。",
+    "ir_comment": "<cite index='21-1'>2026年3月期決算は売上高301億4,500万円（前年同期比15.4％増）、営業利益26億9,400万円（同46.8％増）と増収増益となったが、デリバティブ損失の影響で経常利益と当期純利益は減少</cite>。<cite index='13-1'>通期業績予想は売上高260億円（前期比0.5％減）、営業利益11億7,000万円（同36.3％減）を見込む</cite>。",
+    "review_note": "<cite index='9-1'>銅相場高騰により増収だがデリバティブ損失が発生し、収益性の不安定さが顕著</cite>。直近半年で自社株買いや増配等の株主還元強化発表は確認されず。",
     "source_urls": [
+      "https://finance.yahoo.co.jp/quote/5753.T",
       "https://finance.yahoo.co.jp/quote/5753.T/financials",
-      "https://www.nippon-shindo.co.jp/stockinform/",
-      "https://finance.yahoo.co.jp/quote/5753.T"
+      "https://irbank.net/5753/pl",
+      "https://www.nikkei.com/nkd/company/disclose/?scode=5753"
     ],
-    "reviewed_at": "2026-05-18"
+    "reviewed_at": "2026-06-08"
   },
   "8138": {
     "review_status": "positive",
@@ -812,17 +814,23 @@
   "4624": {
     "review_status": "neutral",
     "catalysts_found": [],
-    "risks_found": [],
-    "score_adjustment": 0,
-    "add_badges": [],
-    "ir_comment": "<cite index=\"3-2,11-1,15-1\">2024年11月6日に2025年3月期第2四半期決算短信を発表。配当利回りは1.7%程度で維持されている。</cite><cite index=\"22-1\">予想経常利益は850百万円で増益率12.6%となっている。</cite><cite index=\"5-1\">原材料価格、エネルギー価格、物流コスト、人件費上昇への対処として、生産効率化・業務効率化、販売シェア・販売数量の維持、不急コスト抑制により収益確保を目指す方針。</cite>",
-    "review_note": "直近半年で特に大きなIRカタリストやリスクファクターは確認されず。経常利益増益見通しは維持も、コスト上昇圧力への対応が課題。",
-    "source_urls": [
-      "https://www.isamu.co.jp/",
-      "https://irbank.net/4624",
-      "https://kabuyoho.jp/reportDps?bcode=4624"
+    "risks_found": [
+      "次期業績予想未定",
+      "原材料価格上昇",
+      "需要反動懸念"
     ],
-    "reviewed_at": "2026-05-21"
+    "score_adjustment": -2,
+    "add_badges": [
+      "⚠️一過性"
+    ],
+    "ir_comment": "2026年3月期決算は営業利益45.9%増の大幅増益を達成し収益性が改善。価格改定効果により増収増益となったが、中東情勢の影響で次期業績予想は未定。買い込み需要の反動や原材料価格上昇等の懸念要因が存在する。",
+    "review_note": "好決算だが一過性要因が強く、次期業績予想未定で先行き不透明",
+    "source_urls": [
+      "https://finance.yahoo.co.jp/quote/4624.T",
+      "https://minkabu.jp/stock/4624",
+      "https://www.isamu.co.jp/ir/"
+    ],
+    "reviewed_at": "2026-06-08"
   },
   "8864": {
     "review_status": "neutral",
@@ -1040,5 +1048,20 @@
       "http://www.showa-paxxs.co.jp/top/ir/"
     ],
     "reviewed_at": "2026-06-04"
+  },
+  "8931": {
+    "review_status": "neutral",
+    "catalysts_found": [],
+    "risks_found": [],
+    "score_adjustment": 0,
+    "add_badges": [],
+    "ir_comment": "2026年2月期は売上高421.44億円（前年比105%）と増収も利益は減少。第3四半期累計では営業利益16%増と回復。配当は70円維持で利回り4.31%。神戸を中心とした分譲マンション「ワコーレ」ブランドで安定経営を継続。",
+    "review_note": "直近半年で目立ったカタリストやリスクファクターは確認されず。業績は回復傾向だが既に織り込み済み。",
+    "source_urls": [
+      "https://irbank.net/8931/ir",
+      "https://finance.yahoo.co.jp/quote/8931.T/dividend",
+      "https://web.fisco.jp/platform/companies/0893100?fm=mj"
+    ],
+    "reviewed_at": "2026-06-08"
   }
 }
