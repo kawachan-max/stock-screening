@@ -25,24 +25,19 @@
     "reviewed_at": "2026-05-21"
   },
   "8152": {
-    "review_status": "positive",
-    "catalysts_found": [
-      "2025年3月期決算で大幅増配（前期70円→100円）を発表",
-      "業績大幅改善（売上高13.9%増、営業利益43.0%増、純利益88.7%増）"
-    ],
+    "review_status": "neutral",
+    "catalysts_found": [],
     "risks_found": [],
-    "score_adjustment": 4,
-    "add_badges": [
-      "⬆️増配発表"
-    ],
-    "ir_comment": "2025年3月期決算で大幅な業績改善を達成。売上高303.6億円（+13.9%）、営業利益25.7億円（+43.0%）、純利益25.8億円（+88.7%）。AI・EV関連、半導体市場回復を背景に主力の高機能材料事業が好調。年間配当を70円から100円へ大幅増配（42.9%増）。政策保有株売却益6.5億円も計上。",
-    "review_note": "業績大幅改善と30円増配（+42.9%）発表。AI・EV関連需要で高機能材料事業好調。筆頭株主ナガツタコーポレーション32.9%保有で安定。",
+    "score_adjustment": 0,
+    "add_badges": [],
+    "ir_comment": "2026年3月期中間決算は経常利益1,262百万円、通期は据え置きで1.5%減益の予想。筆頭株主ナガツタコーポレーションが32.9%保有。投資単位の引下げに関する考え方及び方針等について6月に開示。主要取引先の事業終了があったが特段の業績影響は見られない。",
+    "review_note": "直近半年で特筆すべきカタリスト・リスクは確認されず。中間決算は堅調ながら通期は微減益予想で様子見。",
     "source_urls": [
-      "https://www.somar.co.jp/ir/result/",
-      "https://kessannote.com/company/8152/quarter/081220250313593338",
-      "https://www.buffett-code.com/company/8152/mainshareholder"
+      "https://www.somar.co.jp/ir/",
+      "https://irbank.net/8152/ir",
+      "https://kabuyoho.jp/reportTop?bcode=8152"
     ],
-    "reviewed_at": "2026-05-18"
+    "reviewed_at": "2026-06-11"
   },
   "8917": {
     "review_status": "negative",
@@ -247,29 +242,19 @@
     "reviewed_at": "2026-06-04"
   },
   "3388": {
-    "review_status": "positive",
-    "catalysts_found": [
-      "第1四半期連結経常利益前年同期比3.3倍の6.1億円に急拡大（2025年7月31日発表）",
-      "営業利益5.35億円（前年同期比1080.0％増）という大幅増益を記録",
-      "自己資本比率が63.4％から67.0％へ上昇",
-      "配当性向30％を目処とした安定配当方針を継続"
-    ],
-    "risks_found": [
-      "自動車業界の投資抑制影響により売上高は前年同期比2.9％減",
-      "PBR0.71倍と1倍割れの状態が継続"
-    ],
-    "score_adjustment": 4,
-    "add_badges": [
-      "⬆️上方修正"
-    ],
-    "ir_comment": "<cite index=\"20-1,26-1\">第1四半期決算で経常利益が前年同期比3.3倍の6.1億円に急拡大し、営業利益率も0.3％から3.2％に大幅改善。次世代モビリティ開発向け投資や半導体・物流関連需要増大、円安傾向による海外売上利益増加が寄与。自己資本比率も67.0％に上昇し財務基盤が強化された。</cite>",
-    "review_note": "<cite index=\"20-1\">第1四半期で大幅増益を実現したが、自動車業界投資抑制の影響で売上減少リスクもある。</cite>",
+    "review_status": "neutral",
+    "catalysts_found": [],
+    "risks_found": [],
+    "score_adjustment": 0,
+    "add_badges": [],
+    "ir_comment": "2024年10月に2Q決算発表時に通期業績予想を修正。インド現地法人設立やSTATION Ai入居など海外展開・イノベーション拠点強化を推進。配当性向40%目処の株主還元方針を維持。特段の不祥事やリスクは確認されず。",
+    "review_note": "業績修正があったが詳細不明。海外展開等の成長戦略は推進中。目立ったカタリスト・リスクなし。",
     "source_urls": [
-      "https://www.meijidenki.co.jp/ja/ir/library.html",
-      "https://kabutan.jp/news/?b=k202507310167",
-      "https://finance.yahoo.co.jp/quote/3388.T/financials"
+      "https://irbank.net/3388/ir",
+      "https://www.meijidenki.co.jp/ja/ir/faq.html",
+      "https://www.nikkei.com/nkd/disclosure/tdnr/20241031507572/"
     ],
-    "reviewed_at": "2026-05-25"
+    "reviewed_at": "2026-06-11"
   },
   "8699": {
     "review_status": "negative",
@@ -496,34 +481,25 @@
   },
   "8904": {
     "review_status": "negative",
-    "catalysts_found": [
-      "新中期経営計画2028策定（ROE・PBR改善戦略含む）"
-    ],
+    "catalysts_found": [],
     "risks_found": [
-      "2025年4月業績大幅下方修正（経常利益45%下方修正）",
-      "戸建住宅事業の不振継続（愛知県の市中在庫過剰）",
-      "第3四半期営業利益1.71億円赤字（前年同期比）"
+      "業績下方修正（2025年4月11日に25年8月期の連結経常利益を20億円→11億円に45％下方修正）",
+      "戸建住宅市場の需要低迷（愛知県の市中在庫が過剰な状況が長期化）",
+      "第3四半期累計の営業利益が1.71億円の赤字"
     ],
-    "score_adjustment": -7,
+    "score_adjustment": -8,
     "add_badges": [
-      {
-        "text": "⚠️下方修正",
-        "type": "negative"
-      },
-      {
-        "text": "⬆️還元強化",
-        "type": "positive"
-      }
+      "⚠️下方修正"
     ],
-    "ir_comment": "<cite index=\"22-1\">25年8月期の連結経常利益を従来予想の20億円→11億円に45.0％下方修正</cite>し増益率が大幅縮小。<cite index=\"25-1\">「中期経営計画2028」を策定し、「収益性の改善」と「売上・利益の成長回帰」を図る事業戦略と「ＲＯＥ及びＰＢＲの改善」を図る財務戦略</cite>を発表したが、<cite index=\"22-1\">愛知県の市中在庫が過剰な状況が長期化</cite>し主力の戸建住宅事業が苦戦継続。",
-    "review_note": "業績下方修正の影響大きいが、新中期計画でのPBR改善戦略は評価ポイント。戸建住宅市場の回復遅れが懸念。",
+    "ir_comment": "<cite index=\"13-1\">AVANTIA は2025年4月11日に25年8月期の連結経常利益を従来予想の20億円→11億円に45.0％下方修正</cite>しました。<cite index=\"13-1\">愛知県の市中在庫が過剰な状況が長期化し、第一次取得者層のマインドが下押し</cite>を続けており、<cite index=\"33-1\">第3四半期累計の営業利益が1.71億円の赤字</cite>となるなど業績悪化が顕著です。戸建住宅市場の環境改善には時間を要する見込みです。",
+    "review_note": "大幅な下方修正と営業赤字により投資リスクが高い状況。住宅需要回復までの時間軸が不透明",
     "source_urls": [
       "https://kabutan.jp/news/?b=k202504110046",
-      "https://www.daiwair.co.jp/td_download.cgi?c=8904&i=3082899",
-      "https://www.buffett-code.com/company/8904/",
+      "https://web.fisco.jp/platform/companies/0890400",
+      "https://avantia-g.jp/corp/ir/library/earnings_release.html",
       "https://irbank.net/8904/ir"
     ],
-    "reviewed_at": "2026-05-21"
+    "reviewed_at": "2026-06-11"
   },
   "3477": {
     "review_status": "positive",
@@ -549,26 +525,23 @@
   "7434": {
     "review_status": "positive",
     "catalysts_found": [
-      "業績上方修正（2025年5月期）",
-      "2Q大幅増収増益（売上8.0%増、営業益21.3%増）",
-      "投資需要回復による業績改善"
+      "自社株買い発表（2024年10月）",
+      "過去の上方修正実績"
     ],
     "risks_found": [
-      "人件費・原材料価格上昇",
-      "今後の利益伸び率鈍化"
+      "2025年5月期1Q減益（経常利益13.9%減）"
     ],
-    "score_adjustment": 4,
+    "score_adjustment": 2,
     "add_badges": [
-      "⬆️上方修正"
+      "⬆️自社株買い"
     ],
-    "ir_comment": "2026年5月期第2四半期は大幅な増収増益を達成し、前期も予想を上回る業績で着地。投資需要の回復が業績を牽引している一方、コスト上昇が懸念材料。",
-    "review_note": "業績上方修正と2Q好調な決算で株価にプラス材料。ただし今後の利益成長ペース鈍化見込み。",
+    "ir_comment": "<cite index=\"11-1\">2024年10月18日に10万株・1億9560万円を上限とした自社株買いを発表（割合2.5%）</cite>。<cite index=\"11-1\">2025年5月期1Qでは経常利益が13.9%減益</cite>となったものの、<cite index=\"28-1,34-1\">過去に22年5月期では営業利益を3億円から5億円に上方修正、23年5月期では業績と配当見込みの上方修正を実施</cite>した実績がある。",
+    "review_note": "自社株買い発表により株主還元を実施。一方で直近1Qは減益となっており業績の推移を注視する必要。",
     "source_urls": [
-      "https://finance.yahoo.co.jp/quote/7434.T",
-      "https://kabuyoho.jp/reportTop?bcode=7434",
-      "https://www.ullet.com/7434.html"
+      "https://www.kabutec.jp/sp/i.php?code=7434",
+      "https://web.fisco.jp/platform/companies/0743400"
     ],
-    "reviewed_at": "2026-05-25"
+    "reviewed_at": "2026-06-11"
   },
   "8147": {
     "review_status": "neutral",
