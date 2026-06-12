@@ -2059,6 +2059,56 @@
       "stock_price": 263,
       "theoretical_price": 1181,
       "upside_percent": 349.1
+    },
+    {
+      "date": "2026-06-13",
+      "code": "8891",
+      "name": "AMG HOLDINGS CO LTD",
+      "tab": "finance",
+      "score": 63,
+      "stock_price": 1800,
+      "theoretical_price": 6540,
+      "upside_percent": 263.3
+    },
+    {
+      "date": "2026-06-13",
+      "code": "8747",
+      "name": "YUTAKA TRUSTY SECURITIES CO LTD",
+      "tab": "finance",
+      "score": 63,
+      "stock_price": 2127,
+      "theoretical_price": 10629,
+      "upside_percent": 399.7
+    },
+    {
+      "date": "2026-06-13",
+      "code": "5280",
+      "name": "YOSHICON CO LTD",
+      "tab": "finance",
+      "score": 62,
+      "stock_price": 2128,
+      "theoretical_price": 7874,
+      "upside_percent": 270.0
+    },
+    {
+      "date": "2026-06-13",
+      "code": "8881",
+      "name": "NISSHIN GROUP HLDGS CO LTD",
+      "tab": "finance",
+      "score": 61,
+      "stock_price": 647,
+      "theoretical_price": 1875,
+      "upside_percent": 189.8
+    },
+    {
+      "date": "2026-06-13",
+      "code": "3236",
+      "name": "PROPERST CO. LTD",
+      "tab": "finance",
+      "score": 60,
+      "stock_price": 267,
+      "theoretical_price": 1181,
+      "upside_percent": 342.4
     }
   ]
 }
