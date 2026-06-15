@@ -431,23 +431,15 @@
     "reviewed_at": "2026-04-13"
   },
   "6497": {
-    "review_status": "positive",
-    "catalysts_found": [
-      "増配発表"
-    ],
+    "review_status": "neutral",
+    "catalysts_found": [],
     "risks_found": [],
-    "score_adjustment": 3,
-    "add_badges": [
-      "⬆️増配発表"
-    ],
-    "ir_comment": "<cite index=\"22-1\">2026年12月期の配当予想は、中間配当20円、期末配当25円の年間45円を予定していて、前期の年間配当40円から増配となる見通しです。</cite>また、<cite index=\"22-1\">2026年12月期の連結業績予想は、売上高131億円（前期比3.0%増）、営業利益12.5億円（同2.2%増）を見込んでおり</cite>、緩やかな増収増益予想を発表しています。",
-    "review_note": "<cite index=\"22-1\">来期配当が年間45円（前期40円から12.5%増配）</cite>と増配を発表し、安定した株主還元姿勢を示しています。",
-    "source_urls": [
-      "https://finance.yahoo.co.jp/quote/6497.T/dividend",
-      "https://finance.yahoo.co.jp/quote/6497.Q/financials",
-      "https://irbank.net/E01652"
-    ],
-    "reviewed_at": "2026-05-28"
+    "score_adjustment": 0,
+    "add_badges": [],
+    "ir_comment": "",
+    "review_note": "IR審査エラー: Error code: 404 - {'type': 'error', 'error': {'typ",
+    "source_urls": [],
+    "reviewed_at": "2026-06-15"
   },
   "5697": {
     "review_status": "positive",
@@ -599,27 +591,15 @@
     "reviewed_at": "2026-06-08"
   },
   "8860": {
-    "review_status": "negative",
-    "catalysts_found": [
-      "2025年5月発表の中期経営計画による成長戦略",
-      "累進的配当政策による配当維持方針"
-    ],
-    "risks_found": [
-      "2026年4月業績予想下方修正（減益予想）",
-      "ヘイトハラスメント訴訟における最高裁確定判決"
-    ],
-    "score_adjustment": -3,
-    "add_badges": [
-      "⚠️下方修正"
-    ],
-    "ir_comment": "<cite index=\"16-1,19-1\">2026年4月に業績予想を下方修正し、通期で減益を見込んでいます。</cite> 一方で、<cite index=\"22-1\">累進的配当政策により減配なしの方針を維持しています。</cite> <cite index=\"26-1\">2025年5月発表の中期経営計画では売上・利益ともに前計画を上回る結果となり、収益構造の強化を目指しています。</cite>",
-    "review_note": "<cite index=\"16-1,31-1\">2026年4月の下方修正により減益予想となったが、</cite> <cite index=\"26-1\">中計では成長戦略を打ち出している。</cite>",
-    "source_urls": [
-      "https://www.fuji-jutaku.co.jp/ir/",
-      "https://www.fuji-jutaku.co.jp/assets/dl/ir/strategy/plan/plan2026-2028.pdf",
-      "https://finance.biggo.jp/news/jpx_tdnet_140120260414503239"
-    ],
-    "reviewed_at": "2026-05-18"
+    "review_status": "neutral",
+    "catalysts_found": [],
+    "risks_found": [],
+    "score_adjustment": 0,
+    "add_badges": [],
+    "ir_comment": "",
+    "review_note": "IR審査エラー: Error code: 404 - {'type': 'error', 'error': {'typ",
+    "source_urls": [],
+    "reviewed_at": "2026-06-15"
   },
   "8747": {
     "review_status": "negative",
@@ -1036,5 +1016,16 @@
       "https://web.fisco.jp/platform/companies/0893100?fm=mj"
     ],
     "reviewed_at": "2026-06-08"
+  },
+  "5906": {
+    "review_status": "neutral",
+    "catalysts_found": [],
+    "risks_found": [],
+    "score_adjustment": 0,
+    "add_badges": [],
+    "ir_comment": "",
+    "review_note": "IR審査エラー: Error code: 404 - {'type': 'error', 'error': {'typ",
+    "source_urls": [],
+    "reviewed_at": "2026-06-15"
   }
 }
