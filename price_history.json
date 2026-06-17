@@ -2229,6 +2229,56 @@
       "stock_price": 272,
       "theoretical_price": 1181,
       "upside_percent": 334.2
+    },
+    {
+      "date": "2026-06-18",
+      "code": "5906",
+      "name": "MK SEIKO CO LTD",
+      "tab": "general",
+      "score": 68,
+      "stock_price": 759,
+      "theoretical_price": 3124,
+      "upside_percent": 311.6
+    },
+    {
+      "date": "2026-06-18",
+      "code": "8747",
+      "name": "YUTAKA TRUSTY SECURITIES CO LTD",
+      "tab": "finance",
+      "score": 64,
+      "stock_price": 2180,
+      "theoretical_price": 10627,
+      "upside_percent": 387.5
+    },
+    {
+      "date": "2026-06-18",
+      "code": "5280",
+      "name": "YOSHICON CO LTD",
+      "tab": "finance",
+      "score": 61,
+      "stock_price": 2127,
+      "theoretical_price": 7874,
+      "upside_percent": 270.2
+    },
+    {
+      "date": "2026-06-18",
+      "code": "8881",
+      "name": "NISSHIN GROUP HLDGS CO LTD",
+      "tab": "finance",
+      "score": 60,
+      "stock_price": 640,
+      "theoretical_price": 1876,
+      "upside_percent": 193.1
+    },
+    {
+      "date": "2026-06-18",
+      "code": "3236",
+      "name": "PROPERST CO. LTD",
+      "tab": "finance",
+      "score": 60,
+      "stock_price": 275,
+      "theoretical_price": 1181,
+      "upside_percent": 329.4
     }
   ]
 }
