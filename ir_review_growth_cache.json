@@ -661,30 +661,15 @@
     "reviewed_at": "2026-04-27"
   },
   "3134": {
-    "review_status": "critical",
-    "catalysts_found": [
-      "NEスピンオフ実施（コングロマリットディスカウント解消期待）",
-      "株主優待制度の拡充発表"
-    ],
-    "risks_found": [
-      "業績大幅下方修正（営業利益69.3%減）",
-      "NE連結除外による業績低下"
-    ],
-    "score_adjustment": -7,
-    "add_badges": [
-      {
-        "text": "⚠️下方修正",
-        "type": "negative"
-      }
-    ],
-    "ir_comment": "<cite index=\"23-1,29-1\">2026年4月期はNE株式会社の連結除外により売上高216.73億円（前期比5.3%減）、営業利益7.23億円（同69.3%減）と大幅減益予想。一方でNE社のスピンオフが2025年11月4日に実施され、コングロマリットディスカウント解消が期待される</cite>。<cite index=\"31-1\">2026年4月期第2四半期末を基準日として子会社株式を現物配当することが決定</cite>。",
-    "review_note": "<cite index=\"23-1\">NE連結除外で見かけ上の大幅減益だが、実態はコマース事業への集中とスピンオフによる企業価値向上期待</cite>。",
-    "source_urls": [
-      "https://irbank.net/3134/ir",
-      "https://finance.yahoo.co.jp/quote/3134.T",
-      "https://omega-inv.com/ja/wp-content/uploads/sites/2/2025/10/3134Hamee_FY2025Q1_251016final.pdf"
-    ],
-    "reviewed_at": "2026-06-01"
+    "review_status": "neutral",
+    "catalysts_found": [],
+    "risks_found": [],
+    "score_adjustment": 0,
+    "add_badges": [],
+    "ir_comment": "",
+    "review_note": "IR審査エラー: Error code: 404 - {'type': 'error', 'error': {'typ",
+    "source_urls": [],
+    "reviewed_at": "2026-06-18"
   },
   "6393": {
     "review_status": "neutral",
@@ -797,46 +782,26 @@
     "reviewed_at": "2026-05-25"
   },
   "3236": {
-    "review_status": "positive",
-    "catalysts_found": [
-      "自己株買いの発表（2025年10月20日・11月4日）",
-      "増配発表（2025年7月14日）：前回予想4円から6円に50%増配"
-    ],
+    "review_status": "neutral",
+    "catalysts_found": [],
     "risks_found": [],
-    "score_adjustment": 8,
-    "add_badges": [
-      "⬆️自社株買い",
-      "⬆️増配発表"
-    ],
-    "ir_comment": "プロパストは2025年7月に1株当たり配当金を前回予想4円から6円に50%増配を発表。同年10月に自己株買いを決議し、11月に取得を完了。業績は2025年10月期第1四半期で売上高15.08%減・純利益18.68%減となったものの、株主還元を強化している。",
-    "review_note": "増配・自己株買い実施により株主還元強化が確認されたため、総合的にプラス評価",
-    "source_urls": [
-      "https://www.nikkei.com/nkd/disclosure/tdnr/20250714513832/",
-      "https://irbank.net/3236/ir",
-      "https://moneyworld.jp/news/PLB5696_ainews"
-    ],
-    "reviewed_at": "2026-06-01"
+    "score_adjustment": 0,
+    "add_badges": [],
+    "ir_comment": "",
+    "review_note": "IR審査エラー: Error code: 404 - {'type': 'error', 'error': {'typ",
+    "source_urls": [],
+    "reviewed_at": "2026-06-18"
   },
   "7192": {
-    "review_status": "negative",
+    "review_status": "neutral",
     "catalysts_found": [],
-    "risks_found": [
-      "株主優待廃止（2024年3月で廃止）",
-      "業績下方修正見込み（2026年3月期減収減益予想）"
-    ],
-    "score_adjustment": -3,
-    "add_badges": [
-      "⚠️一過性"
-    ],
-    "ir_comment": "<cite index=\"1-1,5-1\">2024年5月決算発表で営業収益2.94%減、親会社株主に帰属する当期純利益12.75%減となり減収減益。直近2年間で二期連続減収減益傾向が続いている</cite>。<cite index=\"18-1,27-1\">2024年3月分をもって株主優待制度を廃止し、配当等による利益還元に集約</cite>。",
-    "review_note": "減収減益傾向が継続し、住宅ローン市場の低迷が業績に影響している状況",
-    "source_urls": [
-      "https://irbank.net/7192/pl",
-      "https://minkabu.jp/stock/7192/settlement",
-      "https://diamond.jp/zai/articles/-/1013223",
-      "https://finance.yahoo.co.jp/quote/7192.T/dividend"
-    ],
-    "reviewed_at": "2026-06-01"
+    "risks_found": [],
+    "score_adjustment": 0,
+    "add_badges": [],
+    "ir_comment": "",
+    "review_note": "IR審査エラー: Error code: 404 - {'type': 'error', 'error': {'typ",
+    "source_urls": [],
+    "reviewed_at": "2026-06-18"
   },
   "5819": {
     "review_status": "positive",
@@ -1027,5 +992,16 @@
     "review_note": "IR審査エラー: Error code: 404 - {'type': 'error', 'error': {'typ",
     "source_urls": [],
     "reviewed_at": "2026-06-15"
+  },
+  "8844": {
+    "review_status": "neutral",
+    "catalysts_found": [],
+    "risks_found": [],
+    "score_adjustment": 0,
+    "add_badges": [],
+    "ir_comment": "",
+    "review_note": "IR審査エラー: Error code: 404 - {'type': 'error', 'error': {'typ",
+    "source_urls": [],
+    "reviewed_at": "2026-06-18"
   }
 }
