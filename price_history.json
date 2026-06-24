@@ -2479,6 +2479,66 @@
       "stock_price": 837,
       "theoretical_price": 1736,
       "upside_percent": 107.4
+    },
+    {
+      "date": "2026-06-25",
+      "code": "5906",
+      "name": "MK SEIKO CO LTD",
+      "tab": "general",
+      "score": 60,
+      "stock_price": 779,
+      "theoretical_price": 3124,
+      "upside_percent": 301.1
+    },
+    {
+      "date": "2026-06-25",
+      "code": "8747",
+      "name": "YUTAKA TRUSTY SECURITIES CO LTD",
+      "tab": "finance",
+      "score": 65,
+      "stock_price": 2102,
+      "theoretical_price": 10627,
+      "upside_percent": 405.6
+    },
+    {
+      "date": "2026-06-25",
+      "code": "8891",
+      "name": "AMG HOLDINGS CO LTD",
+      "tab": "finance",
+      "score": 64,
+      "stock_price": 1868,
+      "theoretical_price": 6540,
+      "upside_percent": 250.1
+    },
+    {
+      "date": "2026-06-25",
+      "code": "5280",
+      "name": "YOSHICON CO LTD",
+      "tab": "finance",
+      "score": 62,
+      "stock_price": 2113,
+      "theoretical_price": 7875,
+      "upside_percent": 272.7
+    },
+    {
+      "date": "2026-06-25",
+      "code": "8881",
+      "name": "NISSHIN GROUP HLDGS CO LTD",
+      "tab": "finance",
+      "score": 60,
+      "stock_price": 627,
+      "theoretical_price": 1875,
+      "upside_percent": 199.1
+    },
+    {
+      "date": "2026-06-25",
+      "code": "8914",
+      "name": "AREALINK CO LTD",
+      "tab": "finance",
+      "score": 60,
+      "stock_price": 810,
+      "theoretical_price": 1735,
+      "upside_percent": 114.2
     }
   ]
 }
