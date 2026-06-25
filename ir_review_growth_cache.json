@@ -73,26 +73,15 @@
     "reviewed_at": "2026-06-22"
   },
   "8935": {
-    "review_status": "positive",
-    "catalysts_found": [
-      "増配発表",
-      "上方修正"
-    ],
+    "review_status": "neutral",
+    "catalysts_found": [],
     "risks_found": [],
-    "score_adjustment": 6,
-    "add_badges": [
-      "⬆️増配発表",
-      "⬆️上方修正"
-    ],
-    "ir_comment": "<cite index=\"21-1,21-2\">上場20周年記念配当2円を実施し、2025年3月期年間配当を50円に上方修正</cite>。<cite index=\"22-2\">2025年3月期期末配当は特別配当4円を含め30円に増額</cite>。<cite index=\"36-2,36-3\">2026年3月期中間期は売上高634億円（前年同期比18.3％増）、営業利益54億円（同31.7％増）と大幅増収増益</cite>。<cite index=\"36-4\">2026年3月期の年間配当は56円（前期比2円増配）を予定</cite>。",
-    "review_note": "上場20周年記念配当実施と特別配当により実質的増配。2026年3月期中間期も大幅増収増益で好調な業績継続。",
-    "source_urls": [
-      "https://www.nikkei.com/article/DGXZQOUC179XD0X11C24A2000000/",
-      "https://irbank.net/E04032/dividend",
-      "https://finance.yahoo.co.jp/quote/8935.T/financials",
-      "https://www.nikkei.com/nkd/disclosure/tdnr/20251106589266/"
-    ],
-    "reviewed_at": "2026-04-30"
+    "score_adjustment": 0,
+    "add_badges": [],
+    "ir_comment": "",
+    "review_note": "IR審査エラー: Error code: 404 - {'type': 'error', 'error': {'typ",
+    "source_urls": [],
+    "reviewed_at": "2026-06-25"
   },
   "3293": {
     "review_status": "neutral",
@@ -448,25 +437,15 @@
     "reviewed_at": "2026-04-20"
   },
   "2449": {
-    "review_status": "positive",
-    "catalysts_found": [
-      "累進配当導入（2024年10月）",
-      "中期経営計画発表（2025-2027年8月期：売上100億円、営業利益11億円目標）",
-      "各種戦略的業務提携の拡大"
-    ],
+    "review_status": "neutral",
+    "catalysts_found": [],
     "risks_found": [],
-    "score_adjustment": 3,
-    "add_badges": [
-      "⬆️還元強化"
-    ],
-    "ir_comment": "<cite index=\"12-1,14-1\">2024年10月に累進配当を導入し、原則として減配せず配当維持もしくは増配を行う配当政策を発表。</cite><cite index=\"3-1,12-1\">2025年8月期から2027年8月期までの中期経営計画では売上高100億円、営業利益11億円、ROE8.0％以上を目標として設定。</cite><cite index=\"6-1,22-1\">ORIGRESS PARKS、メディコレ、フィナンテック等との戦略的業務提携を相次いで発表し、事業領域を拡大している。</cite>",
-    "review_note": "<cite index=\"12-1\">累進配当導入と中期経営計画による成長戦略が株主還元強化の明確なシグナル。業務提携による事業拡大も評価できる。</cite>",
-    "source_urls": [
-      "https://www.bridge-salon.jp/report_bridge/archives/2024/11/241113_2449.html",
-      "https://kabureturn.jp/housin/2449-h/",
-      "https://www.bridge-salon.jp/report_bridge/archives/2025/11/251117_2449.html"
-    ],
-    "reviewed_at": "2026-06-08"
+    "score_adjustment": 0,
+    "add_badges": [],
+    "ir_comment": "",
+    "review_note": "IR審査エラー: Error code: 404 - {'type': 'error', 'error': {'typ",
+    "source_urls": [],
+    "reviewed_at": "2026-06-25"
   },
   "8860": {
     "review_status": "neutral",
@@ -491,40 +470,15 @@
     "reviewed_at": "2026-06-22"
   },
   "8150": {
-    "review_status": "positive",
-    "catalysts_found": [
-      "2025年2月14日に配当予想を上方修正、105円から120円へ15円増配発表",
-      "2024年10月24日に第2四半期業績予想上方修正を発表",
-      "2024年7月25日に上半期業績予想上方修正を発表",
-      "V76中期経営計画でROE8%以上の安定達成を目標に設定"
-    ],
-    "risks_found": [
-      "2025年2月14日に株式売出し（270万株）を発表、希薄化リスク"
-    ],
-    "score_adjustment": 1,
-    "add_badges": [
-      {
-        "text": "⬆️増配発表",
-        "type": "positive"
-      },
-      {
-        "text": "⬆️上方修正",
-        "type": "positive"
-      },
-      {
-        "text": "⚠️希薄化",
-        "type": "negative"
-      }
-    ],
-    "ir_comment": "2025年2月に業績・配当予想上方修正を発表、年間配当を105円→120円（15円増配）に引き上げ。第2四半期、第3四半期と2度の上方修正を実施。V76中期経営計画でROE8%以上の安定達成目標。一方で270万株の株式売出しも発表。",
-    "review_note": "複数回の上方修正と増配発表でポジティブだが、株式売出しによる希薄化懸念がマイナス要因として作用",
-    "source_urls": [
-      "https://irbank.net/8150/ir",
-      "https://www.nikkei.com/nkd/disclosure/tdnr/20250212569578/",
-      "https://diamond.jp/zai/articles/-/1046088",
-      "https://www.sanshin.co.jp/en/ir/investor/"
-    ],
-    "reviewed_at": "2026-04-27"
+    "review_status": "neutral",
+    "catalysts_found": [],
+    "risks_found": [],
+    "score_adjustment": 0,
+    "add_badges": [],
+    "ir_comment": "",
+    "review_note": "IR審査エラー: Error code: 404 - {'type': 'error', 'error': {'typ",
+    "source_urls": [],
+    "reviewed_at": "2026-06-25"
   },
   "3134": {
     "review_status": "neutral",
@@ -680,28 +634,15 @@
     "reviewed_at": "2026-06-22"
   },
   "8869": {
-    "review_status": "positive",
-    "catalysts_found": [
-      "2025年3月期第3四半期に大幅業績上方修正を発表し、売上高796億円（前年同期比36.7%増）、営業利益82億円（同104.6%増）の大幅増収増益",
-      "2026年3月期通期業績予想も上方修正し、売上高900億円（前期比12.6%増）、営業利益77億円（同46.9%増）を見込む",
-      "配当を1株当たり40円から45円に増配し、記念配当5円を含む株主還元強化",
-      "英興発による明和地所株式の買付けが進行中（筆頭株主として37.32%保有）でMBO的な動き"
-    ],
+    "review_status": "neutral",
+    "catalysts_found": [],
     "risks_found": [],
-    "score_adjustment": 12,
-    "add_badges": [
-      "⬆️上方修正",
-      "⬆️増配発表",
-      "❗MBO/TOB"
-    ],
-    "ir_comment": "2025年3月期第3四半期に大幅な業績上方修正を発表。分譲事業の引渡し戸数増加と流通事業好調により売上・利益が大幅増。通期予想も上方修正され、配当増額も決定。英興発による株式買付けで大株主変動も進行中。",
-    "review_note": "第3四半期決算で大幅上方修正と増配を発表。英興発による買付けでMBO的な動きも注目される。",
-    "source_urls": [
-      "https://finance.yahoo.co.jp/quote/8869.T/financials",
-      "https://irbank.net/8869/ir",
-      "https://www.buffett-code.com/company/8869/mainshareholder"
-    ],
-    "reviewed_at": "2026-06-04"
+    "score_adjustment": 0,
+    "add_badges": [],
+    "ir_comment": "",
+    "review_note": "IR審査エラー: Error code: 404 - {'type': 'error', 'error': {'typ",
+    "source_urls": [],
+    "reviewed_at": "2026-06-25"
   },
   "3277": {
     "review_status": "positive",
@@ -830,5 +771,38 @@
     "review_note": "IR審査エラー: Error code: 404 - {'type': 'error', 'error': {'typ",
     "source_urls": [],
     "reviewed_at": "2026-06-22"
+  },
+  "5368": {
+    "review_status": "neutral",
+    "catalysts_found": [],
+    "risks_found": [],
+    "score_adjustment": 0,
+    "add_badges": [],
+    "ir_comment": "",
+    "review_note": "IR審査エラー: Error code: 404 - {'type': 'error', 'error': {'typ",
+    "source_urls": [],
+    "reviewed_at": "2026-06-25"
+  },
+  "6418": {
+    "review_status": "neutral",
+    "catalysts_found": [],
+    "risks_found": [],
+    "score_adjustment": 0,
+    "add_badges": [],
+    "ir_comment": "",
+    "review_note": "IR審査エラー: Error code: 404 - {'type': 'error', 'error': {'typ",
+    "source_urls": [],
+    "reviewed_at": "2026-06-25"
+  },
+  "1850": {
+    "review_status": "neutral",
+    "catalysts_found": [],
+    "risks_found": [],
+    "score_adjustment": 0,
+    "add_badges": [],
+    "ir_comment": "",
+    "review_note": "IR審査エラー: Error code: 404 - {'type': 'error', 'error': {'typ",
+    "source_urls": [],
+    "reviewed_at": "2026-06-25"
   }
 }
