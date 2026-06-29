@@ -334,31 +334,20 @@
     "score_adjustment": 0,
     "add_badges": [],
     "ir_comment": "",
-    "review_note": "IR審査エラー: Error code: 529 - {'type': 'error', 'error': {'typ",
+    "review_note": "IR審査エラー: Error code: 404 - {'type': 'error', 'error': {'typ",
     "source_urls": [],
-    "reviewed_at": "2026-04-13"
+    "reviewed_at": "2026-06-29"
   },
   "8904": {
-    "review_status": "negative",
+    "review_status": "neutral",
     "catalysts_found": [],
-    "risks_found": [
-      "業績下方修正（2025年4月11日に25年8月期の連結経常利益を20億円→11億円に45％下方修正）",
-      "戸建住宅市場の需要低迷（愛知県の市中在庫が過剰な状況が長期化）",
-      "第3四半期累計の営業利益が1.71億円の赤字"
-    ],
-    "score_adjustment": -8,
-    "add_badges": [
-      "⚠️下方修正"
-    ],
-    "ir_comment": "<cite index=\"13-1\">AVANTIA は2025年4月11日に25年8月期の連結経常利益を従来予想の20億円→11億円に45.0％下方修正</cite>しました。<cite index=\"13-1\">愛知県の市中在庫が過剰な状況が長期化し、第一次取得者層のマインドが下押し</cite>を続けており、<cite index=\"33-1\">第3四半期累計の営業利益が1.71億円の赤字</cite>となるなど業績悪化が顕著です。戸建住宅市場の環境改善には時間を要する見込みです。",
-    "review_note": "大幅な下方修正と営業赤字により投資リスクが高い状況。住宅需要回復までの時間軸が不透明",
-    "source_urls": [
-      "https://kabutan.jp/news/?b=k202504110046",
-      "https://web.fisco.jp/platform/companies/0890400",
-      "https://avantia-g.jp/corp/ir/library/earnings_release.html",
-      "https://irbank.net/8904/ir"
-    ],
-    "reviewed_at": "2026-06-11"
+    "risks_found": [],
+    "score_adjustment": 0,
+    "add_badges": [],
+    "ir_comment": "",
+    "review_note": "IR審査エラー: Error code: 404 - {'type': 'error', 'error': {'typ",
+    "source_urls": [],
+    "reviewed_at": "2026-06-29"
   },
   "3477": {
     "review_status": "positive",
@@ -645,27 +634,15 @@
     "reviewed_at": "2026-06-25"
   },
   "3277": {
-    "review_status": "positive",
-    "catalysts_found": [
-      "株式分割の実施（2026年5月発表）",
-      "従業員向け譲渡制限付株式インセンティブ制度導入",
-      "増配発表（2025年年間配当43円、前期比2円増）",
-      "Q1業績好調（売上高8.6%増、営業利益13.0%増）"
-    ],
+    "review_status": "neutral",
+    "catalysts_found": [],
     "risks_found": [],
-    "score_adjustment": 8,
-    "add_badges": [
-      "⬆️還元強化",
-      "⬆️増配発表"
-    ],
-    "ir_comment": "<cite index=\"22-1,16-1\">2026年12月期第1四半期は売上高96.06億円(前年同期比8.6%増)、営業利益20.4億円(同13.0%増)と増収増益を達成</cite>。<cite index=\"25-1\">株式分割及び定款一部変更並びに配当予想の修正、従業員持株会向け譲渡制限付株式インセンティブ制度の導入</cite>など株主還元強化策を相次いで発表。<cite index=\"18-1\">2025年年間配当予想は43円(前期比2円増)</cite>と増配も実施。",
-    "review_note": "<cite index=\"22-1\">株式分割や従業員向け株式インセンティブ制度導入など、株主価値向上への取り組みを進めている</cite>。業績も好調で複数のポジティブ要素が重なっている。",
-    "source_urls": [
-      "https://www.sansei-l.co.jp/ir/irnews/",
-      "https://finance.yahoo.co.jp/quote/3277.T",
-      "https://www.sansei-l.co.jp/ir/"
-    ],
-    "reviewed_at": "2026-06-04"
+    "score_adjustment": 0,
+    "add_badges": [],
+    "ir_comment": "",
+    "review_note": "IR審査エラー: Error code: 404 - {'type': 'error', 'error': {'typ",
+    "source_urls": [],
+    "reviewed_at": "2026-06-29"
   },
   "4627": {
     "review_status": "neutral",
@@ -804,5 +781,27 @@
     "review_note": "IR審査エラー: Error code: 404 - {'type': 'error', 'error': {'typ",
     "source_urls": [],
     "reviewed_at": "2026-06-25"
+  },
+  "3932": {
+    "review_status": "neutral",
+    "catalysts_found": [],
+    "risks_found": [],
+    "score_adjustment": 0,
+    "add_badges": [],
+    "ir_comment": "",
+    "review_note": "IR審査エラー: Error code: 404 - {'type': 'error', 'error': {'typ",
+    "source_urls": [],
+    "reviewed_at": "2026-06-29"
+  },
+  "9193": {
+    "review_status": "neutral",
+    "catalysts_found": [],
+    "risks_found": [],
+    "score_adjustment": 0,
+    "add_badges": [],
+    "ir_comment": "",
+    "review_note": "IR審査エラー: Error code: 404 - {'type': 'error', 'error': {'typ",
+    "source_urls": [],
+    "reviewed_at": "2026-06-29"
   }
 }
