@@ -2769,6 +2769,56 @@
       "stock_price": 2166,
       "theoretical_price": 7875,
       "upside_percent": 263.6
+    },
+    {
+      "date": "2026-07-01",
+      "code": "5906",
+      "name": "MK SEIKO CO LTD",
+      "tab": "general",
+      "score": 60,
+      "stock_price": 782,
+      "theoretical_price": 3124,
+      "upside_percent": 299.5
+    },
+    {
+      "date": "2026-07-01",
+      "code": "8860",
+      "name": "FUJI CORPORATION LIMITED",
+      "tab": "finance",
+      "score": 66,
+      "stock_price": 761,
+      "theoretical_price": 2247,
+      "upside_percent": 195.2
+    },
+    {
+      "date": "2026-07-01",
+      "code": "8891",
+      "name": "AMG HOLDINGS CO LTD",
+      "tab": "finance",
+      "score": 66,
+      "stock_price": 1980,
+      "theoretical_price": 6539,
+      "upside_percent": 230.3
+    },
+    {
+      "date": "2026-07-01",
+      "code": "8747",
+      "name": "YUTAKA TRUSTY SECURITIES CO LTD",
+      "tab": "finance",
+      "score": 65,
+      "stock_price": 2134,
+      "theoretical_price": 10627,
+      "upside_percent": 398.0
+    },
+    {
+      "date": "2026-07-01",
+      "code": "5280",
+      "name": "YOSHICON CO LTD",
+      "tab": "finance",
+      "score": 62,
+      "stock_price": 2176,
+      "theoretical_price": 7874,
+      "upside_percent": 261.8
     }
   ]
 }
