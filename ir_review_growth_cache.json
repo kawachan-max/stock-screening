@@ -154,26 +154,15 @@
     "reviewed_at": "2026-06-11"
   },
   "8699": {
-    "review_status": "negative",
+    "review_status": "neutral",
     "catalysts_found": [],
-    "risks_found": [
-      "不当取引疑義・東京地裁決定",
-      "業績予想未開示継続",
-      "配当額未定"
-    ],
-    "score_adjustment": -12,
-    "add_badges": [
-      "⚠️不祥事",
-      "⚠️一過性"
-    ],
-    "ir_comment": "<cite index=\"11-1\">第3四半期決算は営業収益413億円（前年同期比48.6%増）、営業損失拡大も経常利益132億円（13.9%増）、純利益111億円（19.5%増）</cite>と増益。<cite index=\"34-1\">配当は業績予想が困難として未定、前期は年間配当金10円</cite>。リユース事業好調だが海外金融事業の不確実性により業績予想を開示せず。",
-    "review_note": "<cite index=\"38-1\">東京地裁が「関係者間で不合理な取引が繰り返されている蓋然性が高い」と判示</cite>し、ガバナンス面でリスクが表面化。",
-    "source_urls": [
-      "https://hs-hd.co.jp/irinfos/",
-      "https://finance.yahoo.co.jp/quote/8699.T/financials",
-      "https://finance.yahoo.co.jp/quote/8699.T/forum"
-    ],
-    "reviewed_at": "2026-05-18"
+    "risks_found": [],
+    "score_adjustment": 0,
+    "add_badges": [],
+    "ir_comment": "",
+    "review_note": "IR審査エラー: Error code: 404 - {'type': 'error', 'error': {'typ",
+    "source_urls": [],
+    "reviewed_at": "2026-07-02"
   },
   "9633": {
     "review_status": "neutral",
@@ -261,14 +250,10 @@
     "risks_found": [],
     "score_adjustment": 0,
     "add_badges": [],
-    "ir_comment": "<cite index=\"23-1\">2024年11月7日に中間決算を発表</cite>し、<cite index=\"26-2\">25年3月期の連結経常利益は前の期比17.4％減の8億2400万円、26年3月期は前期比0.7％増の8億3000万円とほぼ横ばい見通し</cite>。<cite index=\"28-1\">日水系水産卸大手で近畿7市場に拠点</cite>。<cite index=\"21-1,11-1\">直近第3四半期の経常利益進捗率113%</cite>と堅調な業績推移を示している。",
-    "review_note": "検索した範囲では直近半年以内の自社株買い、増配、業績修正等の重要なIR情報は確認されませんでした。業績は堅調ながら特筆すべき株価カタリストは見当たらない状況です。",
-    "source_urls": [
-      "https://kabuyoho.jp/reportTarget?bcode=7538",
-      "https://minkabu.jp/stock/7538/settlement",
-      "https://scouter.monex.co.jp/report/zaimu/7538"
-    ],
-    "reviewed_at": "2026-04-30"
+    "ir_comment": "",
+    "review_note": "IR審査エラー: Error code: 404 - {'type': 'error', 'error': {'typ",
+    "source_urls": [],
+    "reviewed_at": "2026-07-02"
   },
   "9867": {
     "review_status": "neutral",
@@ -445,7 +430,7 @@
     "ir_comment": "",
     "review_note": "IR審査エラー: Error code: 404 - {'type': 'error', 'error': {'typ",
     "source_urls": [],
-    "reviewed_at": "2026-06-15"
+    "reviewed_at": "2026-07-02"
   },
   "8747": {
     "review_status": "neutral",
@@ -541,23 +526,13 @@
   "4624": {
     "review_status": "neutral",
     "catalysts_found": [],
-    "risks_found": [
-      "次期業績予想未定",
-      "原材料価格上昇",
-      "需要反動懸念"
-    ],
-    "score_adjustment": -2,
-    "add_badges": [
-      "⚠️一過性"
-    ],
-    "ir_comment": "2026年3月期決算は営業利益45.9%増の大幅増益を達成し収益性が改善。価格改定効果により増収増益となったが、中東情勢の影響で次期業績予想は未定。買い込み需要の反動や原材料価格上昇等の懸念要因が存在する。",
-    "review_note": "好決算だが一過性要因が強く、次期業績予想未定で先行き不透明",
-    "source_urls": [
-      "https://finance.yahoo.co.jp/quote/4624.T",
-      "https://minkabu.jp/stock/4624",
-      "https://www.isamu.co.jp/ir/"
-    ],
-    "reviewed_at": "2026-06-08"
+    "risks_found": [],
+    "score_adjustment": 0,
+    "add_badges": [],
+    "ir_comment": "",
+    "review_note": "IR審査エラー: Error code: 404 - {'type': 'error', 'error': {'typ",
+    "source_urls": [],
+    "reviewed_at": "2026-07-02"
   },
   "8864": {
     "review_status": "neutral",
@@ -803,5 +778,49 @@
     "review_note": "IR審査エラー: Error code: 404 - {'type': 'error', 'error': {'typ",
     "source_urls": [],
     "reviewed_at": "2026-06-29"
+  },
+  "6229": {
+    "review_status": "neutral",
+    "catalysts_found": [],
+    "risks_found": [],
+    "score_adjustment": 0,
+    "add_badges": [],
+    "ir_comment": "",
+    "review_note": "IR審査エラー: Error code: 404 - {'type': 'error', 'error': {'typ",
+    "source_urls": [],
+    "reviewed_at": "2026-07-02"
+  },
+  "6365": {
+    "review_status": "neutral",
+    "catalysts_found": [],
+    "risks_found": [],
+    "score_adjustment": 0,
+    "add_badges": [],
+    "ir_comment": "",
+    "review_note": "IR審査エラー: Error code: 404 - {'type': 'error', 'error': {'typ",
+    "source_urls": [],
+    "reviewed_at": "2026-07-02"
+  },
+  "6335": {
+    "review_status": "neutral",
+    "catalysts_found": [],
+    "risks_found": [],
+    "score_adjustment": 0,
+    "add_badges": [],
+    "ir_comment": "",
+    "review_note": "IR審査エラー: Error code: 404 - {'type': 'error', 'error': {'typ",
+    "source_urls": [],
+    "reviewed_at": "2026-07-02"
+  },
+  "8928": {
+    "review_status": "neutral",
+    "catalysts_found": [],
+    "risks_found": [],
+    "score_adjustment": 0,
+    "add_badges": [],
+    "ir_comment": "",
+    "review_note": "IR審査エラー: Error code: 404 - {'type': 'error', 'error': {'typ",
+    "source_urls": [],
+    "reviewed_at": "2026-07-02"
   }
 }

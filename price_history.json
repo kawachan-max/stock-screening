@@ -2879,6 +2879,26 @@
       "stock_price": 2128,
       "theoretical_price": 12498,
       "upside_percent": 487.3
+    },
+    {
+      "date": "2026-07-03",
+      "code": "9867",
+      "name": "SOLEKIA LIMITED",
+      "tab": "general",
+      "score": 70,
+      "stock_price": 10120,
+      "theoretical_price": 35481,
+      "upside_percent": 250.6
+    },
+    {
+      "date": "2026-07-03",
+      "code": "8891",
+      "name": "AMG HOLDINGS CO LTD",
+      "tab": "finance",
+      "score": 66,
+      "stock_price": 1988,
+      "theoretical_price": 6540,
+      "upside_percent": 229.0
     }
   ]
 }
