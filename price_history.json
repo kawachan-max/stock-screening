@@ -2919,6 +2919,46 @@
       "stock_price": 1988,
       "theoretical_price": 6538,
       "upside_percent": 228.9
+    },
+    {
+      "date": "2026-07-07",
+      "code": "9867",
+      "name": "SOLEKIA LIMITED",
+      "tab": "general",
+      "score": 67,
+      "stock_price": 9910,
+      "theoretical_price": 35489,
+      "upside_percent": 258.1
+    },
+    {
+      "date": "2026-07-07",
+      "code": "6743",
+      "name": "DAIDO SIGNAL CO",
+      "tab": "general",
+      "score": 63,
+      "stock_price": 836,
+      "theoretical_price": 2215,
+      "upside_percent": 165.0
+    },
+    {
+      "date": "2026-07-07",
+      "code": "9857",
+      "name": "EIWA CORPORATION",
+      "tab": "general",
+      "score": 60,
+      "stock_price": 2428,
+      "theoretical_price": 6326,
+      "upside_percent": 160.5
+    },
+    {
+      "date": "2026-07-07",
+      "code": "8891",
+      "name": "AMG HOLDINGS CO LTD",
+      "tab": "finance",
+      "score": 66,
+      "stock_price": 1981,
+      "theoretical_price": 6538,
+      "upside_percent": 230.1
     }
   ]
 }

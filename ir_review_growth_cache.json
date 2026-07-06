@@ -219,30 +219,15 @@
     "reviewed_at": "2026-06-22"
   },
   "6743": {
-    "review_status": "positive",
-    "catalysts_found": [
-      "自社株買い実施（2024年5月-9月、8億525万円）",
-      "配当増額（2025年3月期12円→15円、2026年3月期25円予想）",
-      "業績上方修正（2026年3月期経常利益上方修正）",
-      "中期経営計画「PLAN2026」によるPBR改善・成長戦略"
-    ],
+    "review_status": "neutral",
+    "catalysts_found": [],
     "risks_found": [],
-    "score_adjustment": 12,
-    "add_badges": [
-      "⬆️自社株買い",
-      "⬆️増配発表",
-      "⬆️上方修正",
-      "⬆️還元強化"
-    ],
-    "ir_comment": "大同信号は複数のポジティブな材料を発表している。2024年に8億525万円の自社株買いを実施し、2025年3月期に増配（12円→15円）、2026年3月期も25円への配当増額を予想。また、2025年11月に2026年3月期業績上方修正を発表し、中期経営計画「PLAN2026」でPBR改善と資本効率向上に取り組んでいる。第3四半期決算も増収増益で堅調な業績を維持している。",
-    "review_note": "自社株買い、連続増配、上方修正、中計でのPBR改善対応など複数のカタリストが揃っており、株主還元強化の姿勢が明確",
-    "source_urls": [
-      "https://irbank.net/E01816/reports",
-      "https://irbank.net/E01816/buyback",
-      "https://www.daido-signal.co.jp/financial/file/daido_ir_20250627-3.pdf",
-      "https://irbank.net/E01816/dividend"
-    ],
-    "reviewed_at": "2026-05-18"
+    "score_adjustment": 0,
+    "add_badges": [],
+    "ir_comment": "",
+    "review_note": "IR審査エラー: Error code: 404 - {'type': 'error', 'error': {'typ",
+    "source_urls": [],
+    "reviewed_at": "2026-07-06"
   },
   "7538": {
     "review_status": "neutral",
@@ -299,7 +284,7 @@
     "ir_comment": "",
     "review_note": "IR審査エラー: Error code: 404 - {'type': 'error', 'error': {'typ",
     "source_urls": [],
-    "reviewed_at": "2026-06-15"
+    "reviewed_at": "2026-07-06"
   },
   "5697": {
     "review_status": "neutral",
@@ -554,7 +539,7 @@
     "ir_comment": "",
     "review_note": "IR審査エラー: Error code: 404 - {'type': 'error', 'error': {'typ",
     "source_urls": [],
-    "reviewed_at": "2026-06-18"
+    "reviewed_at": "2026-07-06"
   },
   "7192": {
     "review_status": "neutral",
@@ -631,28 +616,15 @@
     "reviewed_at": "2026-06-22"
   },
   "3297": {
-    "review_status": "positive",
-    "catalysts_found": [
-      "2025年5月期第2四半期累計の経常利益が前年同期比2.1倍の1.8億円に急拡大",
-      "9-11月期（2Q）の経常利益が前年同期比2.6倍の1.3億円に急拡大し、売上営業利益率が3.1%から6.1%に大幅改善"
-    ],
-    "risks_found": [
-      "通期予想は3億円で据え置きながら、上期に進捗の多くを消化し、下期は減速見込み",
-      "不動産売買事業の減速により第3四半期累計期間の売上高が7.5％減少"
-    ],
-    "score_adjustment": 3,
-    "add_badges": [
-      "⬆️上方修正"
-    ],
-    "ir_comment": "<cite index=\"17-1\">25年5月期第2四半期累計の経常利益は前年同期比2.1倍の1.8億円に急拡大</cite>。<cite index=\"17-1\">通期計画の3億円に対する進捗率は60.7％に達し、5年平均の48.2％も上回った</cite>。<cite index=\"23-1\">第２次中期経営計画においては、ＤＯＥ（株主資本配当率）2.5％以上を維持することとしております</cite>。配当は前期同額を維持する方針。",
-    "review_note": "第2四半期は好調な業績で進捗率も高く、営業利益率も大幅改善している。中期計画でDOE2.5%以上の株主還元方針も明確。",
-    "source_urls": [
-      "https://kabutan.jp/news/?b=k202501140040",
-      "https://irbank.net/E30598/dividend",
-      "https://finance.yahoo.co.jp/quote/3297.T",
-      "https://irbank.net/3297/ir"
-    ],
-    "reviewed_at": "2026-06-04"
+    "review_status": "neutral",
+    "catalysts_found": [],
+    "risks_found": [],
+    "score_adjustment": 0,
+    "add_badges": [],
+    "ir_comment": "",
+    "review_note": "IR審査エラー: Error code: 404 - {'type': 'error', 'error': {'typ",
+    "source_urls": [],
+    "reviewed_at": "2026-07-06"
   },
   "3954": {
     "review_status": "neutral",
@@ -700,7 +672,7 @@
     "ir_comment": "",
     "review_note": "IR審査エラー: Error code: 404 - {'type': 'error', 'error': {'typ",
     "source_urls": [],
-    "reviewed_at": "2026-06-18"
+    "reviewed_at": "2026-07-06"
   },
   "9857": {
     "review_status": "neutral",
@@ -822,5 +794,16 @@
     "review_note": "IR審査エラー: Error code: 404 - {'type': 'error', 'error': {'typ",
     "source_urls": [],
     "reviewed_at": "2026-07-02"
+  },
+  "6647": {
+    "review_status": "neutral",
+    "catalysts_found": [],
+    "risks_found": [],
+    "score_adjustment": 0,
+    "add_badges": [],
+    "ir_comment": "",
+    "review_note": "IR審査エラー: Error code: 404 - {'type': 'error', 'error': {'typ",
+    "source_urls": [],
+    "reviewed_at": "2026-07-06"
   }
 }
