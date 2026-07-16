@@ -306,7 +306,7 @@
     "ir_comment": "",
     "review_note": "IR審査エラー: Error code: 404 - {'type': 'error', 'error': {'typ",
     "source_urls": [],
-    "reviewed_at": "2026-06-29"
+    "reviewed_at": "2026-07-16"
   },
   "8904": {
     "review_status": "neutral",
@@ -317,7 +317,7 @@
     "ir_comment": "",
     "review_note": "IR審査エラー: Error code: 404 - {'type': 'error', 'error': {'typ",
     "source_urls": [],
-    "reviewed_at": "2026-06-29"
+    "reviewed_at": "2026-07-16"
   },
   "3477": {
     "review_status": "positive",
@@ -404,7 +404,7 @@
     "ir_comment": "",
     "review_note": "IR審査エラー: Error code: 404 - {'type': 'error', 'error': {'typ",
     "source_urls": [],
-    "reviewed_at": "2026-06-25"
+    "reviewed_at": "2026-07-16"
   },
   "8860": {
     "review_status": "neutral",
@@ -749,7 +749,7 @@
     "ir_comment": "",
     "review_note": "IR審査エラー: Error code: 404 - {'type': 'error', 'error': {'typ",
     "source_urls": [],
-    "reviewed_at": "2026-06-29"
+    "reviewed_at": "2026-07-16"
   },
   "6229": {
     "review_status": "neutral",
@@ -816,5 +816,16 @@
     "review_note": "IR審査エラー: Error code: 404 - {'type': 'error', 'error': {'typ",
     "source_urls": [],
     "reviewed_at": "2026-07-13"
+  },
+  "4625": {
+    "review_status": "neutral",
+    "catalysts_found": [],
+    "risks_found": [],
+    "score_adjustment": 0,
+    "add_badges": [],
+    "ir_comment": "",
+    "review_note": "IR審査エラー: Error code: 404 - {'type': 'error', 'error': {'typ",
+    "source_urls": [],
+    "reviewed_at": "2026-07-16"
   }
 }

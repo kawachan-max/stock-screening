@@ -3269,6 +3269,76 @@
       "stock_price": 284,
       "theoretical_price": 982,
       "upside_percent": 245.6
+    },
+    {
+      "date": "2026-07-17",
+      "code": "9867",
+      "name": "SOLEKIA LIMITED",
+      "tab": "general",
+      "score": 70,
+      "stock_price": 10250,
+      "theoretical_price": 35482,
+      "upside_percent": 246.2
+    },
+    {
+      "date": "2026-07-17",
+      "code": "6743",
+      "name": "DAIDO SIGNAL CO",
+      "tab": "general",
+      "score": 63,
+      "stock_price": 834,
+      "theoretical_price": 2215,
+      "upside_percent": 165.6
+    },
+    {
+      "date": "2026-07-17",
+      "code": "9857",
+      "name": "EIWA CORPORATION",
+      "tab": "general",
+      "score": 63,
+      "stock_price": 2415,
+      "theoretical_price": 6327,
+      "upside_percent": 162.0
+    },
+    {
+      "date": "2026-07-17",
+      "code": "5956",
+      "name": "TOSO CO LTD",
+      "tab": "general",
+      "score": 60,
+      "stock_price": 597,
+      "theoretical_price": 1973,
+      "upside_percent": 230.4
+    },
+    {
+      "date": "2026-07-17",
+      "code": "8046",
+      "name": "MARUFUJI SHEET PILING CO",
+      "tab": "general",
+      "score": 60,
+      "stock_price": 884,
+      "theoretical_price": 2695,
+      "upside_percent": 204.8
+    },
+    {
+      "date": "2026-07-17",
+      "code": "8891",
+      "name": "AMG HOLDINGS CO LTD",
+      "tab": "finance",
+      "score": 65,
+      "stock_price": 2015,
+      "theoretical_price": 6540,
+      "upside_percent": 224.6
+    },
+    {
+      "date": "2026-07-17",
+      "code": "3236",
+      "name": "PROPERST CO. LTD",
+      "tab": "finance",
+      "score": 62,
+      "stock_price": 276,
+      "theoretical_price": 981,
+      "upside_percent": 255.5
     }
   ]
 }
