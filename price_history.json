@@ -3469,6 +3469,56 @@
       "stock_price": 272,
       "theoretical_price": 988,
       "upside_percent": 263.3
+    },
+    {
+      "date": "2026-07-22",
+      "code": "6743",
+      "name": "DAIDO SIGNAL CO",
+      "tab": "general",
+      "score": 63,
+      "stock_price": 871,
+      "theoretical_price": 2215,
+      "upside_percent": 154.3
+    },
+    {
+      "date": "2026-07-22",
+      "code": "7235",
+      "name": "TOKYO RADIATOR MFG CO",
+      "tab": "general",
+      "score": 60,
+      "stock_price": 1535,
+      "theoretical_price": 4590,
+      "upside_percent": 199.0
+    },
+    {
+      "date": "2026-07-22",
+      "code": "8860",
+      "name": "FUJI CORPORATION LIMITED",
+      "tab": "finance",
+      "score": 65,
+      "stock_price": 771,
+      "theoretical_price": 2246,
+      "upside_percent": 191.3
+    },
+    {
+      "date": "2026-07-22",
+      "code": "8891",
+      "name": "AMG HOLDINGS CO LTD",
+      "tab": "finance",
+      "score": 63,
+      "stock_price": 2104,
+      "theoretical_price": 6540,
+      "upside_percent": 210.8
+    },
+    {
+      "date": "2026-07-22",
+      "code": "3236",
+      "name": "PROPERST CO. LTD",
+      "tab": "finance",
+      "score": 62,
+      "stock_price": 277,
+      "theoretical_price": 988,
+      "upside_percent": 256.7
     }
   ]
 }
