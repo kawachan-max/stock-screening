@@ -227,7 +227,7 @@
     "ir_comment": "",
     "review_note": "IR審査エラー: Error code: 404 - {'type': 'error', 'error': {'typ",
     "source_urls": [],
-    "reviewed_at": "2026-07-06"
+    "reviewed_at": "2026-07-23"
   },
   "7538": {
     "review_status": "neutral",
@@ -284,7 +284,7 @@
     "ir_comment": "",
     "review_note": "IR審査エラー: Error code: 404 - {'type': 'error', 'error': {'typ",
     "source_urls": [],
-    "reviewed_at": "2026-07-06"
+    "reviewed_at": "2026-07-23"
   },
   "5697": {
     "review_status": "neutral",
@@ -341,25 +341,15 @@
     "reviewed_at": "2026-06-01"
   },
   "7434": {
-    "review_status": "positive",
-    "catalysts_found": [
-      "自社株買い発表（2024年10月）",
-      "過去の上方修正実績"
-    ],
-    "risks_found": [
-      "2025年5月期1Q減益（経常利益13.9%減）"
-    ],
-    "score_adjustment": 2,
-    "add_badges": [
-      "⬆️自社株買い"
-    ],
-    "ir_comment": "<cite index=\"11-1\">2024年10月18日に10万株・1億9560万円を上限とした自社株買いを発表（割合2.5%）</cite>。<cite index=\"11-1\">2025年5月期1Qでは経常利益が13.9%減益</cite>となったものの、<cite index=\"28-1,34-1\">過去に22年5月期では営業利益を3億円から5億円に上方修正、23年5月期では業績と配当見込みの上方修正を実施</cite>した実績がある。",
-    "review_note": "自社株買い発表により株主還元を実施。一方で直近1Qは減益となっており業績の推移を注視する必要。",
-    "source_urls": [
-      "https://www.kabutec.jp/sp/i.php?code=7434",
-      "https://web.fisco.jp/platform/companies/0743400"
-    ],
-    "reviewed_at": "2026-06-11"
+    "review_status": "neutral",
+    "catalysts_found": [],
+    "risks_found": [],
+    "score_adjustment": 0,
+    "add_badges": [],
+    "ir_comment": "",
+    "review_note": "IR審査エラー: Error code: 404 - {'type': 'error', 'error': {'typ",
+    "source_urls": [],
+    "reviewed_at": "2026-07-23"
   },
   "8147": {
     "review_status": "neutral",
@@ -539,7 +529,7 @@
     "ir_comment": "",
     "review_note": "IR審査エラー: Error code: 404 - {'type': 'error', 'error': {'typ",
     "source_urls": [],
-    "reviewed_at": "2026-07-06"
+    "reviewed_at": "2026-07-23"
   },
   "7192": {
     "review_status": "neutral",
@@ -624,7 +614,7 @@
     "ir_comment": "",
     "review_note": "IR審査エラー: Error code: 404 - {'type': 'error', 'error': {'typ",
     "source_urls": [],
-    "reviewed_at": "2026-07-06"
+    "reviewed_at": "2026-07-23"
   },
   "3954": {
     "review_status": "neutral",
@@ -672,7 +662,7 @@
     "ir_comment": "",
     "review_note": "IR審査エラー: Error code: 404 - {'type': 'error', 'error': {'typ",
     "source_urls": [],
-    "reviewed_at": "2026-07-06"
+    "reviewed_at": "2026-07-23"
   },
   "9857": {
     "review_status": "neutral",
@@ -716,7 +706,7 @@
     "ir_comment": "",
     "review_note": "IR審査エラー: Error code: 404 - {'type': 'error', 'error': {'typ",
     "source_urls": [],
-    "reviewed_at": "2026-06-25"
+    "reviewed_at": "2026-07-23"
   },
   "1850": {
     "review_status": "neutral",
@@ -804,7 +794,7 @@
     "ir_comment": "",
     "review_note": "IR審査エラー: Error code: 404 - {'type': 'error', 'error': {'typ",
     "source_urls": [],
-    "reviewed_at": "2026-07-06"
+    "reviewed_at": "2026-07-23"
   },
   "4224": {
     "review_status": "neutral",
