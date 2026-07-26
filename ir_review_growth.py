@@ -150,7 +150,7 @@ def review_stock_ir(code: str, name: str, current_data: dict) -> dict:
     full_text_parts: list[str] = []
     for _ in range(16):
         msg = client.messages.create(
-            model="claude-sonnet-4-20250514",
+            model="claude-sonnet-5",
             max_tokens=2000,
             tools=tools,
             messages=messages,
@@ -181,6 +181,16 @@ def review_stock_ir(code: str, name: str, current_data: dict) -> dict:
     return _extract_json_object(full_text)
 
 
+IR_ERROR_NOTE_PREFIX = "IR審査エラー"
+
+
+def _is_error_review(review: dict) -> bool:
+    """IR審査APIが失敗したときに保存される既定値かどうか"""
+    if not isinstance(review, dict):
+        return False
+    return str(review.get("review_note", "")).startswith(IR_ERROR_NOTE_PREFIX)
+
+
 def _default_error_review(err_snip: str) -> dict:
     return {
         "review_status": "neutral",
@@ -189,7 +199,7 @@ def _default_error_review(err_snip: str) -> dict:
         "score_adjustment": 0,
         "add_badges": [],
         "ir_comment": "",
-        "review_note": "IR\u5be9\u67fb\u30a8\u30e9\u30fc: " + err_snip[:50],
+        "review_note": IR_ERROR_NOTE_PREFIX + ": " + err_snip[:50],
         "source_urls": [],
     }
 
@@ -206,6 +216,9 @@ def apply_ir_review(stocks: list[dict], reviews: dict) -> list[dict]:
             continue
         review = reviews[code]
         if not isinstance(review, dict):
+            continue
+        if _is_error_review(review):
+            # 審査APIの失敗による既定値。銘柄側の情報ではないので反映しない
             continue
         reviewed_at = review.get("reviewed_at", "")
         if reviewed_at:
@@ -325,7 +338,7 @@ def main() -> None:
         code = _norm_code(str(stock.get("code", "")))
         name = stock.get("name_jp", "") or stock.get("name", "")
 
-        if not args.refresh_ir and code in cache:
+        if not args.refresh_ir and code in cache and not _is_error_review(cache[code]):
             cached = cache[code]
             cached_date = str(cached.get("reviewed_at", ""))[:10]
             try:
