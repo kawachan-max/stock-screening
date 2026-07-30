@@ -64,7 +64,7 @@
     "ir_comment": "",
     "review_note": "IR審査エラー: unbalanced braces",
     "source_urls": [],
-    "reviewed_at": "2026-07-27"
+    "reviewed_at": "2026-07-30"
   },
   "8881": {
     "review_status": "neutral",
@@ -75,7 +75,7 @@
     "ir_comment": "",
     "review_note": "IR審査エラー: unbalanced braces",
     "source_urls": [],
-    "reviewed_at": "2026-07-27"
+    "reviewed_at": "2026-07-30"
   },
   "8935": {
     "review_status": "neutral",
@@ -122,15 +122,31 @@
     "reviewed_at": "2026-06-22"
   },
   "7175": {
-    "review_status": "neutral",
-    "catalysts_found": [],
-    "risks_found": [],
-    "score_adjustment": 0,
-    "add_badges": [],
-    "ir_comment": "",
-    "review_note": "IR審査エラー: unbalanced braces",
-    "source_urls": [],
-    "reviewed_at": "2026-07-27"
+    "review_status": "positive",
+    "catalysts_found": [
+      "2026年3月期期末配当を53円に決定し、中間配当20円と合わせ年間配当73円（前期55円から18円増配）",
+      "2026年3月期決算は営業収益49.14億円（前年比+17.4%）、当期純利益10.55億円（前年比+38.8%）と大幅増収増益"
+    ],
+    "risks_found": [
+      "トレーディング損益が前年比95.6%減となり収益の一過性・不安定さが残る",
+      "自己資本比率が61.4%から49.6%へ低下",
+      "2027年3月期の業績見通し・配当は未定で先行き不透明感がある"
+    ],
+    "score_adjustment": 2,
+    "add_badges": [
+      "⬆️増配発表",
+      "⚠️一過性"
+    ],
+    "ir_comment": "2026年3月期は株式市況好調を背景に営業収益+17.4%、純利益+38.8%の増収増益。期末配当53円で年間配当73円（前期比+18円）の大幅増配を発表。一方でトレーディング損益は95.6%減、来期見通しは未定と不透明感も残る。",
+    "review_note": "大幅増配は好材料だが、トレーディング収益急減と来期見通し未定がリスク要因。",
+    "source_urls": [
+      "https://www.imamura.co.jp/ir/pdf/20260326haitou.pdf",
+      "https://www.nikkei.com/article/DGXZQOCC266V10W6A320C2000000/",
+      "https://finance.yahoo.co.jp/quote/7175.T/dividend",
+      "https://minkabu.jp/stock/7175/settlement",
+      "https://www.imamura.co.jp/ir/result.html"
+    ],
+    "reviewed_at": "2026-07-30"
   },
   "8891": {
     "review_status": "neutral",
@@ -139,9 +155,9 @@
     "score_adjustment": 0,
     "add_badges": [],
     "ir_comment": "",
-    "review_note": "IR審査エラー: no json object",
+    "review_note": "IR審査エラー: unbalanced braces",
     "source_urls": [],
-    "reviewed_at": "2026-07-27"
+    "reviewed_at": "2026-07-30"
   },
   "3388": {
     "review_status": "neutral",
@@ -165,9 +181,9 @@
     "score_adjustment": 0,
     "add_badges": [],
     "ir_comment": "",
-    "review_note": "IR審査エラー: no json object",
+    "review_note": "IR審査エラー: unbalanced braces",
     "source_urls": [],
-    "reviewed_at": "2026-07-27"
+    "reviewed_at": "2026-07-30"
   },
   "9633": {
     "review_status": "neutral",
@@ -221,18 +237,37 @@
     "ir_comment": "",
     "review_note": "IR審査エラー: no json object",
     "source_urls": [],
-    "reviewed_at": "2026-07-27"
+    "reviewed_at": "2026-07-30"
   },
   "6743": {
-    "review_status": "neutral",
-    "catalysts_found": [],
+    "review_status": "positive",
+    "catalysts_found": [
+      "業績予想の上方修正（2025年11月7日）：2026年3月期の経常利益予想を50.6%増益に上方修正",
+      "増配発表（複数回）：2025年11月に15円→25円、2026年5月に25円→35円へ増配",
+      "自己株式取得の実施（2025年12月〜2026年5月、ToSTNeT-3による買付け）",
+      "PLAN2026中期経営計画にて資本コスト・PBRを意識した経営対応を表明、政策保有株式縮減も推進",
+      "2026年3月期通期実績で大幅増収増益（売上+17.3%、営業利益+89.8%）、自己資本比率54.6%まで改善"
+    ],
     "risks_found": [],
-    "score_adjustment": 0,
-    "add_badges": [],
-    "ir_comment": "",
-    "review_note": "IR審査エラー: no json object",
-    "source_urls": [],
-    "reviewed_at": "2026-07-27"
+    "score_adjustment": 16,
+    "add_badges": [
+      "⬆️上方修正",
+      "⬆️増配発表",
+      "⬆️自社株買い",
+      "⬆️還元強化"
+    ],
+    "ir_comment": "2025年11月に業績・配当予想を上方修正（経常益50.6%増）、2026年5月の本決算でも増収増益（売上+17.3%、営業益+89.8%）を確認。配当は15円→25円→35円と段階的に増配し、自己株式取得（ToSTNeT-3）も実施。PLAN2026でPBR改善・資本効率向上を明示し株主還元強化姿勢が鮮明。",
+    "review_note": "上方修正・連続増配・自社株買い・PBR改善対応が重複する強めのポジティブIR。ネガティブ要素は確認されず。",
+    "source_urls": [
+      "https://www.daido-signal.co.jp/financial/disclosure.html",
+      "https://www.daido-signal.co.jp/financial/ir.html",
+      "https://www.daido-signal.co.jp/assets/image/news/pdf/daido_news_20250603.pdf",
+      "https://www.daido-signal.co.jp/financial/file/daido_ir_20250627-3.pdf",
+      "https://www.release.tdnet.info/inbs/140120260518539271.pdf",
+      "https://finance.biggo.jp/news/jpx_tdnet_140120260520542581",
+      "https://irbank.net/6743/140120251105587637"
+    ],
+    "reviewed_at": "2026-07-30"
   },
   "7538": {
     "review_status": "neutral",
@@ -254,7 +289,7 @@
     "ir_comment": "",
     "review_note": "IR審査エラー: no json object",
     "source_urls": [],
-    "reviewed_at": "2026-07-27"
+    "reviewed_at": "2026-07-30"
   },
   "5757": {
     "review_status": "negative",
@@ -281,15 +316,28 @@
     "reviewed_at": "2026-04-13"
   },
   "6497": {
-    "review_status": "neutral",
-    "catalysts_found": [],
-    "risks_found": [],
-    "score_adjustment": 0,
-    "add_badges": [],
-    "ir_comment": "",
-    "review_note": "IR審査エラー: no json object",
-    "source_urls": [],
-    "reviewed_at": "2026-07-27"
+    "review_status": "positive",
+    "catalysts_found": [
+      "2025年12月期本決算発表(2026/2/13)で2026年12月期の年間配当予想を前期実績40円から45円へ5円増配すると発表(中間20円・期末25円)",
+      "2026年12月期第1四半期決算発表後も通期の増収増益予想・45円配当予想を維持"
+    ],
+    "risks_found": [
+      "2026年12月期第1四半期は原材料価格高騰の影響で営業利益・純利益が前年同期比減益(営業利益-9.2%、純利益-2.3%)",
+      "会社の中期経営計画『2226中期経営計画』『ビジョン2030』は2022年策定の既存計画であり、直近半年以内の新たな株主還元強化策・PBR改善策の発表は確認できず"
+    ],
+    "score_adjustment": 1,
+    "add_badges": [
+      "⬆️増配発表"
+    ],
+    "ir_comment": "2026年12月期は40円→45円に5円増配予定。通期は増収増益計画を維持しているが、第1四半期は原材料高で営業減益となった。自社株買いや業績上方修正の発表は確認されず。",
+    "review_note": "5円増配発表はプラス材料だが、直近四半期はコスト高で減益。上方修正・自社株買い等の新規カタリストは未確認。",
+    "source_urls": [
+      "https://finance.yahoo.co.jp/quote/6497.T",
+      "https://finance.yahoo.co.jp/quote/6497.Q/financials",
+      "https://finance.yahoo.co.jp/quote/6497.T/dividend",
+      "https://www.hamai-net.com/corporation/ir/index.html"
+    ],
+    "reviewed_at": "2026-07-30"
   },
   "5697": {
     "review_status": "neutral",
@@ -298,9 +346,9 @@
     "score_adjustment": 0,
     "add_badges": [],
     "ir_comment": "",
-    "review_note": "IR審査エラー: no json object",
+    "review_note": "IR審査エラー: unbalanced braces",
     "source_urls": [],
-    "reviewed_at": "2026-07-27"
+    "reviewed_at": "2026-07-30"
   },
   "7235": {
     "review_status": "positive",
@@ -336,15 +384,26 @@
     "reviewed_at": "2026-07-27"
   },
   "8904": {
-    "review_status": "neutral",
+    "review_status": "negative",
     "catalysts_found": [],
-    "risks_found": [],
-    "score_adjustment": 0,
-    "add_badges": [],
-    "ir_comment": "",
-    "review_note": "IR審査エラー: no json object",
-    "source_urls": [],
-    "reviewed_at": "2026-07-27"
+    "risks_found": [
+      "2026年8月期第3四半期(9月-5月累計)の経常利益は前年同期比で黒字に浮上したが、通期計画16億円に対する進捗率はわずか9.6%と、過去5年平均(31.1%)を大幅に下回っている",
+      "直近3ヵ月(3-5月期)の経常利益は前年同期比80.3%減となり、売上営業利益率も1.6%→0.9%に悪化するなど、業績の減速・一過性要因が懸念される",
+      "会社側は通期計画を据え置いているが、進捗の遅れから下方修正リスクが残る"
+    ],
+    "score_adjustment": -3,
+    "add_badges": [
+      "⚠️一過性"
+    ],
+    "ir_comment": "26年8月期3Q累計の経常利益は黒字化したが、通期進捗率は9.6%と過去平均を下回る。直近四半期は経常利益80%減で減速感あり。自社株買い・増配・MBO等の発表は確認できず。",
+    "review_note": "業績進捗の鈍化と直近四半期の急減益が懸念材料。上方修正・増配等の明確なカタリストは現時点で確認されず。",
+    "source_urls": [
+      "https://minkabu.jp/news/4568466",
+      "https://minkabu.jp/stock/8904/news",
+      "https://avantia-g.jp/corp/ir/library/earnings_release.html",
+      "https://irbank.net/8904"
+    ],
+    "reviewed_at": "2026-07-30"
   },
   "3477": {
     "review_status": "positive",
@@ -374,9 +433,9 @@
     "score_adjustment": 0,
     "add_badges": [],
     "ir_comment": "",
-    "review_note": "IR審査エラー: Error code: 404 - {'type': 'error', 'error': {'typ",
+    "review_note": "IR審査エラー: unbalanced braces",
     "source_urls": [],
-    "reviewed_at": "2026-07-23"
+    "reviewed_at": "2026-07-30"
   },
   "8147": {
     "review_status": "neutral",
@@ -425,14 +484,31 @@
   },
   "8860": {
     "review_status": "neutral",
-    "catalysts_found": [],
-    "risks_found": [],
-    "score_adjustment": 0,
-    "add_badges": [],
-    "ir_comment": "",
-    "review_note": "IR審査エラー: no json object",
-    "source_urls": [],
-    "reviewed_at": "2026-07-27"
+    "catalysts_found": [
+      "2026年3月期は全事業セグメントで増収、営業利益も前期比5.1%増と好調",
+      "2025年5月に中期経営計画（2028年3月期目標：売上1,218億円、営業利益70億円等）を公表し成長戦略を提示",
+      "「累進的配当政策」を導入し、減配なし・配当維持もしくは増配のみを基本方針として明言"
+    ],
+    "risks_found": [
+      "2027年3月期の業績予想は原油価格・資材価格・調達遅延等の不確定要素により未定としており、先行き不透明感がある",
+      "2026年3月期の年間配当は32円で前期と同額（増配なし）",
+      "過去に従業員への民族差別的文書配布を巡る訴訟があり、2022年に最高裁で会社側敗訴が確定（レピュテーションリスクとして残存、直近半年の新規展開なし）"
+    ],
+    "score_adjustment": 2,
+    "add_badges": [
+      "⬆️還元強化"
+    ],
+    "ir_comment": "2026年3月期は増収増益で着地し配当は32円を維持（累進的配当政策）。中期経営計画で2028年3月期の成長目標を提示。直近半年で自社株買いや上方修正の発表はなし。翌期業績予想は資材・調達リスクにより未定。",
+    "review_note": "直近半年に大きなカタリスト無し。中計提示と累進配当政策継続が小幅にプラス評価。",
+    "source_urls": [
+      "https://www.fuji-jutaku.co.jp/ir/",
+      "https://www.fuji-jutaku.co.jp/ir/library/results/",
+      "https://www.fuji-jutaku.co.jp/ir/strategy/plan/",
+      "https://www.fuji-jutaku.co.jp/ir/stockinfo/reduce/",
+      "https://finance.yahoo.co.jp/quote/8860.T/financials",
+      "https://irbank.net/E03953/reports"
+    ],
+    "reviewed_at": "2026-07-30"
   },
   "8747": {
     "review_status": "neutral",
@@ -454,7 +530,7 @@
     "ir_comment": "",
     "review_note": "IR審査エラー: no json object",
     "source_urls": [],
-    "reviewed_at": "2026-07-27"
+    "reviewed_at": "2026-07-30"
   },
   "3134": {
     "review_status": "neutral",
@@ -523,7 +599,7 @@
     "ir_comment": "",
     "review_note": "IR審査エラー: unbalanced braces",
     "source_urls": [],
-    "reviewed_at": "2026-07-27"
+    "reviewed_at": "2026-07-30"
   },
   "4624": {
     "review_status": "neutral",
@@ -532,9 +608,9 @@
     "score_adjustment": 0,
     "add_badges": [],
     "ir_comment": "",
-    "review_note": "IR審査エラー: unbalanced braces",
+    "review_note": "IR審査エラー: no json object",
     "source_urls": [],
-    "reviewed_at": "2026-07-27"
+    "reviewed_at": "2026-07-30"
   },
   "8864": {
     "review_status": "neutral",
@@ -556,7 +632,7 @@
     "ir_comment": "",
     "review_note": "IR審査エラー: unbalanced braces",
     "source_urls": [],
-    "reviewed_at": "2026-07-27"
+    "reviewed_at": "2026-07-30"
   },
   "7192": {
     "review_status": "neutral",
@@ -570,23 +646,15 @@
     "reviewed_at": "2026-06-18"
   },
   "5819": {
-    "review_status": "positive",
-    "catalysts_found": [
-      "PBR改善対応・中計成長戦略"
-    ],
+    "review_status": "neutral",
+    "catalysts_found": [],
     "risks_found": [],
-    "score_adjustment": 2,
-    "add_badges": [
-      "⬆️還元強化"
-    ],
-    "ir_comment": "2024年10月30日に「資本コストや株価を意識した経営の実現に向けた対応について」を公表。PBR0.63倍と低位でありながら、東証の要請に応じて株主価値向上への取り組みを開示。直近決算では売上高過去最高を更新し、人的資本投資を継続中。",
-    "review_note": "PBR改善対応開示により株主価値向上への意識を明確化。業績は堅調だが今期減益予想を織り込み済み",
-    "source_urls": [
-      "https://www.canare.co.jp/ir/ir_news/",
-      "https://irbank.net/5819",
-      "https://www.canare.co.jp/ir/library/"
-    ],
-    "reviewed_at": "2026-06-01"
+    "score_adjustment": 0,
+    "add_badges": [],
+    "ir_comment": "",
+    "review_note": "IR審査エラー: unbalanced braces",
+    "source_urls": [],
+    "reviewed_at": "2026-07-30"
   },
   "8046": {
     "review_status": "neutral",
@@ -597,7 +665,7 @@
     "ir_comment": "",
     "review_note": "IR審査エラー: no json object",
     "source_urls": [],
-    "reviewed_at": "2026-07-27"
+    "reviewed_at": "2026-07-30"
   },
   "8869": {
     "review_status": "neutral",
@@ -652,9 +720,9 @@
     "score_adjustment": 0,
     "add_badges": [],
     "ir_comment": "",
-    "review_note": "IR審査エラー: unbalanced braces",
+    "review_note": "IR審査エラー: no json object",
     "source_urls": [],
-    "reviewed_at": "2026-07-27"
+    "reviewed_at": "2026-07-30"
   },
   "3954": {
     "review_status": "neutral",
@@ -689,9 +757,9 @@
     "score_adjustment": 0,
     "add_badges": [],
     "ir_comment": "",
-    "review_note": "IR審査エラー: Error code: 404 - {'type': 'error', 'error': {'typ",
+    "review_note": "IR審査エラー: no json object",
     "source_urls": [],
-    "reviewed_at": "2026-06-15"
+    "reviewed_at": "2026-07-30"
   },
   "8844": {
     "review_status": "neutral",
@@ -702,7 +770,7 @@
     "ir_comment": "",
     "review_note": "IR審査エラー: no json object",
     "source_urls": [],
-    "reviewed_at": "2026-07-27"
+    "reviewed_at": "2026-07-30"
   },
   "9857": {
     "review_status": "neutral",
@@ -724,7 +792,7 @@
     "ir_comment": "",
     "review_note": "IR審査エラー: unbalanced braces",
     "source_urls": [],
-    "reviewed_at": "2026-07-27"
+    "reviewed_at": "2026-07-30"
   },
   "5368": {
     "review_status": "neutral",
@@ -777,9 +845,9 @@
     "score_adjustment": 0,
     "add_badges": [],
     "ir_comment": "",
-    "review_note": "IR審査エラー: Error code: 404 - {'type': 'error', 'error': {'typ",
+    "review_note": "IR審査エラー: no json object",
     "source_urls": [],
-    "reviewed_at": "2026-07-16"
+    "reviewed_at": "2026-07-30"
   },
   "6229": {
     "review_status": "neutral",
@@ -799,9 +867,9 @@
     "score_adjustment": 0,
     "add_badges": [],
     "ir_comment": "",
-    "review_note": "IR審査エラー: unbalanced braces",
+    "review_note": "IR審査エラー: no json object",
     "source_urls": [],
-    "reviewed_at": "2026-07-27"
+    "reviewed_at": "2026-07-30"
   },
   "6335": {
     "review_status": "neutral",
@@ -810,9 +878,9 @@
     "score_adjustment": 0,
     "add_badges": [],
     "ir_comment": "",
-    "review_note": "IR審査エラー: unbalanced braces",
+    "review_note": "IR審査エラー: no json object",
     "source_urls": [],
-    "reviewed_at": "2026-07-27"
+    "reviewed_at": "2026-07-30"
   },
   "8928": {
     "review_status": "neutral",
@@ -827,14 +895,25 @@
   },
   "6647": {
     "review_status": "neutral",
-    "catalysts_found": [],
-    "risks_found": [],
+    "catalysts_found": [
+      "2026年3月期本決算で売上高は減少したが主力の鉄道関連事業が堅調で増益となり、受注高も大幅に増加した",
+      "自己資本比率の上昇など財務体質の改善が進んでいる"
+    ],
+    "risks_found": [
+      "次期（2027年3月期）の業績予想は保守的で、増収は見込むものの利益水準は今期の実績を下回る可能性がある（会社側は受注活動の積極化・コストダウン等で収益改善を目指す方針）",
+      "自社株買い、増配、上方修正、MBO/TOB等の明確な追加発表は直近半年で確認できず、株主還元強化に関する新規の具体的施策は見当たらない"
+    ],
     "score_adjustment": 0,
     "add_badges": [],
-    "ir_comment": "",
-    "review_note": "IR審査エラー: Error code: 404 - {'type': 'error', 'error': {'typ",
-    "source_urls": [],
-    "reviewed_at": "2026-07-23"
+    "ir_comment": "2026年3月期は売上減少も鉄道関連事業が堅調で増益、受注高も大幅増加。財務体質は改善傾向。次期は保守的な計画で増収減益含みとの見方もあり、明確な自社株買い・増配・上方修正等の追加カタリストは確認されず。",
+    "review_note": "直近IRに大きなカタリスト/リスクの追加発表なし。業績は堅調だが次期計画は保守的で中立評価。",
+    "source_urls": [
+      "http://www.morio.co.jp/ir/library/index.html",
+      "https://minkabu.jp/stock/6647",
+      "https://finance.yahoo.co.jp/quote/6647.T/performance",
+      "https://irbank.net/E01912"
+    ],
+    "reviewed_at": "2026-07-30"
   },
   "4224": {
     "review_status": "positive",
