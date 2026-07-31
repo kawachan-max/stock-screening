@@ -3739,6 +3739,46 @@
       "stock_price": 274,
       "theoretical_price": 988,
       "upside_percent": 260.6
+    },
+    {
+      "date": "2026-08-01",
+      "code": "9867",
+      "name": "SOLEKIA LIMITED",
+      "tab": "general",
+      "score": 67,
+      "stock_price": 10100,
+      "theoretical_price": 35481,
+      "upside_percent": 251.3
+    },
+    {
+      "date": "2026-08-01",
+      "code": "8860",
+      "name": "FUJI CORPORATION LIMITED",
+      "tab": "finance",
+      "score": 66,
+      "stock_price": 741,
+      "theoretical_price": 2247,
+      "upside_percent": 203.2
+    },
+    {
+      "date": "2026-08-01",
+      "code": "8891",
+      "name": "AMG HOLDINGS CO LTD",
+      "tab": "finance",
+      "score": 65,
+      "stock_price": 2113,
+      "theoretical_price": 6540,
+      "upside_percent": 209.5
+    },
+    {
+      "date": "2026-08-01",
+      "code": "3236",
+      "name": "PROPERST CO. LTD",
+      "tab": "finance",
+      "score": 62,
+      "stock_price": 279,
+      "theoretical_price": 988,
+      "upside_percent": 254.1
     }
   ]
 }
