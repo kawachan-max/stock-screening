@@ -62,9 +62,9 @@
     "score_adjustment": 0,
     "add_badges": [],
     "ir_comment": "",
-    "review_note": "IR審査エラー: no json object",
+    "review_note": "IR審査エラー: Error code: 400 - {'type': 'error', 'error': {'typ",
     "source_urls": [],
-    "reviewed_at": "2026-08-03"
+    "reviewed_at": "2026-08-10"
   },
   "8881": {
     "review_status": "positive",
@@ -140,9 +140,9 @@
     "score_adjustment": 0,
     "add_badges": [],
     "ir_comment": "",
-    "review_note": "IR審査エラー: Error code: 404 - {'type': 'error', 'error': {'typ",
+    "review_note": "IR審査エラー: Error code: 400 - {'type': 'error', 'error': {'typ",
     "source_urls": [],
-    "reviewed_at": "2026-06-22"
+    "reviewed_at": "2026-08-10"
   },
   "7991": {
     "review_status": "neutral",
@@ -189,9 +189,9 @@
     "score_adjustment": 0,
     "add_badges": [],
     "ir_comment": "",
-    "review_note": "IR審査エラー: unbalanced braces",
+    "review_note": "IR審査エラー: Error code: 400 - {'type': 'error', 'error': {'typ",
     "source_urls": [],
-    "reviewed_at": "2026-08-03"
+    "reviewed_at": "2026-08-10"
   },
   "3388": {
     "review_status": "neutral",
@@ -269,9 +269,9 @@
     "score_adjustment": 0,
     "add_badges": [],
     "ir_comment": "",
-    "review_note": "IR審査エラー: no json object",
+    "review_note": "IR審査エラー: Error code: 400 - {'type': 'error', 'error': {'typ",
     "source_urls": [],
-    "reviewed_at": "2026-08-03"
+    "reviewed_at": "2026-08-10"
   },
   "6743": {
     "review_status": "positive",
@@ -321,9 +321,9 @@
     "score_adjustment": 0,
     "add_badges": [],
     "ir_comment": "",
-    "review_note": "IR審査エラー: no json object",
+    "review_note": "IR審査エラー: Error code: 400 - {'type': 'error', 'error': {'typ",
     "source_urls": [],
-    "reviewed_at": "2026-08-03"
+    "reviewed_at": "2026-08-10"
   },
   "5757": {
     "review_status": "negative",
@@ -380,9 +380,9 @@
     "score_adjustment": 0,
     "add_badges": [],
     "ir_comment": "",
-    "review_note": "IR審査エラー: unbalanced braces",
+    "review_note": "IR審査エラー: Error code: 400 - {'type': 'error', 'error': {'typ",
     "source_urls": [],
-    "reviewed_at": "2026-08-03"
+    "reviewed_at": "2026-08-10"
   },
   "7235": {
     "review_status": "positive",
@@ -562,9 +562,9 @@
     "score_adjustment": 0,
     "add_badges": [],
     "ir_comment": "",
-    "review_note": "IR審査エラー: no json object",
+    "review_note": "IR審査エラー: Error code: 400 - {'type': 'error', 'error': {'typ",
     "source_urls": [],
-    "reviewed_at": "2026-08-03"
+    "reviewed_at": "2026-08-10"
   },
   "3134": {
     "review_status": "neutral",
@@ -595,34 +595,20 @@
     "score_adjustment": 0,
     "add_badges": [],
     "ir_comment": "",
-    "review_note": "IR審査エラー: no json object",
+    "review_note": "IR審査エラー: Error code: 400 - {'type': 'error', 'error': {'typ",
     "source_urls": [],
-    "reviewed_at": "2026-08-03"
+    "reviewed_at": "2026-08-10"
   },
   "5753": {
-    "review_status": "negative",
+    "review_status": "neutral",
     "catalysts_found": [],
-    "risks_found": [
-      "デリバティブ損失による経常利益減少",
-      "業績見通し下方修正（営業利益36.3%減予想）",
-      "銅相場変動による収益不安定性"
-    ],
-    "score_adjustment": -7,
-    "add_badges": [
-      {
-        "text": "⚠️一過性",
-        "type": "negative"
-      }
-    ],
-    "ir_comment": "<cite index='21-1'>2026年3月期決算は売上高301億4,500万円（前年同期比15.4％増）、営業利益26億9,400万円（同46.8％増）と増収増益となったが、デリバティブ損失の影響で経常利益と当期純利益は減少</cite>。<cite index='13-1'>通期業績予想は売上高260億円（前期比0.5％減）、営業利益11億7,000万円（同36.3％減）を見込む</cite>。",
-    "review_note": "<cite index='9-1'>銅相場高騰により増収だがデリバティブ損失が発生し、収益性の不安定さが顕著</cite>。直近半年で自社株買いや増配等の株主還元強化発表は確認されず。",
-    "source_urls": [
-      "https://finance.yahoo.co.jp/quote/5753.T",
-      "https://finance.yahoo.co.jp/quote/5753.T/financials",
-      "https://irbank.net/5753/pl",
-      "https://www.nikkei.com/nkd/company/disclose/?scode=5753"
-    ],
-    "reviewed_at": "2026-06-08"
+    "risks_found": [],
+    "score_adjustment": 0,
+    "add_badges": [],
+    "ir_comment": "",
+    "review_note": "IR審査エラー: Error code: 400 - {'type': 'error', 'error': {'typ",
+    "source_urls": [],
+    "reviewed_at": "2026-08-10"
   },
   "8138": {
     "review_status": "neutral",
@@ -631,9 +617,9 @@
     "score_adjustment": 0,
     "add_badges": [],
     "ir_comment": "",
-    "review_note": "IR審査エラー: no json object",
+    "review_note": "IR審査エラー: Error code: 400 - {'type': 'error', 'error': {'typ",
     "source_urls": [],
-    "reviewed_at": "2026-08-03"
+    "reviewed_at": "2026-08-10"
   },
   "4624": {
     "review_status": "neutral",
@@ -642,9 +628,9 @@
     "score_adjustment": 0,
     "add_badges": [],
     "ir_comment": "",
-    "review_note": "IR審査エラー: no json object",
+    "review_note": "IR審査エラー: Error code: 400 - {'type': 'error', 'error': {'typ",
     "source_urls": [],
-    "reviewed_at": "2026-08-03"
+    "reviewed_at": "2026-08-10"
   },
   "8864": {
     "review_status": "neutral",
@@ -664,9 +650,9 @@
     "score_adjustment": 0,
     "add_badges": [],
     "ir_comment": "",
-    "review_note": "IR審査エラー: no json object",
+    "review_note": "IR審査エラー: Error code: 400 - {'type': 'error', 'error': {'typ",
     "source_urls": [],
-    "reviewed_at": "2026-08-03"
+    "reviewed_at": "2026-08-10"
   },
   "7192": {
     "review_status": "neutral",
@@ -697,9 +683,9 @@
     "score_adjustment": 0,
     "add_badges": [],
     "ir_comment": "",
-    "review_note": "IR審査エラー: no json object",
+    "review_note": "IR審査エラー: Error code: 400 - {'type': 'error', 'error': {'typ",
     "source_urls": [],
-    "reviewed_at": "2026-07-30"
+    "reviewed_at": "2026-08-10"
   },
   "8869": {
     "review_status": "neutral",
@@ -807,9 +793,9 @@
     "score_adjustment": 0,
     "add_badges": [],
     "ir_comment": "",
-    "review_note": "IR審査エラー: no json object",
+    "review_note": "IR審査エラー: Error code: 400 - {'type': 'error', 'error': {'typ",
     "source_urls": [],
-    "reviewed_at": "2026-08-03"
+    "reviewed_at": "2026-08-10"
   },
   "8844": {
     "review_status": "positive",
@@ -862,9 +848,9 @@
     "score_adjustment": 0,
     "add_badges": [],
     "ir_comment": "",
-    "review_note": "IR審査エラー: no json object",
+    "review_note": "IR審査エラー: Error code: 400 - {'type': 'error', 'error': {'typ",
     "source_urls": [],
-    "reviewed_at": "2026-08-03"
+    "reviewed_at": "2026-08-10"
   },
   "5368": {
     "review_status": "neutral",
@@ -873,9 +859,9 @@
     "score_adjustment": 0,
     "add_badges": [],
     "ir_comment": "",
-    "review_note": "IR審査エラー: unbalanced braces",
+    "review_note": "IR審査エラー: Error code: 400 - {'type': 'error', 'error': {'typ",
     "source_urls": [],
-    "reviewed_at": "2026-08-03"
+    "reviewed_at": "2026-08-10"
   },
   "6418": {
     "review_status": "neutral",
@@ -1021,9 +1007,9 @@
     "score_adjustment": 0,
     "add_badges": [],
     "ir_comment": "",
-    "review_note": "IR審査エラー: Error code: 404 - {'type': 'error', 'error': {'typ",
+    "review_note": "IR審査エラー: Error code: 400 - {'type': 'error', 'error': {'typ",
     "source_urls": [],
-    "reviewed_at": "2026-07-16"
+    "reviewed_at": "2026-08-10"
   },
   "1768": {
     "review_status": "neutral",
@@ -1035,5 +1021,27 @@
     "review_note": "IR審査エラー: unbalanced braces",
     "source_urls": [],
     "reviewed_at": "2026-08-03"
+  },
+  "9625": {
+    "review_status": "neutral",
+    "catalysts_found": [],
+    "risks_found": [],
+    "score_adjustment": 0,
+    "add_badges": [],
+    "ir_comment": "",
+    "review_note": "IR審査エラー: Error code: 400 - {'type': 'error', 'error': {'typ",
+    "source_urls": [],
+    "reviewed_at": "2026-08-10"
+  },
+  "3321": {
+    "review_status": "neutral",
+    "catalysts_found": [],
+    "risks_found": [],
+    "score_adjustment": 0,
+    "add_badges": [],
+    "ir_comment": "",
+    "review_note": "IR審査エラー: Error code: 400 - {'type': 'error', 'error': {'typ",
+    "source_urls": [],
+    "reviewed_at": "2026-08-10"
   }
 }
