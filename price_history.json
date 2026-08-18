@@ -4239,6 +4239,46 @@
       "stock_price": 2137,
       "theoretical_price": 6607,
       "upside_percent": 209.2
+    },
+    {
+      "date": "2026-08-19",
+      "code": "9867",
+      "name": "SOLEKIA LIMITED",
+      "tab": "general",
+      "score": 67,
+      "stock_price": 10420,
+      "theoretical_price": 35639,
+      "upside_percent": 242.0
+    },
+    {
+      "date": "2026-08-19",
+      "code": "6743",
+      "name": "DAIDO SIGNAL CO",
+      "tab": "general",
+      "score": 61,
+      "stock_price": 1069,
+      "theoretical_price": 2194,
+      "upside_percent": 105.2
+    },
+    {
+      "date": "2026-08-19",
+      "code": "8891",
+      "name": "AMG HOLDINGS CO LTD",
+      "tab": "finance",
+      "score": 66,
+      "stock_price": 2093,
+      "theoretical_price": 6605,
+      "upside_percent": 215.6
+    },
+    {
+      "date": "2026-08-19",
+      "code": "3236",
+      "name": "PROPERST CO. LTD",
+      "tab": "finance",
+      "score": 62,
+      "stock_price": 289,
+      "theoretical_price": 988,
+      "upside_percent": 242.0
     }
   ]
 }
