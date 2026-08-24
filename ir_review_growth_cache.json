@@ -72,7 +72,7 @@
     "ir_comment": "",
     "review_note": "IR審査エラー: no json object",
     "source_urls": [],
-    "reviewed_at": "2026-08-20"
+    "reviewed_at": "2026-08-24"
   },
   "8881": {
     "review_status": "neutral",
@@ -83,36 +83,18 @@
     "ir_comment": "",
     "review_note": "IR審査エラー: no json object",
     "source_urls": [],
-    "reviewed_at": "2026-08-20"
+    "reviewed_at": "2026-08-24"
   },
   "8935": {
-    "review_status": "positive",
-    "catalysts_found": [
-      "2026年2月3日：26年3月期通期業績予想を上方修正（売上高1250→1390億円、営業利益96→135億円）、特別配当6円を加え期末配当34円・年間配当62円（前期54円）に増額",
-      "2026年4月21日：通期経常利益予想を135→140億円に再上方修正、年間配当を62→66円に増額修正（6期ぶり最高益をさらに上乗せ）",
-      "2026年5月12日：本決算発表で経常利益は前期比51.8%増の143億円と会社予想（140億円）を上回り、2期連続最高益・6期連続増収・4期連続増益を達成。27年3月期の年間配当を前期比14円増の80円とする増配方針を発表",
-      "2026年7月31日：27年3月期第1四半期は売上高27.8%増・営業利益88.0%増・純利益90.2%増と大幅増収増益となり、通期の増収増益予想を維持"
-    ],
-    "risks_found": [
-      "直近半年以内の自社株買い発表は確認できず（過去実施例は2017年）",
-      "資産運用型マンション需要・都心不動産市況の変動が業績に影響する可能性（一過性の特別配当効果を含む点に留意）"
-    ],
-    "score_adjustment": 8,
-    "add_badges": [
-      "⬆️上方修正",
-      "⬆️増配発表"
-    ],
-    "ir_comment": "26年3月期は2度の上方修正と特別配当・増配を実施し、本決算では会社予想を上回る過去最高益を達成。27年3月期は14円増配（年80円）方針を発表し、第1四半期も大幅増収増益で通期計画を維持している。",
-    "review_note": "度重なる上方修正と連続増配、四半期も好調持続。一方で自社株買いや中計等の追加還元策の発表は確認されず。",
-    "source_urls": [
-      "https://www.nikkei.com/nkd/disclosure/tdnr/20260421507160/",
-      "https://minkabu.jp/news/4430621",
-      "https://kabutan.jp/news/?b=k202605120089",
-      "https://finance.yahoo.co.jp/news/detail/80a41aa71ca2e1c3d8308fef69b44b61cea64091",
-      "https://finance.yahoo.co.jp/quote/8935.T",
-      "https://www.fjnext-hd.co.jp/ir/stock/yutai.html"
-    ],
-    "reviewed_at": "2026-08-03"
+    "review_status": "neutral",
+    "catalysts_found": [],
+    "risks_found": [],
+    "score_adjustment": 0,
+    "add_badges": [],
+    "ir_comment": "",
+    "review_note": "IR審査エラー: unbalanced braces",
+    "source_urls": [],
+    "reviewed_at": "2026-08-24"
   },
   "3293": {
     "review_status": "neutral",
@@ -274,7 +256,7 @@
     "ir_comment": "",
     "review_note": "IR審査エラー: no json object",
     "source_urls": [],
-    "reviewed_at": "2026-08-20"
+    "reviewed_at": "2026-08-24"
   },
   "6743": {
     "review_status": "positive",
@@ -401,7 +383,7 @@
     "ir_comment": "",
     "review_note": "IR審査エラー: no json object",
     "source_urls": [],
-    "reviewed_at": "2026-08-20"
+    "reviewed_at": "2026-08-24"
   },
   "7235": {
     "review_status": "positive",
@@ -555,7 +537,7 @@
     "ir_comment": "",
     "review_note": "IR審査エラー: unbalanced braces",
     "source_urls": [],
-    "reviewed_at": "2026-08-20"
+    "reviewed_at": "2026-08-24"
   },
   "8747": {
     "review_status": "neutral",
@@ -602,26 +584,58 @@
     "reviewed_at": "2026-05-11"
   },
   "8914": {
-    "review_status": "neutral",
-    "catalysts_found": [],
-    "risks_found": [],
-    "score_adjustment": 0,
-    "add_badges": [],
-    "ir_comment": "",
-    "review_note": "IR審査エラー: unbalanced braces",
-    "source_urls": [],
-    "reviewed_at": "2026-08-20"
+    "review_status": "positive",
+    "catalysts_found": [
+      "2026年12月期通期業績予想の上方修正（売上高285→287億円、営業利益58.5→60.5億円、純利益37.15→38.15億円）を2026年7月29日に発表",
+      "上記に伴い期末配当予想を1円増額し14.50円（年間27.50円）に修正、増配発表",
+      "2026年6月中間期決算は増収増益（売上高+16.1%、営業利益+19.4%）でストレージ事業が牽引",
+      "2026年7月にトランクルーム同業の株式会社ストレージ王（2997）へTOBを開始し事業規模拡大を図る成長戦略",
+      "2025年8月に1→2の株式分割を実施し流動性向上・株主層拡大を志向"
+    ],
+    "risks_found": [
+      "ストレージ王TOBに伴う買収資金調達・のれん計上等の財務負担リスク",
+      "2025年8-9月に95万株規模の株式売出しを実施しており、需給悪化を懸念する市場の声があった（ただし6ヶ月超前の事象）",
+      "ネットキャッシュ比率がマイナスであり、有利子負債を活用した積極投資姿勢は金利上昇局面で財務コスト増につながる可能性"
+    ],
+    "score_adjustment": 8,
+    "add_badges": [
+      "⬆️上方修正",
+      "⬆️増配発表",
+      "⬆️還元強化"
+    ],
+    "ir_comment": "2026年7月29日に通期業績予想と期末配当を上方修正。中間期は増収増益でストレージ事業が牽引。同時期にトランクルーム同業ストレージ王へTOBを開始し事業拡大を推進中。",
+    "review_note": "直近1ヶ月で上方修正・増配・TOBによる事業拡大と好材料が重なるが、買収資金負担や需給面への注意も必要。",
+    "source_urls": [
+      "https://www.arealink.co.jp/ir/financial-statements/",
+      "https://kabutan.jp/news/marketnews/?b=n202607290784",
+      "https://diamond.jp/zai/articles/-/1070810",
+      "https://irbank.net/8914/ir",
+      "https://www.arealink.co.jp/news/7627/",
+      "https://www.arealink.co.jp/news/7630/"
+    ],
+    "reviewed_at": "2026-08-24"
   },
   "5753": {
-    "review_status": "neutral",
+    "review_status": "negative",
     "catalysts_found": [],
-    "risks_found": [],
-    "score_adjustment": 0,
-    "add_badges": [],
-    "ir_comment": "",
-    "review_note": "IR審査エラー: no json object",
-    "source_urls": [],
-    "reviewed_at": "2026-08-20"
+    "risks_found": [
+      "2026年2月13日発表：26年3月期通期経常利益予想を11.7億円→8.5億円に27.4%下方修正",
+      "26年3月期第3四半期（10-12月）は為替ヘッジ目的のデリバティブ評価損等により経常損益が3.9億円の赤字に転落",
+      "26年3月期中間期（2Q、2025年11月12日発表）もデリバティブ評価損3億円計上により経常利益・純利益が前年同期比44.9%減少",
+      "直近半年以内に自社株買い・増配・上方修正等の株主還元強化材料は確認できず"
+    ],
+    "score_adjustment": -7,
+    "add_badges": [
+      "⚠️下方修正"
+    ],
+    "ir_comment": "2026年2月13日、26年3月期通期経常利益予想を11.7億円から8.5億円へ27.4%下方修正。為替ヘッジ用デリバティブ評価損の影響で3Q単独は経常赤字に転落、中間期も前年比44.9%減益。自社株買い・増配等の還元強化策は直近半年で確認されず。",
+    "review_note": "直近で通期経常利益を27%下方修正、デリバティブ評価損が業績を圧迫。株主還元強化材料は未確認。",
+    "source_urls": [
+      "https://www.nippon-shindo.co.jp/summary/",
+      "https://finance.yahoo.co.jp/news/detail/43fe99bf6354a3626b0465c4ff3c932824fc2a77",
+      "https://finance-frontend-pc-dist.west.edge.storage-yahoo.jp/disclosure/20251112/20251110594390.pdf"
+    ],
+    "reviewed_at": "2026-08-24"
   },
   "8138": {
     "review_status": "neutral",
@@ -675,7 +689,7 @@
     "ir_comment": "",
     "review_note": "IR審査エラー: no json object",
     "source_urls": [],
-    "reviewed_at": "2026-08-20"
+    "reviewed_at": "2026-08-24"
   },
   "7192": {
     "review_status": "neutral",
@@ -708,7 +722,7 @@
     "ir_comment": "",
     "review_note": "IR審査エラー: no json object",
     "source_urls": [],
-    "reviewed_at": "2026-08-20"
+    "reviewed_at": "2026-08-24"
   },
   "8869": {
     "review_status": "neutral",
@@ -750,15 +764,28 @@
     "reviewed_at": "2026-08-13"
   },
   "3297": {
-    "review_status": "neutral",
-    "catalysts_found": [],
-    "risks_found": [],
-    "score_adjustment": 0,
-    "add_badges": [],
-    "ir_comment": "",
-    "review_note": "IR審査エラー: no json object",
-    "source_urls": [],
-    "reviewed_at": "2026-08-20"
+    "review_status": "positive",
+    "catalysts_found": [
+      "2026年5月期(通期)は増益決算：営業利益+15.0%、当期純利益+15.2%",
+      "配当金を1株43円（前期比+3円）に増配し実施",
+      "次期(2027年5月期)も同額43円の配当を計画（安定配当維持）"
+    ],
+    "risks_found": [
+      "次期(2027年5月期)業績予想は増収ながら減益（営業利益▲3.0%、純利益▲8.9%）を計画、リフォームコスト・人件費増加が要因",
+      "主力の不動産売買事業は販売件数減少により売上減（原価率改善で増益は確保）"
+    ],
+    "score_adjustment": 3,
+    "add_badges": [
+      "⬆️増配発表"
+    ],
+    "ir_comment": "2026年5月期は増収減益予想に反し実際は増益決算。配当を43円に増配し、次期も同額を計画。ただし次期本体予想はコスト増により営業減益を見込む。",
+    "review_note": "直近本決算で増配を実施・維持。次期はコスト増で減益予想も、還元姿勢は維持。",
+    "source_urls": [
+      "https://www.toubu.co.jp/ir/",
+      "https://finance.biggo.jp/news/jpx_tdnet_140120260713592428",
+      "https://www.nikkei.com/markets/company/sys/redirect_dis.aspr?ano=g0z0i4&t=https%3A%2F%2Fwww.nikkei.com%2Fnkd%2Fdisclosure%2Ftdnr%2F20260713592428%2F"
+    ],
+    "reviewed_at": "2026-08-24"
   },
   "3954": {
     "review_status": "neutral",
@@ -795,7 +822,7 @@
     "ir_comment": "",
     "review_note": "IR審査エラー: no json object",
     "source_urls": [],
-    "reviewed_at": "2026-08-20"
+    "reviewed_at": "2026-08-24"
   },
   "8844": {
     "review_status": "neutral",
@@ -988,9 +1015,9 @@
     "score_adjustment": 0,
     "add_badges": [],
     "ir_comment": "",
-    "review_note": "IR審査エラー: no json object",
+    "review_note": "IR審査エラー: unbalanced braces",
     "source_urls": [],
-    "reviewed_at": "2026-08-20"
+    "reviewed_at": "2026-08-24"
   },
   "1768": {
     "review_status": "neutral",
@@ -1021,8 +1048,31 @@
     "score_adjustment": 0,
     "add_badges": [],
     "ir_comment": "",
-    "review_note": "IR審査エラー: Error code: 400 - {'type': 'error', 'error': {'typ",
+    "review_note": "IR審査エラー: no json object",
     "source_urls": [],
-    "reviewed_at": "2026-08-10"
+    "reviewed_at": "2026-08-24"
+  },
+  "3710": {
+    "review_status": "positive",
+    "catalysts_found": [
+      "業績上方修正（2026年8月13日発表）：通期経常利益予想を2.2億円→4.5億円へ引き上げ、74.4%増益見通しに転換",
+      "増配発表（同日）：期末一括配当を6円→10円に増額修正（前期実績6円）",
+      "乗換案内事業の法人向け売上拡大とソフトウエア事業の黒字転換が業績牽引"
+    ],
+    "risks_found": [],
+    "score_adjustment": 8,
+    "add_badges": [
+      "⬆️上方修正",
+      "⬆️増配発表"
+    ],
+    "ir_comment": "2026年8月13日、通期経常利益予想を2.2億→4.5億円（74.4%増益）に上方修正。乗換案内事業の法人向け拡大とソフトウエア事業黒字転換が牽引。期末配当も6円→10円に増額修正。",
+    "review_note": "8月13日に上方修正と増配を同時発表。乗換案内事業好調で業績・株主還元ともに改善傾向。",
+    "source_urls": [
+      "https://kabutan.jp/news/?b=k202608130206",
+      "https://about.jorudan.co.jp/ir/",
+      "https://www.nikkei.com/nkd/disclosure/tdnr/20260813519009/",
+      "https://finance.yahoo.co.jp/quote/3710.T/financials"
+    ],
+    "reviewed_at": "2026-08-24"
   }
 }
