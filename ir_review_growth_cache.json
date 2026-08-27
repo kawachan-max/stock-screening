@@ -72,18 +72,31 @@
     "ir_comment": "",
     "review_note": "IR審査エラー: no json object",
     "source_urls": [],
-    "reviewed_at": "2026-08-24"
+    "reviewed_at": "2026-08-27"
   },
   "8881": {
     "review_status": "neutral",
-    "catalysts_found": [],
-    "risks_found": [],
-    "score_adjustment": 0,
+    "catalysts_found": [
+      "中期経営計画（2025年3月期～2027年3月期）に基づき、不動産管理事業・建設事業の成長を軸とした事業拡大を継続",
+      "配当利回りは5%台後半の高水準を維持（会社予想37.00円/2027年3月期）"
+    ],
+    "risks_found": [
+      "2027年3月期第1四半期は減収減益（売上高-5.3%、営業利益-6.0%、最終利益-29.4%）",
+      "支払利息の増加が経常利益以下を圧迫し、通期予想も各利益段階での減益が見込まれている",
+      "自社株買い・増配・MBO/TOB等の明確な新規発表は検索範囲内で確認できず"
+    ],
+    "score_adjustment": -3,
     "add_badges": [],
-    "ir_comment": "",
-    "review_note": "IR審査エラー: no json object",
-    "source_urls": [],
-    "reviewed_at": "2026-08-24"
+    "ir_comment": "2026年8月7日発表の27年3月期1Qは減収減益（売上-5.3%、営業益-6.0%、純益-29.4%）。支払利息増加が利益を圧迫し、通期も各利益段階での減益を見込む。中計に基づく管理・建設事業の拡大は継続中。",
+    "review_note": "1Qは減収減益で利益圧迫要因あり。増配・自社株買い等の明確なプラス材料は現時点で確認できず、慎重な見極めが必要。",
+    "source_urls": [
+      "https://finance.yahoo.co.jp/quote/8881.T",
+      "https://finance.yahoo.co.jp/quote/8881.T/dividend",
+      "https://nisshin-hd.co.jp/business-plan",
+      "https://nisshin-hd.co.jp/stock/dividend",
+      "https://nisshin-hd.co.jp/library"
+    ],
+    "reviewed_at": "2026-08-27"
   },
   "8935": {
     "review_status": "neutral",
@@ -256,7 +269,7 @@
     "ir_comment": "",
     "review_note": "IR審査エラー: no json object",
     "source_urls": [],
-    "reviewed_at": "2026-08-24"
+    "reviewed_at": "2026-08-27"
   },
   "6743": {
     "review_status": "positive",
@@ -381,9 +394,9 @@
     "score_adjustment": 0,
     "add_badges": [],
     "ir_comment": "",
-    "review_note": "IR審査エラー: no json object",
+    "review_note": "IR審査エラー: unbalanced braces",
     "source_urls": [],
-    "reviewed_at": "2026-08-24"
+    "reviewed_at": "2026-08-27"
   },
   "7235": {
     "review_status": "positive",
@@ -535,9 +548,9 @@
     "score_adjustment": 0,
     "add_badges": [],
     "ir_comment": "",
-    "review_note": "IR審査エラー: unbalanced braces",
+    "review_note": "IR審査エラー: no json object",
     "source_urls": [],
-    "reviewed_at": "2026-08-24"
+    "reviewed_at": "2026-08-27"
   },
   "8747": {
     "review_status": "neutral",
@@ -689,7 +702,7 @@
     "ir_comment": "",
     "review_note": "IR審査エラー: no json object",
     "source_urls": [],
-    "reviewed_at": "2026-08-24"
+    "reviewed_at": "2026-08-27"
   },
   "7192": {
     "review_status": "neutral",
@@ -720,9 +733,9 @@
     "score_adjustment": 0,
     "add_badges": [],
     "ir_comment": "",
-    "review_note": "IR審査エラー: no json object",
+    "review_note": "IR審査エラー: unbalanced braces",
     "source_urls": [],
-    "reviewed_at": "2026-08-24"
+    "reviewed_at": "2026-08-27"
   },
   "8869": {
     "review_status": "neutral",
@@ -822,7 +835,7 @@
     "ir_comment": "",
     "review_note": "IR審査エラー: no json object",
     "source_urls": [],
-    "reviewed_at": "2026-08-24"
+    "reviewed_at": "2026-08-27"
   },
   "8844": {
     "review_status": "neutral",
@@ -831,9 +844,9 @@
     "score_adjustment": 0,
     "add_badges": [],
     "ir_comment": "",
-    "review_note": "IR審査エラー: no json object",
+    "review_note": "IR審査エラー: unbalanced braces",
     "source_urls": [],
-    "reviewed_at": "2026-08-20"
+    "reviewed_at": "2026-08-27"
   },
   "9857": {
     "review_status": "neutral",
@@ -888,7 +901,7 @@
     "ir_comment": "",
     "review_note": "IR審査エラー: no json object",
     "source_urls": [],
-    "reviewed_at": "2026-08-17"
+    "reviewed_at": "2026-08-27"
   },
   "3932": {
     "review_status": "neutral",
@@ -919,9 +932,9 @@
     "score_adjustment": 0,
     "add_badges": [],
     "ir_comment": "",
-    "review_note": "IR審査エラー: Error code: 404 - {'type': 'error', 'error': {'typ",
+    "review_note": "IR審査エラー: no json object",
     "source_urls": [],
-    "reviewed_at": "2026-07-02"
+    "reviewed_at": "2026-08-27"
   },
   "6365": {
     "review_status": "neutral",
@@ -1017,7 +1030,7 @@
     "ir_comment": "",
     "review_note": "IR審査エラー: unbalanced braces",
     "source_urls": [],
-    "reviewed_at": "2026-08-24"
+    "reviewed_at": "2026-08-27"
   },
   "1768": {
     "review_status": "neutral",
@@ -1074,5 +1087,16 @@
       "https://finance.yahoo.co.jp/quote/3710.T/financials"
     ],
     "reviewed_at": "2026-08-24"
+  },
+  "3280": {
+    "review_status": "neutral",
+    "catalysts_found": [],
+    "risks_found": [],
+    "score_adjustment": 0,
+    "add_badges": [],
+    "ir_comment": "",
+    "review_note": "IR審査エラー: no json object",
+    "source_urls": [],
+    "reviewed_at": "2026-08-27"
   }
 }
