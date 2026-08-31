@@ -72,7 +72,7 @@
     "ir_comment": "",
     "review_note": "IR審査エラー: no json object",
     "source_urls": [],
-    "reviewed_at": "2026-08-27"
+    "reviewed_at": "2026-08-31"
   },
   "8881": {
     "review_status": "neutral",
@@ -105,9 +105,9 @@
     "score_adjustment": 0,
     "add_badges": [],
     "ir_comment": "",
-    "review_note": "IR審査エラー: unbalanced braces",
+    "review_note": "IR審査エラー: no json object",
     "source_urls": [],
-    "reviewed_at": "2026-08-24"
+    "reviewed_at": "2026-08-31"
   },
   "3293": {
     "review_status": "neutral",
@@ -269,7 +269,7 @@
     "ir_comment": "",
     "review_note": "IR審査エラー: no json object",
     "source_urls": [],
-    "reviewed_at": "2026-08-27"
+    "reviewed_at": "2026-08-31"
   },
   "6743": {
     "review_status": "positive",
@@ -394,9 +394,9 @@
     "score_adjustment": 0,
     "add_badges": [],
     "ir_comment": "",
-    "review_note": "IR審査エラー: unbalanced braces",
+    "review_note": "IR審査エラー: no json object",
     "source_urls": [],
-    "reviewed_at": "2026-08-27"
+    "reviewed_at": "2026-08-31"
   },
   "7235": {
     "review_status": "positive",
@@ -537,20 +537,35 @@
     "score_adjustment": 0,
     "add_badges": [],
     "ir_comment": "",
-    "review_note": "IR審査エラー: Error code: 404 - {'type': 'error', 'error': {'typ",
+    "review_note": "IR審査エラー: unbalanced braces",
     "source_urls": [],
-    "reviewed_at": "2026-07-16"
+    "reviewed_at": "2026-08-31"
   },
   "8860": {
-    "review_status": "neutral",
-    "catalysts_found": [],
+    "review_status": "positive",
+    "catalysts_found": [
+      "2026年4月20日、2026年3月期通期連結業績予想を上方修正（売上高+9.5%、営業利益+15.3%、経常利益+22.8%、純利益+27.0%）。中古住宅（住宅流通事業）の引渡し件数増加とコスト抑制が要因で、3期連続の過去最高益を更新する見通し",
+      "自己株式取得を実施し、2026年6月19日付で取得終了を発表（直近半年以内の株主還元強化策）",
+      "2025年5月公表の中期経営計画（2026-2028年3月期）で「累進的配当政策」を明言し、原則減配なしの方針を継続。2026年3月と比べ株主優待も拡充（2026年3月）"
+    ],
     "risks_found": [],
-    "score_adjustment": 0,
-    "add_badges": [],
-    "ir_comment": "",
-    "review_note": "IR審査エラー: no json object",
-    "source_urls": [],
-    "reviewed_at": "2026-08-27"
+    "score_adjustment": 11,
+    "add_badges": [
+      "⬆️自社株買い",
+      "⬆️上方修正",
+      "⬆️還元強化"
+    ],
+    "ir_comment": "26年3月期は中古住宅販売好調により通期業績を大幅上方修正し3期連続最高益へ。自己株式取得を実施済み。配当は累進的配当政策のもと32円を維持し、株主優待も拡充。",
+    "review_note": "業績上方修正・自社株買い完了・累進的配当政策など複数のプラス材料を確認。下方修正や不祥事等のリスク情報は確認されず。",
+    "source_urls": [
+      "https://www.nikkei.com/nkd/disclosure/tdnr/20260414503239/",
+      "https://www.nikkei.com/nkd/disclosure/tdnr/20260618573745/",
+      "https://finance.yahoo.co.jp/news/detail/f034cece3321c9419ea87dd7da799af0110deeb2",
+      "https://finance.yahoo.co.jp/quote/8860.T/financials",
+      "https://www.fuji-jutaku.co.jp/ir/stockinfo/reduce/",
+      "https://www.fuji-jutaku.co.jp/assets/dl/ir/strategy/plan/plan2026-2028.pdf"
+    ],
+    "reviewed_at": "2026-08-31"
   },
   "8747": {
     "review_status": "neutral",
@@ -702,7 +717,7 @@
     "ir_comment": "",
     "review_note": "IR審査エラー: no json object",
     "source_urls": [],
-    "reviewed_at": "2026-08-27"
+    "reviewed_at": "2026-08-31"
   },
   "7192": {
     "review_status": "neutral",
@@ -735,7 +750,7 @@
     "ir_comment": "",
     "review_note": "IR審査エラー: unbalanced braces",
     "source_urls": [],
-    "reviewed_at": "2026-08-27"
+    "reviewed_at": "2026-08-31"
   },
   "8869": {
     "review_status": "neutral",
@@ -835,7 +850,7 @@
     "ir_comment": "",
     "review_note": "IR審査エラー: no json object",
     "source_urls": [],
-    "reviewed_at": "2026-08-27"
+    "reviewed_at": "2026-08-31"
   },
   "8844": {
     "review_status": "neutral",
@@ -846,7 +861,7 @@
     "ir_comment": "",
     "review_note": "IR審査エラー: unbalanced braces",
     "source_urls": [],
-    "reviewed_at": "2026-08-27"
+    "reviewed_at": "2026-08-31"
   },
   "9857": {
     "review_status": "neutral",
@@ -877,9 +892,9 @@
     "score_adjustment": 0,
     "add_badges": [],
     "ir_comment": "",
-    "review_note": "IR審査エラー: Error code: 400 - {'type': 'error', 'error': {'typ",
+    "review_note": "IR審査エラー: no json object",
     "source_urls": [],
-    "reviewed_at": "2026-08-10"
+    "reviewed_at": "2026-08-31"
   },
   "6418": {
     "review_status": "neutral",
@@ -954,9 +969,9 @@
     "score_adjustment": 0,
     "add_badges": [],
     "ir_comment": "",
-    "review_note": "IR審査エラー: unbalanced braces",
+    "review_note": "IR審査エラー: no json object",
     "source_urls": [],
-    "reviewed_at": "2026-08-03"
+    "reviewed_at": "2026-08-31"
   },
   "8928": {
     "review_status": "neutral",
@@ -1030,7 +1045,7 @@
     "ir_comment": "",
     "review_note": "IR審査エラー: unbalanced braces",
     "source_urls": [],
-    "reviewed_at": "2026-08-27"
+    "reviewed_at": "2026-08-31"
   },
   "1768": {
     "review_status": "neutral",
@@ -1061,9 +1076,9 @@
     "score_adjustment": 0,
     "add_badges": [],
     "ir_comment": "",
-    "review_note": "IR審査エラー: no json object",
+    "review_note": "IR審査エラー: unbalanced braces",
     "source_urls": [],
-    "reviewed_at": "2026-08-24"
+    "reviewed_at": "2026-08-31"
   },
   "3710": {
     "review_status": "positive",
@@ -1091,12 +1106,19 @@
   "3280": {
     "review_status": "neutral",
     "catalysts_found": [],
-    "risks_found": [],
+    "risks_found": [
+      "2027年2月期第1四半期は分譲マンション引渡戸数減少により売上高が前年同期比61.5%減、営業損失・純損失に転落（ただし通期計画は変更なし）"
+    ],
     "score_adjustment": 0,
     "add_badges": [],
-    "ir_comment": "",
-    "review_note": "IR審査エラー: no json object",
-    "source_urls": [],
-    "reviewed_at": "2026-08-27"
+    "ir_comment": "2027年2月期1Qは引渡戸数減で売上61.5%減・損失計上も、通期計画（売上210億・純利益10億）は維持。契約進捗率68.6%で下期回復を見込む。直近半年で自社株買い・増配・上方修正の発表は確認できず。親会社は西部ガスHD（出資比率52.2%）。",
+    "review_note": "直近半年に自社株買い・増配・業績修正等の明確な発表なし。1Q減収減益も通期計画は維持され中立と判断。",
+    "source_urls": [
+      "https://www.release.tdnet.info/inbs/140120260710591095.pdf",
+      "https://irbank.net/3280/pl",
+      "https://finance.yahoo.co.jp/quote/3280.T",
+      "https://www.strust.co.jp/ir/faq/"
+    ],
+    "reviewed_at": "2026-08-31"
   }
 }

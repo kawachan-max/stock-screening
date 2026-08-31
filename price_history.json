@@ -4559,6 +4559,26 @@
       "stock_price": 2109,
       "theoretical_price": 6606,
       "upside_percent": 213.2
+    },
+    {
+      "date": "2026-09-01",
+      "code": "5956",
+      "name": "TOSO CO LTD",
+      "tab": "general",
+      "score": 60,
+      "stock_price": 577,
+      "theoretical_price": 1983,
+      "upside_percent": 243.7
+    },
+    {
+      "date": "2026-09-01",
+      "code": "8891",
+      "name": "AMG HOLDINGS CO LTD",
+      "tab": "finance",
+      "score": 66,
+      "stock_price": 2122,
+      "theoretical_price": 6606,
+      "upside_percent": 211.3
     }
   ]
 }
