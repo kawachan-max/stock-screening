@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-03T23:05:01+09:00",
+  "updated_at": "2026-09-04T23:04:03+09:00",
   "stocks": [
     {
       "code": "1768",
@@ -16,9 +16,9 @@
       "risk_penalty": -30,
       "forecast_adj": 0,
       "net_cash_ratio": 1.08,
-      "per": 5.47,
-      "market_cap_oku": 74.8,
-      "dividend_yield": 4.83,
+      "per": 5.49,
+      "market_cap_oku": 75.0,
+      "dividend_yield": 4.88,
       "payout_ratio": 26.72,
       "roe": 13.15,
       "roic": 29.6,
@@ -41,9 +41,8 @@
       },
       "tenbagger_stars": 3,
       "tab": "general",
-      "theoretical_price": 3371.0,
-      "upside_percent": 229.2,
-      "_source": "general"
+      "theoretical_price": 3370.0,
+      "upside_percent": 228.1
     },
     {
       "code": "2788",
@@ -51,22 +50,22 @@
       "name_jp": "APPLE INTERNATIONAL CO LTD",
       "website": "https://www.apple-international.com",
       "market": "",
-      "score": 16,
+      "score": 15,
       "valuation_score": 21,
       "growth_score": 0,
       "shareholder_score": 9,
       "quality_score_detail": 2,
       "bonus_score": 1,
       "risk_penalty": -27,
-      "forecast_adj": 1,
-      "net_cash_ratio": 1.74,
-      "per": 4.3,
-      "market_cap_oku": 53.2,
-      "dividend_yield": 2.41,
+      "forecast_adj": 0,
+      "net_cash_ratio": 1.71,
+      "per": 4.37,
+      "market_cap_oku": 54.1,
+      "dividend_yield": 2.43,
       "payout_ratio": 10.44,
       "roe": 7.67,
       "roic": 7.64,
-      "pbr": 0.5,
+      "pbr": 0.51,
       "ai_comment": "直近四半期（2026年2Q）では売上高+30.6%、営業利益+113.8%、純利益+426.7%と大幅な回復を示しており、通期予想も上方修正が期待される水準。過去3期の年次売上は309→438→408億円と直近期に減収となったが、足元の四半期業績は力強く回復している。PBR0.5倍・PER4.3倍と割安感は強いが、ROE7.67%は15%に届かず、営業利益率も低水準（約1.4%）で事業の質・収益性は課題。Consumer Cyclicalセクターで競争が激しく、参入障壁も平均的。NC比1.74は財務的に安定しているが、薄利体質が継続しており収益の安定性には注意が必要。",
       "risk_checks": {
         "roe_15_percent": false,
@@ -86,8 +85,7 @@
       "tenbagger_stars": 2,
       "tab": "general",
       "theoretical_price": 1186.0,
-      "upside_percent": 187.9,
-      "_source": "general"
+      "upside_percent": 183.1
     }
   ]
 }
