@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-08T18:45:19+09:00",
+  "updated_at": "2026-09-08T23:45:41+09:00",
   "stocks": [
     {
       "code": "5956",
@@ -256,8 +256,8 @@
       },
       "tenbagger_stars": 3,
       "tab": "general",
-      "theoretical_price": 3748.0,
-      "upside_percent": 149.9
+      "theoretical_price": 3761.0,
+      "upside_percent": 150.7
     },
     {
       "code": "5697",
@@ -1649,9 +1649,9 @@
       "bonus_score": 1,
       "risk_penalty": -13,
       "forecast_adj": 0,
-      "net_cash_ratio": 1.02,
+      "net_cash_ratio": 1.03,
       "per": 6.46,
-      "market_cap_oku": 37.0,
+      "market_cap_oku": 36.8,
       "dividend_yield": 2.59,
       "payout_ratio": 16.74,
       "roe": 7.91,
