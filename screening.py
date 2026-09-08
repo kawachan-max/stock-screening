@@ -148,7 +148,10 @@ def get_jquants_quarterly(code):
 
 # =============================
 # ??E# =============================
-JPX_LIST_URL = "https://www.jpx.co.jp/markets/statistics-equities/misc/tvdivq0000001vg2-att/data_j.xls"
+JPX_LIST_URL_XLSX = "https://www.jpx.co.jp/markets/statistics-equities/misc/tvdivq0000001vg2-att/data_j.xlsx"
+JPX_LIST_URL_XLS = "https://www.jpx.co.jp/markets/statistics-equities/misc/tvdivq0000001vg2-att/data_j.xls"
+# Backward-compatible alias (xlsx preferred since 2026-09)
+JPX_LIST_URL = JPX_LIST_URL_XLSX
 
 MIN_MARKET_CAP = 3_000_000_000   # 30?E?E
 MAX_MARKET_CAP = 50_000_000_000  # 500?E?E
@@ -216,27 +219,35 @@ FALLBACK_CODES = [
 ]
 
 
+def _download_jpx_list_df():
+    """Download JPX listed-issues list. Prefer xlsx/openpyxl; fall back to xls/xlrd on 404."""
+    attempts = [
+        (JPX_LIST_URL_XLSX, "openpyxl", "data_j.xlsx"),
+        (JPX_LIST_URL_XLS, "xlrd", "data_j.xls"),
+    ]
+    last_err = None
+    for url, engine, label in attempts:
+        try:
+            r = requests.get(url, timeout=30)
+            if r.status_code == 404:
+                print(f"  JPX {label}: 404, trying fallback...")
+                continue
+            r.raise_for_status()
+            content = BytesIO(r.content)
+            df = pd.read_excel(content, engine=engine)
+            print(f"  JPX list: {label} ({engine}) rows={len(df)}")
+            return df
+        except Exception as e:
+            last_err = e
+            print(f"  JPX {label} ({engine}) failed: {e}")
+            continue
+    print(f"  JPX download failed: {last_err}")
+    return None
+
+
 def step1_get_list_from_jpx():
     print("Step1: JPX ??????????E..")
-    try:
-        r = requests.get(JPX_LIST_URL, timeout=30)
-        r.raise_for_status()
-    except Exception as e:
-        print(f"  JPX ?????: {e}????????????")
-        n = TEST_LIMIT if TEST_LIMIT > 0 else len(FALLBACK_CODES)
-        df = pd.DataFrame({"code": FALLBACK_CODES[:n], "name": [""] * min(n, len(FALLBACK_CODES))})
-        print(f"  ???: {len(df)}")
-        return df
-    content = BytesIO(r.content)
-    df = None
-    # .xls ? xlrd?Exlsx ? openpyxl ?????
-    for engine in ["xlrd", "openpyxl"]:
-        try:
-            df = pd.read_excel(content, engine=engine)
-            break
-        except Exception as e:
-            content.seek(0)
-            continue
+    df = _download_jpx_list_df()
     if df is None or df.empty:
         print("  XLS/XLSX ?????xlrd/openpyxl ???????????????")
         n = TEST_LIMIT if TEST_LIMIT > 0 else len(FALLBACK_CODES)
@@ -309,26 +320,12 @@ def step1_get_list_from_jpx():
 
 
 def step1_get_finance_list_from_jpx():
-    """JPX XLS: 33-sector column; keep only bank/insurance/securities/real estate/other finance."""
+    """JPX XLS/XLSX: 33-sector column; keep only bank/insurance/securities/real estate/other finance."""
     print("Step1 (finance): JPX list (finance sectors)...")
     global JPX_NAME_MAP
-    try:
-        r = requests.get(JPX_LIST_URL, timeout=30)
-        r.raise_for_status()
-    except Exception as e:
-        print(f"  JPX download failed: {e}")
-        return pd.DataFrame(columns=["code", "name", "market", "sector"])
-    content = BytesIO(r.content)
-    df = None
-    for engine in ["xlrd", "openpyxl"]:
-        try:
-            df = pd.read_excel(content, engine=engine)
-            break
-        except Exception:
-            content.seek(0)
-            continue
+    df = _download_jpx_list_df()
     if df is None or df.empty or df.shape[1] < 6:
-        print("  JPX XLS invalid for finance list")
+        print("  JPX XLS/XLSX invalid for finance list")
         return pd.DataFrame(columns=["code", "name", "market", "sector"])
     df = pd.DataFrame({
         "code": df.iloc[:, 1],
@@ -2643,6 +2640,13 @@ def step5_save_finance(results):
     JST = timezone(timedelta(hours=9))
     updated_at = datetime.now(JST).strftime("%Y-%m-%dT%H:%M:%S+09:00")
     result = {"updated_at": updated_at, "stocks": out}
+    # Avoid wiping published finance results with empty/tiny runs (e.g. JPX download failure)
+    if len(out) <= 10:
+        print(
+            f"Step5 (finance): skip write (stocks={len(out)} <= 10); "
+            "keep previous screening_result_finance.json / public/"
+        )
+        return out
     with open("screening_result_finance.json", "w", encoding="utf-8") as f:
         json.dump(result, f, ensure_ascii=False, indent=2)
     pub_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), "public")
