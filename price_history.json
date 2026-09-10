@@ -4639,6 +4639,66 @@
       "stock_price": 1982,
       "theoretical_price": 6606,
       "upside_percent": 233.3
+    },
+    {
+      "date": "2026-09-11",
+      "code": "9867",
+      "name": "SOLEKIA LIMITED",
+      "tab": "general",
+      "score": 67,
+      "stock_price": 10220,
+      "theoretical_price": 35642,
+      "upside_percent": 248.8
+    },
+    {
+      "date": "2026-09-11",
+      "code": "6743",
+      "name": "DAIDO SIGNAL CO",
+      "tab": "general",
+      "score": 61,
+      "stock_price": 1010,
+      "theoretical_price": 2193,
+      "upside_percent": 117.2
+    },
+    {
+      "date": "2026-09-11",
+      "code": "4625",
+      "name": "ATOMIX CO LTD",
+      "tab": "general",
+      "score": 61,
+      "stock_price": 854,
+      "theoretical_price": 3402,
+      "upside_percent": 298.3
+    },
+    {
+      "date": "2026-09-11",
+      "code": "5956",
+      "name": "TOSO CO LTD",
+      "tab": "general",
+      "score": 60,
+      "stock_price": 575,
+      "theoretical_price": 1983,
+      "upside_percent": 244.8
+    },
+    {
+      "date": "2026-09-11",
+      "code": "8891",
+      "name": "AMG HOLDINGS CO LTD",
+      "tab": "finance",
+      "score": 67,
+      "stock_price": 1970,
+      "theoretical_price": 6606,
+      "upside_percent": 235.4
+    },
+    {
+      "date": "2026-09-11",
+      "code": "8860",
+      "name": "FUJI CORPORATION LIMITED",
+      "tab": "finance",
+      "score": 64,
+      "stock_price": 730,
+      "theoretical_price": 2259,
+      "upside_percent": 209.4
     }
   ]
 }
