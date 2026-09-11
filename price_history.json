@@ -4646,9 +4646,9 @@
       "name": "SOLEKIA LIMITED",
       "tab": "general",
       "score": 67,
-      "stock_price": 10220,
-      "theoretical_price": 35642,
-      "upside_percent": 248.8
+      "stock_price": 10490,
+      "theoretical_price": 35648,
+      "upside_percent": 239.8
     },
     {
       "date": "2026-09-11",
@@ -4656,9 +4656,9 @@
       "name": "DAIDO SIGNAL CO",
       "tab": "general",
       "score": 61,
-      "stock_price": 1010,
-      "theoretical_price": 2193,
-      "upside_percent": 117.2
+      "stock_price": 1008,
+      "theoretical_price": 2194,
+      "upside_percent": 117.6
     },
     {
       "date": "2026-09-11",
@@ -4666,9 +4666,9 @@
       "name": "ATOMIX CO LTD",
       "tab": "general",
       "score": 61,
-      "stock_price": 854,
-      "theoretical_price": 3402,
-      "upside_percent": 298.3
+      "stock_price": 861,
+      "theoretical_price": 3401,
+      "upside_percent": 295.0
     },
     {
       "date": "2026-09-11",
@@ -4686,9 +4686,9 @@
       "name": "AMG HOLDINGS CO LTD",
       "tab": "finance",
       "score": 67,
-      "stock_price": 1970,
-      "theoretical_price": 6606,
-      "upside_percent": 235.4
+      "stock_price": 1984,
+      "theoretical_price": 6607,
+      "upside_percent": 233.0
     },
     {
       "date": "2026-09-11",
@@ -4696,9 +4696,9 @@
       "name": "FUJI CORPORATION LIMITED",
       "tab": "finance",
       "score": 64,
-      "stock_price": 730,
+      "stock_price": 722,
       "theoretical_price": 2259,
-      "upside_percent": 209.4
+      "upside_percent": 212.9
     }
   ]
 }
