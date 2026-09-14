@@ -4699,6 +4699,26 @@
       "stock_price": 722,
       "theoretical_price": 2259,
       "upside_percent": 212.9
+    },
+    {
+      "date": "2026-09-15",
+      "code": "6743",
+      "name": "DAIDO SIGNAL CO",
+      "tab": "general",
+      "score": 62,
+      "stock_price": 1021,
+      "theoretical_price": 2194,
+      "upside_percent": 114.9
+    },
+    {
+      "date": "2026-09-15",
+      "code": "8891",
+      "name": "AMG HOLDINGS CO LTD",
+      "tab": "finance",
+      "score": 66,
+      "stock_price": 2015,
+      "theoretical_price": 6607,
+      "upside_percent": 227.9
     }
   ]
 }
