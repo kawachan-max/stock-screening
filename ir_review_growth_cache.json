@@ -33,7 +33,7 @@
     "ir_comment": "",
     "review_note": "IR審査エラー: unbalanced braces",
     "source_urls": [],
-    "reviewed_at": "2026-09-14"
+    "reviewed_at": "2026-09-17"
   },
   "8917": {
     "review_status": "neutral",
@@ -58,9 +58,9 @@
     "score_adjustment": 0,
     "add_badges": [],
     "ir_comment": "",
-    "review_note": "IR審査エラー: no json object",
+    "review_note": "IR審査エラー: unbalanced braces",
     "source_urls": [],
-    "reviewed_at": "2026-09-14"
+    "reviewed_at": "2026-09-17"
   },
   "8881": {
     "review_status": "neutral",
@@ -69,9 +69,9 @@
     "score_adjustment": 0,
     "add_badges": [],
     "ir_comment": "",
-    "review_note": "IR審査エラー: unbalanced braces",
+    "review_note": "IR審査エラー: no json object",
     "source_urls": [],
-    "reviewed_at": "2026-09-14"
+    "reviewed_at": "2026-09-17"
   },
   "8935": {
     "review_status": "neutral",
@@ -82,7 +82,7 @@
     "ir_comment": "",
     "review_note": "IR審査エラー: unbalanced braces",
     "source_urls": [],
-    "reviewed_at": "2026-09-10"
+    "reviewed_at": "2026-09-17"
   },
   "3293": {
     "review_status": "neutral",
@@ -155,9 +155,9 @@
     "score_adjustment": 0,
     "add_badges": [],
     "ir_comment": "",
-    "review_note": "IR審査エラー: no json object",
+    "review_note": "IR審査エラー: unbalanced braces",
     "source_urls": [],
-    "reviewed_at": "2026-09-14"
+    "reviewed_at": "2026-09-17"
   },
   "3388": {
     "review_status": "neutral",
@@ -183,7 +183,7 @@
     "ir_comment": "",
     "review_note": "IR審査エラー: unbalanced braces",
     "source_urls": [],
-    "reviewed_at": "2026-09-14"
+    "reviewed_at": "2026-09-17"
   },
   "9633": {
     "review_status": "neutral",
@@ -205,7 +205,7 @@
     "ir_comment": "",
     "review_note": "IR審査エラー: no json object",
     "source_urls": [],
-    "reviewed_at": "2026-08-20"
+    "reviewed_at": "2026-09-17"
   },
   "4231": {
     "review_status": "neutral",
@@ -225,9 +225,9 @@
     "score_adjustment": 0,
     "add_badges": [],
     "ir_comment": "",
-    "review_note": "IR審査エラー: unbalanced braces",
+    "review_note": "IR審査エラー: no json object",
     "source_urls": [],
-    "reviewed_at": "2026-09-14"
+    "reviewed_at": "2026-09-17"
   },
   "6743": {
     "review_status": "neutral",
@@ -238,7 +238,7 @@
     "ir_comment": "",
     "review_note": "IR審査エラー: unbalanced braces",
     "source_urls": [],
-    "reviewed_at": "2026-09-14"
+    "reviewed_at": "2026-09-17"
   },
   "7538": {
     "review_status": "neutral",
@@ -258,9 +258,9 @@
     "score_adjustment": 0,
     "add_badges": [],
     "ir_comment": "",
-    "review_note": "IR審査エラー: no json object",
+    "review_note": "IR審査エラー: unbalanced braces",
     "source_urls": [],
-    "reviewed_at": "2026-09-14"
+    "reviewed_at": "2026-09-17"
   },
   "5757": {
     "review_status": "negative",
@@ -287,30 +287,15 @@
     "reviewed_at": "2026-04-13"
   },
   "6497": {
-    "review_status": "positive",
-    "catalysts_found": [
-      "2026年12月期の年間配当予想を45円に設定（前期40円から5円増配）",
-      "2025年12月期第3四半期累計は経常利益が前年同期比10%増益で着地、7-9月期は前年同期比90%増益と好調",
-      "2026年12月期通期は売上高131億円（前期比3.0%増）、営業利益12.5億円（同2.2%増）の増収増益を計画"
-    ],
-    "risks_found": [
-      "2026年12月期第1四半期は原材料価格高騰の影響で営業利益が前年同期比9.2%減、純利益も2.3%減の減益となった",
-      "2026年2月13日に会計監査人の異動に関するお知らせが開示されており、監査体制変更の動向は要フォロー",
-      "直近半年以内の自社株買い（自己株式取得）の新規発表は確認できず"
-    ],
-    "score_adjustment": 2,
-    "add_badges": [
-      "⬆️増配発表"
-    ],
-    "ir_comment": "2026年12月期は年間配当45円（5円増配）を予定し株主還元姿勢は継続。ただし第1四半期は原材料高騰で営業減益となり、通期計画達成には注視が必要。自社株買いの新規発表や中計での明確なPBR改善策は確認できず。",
-    "review_note": "増配発表はプラス材料だが、Q1減益と監査人異動など不透明要素もあり評価は中立〜やや前向き。",
-    "source_urls": [
-      "https://finance.yahoo.co.jp/quote/6497.T/dividend",
-      "https://finance.yahoo.co.jp/quote/6497.Q/financials",
-      "https://www.kabutec.jp/sp/i.php?code=6497",
-      "https://irbank.net/6497"
-    ],
-    "reviewed_at": "2026-08-17"
+    "review_status": "neutral",
+    "catalysts_found": [],
+    "risks_found": [],
+    "score_adjustment": 0,
+    "add_badges": [],
+    "ir_comment": "",
+    "review_note": "IR審査エラー: no json object",
+    "source_urls": [],
+    "reviewed_at": "2026-09-17"
   },
   "5697": {
     "review_status": "positive",
@@ -482,36 +467,26 @@
     "risks_found": [],
     "score_adjustment": 0,
     "add_badges": [],
-    "ir_comment": "",
-    "review_note": "IR審査エラー: no json object",
-    "source_urls": [],
-    "reviewed_at": "2026-09-10"
+    "ir_comment": "2026年8月期第3四半期は売上高56.07億円(前年同期比5.6%増)、営業利益5.12億円(同0.2%増)で増収増益。通期予想（売上81億円、営業利益8.12億円）は据え置き、配当も前期同額の年41円を予定。上方修正・増配・自社株買いなど新規カタリストは確認されず。",
+    "review_note": "直近半年で上方修正・増配・自社株買い等の材料なし。業績は堅調維持も予想据え置きで材料性は乏しい。",
+    "source_urls": [
+      "https://www.prap.co.jp/ir/newsrelease/",
+      "https://finance.yahoo.co.jp/quote/2449.T/financials",
+      "https://irbank.net/E05498/pl",
+      "https://www.nikkei.com/nkd/disclosure/tdnr/20260119535418/"
+    ],
+    "reviewed_at": "2026-09-17"
   },
   "8860": {
-    "review_status": "positive",
-    "catalysts_found": [
-      "2026年4月20日、2026年3月期通期連結業績予想を上方修正（売上高+9.5%、営業利益+15.3%、経常利益+22.8%、純利益+27.0%）。中古住宅（住宅流通事業）の引渡し件数増加とコスト抑制が要因で、3期連続の過去最高益を更新する見通し",
-      "自己株式取得を実施し、2026年6月19日付で取得終了を発表（直近半年以内の株主還元強化策）",
-      "2025年5月公表の中期経営計画（2026-2028年3月期）で「累進的配当政策」を明言し、原則減配なしの方針を継続。2026年3月と比べ株主優待も拡充（2026年3月）"
-    ],
+    "review_status": "neutral",
+    "catalysts_found": [],
     "risks_found": [],
-    "score_adjustment": 11,
-    "add_badges": [
-      "⬆️自社株買い",
-      "⬆️上方修正",
-      "⬆️還元強化"
-    ],
-    "ir_comment": "26年3月期は中古住宅販売好調により通期業績を大幅上方修正し3期連続最高益へ。自己株式取得を実施済み。配当は累進的配当政策のもと32円を維持し、株主優待も拡充。",
-    "review_note": "業績上方修正・自社株買い完了・累進的配当政策など複数のプラス材料を確認。下方修正や不祥事等のリスク情報は確認されず。",
-    "source_urls": [
-      "https://www.nikkei.com/nkd/disclosure/tdnr/20260414503239/",
-      "https://www.nikkei.com/nkd/disclosure/tdnr/20260618573745/",
-      "https://finance.yahoo.co.jp/news/detail/f034cece3321c9419ea87dd7da799af0110deeb2",
-      "https://finance.yahoo.co.jp/quote/8860.T/financials",
-      "https://www.fuji-jutaku.co.jp/ir/stockinfo/reduce/",
-      "https://www.fuji-jutaku.co.jp/assets/dl/ir/strategy/plan/plan2026-2028.pdf"
-    ],
-    "reviewed_at": "2026-08-31"
+    "score_adjustment": 0,
+    "add_badges": [],
+    "ir_comment": "",
+    "review_note": "IR審査エラー: unbalanced braces",
+    "source_urls": [],
+    "reviewed_at": "2026-09-17"
   },
   "8747": {
     "review_status": "neutral",
@@ -622,7 +597,7 @@
     "ir_comment": "",
     "review_note": "IR審査エラー: no json object",
     "source_urls": [],
-    "reviewed_at": "2026-09-14"
+    "reviewed_at": "2026-09-17"
   },
   "4624": {
     "review_status": "neutral",
@@ -647,15 +622,30 @@
     "reviewed_at": "2026-05-25"
   },
   "3236": {
-    "review_status": "neutral",
-    "catalysts_found": [],
-    "risks_found": [],
-    "score_adjustment": 0,
-    "add_badges": [],
-    "ir_comment": "",
-    "review_note": "IR審査エラー: no json object",
-    "source_urls": [],
-    "reviewed_at": "2026-09-14"
+    "review_status": "positive",
+    "catalysts_found": [
+      "2026年5月期の1株配当を8円に増配（前期比+2円）、2027年5月期はさらに10円へ増配予定",
+      "小川建設の連結子会社化により事業規模拡大、2027年5月期売上高は前期比+52.8%の450億円を計画",
+      "2026年5月期は賃貸開発・建築請負事業が牽引し増収増益で着地（売上高294.65億円、営業利益32.47億円）"
+    ],
+    "risks_found": [
+      "自己資本比率が直近で低下傾向にあり財務安定性に留意が必要（IR分析コメントより）",
+      "自己株式取得（2025年10月20日決定、11月4日取得終了）は半年以上前の実施であり直近の新規カタリストではない"
+    ],
+    "score_adjustment": 5,
+    "add_badges": [
+      "⬆️増配発表",
+      "⬆️還元強化"
+    ],
+    "ir_comment": "2026年5月期は増収増益。配当は8円に増配し2027年5月期は10円を予定。小川建設の子会社化で事業拡大、来期売上高は前期比52.8%増計画と成長戦略を推進。自社株買いは2025年秋に実施済みで直近半年の新規発表なし。",
+    "review_note": "増配・成長計画などプラス材料あり。下方修正や不祥事等の重大リスクは確認されず、直近半年の自社株買いは無し。",
+    "source_urls": [
+      "https://finance.yahoo.co.jp/quote/3236.T/financials",
+      "https://finance.yahoo.co.jp/quote/3236.T/dividend",
+      "https://irbank.net/3236/ir",
+      "https://finance.yahoo.co.jp/quote/3236.T/disclosure"
+    ],
+    "reviewed_at": "2026-09-17"
   },
   "7192": {
     "review_status": "neutral",
@@ -701,7 +691,7 @@
     "ir_comment": "",
     "review_note": "IR審査エラー: no json object",
     "source_urls": [],
-    "reviewed_at": "2026-09-14"
+    "reviewed_at": "2026-09-17"
   },
   "8869": {
     "review_status": "neutral",
@@ -751,7 +741,7 @@
     "ir_comment": "",
     "review_note": "IR審査エラー: no json object",
     "source_urls": [],
-    "reviewed_at": "2026-09-14"
+    "reviewed_at": "2026-09-17"
   },
   "3954": {
     "review_status": "neutral",
@@ -788,7 +778,7 @@
     "ir_comment": "",
     "review_note": "IR審査エラー: no json object",
     "source_urls": [],
-    "reviewed_at": "2026-09-14"
+    "reviewed_at": "2026-09-17"
   },
   "8844": {
     "review_status": "neutral",
@@ -1034,9 +1024,9 @@
     "score_adjustment": 0,
     "add_badges": [],
     "ir_comment": "",
-    "review_note": "IR審査エラー: Error code: 400 - {'type': 'error', 'error': {'typ",
+    "review_note": "IR審査エラー: no json object",
     "source_urls": [],
-    "reviewed_at": "2026-08-10"
+    "reviewed_at": "2026-09-17"
   },
   "3321": {
     "review_status": "positive",
@@ -1095,20 +1085,13 @@
   "3280": {
     "review_status": "neutral",
     "catalysts_found": [],
-    "risks_found": [
-      "2027年2月期第1四半期は分譲マンション引渡戸数減少により売上高が前年同期比61.5%減、営業損失・純損失に転落（ただし通期計画は変更なし）"
-    ],
+    "risks_found": [],
     "score_adjustment": 0,
     "add_badges": [],
-    "ir_comment": "2027年2月期1Qは引渡戸数減で売上61.5%減・損失計上も、通期計画（売上210億・純利益10億）は維持。契約進捗率68.6%で下期回復を見込む。直近半年で自社株買い・増配・上方修正の発表は確認できず。親会社は西部ガスHD（出資比率52.2%）。",
-    "review_note": "直近半年に自社株買い・増配・業績修正等の明確な発表なし。1Q減収減益も通期計画は維持され中立と判断。",
-    "source_urls": [
-      "https://www.release.tdnet.info/inbs/140120260710591095.pdf",
-      "https://irbank.net/3280/pl",
-      "https://finance.yahoo.co.jp/quote/3280.T",
-      "https://www.strust.co.jp/ir/faq/"
-    ],
-    "reviewed_at": "2026-08-31"
+    "ir_comment": "",
+    "review_note": "IR審査エラー: no json object",
+    "source_urls": [],
+    "reviewed_at": "2026-09-17"
   },
   "8887": {
     "review_status": "neutral",
@@ -1119,7 +1102,7 @@
     "ir_comment": "",
     "review_note": "IR審査エラー: no json object",
     "source_urls": [],
-    "reviewed_at": "2026-09-14"
+    "reviewed_at": "2026-09-17"
   },
   "6730": {
     "review_status": "neutral",
