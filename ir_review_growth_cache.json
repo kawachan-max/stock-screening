@@ -31,9 +31,9 @@
     "score_adjustment": 0,
     "add_badges": [],
     "ir_comment": "",
-    "review_note": "IR審査エラー: unbalanced braces",
+    "review_note": "IR審査エラー: no json object",
     "source_urls": [],
-    "reviewed_at": "2026-09-17"
+    "reviewed_at": "2026-09-21"
   },
   "8917": {
     "review_status": "neutral",
@@ -58,9 +58,9 @@
     "score_adjustment": 0,
     "add_badges": [],
     "ir_comment": "",
-    "review_note": "IR審査エラー: unbalanced braces",
+    "review_note": "IR審査エラー: no json object",
     "source_urls": [],
-    "reviewed_at": "2026-09-17"
+    "reviewed_at": "2026-09-21"
   },
   "8881": {
     "review_status": "neutral",
@@ -71,7 +71,7 @@
     "ir_comment": "",
     "review_note": "IR審査エラー: no json object",
     "source_urls": [],
-    "reviewed_at": "2026-09-17"
+    "reviewed_at": "2026-09-21"
   },
   "8935": {
     "review_status": "neutral",
@@ -82,7 +82,7 @@
     "ir_comment": "",
     "review_note": "IR審査エラー: unbalanced braces",
     "source_urls": [],
-    "reviewed_at": "2026-09-17"
+    "reviewed_at": "2026-09-21"
   },
   "3293": {
     "review_status": "neutral",
@@ -157,7 +157,7 @@
     "ir_comment": "",
     "review_note": "IR審査エラー: unbalanced braces",
     "source_urls": [],
-    "reviewed_at": "2026-09-17"
+    "reviewed_at": "2026-09-21"
   },
   "3388": {
     "review_status": "neutral",
@@ -181,9 +181,9 @@
     "score_adjustment": 0,
     "add_badges": [],
     "ir_comment": "",
-    "review_note": "IR審査エラー: unbalanced braces",
+    "review_note": "IR審査エラー: no json object",
     "source_urls": [],
-    "reviewed_at": "2026-09-17"
+    "reviewed_at": "2026-09-21"
   },
   "9633": {
     "review_status": "neutral",
@@ -227,7 +227,7 @@
     "ir_comment": "",
     "review_note": "IR審査エラー: no json object",
     "source_urls": [],
-    "reviewed_at": "2026-09-17"
+    "reviewed_at": "2026-09-21"
   },
   "6743": {
     "review_status": "neutral",
@@ -236,9 +236,9 @@
     "score_adjustment": 0,
     "add_badges": [],
     "ir_comment": "",
-    "review_note": "IR審査エラー: unbalanced braces",
+    "review_note": "IR審査エラー: no json object",
     "source_urls": [],
-    "reviewed_at": "2026-09-17"
+    "reviewed_at": "2026-09-21"
   },
   "7538": {
     "review_status": "neutral",
@@ -258,9 +258,9 @@
     "score_adjustment": 0,
     "add_badges": [],
     "ir_comment": "",
-    "review_note": "IR審査エラー: unbalanced braces",
+    "review_note": "IR審査エラー: no json object",
     "source_urls": [],
-    "reviewed_at": "2026-09-17"
+    "reviewed_at": "2026-09-21"
   },
   "5757": {
     "review_status": "negative",
@@ -293,9 +293,9 @@
     "score_adjustment": 0,
     "add_badges": [],
     "ir_comment": "",
-    "review_note": "IR審査エラー: no json object",
+    "review_note": "IR審査エラー: unbalanced braces",
     "source_urls": [],
-    "reviewed_at": "2026-09-17"
+    "reviewed_at": "2026-09-21"
   },
   "5697": {
     "review_status": "positive",
@@ -486,7 +486,7 @@
     "ir_comment": "",
     "review_note": "IR審査エラー: unbalanced braces",
     "source_urls": [],
-    "reviewed_at": "2026-09-17"
+    "reviewed_at": "2026-09-21"
   },
   "8747": {
     "review_status": "neutral",
@@ -597,7 +597,7 @@
     "ir_comment": "",
     "review_note": "IR審査エラー: no json object",
     "source_urls": [],
-    "reviewed_at": "2026-09-17"
+    "reviewed_at": "2026-09-21"
   },
   "4624": {
     "review_status": "neutral",
@@ -683,15 +683,34 @@
     "reviewed_at": "2026-09-10"
   },
   "8046": {
-    "review_status": "neutral",
-    "catalysts_found": [],
+    "review_status": "positive",
+    "catalysts_found": [
+      "2026年3月期第3四半期決算で連結経常利益が前年同期比46.1%増となり、通期経常利益予想を従来の21億円から24億円へ14.3%上方修正",
+      "2026年3月11日、期末配当予想を130円から180円（通常配当170円＋創業100周年記念配当10円）に増額する増配を発表",
+      "同時に配当方針を変更し、配当性向35%以上を基軸とした累進配当方針を新設（PBR改善・株主還元強化策）",
+      "1株を5株とする株式分割を実施（2026年3月31日基準日）",
+      "2025年12月〜2026年5月にかけてToSTNeT-3を用いた自己株式取得を複数回実施"
+    ],
     "risks_found": [],
-    "score_adjustment": 0,
-    "add_badges": [],
-    "ir_comment": "",
-    "review_note": "IR審査エラー: no json object",
-    "source_urls": [],
-    "reviewed_at": "2026-09-17"
+    "score_adjustment": 15,
+    "add_badges": [
+      "⬆️自社株買い",
+      "⬆️増配発表",
+      "⬆️上方修正",
+      "⬆️還元強化"
+    ],
+    "ir_comment": "26年3月期3Q累計経常益は前年比46.1%増と好調で、通期経常益予想を21億円→24億円(14.3%増)に上方修正。創業100周年記念配当を含め期末配当を130円→180円に増配し、配当性向35%以上の累進配当方針を新設。1→5株の株式分割も実施。ToSTNeT-3による自己株買いも継続中で、株主還元強化姿勢が鮮明。",
+    "review_note": "上方修正・大幅増配・累進配当方針・株式分割・自社株買いが同時期に重複した好材料集中銘柄",
+    "source_urls": [
+      "https://www.mrfj.co.jp/news/settlement-information",
+      "https://www.nikkei.com/nkd/disclosure/tdnr/20260129540949/",
+      "https://www.nikkei.com/nkd/disclosure/tdnr/20260511521442/",
+      "https://irbank.net/8046",
+      "https://kabutan.jp/news/?b=k202601300037",
+      "https://finance.yahoo.co.jp/news/detail/96da116047ee8a618a753705efe94fe3aaf03cec",
+      "https://irbank.net/E02616/dividend"
+    ],
+    "reviewed_at": "2026-09-21"
   },
   "8869": {
     "review_status": "neutral",
@@ -739,9 +758,9 @@
     "score_adjustment": 0,
     "add_badges": [],
     "ir_comment": "",
-    "review_note": "IR審査エラー: no json object",
+    "review_note": "IR審査エラー: unbalanced braces",
     "source_urls": [],
-    "reviewed_at": "2026-09-17"
+    "reviewed_at": "2026-09-21"
   },
   "3954": {
     "review_status": "neutral",
@@ -778,7 +797,7 @@
     "ir_comment": "",
     "review_note": "IR審査エラー: no json object",
     "source_urls": [],
-    "reviewed_at": "2026-09-17"
+    "reviewed_at": "2026-09-21"
   },
   "8844": {
     "review_status": "neutral",
@@ -916,9 +935,9 @@
     "score_adjustment": 0,
     "add_badges": [],
     "ir_comment": "",
-    "review_note": "IR審査エラー: unbalanced braces",
+    "review_note": "IR審査エラー: no json object",
     "source_urls": [],
-    "reviewed_at": "2026-09-14"
+    "reviewed_at": "2026-09-21"
   },
   "8928": {
     "review_status": "neutral",
@@ -1018,15 +1037,27 @@
     "reviewed_at": "2026-08-03"
   },
   "9625": {
-    "review_status": "neutral",
+    "review_status": "critical",
     "catalysts_found": [],
-    "risks_found": [],
-    "score_adjustment": 0,
-    "add_badges": [],
-    "ir_comment": "",
-    "review_note": "IR審査エラー: no json object",
-    "source_urls": [],
-    "reviewed_at": "2026-09-17"
+    "risks_found": [
+      "東京オリンピック・パラリンピック競技大会組織委員会から41億276万円の違約金等請求訴訟を提起されたことを2026年8月3日に公表（時価総額約51億円に対し巨額）",
+      "東京五輪談合事件（独占禁止法違反）で東京高裁が罰金2億8千万円の一審判決を支持し控訴棄却、最高裁への上告を検討中",
+      "訴訟提起発表を受けて株価が急落したとの報道あり"
+    ],
+    "score_adjustment": -12,
+    "add_badges": [
+      "⚠️不祥事"
+    ],
+    "ir_comment": "2026年8月3日、東京オリンピック・パラリンピック競技大会組織委員会から41億円超の違約金等請求訴訟を提起されたことを開示。談合事件に関連する高裁判決（罰金2.8億円）も確定し、上告検討中。財務健全性・信用リスクへの影響が懸念される。",
+    "review_note": "巨額訴訟提起（41億円）と談合事件の法的リスクが重石。株主還元強化や上方修正等のプラス材料は確認できず。",
+    "source_urls": [
+      "https://www.cerespo.co.jp/ir/",
+      "https://www.cerespo.co.jp/ir/library/disclosure.php",
+      "https://www.cerespo.co.jp/ir/stock/dividend.php",
+      "https://finance.yahoo.co.jp/news/detail/93897452d85a64e168c612f5064db0f8f9bae516",
+      "https://www.nikkei.com/article/DGXZQOUD027TH0S5A600C2000000/"
+    ],
+    "reviewed_at": "2026-09-21"
   },
   "3321": {
     "review_status": "positive",
@@ -1091,7 +1122,7 @@
     "ir_comment": "",
     "review_note": "IR審査エラー: no json object",
     "source_urls": [],
-    "reviewed_at": "2026-09-17"
+    "reviewed_at": "2026-09-21"
   },
   "8887": {
     "review_status": "neutral",
@@ -1100,9 +1131,9 @@
     "score_adjustment": 0,
     "add_badges": [],
     "ir_comment": "",
-    "review_note": "IR審査エラー: no json object",
+    "review_note": "IR審査エラー: unbalanced braces",
     "source_urls": [],
-    "reviewed_at": "2026-09-17"
+    "reviewed_at": "2026-09-21"
   },
   "6730": {
     "review_status": "neutral",
