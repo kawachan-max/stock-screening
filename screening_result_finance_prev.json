@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-22T00:23:54+09:00",
+  "updated_at": "2026-09-23T00:01:43+09:00",
   "stocks": [
     {
       "code": "8891",
@@ -46,61 +46,7 @@
       "tab": "finance",
       "theoretical_price": 6607.0,
       "upside_percent": 214.0,
-      "tenbagger_stars": 2,
-      "_source": "finance"
-    },
-    {
-      "code": "8904",
-      "name": "AVANTIA CO LTD",
-      "name_jp": "ＡＶＡＮＴＩＡ",
-      "website": "https://avantia-g.co.jp",
-      "market": "スタンダード",
-      "sector": "不動産業",
-      "score": 60,
-      "valuation_score": 33,
-      "growth_score": 0,
-      "shareholder_score": 7,
-      "quality_score_detail": 13,
-      "bonus_score": 1,
-      "risk_penalty": -6,
-      "forecast_adj": 1,
-      "net_cash_ratio": 1.55,
-      "per": 8.93,
-      "market_cap_oku": 119.4,
-      "dividend_yield": 4.62,
-      "payout_ratio": 41.23,
-      "roe": 2.28,
-      "roic": 5.95,
-      "pbr": 0.43,
-      "equity_ratio": 39.42,
-      "ai_comment": "アバンティアは注文住宅主体の不動産・建設会社。直近3期の売上は581.6→710.2→692.7億円と直近期は減収転落。ただし営業利益は前期比+38.7%と大幅改善しており、収益効率の向上が見られる。最新四半期（3Q累計）では売上前年比-5.7%と減収が続く一方、営業利益は前年比+768.1%と急改善しており、コスト管理や採算重視の姿勢が窺える。PBR0.43倍は割安水準だが、ROE2.28%と低く株主資本の収益効率は乏しい。自己資本比率39.42%は不動産セクター基準（30%以上）を満たし合格水準。一方で不動産業特有の営業CF動向や借入依存度には引き続き注意が必要。PERは約8.9倍と低位だが、ROEの低さと減収基調を踏まえると純粋な割安とは言い切れない。通期予想は売上720億円・営業利益19億円で増益見込みだが、売上回復が課題。\n\n【IR審査】7/14発表の3Q決算で営業利益が前年比大幅増となったが通期予想は据え置き。3月には米カリフォルニア州で分譲住宅事業に参入し成長戦略を推進。自社株買い・増配・下方修正等の材料は確認されず。",
-      "risk_checks": {
-        "roe_15_percent": false,
-        "profit_stability": true,
-        "dividend_stability": true,
-        "one_time_profit_risk": true,
-        "liquidity_risk": false,
-        "financial_health": true,
-        "equity_risk_level": 0,
-        "operating_cf_neg_streak": 0
-      },
-      "trend_score": 5,
-      "quality_score": 4,
-      "chart_signals": {
-        "volume_surge": false,
-        "above_ma": false,
-        "near_high": true
-      },
-      "tab": "finance",
-      "theoretical_price": 1815.0,
-      "upside_percent": 120.5,
-      "tenbagger_stars": 2,
-      "_source": "finance",
-      "score_before_ir": 58,
-      "badges": [],
-      "ir_review_status": "neutral",
-      "ir_review_note": "業績改善・海外新規事業参入はプラス材料だが、通期予想据え置きで明確なカタリストには至らず中立評価。",
-      "ir_reviewed_at": "2026-09-10"
+      "tenbagger_stars": 2
     },
     {
       "code": "8860",
@@ -147,8 +93,7 @@
       "tab": "finance",
       "theoretical_price": 2259.0,
       "upside_percent": 202.8,
-      "tenbagger_stars": 2,
-      "_source": "finance"
+      "tenbagger_stars": 2
     },
     {
       "code": "8917",
@@ -174,7 +119,7 @@
       "roic": 10.34,
       "pbr": 0.37,
       "equity_ratio": 65.96,
-      "ai_comment": "ファースト住建は住宅分譲を主体とする消費循環セクター。最新通期では売上19.2%増・営業利益36.2%増と回復基調を示したが、過去3期の推移（433→360→429億円）は一進一退で安定性に課題が残る。最新3Q累計では売上が前年同期比▲9.4%と減収に転じており、通期予想（434億円）の達成には4Q集中が必要な構図で注意が必要。ROEは3.52%と低水準で、資本効率の改善が課題。PBR0.37倍は帳簿価値対比で低位にあるが、ROEの低さが示すとおり収益力の裏付けが薄く、単純な割安とは断言しにくい。自己資本比率65.96%は財務健全性が高く評価できる。住宅分譲は景気・金利感応度が高く、金利上昇局面での需要鈍化リスクに引き続き留意が必要。\n\n【IR審査】2026年10月期第2四半期(6/5発表)は経常利益前年同期比13.9%増も、通期計画進捗率49.0%は5年平均とほぼ同水準で上方修正なし。次期も増収増益・安定配当継続の方針を示すのみで、自社株買い・増減配・下方修正等の明確な発表は直近半年で確認できず。",
+      "ai_comment": "ファースト住建は住宅分譲を主体とする消費循環セクター。最新通期では売上19.2%増・営業利益36.2%増と回復基調を示したが、過去3期の推移（433→360→429億円）は一進一退で安定性に課題が残る。最新3Q累計では売上が前年同期比▲9.4%と減収に転じており、通期予想（434億円）の達成には4Q集中が必要な構図で注意が必要。ROEは3.52%と低水準で、資本効率の改善が課題。PBR0.37倍は帳簿価値対比で低位にあるが、ROEの低さが示すとおり収益力の裏付けが薄く、単純な割安とは断言しにくい。自己資本比率65.96%は財務健全性が高く評価できる。住宅分譲は景気・金利感応度が高く、金利上昇局面での需要鈍化リスクに引き続き留意が必要。",
       "risk_checks": {
         "roe_15_percent": false,
         "profit_stability": true,
@@ -195,64 +140,54 @@
       "tab": "finance",
       "theoretical_price": 3163.0,
       "upside_percent": 191.0,
-      "tenbagger_stars": 2,
-      "_source": "finance",
-      "ir_review_status": "neutral",
-      "ir_review_note": "直近半年で自社株買い・増減配・上下方修正・不祥事等の重大IRイベントは確認されず、業績は計画線上で推移",
-      "ir_reviewed_at": "2026-09-14"
+      "tenbagger_stars": 2
     },
     {
-      "code": "3236",
-      "name": "PROPERST CO. LTD",
-      "name_jp": "プロパスト",
-      "website": "https://www.properst.co.jp",
+      "code": "8904",
+      "name": "AVANTIA CO LTD",
+      "name_jp": "ＡＶＡＮＴＩＡ",
+      "website": "https://avantia-g.co.jp",
       "market": "スタンダード",
       "sector": "不動産業",
       "score": 57,
-      "valuation_score": 25,
+      "valuation_score": 33,
       "growth_score": 0,
       "shareholder_score": 7,
-      "quality_score_detail": 17,
+      "quality_score_detail": 13,
       "bonus_score": 1,
-      "risk_penalty": -7,
+      "risk_penalty": -6,
       "forecast_adj": 0,
-      "net_cash_ratio": 1.65,
-      "per": 5.06,
-      "market_cap_oku": 93.7,
-      "dividend_yield": 3.53,
-      "payout_ratio": 14.3,
-      "roe": 13.65,
-      "roic": 27.38,
-      "pbr": 0.68,
-      "equity_ratio": 29.4,
-      "ai_comment": "売上は3期連続で増収基調（233→278→295億円）を維持しており、成長の継続性は評価できる。ただし直近期は営業利益が前年比▲2.6%、純利益も▲4.0%と減益に転じており、利益面での勢いに陰りが見られる。不動産セクターとして借入依存度が高い点は引き続き注意が必要であり、金利上昇局面では財務コストの増加が利益を圧迫するリスクがある。営業キャッシュフローの動向も慎重に確認すべき局面だ。自己資本比率29.4%は不動産基準で見ると合格ラインにあるが余裕は薄い。PBR0.68倍は帳簿価値比で割安に見えるものの、営業CF・借入依存の状況を踏まえると単純に割安とは言い切れない。ROE13.65%は10%超で一定の評価に値するが、15%には届いていない。収益源は不動産売却益への依存が懸念され、事業の質は中程度の評価となる。\n\n【IR審査】2026年5月期は増収増益。配当は8円に増配し2027年5月期は10円を予定。小川建設の子会社化で事業拡大、来期売上高は前期比52.8%増計画と成長戦略を推進。自社株買いは2025年秋に実施済みで直近半年の新規発表なし。",
+      "net_cash_ratio": 1.55,
+      "per": 8.93,
+      "market_cap_oku": 119.4,
+      "dividend_yield": 4.62,
+      "payout_ratio": 41.23,
+      "roe": 2.28,
+      "roic": 5.95,
+      "pbr": 0.43,
+      "equity_ratio": 39.42,
+      "ai_comment": "アバンティアは注文住宅主体の不動産・建設会社。直近3期の売上は581.6→710.2→692.7億円と直近期は減収転落。ただし営業利益は前期比+38.7%と大幅改善しており、収益効率の向上が見られる。最新四半期（3Q累計）では売上前年比-5.7%と減収が続く一方、営業利益は前年比+768.1%と急改善しており、コスト管理や採算重視の姿勢が窺える。PBR0.43倍は割安水準だが、ROE2.28%と低く株主資本の収益効率は乏しい。自己資本比率39.42%は不動産セクター基準（30%以上）を満たし合格水準。一方で不動産業特有の営業CF動向や借入依存度には引き続き注意が必要。PERは約8.9倍と低位だが、ROEの低さと減収基調を踏まえると純粋な割安とは言い切れない。通期予想は売上720億円・営業利益19億円で増益見込みだが、売上回復が課題。",
       "risk_checks": {
-        "roe_15_percent": true,
+        "roe_15_percent": false,
         "profit_stability": true,
         "dividend_stability": true,
-        "one_time_profit_risk": false,
-        "liquidity_risk": true,
-        "financial_health": false,
-        "equity_risk_level": 1,
+        "one_time_profit_risk": true,
+        "liquidity_risk": false,
+        "financial_health": true,
+        "equity_risk_level": 0,
         "operating_cf_neg_streak": 0
       },
       "trend_score": 5,
       "quality_score": 4,
       "chart_signals": {
         "volume_surge": false,
-        "above_ma": true,
-        "near_high": false
+        "above_ma": false,
+        "near_high": true
       },
       "tab": "finance",
-      "theoretical_price": 838.0,
-      "upside_percent": 196.0,
-      "tenbagger_stars": 2,
-      "_source": "finance",
-      "score_before_ir": 52,
-      "badges": [],
-      "ir_review_status": "positive",
-      "ir_review_note": "増配・成長計画などプラス材料あり。下方修正や不祥事等の重大リスクは確認されず、直近半年の自社株買いは無し。",
-      "ir_reviewed_at": "2026-09-17"
+      "theoretical_price": 1815.0,
+      "upside_percent": 120.5,
+      "tenbagger_stars": 2
     },
     {
       "code": "8881",
@@ -299,8 +234,7 @@
       "tab": "finance",
       "theoretical_price": 1550.0,
       "upside_percent": 134.1,
-      "tenbagger_stars": 1,
-      "_source": "finance"
+      "tenbagger_stars": 1
     },
     {
       "code": "5280",
@@ -347,8 +281,7 @@
       "tab": "finance",
       "theoretical_price": 6930.0,
       "upside_percent": 208.2,
-      "tenbagger_stars": 2,
-      "_source": "finance"
+      "tenbagger_stars": 2
     },
     {
       "code": "3297",
@@ -395,8 +328,7 @@
       "tab": "finance",
       "theoretical_price": 3142.0,
       "upside_percent": 166.5,
-      "tenbagger_stars": 3,
-      "_source": "finance"
+      "tenbagger_stars": 3
     },
     {
       "code": "8699",
@@ -443,8 +375,54 @@
       "tab": "finance",
       "theoretical_price": 9298.0,
       "upside_percent": 719.9,
-      "tenbagger_stars": 0,
-      "_source": "finance"
+      "tenbagger_stars": 0
+    },
+    {
+      "code": "3236",
+      "name": "PROPERST CO. LTD",
+      "name_jp": "プロパスト",
+      "website": "https://www.properst.co.jp",
+      "market": "スタンダード",
+      "sector": "不動産業",
+      "score": 52,
+      "valuation_score": 25,
+      "growth_score": 0,
+      "shareholder_score": 7,
+      "quality_score_detail": 17,
+      "bonus_score": 1,
+      "risk_penalty": -7,
+      "forecast_adj": 0,
+      "net_cash_ratio": 1.65,
+      "per": 5.06,
+      "market_cap_oku": 93.7,
+      "dividend_yield": 3.53,
+      "payout_ratio": 14.3,
+      "roe": 13.65,
+      "roic": 27.38,
+      "pbr": 0.68,
+      "equity_ratio": 29.4,
+      "ai_comment": "売上は3期連続で増収基調（233→278→295億円）を維持しており、成長の継続性は評価できる。ただし直近期は営業利益が前年比▲2.6%、純利益も▲4.0%と減益に転じており、利益面での勢いに陰りが見られる。不動産セクターとして借入依存度が高い点は引き続き注意が必要であり、金利上昇局面では財務コストの増加が利益を圧迫するリスクがある。営業キャッシュフローの動向も慎重に確認すべき局面だ。自己資本比率29.4%は不動産基準で見ると合格ラインにあるが余裕は薄い。PBR0.68倍は帳簿価値比で割安に見えるものの、営業CF・借入依存の状況を踏まえると単純に割安とは言い切れない。ROE13.65%は10%超で一定の評価に値するが、15%には届いていない。収益源は不動産売却益への依存が懸念され、事業の質は中程度の評価となる。",
+      "risk_checks": {
+        "roe_15_percent": true,
+        "profit_stability": true,
+        "dividend_stability": true,
+        "one_time_profit_risk": false,
+        "liquidity_risk": true,
+        "financial_health": false,
+        "equity_risk_level": 1,
+        "operating_cf_neg_streak": 0
+      },
+      "trend_score": 5,
+      "quality_score": 4,
+      "chart_signals": {
+        "volume_surge": false,
+        "above_ma": true,
+        "near_high": false
+      },
+      "tab": "finance",
+      "theoretical_price": 838.0,
+      "upside_percent": 196.0,
+      "tenbagger_stars": 2
     },
     {
       "code": "8887",
@@ -491,8 +469,7 @@
       "tab": "finance",
       "theoretical_price": 17026.0,
       "upside_percent": 4656.0,
-      "tenbagger_stars": 3,
-      "_source": "finance"
+      "tenbagger_stars": 3
     },
     {
       "code": "8935",
@@ -539,8 +516,7 @@
       "tab": "finance",
       "theoretical_price": 6226.0,
       "upside_percent": 212.6,
-      "tenbagger_stars": 3,
-      "_source": "finance"
+      "tenbagger_stars": 3
     },
     {
       "code": "3280",
@@ -587,8 +563,7 @@
       "tab": "finance",
       "theoretical_price": 3520.0,
       "upside_percent": 276.5,
-      "tenbagger_stars": 2,
-      "_source": "finance"
+      "tenbagger_stars": 2
     },
     {
       "code": "8844",
@@ -597,14 +572,14 @@
       "website": "https://www.cigr.co.jp",
       "market": "スタンダード",
       "sector": "不動産業",
-      "score": 48,
+      "score": 47,
       "valuation_score": 15,
       "growth_score": 0,
       "shareholder_score": 8,
       "quality_score_detail": 17,
       "bonus_score": 1,
       "risk_penalty": -3,
-      "forecast_adj": 1,
+      "forecast_adj": 0,
       "net_cash_ratio": 0.94,
       "per": 5.12,
       "market_cap_oku": 418.8,
@@ -635,56 +610,7 @@
       "tab": "finance",
       "theoretical_price": 3915.0,
       "upside_percent": 215.0,
-      "tenbagger_stars": 3,
-      "_source": "finance"
-    },
-    {
-      "code": "8789",
-      "name": "FINTECH GLOBAL INC",
-      "name_jp": "フィンテック　グローバル",
-      "website": "https://www.fgi.co.jp",
-      "market": "スタンダード",
-      "sector": "その他金融業",
-      "score": 48,
-      "valuation_score": 5,
-      "growth_score": 0,
-      "shareholder_score": 7,
-      "quality_score_detail": 18,
-      "bonus_score": 2,
-      "risk_penalty": 0,
-      "forecast_adj": 2,
-      "net_cash_ratio": 0.05,
-      "per": 7.8,
-      "market_cap_oku": 308.9,
-      "dividend_yield": 3.09,
-      "payout_ratio": 14.45,
-      "roe": 19.35,
-      "roic": 52.38,
-      "pbr": 2.09,
-      "equity_ratio": 40.63,
-      "ai_comment": "FINTECH GLOBAL INCは過去3期で売上が93.0億→138.1億→144.3億円と拡大傾向にあり、直近3Q累計では売上+25.0%・営業利益+42.4%と力強い成長を継続。純利益は+177.8%と大幅増益となっており、業績モメンタムは良好。ROE19.35%は15%超えの高評価水準にあり、収益効率は高い。PBR2.09倍は割高圏ではないが、金融銘柄として収益源の質が重要であり、手数料収入ベースの安定収益か一過性の売却益依存かを見極める必要がある。自己資本比率40.63%は金融業の業種特性を踏まえると一定の健全性と判断できる。PER約7.8倍は収益水準と比較して割安感があるが、主判定はPBRを軸に評価する。通期予想に対し3Q段階での進捗は概ね順調で上振れ余地もある。",
-      "risk_checks": {
-        "roe_15_percent": true,
-        "profit_stability": true,
-        "dividend_stability": true,
-        "one_time_profit_risk": false,
-        "liquidity_risk": false,
-        "financial_health": true,
-        "equity_risk_level": 0,
-        "operating_cf_neg_streak": 1
-      },
-      "trend_score": 8,
-      "quality_score": 6,
-      "chart_signals": {
-        "volume_surge": false,
-        "above_ma": true,
-        "near_high": true
-      },
-      "tab": "finance",
-      "theoretical_price": 321.0,
-      "upside_percent": 98.0,
-      "tenbagger_stars": 2,
-      "_source": "finance"
+      "tenbagger_stars": 3
     },
     {
       "code": "7175",
@@ -731,8 +657,7 @@
       "tab": "finance",
       "theoretical_price": 3581.0,
       "upside_percent": 64.1,
-      "tenbagger_stars": 2,
-      "_source": "finance"
+      "tenbagger_stars": 2
     },
     {
       "code": "8772",
@@ -779,8 +704,7 @@
       "tab": "finance",
       "theoretical_price": 1832.0,
       "upside_percent": 104.4,
-      "tenbagger_stars": 2,
-      "_source": "finance"
+      "tenbagger_stars": 2
     },
     {
       "code": "8869",
@@ -827,8 +751,7 @@
       "tab": "finance",
       "theoretical_price": 2598.0,
       "upside_percent": 220.4,
-      "tenbagger_stars": 4,
-      "_source": "finance"
+      "tenbagger_stars": 4
     },
     {
       "code": "3293",
@@ -875,8 +798,7 @@
       "tab": "finance",
       "theoretical_price": 2170.0,
       "upside_percent": 184.0,
-      "tenbagger_stars": 1,
-      "_source": "finance"
+      "tenbagger_stars": 1
     },
     {
       "code": "3246",
@@ -923,8 +845,54 @@
       "tab": "finance",
       "theoretical_price": 1286.0,
       "upside_percent": 86.9,
-      "tenbagger_stars": 2,
-      "_source": "finance"
+      "tenbagger_stars": 2
+    },
+    {
+      "code": "8789",
+      "name": "FINTECH GLOBAL INC",
+      "name_jp": "フィンテック　グローバル",
+      "website": "https://www.fgi.co.jp",
+      "market": "スタンダード",
+      "sector": "その他金融業",
+      "score": 46,
+      "valuation_score": 5,
+      "growth_score": 0,
+      "shareholder_score": 7,
+      "quality_score_detail": 18,
+      "bonus_score": 2,
+      "risk_penalty": 0,
+      "forecast_adj": 0,
+      "net_cash_ratio": 0.05,
+      "per": 7.8,
+      "market_cap_oku": 308.9,
+      "dividend_yield": 3.09,
+      "payout_ratio": 14.45,
+      "roe": 19.35,
+      "roic": 52.38,
+      "pbr": 2.09,
+      "equity_ratio": 40.63,
+      "ai_comment": "FINTECH GLOBAL INCは過去3期で売上が93.0億→138.1億→144.3億円と拡大傾向にあり、直近3Q累計では売上+25.0%・営業利益+42.4%と力強い成長を継続。純利益は+177.8%と大幅増益となっており、業績モメンタムは良好。ROE19.35%は15%超えの高評価水準にあり、収益効率は高い。PBR2.09倍は割高圏ではないが、金融銘柄として収益源の質が重要であり、手数料収入ベースの安定収益か一過性の売却益依存かを見極める必要がある。自己資本比率40.63%は金融業の業種特性を踏まえると一定の健全性と判断できる。PER約7.8倍は収益水準と比較して割安感があるが、主判定はPBRを軸に評価する。通期予想に対し3Q段階での進捗は概ね順調で上振れ余地もある。",
+      "risk_checks": {
+        "roe_15_percent": true,
+        "profit_stability": true,
+        "dividend_stability": true,
+        "one_time_profit_risk": false,
+        "liquidity_risk": false,
+        "financial_health": true,
+        "equity_risk_level": 0,
+        "operating_cf_neg_streak": 1
+      },
+      "trend_score": 8,
+      "quality_score": 6,
+      "chart_signals": {
+        "volume_surge": false,
+        "above_ma": true,
+        "near_high": true
+      },
+      "tab": "finance",
+      "theoretical_price": 321.0,
+      "upside_percent": 98.0,
+      "tenbagger_stars": 2
     },
     {
       "code": "3489",
@@ -971,8 +939,7 @@
       "tab": "finance",
       "theoretical_price": 1968.0,
       "upside_percent": 149.8,
-      "tenbagger_stars": 4,
-      "_source": "finance"
+      "tenbagger_stars": 4
     },
     {
       "code": "8927",
@@ -996,7 +963,7 @@
       "payout_ratio": 16.64,
       "roe": 19.88,
       "roic": 29.95,
-      "pbr": 1.37,
+      "pbr": 1.24,
       "equity_ratio": 32.74,
       "ai_comment": "MEIHO ENTERPRISEは3期連続で増収増益を達成し、直近通期では売上高+23.8%・営業利益+39.5%・純利益+45.0%と加速感が顕著。過去3期の売上推移（152.5→205.6→298.0億円）は力強い成長軌道を描いており、業績トレンドは良好。ROE19.88%は15%超の高水準で評価できる。PBR1.37倍は不動産セクターとして過度に割高ではなく、PER5.5倍の低さも注目されるが、PBRを主軸に見ると中程度の水準。自己資本比率32.74%は不動産基準（30%以上）をクリアしており合格圏。ただし不動産業は棚卸資産（販売用不動産）の比重が大きく、営業キャッシュフローの動向と借入依存度が重要な確認ポイント。売上拡大が土地・建物の仕入資金を要する構造上、営業CFがマイナスに傾くリスクがあり、金利上昇局面での資金コスト増加にも注意が必要。事業の継続性・収益の質については、売却益依存型の収益構造かどうかを引き続き見極める必要がある。",
       "risk_checks": {
@@ -1017,10 +984,9 @@
         "near_high": true
       },
       "tab": "finance",
-      "theoretical_price": 1410.0,
-      "upside_percent": 181.9,
-      "tenbagger_stars": 4,
-      "_source": "finance"
+      "theoretical_price": 1433.0,
+      "upside_percent": 186.6,
+      "tenbagger_stars": 4
     },
     {
       "code": "3232",
@@ -1067,8 +1033,7 @@
       "tab": "finance",
       "theoretical_price": 1034.0,
       "upside_percent": 69.5,
-      "tenbagger_stars": 1,
-      "_source": "finance"
+      "tenbagger_stars": 1
     },
     {
       "code": "8999",
@@ -1115,104 +1080,7 @@
       "tab": "finance",
       "theoretical_price": 741.0,
       "upside_percent": 30.4,
-      "tenbagger_stars": 2,
-      "_source": "finance"
-    },
-    {
-      "code": "9633",
-      "name": "TOKYO THEATRES CO INC",
-      "name_jp": "東京テアトル",
-      "website": "https://www.theatres.co.jp",
-      "market": "スタンダード",
-      "sector": "不動産業",
-      "score": 44,
-      "valuation_score": 21,
-      "growth_score": 0,
-      "shareholder_score": 5,
-      "quality_score_detail": 13,
-      "bonus_score": 1,
-      "risk_penalty": -6,
-      "forecast_adj": 1,
-      "net_cash_ratio": -0.1,
-      "per": 15.58,
-      "market_cap_oku": 128.7,
-      "dividend_yield": 1.05,
-      "payout_ratio": 16.41,
-      "roe": 4.98,
-      "roic": 2.0,
-      "pbr": 0.66,
-      "equity_ratio": 55.68,
-      "ai_comment": "東京テアトルは映画興行・不動産賃貸を主軸とする複合企業。過去3期の売上は170.9→183.9→206.6億円と3期連続増収を達成し、営業利益も25%増と成長軌道にある。直近1Q（2026年4〜6月）は売上+7.8%と増収基調を維持しているが、営業利益はわずか4百万円と極めて低水準であり、通期計画（営業利益3億円）の達成には後半偏重が必要で進捗は要注意。純利益2,561百万円は一過性利益（資産売却等）が主因とみられ、事業本来の収益力が反映されていない点は割り引く必要がある。PBR0.66倍は帳簿価値を下回り表面上は割安だが、ROEは4.98%と10%を大きく下回り資本効率は低い。自己資本比率55.68%は財務健全性の面では問題ない。映画興行は景気・コンテンツ次第で変動しやすく、事業継続性は中程度。営業利益の薄さが構造的課題であり、PBR単独では割安と断定しにくい。",
-      "risk_checks": {
-        "roe_15_percent": false,
-        "profit_stability": true,
-        "dividend_stability": true,
-        "one_time_profit_risk": true,
-        "liquidity_risk": false,
-        "financial_health": true,
-        "equity_risk_level": 0,
-        "operating_cf_neg_streak": 0
-      },
-      "trend_score": 5,
-      "quality_score": 4,
-      "chart_signals": {
-        "volume_surge": false,
-        "above_ma": true,
-        "near_high": true
-      },
-      "tab": "finance",
-      "theoretical_price": 3189.0,
-      "upside_percent": 67.8,
-      "tenbagger_stars": 2,
-      "_source": "finance"
-    },
-    {
-      "code": "5845",
-      "name": "ZENHOREN CO. LTD",
-      "name_jp": "全保連",
-      "website": "https://www.zenhoren.jp",
-      "market": "スタンダード",
-      "sector": "その他金融業",
-      "score": 44,
-      "valuation_score": 1,
-      "growth_score": 0,
-      "shareholder_score": 6,
-      "quality_score_detail": 18,
-      "bonus_score": 2,
-      "risk_penalty": 0,
-      "forecast_adj": 2,
-      "net_cash_ratio": 0.07,
-      "per": 18.42,
-      "market_cap_oku": 317.6,
-      "dividend_yield": 8.92,
-      "payout_ratio": 60.78,
-      "roe": 21.35,
-      "roic": null,
-      "pbr": 4.07,
-      "equity_ratio": 32.5,
-      "ai_comment": "ZENHOREN CO. LTD（全保連）はIndustrialsセクターに属し、売上は3期連続で増収（245億→257億→262億円）、最新1Q（2026年4月〜6月）も売上+2.7%・営業利益+19.5%・純利益+22.7%と堅調な成長が続いている。通期予想に対する進捗も概ね順調。営業利益率は約12%水準で、利益成長率が売上成長率を大きく上回る点は収益性改善の証左と言える。ROEは21.35%と15%を大きく超え、高水準の資本効率を維持している点は高評価。自己資本比率は32.5%とIndustrialsとしてはやや低めだが、事業モデルの特性を踏まえると許容範囲内。PBR4.07倍は割安とは言えず、成長期待を織り込んだバリュエーション水準。安定した増収増益基調と高ROEが評価ポイントだが、株価水準の妥当性は慎重に見極める必要がある。",
-      "risk_checks": {
-        "roe_15_percent": true,
-        "profit_stability": true,
-        "dividend_stability": true,
-        "one_time_profit_risk": false,
-        "liquidity_risk": false,
-        "financial_health": true,
-        "equity_risk_level": 0,
-        "operating_cf_neg_streak": 0
-      },
-      "trend_score": 8,
-      "quality_score": 7,
-      "chart_signals": {
-        "volume_surge": false,
-        "above_ma": true,
-        "near_high": true
-      },
-      "tab": "finance",
-      "theoretical_price": 1125.0,
-      "upside_percent": -7.1,
-      "tenbagger_stars": 2,
-      "_source": "finance"
+      "tenbagger_stars": 2
     },
     {
       "code": "8931",
@@ -1259,8 +1127,54 @@
       "tab": "finance",
       "theoretical_price": 3636.0,
       "upside_percent": 176.7,
-      "tenbagger_stars": 1,
-      "_source": "finance"
+      "tenbagger_stars": 1
+    },
+    {
+      "code": "9633",
+      "name": "TOKYO THEATRES CO INC",
+      "name_jp": "東京テアトル",
+      "website": "https://www.theatres.co.jp",
+      "market": "スタンダード",
+      "sector": "不動産業",
+      "score": 43,
+      "valuation_score": 21,
+      "growth_score": 0,
+      "shareholder_score": 5,
+      "quality_score_detail": 13,
+      "bonus_score": 1,
+      "risk_penalty": -6,
+      "forecast_adj": 0,
+      "net_cash_ratio": -0.1,
+      "per": 15.58,
+      "market_cap_oku": 128.7,
+      "dividend_yield": 1.05,
+      "payout_ratio": 16.41,
+      "roe": 4.98,
+      "roic": 2.0,
+      "pbr": 0.66,
+      "equity_ratio": 55.68,
+      "ai_comment": "東京テアトルは映画興行・不動産賃貸を主軸とする複合企業。過去3期の売上は170.9→183.9→206.6億円と3期連続増収を達成し、営業利益も25%増と成長軌道にある。直近1Q（2026年4〜6月）は売上+7.8%と増収基調を維持しているが、営業利益はわずか4百万円と極めて低水準であり、通期計画（営業利益3億円）の達成には後半偏重が必要で進捗は要注意。純利益2,561百万円は一過性利益（資産売却等）が主因とみられ、事業本来の収益力が反映されていない点は割り引く必要がある。PBR0.66倍は帳簿価値を下回り表面上は割安だが、ROEは4.98%と10%を大きく下回り資本効率は低い。自己資本比率55.68%は財務健全性の面では問題ない。映画興行は景気・コンテンツ次第で変動しやすく、事業継続性は中程度。営業利益の薄さが構造的課題であり、PBR単独では割安と断定しにくい。",
+      "risk_checks": {
+        "roe_15_percent": false,
+        "profit_stability": true,
+        "dividend_stability": true,
+        "one_time_profit_risk": true,
+        "liquidity_risk": false,
+        "financial_health": true,
+        "equity_risk_level": 0,
+        "operating_cf_neg_streak": 0
+      },
+      "trend_score": 5,
+      "quality_score": 4,
+      "chart_signals": {
+        "volume_surge": false,
+        "above_ma": true,
+        "near_high": true
+      },
+      "tab": "finance",
+      "theoretical_price": 3189.0,
+      "upside_percent": 67.8,
+      "tenbagger_stars": 2
     },
     {
       "code": "8996",
@@ -1307,8 +1221,7 @@
       "tab": "finance",
       "theoretical_price": 3571.0,
       "upside_percent": 242.1,
-      "tenbagger_stars": 4,
-      "_source": "finance"
+      "tenbagger_stars": 4
     },
     {
       "code": "7192",
@@ -1355,8 +1268,7 @@
       "tab": "finance",
       "theoretical_price": 1273.0,
       "upside_percent": 78.8,
-      "tenbagger_stars": 3,
-      "_source": "finance"
+      "tenbagger_stars": 3
     },
     {
       "code": "8928",
@@ -1403,8 +1315,7 @@
       "tab": "finance",
       "theoretical_price": 6634.0,
       "upside_percent": 187.6,
-      "tenbagger_stars": 1,
-      "_source": "finance"
+      "tenbagger_stars": 1
     },
     {
       "code": "8737",
@@ -1424,7 +1335,7 @@
       "net_cash_ratio": 0.93,
       "per": 4.61,
       "market_cap_oku": 186.8,
-      "dividend_yield": 4.86,
+      "dividend_yield": 4.88,
       "payout_ratio": 22.41,
       "roe": 19.28,
       "roic": 38.67,
@@ -1451,8 +1362,54 @@
       "tab": "finance",
       "theoretical_price": 2046.0,
       "upside_percent": 231.6,
-      "tenbagger_stars": 5,
-      "_source": "finance"
+      "tenbagger_stars": 5
+    },
+    {
+      "code": "5845",
+      "name": "ZENHOREN CO. LTD",
+      "name_jp": "全保連",
+      "website": "https://www.zenhoren.jp",
+      "market": "スタンダード",
+      "sector": "その他金融業",
+      "score": 42,
+      "valuation_score": 1,
+      "growth_score": 0,
+      "shareholder_score": 6,
+      "quality_score_detail": 18,
+      "bonus_score": 2,
+      "risk_penalty": 0,
+      "forecast_adj": 0,
+      "net_cash_ratio": 0.07,
+      "per": 18.42,
+      "market_cap_oku": 317.6,
+      "dividend_yield": 8.92,
+      "payout_ratio": 60.78,
+      "roe": 21.35,
+      "roic": null,
+      "pbr": 4.07,
+      "equity_ratio": 32.5,
+      "ai_comment": "ZENHOREN CO. LTD（全保連）はIndustrialsセクターに属し、売上は3期連続で増収（245億→257億→262億円）、最新1Q（2026年4月〜6月）も売上+2.7%・営業利益+19.5%・純利益+22.7%と堅調な成長が続いている。通期予想に対する進捗も概ね順調。営業利益率は約12%水準で、利益成長率が売上成長率を大きく上回る点は収益性改善の証左と言える。ROEは21.35%と15%を大きく超え、高水準の資本効率を維持している点は高評価。自己資本比率は32.5%とIndustrialsとしてはやや低めだが、事業モデルの特性を踏まえると許容範囲内。PBR4.07倍は割安とは言えず、成長期待を織り込んだバリュエーション水準。安定した増収増益基調と高ROEが評価ポイントだが、株価水準の妥当性は慎重に見極める必要がある。",
+      "risk_checks": {
+        "roe_15_percent": true,
+        "profit_stability": true,
+        "dividend_stability": true,
+        "one_time_profit_risk": false,
+        "liquidity_risk": false,
+        "financial_health": true,
+        "equity_risk_level": 0,
+        "operating_cf_neg_streak": 0
+      },
+      "trend_score": 8,
+      "quality_score": 7,
+      "chart_signals": {
+        "volume_surge": false,
+        "above_ma": true,
+        "near_high": true
+      },
+      "tab": "finance",
+      "theoretical_price": 1125.0,
+      "upside_percent": -7.1,
+      "tenbagger_stars": 2
     },
     {
       "code": "3241",
@@ -1472,7 +1429,7 @@
       "net_cash_ratio": -0.01,
       "per": 7.18,
       "market_cap_oku": 67.8,
-      "dividend_yield": 4.02,
+      "dividend_yield": 4.0,
       "payout_ratio": 25.7,
       "roe": 12.28,
       "roic": 17.58,
@@ -1499,8 +1456,7 @@
       "tab": "finance",
       "theoretical_price": 1281.0,
       "upside_percent": 118.2,
-      "tenbagger_stars": 2,
-      "_source": "finance"
+      "tenbagger_stars": 2
     },
     {
       "code": "8771",
@@ -1547,8 +1503,7 @@
       "tab": "finance",
       "theoretical_price": 1372.0,
       "upside_percent": -23.2,
-      "tenbagger_stars": 1,
-      "_source": "finance"
+      "tenbagger_stars": 1
     },
     {
       "code": "8747",
@@ -1595,56 +1550,7 @@
       "tab": "finance",
       "theoretical_price": 12427.0,
       "upside_percent": 429.9,
-      "tenbagger_stars": 5,
-      "_source": "finance"
-    },
-    {
-      "code": "4346",
-      "name": "NEXYZ GROUP CORPORATION",
-      "name_jp": "ＮＥＸＹＺ．Ｇｒｏｕｐ",
-      "website": "https://www.nexyzgroup.jp",
-      "market": "スタンダード",
-      "sector": "その他金融業",
-      "score": 41,
-      "valuation_score": 3,
-      "growth_score": 0,
-      "shareholder_score": 8,
-      "quality_score_detail": 16,
-      "bonus_score": 2,
-      "risk_penalty": -3,
-      "forecast_adj": 1,
-      "net_cash_ratio": 0.27,
-      "per": 8.64,
-      "market_cap_oku": 135.3,
-      "dividend_yield": 5.77,
-      "payout_ratio": 16.61,
-      "roe": 21.3,
-      "roic": null,
-      "pbr": 3.98,
-      "equity_ratio": 17.75,
-      "ai_comment": "NEXYZ GROUPは産業サービスセクターに属し、直近3期で売上が219.5→245.0→284.3億円と順調に拡大、営業利益も前期比53.2%増と大幅改善を示している。最新四半期（3Q累計）でも売上+8.4%・営業利益+13.3%と増収増益基調を維持しており、純利益は前年比160.7%増と質的改善も顕著。ROE21.3%は15%超であり高評価に値する。PBR3.98倍は割高水準であり、現時点での割安感は乏しい。PERは約8.6倍と低く補助的には評価できるが、主判定のPBRが高い点は留意が必要。自己資本比率17.75%は低水準だが、産業系事業会社として財務レバレッジを活用した収益拡大と捉えられる。通期予想（売上330億・営業利益22億）の達成可否が今後の焦点。収益の持続性と利益の質の継続的な確認が重要。",
-      "risk_checks": {
-        "roe_15_percent": true,
-        "profit_stability": true,
-        "dividend_stability": true,
-        "one_time_profit_risk": false,
-        "liquidity_risk": true,
-        "financial_health": true,
-        "equity_risk_level": 0,
-        "operating_cf_neg_streak": 0
-      },
-      "trend_score": 8,
-      "quality_score": 6,
-      "chart_signals": {
-        "volume_surge": false,
-        "above_ma": true,
-        "near_high": true
-      },
-      "tab": "finance",
-      "theoretical_price": 1839.0,
-      "upside_percent": 76.8,
-      "tenbagger_stars": 3,
-      "_source": "finance"
+      "tenbagger_stars": 5
     },
     {
       "code": "8908",
@@ -1691,8 +1597,7 @@
       "tab": "finance",
       "theoretical_price": 1789.0,
       "upside_percent": 101.4,
-      "tenbagger_stars": 3,
-      "_source": "finance"
+      "tenbagger_stars": 3
     },
     {
       "code": "5533",
@@ -1739,8 +1644,54 @@
       "tab": "finance",
       "theoretical_price": 3914.0,
       "upside_percent": 80.7,
-      "tenbagger_stars": 1,
-      "_source": "finance"
+      "tenbagger_stars": 1
+    },
+    {
+      "code": "4346",
+      "name": "NEXYZ GROUP CORPORATION",
+      "name_jp": "ＮＥＸＹＺ．Ｇｒｏｕｐ",
+      "website": "https://www.nexyzgroup.jp",
+      "market": "スタンダード",
+      "sector": "その他金融業",
+      "score": 40,
+      "valuation_score": 3,
+      "growth_score": 0,
+      "shareholder_score": 8,
+      "quality_score_detail": 16,
+      "bonus_score": 2,
+      "risk_penalty": -3,
+      "forecast_adj": 0,
+      "net_cash_ratio": 0.27,
+      "per": 8.64,
+      "market_cap_oku": 135.3,
+      "dividend_yield": 5.77,
+      "payout_ratio": 16.61,
+      "roe": 21.3,
+      "roic": null,
+      "pbr": 3.98,
+      "equity_ratio": 17.75,
+      "ai_comment": "NEXYZ GROUPは産業サービスセクターに属し、直近3期で売上が219.5→245.0→284.3億円と順調に拡大、営業利益も前期比53.2%増と大幅改善を示している。最新四半期（3Q累計）でも売上+8.4%・営業利益+13.3%と増収増益基調を維持しており、純利益は前年比160.7%増と質的改善も顕著。ROE21.3%は15%超であり高評価に値する。PBR3.98倍は割高水準であり、現時点での割安感は乏しい。PERは約8.6倍と低く補助的には評価できるが、主判定のPBRが高い点は留意が必要。自己資本比率17.75%は低水準だが、産業系事業会社として財務レバレッジを活用した収益拡大と捉えられる。通期予想（売上330億・営業利益22億）の達成可否が今後の焦点。収益の持続性と利益の質の継続的な確認が重要。",
+      "risk_checks": {
+        "roe_15_percent": true,
+        "profit_stability": true,
+        "dividend_stability": true,
+        "one_time_profit_risk": false,
+        "liquidity_risk": true,
+        "financial_health": true,
+        "equity_risk_level": 0,
+        "operating_cf_neg_streak": 0
+      },
+      "trend_score": 8,
+      "quality_score": 6,
+      "chart_signals": {
+        "volume_surge": false,
+        "above_ma": true,
+        "near_high": true
+      },
+      "tab": "finance",
+      "theoretical_price": 1839.0,
+      "upside_percent": 76.8,
+      "tenbagger_stars": 3
     },
     {
       "code": "4809",
@@ -1787,8 +1738,7 @@
       "tab": "finance",
       "theoretical_price": 3152.0,
       "upside_percent": 55.6,
-      "tenbagger_stars": 1,
-      "_source": "finance"
+      "tenbagger_stars": 1
     },
     {
       "code": "3477",
@@ -1835,8 +1785,7 @@
       "tab": "finance",
       "theoretical_price": 2293.0,
       "upside_percent": 151.7,
-      "tenbagger_stars": 3,
-      "_source": "finance"
+      "tenbagger_stars": 3
     },
     {
       "code": "3494",
@@ -1856,7 +1805,7 @@
       "net_cash_ratio": -3.2,
       "per": 7.71,
       "market_cap_oku": 35.3,
-      "dividend_yield": 1.33,
+      "dividend_yield": 1.32,
       "payout_ratio": 10.26,
       "roe": 9.64,
       "roic": 8.96,
@@ -1883,8 +1832,7 @@
       "tab": "finance",
       "theoretical_price": 819.0,
       "upside_percent": 81.6,
-      "tenbagger_stars": 3,
-      "_source": "finance"
+      "tenbagger_stars": 3
     },
     {
       "code": "3245",
@@ -1893,14 +1841,14 @@
       "website": "https://www.dear-life.co.jp",
       "market": "プライム",
       "sector": "不動産業",
-      "score": 39,
+      "score": 38,
       "valuation_score": 3,
       "growth_score": 0,
       "shareholder_score": 6,
       "quality_score_detail": 18,
       "bonus_score": 1,
       "risk_penalty": 0,
-      "forecast_adj": 1,
+      "forecast_adj": 0,
       "net_cash_ratio": 0.5,
       "per": 11.3,
       "market_cap_oku": 548.6,
@@ -1931,104 +1879,7 @@
       "tab": "finance",
       "theoretical_price": 1815.0,
       "upside_percent": 66.5,
-      "tenbagger_stars": 2,
-      "_source": "finance"
-    },
-    {
-      "code": "2983",
-      "name": "ARR PLANNER CO LTD",
-      "name_jp": "アールプランナー",
-      "website": "https://www.arrplanner.co.jp",
-      "market": "グロース",
-      "sector": "不動産業",
-      "score": 39,
-      "valuation_score": 5,
-      "growth_score": 0,
-      "shareholder_score": 7,
-      "quality_score_detail": 18,
-      "bonus_score": 1,
-      "risk_penalty": -7,
-      "forecast_adj": 2,
-      "net_cash_ratio": 0.33,
-      "per": 6.07,
-      "market_cap_oku": 182.9,
-      "dividend_yield": 3.21,
-      "payout_ratio": 26.61,
-      "roe": 31.44,
-      "roic": 62.58,
-      "pbr": 1.98,
-      "equity_ratio": 22.27,
-      "ai_comment": "ARRプランナーは3期連続増収増益を達成し、直近2Q（2026年2月〜7月）も売上高前年比+19.7%、営業利益+45.6%と加速感がある。通期予想売上565億円・営業利益50億円に対し2Q累計で進捗率は概ね順調とみられる。ROE31.44%は極めて高水準で高評価に値する。一方、自己資本比率22.27%は不動産セクターの目安30%を下回る「注意」水準にあり、借入依存の高さには留意が必要だ。営業CFの動向が開示されておらず、不動産業特有の棚卸資産積み上がりによるCF悪化リスクを排除できない。PBR1.98倍はやや割高感があり、PERも6倍台と低いが、財務レバレッジの高さと金利上昇リスクを勘案すると単純な割安とは言い切れない。成長性は評価できるが財務健全性の改善が課題。",
-      "risk_checks": {
-        "roe_15_percent": true,
-        "profit_stability": true,
-        "dividend_stability": true,
-        "one_time_profit_risk": false,
-        "liquidity_risk": true,
-        "financial_health": false,
-        "equity_risk_level": 1,
-        "operating_cf_neg_streak": 1
-      },
-      "trend_score": 8,
-      "quality_score": 5,
-      "chart_signals": {
-        "volume_surge": false,
-        "above_ma": true,
-        "near_high": false
-      },
-      "tab": "finance",
-      "theoretical_price": 4404.0,
-      "upside_percent": 157.4,
-      "tenbagger_stars": 4,
-      "_source": "finance"
-    },
-    {
-      "code": "2984",
-      "name": "YAMAICHI REAL ESTATE CO LTD",
-      "name_jp": "ヤマイチエステート",
-      "website": "https://www.yueg.co.jp",
-      "market": "スタンダード",
-      "sector": "不動産業",
-      "score": 38,
-      "valuation_score": 33,
-      "growth_score": 0,
-      "shareholder_score": 6,
-      "quality_score_detail": 13,
-      "bonus_score": 2,
-      "risk_penalty": -27,
-      "forecast_adj": 2,
-      "net_cash_ratio": -1.52,
-      "per": 11.99,
-      "market_cap_oku": 67.9,
-      "dividend_yield": 3.96,
-      "payout_ratio": 45.93,
-      "roe": 4.02,
-      "roic": 6.57,
-      "pbr": 0.49,
-      "equity_ratio": 22.49,
-      "ai_comment": "直近1Qは売上前年比+158.5%と大幅増収で推移しており、通期予想（売上約314億円）は年次実績176億円から大幅に上振れる計画。ただし不動産業の性質上、売上計上は物件引渡し時期に偏りやすく、季節性・一過性要因の影響が大きい点は留意が必要。自己資本比率22.49%は不動産セクターの30%合格水準を下回る20%台で注意圏。借入依存が高い構造は金利上昇局面でのコスト増リスクを内包する。営業CFの動向や借入残高の水準が財務安全性の鍵となり、棚卸資産（販売用不動産）の積み上がりにも注意が必要。ROEは4.02%と低水準で収益性は課題。PBR0.49倍は割安に映るが、財務レバレッジへの依存と営業CF動向を踏まえると単純に割安とは言い切れない。通期予想の達成可否が評価の分岐点。",
-      "risk_checks": {
-        "roe_15_percent": false,
-        "profit_stability": true,
-        "dividend_stability": true,
-        "one_time_profit_risk": true,
-        "liquidity_risk": true,
-        "financial_health": false,
-        "equity_risk_level": 1,
-        "operating_cf_neg_streak": 2
-      },
-      "trend_score": 5,
-      "quality_score": 4,
-      "chart_signals": {
-        "volume_surge": false,
-        "above_ma": true,
-        "near_high": true
-      },
-      "tab": "finance",
-      "theoretical_price": 1111.0,
-      "upside_percent": 41.9,
-      "tenbagger_stars": 1,
-      "_source": "finance"
+      "tenbagger_stars": 2
     },
     {
       "code": "5834",
@@ -2075,8 +1926,7 @@
       "tab": "finance",
       "theoretical_price": 6142.0,
       "upside_percent": 116.6,
-      "tenbagger_stars": 2,
-      "_source": "finance"
+      "tenbagger_stars": 2
     },
     {
       "code": "8864",
@@ -2123,8 +1973,101 @@
       "tab": "finance",
       "theoretical_price": 1499.0,
       "upside_percent": 54.0,
-      "tenbagger_stars": 2,
-      "_source": "finance"
+      "tenbagger_stars": 2
+    },
+    {
+      "code": "2983",
+      "name": "ARR PLANNER CO LTD",
+      "name_jp": "アールプランナー",
+      "website": "https://www.arrplanner.co.jp",
+      "market": "グロース",
+      "sector": "不動産業",
+      "score": 37,
+      "valuation_score": 5,
+      "growth_score": 0,
+      "shareholder_score": 7,
+      "quality_score_detail": 18,
+      "bonus_score": 1,
+      "risk_penalty": -7,
+      "forecast_adj": 0,
+      "net_cash_ratio": 0.33,
+      "per": 6.07,
+      "market_cap_oku": 182.9,
+      "dividend_yield": 3.21,
+      "payout_ratio": 26.61,
+      "roe": 31.44,
+      "roic": 62.58,
+      "pbr": 1.98,
+      "equity_ratio": 22.27,
+      "ai_comment": "ARRプランナーは3期連続増収増益を達成し、直近2Q（2026年2月〜7月）も売上高前年比+19.7%、営業利益+45.6%と加速感がある。通期予想売上565億円・営業利益50億円に対し2Q累計で進捗率は概ね順調とみられる。ROE31.44%は極めて高水準で高評価に値する。一方、自己資本比率22.27%は不動産セクターの目安30%を下回る「注意」水準にあり、借入依存の高さには留意が必要だ。営業CFの動向が開示されておらず、不動産業特有の棚卸資産積み上がりによるCF悪化リスクを排除できない。PBR1.98倍はやや割高感があり、PERも6倍台と低いが、財務レバレッジの高さと金利上昇リスクを勘案すると単純な割安とは言い切れない。成長性は評価できるが財務健全性の改善が課題。",
+      "risk_checks": {
+        "roe_15_percent": true,
+        "profit_stability": true,
+        "dividend_stability": true,
+        "one_time_profit_risk": false,
+        "liquidity_risk": true,
+        "financial_health": false,
+        "equity_risk_level": 1,
+        "operating_cf_neg_streak": 1
+      },
+      "trend_score": 8,
+      "quality_score": 5,
+      "chart_signals": {
+        "volume_surge": false,
+        "above_ma": true,
+        "near_high": false
+      },
+      "tab": "finance",
+      "theoretical_price": 4404.0,
+      "upside_percent": 157.4,
+      "tenbagger_stars": 4
+    },
+    {
+      "code": "2984",
+      "name": "YAMAICHI REAL ESTATE CO LTD",
+      "name_jp": "ヤマイチエステート",
+      "website": "https://www.yueg.co.jp",
+      "market": "スタンダード",
+      "sector": "不動産業",
+      "score": 36,
+      "valuation_score": 33,
+      "growth_score": 0,
+      "shareholder_score": 6,
+      "quality_score_detail": 13,
+      "bonus_score": 2,
+      "risk_penalty": -27,
+      "forecast_adj": 0,
+      "net_cash_ratio": -1.52,
+      "per": 11.99,
+      "market_cap_oku": 67.9,
+      "dividend_yield": 3.96,
+      "payout_ratio": 45.93,
+      "roe": 4.02,
+      "roic": 6.57,
+      "pbr": 0.49,
+      "equity_ratio": 22.49,
+      "ai_comment": "直近1Qは売上前年比+158.5%と大幅増収で推移しており、通期予想（売上約314億円）は年次実績176億円から大幅に上振れる計画。ただし不動産業の性質上、売上計上は物件引渡し時期に偏りやすく、季節性・一過性要因の影響が大きい点は留意が必要。自己資本比率22.49%は不動産セクターの30%合格水準を下回る20%台で注意圏。借入依存が高い構造は金利上昇局面でのコスト増リスクを内包する。営業CFの動向や借入残高の水準が財務安全性の鍵となり、棚卸資産（販売用不動産）の積み上がりにも注意が必要。ROEは4.02%と低水準で収益性は課題。PBR0.49倍は割安に映るが、財務レバレッジへの依存と営業CF動向を踏まえると単純に割安とは言い切れない。通期予想の達成可否が評価の分岐点。",
+      "risk_checks": {
+        "roe_15_percent": false,
+        "profit_stability": true,
+        "dividend_stability": true,
+        "one_time_profit_risk": true,
+        "liquidity_risk": true,
+        "financial_health": false,
+        "equity_risk_level": 1,
+        "operating_cf_neg_streak": 2
+      },
+      "trend_score": 5,
+      "quality_score": 4,
+      "chart_signals": {
+        "volume_surge": false,
+        "above_ma": true,
+        "near_high": true
+      },
+      "tab": "finance",
+      "theoretical_price": 1111.0,
+      "upside_percent": 41.9,
+      "tenbagger_stars": 1
     },
     {
       "code": "3486",
@@ -2171,8 +2114,7 @@
       "tab": "finance",
       "theoretical_price": 3875.0,
       "upside_percent": 91.4,
-      "tenbagger_stars": 2,
-      "_source": "finance"
+      "tenbagger_stars": 2
     },
     {
       "code": "3300",
@@ -2192,7 +2134,7 @@
       "net_cash_ratio": -0.05,
       "per": 6.18,
       "market_cap_oku": 140.5,
-      "dividend_yield": 12.01,
+      "dividend_yield": 11.83,
       "payout_ratio": 35.88,
       "roe": 28.17,
       "roic": 30.47,
@@ -2219,8 +2161,7 @@
       "tab": "finance",
       "theoretical_price": 4953.0,
       "upside_percent": 161.6,
-      "tenbagger_stars": 4,
-      "_source": "finance"
+      "tenbagger_stars": 4
     },
     {
       "code": "3454",
@@ -2267,8 +2208,7 @@
       "tab": "finance",
       "theoretical_price": 2836.0,
       "upside_percent": 126.3,
-      "tenbagger_stars": 1,
-      "_source": "finance"
+      "tenbagger_stars": 1
     },
     {
       "code": "2993",
@@ -2315,56 +2255,7 @@
       "tab": "finance",
       "theoretical_price": 3219.0,
       "upside_percent": 43.2,
-      "tenbagger_stars": 1,
-      "_source": "finance"
-    },
-    {
-      "code": "3238",
-      "name": "CENTRAL GENERAL DEVELOPMENT CO.",
-      "name_jp": "セントラル総合開発",
-      "website": "https://central-gd.co.jp",
-      "market": "スタンダード",
-      "sector": "不動産業",
-      "score": 31,
-      "valuation_score": 30,
-      "growth_score": 0,
-      "shareholder_score": 6,
-      "quality_score_detail": 13,
-      "bonus_score": 0,
-      "risk_penalty": -26,
-      "forecast_adj": 1,
-      "net_cash_ratio": -0.31,
-      "per": 24.87,
-      "market_cap_oku": 36.7,
-      "dividend_yield": 3.4,
-      "payout_ratio": 32.55,
-      "roe": 1.43,
-      "roic": 4.03,
-      "pbr": 0.35,
-      "equity_ratio": 22.35,
-      "ai_comment": "直近1Q（2026年4月～6月）は売上76.2%増と急成長を示しており、通期予想も売上450億円・営業利益13.5億円と前期比で増収増益を計画。ただし最新年度の営業利益は前期比▲27.8%と大幅減益であり、収益の安定性には課題が残る。自己資本比率22.35%は不動産セクターの目安である30%を下回り注意水準にあり、借入依存度の高さが財務リスクとして懸念される。営業CFの状況も不動産販売業の特性上、在庫変動や借入に左右されやすく慎重な目線が必要。PBR0.35倍は低水準だが、ROE1.43%と極めて低く収益性が伴っておらず、割安と断定するには至らない。1Qの急回復が継続するか通期進捗を注視すべき局面。",
-      "risk_checks": {
-        "roe_15_percent": false,
-        "profit_stability": true,
-        "dividend_stability": false,
-        "one_time_profit_risk": true,
-        "liquidity_risk": true,
-        "financial_health": false,
-        "equity_risk_level": 1,
-        "operating_cf_neg_streak": 0
-      },
-      "trend_score": 4,
-      "quality_score": 3,
-      "chart_signals": {
-        "volume_surge": false,
-        "above_ma": true,
-        "near_high": false
-      },
-      "tab": "finance",
-      "theoretical_price": 547.0,
-      "upside_percent": 43.2,
-      "tenbagger_stars": 1,
-      "_source": "finance"
+      "tenbagger_stars": 1
     },
     {
       "code": "2982",
@@ -2411,8 +2302,54 @@
       "tab": "finance",
       "theoretical_price": 1262.0,
       "upside_percent": 192.8,
-      "tenbagger_stars": 4,
-      "_source": "finance"
+      "tenbagger_stars": 4
+    },
+    {
+      "code": "3238",
+      "name": "CENTRAL GENERAL DEVELOPMENT CO.",
+      "name_jp": "セントラル総合開発",
+      "website": "https://central-gd.co.jp",
+      "market": "スタンダード",
+      "sector": "不動産業",
+      "score": 30,
+      "valuation_score": 30,
+      "growth_score": 0,
+      "shareholder_score": 6,
+      "quality_score_detail": 13,
+      "bonus_score": 0,
+      "risk_penalty": -26,
+      "forecast_adj": 0,
+      "net_cash_ratio": -0.31,
+      "per": 24.87,
+      "market_cap_oku": 36.7,
+      "dividend_yield": 3.4,
+      "payout_ratio": 32.55,
+      "roe": 1.43,
+      "roic": 4.03,
+      "pbr": 0.35,
+      "equity_ratio": 22.35,
+      "ai_comment": "直近1Q（2026年4月～6月）は売上76.2%増と急成長を示しており、通期予想も売上450億円・営業利益13.5億円と前期比で増収増益を計画。ただし最新年度の営業利益は前期比▲27.8%と大幅減益であり、収益の安定性には課題が残る。自己資本比率22.35%は不動産セクターの目安である30%を下回り注意水準にあり、借入依存度の高さが財務リスクとして懸念される。営業CFの状況も不動産販売業の特性上、在庫変動や借入に左右されやすく慎重な目線が必要。PBR0.35倍は低水準だが、ROE1.43%と極めて低く収益性が伴っておらず、割安と断定するには至らない。1Qの急回復が継続するか通期進捗を注視すべき局面。",
+      "risk_checks": {
+        "roe_15_percent": false,
+        "profit_stability": true,
+        "dividend_stability": false,
+        "one_time_profit_risk": true,
+        "liquidity_risk": true,
+        "financial_health": false,
+        "equity_risk_level": 1,
+        "operating_cf_neg_streak": 0
+      },
+      "trend_score": 4,
+      "quality_score": 3,
+      "chart_signals": {
+        "volume_surge": false,
+        "above_ma": true,
+        "near_high": false
+      },
+      "tab": "finance",
+      "theoretical_price": 547.0,
+      "upside_percent": 43.2,
+      "tenbagger_stars": 1
     }
   ]
 }
