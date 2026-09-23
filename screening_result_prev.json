@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-22T23:50:56+09:00",
+  "updated_at": "2026-09-23T23:47:09+09:00",
   "stocks": [
     {
       "code": "9867",
@@ -577,7 +577,7 @@
       "net_cash_ratio": 1.18,
       "per": 8.94,
       "market_cap_oku": 170.5,
-      "dividend_yield": 3.84,
+      "dividend_yield": 3.85,
       "payout_ratio": 34.36,
       "roe": 6.0,
       "roic": 7.45,
@@ -686,8 +686,8 @@
       },
       "tenbagger_stars": 2,
       "tab": "general",
-      "theoretical_price": 3580.0,
-      "upside_percent": 154.6
+      "theoretical_price": 3579.0,
+      "upside_percent": 154.5
     },
     {
       "code": "4625",
@@ -1093,7 +1093,7 @@
       "net_cash_ratio": 1.38,
       "per": 8.63,
       "market_cap_oku": 198.7,
-      "dividend_yield": 3.68,
+      "dividend_yield": 3.69,
       "payout_ratio": 31.84,
       "roe": 5.01,
       "roic": 10.21,
@@ -1136,7 +1136,7 @@
       "net_cash_ratio": 1.05,
       "per": 9.2,
       "market_cap_oku": 32.7,
-      "dividend_yield": 3.12,
+      "dividend_yield": 3.13,
       "payout_ratio": 8.61,
       "roe": 5.71,
       "roic": 3.38,
@@ -1265,7 +1265,7 @@
       "net_cash_ratio": 1.32,
       "per": 9.68,
       "market_cap_oku": 49.6,
-      "dividend_yield": 2.72,
+      "dividend_yield": 2.62,
       "payout_ratio": 23.42,
       "roe": 4.87,
       "roic": 9.79,
@@ -1484,7 +1484,7 @@
       "payout_ratio": 21.1,
       "roe": 6.46,
       "roic": 9.91,
-      "pbr": 0.83,
+      "pbr": 0.48,
       "ai_comment": "SEIWA ELECTRIC MFGは3期連続で売上増収を維持しているものの、直近四半期（2026年2Q）では売上前年比▲2.5%、営業利益▲26.6%、純利益▲22.5%と大幅な減益トレンドに転じており、通期予想も営業利益1,900M円と前期比での収益圧迫が鮮明。PBR0.48倍・PER約8.9倍と割安感はあるが、ROE6.46%と資本効率は低水準。産業機械・電機部品メーカーとして一定の顧客基盤は持つが、競合多数で参入障壁は平均的。NC比1.2は財務健全性を示すが、収益の持続性に不安が残る局面。",
       "risk_checks": {
         "roe_15_percent": false,
@@ -1503,8 +1503,8 @@
       },
       "tenbagger_stars": 2,
       "tab": "general",
-      "theoretical_price": 1346.0,
-      "upside_percent": 77.1
+      "theoretical_price": 1889.0,
+      "upside_percent": 148.5
     },
     {
       "code": "1420",
@@ -1523,7 +1523,7 @@
       "net_cash_ratio": 1.53,
       "per": 5.14,
       "market_cap_oku": 78.3,
-      "dividend_yield": 3.95,
+      "dividend_yield": 3.96,
       "payout_ratio": 20.38,
       "roe": 8.25,
       "roic": 11.99,
@@ -1781,7 +1781,7 @@
       "net_cash_ratio": 1.26,
       "per": 6.82,
       "market_cap_oku": 124.1,
-      "dividend_yield": 2.47,
+      "dividend_yield": 2.44,
       "payout_ratio": 21.88,
       "roe": 7.37,
       "roic": 8.39,
@@ -1890,8 +1890,8 @@
       },
       "tenbagger_stars": 2,
       "tab": "general",
-      "theoretical_price": 4336.0,
-      "upside_percent": 233.6
+      "theoretical_price": 4332.0,
+      "upside_percent": 233.2
     },
     {
       "code": "5986",
