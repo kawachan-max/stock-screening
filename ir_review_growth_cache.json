@@ -30,10 +30,16 @@
     "risks_found": [],
     "score_adjustment": 0,
     "add_badges": [],
-    "ir_comment": "",
-    "review_note": "IR審査エラー: no json object",
-    "source_urls": [],
-    "reviewed_at": "2026-09-21"
+    "ir_comment": "2026年3月期は増収増益（売上312億円、営業益26億円）だが特別利益剥落で純利益は42.5%減。配当は1株100円を維持し、27年3月期も100円予定（据え置き）。27年3月期1Q(4-6月)は増収増益で好調に進捗（進捗率24.2%、5年平均並み）。自社株買い・増配・上方修正・MBO等の発表は直近半年で確認されず。",
+    "review_note": "直近半年で自社株買い・増配・上方修正・不祥事等の重大IRイベントは確認されず、配当据え置き・業績は堅調",
+    "source_urls": [
+      "https://www.somar.co.jp/ir/",
+      "https://www.somar.co.jp/ir/news/",
+      "https://www.somar.co.jp/ir/result/",
+      "https://finance.yahoo.co.jp/quote/8152.T/financials",
+      "https://finance.yahoo.co.jp/news/detail/1324a3c177e8915f8d71c0fe9ed8375aa9200724"
+    ],
+    "reviewed_at": "2026-09-24"
   },
   "8917": {
     "review_status": "neutral",
@@ -60,7 +66,7 @@
     "ir_comment": "",
     "review_note": "IR審査エラー: no json object",
     "source_urls": [],
-    "reviewed_at": "2026-09-21"
+    "reviewed_at": "2026-09-24"
   },
   "8881": {
     "review_status": "neutral",
@@ -69,9 +75,9 @@
     "score_adjustment": 0,
     "add_badges": [],
     "ir_comment": "",
-    "review_note": "IR審査エラー: no json object",
+    "review_note": "IR審査エラー: unbalanced braces",
     "source_urls": [],
-    "reviewed_at": "2026-09-21"
+    "reviewed_at": "2026-09-24"
   },
   "8935": {
     "review_status": "neutral",
@@ -155,9 +161,9 @@
     "score_adjustment": 0,
     "add_badges": [],
     "ir_comment": "",
-    "review_note": "IR審査エラー: unbalanced braces",
+    "review_note": "IR審査エラー: no json object",
     "source_urls": [],
-    "reviewed_at": "2026-09-21"
+    "reviewed_at": "2026-09-24"
   },
   "3388": {
     "review_status": "neutral",
@@ -183,7 +189,7 @@
     "ir_comment": "",
     "review_note": "IR審査エラー: no json object",
     "source_urls": [],
-    "reviewed_at": "2026-09-21"
+    "reviewed_at": "2026-09-24"
   },
   "9633": {
     "review_status": "neutral",
@@ -227,7 +233,7 @@
     "ir_comment": "",
     "review_note": "IR審査エラー: no json object",
     "source_urls": [],
-    "reviewed_at": "2026-09-21"
+    "reviewed_at": "2026-09-24"
   },
   "6743": {
     "review_status": "neutral",
@@ -238,7 +244,7 @@
     "ir_comment": "",
     "review_note": "IR審査エラー: no json object",
     "source_urls": [],
-    "reviewed_at": "2026-09-21"
+    "reviewed_at": "2026-09-24"
   },
   "7538": {
     "review_status": "neutral",
@@ -253,14 +259,27 @@
   },
   "9867": {
     "review_status": "neutral",
-    "catalysts_found": [],
-    "risks_found": [],
-    "score_adjustment": 0,
-    "add_badges": [],
-    "ir_comment": "",
-    "review_note": "IR審査エラー: no json object",
-    "source_urls": [],
-    "reviewed_at": "2026-09-21"
+    "catalysts_found": [
+      "2026年3月期通期決算は増収増益（売上高8.41%増、親会社株主に帰属する当期純利益57.31%増）で着地"
+    ],
+    "risks_found": [
+      "2027年3月期の会社側予想は増収ながら最終利益18.24%減の減益計画を提示しており、前期の大幅増益が一過性の可能性",
+      "直近半年以内に自社株買い・増配・中計での株主還元強化策など明確なカタリストとなる発表は確認できず",
+      "MBO・TOB・大株主異動、不祥事・訴訟等のネガティブ材料も確認されず（重大リスクなし）"
+    ],
+    "score_adjustment": -3,
+    "add_badges": [
+      "⚠️一過性"
+    ],
+    "ir_comment": "2026年3月期は増収増益で着地したが、2027年3月期会社予想は最終利益18.24%減の減益計画。自社株買い・増配等の株主還元強化発表は確認できず、PBR0.71倍の割安感は残るもカタリスト不足。",
+    "review_note": "前期増益も来期減益予想。株主還元強化・自社株買い等の明確な発表は現時点で確認できず。",
+    "source_urls": [
+      "https://www.solekia.com/ir/",
+      "https://www.solekia.com/ir/tanshin.htm",
+      "https://irbank.net/9867/pl",
+      "https://finance.matsui.co.jp/stock/9867/settlement/index"
+    ],
+    "reviewed_at": "2026-09-24"
   },
   "5757": {
     "review_status": "negative",
@@ -287,15 +306,32 @@
     "reviewed_at": "2026-04-13"
   },
   "6497": {
-    "review_status": "neutral",
-    "catalysts_found": [],
-    "risks_found": [],
-    "score_adjustment": 0,
-    "add_badges": [],
-    "ir_comment": "",
-    "review_note": "IR審査エラー: unbalanced braces",
-    "source_urls": [],
-    "reviewed_at": "2026-09-21"
+    "review_status": "positive",
+    "catalysts_found": [
+      "2026年12月期は前期比5円の増配を予定（年間配当40円→45円）",
+      "2025年12月期は増収増益で決算を終え、次期も増収増益予想を継続",
+      "「ビジョン2030」および「2226中期経営計画」による中長期成長戦略を開示"
+    ],
+    "risks_found": [
+      "2026年12月期第1四半期は原材料価格高騰の影響で営業減益（前年同期比9.2%減）",
+      "自社株買いの発表は確認できず、PBR改善に向けた追加的な株主還元強化策は限定的",
+      "2026年3月に会計監査人の異動に関する開示があり、内容の精査が必要"
+    ],
+    "score_adjustment": 4,
+    "add_badges": [
+      "⬆️増配発表",
+      "⬆️還元強化"
+    ],
+    "ir_comment": "2025年12月期は増収増益で決算。2026年12月期は5円増配（年間45円）を予定し、増収増益見通しを継続。ただしQ1は原材料高で営業減益。自社株買いや上方修正の発表は確認されず。",
+    "review_note": "増配発表と中計成長戦略はプラス材料。ただしQ1減益や自社株買い未実施はやや物足りない内容。",
+    "source_urls": [
+      "https://finance.yahoo.co.jp/quote/6497.Q/financials",
+      "https://finance.yahoo.co.jp/quote/6497.T/dividend",
+      "https://finance.yahoo.co.jp/quote/6497.T",
+      "https://www.hamai-net.com/corporation/ir/index.html",
+      "https://www.nikkei.com/nkd/disclosure/tdnr/20260323586579/"
+    ],
+    "reviewed_at": "2026-09-24"
   },
   "5697": {
     "review_status": "positive",
@@ -486,7 +522,7 @@
     "ir_comment": "",
     "review_note": "IR審査エラー: unbalanced braces",
     "source_urls": [],
-    "reviewed_at": "2026-09-21"
+    "reviewed_at": "2026-09-24"
   },
   "8747": {
     "review_status": "neutral",
@@ -760,7 +796,7 @@
     "ir_comment": "",
     "review_note": "IR審査エラー: unbalanced braces",
     "source_urls": [],
-    "reviewed_at": "2026-09-21"
+    "reviewed_at": "2026-09-24"
   },
   "3954": {
     "review_status": "neutral",
@@ -797,7 +833,7 @@
     "ir_comment": "",
     "review_note": "IR審査エラー: no json object",
     "source_urls": [],
-    "reviewed_at": "2026-09-21"
+    "reviewed_at": "2026-09-24"
   },
   "8844": {
     "review_status": "neutral",
@@ -808,7 +844,7 @@
     "ir_comment": "",
     "review_note": "IR審査エラー: unbalanced braces",
     "source_urls": [],
-    "reviewed_at": "2026-09-14"
+    "reviewed_at": "2026-09-24"
   },
   "9857": {
     "review_status": "neutral",
@@ -828,9 +864,9 @@
     "score_adjustment": 0,
     "add_badges": [],
     "ir_comment": "",
-    "review_note": "IR審査エラー: unbalanced braces",
+    "review_note": "IR審査エラー: no json object",
     "source_urls": [],
-    "reviewed_at": "2026-08-13"
+    "reviewed_at": "2026-09-24"
   },
   "5368": {
     "review_status": "neutral",
@@ -1122,7 +1158,7 @@
     "ir_comment": "",
     "review_note": "IR審査エラー: no json object",
     "source_urls": [],
-    "reviewed_at": "2026-09-21"
+    "reviewed_at": "2026-09-24"
   },
   "8887": {
     "review_status": "neutral",
@@ -1133,7 +1169,7 @@
     "ir_comment": "",
     "review_note": "IR審査エラー: unbalanced braces",
     "source_urls": [],
-    "reviewed_at": "2026-09-21"
+    "reviewed_at": "2026-09-24"
   },
   "6730": {
     "review_status": "neutral",
@@ -1167,5 +1203,16 @@
       "https://kabuyoho.jp/report?bcode=6907"
     ],
     "reviewed_at": "2026-09-14"
+  },
+  "1758": {
+    "review_status": "neutral",
+    "catalysts_found": [],
+    "risks_found": [],
+    "score_adjustment": 0,
+    "add_badges": [],
+    "ir_comment": "",
+    "review_note": "IR審査エラー: no json object",
+    "source_urls": [],
+    "reviewed_at": "2026-09-24"
   }
 }
