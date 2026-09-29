@@ -4906,9 +4906,9 @@
       "name": "DAIDO SIGNAL CO",
       "tab": "general",
       "score": 66,
-      "stock_price": 1046,
-      "theoretical_price": 2194,
-      "upside_percent": 109.7
+      "stock_price": 1025,
+      "theoretical_price": 2193,
+      "upside_percent": 114.0
     },
     {
       "date": "2026-09-29",
@@ -4916,9 +4916,9 @@
       "name": "AMG HOLDINGS CO LTD",
       "tab": "finance",
       "score": 70,
-      "stock_price": 2123,
+      "stock_price": 2124,
       "theoretical_price": 6606,
-      "upside_percent": 211.2
+      "upside_percent": 211.0
     }
   ]
 }
