@@ -4947,7 +4947,7 @@
       "tab": "general",
       "score": 64,
       "stock_price": 10500,
-      "theoretical_price": 35638,
+      "theoretical_price": 35640,
       "upside_percent": 239.4
     },
     {
@@ -4956,9 +4956,9 @@
       "name": "DAIDO SIGNAL CO",
       "tab": "general",
       "score": 61,
-      "stock_price": 1022,
+      "stock_price": 1052,
       "theoretical_price": 2194,
-      "upside_percent": 114.7
+      "upside_percent": 108.5
     },
     {
       "date": "2026-10-02",
@@ -4966,9 +4966,19 @@
       "name": "AMG HOLDINGS CO LTD",
       "tab": "finance",
       "score": 69,
-      "stock_price": 2101,
-      "theoretical_price": 6606,
-      "upside_percent": 214.4
+      "stock_price": 2105,
+      "theoretical_price": 6607,
+      "upside_percent": 213.9
+    },
+    {
+      "date": "2026-10-02",
+      "code": "8844",
+      "name": "COSMOS INITIA CO",
+      "tab": "finance",
+      "score": 62,
+      "stock_price": 1155,
+      "theoretical_price": 3845,
+      "upside_percent": 232.9
     }
   ]
 }
