@@ -75,9 +75,9 @@
     "score_adjustment": 0,
     "add_badges": [],
     "ir_comment": "",
-    "review_note": "IR審査エラー: unbalanced braces",
+    "review_note": "IR審査エラー: no json object",
     "source_urls": [],
-    "reviewed_at": "2026-10-01"
+    "reviewed_at": "2026-10-05"
   },
   "8881": {
     "review_status": "neutral",
@@ -88,7 +88,7 @@
     "ir_comment": "",
     "review_note": "IR審査エラー: no json object",
     "source_urls": [],
-    "reviewed_at": "2026-10-01"
+    "reviewed_at": "2026-10-05"
   },
   "8935": {
     "review_status": "positive",
@@ -211,7 +211,7 @@
     "ir_comment": "",
     "review_note": "IR審査エラー: no json object",
     "source_urls": [],
-    "reviewed_at": "2026-10-01"
+    "reviewed_at": "2026-10-05"
   },
   "3388": {
     "review_status": "neutral",
@@ -281,7 +281,7 @@
     "ir_comment": "",
     "review_note": "IR審査エラー: no json object",
     "source_urls": [],
-    "reviewed_at": "2026-10-01"
+    "reviewed_at": "2026-10-05"
   },
   "6743": {
     "review_status": "positive",
@@ -420,32 +420,15 @@
     "reviewed_at": "2026-09-28"
   },
   "7235": {
-    "review_status": "positive",
-    "catalysts_found": [
-      "4期連続増配を継続、2027年3月期は1株77円（前期71.5円から増額）へ増配予定で配当利回り5.06%",
-      "2026年5月14日に中期経営計画(2026年度-2030年度)を策定・発表し、成長戦略・株主還元方針を提示",
-      "2027年3月期1Q（8/7発表）は増収（売上高前年比6.0%増）を確保、通期業績予想は据え置き"
-    ],
-    "risks_found": [
-      "2027年3月期1Qは原材料高騰・販管費増加により営業利益3.5%減、純利益14.4%減の減益",
-      "大株主マレリ株式会社が約21.9%の株式を保有しており、将来的な売却によるオーバーハングリスクが残存",
-      "主要取引先がいすゞ自動車中心であり、トラック・産業機械市場の需要変動に業績が影響されやすい構造的リスク"
-    ],
-    "score_adjustment": 4,
-    "add_badges": [
-      "⬆️増配発表",
-      "⬆️還元強化"
-    ],
-    "ir_comment": "4期連続増配で配当利回り5.06%、2027年3月期は77円へ増配予定。2026年5月に新中計(2026-2030)を策定し成長戦略を提示。直近1Qは増収も原材料高で減益、通期計画は据え置き。",
-    "review_note": "増配継続と新中計策定はプラス材料。1Q減益とマレリ大株主のオーバーハングはリスク要因。",
-    "source_urls": [
-      "https://www.tokyo-radiator.co.jp/investor/financial_results/",
-      "https://www.tokyo-radiator.co.jp/investor/stockinfo/",
-      "https://finance.yahoo.co.jp/quote/7235.T/dividend",
-      "https://diamond.jp/zai/articles/-/1047648",
-      "https://www.nikkei.com/nkd/disclosure/tdnr/20260514532659/"
-    ],
-    "reviewed_at": "2026-09-14"
+    "review_status": "neutral",
+    "catalysts_found": [],
+    "risks_found": [],
+    "score_adjustment": 0,
+    "add_badges": [],
+    "ir_comment": "",
+    "review_note": "IR審査エラー: no json object",
+    "source_urls": [],
+    "reviewed_at": "2026-10-05"
   },
   "8904": {
     "review_status": "neutral",
@@ -489,31 +472,15 @@
     "reviewed_at": "2026-06-01"
   },
   "7434": {
-    "review_status": "positive",
-    "catalysts_found": [
-      "2026年5月期の年間配当を1株当たり37円から40円へ増配予定（安定的な利益確保と株主還元強化）",
-      "2026年5月期第3四半期累計は売上高263億6,100万円（前年同期比8.0%増）、営業利益8億1,200万円（同13.0%増）、経常利益・純利益も含め全利益指標で二桁増益と好調",
-      "管工機材需要の回復や自動化投資・半導体需要増による受注回復が業績を押し上げ"
-    ],
-    "risks_found": [
-      "通期業績予想（売上高340億円、営業利益10億円等）は据え置きで『緩やかな成長』にとどまり、第4四半期の利益率低下が見込まれるため上振れ期待はやや後退",
-      "自社株買いの発表は直近半年で確認できず、PBR0.41倍の株価純資産倍率改善に向けた明確な追加施策は未確認",
-      "MBO/TOBや不祥事・訴訟等のネガティブイベントは確認されず（材料なし）"
-    ],
-    "score_adjustment": 3,
-    "add_badges": [
-      "⬆️増配発表"
-    ],
-    "ir_comment": "2026年5月期は37円→40円の増配を計画し株主還元姿勢を維持。第3四半期は増収増益で全利益指標が二桁成長も、通期予想は据え置きで第4四半期の利益率低下を見込む保守的スタンス。",
-    "review_note": "増配発表と好調な四半期実績はプラス材料だが、通期据え置きで上方修正には至らず中立的な評価。",
-    "source_urls": [
-      "https://finance.yahoo.co.jp/quote/7434.T/financials",
-      "https://finance.yahoo.co.jp/quote/7434.T",
-      "https://kabuyoho.jp/reportDps?bcode=7434",
-      "https://minkabu.jp/stock/7434/settlement",
-      "https://kabuyoho.ifis.co.jp/index.php?bcode=7434&sa=report"
-    ],
-    "reviewed_at": "2026-09-14"
+    "review_status": "neutral",
+    "catalysts_found": [],
+    "risks_found": [],
+    "score_adjustment": 0,
+    "add_badges": [],
+    "ir_comment": "",
+    "review_note": "IR審査エラー: no json object",
+    "source_urls": [],
+    "reviewed_at": "2026-10-05"
   },
   "8147": {
     "review_status": "neutral",
@@ -574,7 +541,7 @@
     "ir_comment": "",
     "review_note": "IR審査エラー: unbalanced braces",
     "source_urls": [],
-    "reviewed_at": "2026-10-01"
+    "reviewed_at": "2026-10-05"
   },
   "8747": {
     "review_status": "neutral",
@@ -657,7 +624,7 @@
     "ir_comment": "",
     "review_note": "IR審査エラー: no json object",
     "source_urls": [],
-    "reviewed_at": "2026-10-01"
+    "reviewed_at": "2026-10-05"
   },
   "8138": {
     "review_status": "neutral",
@@ -668,7 +635,7 @@
     "ir_comment": "",
     "review_note": "IR審査エラー: no json object",
     "source_urls": [],
-    "reviewed_at": "2026-10-01"
+    "reviewed_at": "2026-10-05"
   },
   "4624": {
     "review_status": "neutral",
@@ -693,30 +660,15 @@
     "reviewed_at": "2026-05-25"
   },
   "3236": {
-    "review_status": "positive",
-    "catalysts_found": [
-      "2026年5月期の1株配当を8円に増配（前期比+2円）、2027年5月期はさらに10円へ増配予定",
-      "小川建設の連結子会社化により事業規模拡大、2027年5月期売上高は前期比+52.8%の450億円を計画",
-      "2026年5月期は賃貸開発・建築請負事業が牽引し増収増益で着地（売上高294.65億円、営業利益32.47億円）"
-    ],
-    "risks_found": [
-      "自己資本比率が直近で低下傾向にあり財務安定性に留意が必要（IR分析コメントより）",
-      "自己株式取得（2025年10月20日決定、11月4日取得終了）は半年以上前の実施であり直近の新規カタリストではない"
-    ],
-    "score_adjustment": 5,
-    "add_badges": [
-      "⬆️増配発表",
-      "⬆️還元強化"
-    ],
-    "ir_comment": "2026年5月期は増収増益。配当は8円に増配し2027年5月期は10円を予定。小川建設の子会社化で事業拡大、来期売上高は前期比52.8%増計画と成長戦略を推進。自社株買いは2025年秋に実施済みで直近半年の新規発表なし。",
-    "review_note": "増配・成長計画などプラス材料あり。下方修正や不祥事等の重大リスクは確認されず、直近半年の自社株買いは無し。",
-    "source_urls": [
-      "https://finance.yahoo.co.jp/quote/3236.T/financials",
-      "https://finance.yahoo.co.jp/quote/3236.T/dividend",
-      "https://irbank.net/3236/ir",
-      "https://finance.yahoo.co.jp/quote/3236.T/disclosure"
-    ],
-    "reviewed_at": "2026-09-17"
+    "review_status": "neutral",
+    "catalysts_found": [],
+    "risks_found": [],
+    "score_adjustment": 0,
+    "add_badges": [],
+    "ir_comment": "",
+    "review_note": "IR審査エラー: unbalanced braces",
+    "source_urls": [],
+    "reviewed_at": "2026-10-05"
   },
   "7192": {
     "review_status": "neutral",
@@ -738,7 +690,7 @@
     "ir_comment": "",
     "review_note": "IR審査エラー: no json object",
     "source_urls": [],
-    "reviewed_at": "2026-10-01"
+    "reviewed_at": "2026-10-05"
   },
   "8046": {
     "review_status": "positive",
@@ -777,9 +729,9 @@
     "score_adjustment": 0,
     "add_badges": [],
     "ir_comment": "",
-    "review_note": "IR審査エラー: Error code: 404 - {'type': 'error', 'error': {'typ",
+    "review_note": "IR審査エラー: no json object",
     "source_urls": [],
-    "reviewed_at": "2026-06-25"
+    "reviewed_at": "2026-10-05"
   },
   "3277": {
     "review_status": "neutral",
@@ -876,7 +828,7 @@
     "ir_comment": "",
     "review_note": "IR審査エラー: no json object",
     "source_urls": [],
-    "reviewed_at": "2026-10-01"
+    "reviewed_at": "2026-10-05"
   },
   "8844": {
     "review_status": "neutral",
@@ -1144,7 +1096,7 @@
     "ir_comment": "",
     "review_note": "IR審査エラー: no json object",
     "source_urls": [],
-    "reviewed_at": "2026-09-28"
+    "reviewed_at": "2026-10-05"
   },
   "3710": {
     "review_status": "positive",
@@ -1178,7 +1130,7 @@
     "ir_comment": "",
     "review_note": "IR審査エラー: no json object",
     "source_urls": [],
-    "reviewed_at": "2026-10-01"
+    "reviewed_at": "2026-10-05"
   },
   "8887": {
     "review_status": "positive",
@@ -1265,6 +1217,28 @@
     "ir_comment": "",
     "review_note": "IR審査エラー: no json object",
     "source_urls": [],
-    "reviewed_at": "2026-10-01"
+    "reviewed_at": "2026-10-05"
+  },
+  "8737": {
+    "review_status": "neutral",
+    "catalysts_found": [],
+    "risks_found": [],
+    "score_adjustment": 0,
+    "add_badges": [],
+    "ir_comment": "",
+    "review_note": "IR審査エラー: unbalanced braces",
+    "source_urls": [],
+    "reviewed_at": "2026-10-05"
+  },
+  "8871": {
+    "review_status": "neutral",
+    "catalysts_found": [],
+    "risks_found": [],
+    "score_adjustment": 0,
+    "add_badges": [],
+    "ir_comment": "",
+    "review_note": "IR審査エラー: no json object",
+    "source_urls": [],
+    "reviewed_at": "2026-10-05"
   }
 }
