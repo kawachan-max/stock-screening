@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-20T23:54:27+09:00",
+  "updated_at": "2026-10-21T23:59:16+09:00",
   "stocks": [
     {
       "code": "9867",
@@ -58,14 +58,14 @@
       "bonus_score": 1,
       "risk_penalty": -6,
       "forecast_adj": 0,
-      "net_cash_ratio": 1.21,
-      "per": 9.0,
-      "market_cap_oku": 149.7,
+      "net_cash_ratio": 1.15,
+      "per": 9.47,
+      "market_cap_oku": 157.5,
       "dividend_yield": 3.35,
       "payout_ratio": 29.27,
       "roe": 6.44,
       "roic": 8.94,
-      "pbr": 0.62,
+      "pbr": 0.66,
       "ai_comment": "大同信号は鉄道信号・交通インフラ関連の専業メーカーで、公共インフラ向け事業という高い参入障壁を持つ。直近3期の売上は207.7→219.1→257.0億円と一貫して増収トレンドを維持。営業利益は前期比89.8%増と大幅改善を達成。最新1Q（2026年6月期）も売上+11.6%・営業利益+119.9%と好調継続。ただし通期予想営業利益は18億円と前期実績21.9億円を下回る保守的な計画で進捗に注目が必要。PBR0.62倍・PER9倍は割安感があり、ROEは6.44%と低水準。財務健全性は堅実だが収益性向上が課題。公共インフラ特需の継続性を見極めたい。",
       "risk_checks": {
         "roe_15_percent": false,
@@ -85,7 +85,7 @@
       "tenbagger_stars": 4,
       "tab": "general",
       "theoretical_price": 2241.0,
-      "upside_percent": 108.3
+      "upside_percent": 98.0
     },
     {
       "code": "5956",
@@ -102,9 +102,9 @@
       "risk_penalty": -2,
       "forecast_adj": 0,
       "net_cash_ratio": 2.08,
-      "per": 7.6,
-      "market_cap_oku": 50.8,
-      "dividend_yield": 2.68,
+      "per": 7.59,
+      "market_cap_oku": 50.7,
+      "dividend_yield": 2.7,
       "payout_ratio": 20.48,
       "roe": 4.26,
       "roic": 8.42,
@@ -128,7 +128,7 @@
       "tenbagger_stars": 3,
       "tab": "general",
       "theoretical_price": 1982.0,
-      "upside_percent": 244.7
+      "upside_percent": 245.3
     },
     {
       "code": "5697",
@@ -144,10 +144,10 @@
       "bonus_score": 3,
       "risk_penalty": -6,
       "forecast_adj": 0,
-      "net_cash_ratio": 1.19,
-      "per": 6.61,
-      "market_cap_oku": 48.1,
-      "dividend_yield": 3.72,
+      "net_cash_ratio": 1.18,
+      "per": 6.65,
+      "market_cap_oku": 48.4,
+      "dividend_yield": 3.77,
       "payout_ratio": 24.93,
       "roe": 5.92,
       "roic": 15.41,
@@ -171,7 +171,7 @@
       "tenbagger_stars": 3,
       "tab": "general",
       "theoretical_price": 1900.0,
-      "upside_percent": 139.0
+      "upside_percent": 137.5
     },
     {
       "code": "4624",
@@ -187,14 +187,14 @@
       "bonus_score": 2,
       "risk_penalty": -6,
       "forecast_adj": 0,
-      "net_cash_ratio": 1.54,
-      "per": 9.14,
-      "market_cap_oku": 74.9,
-      "dividend_yield": 1.28,
+      "net_cash_ratio": 1.51,
+      "per": 9.32,
+      "market_cap_oku": 76.4,
+      "dividend_yield": 1.27,
       "payout_ratio": 11.63,
       "roe": 4.18,
       "roic": 6.74,
-      "pbr": 0.41,
+      "pbr": 0.42,
       "ai_comment": "ISAMU PAINT COは塗料セクターの中堅メーカー。過去3期売上は80.0→81.6→84.0億円と着実な増収トレンドを維持し、直近の営業利益は前年比45.9%増と大幅改善。最新四半期（2026年1Q）でも売上+11.9%・営業利益+42.0%と加速しており、通期予想は売上90.9億円・営業利益10.6億円へ上方修正水準にある。NC比1.55はキャッシュ余力あり。一方PBR0.41と割安感強いがROE4.18%と資本効率は低水準。塗料業界は原材料コスト変動リスクがあるものの価格転嫁が進み収益改善が顕著。競争優位は限定的だが安定した顧客基盤を持つ。",
       "risk_checks": {
         "roe_15_percent": false,
@@ -214,7 +214,7 @@
       "tenbagger_stars": 3,
       "tab": "general",
       "theoretical_price": 12735.0,
-      "upside_percent": 224.1
+      "upside_percent": 217.6
     },
     {
       "code": "6229",
@@ -230,14 +230,14 @@
       "bonus_score": 2,
       "risk_penalty": -6,
       "forecast_adj": 0,
-      "net_cash_ratio": 1.02,
-      "per": 8.5,
-      "market_cap_oku": 64.1,
-      "dividend_yield": 3.33,
+      "net_cash_ratio": 1.01,
+      "per": 8.61,
+      "market_cap_oku": 64.9,
+      "dividend_yield": 3.41,
       "payout_ratio": 35.77,
       "roe": 7.4,
       "roic": 16.67,
-      "pbr": 0.59,
+      "pbr": 0.6,
       "ai_comment": "奥村建設は過去3期で売上が94.8→104.4→111.1億円と堅調に拡大し、直近期の営業利益は前年比65.3%増と大幅改善。ただし最新1Q（2026年4月〜6月）では売上+3.4%と増収を維持するも、営業利益▲20.0%・純利益▲35.8%と利益面で大幅な減速が確認される。PER8.7倍・PBR0.61倍と割安感はあるが、ROE7.4%は水準として物足りない。建設業は受注競争が激しく参入障壁は限定的。足元の利益悪化トレンドはリスク要因として慎重に評価が必要。NC比1.0とほぼ中立。通期予想は売上119億・営業利益10.6億と保守的に設定されており、1Qの進捗率からは下期偏重の構造が示唆される。",
       "risk_checks": {
         "roe_15_percent": false,
@@ -257,7 +257,7 @@
       "tenbagger_stars": 3,
       "tab": "general",
       "theoretical_price": 3718.0,
-      "upside_percent": 153.4
+      "upside_percent": 150.4
     },
     {
       "code": "5906",
@@ -273,9 +273,9 @@
       "bonus_score": 1,
       "risk_penalty": -6,
       "forecast_adj": 0,
-      "net_cash_ratio": 1.01,
-      "per": 4.93,
-      "market_cap_oku": 108.6,
+      "net_cash_ratio": 1.0,
+      "per": 4.94,
+      "market_cap_oku": 108.8,
       "dividend_yield": 2.31,
       "payout_ratio": 9.49,
       "roe": 12.14,
@@ -300,7 +300,7 @@
       "tenbagger_stars": 3,
       "tab": "general",
       "theoretical_price": 3014.0,
-      "upside_percent": 286.4
+      "upside_percent": 285.9
     },
     {
       "code": "8046",
@@ -316,14 +316,14 @@
       "bonus_score": 3,
       "risk_penalty": -6,
       "forecast_adj": 0,
-      "net_cash_ratio": 1.25,
-      "per": 7.77,
-      "market_cap_oku": 161.9,
-      "dividend_yield": 3.99,
+      "net_cash_ratio": 1.23,
+      "per": 7.87,
+      "market_cap_oku": 164.1,
+      "dividend_yield": 4.05,
       "payout_ratio": 31.42,
       "roe": 6.0,
       "roic": 7.45,
-      "pbr": 0.5,
+      "pbr": 0.51,
       "ai_comment": "丸藤シートパイリングは鋼矢板・仮設資材のレンタル・販売を手がける基礎資材専門企業。直近3期の売上推移は345→356→403億円と3期連続増収を達成し、直近期は売上+13.4%・営業利益+33.6%と加速感が見られる。最新1Qも売上+6.0%・営業利益+48.2%と好調を維持しており業績モメンタムは良好。建設需要や公共投資の堅調さが追い風。ただしPBR0.51倍・ROE6%と資本効率は低水準であり、NC比1.23倍は財務的なやや懸念材料。競合多数の建設資材業界で差別化は限定的。PER7.9倍と割安感はあるが、土木・建設向けの景気感応度が高く、公共投資動向に依存するリスクがある。上方修正の余地はあるが保守的な会社計画。",
       "risk_checks": {
         "roe_15_percent": false,
@@ -343,7 +343,7 @@
       "tenbagger_stars": 4,
       "tab": "general",
       "theoretical_price": 2755.0,
-      "upside_percent": 193.4
+      "upside_percent": 189.4
     },
     {
       "code": "4224",
@@ -359,10 +359,10 @@
       "bonus_score": 3,
       "risk_penalty": -6,
       "forecast_adj": 0,
-      "net_cash_ratio": 1.31,
-      "per": 8.26,
-      "market_cap_oku": 99.0,
-      "dividend_yield": 3.95,
+      "net_cash_ratio": 1.32,
+      "per": 8.19,
+      "market_cap_oku": 98.2,
+      "dividend_yield": 3.96,
       "payout_ratio": 32.67,
       "roe": 5.17,
       "roic": 11.38,
@@ -386,7 +386,7 @@
       "tenbagger_stars": 2,
       "tab": "general",
       "theoretical_price": 6160.0,
-      "upside_percent": 186.8
+      "upside_percent": 189.0
     },
     {
       "code": "8152",
@@ -402,14 +402,14 @@
       "bonus_score": 2,
       "risk_penalty": -2,
       "forecast_adj": 0,
-      "net_cash_ratio": 1.15,
-      "per": 8.83,
-      "market_cap_oku": 135.5,
-      "dividend_yield": 1.39,
+      "net_cash_ratio": 1.14,
+      "per": 8.91,
+      "market_cap_oku": 136.6,
+      "dividend_yield": 1.43,
       "payout_ratio": 12.64,
       "roe": 6.66,
       "roic": 15.37,
-      "pbr": 0.58,
+      "pbr": 0.59,
       "ai_comment": "ソマール社は過去3期で売上が266.5→303.6→312.0億円と増収基調を維持。直近1Q（2026年4月〜6月）は売上+11.6%、営業利益+15.2%と加速しており、通期予想も増収増益。機能性フィルム・電子材料など特殊素材に強みを持ち一定の参入障壁あり。PBR0.6倍・PER9.1倍と割安感があるが、ROE6.66%はやや低水準。NCR1.1と財務健全性は概ね良好。成長モメンタムが強まっており中期的な株価再評価の余地がある。",
       "risk_checks": {
         "roe_15_percent": false,
@@ -429,7 +429,7 @@
       "tenbagger_stars": 2,
       "tab": "general",
       "theoretical_price": 15338.0,
-      "upside_percent": 119.4
+      "upside_percent": 117.6
     },
     {
       "code": "7235",
@@ -445,14 +445,14 @@
       "bonus_score": 2,
       "risk_penalty": -6,
       "forecast_adj": 0,
-      "net_cash_ratio": 1.08,
-      "per": 7.34,
-      "market_cap_oku": 142.7,
-      "dividend_yield": 5.15,
+      "net_cash_ratio": 1.07,
+      "per": 7.41,
+      "market_cap_oku": 144.2,
+      "dividend_yield": 5.2,
       "payout_ratio": 31.83,
       "roe": 8.47,
       "roic": 15.19,
-      "pbr": 0.58,
+      "pbr": 0.59,
       "ai_comment": "東京ラジエーター製造は自動車用熱交換器を主力とするニッチメーカー。過去3期の売上は334→340.6→353.8億円と緩やかな増収基調を維持し、直近期の営業利益は前年比37.5%増と大幅改善。ただし最新1Q（2026年4月〜6月）では売上+6.0%と増収を確保した一方、営業利益▲3.6%・純利益▲14.4%と収益面が悪化しており、通期予想（売上355億円・営業利益24.5億円・純利益18億円）はほぼ前期並みの横ばい水準。自動車部品業界は電動化シフトによる既存製品需要の中長期的な減少リスクを抱え、競争優位性は限定的。PBR0.59倍・PER7.4倍と割安感があるが、ROE8.47%はやや物足りない水準。直近Qの利益悪化を踏まえると業績の持続性に注意が必要。",
       "risk_checks": {
         "roe_15_percent": false,
@@ -472,7 +472,7 @@
       "tenbagger_stars": 2,
       "tab": "general",
       "theoretical_price": 4538.0,
-      "upside_percent": 202.7
+      "upside_percent": 199.7
     },
     {
       "code": "9845",
@@ -488,14 +488,14 @@
       "bonus_score": 2,
       "risk_penalty": -11,
       "forecast_adj": 0,
-      "net_cash_ratio": 1.03,
-      "per": 7.08,
-      "market_cap_oku": 325.4,
-      "dividend_yield": 4.0,
+      "net_cash_ratio": 1.01,
+      "per": 7.2,
+      "market_cap_oku": 330.9,
+      "dividend_yield": 4.08,
       "payout_ratio": 28.86,
       "roe": 9.23,
       "roic": 24.45,
-      "pbr": 0.63,
+      "pbr": 0.64,
       "ai_comment": "PARKER CORPORATIONは過去3期で売上が677→700→733億円と安定的に増収を続けており、直近期は営業利益が前期比32.1%増と大幅改善。ただし最新1Q（2026年4月〜6月）では売上+11.7%と増収を維持する一方、営業利益▲3.8%・純利益▲7.8%と減益に転じており注意が必要。通期予想は売上740億円・営業利益58億円で達成可否は今後の四半期次第。PBR0.64倍・PER7.2倍と割安感あり、ROE9.23%は水準として平均的。産業機械・部品系のセクターとして参入障壁は一定程度存在するが競争環境は厳しい。NC比が1.0倍超えており財務的な余裕はやや限定的で流動性リスクに留意。",
       "risk_checks": {
         "roe_15_percent": false,
@@ -515,7 +515,7 @@
       "tenbagger_stars": 1,
       "tab": "general",
       "theoretical_price": 3423.0,
-      "upside_percent": 163.3
+      "upside_percent": 158.9
     },
     {
       "code": "5819",
@@ -531,14 +531,14 @@
       "bonus_score": 2,
       "risk_penalty": -2,
       "forecast_adj": 0,
-      "net_cash_ratio": 1.31,
-      "per": 9.76,
-      "market_cap_oku": 116.4,
-      "dividend_yield": 3.88,
+      "net_cash_ratio": 1.3,
+      "per": 9.84,
+      "market_cap_oku": 117.2,
+      "dividend_yield": 3.89,
       "payout_ratio": 40.87,
       "roe": 6.3,
       "roic": 16.18,
-      "pbr": 0.59,
+      "pbr": 0.6,
       "ai_comment": "カナレ電気は放送・映像業界向けケーブル・コネクタの専業メーカーで、高品質製品による一定のブランド力と参入障壁を持つ。年次ベースでは増収増益を達成しているが、最新四半期（2026年2Q）では売上+2.9%に対し営業利益▲0.4%・純利益▲1.7%と減益転換しており、通期予想も保守的な水準。PBR0.6倍・PER9.8倍と割安感はあるが、ROE6.3%は低水準。NC比1.3倍と財務健全性は高い。放送業界のデジタル化・縮小リスクが長期的な懸念材料。直近四半期の利益減少を踏まえトレンドスコアをやや抑制。",
       "risk_checks": {
         "roe_15_percent": false,
@@ -558,7 +558,7 @@
       "tenbagger_stars": 2,
       "tab": "general",
       "theoretical_price": 4109.0,
-      "upside_percent": 142.3
+      "upside_percent": 140.4
     },
     {
       "code": "8135",
@@ -575,9 +575,9 @@
       "risk_penalty": -6,
       "forecast_adj": 0,
       "net_cash_ratio": 1.39,
-      "per": 7.64,
-      "market_cap_oku": 82.4,
-      "dividend_yield": 4.26,
+      "per": 7.63,
+      "market_cap_oku": 82.2,
+      "dividend_yield": 4.28,
       "payout_ratio": 32.69,
       "roe": 6.36,
       "roic": 19.67,
@@ -601,7 +601,7 @@
       "tenbagger_stars": 2,
       "tab": "general",
       "theoretical_price": 866.0,
-      "upside_percent": 105.7
+      "upside_percent": 106.2
     },
     {
       "code": "4625",
@@ -618,9 +618,9 @@
       "risk_penalty": -13,
       "forecast_adj": 0,
       "net_cash_ratio": 1.26,
-      "per": 4.74,
-      "market_cap_oku": 44.8,
-      "dividend_yield": 2.39,
+      "per": 4.76,
+      "market_cap_oku": 45.1,
+      "dividend_yield": 2.38,
       "payout_ratio": 11.26,
       "roe": 8.42,
       "roic": 8.14,
@@ -644,7 +644,7 @@
       "tenbagger_stars": 2,
       "tab": "general",
       "theoretical_price": 3401.0,
-      "upside_percent": 304.0
+      "upside_percent": 302.0
     },
     {
       "code": "1758",
@@ -660,10 +660,10 @@
       "bonus_score": 1,
       "risk_penalty": -6,
       "forecast_adj": 0,
-      "net_cash_ratio": 1.45,
-      "per": 8.83,
-      "market_cap_oku": 45.3,
-      "dividend_yield": 2.89,
+      "net_cash_ratio": 1.46,
+      "per": 8.76,
+      "market_cap_oku": 44.9,
+      "dividend_yield": 2.87,
       "payout_ratio": 23.42,
       "roe": 4.87,
       "roic": 9.79,
@@ -687,7 +687,7 @@
       "tenbagger_stars": 3,
       "tab": "general",
       "theoretical_price": 6768.0,
-      "upside_percent": 199.2
+      "upside_percent": 201.7
     },
     {
       "code": "2795",
@@ -704,9 +704,9 @@
       "risk_penalty": -6,
       "forecast_adj": 0,
       "net_cash_ratio": 1.26,
-      "per": 9.32,
-      "market_cap_oku": 50.7,
-      "dividend_yield": 2.53,
+      "per": 9.3,
+      "market_cap_oku": 50.6,
+      "dividend_yield": 2.55,
       "payout_ratio": 23.76,
       "roe": 5.38,
       "roic": 16.14,
@@ -730,7 +730,7 @@
       "tenbagger_stars": 2,
       "tab": "general",
       "theoretical_price": 2427.0,
-      "upside_percent": 147.4
+      "upside_percent": 147.9
     },
     {
       "code": "6335",
@@ -746,9 +746,9 @@
       "bonus_score": 0,
       "risk_penalty": -20,
       "forecast_adj": 0,
-      "net_cash_ratio": 1.73,
-      "per": 4.02,
-      "market_cap_oku": 41.7,
+      "net_cash_ratio": 1.72,
+      "per": 4.03,
+      "market_cap_oku": 41.8,
       "dividend_yield": 0.0,
       "payout_ratio": 0.0,
       "roe": 11.3,
@@ -773,7 +773,7 @@
       "tenbagger_stars": 3,
       "tab": "general",
       "theoretical_price": 2471.0,
-      "upside_percent": 368.8
+      "upside_percent": 367.9
     },
     {
       "code": "3954",
@@ -832,14 +832,14 @@
       "bonus_score": 1,
       "risk_penalty": -19,
       "forecast_adj": 0,
-      "net_cash_ratio": 1.87,
-      "per": 6.49,
-      "market_cap_oku": 53.4,
-      "dividend_yield": 0.78,
+      "net_cash_ratio": 1.86,
+      "per": 6.52,
+      "market_cap_oku": 53.6,
+      "dividend_yield": 0.8,
       "payout_ratio": 3.89,
       "roe": 5.84,
       "roic": 21.62,
-      "pbr": 1.22,
+      "pbr": 1.23,
       "ai_comment": "NIPPON SHINDO COは3期連続増収を達成し、直近年度の売上高は301.4億円（前年比+15.4%）、営業利益は26.9億円（+46.9%）と大幅な増益を記録。最新1Q（2026年4月〜6月）では売上+45.8%、営業利益+215.0%と驚異的な成長を示しており、業績モメンタムは非常に強い。通期予想は売上380億円・営業利益20億円。ただしROEは5.84%と低く収益効率に課題。PER6.6倍・PBR1.25倍と割安感があるが、銅など非鉄金属関連セクターは市況依存度が高く、商品価格変動リスクに要注意。競争優位性は素材加工業として平均的。財務安定性と成長継続性を慎重に見極める必要がある。",
       "risk_checks": {
         "roe_15_percent": false,
@@ -859,7 +859,7 @@
       "tenbagger_stars": 3,
       "tab": "general",
       "theoretical_price": 4407.0,
-      "upside_percent": 76.3
+      "upside_percent": 75.6
     },
     {
       "code": "5363",
@@ -875,14 +875,14 @@
       "bonus_score": 2,
       "risk_penalty": -6,
       "forecast_adj": 0,
-      "net_cash_ratio": 1.2,
-      "per": 8.48,
-      "market_cap_oku": 315.9,
-      "dividend_yield": 5.92,
+      "net_cash_ratio": 1.21,
+      "per": 8.35,
+      "market_cap_oku": 311.0,
+      "dividend_yield": 5.99,
       "payout_ratio": 30.18,
       "roe": 7.93,
       "roic": 11.54,
-      "pbr": 0.62,
+      "pbr": 0.61,
       "ai_comment": "TYK CORPORATIONは耐火物メーカーとして鉄鋼・セメント業界向けに特化した製品を供給。過去3期売上は300→319→315億円と増収後に微減、直近1Qは売上前年比-3.2%・営業利益-17.3%と減収減益が継続しており業績モメンタムは弱い。PERは約8.6倍と割安感があるが、PBR0.63倍・ROE7.93%と資本効率は低水準。鉄鋼需要の停滞や原料コスト高が収益を圧迫している模様。耐火物市場は国内外で競争が激化しており、参入障壁は素材・技術面で一定程度存在するが価格競争も厳しい。ネットキャッシュ比率が1.18と財務安定性は良好で流動性リスクは低い。通期予想は保守的な水準で上方修正余地は限定的とみる。",
       "risk_checks": {
         "roe_15_percent": false,
@@ -902,7 +902,7 @@
       "tenbagger_stars": 1,
       "tab": "general",
       "theoretical_price": 1742.0,
-      "upside_percent": 145.0
+      "upside_percent": 148.9
     },
     {
       "code": "8147",
@@ -918,14 +918,14 @@
       "bonus_score": 0,
       "risk_penalty": -13,
       "forecast_adj": 0,
-      "net_cash_ratio": 1.31,
-      "per": 9.38,
-      "market_cap_oku": 73.7,
-      "dividend_yield": 1.73,
+      "net_cash_ratio": 1.32,
+      "per": 9.28,
+      "market_cap_oku": 72.9,
+      "dividend_yield": 1.76,
       "payout_ratio": 15.85,
       "roe": 5.14,
       "roic": 12.92,
-      "pbr": 0.54,
+      "pbr": 0.53,
       "ai_comment": "TOMITA CO LTDは産業機械・工業系のインダストリアルセクター企業。直近3期売上は213→217→229億円と緩やかな増収基調を維持しているが、直近期の営業利益は前年比-12%の減益となっており、増収減益のトレンドが懸念される。ただし最新四半期（2026年1Q）では売上+34.8%、営業利益+202.9%と大幅な回復を示しており、通期予想（売上246億円・営業利益10億円）への進捗も順調と見られる。バリュエーション面ではPBR0.55倍、PER9.5倍と割安圏にあるが、ROE5.14%は低水準。NC比1.29はネットキャッシュポジションを示し財務健全性は高い。競争優位性は業種平均的で差別化要因は限定的。四半期データの急回復を重視しスコアを判断。",
       "risk_checks": {
         "roe_15_percent": false,
@@ -945,7 +945,7 @@
       "tenbagger_stars": 2,
       "tab": "general",
       "theoretical_price": 3200.0,
-      "upside_percent": 125.3
+      "upside_percent": 127.7
     },
     {
       "code": "7434",
@@ -962,9 +962,9 @@
       "risk_penalty": -12,
       "forecast_adj": 0,
       "net_cash_ratio": 1.29,
-      "per": 7.5,
-      "market_cap_oku": 68.6,
-      "dividend_yield": 2.31,
+      "per": 7.47,
+      "market_cap_oku": 68.3,
+      "dividend_yield": 2.29,
       "payout_ratio": 15.87,
       "roe": 5.56,
       "roic": 7.69,
@@ -988,7 +988,7 @@
       "tenbagger_stars": 2,
       "tab": "general",
       "theoretical_price": 5159.0,
-      "upside_percent": 195.2
+      "upside_percent": 196.3
     },
     {
       "code": "6943",
@@ -1048,8 +1048,8 @@
       "risk_penalty": -6,
       "forecast_adj": 0,
       "net_cash_ratio": 1.07,
-      "per": 9.31,
-      "market_cap_oku": 63.3,
+      "per": 9.36,
+      "market_cap_oku": 63.7,
       "dividend_yield": 2.39,
       "payout_ratio": 22.23,
       "roe": 7.97,
@@ -1074,7 +1074,7 @@
       "tenbagger_stars": 3,
       "tab": "general",
       "theoretical_price": 3767.0,
-      "upside_percent": 124.9
+      "upside_percent": 123.6
     },
     {
       "code": "7538",
@@ -1090,9 +1090,9 @@
       "bonus_score": 0,
       "risk_penalty": -5,
       "forecast_adj": 0,
-      "net_cash_ratio": 1.71,
-      "per": 5.71,
-      "market_cap_oku": 47.0,
+      "net_cash_ratio": 1.73,
+      "per": 5.65,
+      "market_cap_oku": 46.6,
       "dividend_yield": 1.81,
       "payout_ratio": 10.35,
       "roe": 5.69,
@@ -1117,7 +1117,7 @@
       "tenbagger_stars": 2,
       "tab": "general",
       "theoretical_price": 1114.0,
-      "upside_percent": 188.6
+      "upside_percent": 191.7
     },
     {
       "code": "5368",
@@ -1133,14 +1133,14 @@
       "bonus_score": 2,
       "risk_penalty": -13,
       "forecast_adj": 0,
-      "net_cash_ratio": 1.05,
-      "per": 7.96,
-      "market_cap_oku": 85.2,
-      "dividend_yield": 4.0,
+      "net_cash_ratio": 1.07,
+      "per": 7.87,
+      "market_cap_oku": 84.2,
+      "dividend_yield": 4.07,
       "payout_ratio": 32.38,
       "roe": 7.96,
       "roic": 17.48,
-      "pbr": 0.58,
+      "pbr": 0.57,
       "ai_comment": "直近年次では売上高17.8%増・営業利益56.9%増と力強い回復を見せたが、最新1Q（2026年4月〜6月）では売上-10.1%、営業利益-46.6%、純利益-43.3%と急激に悪化。通期予想も売上130.5億円・営業利益11.25億円と前期実績を下回る水準に下方修正されており、業績トレンドは明確に悪化局面に転換している。断熱材・保温材の専門メーカーとして一定のニッチ市場を持つが、建設市況・エネルギーコストに業績が左右されやすく競争優位性は限定的。PBR0.59倍・PER8倍と割安感はあるが、ROE7.96%とやや低水準。NC比1.04と財務健全性はほぼ問題ないが、1Qの急激な収益悪化は需要環境の厳しさを示しており、慎重な見方が必要。",
       "risk_checks": {
         "roe_15_percent": false,
@@ -1160,7 +1160,7 @@
       "tenbagger_stars": 2,
       "tab": "general",
       "theoretical_price": 2581.0,
-      "upside_percent": 162.6
+      "upside_percent": 165.6
     },
     {
       "code": "1850",
@@ -1176,14 +1176,14 @@
       "bonus_score": 0,
       "risk_penalty": -12,
       "forecast_adj": 0,
-      "net_cash_ratio": 1.46,
-      "per": 5.88,
-      "market_cap_oku": 113.2,
-      "dividend_yield": 1.95,
+      "net_cash_ratio": 1.45,
+      "per": 5.92,
+      "market_cap_oku": 114.1,
+      "dividend_yield": 1.98,
       "payout_ratio": 11.63,
       "roe": 10.62,
       "roic": 21.78,
-      "pbr": 0.58,
+      "pbr": 0.59,
       "ai_comment": "南海辰村建設は直近本決算で売上前期比-13.5%と減収となったが、営業利益は+19.4%と増益を達成。しかし最新1Q（2026年4月〜6月）では売上-14.2%・営業利益-22.4%・純利益-28.1%と大幅な減収減益が続いており、通期予想も売上527億円・営業利益25億円と前期水準を下回る。建設業界は競争が激しく参入障壁は平均的。PBR0.59倍・PER約6倍と割安感はあるが、ROE10.62%はまずまず。NC比1.44は財務健全性を示すが、収益の変動が大きく業績の安定性に課題がある。",
       "risk_checks": {
         "roe_15_percent": false,
@@ -1203,7 +1203,7 @@
       "tenbagger_stars": 3,
       "tab": "general",
       "theoretical_price": 1380.0,
-      "upside_percent": 241.5
+      "upside_percent": 239.0
     },
     {
       "code": "7614",
@@ -1219,14 +1219,14 @@
       "bonus_score": 2,
       "risk_penalty": -12,
       "forecast_adj": 0,
-      "net_cash_ratio": 1.04,
-      "per": 9.61,
-      "market_cap_oku": 102.8,
-      "dividend_yield": 2.34,
+      "net_cash_ratio": 1.02,
+      "per": 9.76,
+      "market_cap_oku": 104.4,
+      "dividend_yield": 2.33,
       "payout_ratio": 22.45,
       "roe": 5.21,
       "roic": 16.56,
-      "pbr": 0.56,
+      "pbr": 0.57,
       "ai_comment": "OM2 NETWORK COは3期連続増収を達成しており売上トレンドは良好。ただし直近通期では営業利益が前年比-12.1%と減益に転じており収益性に課題が残る。一方、最新四半期（2026年2Q）では営業利益+23.1%・純利益+30.7%と大幅改善が見られ、通期予想も増益方向に修正されている可能性がある。Consumer Defensiveセクターに属し事業の安定性は一定程度あるが、競争優位性は平均的。PBR0.56倍・PER9.6倍と割安感はあるものの、ROE5.21%は低水準。NC比1.04はほぼ適正水準。四半期での反転改善を評価しつつも、通期利益率の低さと競争環境の厳しさはリスク要因。",
       "risk_checks": {
         "roe_15_percent": false,
@@ -1246,7 +1246,7 @@
       "tenbagger_stars": 2,
       "tab": "general",
       "theoretical_price": 3907.0,
-      "upside_percent": 153.4
+      "upside_percent": 149.6
     },
     {
       "code": "3321",
@@ -1262,14 +1262,14 @@
       "bonus_score": 1,
       "risk_penalty": -26,
       "forecast_adj": 0,
-      "net_cash_ratio": 1.22,
-      "per": 6.26,
-      "market_cap_oku": 130.4,
-      "dividend_yield": 4.17,
+      "net_cash_ratio": 1.21,
+      "per": 6.3,
+      "market_cap_oku": 131.4,
+      "dividend_yield": 4.28,
       "payout_ratio": 30.6,
       "roe": 11.91,
       "roic": 21.32,
-      "pbr": 0.71,
+      "pbr": 0.72,
       "ai_comment": "MITACHIは過去3期で売上が389→982→1203億円と急拡大しており、売上成長率22.6%・営業利益成長率28.6%と増収増益トレンドを維持している。ただし最新四半期（2026年1Q）では売上+13.9%と成長継続も、営業利益▲3.8%・純利益▲3.8%と減益転換しており、収益性の悪化兆候が見られる。PER6.4倍・PBR0.73倍と割安感があるが、ROE11.9%はまずまず。ITディストリビューション系と推察され競争が激しく、利益率は薄利（営業利益率約2.3%）。通期予想に対する進捗も慎重に見守る必要あり。中期的な成長余地はあるが収益安定性に課題。",
       "risk_checks": {
         "roe_15_percent": false,
@@ -1289,7 +1289,7 @@
       "tenbagger_stars": 4,
       "tab": "general",
       "theoretical_price": 4510.0,
-      "upside_percent": 175.7
+      "upside_percent": 173.7
     },
     {
       "code": "7218",
@@ -1308,7 +1308,7 @@
       "net_cash_ratio": 1.09,
       "per": 4.98,
       "market_cap_oku": 95.6,
-      "dividend_yield": 3.04,
+      "dividend_yield": 3.09,
       "payout_ratio": 14.48,
       "roe": 4.6,
       "roic": 12.98,
@@ -1348,10 +1348,10 @@
       "bonus_score": 3,
       "risk_penalty": -13,
       "forecast_adj": 0,
-      "net_cash_ratio": 1.33,
-      "per": 8.32,
-      "market_cap_oku": 105.8,
-      "dividend_yield": 3.41,
+      "net_cash_ratio": 1.32,
+      "per": 8.35,
+      "market_cap_oku": 106.2,
+      "dividend_yield": 3.42,
       "payout_ratio": 28.42,
       "roe": 3.29,
       "roic": 4.15,
@@ -1375,7 +1375,7 @@
       "tenbagger_stars": 3,
       "tab": "general",
       "theoretical_price": 2943.0,
-      "upside_percent": 286.7
+      "upside_percent": 285.2
     },
     {
       "code": "6159",
@@ -1391,10 +1391,10 @@
       "bonus_score": 1,
       "risk_penalty": -13,
       "forecast_adj": 0,
-      "net_cash_ratio": 1.17,
-      "per": 8.16,
-      "market_cap_oku": 88.8,
-      "dividend_yield": 0.6,
+      "net_cash_ratio": 1.18,
+      "per": 8.11,
+      "market_cap_oku": 88.3,
+      "dividend_yield": 0.62,
       "payout_ratio": 6.5,
       "roe": 5.76,
       "roic": 9.16,
@@ -1418,7 +1418,7 @@
       "tenbagger_stars": 2,
       "tab": "general",
       "theoretical_price": 4950.0,
-      "upside_percent": 153.9
+      "upside_percent": 155.2
     },
     {
       "code": "9767",
@@ -1434,14 +1434,14 @@
       "bonus_score": 1,
       "risk_penalty": -13,
       "forecast_adj": 0,
-      "net_cash_ratio": 1.34,
-      "per": 7.71,
-      "market_cap_oku": 30.2,
+      "net_cash_ratio": 1.32,
+      "per": 7.84,
+      "market_cap_oku": 30.7,
       "dividend_yield": 1.81,
       "payout_ratio": 13.96,
       "roe": 5.7,
       "roic": 14.77,
-      "pbr": 0.6,
+      "pbr": 0.61,
       "ai_comment": "NIKKEN KOGAKUは直近年度売上62.1億円（前期比+12.6%）と回復基調にあるが、過去3期は61.9→55.2→62.1と一度落ち込む波動型。最新1Q（2026年4-6月）は売上13.2億円（前年比▲0.1%）とほぼ横ばいながら、営業利益+1100%・純利益+5550%と損益面は大幅改善。通期予想は売上67億円・営業益5億円と増収増益を見込む。PER7.7倍・PBR0.6倍と割安感強く、ROE5.7%は低水準。産業用光学機器は参入障壁がある一方、市場規模が限定的で収益変動リスクも残る。財務健全性はNC比1.35と概ね良好。バリュー株として注目に値するが収益安定性に課題あり。",
       "risk_checks": {
         "roe_15_percent": false,
@@ -1461,7 +1461,7 @@
       "tenbagger_stars": 2,
       "tab": "general",
       "theoretical_price": 4303.0,
-      "upside_percent": 159.7
+      "upside_percent": 155.5
     },
     {
       "code": "9193",
@@ -1479,8 +1479,8 @@
       "forecast_adj": 0,
       "net_cash_ratio": 1.1,
       "per": 1.65,
-      "market_cap_oku": 85.4,
-      "dividend_yield": 2.38,
+      "market_cap_oku": 85.3,
+      "dividend_yield": 2.33,
       "payout_ratio": 3.85,
       "roe": 17.88,
       "roic": 0.68,
@@ -1504,7 +1504,7 @@
       "tenbagger_stars": 4,
       "tab": "general",
       "theoretical_price": 9674.0,
-      "upside_percent": 1027.5
+      "upside_percent": 1028.8
     },
     {
       "code": "1887",
@@ -1520,14 +1520,14 @@
       "bonus_score": 1,
       "risk_penalty": -19,
       "forecast_adj": 0,
-      "net_cash_ratio": 1.25,
-      "per": 7.09,
-      "market_cap_oku": 400.6,
-      "dividend_yield": 5.91,
+      "net_cash_ratio": 1.23,
+      "per": 7.18,
+      "market_cap_oku": 405.4,
+      "dividend_yield": 5.98,
       "payout_ratio": 27.82,
       "roe": 7.66,
       "roic": 9.99,
-      "pbr": 0.56,
+      "pbr": 0.57,
       "ai_comment": "JDC CORPORATIONは直近年次で売上9.6%増・営業利益208.5%増と大幅改善を達成したが、最新1Q（2026年8月期）では売上前年比-7.1%と減収に転じており、通期予想は売上1,370億円・営業利益63億円と保守的な水準。NC比1.23と財務健全性は概ね良好だが、PBR0.57倍・PER7.1倍と市場評価は低く、ROE7.66%も収益力として平均以下。産業系の事業特性上、競争優位性は限定的で景気動向に業績が左右されやすい。1Q時点での減収傾向と通期見通しの不確かさはリスク要因として注視が必要。",
       "risk_checks": {
         "roe_15_percent": false,
@@ -1547,7 +1547,7 @@
       "tenbagger_stars": 2,
       "tab": "general",
       "theoretical_price": 1049.0,
-      "upside_percent": 108.9
+      "upside_percent": 106.5
     },
     {
       "code": "1768",
@@ -1563,9 +1563,9 @@
       "bonus_score": 1,
       "risk_penalty": -26,
       "forecast_adj": 0,
-      "net_cash_ratio": 1.09,
-      "per": 5.73,
-      "market_cap_oku": 74.6,
+      "net_cash_ratio": 1.08,
+      "per": 5.76,
+      "market_cap_oku": 75.0,
       "dividend_yield": 4.9,
       "payout_ratio": 28.07,
       "roe": 13.15,
@@ -1590,7 +1590,7 @@
       "tenbagger_stars": 3,
       "tab": "general",
       "theoretical_price": 3263.0,
-      "upside_percent": 219.6
+      "upside_percent": 218.0
     },
     {
       "code": "9625",
@@ -1606,9 +1606,9 @@
       "bonus_score": 1,
       "risk_penalty": -26,
       "forecast_adj": 0,
-      "net_cash_ratio": 1.13,
-      "per": 6.9,
-      "market_cap_oku": 50.6,
+      "net_cash_ratio": 1.14,
+      "per": 6.84,
+      "market_cap_oku": 50.2,
       "dividend_yield": 5.42,
       "payout_ratio": 29.91,
       "roe": 7.84,
@@ -1633,7 +1633,7 @@
       "tenbagger_stars": 3,
       "tab": "general",
       "theoretical_price": 2692.0,
-      "upside_percent": 191.6
+      "upside_percent": 194.2
     },
     {
       "code": "4119",
@@ -1649,14 +1649,14 @@
       "bonus_score": 0,
       "risk_penalty": -19,
       "forecast_adj": 0,
-      "net_cash_ratio": 1.12,
-      "per": 6.76,
-      "market_cap_oku": 96.8,
-      "dividend_yield": 1.61,
+      "net_cash_ratio": 1.11,
+      "per": 6.82,
+      "market_cap_oku": 97.8,
+      "dividend_yield": 1.62,
       "payout_ratio": 10.95,
       "roe": 5.18,
       "roic": 8.05,
-      "pbr": 0.42,
+      "pbr": 0.43,
       "ai_comment": "NIPPON PIGMENT HOLDINGSは3期連続で増収を達成し、売上は266.8億→379.2億→422.2億円と力強い成長を示す。直近1Q（2026年4月〜6月）も売上+7.7%、営業利益+367.9%と好調が継続しており、業績モメンタムは良好。ただし顔料・塗料業界は原材料費変動や競合激化の影響を受けやすく、競争優位性は限定的。PBR0.43倍・PER6.8倍と割安感が強い一方、ROE5.18%は低水準でNC比1.11は資本効率の改善余地を示す。通期予想（売上435億・営業利益17億）達成可能性は高く、下期への期待は持てるが、利益率の薄さと業種特性によるリスクは残る。",
       "risk_checks": {
         "roe_15_percent": false,
@@ -1676,7 +1676,7 @@
       "tenbagger_stars": 3,
       "tab": "general",
       "theoretical_price": 15354.0,
-      "upside_percent": 148.9
+      "upside_percent": 146.5
     },
     {
       "code": "4231",
@@ -1693,13 +1693,13 @@
       "risk_penalty": -19,
       "forecast_adj": 0,
       "net_cash_ratio": 1.43,
-      "per": 8.8,
-      "market_cap_oku": 191.5,
-      "dividend_yield": 4.31,
+      "per": 8.84,
+      "market_cap_oku": 192.5,
+      "dividend_yield": 4.33,
       "payout_ratio": 33.67,
       "roe": 5.01,
       "roic": 10.21,
-      "pbr": 0.4,
+      "pbr": 0.41,
       "ai_comment": "タイガースポリマーは3期連続増収を達成しており、直近四半期（1Q FY2026）も売上高が前年同期比+11.3%と好調。ただし営業利益+2.2%に留まり、純利益は-18.4%と減益。コスト増圧力が利益を圧迫している点が懸念材料。PBR0.41倍と割安感は強いが、ROE5%と資本効率は低め。NC比1.43は流動性に一定の余裕あり。自動車・産業向けゴム・プラスチック部品は参入障壁が中程度で競合も多く、事業の質は平均的。通期予想は売上500億円・営業利益30億円と保守的で、上振れ余地はあるものの下方修正リスクも意識される。バリュー株として注目できるが、収益力強化が課題。",
       "risk_checks": {
         "roe_15_percent": false,
@@ -1719,7 +1719,7 @@
       "tenbagger_stars": 2,
       "tab": "general",
       "theoretical_price": 3275.0,
-      "upside_percent": 229.8
+      "upside_percent": 228.2
     },
     {
       "code": "7521",
@@ -1735,14 +1735,14 @@
       "bonus_score": 0,
       "risk_penalty": -18,
       "forecast_adj": 0,
-      "net_cash_ratio": 1.32,
-      "per": 9.05,
-      "market_cap_oku": 179.6,
+      "net_cash_ratio": 1.33,
+      "per": 8.97,
+      "market_cap_oku": 177.9,
       "dividend_yield": 1.37,
       "payout_ratio": 12.36,
       "roe": 7.59,
       "roic": 34.98,
-      "pbr": 0.49,
+      "pbr": 0.48,
       "ai_comment": "直近四半期（2026年1Q）は売上高が前年同期比▲25.8%、営業利益▲99.6%、最終損益は赤字転落と急激な業績悪化が確認される。通期予想も売上約340億円と前期405億円から大幅減収見通しであり、過去3期の増収トレンドが崩れる可能性が高い。自動車部品製造業として競合環境は厳しく、EV化の波や原材料費上昇の影響を受けやすい。PBR0.49倍・PER9倍と割安感はあるものの、ROE7.59%と資本効率は低水準。NC比1.32は財務的に安定しているが、直近の急激な収益悪化は警戒が必要。",
       "risk_checks": {
         "roe_15_percent": false,
@@ -1762,7 +1762,7 @@
       "tenbagger_stars": 2,
       "tab": "general",
       "theoretical_price": 6440.0,
-      "upside_percent": 144.3
+      "upside_percent": 146.6
     },
     {
       "code": "5986",
@@ -1778,10 +1778,10 @@
       "bonus_score": 0,
       "risk_penalty": -13,
       "forecast_adj": 0,
-      "net_cash_ratio": 1.3,
-      "per": 5.8,
-      "market_cap_oku": 60.5,
-      "dividend_yield": 2.21,
+      "net_cash_ratio": 1.29,
+      "per": 5.82,
+      "market_cap_oku": 60.7,
+      "dividend_yield": 2.22,
       "payout_ratio": 12.89,
       "roe": 6.46,
       "roic": 3.61,
@@ -1805,7 +1805,7 @@
       "tenbagger_stars": 3,
       "tab": "general",
       "theoretical_price": 773.0,
-      "upside_percent": 186.4
+      "upside_percent": 185.3
     },
     {
       "code": "9980",
@@ -1824,7 +1824,7 @@
       "net_cash_ratio": 1.16,
       "per": 7.9,
       "market_cap_oku": 79.9,
-      "dividend_yield": 1.12,
+      "dividend_yield": 1.14,
       "payout_ratio": 8.98,
       "roe": 6.08,
       "roic": 4.49,
@@ -1864,14 +1864,14 @@
       "bonus_score": 1,
       "risk_penalty": -27,
       "forecast_adj": 0,
-      "net_cash_ratio": 1.02,
-      "per": 5.79,
-      "market_cap_oku": 287.7,
-      "dividend_yield": 3.39,
+      "net_cash_ratio": 1.01,
+      "per": 5.86,
+      "market_cap_oku": 291.4,
+      "dividend_yield": 3.54,
       "payout_ratio": 20.48,
       "roe": 7.79,
       "roic": 5.0,
-      "pbr": 0.39,
+      "pbr": 0.4,
       "ai_comment": "新電元工業は3期連続増収を達成し、最新年度の営業利益は前期比約29倍と大幅改善。ただし直近1Q（2026年4〜6月）では営業利益が前年同期比▲35.4%、純利益▲43.3%と急失速しており、通期予想も売上1212億円・営業利益40億円と低水準。PBR0.4倍・PER5.9倍と割安感はあるが、ROE7.79%は中程度。電源・整流器の専門メーカーとして一定の技術力を持つが、半導体部品市場の競争は激しく収益の安定性に懸念。NC比1.0超で純有利子負債解消水準だが、1Q利益急減は通期下振れリスクを示唆。",
       "risk_checks": {
         "roe_15_percent": false,
@@ -1891,7 +1891,7 @@
       "tenbagger_stars": 2,
       "tab": "general",
       "theoretical_price": 9288.0,
-      "upside_percent": 228.7
+      "upside_percent": 224.5
     },
     {
       "code": "5282",
@@ -1908,13 +1908,13 @@
       "risk_penalty": -30,
       "forecast_adj": 0,
       "net_cash_ratio": 1.39,
-      "per": 4.65,
-      "market_cap_oku": 112.7,
-      "dividend_yield": 3.79,
+      "per": 4.64,
+      "market_cap_oku": 112.4,
+      "dividend_yield": 3.8,
       "payout_ratio": 16.43,
       "roe": 7.37,
       "roic": 8.39,
-      "pbr": 0.46,
+      "pbr": 0.45,
       "ai_comment": "GEOSTR CORPは過去3期で売上が269→285→288億円と緩やかな増収基調を維持し、直近期の営業利益は前年比32.2%増と大幅改善。ただし最新四半期（2026年1Q）では売上が前年比▲36.8%、営業利益は▲151.2%の赤字転落と急激な悪化が確認されており、通期予想との乖離リスクが高い。PER4.7・PBR0.46と割安感はあるが、ROE7.4%は低水準。素材セクターの競争環境は厳しく、収益の安定性に懸念。1Qの大幅減収は需要変動・受注偏在の可能性があり、業績の視界不良が続く。バリュエーション面の割安さは評価できるが、直近四半期の急激な業績悪化を重視し慎重な評価とする。",
       "risk_checks": {
         "roe_15_percent": false,
@@ -1934,7 +1934,7 @@
       "tenbagger_stars": 2,
       "tab": "general",
       "theoretical_price": 1216.0,
-      "upside_percent": 230.4
+      "upside_percent": 231.3
     },
     {
       "code": "6390",
@@ -1950,10 +1950,10 @@
       "bonus_score": 1,
       "risk_penalty": -26,
       "forecast_adj": 0,
-      "net_cash_ratio": 1.69,
+      "net_cash_ratio": 1.68,
       "per": 2.86,
-      "market_cap_oku": 138.6,
-      "dividend_yield": 5.6,
+      "market_cap_oku": 138.8,
+      "dividend_yield": 5.65,
       "payout_ratio": 16.15,
       "roe": 10.66,
       "roic": -5.2,
@@ -1977,7 +1977,7 @@
       "tenbagger_stars": 2,
       "tab": "general",
       "theoretical_price": 7451.0,
-      "upside_percent": 501.8
+      "upside_percent": 500.9
     },
     {
       "code": "7427",
@@ -1993,10 +1993,10 @@
       "bonus_score": 1,
       "risk_penalty": -19,
       "forecast_adj": 0,
-      "net_cash_ratio": 2.08,
-      "per": 9.78,
-      "market_cap_oku": 50.5,
-      "dividend_yield": 3.65,
+      "net_cash_ratio": 2.07,
+      "per": 9.82,
+      "market_cap_oku": 50.7,
+      "dividend_yield": 3.64,
       "payout_ratio": 35.62,
       "roe": 6.39,
       "roic": 18.66,
@@ -2014,13 +2014,13 @@
       "quality_score": 4,
       "chart_signals": {
         "volume_surge": false,
-        "above_ma": false,
+        "above_ma": true,
         "near_high": true
       },
       "tenbagger_stars": 2,
       "tab": "general",
       "theoretical_price": 1810.0,
-      "upside_percent": 119.6
+      "upside_percent": 118.8
     },
     {
       "code": "7266",
@@ -2036,14 +2036,14 @@
       "bonus_score": 2,
       "risk_penalty": -26,
       "forecast_adj": 0,
-      "net_cash_ratio": 1.53,
-      "per": 6.66,
-      "market_cap_oku": 201.2,
-      "dividend_yield": 3.33,
+      "net_cash_ratio": 1.52,
+      "per": 6.71,
+      "market_cap_oku": 202.6,
+      "dividend_yield": 3.38,
       "payout_ratio": 19.0,
       "roe": 4.45,
       "roic": 5.31,
-      "pbr": 0.35,
+      "pbr": 0.36,
       "ai_comment": "今仙電機製作所は自動車部品（シート・操作系部品）メーカー。直近3期は売上が997→943→872億円と連続減収であり、業績トレンドは弱い。ただし直近期の営業利益は前期比413%増と大幅改善（構造改革・コスト削減効果）。最新1Q（2026年4-6月）は売上+2.5%・営業利益+1690%と大幅改善が継続しており底打ち感あり。PBR0.36倍・PER6.8倍と超割安だが、ROE4.45%は低水準。自動車業界の競争激化・電動化対応コストが重荷。NC比1.5倍はやや高く財務余力に注意が必要。事業は平均的な参入障壁で差別化余地は限定的。業績回復の持続性が鍵。",
       "risk_checks": {
         "roe_15_percent": false,
@@ -2063,7 +2063,7 @@
       "tenbagger_stars": 3,
       "tab": "general",
       "theoretical_price": 3160.0,
-      "upside_percent": 233.7
+      "upside_percent": 231.2
     },
     {
       "code": "9876",
@@ -2079,14 +2079,14 @@
       "bonus_score": 1,
       "risk_penalty": -19,
       "forecast_adj": 0,
-      "net_cash_ratio": 1.19,
-      "per": 8.24,
-      "market_cap_oku": 58.6,
+      "net_cash_ratio": 1.18,
+      "per": 8.32,
+      "market_cap_oku": 59.1,
       "dividend_yield": 0.0,
       "payout_ratio": 0.0,
       "roe": 10.14,
       "roic": 21.62,
-      "pbr": 0.54,
+      "pbr": 0.55,
       "ai_comment": "COX CO LTDは直近2Q（2026年8月期）において売上が前年比-2.3%、営業利益が-43.9%、純利益が-46.8%と大幅な減益となっており、業績の悪化が顕著である。通期予想でも営業利益1,360百万円と前期比での回復は限定的。過去3期の売上推移も148.9→153.0→149.6億円と伸び悩みが続いている。アパレル・消費財セクターは競争が激しく参入障壁も低い。PBR0.55倍と割安感はあるが、ROE10.14%はROE15%基準を下回る。NC比1.18は流動性に一定の余裕があるものの、今期の急激な収益悪化はリスク要因として重く見る必要がある。景況感や消費動向の影響を受けやすく、業績の安定性に欠ける点が懸念される。",
       "risk_checks": {
         "roe_15_percent": false,
@@ -2106,7 +2106,7 @@
       "tenbagger_stars": 2,
       "tab": "general",
       "theoretical_price": 700.0,
-      "upside_percent": 230.0
+      "upside_percent": 227.0
     },
     {
       "code": "8165",
@@ -2122,14 +2122,14 @@
       "bonus_score": 0,
       "risk_penalty": -28,
       "forecast_adj": 0,
-      "net_cash_ratio": 1.91,
-      "per": 0.76,
-      "market_cap_oku": 45.4,
+      "net_cash_ratio": 1.89,
+      "per": 0.77,
+      "market_cap_oku": 45.8,
       "dividend_yield": 0.0,
       "payout_ratio": 0.0,
       "roe": 23.12,
       "roic": -25.32,
-      "pbr": 0.26,
+      "pbr": 0.27,
       "ai_comment": "センシュカイは通販・通信販売を主軸とするコンシューマー企業だが、売上は3期連続で減少（492億→458億→420億円）しており業績トレンドは明確に下降局面。直近2Q（2026年6月期）も売上前年比-6.9%、営業損失-10.9億円と赤字継続。通期予想も営業損失-12億円と黒字化の見通しは立っていない。一方でROE23.12%と高水準だが、これは純利益39.4億円（特損・特益含む可能性）とPBR0.26倍という自己資本の低さによる影響が大きく、実態的な収益力を正確に反映しているか注意が必要。競争環境はEC・通販市場で激化しており競争優位性は限定的。流動性・財務面では純現金比率が高く短期的な資金リスクは低いが、本業の赤字継続が最大のリスク要因。",
       "risk_checks": {
         "roe_15_percent": true,
@@ -2149,7 +2149,7 @@
       "tenbagger_stars": 4,
       "tab": "general",
       "theoretical_price": 2134.0,
-      "upside_percent": 2100.0
+      "upside_percent": 2077.6
     }
   ]
 }
