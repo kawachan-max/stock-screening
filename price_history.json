@@ -5446,9 +5446,9 @@
       "name": "DAIDO SIGNAL CO",
       "tab": "general",
       "score": 66,
-      "stock_price": 1104,
+      "stock_price": 1130,
       "theoretical_price": 2241,
-      "upside_percent": 103.0
+      "upside_percent": 98.3
     },
     {
       "date": "2026-10-23",
@@ -5456,9 +5456,9 @@
       "name": "SOLEKIA LIMITED",
       "tab": "general",
       "score": 64,
-      "stock_price": 10290,
+      "stock_price": 10250,
       "theoretical_price": 35820,
-      "upside_percent": 248.1
+      "upside_percent": 249.5
     },
     {
       "date": "2026-10-23",
@@ -5466,9 +5466,9 @@
       "name": "MK SEIKO CO LTD",
       "tab": "general",
       "score": 61,
-      "stock_price": 778,
+      "stock_price": 770,
       "theoretical_price": 3014,
-      "upside_percent": 287.4
+      "upside_percent": 291.4
     },
     {
       "date": "2026-10-23",
@@ -5476,9 +5476,9 @@
       "name": "AMG HOLDINGS CO LTD",
       "tab": "finance",
       "score": 69,
-      "stock_price": 2068,
+      "stock_price": 2083,
       "theoretical_price": 7050,
-      "upside_percent": 240.9
+      "upside_percent": 238.4
     },
     {
       "date": "2026-10-23",
@@ -5486,9 +5486,9 @@
       "name": "IMAMURA SECURITIES CO LTD(THE)",
       "tab": "finance",
       "score": 61,
-      "stock_price": 1684,
+      "stock_price": 1669,
       "theoretical_price": 4317,
-      "upside_percent": 156.4
+      "upside_percent": 158.7
     }
   ]
 }
