@@ -5492,16 +5492,6 @@
     },
     {
       "date": "2026-10-27",
-      "code": "9867",
-      "name": "SOLEKIA LIMITED",
-      "tab": "general",
-      "score": 64,
-      "stock_price": 10250,
-      "theoretical_price": 35820,
-      "upside_percent": 249.5
-    },
-    {
-      "date": "2026-10-27",
       "code": "6743",
       "name": "DAIDO SIGNAL CO",
       "tab": "general",
@@ -5512,13 +5502,23 @@
     },
     {
       "date": "2026-10-27",
+      "code": "9867",
+      "name": "SOLEKIA LIMITED",
+      "tab": "general",
+      "score": 64,
+      "stock_price": 10250,
+      "theoretical_price": 35820,
+      "upside_percent": 249.5
+    },
+    {
+      "date": "2026-10-27",
       "code": "8891",
       "name": "AMG HOLDINGS CO LTD",
       "tab": "finance",
       "score": 69,
-      "stock_price": 2080,
+      "stock_price": 2083,
       "theoretical_price": 7050,
-      "upside_percent": 238.9
+      "upside_percent": 238.4
     },
     {
       "date": "2026-10-27",
@@ -5526,9 +5526,9 @@
       "name": "IMAMURA SECURITIES CO LTD(THE)",
       "tab": "finance",
       "score": 61,
-      "stock_price": 1682,
+      "stock_price": 1695,
       "theoretical_price": 4317,
-      "upside_percent": 156.7
+      "upside_percent": 154.7
     }
   ]
 }
