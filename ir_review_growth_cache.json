@@ -31,9 +31,9 @@
     "score_adjustment": 0,
     "add_badges": [],
     "ir_comment": "",
-    "review_note": "IR審査エラー: unbalanced braces",
+    "review_note": "IR審査エラー: no json object",
     "source_urls": [],
-    "reviewed_at": "2026-10-26"
+    "reviewed_at": "2026-10-29"
   },
   "8917": {
     "review_status": "neutral",
@@ -70,9 +70,9 @@
     "score_adjustment": 0,
     "add_badges": [],
     "ir_comment": "",
-    "review_note": "IR審査エラー: unbalanced braces",
+    "review_note": "IR審査エラー: no json object",
     "source_urls": [],
-    "reviewed_at": "2026-10-26"
+    "reviewed_at": "2026-10-29"
   },
   "8881": {
     "review_status": "positive",
@@ -146,7 +146,7 @@
     "ir_comment": "",
     "review_note": "IR審査エラー: no json object",
     "source_urls": [],
-    "reviewed_at": "2026-10-26"
+    "reviewed_at": "2026-10-29"
   },
   "8135": {
     "review_status": "neutral",
@@ -210,9 +210,9 @@
     "score_adjustment": 0,
     "add_badges": [],
     "ir_comment": "",
-    "review_note": "IR審査エラー: no json object",
+    "review_note": "IR審査エラー: unbalanced braces",
     "source_urls": [],
-    "reviewed_at": "2026-10-26"
+    "reviewed_at": "2026-10-29"
   },
   "3388": {
     "review_status": "neutral",
@@ -238,7 +238,7 @@
     "ir_comment": "",
     "review_note": "IR審査エラー: no json object",
     "source_urls": [],
-    "reviewed_at": "2026-10-26"
+    "reviewed_at": "2026-10-29"
   },
   "9633": {
     "review_status": "neutral",
@@ -282,18 +282,37 @@
     "ir_comment": "",
     "review_note": "IR審査エラー: no json object",
     "source_urls": [],
-    "reviewed_at": "2026-10-26"
+    "reviewed_at": "2026-10-29"
   },
   "6743": {
-    "review_status": "neutral",
-    "catalysts_found": [],
+    "review_status": "positive",
+    "catalysts_found": [
+      "2026年8月7日、自己株式取得（上限210万株・取得総額上限20.4億円）を決議、8月10日にToSTNeT-3で取得完了",
+      "2026年8月7日、自己株式260万株（発行済株式の14.43%）の消却を決議、消却予定日2026年10月30日",
+      "2026年5月20日、2026年3月期期末配当を直近予想の25円から10円増配し35円（前期実績15円から大幅増配）に修正",
+      "2026年3月期決算（2026年5月20日発表）は売上高+17.3%、営業利益+89.8%の大幅増収増益",
+      "2027年3月期第1四半期（2026年8月7日発表）も経常利益+75.6%と好調で、通期経常利益計画に対する進捗率38%に到達",
+      "2024年5月公表の中期経営計画「PLAN2026」に基づき、資本コストや株価を意識した経営・株主還元充実への取り組みを継続"
+    ],
     "risks_found": [],
-    "score_adjustment": 0,
-    "add_badges": [],
-    "ir_comment": "",
-    "review_note": "IR審査エラー: no json object",
-    "source_urls": [],
-    "reviewed_at": "2026-10-26"
+    "score_adjustment": 12,
+    "add_badges": [
+      "⬆️自社株買い",
+      "⬆️増配発表",
+      "⬆️上方修正",
+      "⬆️還元強化"
+    ],
+    "ir_comment": "2026年5月に大幅増配（25円→35円）、8月には自社株買い（上限20.4億円）と260万株（14.43%）の消却を発表。27年3月期1Qも経常益+76%と好調で、資本コストを意識した株主還元強化の動きが続いている。",
+    "review_note": "増配・自社株買い・消却・好決算が重なり株主還元強化の動きが顕著。悪材料は確認されず。",
+    "source_urls": [
+      "https://www.daido-signal.co.jp/financial/disclosure.html",
+      "https://www.daido-signal.co.jp/financial/file/daido_ir_20260520-04.pdf",
+      "https://www.release.tdnet.info/inbs/140120260518539271.pdf",
+      "https://www.release.tdnet.info/inbs/140120260803506951.pdf",
+      "https://kabutan.jp/stock/news?code=6743",
+      "https://kabutan.jp/news/?b=k202511070352"
+    ],
+    "reviewed_at": "2026-10-29"
   },
   "7538": {
     "review_status": "neutral",
@@ -315,7 +334,7 @@
     "ir_comment": "",
     "review_note": "IR審査エラー: no json object",
     "source_urls": [],
-    "reviewed_at": "2026-10-26"
+    "reviewed_at": "2026-10-29"
   },
   "5757": {
     "review_status": "negative",
@@ -376,9 +395,9 @@
     "score_adjustment": 0,
     "add_badges": [],
     "ir_comment": "",
-    "review_note": "IR審査エラー: unbalanced braces",
+    "review_note": "IR審査エラー: no json object",
     "source_urls": [],
-    "reviewed_at": "2026-10-26"
+    "reviewed_at": "2026-10-29"
   },
   "7235": {
     "review_status": "neutral",
@@ -389,7 +408,7 @@
     "ir_comment": "",
     "review_note": "IR審査エラー: unbalanced braces",
     "source_urls": [],
-    "reviewed_at": "2026-10-26"
+    "reviewed_at": "2026-10-29"
   },
   "8904": {
     "review_status": "neutral",
@@ -485,7 +504,7 @@
     "ir_comment": "",
     "review_note": "IR審査エラー: no json object",
     "source_urls": [],
-    "reviewed_at": "2026-10-26"
+    "reviewed_at": "2026-10-29"
   },
   "8747": {
     "review_status": "neutral",
@@ -494,9 +513,9 @@
     "score_adjustment": 0,
     "add_badges": [],
     "ir_comment": "",
-    "review_note": "IR審査エラー: no json object",
+    "review_note": "IR審査エラー: unbalanced braces",
     "source_urls": [],
-    "reviewed_at": "2026-10-19"
+    "reviewed_at": "2026-10-29"
   },
   "8150": {
     "review_status": "neutral",
@@ -582,32 +601,15 @@
     "reviewed_at": "2026-10-08"
   },
   "4624": {
-    "review_status": "positive",
-    "catalysts_found": [
-      "2026年4月30日、2026年3月期通期連結業績予想を上方修正（経常利益778百万円→1,070百万円、+37.5%、純利益+33.9%）",
-      "2026年5月11日発表の2026年3月期実績は経常利益+40.4%増益で着地し、上方修正をほぼ達成",
-      "2026年8月5日発表の2027年3月期第1四半期は経常利益+36.9%増益で好調にスタートし、通期は34期ぶりの最高益（経常利益+15.1%増）を見込むと発表"
-    ],
-    "risks_found": [
-      "2026年4月期の増益の一部は中東情勢の不安等によるシンナー類の『買い込み需要』という一過性要因に起因しており、持続性に不透明感",
-      "2026年8月4日、滋賀工場で落雷被害が発生したと適時開示（具体的な業績影響額は開示資料からは確認できず、重要性は限定的とみられる）",
-      "配当は50円で長年据え置き（増配なし）、自己株式取得の発表も確認できず、低PBR（0.41倍）に対する明確な株主還元強化策・中計成長戦略は現時点で未発表"
-    ],
-    "score_adjustment": 1,
-    "add_badges": [
-      "⬆️上方修正",
-      "⚠️一過性"
-    ],
-    "ir_comment": "2026年4月に通期業績を上方修正し経常増益率が拡大、2027年3月期1Qも大幅増益で34期ぶり最高益を計画。ただし増益の一部は買い込み需要という一過性要因を含み、増配・自社株買い等の株主還元強化策は未発表。",
-    "review_note": "上方修正と好調な1Q決算はプラス材料だが、一過性需要要因と株主還元強化策の不在がやや相殺",
-    "source_urls": [
-      "https://www.isamu.co.jp/ir/",
-      "https://www.isamu.co.jp/wp-content/uploads/2026/04/ir20260430_o1.pdf",
-      "https://finance.logmi.jp/companies/2365",
-      "https://www.nikkei.com/nkd/disclosure/tdnr/20260804507843/",
-      "https://kabuyoho.jp/report?bcode=4624"
-    ],
-    "reviewed_at": "2026-10-12"
+    "review_status": "neutral",
+    "catalysts_found": [],
+    "risks_found": [],
+    "score_adjustment": 0,
+    "add_badges": [],
+    "ir_comment": "",
+    "review_note": "IR審査エラー: unbalanced braces",
+    "source_urls": [],
+    "reviewed_at": "2026-10-29"
   },
   "8864": {
     "review_status": "neutral",
@@ -627,9 +629,9 @@
     "score_adjustment": 0,
     "add_badges": [],
     "ir_comment": "",
-    "review_note": "IR審査エラー: unbalanced braces",
+    "review_note": "IR審査エラー: no json object",
     "source_urls": [],
-    "reviewed_at": "2026-10-26"
+    "reviewed_at": "2026-10-29"
   },
   "7192": {
     "review_status": "neutral",
@@ -671,7 +673,7 @@
     "ir_comment": "",
     "review_note": "IR審査エラー: no json object",
     "source_urls": [],
-    "reviewed_at": "2026-10-26"
+    "reviewed_at": "2026-10-29"
   },
   "8869": {
     "review_status": "neutral",
@@ -682,7 +684,7 @@
     "ir_comment": "",
     "review_note": "IR審査エラー: no json object",
     "source_urls": [],
-    "reviewed_at": "2026-10-26"
+    "reviewed_at": "2026-10-29"
   },
   "3277": {
     "review_status": "neutral",
@@ -751,9 +753,9 @@
     "score_adjustment": 0,
     "add_badges": [],
     "ir_comment": "",
-    "review_note": "IR審査エラー: Error code: 404 - {'type': 'error', 'error': {'typ",
+    "review_note": "IR審査エラー: unbalanced braces",
     "source_urls": [],
-    "reviewed_at": "2026-06-22"
+    "reviewed_at": "2026-10-29"
   },
   "8931": {
     "review_status": "neutral",
@@ -790,7 +792,7 @@
     "ir_comment": "",
     "review_note": "IR審査エラー: no json object",
     "source_urls": [],
-    "reviewed_at": "2026-10-26"
+    "reviewed_at": "2026-10-29"
   },
   "9857": {
     "review_status": "neutral",
@@ -894,7 +896,7 @@
     "ir_comment": "",
     "review_note": "IR審査エラー: no json object",
     "source_urls": [],
-    "reviewed_at": "2026-10-26"
+    "reviewed_at": "2026-10-29"
   },
   "6365": {
     "review_status": "neutral",
@@ -905,7 +907,7 @@
     "ir_comment": "",
     "review_note": "IR審査エラー: no json object",
     "source_urls": [],
-    "reviewed_at": "2026-09-14"
+    "reviewed_at": "2026-10-29"
   },
   "6335": {
     "review_status": "neutral",
@@ -914,9 +916,9 @@
     "score_adjustment": 0,
     "add_badges": [],
     "ir_comment": "",
-    "review_note": "IR審査エラー: no json object",
+    "review_note": "IR審査エラー: unbalanced braces",
     "source_urls": [],
-    "reviewed_at": "2026-10-12"
+    "reviewed_at": "2026-10-29"
   },
   "8928": {
     "review_status": "neutral",
@@ -927,7 +929,7 @@
     "ir_comment": "",
     "review_note": "IR審査エラー: unbalanced braces",
     "source_urls": [],
-    "reviewed_at": "2026-10-26"
+    "reviewed_at": "2026-10-29"
   },
   "6647": {
     "review_status": "neutral",
