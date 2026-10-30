@@ -5619,6 +5619,66 @@
       "stock_price": 1713,
       "theoretical_price": 4262,
       "upside_percent": 148.8
+    },
+    {
+      "date": "2026-10-31",
+      "code": "6743",
+      "name": "DAIDO SIGNAL CO",
+      "tab": "general",
+      "score": 67,
+      "stock_price": 1128,
+      "theoretical_price": 2241,
+      "upside_percent": 98.7
+    },
+    {
+      "date": "2026-10-31",
+      "code": "9867",
+      "name": "SOLEKIA LIMITED",
+      "tab": "general",
+      "score": 63,
+      "stock_price": 9990,
+      "theoretical_price": 35820,
+      "upside_percent": 258.6
+    },
+    {
+      "date": "2026-10-31",
+      "code": "6365",
+      "name": "DMW CORPORATION",
+      "tab": "general",
+      "score": 60,
+      "stock_price": 5420,
+      "theoretical_price": 14407,
+      "upside_percent": 165.8
+    },
+    {
+      "date": "2026-10-31",
+      "code": "8891",
+      "name": "AMG HOLDINGS CO LTD",
+      "tab": "finance",
+      "score": 69,
+      "stock_price": 2082,
+      "theoretical_price": 7050,
+      "upside_percent": 238.6
+    },
+    {
+      "date": "2026-10-31",
+      "code": "8917",
+      "name": "FIRST JUKEN CO LTD",
+      "tab": "finance",
+      "score": 62,
+      "stock_price": 1025,
+      "theoretical_price": 3164,
+      "upside_percent": 208.7
+    },
+    {
+      "date": "2026-10-31",
+      "code": "7175",
+      "name": "IMAMURA SECURITIES CO LTD(THE)",
+      "tab": "finance",
+      "score": 61,
+      "stock_price": 1647,
+      "theoretical_price": 4335,
+      "upside_percent": 163.2
     }
   ]
 }
