@@ -33,7 +33,7 @@
     "ir_comment": "",
     "review_note": "IR審査エラー: no json object",
     "source_urls": [],
-    "reviewed_at": "2026-10-29"
+    "reviewed_at": "2026-11-02"
   },
   "8917": {
     "review_status": "neutral",
@@ -72,7 +72,7 @@
     "ir_comment": "",
     "review_note": "IR審査エラー: no json object",
     "source_urls": [],
-    "reviewed_at": "2026-10-29"
+    "reviewed_at": "2026-11-02"
   },
   "8881": {
     "review_status": "positive",
@@ -146,7 +146,7 @@
     "ir_comment": "",
     "review_note": "IR審査エラー: no json object",
     "source_urls": [],
-    "reviewed_at": "2026-10-29"
+    "reviewed_at": "2026-11-02"
   },
   "8135": {
     "review_status": "neutral",
@@ -154,17 +154,10 @@
     "risks_found": [],
     "score_adjustment": 0,
     "add_badges": [],
-    "ir_comment": "2026年8月7日発表の1Q（27年3月期）は卸売部門が牽引し増収増益（売上+7.7%、営業益+32.2%）。ただし通期会社予想は営業利益▲21.7%見通しのまま据え置き。26年3月期実績は前期特別利益の反動で純利益が大幅減となったが、これは一過性要因。自社株買い・増配・上方修正・MBO等の新規発表は確認されず。",
-    "review_note": "直近半年で自社株買い・増配・業績修正・不祥事等の重大IR発表は確認できず、既存の株主還元水準を維持。",
-    "source_urls": [
-      "https://finance.yahoo.co.jp/quote/8135.T/dividend",
-      "https://finance.yahoo.co.jp/quote/8135.T/financials",
-      "https://irbank.net/8135/pl",
-      "https://irbank.net/8135/pbr",
-      "https://minkabu.jp/stock/8135/settlement",
-      "https://kabuyoho.jp/reportDps?bcode=8135"
-    ],
-    "reviewed_at": "2026-09-28"
+    "ir_comment": "",
+    "review_note": "IR審査エラー: unbalanced braces",
+    "source_urls": [],
+    "reviewed_at": "2026-11-02"
   },
   "7991": {
     "review_status": "neutral",
@@ -210,9 +203,9 @@
     "score_adjustment": 0,
     "add_badges": [],
     "ir_comment": "",
-    "review_note": "IR審査エラー: unbalanced braces",
+    "review_note": "IR審査エラー: no json object",
     "source_urls": [],
-    "reviewed_at": "2026-10-29"
+    "reviewed_at": "2026-11-02"
   },
   "3388": {
     "review_status": "neutral",
@@ -238,7 +231,7 @@
     "ir_comment": "",
     "review_note": "IR審査エラー: no json object",
     "source_urls": [],
-    "reviewed_at": "2026-10-29"
+    "reviewed_at": "2026-11-02"
   },
   "9633": {
     "review_status": "neutral",
@@ -282,7 +275,7 @@
     "ir_comment": "",
     "review_note": "IR審査エラー: no json object",
     "source_urls": [],
-    "reviewed_at": "2026-10-29"
+    "reviewed_at": "2026-11-02"
   },
   "6743": {
     "review_status": "positive",
@@ -334,7 +327,7 @@
     "ir_comment": "",
     "review_note": "IR審査エラー: no json object",
     "source_urls": [],
-    "reviewed_at": "2026-10-29"
+    "reviewed_at": "2026-11-02"
   },
   "5757": {
     "review_status": "negative",
@@ -389,15 +382,29 @@
     "reviewed_at": "2026-09-24"
   },
   "5697": {
-    "review_status": "neutral",
-    "catalysts_found": [],
-    "risks_found": [],
-    "score_adjustment": 0,
-    "add_badges": [],
-    "ir_comment": "",
-    "review_note": "IR審査エラー: no json object",
-    "source_urls": [],
-    "reviewed_at": "2026-10-29"
+    "review_status": "positive",
+    "catalysts_found": [
+      "2026年5月12日発表の2026年3月期本決算で、経常利益が従来予想(8.1億円)を上回る9.6億円(前期比33.2%増)で着地し、2027年3月期も3.5%増益見通し(6期連続増収・3期連続増益）",
+      "同時に前期の年間配当を25円→30円に増額修正、2027年3月期も30円継続を発表(配当性向約29.6%)",
+      "2026年8月4日発表の2027年3月期第1四半期は自動車生産回復を背景に経常利益が前年同期比約80%増となり、通期計画に対する進捗率は41%と順調"
+    ],
+    "risks_found": [
+      "自社株買いの新規発表やPBR改善に向けた資本政策の具体的開示は確認されず、PBR0.48倍の評価解消に向けた追加施策は現時点で見当たらない",
+      "大株主の日本製鉄(33.41%)グループが上位株主を占め、鉄鋼・自動車業界の需給動向に業績が左右されやすい構造的リスクは残る"
+    ],
+    "score_adjustment": 3,
+    "add_badges": [
+      "⬆️増配発表"
+    ],
+    "ir_comment": "2026年3月期は経常増益で上振れ着地し、配当を25円→30円に増額。2027年3月期も30円継続方針。第1四半期も経常利益約80%増と好調に推移。一方、自社株買いなど追加の株主還元策は未発表。",
+    "review_note": "直近決算は増益・増配で着地し株主還元姿勢は維持。ただし自社株買い等の追加施策は確認できず。",
+    "source_urls": [
+      "https://kabutan.jp/stock/news?code=5697&b=k202605120291",
+      "https://finance.yahoo.co.jp/quote/5697.O/disclosure",
+      "https://s.kabutan.jp/stocks/5697/news/",
+      "https://kabutan.jp/stock/holder?code=5697"
+    ],
+    "reviewed_at": "2026-11-02"
   },
   "7235": {
     "review_status": "neutral",
@@ -406,9 +413,9 @@
     "score_adjustment": 0,
     "add_badges": [],
     "ir_comment": "",
-    "review_note": "IR審査エラー: unbalanced braces",
+    "review_note": "IR審査エラー: no json object",
     "source_urls": [],
-    "reviewed_at": "2026-10-29"
+    "reviewed_at": "2026-11-02"
   },
   "8904": {
     "review_status": "neutral",
@@ -460,9 +467,9 @@
     "score_adjustment": 0,
     "add_badges": [],
     "ir_comment": "",
-    "review_note": "IR審査エラー: no json object",
+    "review_note": "IR審査エラー: unbalanced braces",
     "source_urls": [],
-    "reviewed_at": "2026-10-22"
+    "reviewed_at": "2026-11-02"
   },
   "6797": {
     "review_status": "neutral",
@@ -504,7 +511,7 @@
     "ir_comment": "",
     "review_note": "IR審査エラー: no json object",
     "source_urls": [],
-    "reviewed_at": "2026-10-29"
+    "reviewed_at": "2026-11-02"
   },
   "8747": {
     "review_status": "neutral",
@@ -587,7 +594,7 @@
     "ir_comment": "",
     "review_note": "IR審査エラー: no json object",
     "source_urls": [],
-    "reviewed_at": "2026-10-26"
+    "reviewed_at": "2026-11-02"
   },
   "8138": {
     "review_status": "neutral",
@@ -607,9 +614,9 @@
     "score_adjustment": 0,
     "add_badges": [],
     "ir_comment": "",
-    "review_note": "IR審査エラー: unbalanced braces",
+    "review_note": "IR審査エラー: no json object",
     "source_urls": [],
-    "reviewed_at": "2026-10-29"
+    "reviewed_at": "2026-11-02"
   },
   "8864": {
     "review_status": "neutral",
@@ -629,9 +636,9 @@
     "score_adjustment": 0,
     "add_badges": [],
     "ir_comment": "",
-    "review_note": "IR審査エラー: no json object",
+    "review_note": "IR審査エラー: unbalanced braces",
     "source_urls": [],
-    "reviewed_at": "2026-10-29"
+    "reviewed_at": "2026-11-02"
   },
   "7192": {
     "review_status": "neutral",
@@ -673,7 +680,7 @@
     "ir_comment": "",
     "review_note": "IR審査エラー: no json object",
     "source_urls": [],
-    "reviewed_at": "2026-10-29"
+    "reviewed_at": "2026-11-02"
   },
   "8869": {
     "review_status": "neutral",
@@ -781,7 +788,7 @@
     "ir_comment": "",
     "review_note": "IR審査エラー: no json object",
     "source_urls": [],
-    "reviewed_at": "2026-10-26"
+    "reviewed_at": "2026-11-02"
   },
   "8844": {
     "review_status": "neutral",
@@ -790,9 +797,9 @@
     "score_adjustment": 0,
     "add_badges": [],
     "ir_comment": "",
-    "review_note": "IR審査エラー: no json object",
+    "review_note": "IR審査エラー: unbalanced braces",
     "source_urls": [],
-    "reviewed_at": "2026-10-29"
+    "reviewed_at": "2026-11-02"
   },
   "9857": {
     "review_status": "neutral",
@@ -907,7 +914,7 @@
     "ir_comment": "",
     "review_note": "IR審査エラー: no json object",
     "source_urls": [],
-    "reviewed_at": "2026-10-29"
+    "reviewed_at": "2026-11-02"
   },
   "6335": {
     "review_status": "neutral",
@@ -929,7 +936,7 @@
     "ir_comment": "",
     "review_note": "IR審査エラー: unbalanced braces",
     "source_urls": [],
-    "reviewed_at": "2026-10-29"
+    "reviewed_at": "2026-11-02"
   },
   "6647": {
     "review_status": "neutral",
@@ -956,26 +963,23 @@
   "4224": {
     "review_status": "positive",
     "catalysts_found": [
-      "2026年5月14日発表：2026年3月期の期末配当を70円→85円に増額する「増配」を発表。配当性向は38.4%。",
-      "2026年3月期決算は経常利益が前期比51.7%増の14.4億円となり、会社の従来予想(12億円)を上回って着地。",
-      "2027年3月期（今期）も前期比4.1%増の経常利益15億円を見込み、1株配当85円を維持する方針。6期連続増収の見通し。",
-      "2026年8月6日発表の第1四半期決算で経常利益が前年同期比67%増益となり、好調なスタートを確認。"
+      "2026年10月29日、2027年3月期の業績予想を上方修正。上期(4-9月)経常利益を6.5億円→13億円(2.0倍)に、通期経常利益も15.0億円→20.5億円(+36.7%)、純利益10.5億円→14.0億円(+33.3%)に増額。10期ぶりの最高益見通し。",
+      "同日、2027年3月期の期末配当を1株85円→100円に15円増額する増配を発表。"
     ],
     "risks_found": [],
-    "score_adjustment": 4,
+    "score_adjustment": 8,
     "add_badges": [
+      "⬆️上方修正",
       "⬆️増配発表"
     ],
-    "ir_comment": "2026年3月期は経常増益51.7%で着地し会社予想を上回る。期末配当を70円→85円に増配、今期も85円維持予定。8月発表の1Qも経常67%増益と好調。自社株買いやMBO/TOB等の発表は確認されず。",
-    "review_note": "増配発表と好決算の継続が確認されたがPBR改善策等の追加情報は限定的",
+    "ir_comment": "2026/10/29に通期業績予想を上方修正(経常+36.7%、純利益+33.3%)、同時に期末配当を85円→100円に増額。合成樹脂加工品の販売価格改定効果等により10期ぶり最高益を見込む。直近半年で自社株買いやMBO/TOB、不祥事等のネガティブ材料は確認されず。",
+    "review_note": "直近の上方修正・増配発表はポジティブ。重大リスクは確認されず。",
     "source_urls": [
       "https://www.lonseal.co.jp/ir/closing/",
-      "https://finance.yahoo.co.jp/quote/4224.T/financials",
-      "https://finance.yahoo.co.jp/quote/4224.T/dividend",
-      "https://kabutan.jp/stock/news?code=4224&b=k202605140102",
-      "https://kabutan.jp/stock/finance?code=4224"
+      "https://kabutan.jp/news/marketnews/?b=k202610290041",
+      "https://kabutan.jp/stock/news?code=4224&nmode=3"
     ],
-    "reviewed_at": "2026-10-15"
+    "reviewed_at": "2026-11-02"
   },
   "4625": {
     "review_status": "positive",
@@ -1245,9 +1249,9 @@
     "score_adjustment": 0,
     "add_badges": [],
     "ir_comment": "",
-    "review_note": "IR審査エラー: no json object",
+    "review_note": "IR審査エラー: unbalanced braces",
     "source_urls": [],
-    "reviewed_at": "2026-10-22"
+    "reviewed_at": "2026-11-02"
   },
   "8226": {
     "review_status": "neutral",
@@ -1258,6 +1262,6 @@
     "ir_comment": "",
     "review_note": "IR審査エラー: no json object",
     "source_urls": [],
-    "reviewed_at": "2026-10-26"
+    "reviewed_at": "2026-11-02"
   }
 }
