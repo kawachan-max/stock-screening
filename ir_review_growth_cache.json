@@ -25,43 +25,49 @@
     "reviewed_at": "2026-05-21"
   },
   "8152": {
+    "review_status": "positive",
+    "catalysts_found": [
+      "2027年3月期(今期)会社計画は経常利益30.2%増、純利益68.7%増の大幅増益予想",
+      "2026年8月10日発表の1Q決算は経常利益8.56億円で前年同期比34.8%増、通期進捗率24.2%と順調",
+      "2025年6月・2026年6月と2年連続で「投資単位の引下げに関する考え方及び方針等について」を開示し、PBR改善・流動性向上への取り組み姿勢を示している",
+      "プラズマ処理装置事業を手掛ける新会社を子会社化(2026年9月30日)し事業領域を拡大"
+    ],
+    "risks_found": [
+      "前期(2026年3月期)純利益は前年比42%減(前々期に投資有価証券売却益という一過性の特別利益があった反動)",
+      "配当は100円で据え置き、増配・自社株買いの新規発表は直近半年で確認できず、株主還元の具体的な上積みは限定的",
+      "配当利回りは1.4%台とやや低水準"
+    ],
+    "score_adjustment": 2,
+    "add_badges": [
+      "⬆️還元強化"
+    ],
+    "ir_comment": "直近1Q(2026年8月開示)は経常利益34.8%増と好調に進捗。今期計画は経常+30.2%、純利益+68.7%の大幅増益を見込む。配当は100円据え置きで増配なし。PBR改善に向け投資単位引下げ方針を2年連続開示。自社株買いの新規発表やMBO/TOB、不祥事等のリスク材料は確認されず。",
+    "review_note": "大幅増益計画・PBR改善方針開示はプラス材料だが、増配・自社株買いの新規発表はなく材料はやや限定的。",
+    "source_urls": [
+      "https://www.somar.co.jp/ir/",
+      "https://www.somar.co.jp/upload/ir/2CUK7HF-ir_file.pdf",
+      "https://s.kabutan.jp/stocks/8152/news/",
+      "https://finance.biggo.jp/news/ir_8152.T_20260930_2b13dbc10726"
+    ],
+    "reviewed_at": "2026-11-05"
+  },
+  "8917": {
     "review_status": "neutral",
     "catalysts_found": [],
     "risks_found": [],
     "score_adjustment": 0,
     "add_badges": [],
-    "ir_comment": "",
-    "review_note": "IR審査エラー: no json object",
-    "source_urls": [],
-    "reviewed_at": "2026-11-02"
-  },
-  "8917": {
-    "review_status": "neutral",
-    "catalysts_found": [
-      "2026年10月期第3四半期(9/4発表)累計経常利益18.68億円、通期予想(25億円)に対し進捗率74.7%と順調",
-      "中間決算(6/5発表)は経常利益12.24億円で事前予想を上回る水準",
-      "決算発表後に株価反発（収益性改善による増益決算を好感）との報道"
-    ],
-    "risks_found": [
-      "自社株買い・増配など直接的な株主還元強化策の新規発表は確認されず、配当は43円で複数期据え置き",
-      "大株主であった米フィデリティ系(FMR LLC)が2025年4月以降段階的に持株比率を低下(7.1%→4.98%等)",
-      "役員向け株式報酬型ストック・オプションの発行（軽微な希薄化要因、2026年2月・4月）",
-      "2025年12月に買収防衛策（大規模買付行為への対応方針）の継続を決議"
-    ],
-    "score_adjustment": 1,
-    "add_badges": [],
-    "ir_comment": "2026年10月期3Q累計は経常利益18.68億円で進捗率74.7%、中間期も事前予想超過と業績は堅調。ただし正式な上方修正・増配・自社株買いの発表はなく、配当は43円据え置き。フィデリティ系の持株比率低下や役員SO発行(軽微希薄化)も見られる。",
-    "review_note": "業績は進捗順調で株価好感も、増配・自社株買い等の明確な還元強化材料は未確認。中立的。",
+    "ir_comment": "2026年10月期は通期予想据え置き（経常25億円、配当43円）。第3四半期累計は売上減も営業利益+12%、純利益+15%と増益基調。配当は10年連続43円で安定も増配・自社株買いの新規発表なし。",
+    "review_note": "業績は堅調に進捗も上方修正・増配・自社株買いなど明確なカタリストは直近半年に確認できず",
     "source_urls": [
-      "https://kabuyoho.jp/sp/reportTop?bcode=8917",
-      "https://kabuyoho.jp/reportDisclose?bcode=8917",
-      "https://www.f-juken.co.jp/ir/",
+      "https://www.f-juken.co.jp/ir/calender.html",
       "https://kabutan.jp/stock/finance?code=8917",
-      "https://kabutan.jp/stock/holder?code=8917",
-      "https://irbank.net/8917",
-      "https://finance.yahoo.co.jp/quote/8917.T/dividend"
+      "https://finance.yahoo.co.jp/quote/8917.T/dividend",
+      "https://finance.yahoo.co.jp/quote/8917.T",
+      "https://kabuyoho.jp/reportDisclose?bcode=8917",
+      "https://s.kabutan.jp/stocks/8917/news/"
     ],
-    "reviewed_at": "2026-10-19"
+    "reviewed_at": "2026-11-05"
   },
   "5280": {
     "review_status": "neutral",
@@ -72,7 +78,7 @@
     "ir_comment": "",
     "review_note": "IR審査エラー: no json object",
     "source_urls": [],
-    "reviewed_at": "2026-11-02"
+    "reviewed_at": "2026-11-05"
   },
   "8881": {
     "review_status": "positive",
@@ -107,35 +113,15 @@
     "reviewed_at": "2026-10-22"
   },
   "8935": {
-    "review_status": "positive",
-    "catalysts_found": [
-      "2026年3月期の通期連結業績予想を2026年2月3日と4月21日の2度にわたり上方修正（経常利益は最終的に前期比51.8%増の143.6億円で着地、6期ぶりの最高益更新）",
-      "業績好調を受けて配当予想を複数回増額修正：2025年4月(54円)→2026年2月(特別配当含め62円)→2026年4月(66円)と連続増配。2027年3月期は年間80円（中間40円・期末40円）を予想し増配トレンド継続",
-      "2024年12月には上場20周年記念配当を実施するなど株主還元姿勢を強化",
-      "自己資本比率71%超・有利子負債依存度低水準など財務健全性が高く、PBR0.8倍前後の低評価からの資本効率改善（東証要請対応）が期待される局面"
-    ],
-    "risks_found": [
-      "自社株買いの新規発表は直近半年以内に確認されず、株主還元は配当中心にとどまる",
-      "不動産市況・金利動向次第では投資用マンション販売の需要減速リスクが存在（ただし直近決算では顕在化せず）"
-    ],
-    "score_adjustment": 8,
-    "add_badges": [
-      "⬆️上方修正",
-      "⬆️増配発表"
-    ],
-    "ir_comment": "2026年3月期は資産運用型マンション販売好調で売上高1423億円・最終益100億円と過去最高益を達成。2月・4月と2度の上方修正、配当も54→62→66円へ連続増額し、27年3月期は80円予想。増収増益と増配が株価の支援材料。",
-    "review_note": "直近半年で2度の上方修正と連続増配を発表。好業績モメンタムが継続しておりポジティブ材料が目立つ。",
-    "source_urls": [
-      "https://irbank.net/8935/ir",
-      "https://irbank.net/8935",
-      "https://s.kabutan.jp/news/k202604210007/",
-      "https://kabutan.jp/news/?b=k202504210002",
-      "https://minkabu.jp/news/4430621",
-      "https://kabutan.jp/stock/news?code=8935&b=n202602090663",
-      "https://strainer.jp/companies/JP-8935/dividends",
-      "https://www.nikkei.com/nkd/company/kigyo/?scode=8935"
-    ],
-    "reviewed_at": "2026-10-19"
+    "review_status": "neutral",
+    "catalysts_found": [],
+    "risks_found": [],
+    "score_adjustment": 0,
+    "add_badges": [],
+    "ir_comment": "",
+    "review_note": "IR審査エラー: no json object",
+    "source_urls": [],
+    "reviewed_at": "2026-11-05"
   },
   "3293": {
     "review_status": "neutral",
@@ -146,7 +132,7 @@
     "ir_comment": "",
     "review_note": "IR審査エラー: no json object",
     "source_urls": [],
-    "reviewed_at": "2026-11-02"
+    "reviewed_at": "2026-11-05"
   },
   "8135": {
     "review_status": "neutral",
@@ -173,28 +159,26 @@
   "7175": {
     "review_status": "positive",
     "catalysts_found": [
-      "2026年9月15日、2027年3月期中間配当を前年同期比17円増配の37円とする修正を発表",
-      "2026年3月26日、未定だった2026年3月期年間配当を73円（前期比+18円）に増配決定",
-      "2026年3月期本決算（4月24日発表）は経常利益が前期比44.0％増益、純利益も38.8％増と大幅増益"
+      "2026年9月15日、2027年3月期の中間配当予定を前年同期比+17円の37円に増額修正",
+      "2026年10月20日、非開示だった2027年3月期第2四半期（上期）業績見通しを開示し、経常利益が前年同期比2.1倍の10.7億円に拡大する見通しを発表",
+      "2026年3月期本決算（4月24日発表）では経常利益が前期比44%増益となり、年間配当も73円（前期比+18円）に増額決定（ただし発表時期は直近半年超）"
     ],
-    "risks_found": [
-      "2027年3月期の通期業績・配当予想は依然未定（開示保留）であり、先行き不透明感が残る",
-      "証券業のため市況変動（株式売買代金の増減）に業績が左右されやすい"
-    ],
-    "score_adjustment": 3,
+    "risks_found": [],
+    "score_adjustment": 6,
     "add_badges": [
-      "⬆️増配発表"
+      "⬆️増配発表",
+      "⬆️上方修正"
     ],
-    "ir_comment": "直近半年で中間配当を17円増配（37円）、前期は年間配当73円と大幅増配。2026年3月期は経常増益44％と好調だが、2027年3月期通期業績・配当は未定で開示待ち。自社株買いの新規発表は確認されず。",
-    "review_note": "直近で連続増配発表あり。好業績だが来期見通し未定でサプライズ余地と不透明感が併存。",
+    "ir_comment": "直近半年で中間配当を前年比17円増配（37円）に修正し、非開示だった上期業績見通しも経常利益2.1倍成長を開示するなど、増収増益と株主還元強化の動きが確認できる。下方修正・減配・不祥事・TOB等のネガティブ材料は検索範囲内で確認されず。",
+    "review_note": "増配修正と上期大幅増益見通しの開示が好材料。自社株買いやMBO等の材料は未確認。",
     "source_urls": [
+      "https://www.imamura.co.jp/",
       "https://kabutan.jp/stock/news?code=7175",
-      "https://finboard.jp/companies/JP:7175/dividends",
-      "https://minkabu.jp/stock/7175/settlement",
-      "https://kabutan.jp/news/?b=k202603260014",
-      "https://scouter.monex.co.jp/report/dps/7175"
+      "https://kabutan.jp/news/marketnews/?b=k202610200004",
+      "https://strainer.jp/companies/JP-7175/dividends",
+      "https://finance.yahoo.co.jp/quote/7175.T/dividend"
     ],
-    "reviewed_at": "2026-10-19"
+    "reviewed_at": "2026-11-05"
   },
   "8891": {
     "review_status": "neutral",
@@ -205,7 +189,7 @@
     "ir_comment": "",
     "review_note": "IR審査エラー: no json object",
     "source_urls": [],
-    "reviewed_at": "2026-11-02"
+    "reviewed_at": "2026-11-05"
   },
   "3388": {
     "review_status": "neutral",
@@ -275,7 +259,7 @@
     "ir_comment": "",
     "review_note": "IR審査エラー: no json object",
     "source_urls": [],
-    "reviewed_at": "2026-11-02"
+    "reviewed_at": "2026-11-05"
   },
   "6743": {
     "review_status": "positive",
@@ -327,7 +311,7 @@
     "ir_comment": "",
     "review_note": "IR審査エラー: no json object",
     "source_urls": [],
-    "reviewed_at": "2026-11-02"
+    "reviewed_at": "2026-11-05"
   },
   "5757": {
     "review_status": "negative",
@@ -415,7 +399,7 @@
     "ir_comment": "",
     "review_note": "IR審査エラー: no json object",
     "source_urls": [],
-    "reviewed_at": "2026-11-02"
+    "reviewed_at": "2026-11-05"
   },
   "8904": {
     "review_status": "neutral",
@@ -467,9 +451,9 @@
     "score_adjustment": 0,
     "add_badges": [],
     "ir_comment": "",
-    "review_note": "IR審査エラー: unbalanced braces",
+    "review_note": "IR審査エラー: no json object",
     "source_urls": [],
-    "reviewed_at": "2026-11-02"
+    "reviewed_at": "2026-11-05"
   },
   "6797": {
     "review_status": "neutral",
@@ -511,7 +495,7 @@
     "ir_comment": "",
     "review_note": "IR審査エラー: no json object",
     "source_urls": [],
-    "reviewed_at": "2026-11-02"
+    "reviewed_at": "2026-11-05"
   },
   "8747": {
     "review_status": "neutral",
@@ -520,9 +504,9 @@
     "score_adjustment": 0,
     "add_badges": [],
     "ir_comment": "",
-    "review_note": "IR審査エラー: unbalanced braces",
+    "review_note": "IR審査エラー: no json object",
     "source_urls": [],
-    "reviewed_at": "2026-10-29"
+    "reviewed_at": "2026-11-05"
   },
   "8150": {
     "review_status": "neutral",
@@ -594,7 +578,7 @@
     "ir_comment": "",
     "review_note": "IR審査エラー: no json object",
     "source_urls": [],
-    "reviewed_at": "2026-11-02"
+    "reviewed_at": "2026-11-05"
   },
   "8138": {
     "review_status": "neutral",
@@ -608,15 +592,32 @@
     "reviewed_at": "2026-10-08"
   },
   "4624": {
-    "review_status": "neutral",
-    "catalysts_found": [],
-    "risks_found": [],
-    "score_adjustment": 0,
-    "add_badges": [],
-    "ir_comment": "",
-    "review_note": "IR審査エラー: no json object",
-    "source_urls": [],
-    "reviewed_at": "2026-11-02"
+    "review_status": "positive",
+    "catalysts_found": [
+      "2026年4月30日、2026年3月期(前期)の連結経常利益予想を777百万円から1,070百万円へ37.5%上方修正",
+      "2026年8月5日、2026年3月期実績は経常利益40.4%増益で着地し、34期ぶりの最高益を記録",
+      "2026年8月5日、2027年3月期(今期)通期予想を新規開示し、経常利益15.1%増益(12.4億円)を計画",
+      "2026年11月4日、2027年3月期第2四半期(上期)実績で経常利益が前年同期比62.3%増の7.4億円となり、従来予想(6.5億円)を上回って着地"
+    ],
+    "risks_found": [
+      "2026年8月4日、滋賀工場における落雷の影響に関するお知らせが開示されており、一過性の操業・コスト影響が生じた可能性がある",
+      "配当は50円で据え置きが続いており、増配や自社株買いなど追加的な株主還元策は直近半年で発表されていない",
+      "下期(10-3月期)は通期計画を据え置いたことで、計算上は前年同期比20%程度の減益となる見込みであり、上期の増益ペースが下期も継続するかは不透明"
+    ],
+    "score_adjustment": 5,
+    "add_badges": [
+      "⬆️上方修正"
+    ],
+    "ir_comment": "2026年4月に前期経常利益を37.5%上方修正し34期ぶり最高益を達成。今期(27年3月期)も上期経常利益が前年比62.3%増と会社計画を上回るペースで進捗。一方、配当は50円据え置きで自社株買い等の新規発表はなし。滋賀工場の落雷影響も開示されている。",
+    "review_note": "連続増益・上方修正でポジティブも、株主還元強化や自社株買いの新規発表はなく一過性リスクにも留意",
+    "source_urls": [
+      "https://www.isamu.co.jp/",
+      "https://kabutan.jp/stock/news?code=4624",
+      "https://kabutan.jp/news/marketnews/?b=k202604300021",
+      "https://s.kabutan.jp/news/k202611040013/",
+      "https://kabuyoho.jp/reportTop?bcode=4624"
+    ],
+    "reviewed_at": "2026-11-05"
   },
   "8864": {
     "review_status": "neutral",
@@ -636,9 +637,9 @@
     "score_adjustment": 0,
     "add_badges": [],
     "ir_comment": "",
-    "review_note": "IR審査エラー: unbalanced braces",
+    "review_note": "IR審査エラー: no json object",
     "source_urls": [],
-    "reviewed_at": "2026-11-02"
+    "reviewed_at": "2026-11-05"
   },
   "7192": {
     "review_status": "neutral",
@@ -680,7 +681,7 @@
     "ir_comment": "",
     "review_note": "IR審査エラー: no json object",
     "source_urls": [],
-    "reviewed_at": "2026-11-02"
+    "reviewed_at": "2026-11-05"
   },
   "8869": {
     "review_status": "neutral",
@@ -788,7 +789,7 @@
     "ir_comment": "",
     "review_note": "IR審査エラー: no json object",
     "source_urls": [],
-    "reviewed_at": "2026-11-02"
+    "reviewed_at": "2026-11-05"
   },
   "8844": {
     "review_status": "neutral",
@@ -797,9 +798,9 @@
     "score_adjustment": 0,
     "add_badges": [],
     "ir_comment": "",
-    "review_note": "IR審査エラー: unbalanced braces",
+    "review_note": "IR審査エラー: no json object",
     "source_urls": [],
-    "reviewed_at": "2026-11-02"
+    "reviewed_at": "2026-11-05"
   },
   "9857": {
     "review_status": "neutral",
@@ -914,7 +915,7 @@
     "ir_comment": "",
     "review_note": "IR審査エラー: no json object",
     "source_urls": [],
-    "reviewed_at": "2026-11-02"
+    "reviewed_at": "2026-11-05"
   },
   "6335": {
     "review_status": "neutral",
@@ -928,15 +929,31 @@
     "reviewed_at": "2026-10-29"
   },
   "8928": {
-    "review_status": "neutral",
-    "catalysts_found": [],
-    "risks_found": [],
-    "score_adjustment": 0,
-    "add_badges": [],
-    "ir_comment": "",
-    "review_note": "IR審査エラー: unbalanced braces",
-    "source_urls": [],
-    "reviewed_at": "2026-11-02"
+    "review_status": "positive",
+    "catalysts_found": [
+      "2026年6月期本決算で経常利益7,692百万円(前期比+36.9%)、純利益4,616百万円(+24.2%)と事前予想を上回る増収増益を達成",
+      "年間配当を2025年6月期の58円から2026年6月期は78円へ増配し、2027年6月期も80円へさらなる増配を計画",
+      "2026年6月期第1四半期(7-9月)決算で経常利益が前年同期比45.7%増となり、通期計画に対する進捗率66.5%と好調"
+    ],
+    "risks_found": [
+      "2027年6月期の会社計画は経常利益が前期比9.0%減の70億円となる減益見通し",
+      "為替差益など特別要因の反動が業績の一過性押し上げ要因だった可能性があり、翌期の反動減が意識される"
+    ],
+    "score_adjustment": 4,
+    "add_badges": [
+      "⬆️増配発表",
+      "⚠️一過性"
+    ],
+    "ir_comment": "2026年6月期は経常増益36.9%で着地し市場予想を上回る好決算。配当は58円→78円へ増配、2027年期も80円予定。ただし2027年6月期計画は経常減益(-9.0%)見通しで反動減リスクあり。",
+    "review_note": "好決算・増配はプラス材料だが、来期減益計画と特別利益反動が懸念材料として相殺",
+    "source_urls": [
+      "https://japanir.jp/company/company-8928/ir/8928-20260812-02_wp_financial_summary/",
+      "https://kabutan.jp/stock/finance?code=8928",
+      "https://kabutan.jp/news/?b=k202511110166",
+      "https://finance.yahoo.co.jp/quote/8928.T/dividend",
+      "https://www.anabuki.ne.jp/cms_upload/news/412/20250808_tanshin.pdf"
+    ],
+    "reviewed_at": "2026-11-05"
   },
   "6647": {
     "review_status": "neutral",
@@ -1197,9 +1214,9 @@
     "score_adjustment": 0,
     "add_badges": [],
     "ir_comment": "",
-    "review_note": "IR審査エラー: unbalanced braces",
+    "review_note": "IR審査エラー: no json object",
     "source_urls": [],
-    "reviewed_at": "2026-10-19"
+    "reviewed_at": "2026-11-05"
   },
   "8871": {
     "review_status": "neutral",
@@ -1249,9 +1266,9 @@
     "score_adjustment": 0,
     "add_badges": [],
     "ir_comment": "",
-    "review_note": "IR審査エラー: unbalanced braces",
+    "review_note": "IR審査エラー: no json object",
     "source_urls": [],
-    "reviewed_at": "2026-11-02"
+    "reviewed_at": "2026-11-05"
   },
   "8226": {
     "review_status": "neutral",
@@ -1262,6 +1279,17 @@
     "ir_comment": "",
     "review_note": "IR審査エラー: no json object",
     "source_urls": [],
-    "reviewed_at": "2026-11-02"
+    "reviewed_at": "2026-11-05"
+  },
+  "1443": {
+    "review_status": "neutral",
+    "catalysts_found": [],
+    "risks_found": [],
+    "score_adjustment": 0,
+    "add_badges": [],
+    "ir_comment": "",
+    "review_note": "IR審査エラー: no json object",
+    "source_urls": [],
+    "reviewed_at": "2026-11-05"
   }
 }
