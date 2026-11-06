@@ -5899,6 +5899,66 @@
       "stock_price": 1003,
       "theoretical_price": 3164,
       "upside_percent": 215.4
+    },
+    {
+      "date": "2026-11-07",
+      "code": "9867",
+      "name": "SOLEKIA LIMITED",
+      "tab": "general",
+      "score": 66,
+      "stock_price": 9030,
+      "theoretical_price": 35820,
+      "upside_percent": 296.7
+    },
+    {
+      "date": "2026-11-07",
+      "code": "9857",
+      "name": "EIWA CORPORATION",
+      "tab": "general",
+      "score": 63,
+      "stock_price": 2410,
+      "theoretical_price": 6572,
+      "upside_percent": 172.7
+    },
+    {
+      "date": "2026-11-07",
+      "code": "6743",
+      "name": "DAIDO SIGNAL CO",
+      "tab": "general",
+      "score": 62,
+      "stock_price": 1067,
+      "theoretical_price": 2241,
+      "upside_percent": 110.0
+    },
+    {
+      "date": "2026-11-07",
+      "code": "8891",
+      "name": "AMG HOLDINGS CO LTD",
+      "tab": "finance",
+      "score": 70,
+      "stock_price": 1922,
+      "theoretical_price": 7050,
+      "upside_percent": 266.8
+    },
+    {
+      "date": "2026-11-07",
+      "code": "5280",
+      "name": "YOSHICON CO LTD",
+      "tab": "finance",
+      "score": 67,
+      "stock_price": 1980,
+      "theoretical_price": 6499,
+      "upside_percent": 228.2
+    },
+    {
+      "date": "2026-11-07",
+      "code": "8917",
+      "name": "FIRST JUKEN CO LTD",
+      "tab": "finance",
+      "score": 62,
+      "stock_price": 981,
+      "theoretical_price": 3164,
+      "upside_percent": 222.5
     }
   ]
 }
