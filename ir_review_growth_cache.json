@@ -78,39 +78,18 @@
     "ir_comment": "",
     "review_note": "IR審査エラー: no json object",
     "source_urls": [],
-    "reviewed_at": "2026-11-05"
+    "reviewed_at": "2026-11-09"
   },
   "8881": {
-    "review_status": "positive",
-    "catalysts_found": [
-      "2026年3月期は売上高878億円(+15.2%)、経常利益60億円(+95.6%)、純利益42億円(+103.9%)と大幅増益で着地し、期中計画を大きく上回る決算となった",
-      "年間配当を23円から35円へ大幅増配(+52.2%)し、2027年3月期も37円へさらなる増配を予想",
-      "2026年6月に株主優待制度を拡充し、Amazonギフトカードを新たに追加するなど株主還元姿勢を強化"
-    ],
-    "risks_found": [
-      "2027年3月期の会社予想は経常利益50億円(前期比-16.7%)、純利益35億円(-16.6%)と減益見通しであり、前期の大幅増益が一過性だった可能性を示唆",
-      "直近半年以内に自社株買いの発表は確認されず、投資家からも自社株買いへの期待は限定的との声がある",
-      "MBO・TOB・大株主異動、不祥事・訴訟等のネガティブ材料は確認されなかった"
-    ],
-    "score_adjustment": 4,
-    "add_badges": [
-      "⬆️増配発表",
-      "⬆️上方修正",
-      "⬆️還元強化",
-      "⚠️一過性"
-    ],
-    "ir_comment": "2026年3月期は経常利益が前期比95.6%増と大幅増益で着地し、配当も23円→35円へ増配、27年3月期は37円予想。優待も拡充。一方27年3月期は反動で経常減益見通し。自社株買いの発表は無し。",
-    "review_note": "大幅増益・増配はポジティブだが、来期は反動減益予想で一過性利益の可能性に留意。",
-    "source_urls": [
-      "https://www.nikkei.com/nkd/disclosure/tdnr/20251106590716/",
-      "https://kabutan.jp/stock/news?code=8881&b=k202605120027",
-      "https://kabutan.jp/stock/finance?code=8881",
-      "https://finance.yahoo.co.jp/quote/8881.T/dividend",
-      "https://www.kabutec.jp/company/?code=8881",
-      "https://kabutan.jp/stock/yutai?code=8881",
-      "https://www.nikkei.com/nkd/disclosure/tdnr/20260203546405/"
-    ],
-    "reviewed_at": "2026-10-22"
+    "review_status": "neutral",
+    "catalysts_found": [],
+    "risks_found": [],
+    "score_adjustment": 0,
+    "add_badges": [],
+    "ir_comment": "",
+    "review_note": "IR審査エラー: no json object",
+    "source_urls": [],
+    "reviewed_at": "2026-11-09"
   },
   "8935": {
     "review_status": "neutral",
@@ -121,7 +100,7 @@
     "ir_comment": "",
     "review_note": "IR審査エラー: no json object",
     "source_urls": [],
-    "reviewed_at": "2026-11-05"
+    "reviewed_at": "2026-11-09"
   },
   "3293": {
     "review_status": "neutral",
@@ -132,7 +111,7 @@
     "ir_comment": "",
     "review_note": "IR審査エラー: no json object",
     "source_urls": [],
-    "reviewed_at": "2026-11-05"
+    "reviewed_at": "2026-11-09"
   },
   "8135": {
     "review_status": "neutral",
@@ -187,9 +166,9 @@
     "score_adjustment": 0,
     "add_badges": [],
     "ir_comment": "",
-    "review_note": "IR審査エラー: no json object",
+    "review_note": "IR審査エラー: unbalanced braces",
     "source_urls": [],
-    "reviewed_at": "2026-11-05"
+    "reviewed_at": "2026-11-09"
   },
   "3388": {
     "review_status": "neutral",
@@ -259,7 +238,7 @@
     "ir_comment": "",
     "review_note": "IR審査エラー: no json object",
     "source_urls": [],
-    "reviewed_at": "2026-11-05"
+    "reviewed_at": "2026-11-09"
   },
   "6743": {
     "review_status": "positive",
@@ -311,7 +290,7 @@
     "ir_comment": "",
     "review_note": "IR審査エラー: no json object",
     "source_urls": [],
-    "reviewed_at": "2026-11-05"
+    "reviewed_at": "2026-11-09"
   },
   "5757": {
     "review_status": "negative",
@@ -399,7 +378,7 @@
     "ir_comment": "",
     "review_note": "IR審査エラー: no json object",
     "source_urls": [],
-    "reviewed_at": "2026-11-05"
+    "reviewed_at": "2026-11-09"
   },
   "8904": {
     "review_status": "neutral",
@@ -495,7 +474,7 @@
     "ir_comment": "",
     "review_note": "IR審査エラー: no json object",
     "source_urls": [],
-    "reviewed_at": "2026-11-05"
+    "reviewed_at": "2026-11-09"
   },
   "8747": {
     "review_status": "neutral",
@@ -578,7 +557,7 @@
     "ir_comment": "",
     "review_note": "IR審査エラー: no json object",
     "source_urls": [],
-    "reviewed_at": "2026-11-05"
+    "reviewed_at": "2026-11-09"
   },
   "8138": {
     "review_status": "neutral",
@@ -639,7 +618,7 @@
     "ir_comment": "",
     "review_note": "IR審査エラー: no json object",
     "source_urls": [],
-    "reviewed_at": "2026-11-05"
+    "reviewed_at": "2026-11-09"
   },
   "7192": {
     "review_status": "neutral",
@@ -648,9 +627,9 @@
     "score_adjustment": 0,
     "add_badges": [],
     "ir_comment": "",
-    "review_note": "IR審査エラー: Error code: 404 - {'type': 'error', 'error': {'typ",
+    "review_note": "IR審査エラー: no json object",
     "source_urls": [],
-    "reviewed_at": "2026-06-18"
+    "reviewed_at": "2026-11-09"
   },
   "5819": {
     "review_status": "neutral",
@@ -681,18 +660,34 @@
     "ir_comment": "",
     "review_note": "IR審査エラー: no json object",
     "source_urls": [],
-    "reviewed_at": "2026-11-05"
+    "reviewed_at": "2026-11-09"
   },
   "8869": {
-    "review_status": "neutral",
-    "catalysts_found": [],
-    "risks_found": [],
-    "score_adjustment": 0,
-    "add_badges": [],
-    "ir_comment": "",
-    "review_note": "IR審査エラー: no json object",
-    "source_urls": [],
-    "reviewed_at": "2026-10-29"
+    "review_status": "positive",
+    "catalysts_found": [
+      "2026年2月9日、2026年3月期通期の経常利益予想を43億円から58億円へ34.9%上方修正（売上高・各利益とも増額）",
+      "2026年5月26日の決算発表で、上方修正後の通期予想をさらに上回り着地（売上高901億円、営業利益77億円、経常利益58億円、純利益38億円）",
+      "中期経営計画『中計2027』の進捗が良好で、26年3月期は売上・各利益とも中計目標を大幅に上回る実績",
+      "ROICも4.49%まで改善、自己資本比率も改善傾向"
+    ],
+    "risks_found": [
+      "2027年3月期の年間配当予想は40円で、前期の45円（普通配当40円＋記念配当5円）から5円減少。ただし普通配当自体は40円で据え置き、記念配当の終了による見かけ上の減少",
+      "直近半年以内に新規の自社株買い発表は確認できず",
+      "自己資本比率が22〜24%台とやや低水準"
+    ],
+    "score_adjustment": 6,
+    "add_badges": [
+      "⬆️上方修正",
+      "⬆️還元強化"
+    ],
+    "ir_comment": "2026年2月に通期経常利益を34.9%上方修正、5月の本決算では上方修正後予想も上回り着地。中計2027の進捗も良好。一方27年3月期配当は記念配当終了により45円→40円に減少予定だが普通配当は据え置き。",
+    "review_note": "上方修正・好決算が株価にプラス材料。配当は記念配当終了で見かけ上減少も実質維持。",
+    "source_urls": [
+      "https://www.meiwajisyo.co.jp/corp/ir/presentations/imgs/20260526_4Q_scenario.pdf",
+      "https://finance.biggo.jp/news/jpx_tdnet_140120260810516058",
+      "https://kabutan.jp/news/?b=k202602090135"
+    ],
+    "reviewed_at": "2026-11-09"
   },
   "3277": {
     "review_status": "neutral",
@@ -706,21 +701,32 @@
     "reviewed_at": "2026-06-29"
   },
   "4627": {
-    "review_status": "neutral",
-    "catalysts_found": [],
-    "risks_found": [],
-    "score_adjustment": 0,
-    "add_badges": [],
-    "ir_comment": "2026年10月期2Q(25/11-26/4)は増収増益。経常利益は為替差益等で前年比90.3%増となり、通期計画に対する進捗率も66.1%と高水準。ただし通期業績予想は据え置かれ、正式な上方修正・増配・自社株買いの発表は確認できず。",
-    "review_note": "2Q決算は好調も通期計画は据え置き。自社株買い・増配・下方修正等の材料は確認できず中立と判断。",
-    "source_urls": [
-      "https://natoco-group.securesite.jp/ir/library/result/",
-      "https://natoco-group.securesite.jp/ir/library/presentation/",
-      "https://finance.yahoo.co.jp/quote/4627.T",
-      "https://minkabu.jp/stock/4627/settlement",
-      "https://minkabu.jp/stock/4627/dividend"
+    "review_status": "positive",
+    "catalysts_found": [
+      "2026年9月4日、2026年10月期通期業績予想を上方修正（経常利益+43.9%、営業利益+40.0%、純利益+46.0%）。中東情勢を背景とした塗料・蒸留事業の販売増加、ファインケミカル事業の進捗、円安差益、受取利息増加が寄与",
+      "2026年5月11日、日本ゼオンより株式会社トウペを取得し完全子会社化すると発表。塗料事業領域の拡大と生産体制再構築を狙う成長戦略",
+      "進捗率は営業利益81.3%・経常利益83.5%と高水準で、期末にかけて更なる上振れ期待も"
     ],
-    "reviewed_at": "2026-08-13"
+    "risks_found": [
+      "大株主である大鳥居清和氏の保有割合減少が大量保有報告書（変更報告書No.3）で報告されており、需給面での懸念材料となる可能性",
+      "2026年10月期の予想配当は54円で前期実績55円から1円の微減（据え置き的水準）であり、大幅増益にもかかわらず増配発表はなし",
+      "直近半年以内で自社株買いの新規発表は確認されず、株主還元strengthening面では物足りなさが残る"
+    ],
+    "score_adjustment": 7,
+    "add_badges": [
+      "⬆️上方修正",
+      "⬆️還元強化"
+    ],
+    "ir_comment": "9月4日に通期経常利益を43.9%上方修正（15.5億円→22.3億円）。中東情勢による塗料・蒸留事業の販売増が主因。5月にはトウペ社の完全子会社化を発表し塗料事業拡大を図る。一方、増益にもかかわらず配当は前期比微減で据え置き的。",
+    "review_note": "大幅な業績上方修正とM&Aによる成長戦略が好材料。ただし増配や自社株買いの発表はなく還元強化は限定的。",
+    "source_urls": [
+      "https://www.release.tdnet.info/inbs/140120260903531250.pdf",
+      "https://www.nikkei.com/nkd/company/kigyo/?scode=4627",
+      "https://www.media-ir.com/news/?p=181008",
+      "https://finance-frontend-pc-dist.west.edge.storage-yahoo.jp/disclosure/20260529/20260528552177.pdf",
+      "https://irbank.net/4627/ir"
+    ],
+    "reviewed_at": "2026-11-09"
   },
   "3297": {
     "review_status": "positive",
@@ -787,9 +793,9 @@
     "score_adjustment": 0,
     "add_badges": [],
     "ir_comment": "",
-    "review_note": "IR審査エラー: no json object",
+    "review_note": "IR審査エラー: unbalanced braces",
     "source_urls": [],
-    "reviewed_at": "2026-11-05"
+    "reviewed_at": "2026-11-09"
   },
   "8844": {
     "review_status": "neutral",
@@ -800,7 +806,7 @@
     "ir_comment": "",
     "review_note": "IR審査エラー: no json object",
     "source_urls": [],
-    "reviewed_at": "2026-11-05"
+    "reviewed_at": "2026-11-09"
   },
   "9857": {
     "review_status": "neutral",
@@ -904,7 +910,7 @@
     "ir_comment": "",
     "review_note": "IR審査エラー: no json object",
     "source_urls": [],
-    "reviewed_at": "2026-10-29"
+    "reviewed_at": "2026-11-09"
   },
   "6365": {
     "review_status": "neutral",
@@ -1102,7 +1108,7 @@
     "ir_comment": "",
     "review_note": "IR審査エラー: no json object",
     "source_urls": [],
-    "reviewed_at": "2026-10-08"
+    "reviewed_at": "2026-11-09"
   },
   "8887": {
     "review_status": "positive",
@@ -1257,7 +1263,7 @@
     "ir_comment": "",
     "review_note": "IR審査エラー: no json object",
     "source_urls": [],
-    "reviewed_at": "2026-10-26"
+    "reviewed_at": "2026-11-09"
   },
   "5984": {
     "review_status": "neutral",
@@ -1279,7 +1285,7 @@
     "ir_comment": "",
     "review_note": "IR審査エラー: no json object",
     "source_urls": [],
-    "reviewed_at": "2026-11-05"
+    "reviewed_at": "2026-11-09"
   },
   "1443": {
     "review_status": "neutral",
