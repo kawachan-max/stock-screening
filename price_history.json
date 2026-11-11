@@ -6066,9 +6066,9 @@
       "name": "DAIDO SIGNAL CO",
       "tab": "general",
       "score": 62,
-      "stock_price": 995,
+      "stock_price": 1005,
       "theoretical_price": 2263,
-      "upside_percent": 127.5
+      "upside_percent": 125.2
     },
     {
       "date": "2026-11-11",
@@ -6076,9 +6076,9 @@
       "name": "RIKEI CORPORATION",
       "tab": "general",
       "score": 61,
-      "stock_price": 316,
+      "stock_price": 314,
       "theoretical_price": 833,
-      "upside_percent": 163.7
+      "upside_percent": 165.4
     },
     {
       "date": "2026-11-11",
@@ -6086,9 +6086,9 @@
       "name": "AMG HOLDINGS CO LTD",
       "tab": "finance",
       "score": 69,
-      "stock_price": 1994,
+      "stock_price": 1997,
       "theoretical_price": 7050,
-      "upside_percent": 253.5
+      "upside_percent": 253.0
     },
     {
       "date": "2026-11-11",
@@ -6096,9 +6096,9 @@
       "name": "YOSHICON CO LTD",
       "tab": "finance",
       "score": 67,
-      "stock_price": 2005,
+      "stock_price": 2003,
       "theoretical_price": 6739,
-      "upside_percent": 236.1
+      "upside_percent": 236.4
     },
     {
       "date": "2026-11-11",
@@ -6106,9 +6106,9 @@
       "name": "FJ NEXT HOLDINGS CO LTD",
       "tab": "finance",
       "score": 63,
-      "stock_price": 1810,
+      "stock_price": 1799,
       "theoretical_price": 6954,
-      "upside_percent": 284.2
+      "upside_percent": 286.5
     },
     {
       "date": "2026-11-11",
@@ -6116,9 +6116,9 @@
       "name": "FIRST JUKEN CO LTD",
       "tab": "finance",
       "score": 62,
-      "stock_price": 1003,
+      "stock_price": 999,
       "theoretical_price": 3164,
-      "upside_percent": 215.4
+      "upside_percent": 216.7
     },
     {
       "date": "2026-11-11",
@@ -6126,9 +6126,9 @@
       "name": "IMAMURA SECURITIES CO LTD(THE)",
       "tab": "finance",
       "score": 61,
-      "stock_price": 1615,
+      "stock_price": 1608,
       "theoretical_price": 4335,
-      "upside_percent": 168.4
+      "upside_percent": 169.6
     }
   ]
 }
