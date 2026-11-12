@@ -78,7 +78,7 @@
     "ir_comment": "",
     "review_note": "IR審査エラー: no json object",
     "source_urls": [],
-    "reviewed_at": "2026-11-09"
+    "reviewed_at": "2026-11-12"
   },
   "8881": {
     "review_status": "neutral",
@@ -89,7 +89,7 @@
     "ir_comment": "",
     "review_note": "IR審査エラー: no json object",
     "source_urls": [],
-    "reviewed_at": "2026-11-09"
+    "reviewed_at": "2026-11-12"
   },
   "8935": {
     "review_status": "neutral",
@@ -100,18 +100,31 @@
     "ir_comment": "",
     "review_note": "IR審査エラー: no json object",
     "source_urls": [],
-    "reviewed_at": "2026-11-09"
+    "reviewed_at": "2026-11-12"
   },
   "3293": {
-    "review_status": "neutral",
+    "review_status": "negative",
     "catalysts_found": [],
-    "risks_found": [],
-    "score_adjustment": 0,
-    "add_badges": [],
-    "ir_comment": "",
-    "review_note": "IR審査エラー: no json object",
-    "source_urls": [],
-    "reviewed_at": "2026-11-09"
+    "risks_found": [
+      "2026年2月13日、2026年3月期通期の経常利益予想を11.8億円→9.0億円（23.7%下方修正）、純利益も600百万円へ下方修正。建築費・造成工事費高騰を販売価格に十分転嫁できず、住宅ローン金利上昇等が響いた",
+      "2026年3月期本決算は経常利益917百万円で前期比20.4%減益となり、2025年11月の中間決算でも上期経常利益が前年同期比41.8%減となるなど複数四半期で減益基調が継続",
+      "直近半年以内の自社株買い発表は確認されず（前回実施は2022年）",
+      "増配・配当方針見直しの発表もなく、配当は35円で据え置き（配当性向55.8%）"
+    ],
+    "score_adjustment": -4,
+    "add_badges": [
+      "⚠️下方修正"
+    ],
+    "ir_comment": "2026年2月に通期経常益を23.7%下方修正、本決算も前期比20.4%減益。足元の2027年3月期1Q（26年8月発表）は減収ながら増益で通期計画据え置き、配当35円も維持。新規の自社株買い・増配・TOB等の材料は確認されず。",
+    "review_note": "直近で業績下方修正・減益が続いたが、1Qは増益で計画維持。新規の増配・自社株買い等のプラス材料は未確認。",
+    "source_urls": [
+      "https://kabutan.jp/stock/news?code=3293&b=k202602130172",
+      "https://kabutan.jp/stock/news?code=3293&b=k202605150159",
+      "https://finance.yahoo.co.jp/quote/3293.T/financials",
+      "https://irbank.net/3293/ir",
+      "https://irbank.net/E30066/holder"
+    ],
+    "reviewed_at": "2026-11-12"
   },
   "8135": {
     "review_status": "neutral",
@@ -166,9 +179,9 @@
     "score_adjustment": 0,
     "add_badges": [],
     "ir_comment": "",
-    "review_note": "IR審査エラー: unbalanced braces",
+    "review_note": "IR審査エラー: no json object",
     "source_urls": [],
-    "reviewed_at": "2026-11-09"
+    "reviewed_at": "2026-11-12"
   },
   "3388": {
     "review_status": "neutral",
@@ -238,7 +251,7 @@
     "ir_comment": "",
     "review_note": "IR審査エラー: no json object",
     "source_urls": [],
-    "reviewed_at": "2026-11-09"
+    "reviewed_at": "2026-11-12"
   },
   "6743": {
     "review_status": "positive",
@@ -290,7 +303,7 @@
     "ir_comment": "",
     "review_note": "IR審査エラー: no json object",
     "source_urls": [],
-    "reviewed_at": "2026-11-09"
+    "reviewed_at": "2026-11-12"
   },
   "5757": {
     "review_status": "negative",
@@ -370,15 +383,33 @@
     "reviewed_at": "2026-11-02"
   },
   "7235": {
-    "review_status": "neutral",
-    "catalysts_found": [],
-    "risks_found": [],
-    "score_adjustment": 0,
-    "add_badges": [],
-    "ir_comment": "",
-    "review_note": "IR審査エラー: no json object",
-    "source_urls": [],
-    "reviewed_at": "2026-11-09"
+    "review_status": "positive",
+    "catalysts_found": [
+      "2026年11月12日発表：2027年3月期第2四半期決算で通期経常利益予想を26億円→29.1億円に11.9%上方修正し、2期連続の過去最高益予想をさらに上乗せ",
+      "同日、通期配当予想を77円→87円に10円増額修正（前期65円）、6期連続増配となる見込み",
+      "2Q(7-9月)実績は経常利益が前年同期比60.1%増、営業利益率も6.1%→9.3%へ大幅改善",
+      "2026年5月発表の新中期経営計画(2026-2030年度)でPBR1倍水準達成を明示し、配当性向40%を目安とする株主還元方針を打ち出している"
+    ],
+    "risks_found": [
+      "原材料高騰や販管費増加により直近四半期で営業減益となる局面もあり、コスト圧力は継続中",
+      "譲渡制限付株式報酬としての自己株式処分（2026年7-8月、約9.18万株）による軽微な希薄化要因が存在",
+      "2024年に株主提案（DOEベース配当・自社株買い継続）を受けており、株主still還元strengthening圧力が残存"
+    ],
+    "score_adjustment": 9,
+    "add_badges": [
+      "⬆️上方修正",
+      "⬆️増配発表",
+      "⬆️還元強化"
+    ],
+    "ir_comment": "2026/11/12発表の2Q決算で通期経常益を12%上方修正し最高益予想を上乗せ、配当も77円→87円に増額（6期連続増配）。中計でPBR1倍目標・配当性向40%方針も明示し、株主還元姿勢は強い。",
+    "review_note": "本日上方修正・増配を同時発表。中計でPBR改善方針も明示され好材料が重なった。",
+    "source_urls": [
+      "https://www.tokyo-radiator.co.jp/investor/financial_results/",
+      "https://kabutan.jp/news/marketnews/?b=k202611120417",
+      "https://diamond.jp/zai/articles/-/1075409",
+      "https://s.kabutan.jp/news/n202607230833/"
+    ],
+    "reviewed_at": "2026-11-12"
   },
   "8904": {
     "review_status": "neutral",
@@ -432,7 +463,7 @@
     "ir_comment": "",
     "review_note": "IR審査エラー: no json object",
     "source_urls": [],
-    "reviewed_at": "2026-11-05"
+    "reviewed_at": "2026-11-12"
   },
   "6797": {
     "review_status": "neutral",
@@ -474,7 +505,7 @@
     "ir_comment": "",
     "review_note": "IR審査エラー: no json object",
     "source_urls": [],
-    "reviewed_at": "2026-11-09"
+    "reviewed_at": "2026-11-12"
   },
   "8747": {
     "review_status": "neutral",
@@ -557,7 +588,7 @@
     "ir_comment": "",
     "review_note": "IR審査エラー: no json object",
     "source_urls": [],
-    "reviewed_at": "2026-11-09"
+    "reviewed_at": "2026-11-12"
   },
   "8138": {
     "review_status": "neutral",
@@ -618,7 +649,7 @@
     "ir_comment": "",
     "review_note": "IR審査エラー: no json object",
     "source_urls": [],
-    "reviewed_at": "2026-11-09"
+    "reviewed_at": "2026-11-12"
   },
   "7192": {
     "review_status": "neutral",
@@ -629,7 +660,7 @@
     "ir_comment": "",
     "review_note": "IR審査エラー: no json object",
     "source_urls": [],
-    "reviewed_at": "2026-11-09"
+    "reviewed_at": "2026-11-12"
   },
   "5819": {
     "review_status": "neutral",
@@ -660,7 +691,7 @@
     "ir_comment": "",
     "review_note": "IR審査エラー: no json object",
     "source_urls": [],
-    "reviewed_at": "2026-11-09"
+    "reviewed_at": "2026-11-12"
   },
   "8869": {
     "review_status": "positive",
@@ -793,9 +824,9 @@
     "score_adjustment": 0,
     "add_badges": [],
     "ir_comment": "",
-    "review_note": "IR審査エラー: unbalanced braces",
+    "review_note": "IR審査エラー: no json object",
     "source_urls": [],
-    "reviewed_at": "2026-11-09"
+    "reviewed_at": "2026-11-12"
   },
   "8844": {
     "review_status": "neutral",
@@ -806,7 +837,7 @@
     "ir_comment": "",
     "review_note": "IR審査エラー: no json object",
     "source_urls": [],
-    "reviewed_at": "2026-11-09"
+    "reviewed_at": "2026-11-12"
   },
   "9857": {
     "review_status": "neutral",
@@ -921,7 +952,7 @@
     "ir_comment": "",
     "review_note": "IR審査エラー: no json object",
     "source_urls": [],
-    "reviewed_at": "2026-11-05"
+    "reviewed_at": "2026-11-12"
   },
   "6335": {
     "review_status": "neutral",
@@ -932,7 +963,7 @@
     "ir_comment": "",
     "review_note": "IR審査エラー: unbalanced braces",
     "source_urls": [],
-    "reviewed_at": "2026-10-29"
+    "reviewed_at": "2026-11-12"
   },
   "8928": {
     "review_status": "positive",
@@ -1043,27 +1074,15 @@
     "reviewed_at": "2026-08-03"
   },
   "9625": {
-    "review_status": "critical",
+    "review_status": "neutral",
     "catalysts_found": [],
-    "risks_found": [
-      "東京オリンピック・パラリンピック競技大会組織委員会から41億276万円の違約金等請求訴訟を提起されたことを2026年8月3日に公表（時価総額約51億円に対し巨額）",
-      "東京五輪談合事件（独占禁止法違反）で東京高裁が罰金2億8千万円の一審判決を支持し控訴棄却、最高裁への上告を検討中",
-      "訴訟提起発表を受けて株価が急落したとの報道あり"
-    ],
-    "score_adjustment": -12,
-    "add_badges": [
-      "⚠️不祥事"
-    ],
-    "ir_comment": "2026年8月3日、東京オリンピック・パラリンピック競技大会組織委員会から41億円超の違約金等請求訴訟を提起されたことを開示。談合事件に関連する高裁判決（罰金2.8億円）も確定し、上告検討中。財務健全性・信用リスクへの影響が懸念される。",
-    "review_note": "巨額訴訟提起（41億円）と談合事件の法的リスクが重石。株主還元強化や上方修正等のプラス材料は確認できず。",
-    "source_urls": [
-      "https://www.cerespo.co.jp/ir/",
-      "https://www.cerespo.co.jp/ir/library/disclosure.php",
-      "https://www.cerespo.co.jp/ir/stock/dividend.php",
-      "https://finance.yahoo.co.jp/news/detail/93897452d85a64e168c612f5064db0f8f9bae516",
-      "https://www.nikkei.com/article/DGXZQOUD027TH0S5A600C2000000/"
-    ],
-    "reviewed_at": "2026-09-21"
+    "risks_found": [],
+    "score_adjustment": 0,
+    "add_badges": [],
+    "ir_comment": "",
+    "review_note": "IR審査エラー: no json object",
+    "source_urls": [],
+    "reviewed_at": "2026-11-12"
   },
   "3321": {
     "review_status": "neutral",
@@ -1106,9 +1125,9 @@
     "score_adjustment": 0,
     "add_badges": [],
     "ir_comment": "",
-    "review_note": "IR審査エラー: no json object",
+    "review_note": "IR審査エラー: unbalanced braces",
     "source_urls": [],
-    "reviewed_at": "2026-11-09"
+    "reviewed_at": "2026-11-12"
   },
   "8887": {
     "review_status": "positive",
@@ -1222,37 +1241,18 @@
     "ir_comment": "",
     "review_note": "IR審査エラー: no json object",
     "source_urls": [],
-    "reviewed_at": "2026-11-05"
+    "reviewed_at": "2026-11-12"
   },
   "8871": {
     "review_status": "neutral",
-    "catalysts_found": [
-      "2026年5月14日発表：2027年3月期の年間配当を前期比60円増の160円に大幅増配予定（配当性向・DOE引き上げ方針）",
-      "2027年3月期会社計画は経常利益+65.9%、純利益+62.1%の大幅増益見通し",
-      "2026年7月31日発表の1Q決算は売上高+59.4%、営業利益+132.2%、純利益+133.2%と大幅増収増益、通期計画に対する進捗率も59.8%と順調",
-      "アクティビスト（ストラテジックキャピタル）がDOE8%相当への増配や自己株式取得など株主還元強化を株主提案として提起し、資本政策見直し圧力が継続"
-    ],
-    "risks_found": [
-      "代表取締役社長の利益相反疑惑（関連会社との競業取引）を巡り、ストラテジックキャピタルが2025年8月に株主代表訴訟を東京地裁に提起、係争中",
-      "2026年6月の定時株主総会でアクティビストによる増配・自己株式取得提案に取締役会が全て反対を表明し、ガバナンス・資本政策を巡る対立が継続",
-      "支配株主（安川社長ら）が議決権の約59.7%を保有し、少数株主との利益相反構造・ガバナンスリスクが指摘されている",
-      "総資産急増（+1,003億円）・自己資本比率低下（60.07%→42.10%）に伴う財務レバレッジ上昇、借入金依存度の高まり"
-    ],
-    "score_adjustment": -3,
-    "add_badges": [
-      "⬆️増配発表",
-      "⚠️不祥事"
-    ],
-    "ir_comment": "2027年3月期は大幅増収増益・60円増配を計画し1Q進捗も好調。一方で社長の利益相反疑惑を巡る株主代表訴訟や、アクティビストとの株主提案対立（取締役会は全反対）が継続しガバナンス面の不透明感が残る。",
-    "review_note": "好業績・大幅増配はプラスだが、代表訴訟とアクティビスト対立によるガバナンスリスクが相殺材料。",
-    "source_urls": [
-      "https://goldcrest.co.jp/ir/news.html",
-      "https://www.goldcrest.co.jp/ir/press.html",
-      "https://irweather.jp/disclosures/f048f6d2-0280-4e73-b9ec-7eec0d519d58",
-      "https://stracap.jp/8871-GOLDCREST/",
-      "https://irbank.net/8871/ir"
-    ],
-    "reviewed_at": "2026-10-26"
+    "catalysts_found": [],
+    "risks_found": [],
+    "score_adjustment": 0,
+    "add_badges": [],
+    "ir_comment": "",
+    "review_note": "IR審査エラー: no json object",
+    "source_urls": [],
+    "reviewed_at": "2026-11-12"
   },
   "9845": {
     "review_status": "neutral",
