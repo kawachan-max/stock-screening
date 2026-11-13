@@ -6146,9 +6146,9 @@
       "name": "YOSHICON CO LTD",
       "tab": "finance",
       "score": 67,
-      "stock_price": 2024,
+      "stock_price": 2022,
       "theoretical_price": 6739,
-      "upside_percent": 233.0
+      "upside_percent": 233.3
     },
     {
       "date": "2026-11-13",
@@ -6156,9 +6156,9 @@
       "name": "FIRST JUKEN CO LTD",
       "tab": "finance",
       "score": 62,
-      "stock_price": 1008,
+      "stock_price": 1011,
       "theoretical_price": 3164,
-      "upside_percent": 213.9
+      "upside_percent": 212.9
     },
     {
       "date": "2026-11-13",
@@ -6166,9 +6166,9 @@
       "name": "IMAMURA SECURITIES CO LTD(THE)",
       "tab": "finance",
       "score": 61,
-      "stock_price": 1611,
+      "stock_price": 1619,
       "theoretical_price": 4335,
-      "upside_percent": 169.1
+      "upside_percent": 167.8
     }
   ]
 }
