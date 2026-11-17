@@ -6219,6 +6219,56 @@
       "stock_price": 1010,
       "theoretical_price": 3164,
       "upside_percent": 213.2
+    },
+    {
+      "date": "2026-11-18",
+      "code": "9867",
+      "name": "SOLEKIA LIMITED",
+      "tab": "general",
+      "score": 67,
+      "stock_price": 8580,
+      "theoretical_price": 36225,
+      "upside_percent": 322.2
+    },
+    {
+      "date": "2026-11-18",
+      "code": "8226",
+      "name": "RIKEI CORPORATION",
+      "tab": "general",
+      "score": 61,
+      "stock_price": 306,
+      "theoretical_price": 833,
+      "upside_percent": 172.4
+    },
+    {
+      "date": "2026-11-18",
+      "code": "8891",
+      "name": "AMG HOLDINGS CO LTD",
+      "tab": "finance",
+      "score": 71,
+      "stock_price": 2000,
+      "theoretical_price": 7050,
+      "upside_percent": 252.5
+    },
+    {
+      "date": "2026-11-18",
+      "code": "5280",
+      "name": "YOSHICON CO LTD",
+      "tab": "finance",
+      "score": 67,
+      "stock_price": 1994,
+      "theoretical_price": 6739,
+      "upside_percent": 238.0
+    },
+    {
+      "date": "2026-11-18",
+      "code": "8917",
+      "name": "FIRST JUKEN CO LTD",
+      "tab": "finance",
+      "score": 62,
+      "stock_price": 1001,
+      "theoretical_price": 3164,
+      "upside_percent": 216.1
     }
   ]
 }
