@@ -6269,6 +6269,76 @@
       "stock_price": 1001,
       "theoretical_price": 3164,
       "upside_percent": 216.1
+    },
+    {
+      "date": "2026-11-19",
+      "code": "9867",
+      "name": "SOLEKIA LIMITED",
+      "tab": "general",
+      "score": 70,
+      "stock_price": 7800,
+      "theoretical_price": 34644,
+      "upside_percent": 344.2
+    },
+    {
+      "date": "2026-11-19",
+      "code": "8226",
+      "name": "RIKEI CORPORATION",
+      "tab": "general",
+      "score": 61,
+      "stock_price": 311,
+      "theoretical_price": 833,
+      "upside_percent": 168.0
+    },
+    {
+      "date": "2026-11-19",
+      "code": "4624",
+      "name": "ISAMU PAINT CO",
+      "tab": "general",
+      "score": 60,
+      "stock_price": 3945,
+      "theoretical_price": 13379,
+      "upside_percent": 239.1
+    },
+    {
+      "date": "2026-11-19",
+      "code": "8891",
+      "name": "AMG HOLDINGS CO LTD",
+      "tab": "finance",
+      "score": 71,
+      "stock_price": 1973,
+      "theoretical_price": 7050,
+      "upside_percent": 257.3
+    },
+    {
+      "date": "2026-11-19",
+      "code": "5280",
+      "name": "YOSHICON CO LTD",
+      "tab": "finance",
+      "score": 67,
+      "stock_price": 1999,
+      "theoretical_price": 6740,
+      "upside_percent": 237.1
+    },
+    {
+      "date": "2026-11-19",
+      "code": "8935",
+      "name": "FJ NEXT HOLDINGS CO LTD",
+      "tab": "finance",
+      "score": 65,
+      "stock_price": 1783,
+      "theoretical_price": 6940,
+      "upside_percent": 289.2
+    },
+    {
+      "date": "2026-11-19",
+      "code": "8917",
+      "name": "FIRST JUKEN CO LTD",
+      "tab": "finance",
+      "score": 62,
+      "stock_price": 998,
+      "theoretical_price": 3164,
+      "upside_percent": 217.0
     }
   ]
 }
