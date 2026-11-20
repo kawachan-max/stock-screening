@@ -6439,6 +6439,86 @@
       "stock_price": 1596,
       "theoretical_price": 4335,
       "upside_percent": 171.6
+    },
+    {
+      "date": "2026-11-21",
+      "code": "9867",
+      "name": "SOLEKIA LIMITED",
+      "tab": "general",
+      "score": 67,
+      "stock_price": 7030,
+      "theoretical_price": 34644,
+      "upside_percent": 392.8
+    },
+    {
+      "date": "2026-11-21",
+      "code": "6743",
+      "name": "DAIDO SIGNAL CO",
+      "tab": "general",
+      "score": 67,
+      "stock_price": 931,
+      "theoretical_price": 2402,
+      "upside_percent": 158.0
+    },
+    {
+      "date": "2026-11-21",
+      "code": "5388",
+      "name": "KUNIMINE INDUSTRIES CO",
+      "tab": "general",
+      "score": 61,
+      "stock_price": 1221,
+      "theoretical_price": 2750,
+      "upside_percent": 125.2
+    },
+    {
+      "date": "2026-11-21",
+      "code": "8891",
+      "name": "AMG HOLDINGS CO LTD",
+      "tab": "finance",
+      "score": 71,
+      "stock_price": 1915,
+      "theoretical_price": 7050,
+      "upside_percent": 268.1
+    },
+    {
+      "date": "2026-11-21",
+      "code": "5280",
+      "name": "YOSHICON CO LTD",
+      "tab": "finance",
+      "score": 67,
+      "stock_price": 1903,
+      "theoretical_price": 6740,
+      "upside_percent": 254.2
+    },
+    {
+      "date": "2026-11-21",
+      "code": "8935",
+      "name": "FJ NEXT HOLDINGS CO LTD",
+      "tab": "finance",
+      "score": 63,
+      "stock_price": 1739,
+      "theoretical_price": 6940,
+      "upside_percent": 299.1
+    },
+    {
+      "date": "2026-11-21",
+      "code": "8917",
+      "name": "FIRST JUKEN CO LTD",
+      "tab": "finance",
+      "score": 62,
+      "stock_price": 1000,
+      "theoretical_price": 3164,
+      "upside_percent": 216.4
+    },
+    {
+      "date": "2026-11-21",
+      "code": "7175",
+      "name": "IMAMURA SECURITIES CO LTD(THE)",
+      "tab": "finance",
+      "score": 61,
+      "stock_price": 1538,
+      "theoretical_price": 4335,
+      "upside_percent": 181.9
     }
   ]
 }
