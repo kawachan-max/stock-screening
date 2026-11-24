@@ -6619,6 +6619,96 @@
       "stock_price": 1538,
       "theoretical_price": 4335,
       "upside_percent": 181.9
+    },
+    {
+      "date": "2026-11-25",
+      "code": "9647",
+      "name": "KYOWA ENGINEERING CONSULTANTS C",
+      "tab": "general",
+      "score": 70,
+      "stock_price": 5670,
+      "theoretical_price": 20279,
+      "upside_percent": 257.7
+    },
+    {
+      "date": "2026-11-25",
+      "code": "6743",
+      "name": "DAIDO SIGNAL CO",
+      "tab": "general",
+      "score": 68,
+      "stock_price": 959,
+      "theoretical_price": 2402,
+      "upside_percent": 150.5
+    },
+    {
+      "date": "2026-11-25",
+      "code": "5388",
+      "name": "KUNIMINE INDUSTRIES CO",
+      "tab": "general",
+      "score": 64,
+      "stock_price": 1217,
+      "theoretical_price": 2750,
+      "upside_percent": 126.0
+    },
+    {
+      "date": "2026-11-25",
+      "code": "9867",
+      "name": "SOLEKIA LIMITED",
+      "tab": "general",
+      "score": 60,
+      "stock_price": 7480,
+      "theoretical_price": 34644,
+      "upside_percent": 363.2
+    },
+    {
+      "date": "2026-11-25",
+      "code": "8891",
+      "name": "AMG HOLDINGS CO LTD",
+      "tab": "finance",
+      "score": 70,
+      "stock_price": 1911,
+      "theoretical_price": 7116,
+      "upside_percent": 272.4
+    },
+    {
+      "date": "2026-11-25",
+      "code": "5280",
+      "name": "YOSHICON CO LTD",
+      "tab": "finance",
+      "score": 68,
+      "stock_price": 1885,
+      "theoretical_price": 6740,
+      "upside_percent": 257.5
+    },
+    {
+      "date": "2026-11-25",
+      "code": "8935",
+      "name": "FJ NEXT HOLDINGS CO LTD",
+      "tab": "finance",
+      "score": 62,
+      "stock_price": 1740,
+      "theoretical_price": 6940,
+      "upside_percent": 298.8
+    },
+    {
+      "date": "2026-11-25",
+      "code": "8917",
+      "name": "FIRST JUKEN CO LTD",
+      "tab": "finance",
+      "score": 61,
+      "stock_price": 990,
+      "theoretical_price": 3164,
+      "upside_percent": 219.6
+    },
+    {
+      "date": "2026-11-25",
+      "code": "7175",
+      "name": "IMAMURA SECURITIES CO LTD(THE)",
+      "tab": "finance",
+      "score": 60,
+      "stock_price": 1530,
+      "theoretical_price": 4335,
+      "upside_percent": 183.3
     }
   ]
 }
