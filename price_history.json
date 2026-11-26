@@ -6799,6 +6799,116 @@
       "stock_price": 1520,
       "theoretical_price": 4335,
       "upside_percent": 185.2
+    },
+    {
+      "date": "2026-11-27",
+      "code": "9647",
+      "name": "KYOWA ENGINEERING CONSULTANTS C",
+      "tab": "general",
+      "score": 68,
+      "stock_price": 5640,
+      "theoretical_price": 20279,
+      "upside_percent": 259.6
+    },
+    {
+      "date": "2026-11-27",
+      "code": "9867",
+      "name": "SOLEKIA LIMITED",
+      "tab": "general",
+      "score": 67,
+      "stock_price": 7570,
+      "theoretical_price": 34644,
+      "upside_percent": 357.6
+    },
+    {
+      "date": "2026-11-27",
+      "code": "6743",
+      "name": "DAIDO SIGNAL CO",
+      "tab": "general",
+      "score": 67,
+      "stock_price": 971,
+      "theoretical_price": 2402,
+      "upside_percent": 147.4
+    },
+    {
+      "date": "2026-11-27",
+      "code": "5753",
+      "name": "NIPPON SHINDO CO",
+      "tab": "general",
+      "score": 64,
+      "stock_price": 2322,
+      "theoretical_price": 4407,
+      "upside_percent": 89.8
+    },
+    {
+      "date": "2026-11-27",
+      "code": "5388",
+      "name": "KUNIMINE INDUSTRIES CO",
+      "tab": "general",
+      "score": 63,
+      "stock_price": 1219,
+      "theoretical_price": 2750,
+      "upside_percent": 125.6
+    },
+    {
+      "date": "2026-11-27",
+      "code": "4624",
+      "name": "ISAMU PAINT CO",
+      "tab": "general",
+      "score": 60,
+      "stock_price": 3900,
+      "theoretical_price": 13380,
+      "upside_percent": 243.1
+    },
+    {
+      "date": "2026-11-27",
+      "code": "8891",
+      "name": "AMG HOLDINGS CO LTD",
+      "tab": "finance",
+      "score": 71,
+      "stock_price": 1910,
+      "theoretical_price": 7420,
+      "upside_percent": 288.5
+    },
+    {
+      "date": "2026-11-27",
+      "code": "5280",
+      "name": "YOSHICON CO LTD",
+      "tab": "finance",
+      "score": 67,
+      "stock_price": 1935,
+      "theoretical_price": 6740,
+      "upside_percent": 248.3
+    },
+    {
+      "date": "2026-11-27",
+      "code": "8935",
+      "name": "FJ NEXT HOLDINGS CO LTD",
+      "tab": "finance",
+      "score": 63,
+      "stock_price": 1766,
+      "theoretical_price": 6940,
+      "upside_percent": 293.0
+    },
+    {
+      "date": "2026-11-27",
+      "code": "8917",
+      "name": "FIRST JUKEN CO LTD",
+      "tab": "finance",
+      "score": 62,
+      "stock_price": 997,
+      "theoretical_price": 3164,
+      "upside_percent": 217.3
+    },
+    {
+      "date": "2026-11-27",
+      "code": "7175",
+      "name": "IMAMURA SECURITIES CO LTD(THE)",
+      "tab": "finance",
+      "score": 60,
+      "stock_price": 1514,
+      "theoretical_price": 4335,
+      "upside_percent": 186.3
     }
   ]
 }
